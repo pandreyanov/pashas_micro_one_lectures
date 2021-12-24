@@ -4,5 +4,8 @@
 format: jb-book
 root: table
 
-chapters:
-- file: lecture_1
+parts:
+- caption: sfnkjdsjnkls
+  numbered: true
+  chapters:
+  - file: lecture_1/lecture_1
