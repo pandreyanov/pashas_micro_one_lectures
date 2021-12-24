@@ -389,9 +389,9 @@
 \[ U_i(x,y,z) \to \max_{(x,y,z) \in X_i}\]</div>
 <p>Подразумевается, что некоторые такие задачи вы уже должны уметь решать.</p>
 <p>P.S. Иногда буквы алфавита <span class="math notranslate nohighlight">\(x, y, z\)</span> будут обозначать “разные точки в пространстве” а иногда “разные товары в полезности”, к этому придется привыкнуть. Интерпретация букв меняется, в зависимости от контекста.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Формально <strong>классическая  (утилитарная) модель</strong> (для одного агента) это пара: множество альтернатив <span class="math notranslate nohighlight">\(X \subset \mathbb{R}^n_{+}\)</span> и полезность <span class="math notranslate nohighlight">\(U: X \to \mathbb{R}\)</span>. Никаких дополнительных аксиом не требуется.</p>
+<div class="note admonition">
+<p class="admonition-title">Определение 0</p>
+<p>Формально <strong>классическая  (утилитарная) модель</strong> это пара: множество альтернатив <span class="math notranslate nohighlight">\(X \subset \mathbb{R}^n_{+}\)</span> и полезность <span class="math notranslate nohighlight">\(U: X \to \mathbb{R}\)</span>. Никаких дополнительных аксиом не требуется.</p>
 </div>
 <p>Калибровка модели, как правило, заключается в выборе конкретной функции полезности. Предсказание модели это оптимальная комбинация товаров, в зависимости от различных предложенных <span class="math notranslate nohighlight">\(X\)</span>.</p>
 </div>
@@ -428,35 +428,35 @@
 <h2>Свойства полезности<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
 <p>У полезностей в <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span> часто бывает несколько (если не все) из нижеперечисленных свойств. Пусть <span class="math notranslate nohighlight">\(a, b\)</span> это какие то комбинации товаров из множества альтернатив <span class="math notranslate nohighlight">\(X \subset \mathbb{R}^n\)</span>.</p>
 <p>Мы начнем с двух эквивалентных определений непрерывности.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Определение 1.1: полезность <span class="math notranslate nohighlight">\(U\)</span> <strong>непрерывна</strong> в <span class="math notranslate nohighlight">\(X\)</span>, если для любого <span class="math notranslate nohighlight">\(x \in X\)</span> множества <span class="math notranslate nohighlight">\(L_{+}(x)\)</span> и <span class="math notranslate nohighlight">\(L_{-}(x)\)</span> замкнуты, где</p>
+<div class="note admonition">
+<p class="admonition-title">Определение 1.1</p>
+<p>Полезность <span class="math notranslate nohighlight">\(U\)</span> <strong>непрерывна</strong> в <span class="math notranslate nohighlight">\(X\)</span>, если для любого <span class="math notranslate nohighlight">\(x \in X\)</span> множества <span class="math notranslate nohighlight">\(L_{+}(x)\)</span> и <span class="math notranslate nohighlight">\(L_{-}(x)\)</span> замкнуты, где</p>
 <div class="math notranslate nohighlight">
 \[ L_{+}(x) = \{y \in X: U(y) \geqslant U(x)\}, \quad L_{-}(x) = \{y \in X: U(y) \leqslant U(x)\}\]</div>
 </div>
 <p>Описанные выше множества <span class="math notranslate nohighlight">\(L_{+}(x)\)</span> (или <span class="math notranslate nohighlight">\(L_{-}(x)\)</span>) это подмножества допустимых альтернатив,  которые не хуже (или не лучше) чем сам <span class="math notranslate nohighlight">\(x\)</span>. Иногда в литературе они называются верхним и нижним Лебеговым множеством.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Определение 1.2: полезность <span class="math notranslate nohighlight">\(U\)</span> <strong>непрерывна</strong> в <span class="math notranslate nohighlight">\(X\)</span>, если для любого <span class="math notranslate nohighlight">\(\varepsilon &gt; 0\)</span> существует <span class="math notranslate nohighlight">\(\delta &gt;0\)</span> такой что для любых <span class="math notranslate nohighlight">\(x, y \in X\)</span> верно что:</p>
+<div class="note admonition">
+<p class="admonition-title">Определение 1.2</p>
+<p>Полезность <span class="math notranslate nohighlight">\(U\)</span> <strong>непрерывна</strong> в <span class="math notranslate nohighlight">\(X\)</span>, если для любого <span class="math notranslate nohighlight">\(\varepsilon &gt; 0\)</span> существует <span class="math notranslate nohighlight">\(\delta &gt;0\)</span> такой что для любых <span class="math notranslate nohighlight">\(x, y \in X\)</span> верно что:</p>
 <div class="math notranslate nohighlight">
 \[||x - y|| &lt; \delta \quad \Rightarrow \quad ||U(x) - U(y)|| &lt; \varepsilon\]</div>
 </div>
 <p>Большую роль в истории физики и математики играют выпуклые и вогнутые функции. Например, в физике твердых тел все объекты минимизирует свою энергию. Заметим, что кинетическая энергия выпуклая, то есть, энергия с минусом вогнутая функция. Следовательно, все в физике максимизирует какую то вогнутую функцию. Естественным образом, это понятие появилось и в экономике.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Определение 2: полезность <span class="math notranslate nohighlight">\(U\)</span> <strong>вогнута</strong> если для любых <span class="math notranslate nohighlight">\(x, y \in X\)</span>:</p>
+<div class="note admonition">
+<p class="admonition-title">Определение 2</p>
+<p>Полезность <span class="math notranslate nohighlight">\(U\)</span> <strong>вогнута</strong> если для любых <span class="math notranslate nohighlight">\(x, y \in X\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[ \forall \alpha \in (0,1): U(\alpha x + (1-\alpha) y)) \geqslant \alpha U(x) + (1-\alpha) U(y)\]</div>
 </div>
 <p>Давать определение выпуклой полезности не имеет большого смысла с экономической точки зрения, считается, что все полезности скорее вогнуты чем выпуклы.</p>
 <p>Зато большим смыслом обладает понятие квази-вогнутости. У него тоже будут две версии, которые почти (но не совсем) эквивалентны друг другу.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Определение 3.1: полезность <span class="math notranslate nohighlight">\(U\)</span> <strong>квази-вогнутa</strong> в <span class="math notranslate nohighlight">\(X\)</span>, если для любого <span class="math notranslate nohighlight">\(x \in X\)</span> множество <span class="math notranslate nohighlight">\(L_{+}(x)\)</span> выпукло, то есть, оно содержит пределы всех своих последовательностей.</p>
+<div class="note admonition">
+<p class="admonition-title">Определение 3.1</p>
+<p>Полезность <span class="math notranslate nohighlight">\(U\)</span> <strong>квази-вогнутa</strong> в <span class="math notranslate nohighlight">\(X\)</span>, если для любого <span class="math notranslate nohighlight">\(x \in X\)</span> множество <span class="math notranslate nohighlight">\(L_{+}(x)\)</span> выпукло, то есть, оно содержит пределы всех своих последовательностей.</p>
 </div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Определение 3.2: полезность <span class="math notranslate nohighlight">\(U\)</span> <strong>квази-вогнута</strong> в <span class="math notranslate nohighlight">\(X\)</span> если для любых <span class="math notranslate nohighlight">\(x, y \in X\)</span> их линейная комбинация не хуже чем худшая из двух:</p>
+<div class="note admonition">
+<p class="admonition-title">Определение 3.1</p>
+<p>Полезность <span class="math notranslate nohighlight">\(U\)</span> <strong>квази-вогнута</strong> в <span class="math notranslate nohighlight">\(X\)</span> если для любых <span class="math notranslate nohighlight">\(x, y \in X\)</span> их линейная комбинация не хуже чем худшая из двух:</p>
 <div class="math notranslate nohighlight">
 \[ \forall \alpha \in (0,1): U(\alpha x + (1-\alpha) y)) \geqslant \min(U(x), U(y))\]</div>
 </div>
@@ -480,9 +480,9 @@
 <div class="section" id="id14">
 <h4>Связь вогнутости и квази-вогнутости<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h4>
 <p>Оба термина: вогнутость и квази-вогнутость, означают либо <strong>любовь агентов к разнообразию</strong>, либо <strong>комплементарность товаров</strong>, либо <strong>боязнь риска</strong>, но вогнутость однозначно сильнее чем квази-вогнутость. Докажем этот простой факт:</p>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>Утверждение 1: Из вогнутости следует квази вогнутость
+<div class="important admonition">
+<p class="admonition-title">Утверждение 1</p>
+<p>Из вогнутости следует квази вогнутость
 Достаточно выписать цепочку неравенств:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split} 
