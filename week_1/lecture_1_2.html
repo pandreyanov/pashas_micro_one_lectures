@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Лекция 1, часть 2 &#8212; Undergraduate Lectures in Microeconomics at HSE</title>
+    <title>Лекция 1, часть 2 &#8212; Лекции по Микро 1, ИП</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -80,7 +80,7 @@
       
       
       
-      <h1 class="site-logo" id="site-title">Undergraduate Lectures in Microeconomics at HSE</h1>
+      <h1 class="site-logo" id="site-title">Лекции по Микро 1, ИП</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
@@ -423,8 +423,15 @@
 </ul>
 <p>Если, вдобавок к этому, область определения не только компакт но и выпуклое множество, то, во первых, решение всегда единственное, а во вторых, условия второго порядка можно не проверять, поскольку они (или что то очень похожее на них) выполнены глобально.</p>
 <p>Очень важно уметь, глядя на задачу, определять выпуклая она или нет, чтобы не тратить время на анализ второго порядка. Общий алгоритм решения выпуклых и непрерывных задач на компакте очень простой:</p>
-<p>!!! mermaid here !!!</p>
-<p>То есть, мы набрасываемся на такую задачу, как будто решение у нее внутреннее. Затем проверяем, что мы не ошиблись. Если кандидат оказался внутри, то это и есть правильный ответ. Если же нет, то мы заново ищем вдоль границы, исходя из геометрических соображений.</p>
+<div class="mermaid">
+            graph TD
+F((все выпукло?)) -- no --&gt; G[думаем нестандартно...];
+F -- yes --&gt; D;
+D[решаем УПП] --&gt; A((она внутри?));
+A -- yes --&gt; B[это ответ!];
+A -- no --&gt; C[ищем на границе...];
+
+        </div><p>То есть, мы набрасываемся на такую задачу, как будто решение у нее внутреннее. Затем проверяем, что мы не ошиблись. Если кандидат оказался внутри, то это и есть правильный ответ. Если же нет, то мы заново ищем вдоль границы, исходя из геометрических соображений.</p>
 </div>
 <div class="section" id="id12">
 <h2>Линии уровня<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
@@ -534,7 +541,7 @@ y = \frac{c}{b} \mathbb{I}(ax &gt; c), \quad x = \frac{c}{a} \mathbb{I}(by &gt; 
     <div class="container">
       <p>
         
-          By Pasha Andreyanov<br/>
+          By Паша Андреянов<br/>
         
             &copy; Copyright 2021.<br/>
       </p>
