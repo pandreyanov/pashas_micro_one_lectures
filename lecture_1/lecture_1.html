@@ -387,6 +387,114 @@
      Выпуклые задачи
     </a>
    </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id36">
+     Линии уровня
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id37">
+       Пример 1: Линейная полезность
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id38">
+       Задача 0.2
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id39">
+       Задача 0.3
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id40">
+       Задача 0.4
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id41">
+       Задача 0.5
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id42">
+       Задача 0.6
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id43">
+       Задача 0.7
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id44">
+   Домашнее задание 1
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id45">
+     Первый блок задач (10 баллов)
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id46">
+       Задача 1.1 (1 балла)
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id47">
+       Задача 1.2 (2 балла)
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id48">
+       Задача 1.3 (2 балла)
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id49">
+       Задача 1.4 (5 балла)
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id50">
+     Второй блок задач (10 баллов)
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id51">
+       Задача 2.1 (1 балл)
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id52">
+       Задача 2.2 (1 балл)
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#a">
+       Задача 2.3 (2 баллa)
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id53">
+       Задача 2.4 (2 балл)
+      </a>
+     </li>
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id54">
+       Задача 2.5 (4 балла)
+      </a>
+     </li>
+    </ul>
+   </li>
   </ul>
  </li>
 </ul>
@@ -786,81 +894,67 @@ $<span class="math notranslate nohighlight">\(\text{УПП (FOC)}: \quad  \nabla
 </ul>
 <p>Если, вдобавок к этому, область определения не только компакт но и выпуклое множество, то, во первых, решение всегда единственное, а во вторых, условия второго порядка можно не проверять, поскольку они (или что то очень похожее на них) выполнены глобально.</p>
 <p>Очень важно уметь, глядя на задачу, определять выпуклая она или нет, чтобы не тратить время на анализ второго порядка. Общий алгоритм решения выпуклых и непрерывных задач на компакте очень простой:</p>
-<!-- ```{mermaid}
-graph TD
-F((все выпукло?)) -- no G[думаем нестандартно...];
-F -- yes --> D;
-<p>D[решаем УПП] –&gt; A((она внутри?));
-A – yes –&gt; B[это ответ!];
-A – no –&gt; C[ищем на границе…];</p>
-<div class="highlight---&gt; notranslate"><div class="highlight"><pre><span></span>
-То есть, мы набрасываемся на такую задачу, как будто решение у нее внутреннее. Затем проверяем, что мы не ошиблись. Если кандидат оказался внутри, то это и есть правильный ответ. Если же нет, то мы заново ищем вдоль границы, исходя из геометрических соображений.
-
-## Линии уровня
-
-Наконец, линии уровня это очень удобный инструмент для отлова и классификации кандидатов на решение оптимизационной задачи.
-
-&gt; Определение 6.1: **линией уровня** полезности $U$, 
-проходящей через точку $x$ называется множество всех точек $y \in X$ таких что $U(y) = U(x)$.
-
-&gt; Определение 6.2: **кривой безразличия** предпочтений $\succcurlyeq$, проходящей через точку $x$ называется множество всех точек $y \in X$ таких что $x \sim y$.
-
-Совершенно ясно, что в контексте представлений предпочтений полезностями и наоборот, кривая безразличия и линия уровня это одно и то же.
-
-Рассмотрим несколько примеров
-
-### Пример 1: Линейная полезность
-Рассмотрим полезность вида: $U(x, y) = ax + by$. Тогда линия уровня ищется следующим образом: $$
-\begin{gather*}
+<p>mermaid here</p>
+<p>То есть, мы набрасываемся на такую задачу, как будто решение у нее внутреннее. Затем проверяем, что мы не ошиблись. Если кандидат оказался внутри, то это и есть правильный ответ. Если же нет, то мы заново ищем вдоль границы, исходя из геометрических соображений.</p>
+</div>
+<div class="section" id="id36">
+<h2>Линии уровня<a class="headerlink" href="#id36" title="Permalink to this headline">¶</a></h2>
+<p>Наконец, линии уровня это очень удобный инструмент для отлова и классификации кандидатов на решение оптимизационной задачи.</p>
+<blockquote>
+<div><p>Определение 6.1: <strong>линией уровня</strong> полезности <span class="math notranslate nohighlight">\(U\)</span>,
+проходящей через точку <span class="math notranslate nohighlight">\(x\)</span> называется множество всех точек <span class="math notranslate nohighlight">\(y \in X\)</span> таких что <span class="math notranslate nohighlight">\(U(y) = U(x)\)</span>.</p>
+</div></blockquote>
+<blockquote>
+<div><p>Определение 6.2: <strong>кривой безразличия</strong> предпочтений <span class="math notranslate nohighlight">\(\succcurlyeq\)</span>, проходящей через точку <span class="math notranslate nohighlight">\(x\)</span> называется множество всех точек <span class="math notranslate nohighlight">\(y \in X\)</span> таких что <span class="math notranslate nohighlight">\(x \sim y\)</span>.</p>
+</div></blockquote>
+<p>Совершенно ясно, что в контексте представлений предпочтений полезностями и наоборот, кривая безразличия и линия уровня это одно и то же.</p>
+<p>Рассмотрим несколько примеров</p>
+<div class="section" id="id37">
+<h3>Пример 1: Линейная полезность<a class="headerlink" href="#id37" title="Permalink to this headline">¶</a></h3>
+<p>Рассмотрим полезность вида: <span class="math notranslate nohighlight">\(U(x, y) = ax + by\)</span>. Тогда линия уровня ищется следующим образом: $$</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{gather*}
 c = ax + by\\
 c-ax = by\\
 y = \frac{c-ax}{b}
-\end{gather*}
-$$ Линия уровня это прямая вида $y = \alpha x + \beta$.
-
-### Пример 2: Гиперболическая полезность
-Рассмотрим полезность вида: $U(x, y) = a \log x + \log y$. Тогда линия уровня ищется следующим образом: $$
-\begin{gather*}
+\end{gather*}\]</div>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned} Линия уровня это прямая вида $y = \alpha x + \beta$.\\### Пример 2: Гиперболическая полезность
+Рассмотрим полезность вида: $U(x, y) = a \log x + \log y$. Тогда линия уровня ищется следующим образом: \end{aligned}\end{align} \]</div>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{gather*}
 c =  a \log x + \log y\\
 e^{c} = x^a y\\
 y =\frac{e^{c}}{x^a}
-\end{gather*}
-$$ Линия уровня это гипербола вида $y = x^\alpha \beta$.
-
-### Пример 3: Леонтьефская полезность
-Рассмотрим полезность вида: $U(x, y) = \min(ax, by)$. Тогда линия уровня ищется следующим образом: $$
-\begin{gather*}
+\end{gather*}\]</div>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned} Линия уровня это гипербола вида $y = x^\alpha \beta$.\\### Пример 3: Леонтьефская полезность
+Рассмотрим полезность вида: $U(x, y) = \min(ax, by)$. Тогда линия уровня ищется следующим образом: \end{aligned}\end{align} \]</div>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{gather*}
 c = \min(ax, by)\\
 \frac{c}{b}= \min(\frac{a}{b}x, y), \quad \frac{c}{a}= \min(x, \frac{b}{a}y)\\
 y = \frac{c}{b} \mathbb{I}(ax &gt; c), \quad x = \frac{c}{a} \mathbb{I}(by &gt; c)
-\end{gather*}
-$$ Линия уровня это конкатенация горизонтальной и вертикальной линий, соединенных вдоль $ax = by$.
-
-### Зачем нужны линии уровня?
-Очень часто, в задачах есть выпуклое ограничение типа неравенства, например, бюджетное ограничение . В таком случае, все кандидаты будут формально не внутренние. Однако, с точки зрения выпуклой оптимизации, такие точки можно интерпретировать как &quot;внутренние&quot;, если решать методом Лагранжа. О методе Лагранжа мы поговорим на следующей лекции.
-
-Внутреннее решение выпуклой (и гладкой) оптимизационной задачи можно охарактеризовать как точку касания линии уровня с выпуклым ограничением. 
-
-Иногда задача вообще не является гладкой, как в случае Леонтьефских полезностей. Тогда линии уровня это самый быстрый и надежный подход к решению задачи. 
-
-# Задачи для семинара и/или самостоятельного разбора
-
-### Задача 0.1
+\end{gather*}\]</div>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned} Линия уровня это конкатенация горизонтальной и вертикальной линий, соединенных вдоль $ax = by$.\\### Зачем нужны линии уровня?
+Очень часто, в задачах есть выпуклое ограничение типа неравенства, например, бюджетное ограничение . В таком случае, все кандидаты будут формально не внутренние. Однако, с точки зрения выпуклой оптимизации, такие точки можно интерпретировать как &quot;внутренние&quot;, если решать методом Лагранжа. О методе Лагранжа мы поговорим на следующей лекции.\\Внутреннее решение выпуклой (и гладкой) оптимизационной задачи можно охарактеризовать как точку касания линии уровня с выпуклым ограничением. \\Иногда задача вообще не является гладкой, как в случае Леонтьефских полезностей. Тогда линии уровня это самый быстрый и надежный подход к решению задачи. \\# Задачи для семинара и/или самостоятельного разбора\\### Задача 0.1
 Рассмотрим классическую модель с полезностью $U(\ast) = f^3(\ast)$ и множеством альтернатив $X = \{x, y, z, w\}$, таким что $$f(x) = -1, f(y) = 1, f(z) = 0, f(w) = 2.$$ Заполните матрицу предпочтения $\succcurlyeq$ ассоциированного с $U(\ast)$:
-$$ 
-\begin{array}{c|ccc}
- \succcurlyeq &amp; x &amp; y &amp; z &amp; w\\
+\end{aligned}\end{align} \]</div>
+<p>\begin{array}{c|ccc}
+\succcurlyeq &amp; x &amp; y &amp; z &amp; w\
 \hline
-x  &amp; 1  &amp; * &amp; * &amp; *\\
-y  &amp; *  &amp; 1 &amp; * &amp; *\\
-z  &amp; *  &amp; *  &amp; 1 &amp; *\\
-w &amp; *  &amp; * &amp; * &amp; 1\\
+x  &amp; 1  &amp; * &amp; * &amp; *\
+y  &amp; *  &amp; 1 &amp; * &amp; *\
+z  &amp; *  &amp; *  &amp; 1 &amp; *\
+w &amp; *  &amp; * &amp; * &amp; 1\
 \end{array}
-$$
-
-### Задача 0.2
-Рассмотрим нео-классическую модель с предпочтениями $\succcurlyeq$ на множестве альтернатив $X = \{x, y, z, w\}$, заданными матрицей:
-$$ 
+$$</p>
+</div>
+<div class="section" id="id38">
+<h3>Задача 0.2<a class="headerlink" href="#id38" title="Permalink to this headline">¶</a></h3>
+<p>Рассмотрим нео-классическую модель с предпочтениями <span class="math notranslate nohighlight">\(\succcurlyeq\)</span> на множестве альтернатив <span class="math notranslate nohighlight">\(X = \{x, y, z, w\}\)</span>, заданными матрицей:
+$<span class="math notranslate nohighlight">\( 
 \begin{array}{c|ccc}
  \succcurlyeq &amp; x &amp; y &amp; z &amp; w\\
 \hline
@@ -869,52 +963,51 @@ y  &amp; 0  &amp; 1 &amp; 1 &amp; 0\\
 z  &amp; 0  &amp; 0  &amp; 1 &amp; 0\\
 w &amp; 1  &amp; 1 &amp; 1 &amp; 1\\
 \end{array} \quad \quad \quad \quad U(*) = ?
-$$
-
-Подберите полезность которая представляет такие предпочтения.
-
-### Задача 0.3
-
-Рассмотрим экзотическую модель с предпочтениями $\succcurlyeq$ на $X$, которые заданы следующим образом. Для двух рациональных предпочтений $\succcurlyeq_1$ и $\succcurlyeq_2$ на том же множестве альтернатив, определим
-$$ x \succcurlyeq y \quad \Leftrightarrow \quad x \succcurlyeq_1 y \quad \text{и} \quad x \succcurlyeq_2 y$$ То есть, в нашей экзотической модели, $x$ предпочитается $y$ тогда и только тогда, когда $\succcurlyeq_i$ единогласно предпочитают $x$. Докажите, что $\succcurlyeq$ рациональное предпочтение, или приведите контрпример.
-
-### Задача 0.4
-
-Докажите, что пересечение двух выпуклых множеств выпукло.
-
-### Задача 0.5
-
-Промаксимизируйте функцию $(x-a)^2$ на отрезке $[-1,1]$. Запишите ответ как функцию от $а$.
-
-$$ 
+\)</span>$</p>
+<p>Подберите полезность которая представляет такие предпочтения.</p>
+</div>
+<div class="section" id="id39">
+<h3>Задача 0.3<a class="headerlink" href="#id39" title="Permalink to this headline">¶</a></h3>
+<p>Рассмотрим экзотическую модель с предпочтениями <span class="math notranslate nohighlight">\(\succcurlyeq\)</span> на <span class="math notranslate nohighlight">\(X\)</span>, которые заданы следующим образом. Для двух рациональных предпочтений <span class="math notranslate nohighlight">\(\succcurlyeq_1\)</span> и <span class="math notranslate nohighlight">\(\succcurlyeq_2\)</span> на том же множестве альтернатив, определим
+$<span class="math notranslate nohighlight">\( x \succcurlyeq y \quad \Leftrightarrow \quad x \succcurlyeq_1 y \quad \text{и} \quad x \succcurlyeq_2 y\)</span><span class="math notranslate nohighlight">\( То есть, в нашей экзотической модели, \)</span>x<span class="math notranslate nohighlight">\( предпочитается \)</span>y<span class="math notranslate nohighlight">\( тогда и только тогда, когда \)</span>\succcurlyeq_i<span class="math notranslate nohighlight">\( единогласно предпочитают \)</span>x<span class="math notranslate nohighlight">\(. Докажите, что \)</span>\succcurlyeq$ рациональное предпочтение, или приведите контрпример.</p>
+</div>
+<div class="section" id="id40">
+<h3>Задача 0.4<a class="headerlink" href="#id40" title="Permalink to this headline">¶</a></h3>
+<p>Докажите, что пересечение двух выпуклых множеств выпукло.</p>
+</div>
+<div class="section" id="id41">
+<h3>Задача 0.5<a class="headerlink" href="#id41" title="Permalink to this headline">¶</a></h3>
+<p>Промаксимизируйте функцию <span class="math notranslate nohighlight">\((x-a)^2\)</span> на отрезке <span class="math notranslate nohighlight">\([-1,1]\)</span>. Запишите ответ как функцию от <span class="math notranslate nohighlight">\(а\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[ 
 x^{\ast}(a) = (\ldots)\cdot \mathbb{I}(a&gt; \ldots) +  (\ldots) \cdot \mathbb{I}(a&lt; \ldots)
-$$
-
-### Задача 0.6
-
-Используя сначала метод линий уровня, а затем (или одновременно) метод Лагранжа, решите следующую оптимизацинную задачу:
-
-$$ 
+\]</div>
+</div>
+<div class="section" id="id42">
+<h3>Задача 0.6<a class="headerlink" href="#id42" title="Permalink to this headline">¶</a></h3>
+<p>Используя сначала метод линий уровня, а затем (или одновременно) метод Лагранжа, решите следующую оптимизацинную задачу:</p>
+<div class="math notranslate nohighlight">
+\[ 
 x y \to \max_{(x,y) \in \mathbb{R}^2_{+}} \quad s.t. \quad x^2 + q y^2 \leqslant 1
-$$
-
-Является ли эта задача выпуклой?
-
-### Задача 0.7
-
-Рассмотрим **лексикографические предпочтения** (такие что мы ранжируем сначала по первой координате, потом по второй, и так далее...) на $\mathbb{N}^n_{+}$. Докажите, что предпосылки Теоремы Дебре не выполняются, но полезность, тем не менее, можно построить.
-
-Рассмотрим лексикографические предпочтения  на $\mathbb{R}^n_{+}$. Докажите, что предпосылки Теоремы Дебре не выполняются. Как вы думаете, удастся ли построить полезность? Если нет, то в чем проблема?
-
-# Домашнее задание 1
-
-## Первый блок задач (10 баллов)
-
-### Задача 1.1 (1 балла)
-Рассмотрим нео-классическую модель с предпочтениями $\succcurlyeq$ на множестве альтернатив $X = \{-2, -1, 1, 2\}$, заданные графом на Рис. 1 в лекции.
-
-Заполните матрицу бинарного отношения а также подберите глобальную функцию (композиция элементарных), которая ее представляет:
-$$ 
+\]</div>
+<p>Является ли эта задача выпуклой?</p>
+</div>
+<div class="section" id="id43">
+<h3>Задача 0.7<a class="headerlink" href="#id43" title="Permalink to this headline">¶</a></h3>
+<p>Рассмотрим <strong>лексикографические предпочтения</strong> (такие что мы ранжируем сначала по первой координате, потом по второй, и так далее…) на <span class="math notranslate nohighlight">\(\mathbb{N}^n_{+}\)</span>. Докажите, что предпосылки Теоремы Дебре не выполняются, но полезность, тем не менее, можно построить.</p>
+<p>Рассмотрим лексикографические предпочтения  на <span class="math notranslate nohighlight">\(\mathbb{R}^n_{+}\)</span>. Докажите, что предпосылки Теоремы Дебре не выполняются. Как вы думаете, удастся ли построить полезность? Если нет, то в чем проблема?</p>
+</div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="id44">
+<h1>Домашнее задание 1<a class="headerlink" href="#id44" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id45">
+<h2>Первый блок задач (10 баллов)<a class="headerlink" href="#id45" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id46">
+<h3>Задача 1.1 (1 балла)<a class="headerlink" href="#id46" title="Permalink to this headline">¶</a></h3>
+<p>Рассмотрим нео-классическую модель с предпочтениями <span class="math notranslate nohighlight">\(\succcurlyeq\)</span> на множестве альтернатив <span class="math notranslate nohighlight">\(X = \{-2, -1, 1, 2\}\)</span>, заданные графом на Рис. 1 в лекции.</p>
+<p>Заполните матрицу бинарного отношения а также подберите глобальную функцию (композиция элементарных), которая ее представляет:
+$<span class="math notranslate nohighlight">\( 
 \begin{array}{c|ccc}
  \succcurlyeq &amp; -2 &amp; -1 &amp; 1 &amp; 2\\
 \hline
@@ -923,11 +1016,12 @@ $$
 1  &amp; *  &amp; *  &amp; 1 &amp; *\\
 2 &amp; *  &amp; * &amp; * &amp; 1\\
 \end{array} \quad \quad \quad \quad U(*) = ?
-$$
-
-### Задача 1.2 (2 балла)
-Рассмотрим нео-классическую модель с предпочтениями $\succcurlyeq$ на множестве альтернатив $X = \{x, y, z, w\}$, матрицей
-$$ 
+\)</span>$</p>
+</div>
+<div class="section" id="id47">
+<h3>Задача 1.2 (2 балла)<a class="headerlink" href="#id47" title="Permalink to this headline">¶</a></h3>
+<p>Рассмотрим нео-классическую модель с предпочтениями <span class="math notranslate nohighlight">\(\succcurlyeq\)</span> на множестве альтернатив <span class="math notranslate nohighlight">\(X = \{x, y, z, w\}\)</span>, матрицей
+$<span class="math notranslate nohighlight">\( 
 \begin{array}{c|ccc}
  \succcurlyeq &amp; x &amp; y &amp; z &amp; w\\
 \hline
@@ -936,74 +1030,74 @@ y  &amp; 0  &amp; * &amp; * &amp; * \\
 z  &amp; *  &amp; 0  &amp; * &amp; * \\
 w &amp; 0  &amp; 0 &amp; 0 &amp; * \\
 \end{array}
-$$
-
-Как вы думаете, какое минимально необходимое число экспериментов надо провести, чтобы гарантированно полностью откалибровать эту модель? Аргументируйте.
-
-Эксперимент это вопрос, который вы задаете человеку в Лаборатории Экспериментальной Экономики. Когда вы калибруете нео-классическую модель, вы предполагаете, что все необходимые аксиомы выполнены.
-
-### Задача 1.3 (2 балла)
-
-Рассмотрим экзотическую модель с предпочтениями $\succcurlyeq$ на $X$, которые заданы следующим образом. Для двух рациональных предпочтений $\succcurlyeq_1$ и $\succcurlyeq_2$ на том же множестве альтернатив, определим
-$$ x \succcurlyeq y \quad \Leftrightarrow \quad x \succ_1 y \quad \text{или} \quad (x \sim_1 y \quad \text{и} \quad x \succcurlyeq_2 y)$$ То есть, в нашей экзотической модели, $x$ предпочитается $y$ тогда и только тогда, когда либо $\succcurlyeq_1$ предпочитает $x$, либо $\succcurlyeq_1$ безразличен но тогда $\succcurlyeq_2$ предпочитает $x$. Докажите, что $\succcurlyeq$ рациональное предпочтение, или приведите контрпример.
-
-### Задача 1.4 (5 балла)
-
-Рассмотрим новую модель поведения потребителя, отличную от предпочтений и полезностей. Модель состоит из пространства альтернатив $X$ и отображения $C$ которое ставит любому подмножеству $Y \subset X$ уже его подмножество $Z \subset Y \subset X$, обязательно непустое. Будем называть $Y$ - **меню** a $Z$ - **выбор**.
-
-То есть, мы предлагаем агенту меню с товарами, а он вычеркивает из него часть (или, возможно, ничего не вычеркивает, но главное чтобы он не вычеркнул вообще все) и возвращает меню со словами &quot;это мой выбор&quot;.
-
-&gt; **Слабая Аксиома Выбора** (WARP) говорит, что для двух портфелей $x, y \in X$ невозможно, чтобы в одном меню $Y&#39;$: $x$ был выбран в присутствие $y$, а в другом меню $Y&#39;&#39;$: $y$ был выбран в присутствие $x$, но $x$ выбран не был. Подразумевается, что $x, y \in Y&#39;$ и $x, y \in Y&#39;&#39;$.
-
-Придумайте как вывести модель выбора из модели предпочтений. Докажите, что для рациональных предпочтений, ассоциированный с ними выбор всегда удовлетворяет WARP. 
-
-&gt; **Обобщенная Аксиома Выбора** (GARP) говорит, что для последовательности  портфелей $x_1, x_2, \ldots x_n \in X$ невозможно, чтобы в одном меню: $x_1$ был выбран в присутствие $x_2$, в другом меню $x_2$ был выбран в присутствие $x_3$, и так далее... до $x_n$. А в еще одном меню $x_n$ был выбран в присутствие $x_1$, но $x_1$ выбран не был. 
-
-Придумайте как вывести модель предпочтений из модели выбора. Докажите, что в модели выбора, удовлетворяющей GARP, ассоциированные предпочтения обязательно рациональны.
-
-## Второй блок задач (10 баллов)
-
-### Задача 2.1 (1 балл)
-
-Дозаполните определения выпуклого множества, полезности и предпочтения, постарайтесь не запутаться:
-
-&gt; множество $X$ выпукло если для любых $x,y \in X$: $$ \forall \alpha \in (0,1): \quad \alpha x + \ldots$$
-
-&gt; полезность $U$ выпуклa если для любых $x,y \in X$: $$ \forall \alpha \in (0,1): \ldots$$
-
-&gt; предпочтения $\succcurlyeq$ выпуклы если для любых $z \in X$ и $x, y \in L_{+}(x)$: $$ \forall \alpha \in (0,1): \quad \alpha x + \ldots$$
-
-### Задача 2.2 (1 балл)
-
-Докажите, что объединение двух выпуклых множеств выпукло, либо приведите контрпример.
-
-### Задача 2.3 (2 баллa)
-
-Промаксимизируйте функцию $-(x-1)^2$ на отрезке $[-b,b]$. Запишите ответ как функцию от $b&gt;0$.
-
-$$ 
+\)</span>$</p>
+<p>Как вы думаете, какое минимально необходимое число экспериментов надо провести, чтобы гарантированно полностью откалибровать эту модель? Аргументируйте.</p>
+<p>Эксперимент это вопрос, который вы задаете человеку в Лаборатории Экспериментальной Экономики. Когда вы калибруете нео-классическую модель, вы предполагаете, что все необходимые аксиомы выполнены.</p>
+</div>
+<div class="section" id="id48">
+<h3>Задача 1.3 (2 балла)<a class="headerlink" href="#id48" title="Permalink to this headline">¶</a></h3>
+<p>Рассмотрим экзотическую модель с предпочтениями <span class="math notranslate nohighlight">\(\succcurlyeq\)</span> на <span class="math notranslate nohighlight">\(X\)</span>, которые заданы следующим образом. Для двух рациональных предпочтений <span class="math notranslate nohighlight">\(\succcurlyeq_1\)</span> и <span class="math notranslate nohighlight">\(\succcurlyeq_2\)</span> на том же множестве альтернатив, определим
+$<span class="math notranslate nohighlight">\( x \succcurlyeq y \quad \Leftrightarrow \quad x \succ_1 y \quad \text{или} \quad (x \sim_1 y \quad \text{и} \quad x \succcurlyeq_2 y)\)</span><span class="math notranslate nohighlight">\( То есть, в нашей экзотической модели, \)</span>x<span class="math notranslate nohighlight">\( предпочитается \)</span>y<span class="math notranslate nohighlight">\( тогда и только тогда, когда либо \)</span>\succcurlyeq_1<span class="math notranslate nohighlight">\( предпочитает \)</span>x<span class="math notranslate nohighlight">\(, либо \)</span>\succcurlyeq_1<span class="math notranslate nohighlight">\( безразличен но тогда \)</span>\succcurlyeq_2<span class="math notranslate nohighlight">\( предпочитает \)</span>x<span class="math notranslate nohighlight">\(. Докажите, что \)</span>\succcurlyeq$ рациональное предпочтение, или приведите контрпример.</p>
+</div>
+<div class="section" id="id49">
+<h3>Задача 1.4 (5 балла)<a class="headerlink" href="#id49" title="Permalink to this headline">¶</a></h3>
+<p>Рассмотрим новую модель поведения потребителя, отличную от предпочтений и полезностей. Модель состоит из пространства альтернатив <span class="math notranslate nohighlight">\(X\)</span> и отображения <span class="math notranslate nohighlight">\(C\)</span> которое ставит любому подмножеству <span class="math notranslate nohighlight">\(Y \subset X\)</span> уже его подмножество <span class="math notranslate nohighlight">\(Z \subset Y \subset X\)</span>, обязательно непустое. Будем называть <span class="math notranslate nohighlight">\(Y\)</span> - <strong>меню</strong> a <span class="math notranslate nohighlight">\(Z\)</span> - <strong>выбор</strong>.</p>
+<p>То есть, мы предлагаем агенту меню с товарами, а он вычеркивает из него часть (или, возможно, ничего не вычеркивает, но главное чтобы он не вычеркнул вообще все) и возвращает меню со словами “это мой выбор”.</p>
+<blockquote>
+<div><p><strong>Слабая Аксиома Выбора</strong> (WARP) говорит, что для двух портфелей <span class="math notranslate nohighlight">\(x, y \in X\)</span> невозможно, чтобы в одном меню <span class="math notranslate nohighlight">\(Y'\)</span>: <span class="math notranslate nohighlight">\(x\)</span> был выбран в присутствие <span class="math notranslate nohighlight">\(y\)</span>, а в другом меню <span class="math notranslate nohighlight">\(Y''\)</span>: <span class="math notranslate nohighlight">\(y\)</span> был выбран в присутствие <span class="math notranslate nohighlight">\(x\)</span>, но <span class="math notranslate nohighlight">\(x\)</span> выбран не был. Подразумевается, что <span class="math notranslate nohighlight">\(x, y \in Y'\)</span> и <span class="math notranslate nohighlight">\(x, y \in Y''\)</span>.</p>
+</div></blockquote>
+<p>Придумайте как вывести модель выбора из модели предпочтений. Докажите, что для рациональных предпочтений, ассоциированный с ними выбор всегда удовлетворяет WARP.</p>
+<blockquote>
+<div><p><strong>Обобщенная Аксиома Выбора</strong> (GARP) говорит, что для последовательности  портфелей <span class="math notranslate nohighlight">\(x_1, x_2, \ldots x_n \in X\)</span> невозможно, чтобы в одном меню: <span class="math notranslate nohighlight">\(x_1\)</span> был выбран в присутствие <span class="math notranslate nohighlight">\(x_2\)</span>, в другом меню <span class="math notranslate nohighlight">\(x_2\)</span> был выбран в присутствие <span class="math notranslate nohighlight">\(x_3\)</span>, и так далее… до <span class="math notranslate nohighlight">\(x_n\)</span>. А в еще одном меню <span class="math notranslate nohighlight">\(x_n\)</span> был выбран в присутствие <span class="math notranslate nohighlight">\(x_1\)</span>, но <span class="math notranslate nohighlight">\(x_1\)</span> выбран не был.</p>
+</div></blockquote>
+<p>Придумайте как вывести модель предпочтений из модели выбора. Докажите, что в модели выбора, удовлетворяющей GARP, ассоциированные предпочтения обязательно рациональны.</p>
+</div>
+</div>
+<div class="section" id="id50">
+<h2>Второй блок задач (10 баллов)<a class="headerlink" href="#id50" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id51">
+<h3>Задача 2.1 (1 балл)<a class="headerlink" href="#id51" title="Permalink to this headline">¶</a></h3>
+<p>Дозаполните определения выпуклого множества, полезности и предпочтения, постарайтесь не запутаться:</p>
+<blockquote>
+<div><p>множество <span class="math notranslate nohighlight">\(X\)</span> выпукло если для любых <span class="math notranslate nohighlight">\(x,y \in X\)</span>: $<span class="math notranslate nohighlight">\( \forall \alpha \in (0,1): \quad \alpha x + \ldots\)</span>$</p>
+</div></blockquote>
+<blockquote>
+<div><p>полезность <span class="math notranslate nohighlight">\(U\)</span> выпуклa если для любых <span class="math notranslate nohighlight">\(x,y \in X\)</span>: $<span class="math notranslate nohighlight">\( \forall \alpha \in (0,1): \ldots\)</span>$</p>
+</div></blockquote>
+<blockquote>
+<div><p>предпочтения <span class="math notranslate nohighlight">\(\succcurlyeq\)</span> выпуклы если для любых <span class="math notranslate nohighlight">\(z \in X\)</span> и <span class="math notranslate nohighlight">\(x, y \in L_{+}(x)\)</span>: $<span class="math notranslate nohighlight">\( \forall \alpha \in (0,1): \quad \alpha x + \ldots\)</span>$</p>
+</div></blockquote>
+</div>
+<div class="section" id="id52">
+<h3>Задача 2.2 (1 балл)<a class="headerlink" href="#id52" title="Permalink to this headline">¶</a></h3>
+<p>Докажите, что объединение двух выпуклых множеств выпукло, либо приведите контрпример.</p>
+</div>
+<div class="section" id="a">
+<h3>Задача 2.3 (2 баллa)<a class="headerlink" href="#a" title="Permalink to this headline">¶</a></h3>
+<p>Промаксимизируйте функцию <span class="math notranslate nohighlight">\(-(x-1)^2\)</span> на отрезке <span class="math notranslate nohighlight">\([-b,b]\)</span>. Запишите ответ как функцию от <span class="math notranslate nohighlight">\(b&gt;0\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[ 
 x^{\ast}(b) = (\ldots)\cdot \mathbb{I}(b&gt; \ldots) +  (\ldots) \cdot \mathbb{I}(b&lt; \ldots)
-$$
-
-### Задача 2.4 (2 балл)
-
-Используя сначала метод линий уровня, а затем метод Лагранжа (если сможете), решите следующую оптимизацинную задачу:
-
-$$ 
+\]</div>
+</div>
+<div class="section" id="id53">
+<h3>Задача 2.4 (2 балл)<a class="headerlink" href="#id53" title="Permalink to this headline">¶</a></h3>
+<p>Используя сначала метод линий уровня, а затем метод Лагранжа (если сможете), решите следующую оптимизацинную задачу:</p>
+<div class="math notranslate nohighlight">
+\[ 
 \min(x, y) \to \max_{(x,y) \in \mathbb{R}^2_{+}} \quad s.t. \quad x + q y \leqslant 1
-$$
-
-Является ли эта задача выпуклой?
-
-### Задача 2.5 (4 балла)
-
-Рассмотрим полезность вида $U(x, y) = x^{\alpha} y^{\beta}$ в пространстве  альтернатив $\mathbb{R}^2_{+}$, то есть, $x, y&gt;0$. 
-- Используя *Гессиан*, найдите все $\alpha, \beta &gt;0$ такие что полезность вогнутая. 
-- Используя *Окаймленный Гессиан*, найдите все  $\alpha, \beta&gt;0$ при которых полезность квази-вогнутая. 
-- Наконец, найдите все  $\alpha, \beta&gt;0$ при которых полезность является монотонным преобразованием некоторой вогнутой функции.
-
-Пользуйтесь строгими версиями вогнутости или критерия, по вкусу.
-</pre></div>
+\]</div>
+<p>Является ли эта задача выпуклой?</p>
+</div>
+<div class="section" id="id54">
+<h3>Задача 2.5 (4 балла)<a class="headerlink" href="#id54" title="Permalink to this headline">¶</a></h3>
+<p>Рассмотрим полезность вида <span class="math notranslate nohighlight">\(U(x, y) = x^{\alpha} y^{\beta}\)</span> в пространстве  альтернатив <span class="math notranslate nohighlight">\(\mathbb{R}^2_{+}\)</span>, то есть, <span class="math notranslate nohighlight">\(x, y&gt;0\)</span>.</p>
+<ul class="simple">
+<li><p>Используя <em>Гессиан</em>, найдите все <span class="math notranslate nohighlight">\(\alpha, \beta &gt;0\)</span> такие что полезность вогнутая.</p></li>
+<li><p>Используя <em>Окаймленный Гессиан</em>, найдите все  <span class="math notranslate nohighlight">\(\alpha, \beta&gt;0\)</span> при которых полезность квази-вогнутая.</p></li>
+<li><p>Наконец, найдите все  <span class="math notranslate nohighlight">\(\alpha, \beta&gt;0\)</span> при которых полезность является монотонным преобразованием некоторой вогнутой функции.</p></li>
+</ul>
+<p>Пользуйтесь строгими версиями вогнутости или критерия, по вкусу.</p>
 </div>
 </div>
 </div>
