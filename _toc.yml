@@ -9,3 +9,7 @@ parts:
   numbered: true
   chapters:
   - file: lecture_1/lecture_1
+- caption: Лекция 2
+  numbered: true
+  chapters:
+  - file: lecture_2/lecture_2
