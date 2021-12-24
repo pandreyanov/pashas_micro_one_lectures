@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Задачи для тренировки &#8212; Undergraduate Lectures in Microeconomics at HSE</title>
+    <title>Содержание и цели &#8212; Undergraduate Lectures in Microeconomics at HSE</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -42,8 +42,6 @@
     <script src="../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe"
@@ -55,8 +53,8 @@
     <script>mermaid.initialize({startOnLoad:true});</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Домашнее задание 1" href="homework_1.html" />
-    <link rel="prev" title="Лекция 1, часть 2" href="lecture_1_2.html" />
+    <link rel="next" title="Лекция 1, часть 1" href="lecture_1_1.html" />
+    <link rel="prev" title="Содержание" href="../table.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -101,6 +99,11 @@
  </span>
 </p>
 <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Содержание и цели
+  </a>
+ </li>
  <li class="toctree-l1">
   <a class="reference internal" href="lecture_1_1.html">
    Лекция 1, часть 1
@@ -111,8 +114,8 @@
    Лекция 1, часть 2
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="practice_1.html">
    Задачи для тренировки
   </a>
  </li>
@@ -174,7 +177,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/week_1/practice_1.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/week_1/intro_1.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -206,7 +209,7 @@
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id2">
-   Задача 0.1
+   Литература
   </a>
  </li>
 </ul>
@@ -221,68 +224,27 @@
               <div>
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="id1">
-<h1>Задачи для тренировки<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<h1>Содержание и цели<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>На этой неделе мы поговорим о моделях поведения потребителя.</p>
+<p><strong>Первая часть лекции</strong> посвящена моделям в целом и зачем они нужны. Мы поговорим о двух классических моделях поведения, которые можно охарактеризовать грубо как:</p>
+<ul class="simple">
+<li><p><strong>полезность</strong> (классическая модель)</p></li>
+<li><p><strong>предпочтение</strong> (нео-классическая модель)</p></li>
+</ul>
+<p>Будет также третья модель, модель <strong>выбора</strong>, вы увидите ее на семинаре и в домашке. Это продвинутый материал, его надо частично самостоятельно изучить по учебнику БЖЦ.</p>
+<p>У каждой модели будет свой набор аксиом. Мы обсудим, как эти модели связаны друг с другом, а также потренируемся в их формализме на примерах. Важную часть в этой лекции будет занимать <strong>Теорема Дебре</strong>, связывающая полезность и предпочтения. В центре этой теоремы лежит понятие <strong>непрерывности</strong>, которое вам придется освоить. Формулировку этой теоремы придется выучить.</p>
+<p><strong>Вторая часть лекции</strong> посвящена началам оптимизации, которой вам придется активно пользоваться в этом курсе. Особое внимание будет уделено понятию <strong>выпуклости</strong>. Ожидается, что вы научитесь отличать выпуклые задач от не выпуклых, что сильно облегчит вам жизнь в будущем.</p>
 <div class="section" id="id2">
-<h2>Задача 0.1<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p>Рассмотрим классическую модель с полезностью <span class="math notranslate nohighlight">\(U(\ast) = f^3(\ast)\)</span> и множеством альтернатив <span class="math notranslate nohighlight">\(X = \{x, y, z, w\}\)</span>, таким что $<span class="math notranslate nohighlight">\(f(x) = -1, f(y) = 1, f(z) = 0, f(w) = 2.\)</span><span class="math notranslate nohighlight">\( Заполните матрицу предпочтения \)</span>\succcurlyeq<span class="math notranslate nohighlight">\( ассоциированного с \)</span>U(\ast)<span class="math notranslate nohighlight">\(:
-\)</span><span class="math notranslate nohighlight">\( 
-\begin{array}{c|ccc}
- \succcurlyeq &amp; x &amp; y &amp; z &amp; w\\
-\hline
-x  &amp; 1  &amp; * &amp; * &amp; *\\
-y  &amp; *  &amp; 1 &amp; * &amp; *\\
-z  &amp; *  &amp; *  &amp; 1 &amp; *\\
-w &amp; *  &amp; * &amp; * &amp; 1\\
-\end{array}
-\)</span>$</p>
-<!-- 
-## Задача 0.2
-Рассмотрим нео-классическую модель с предпочтениями $\succcurlyeq$ на множестве альтернатив $X = \{x, y, z, w\}$, заданными матрицей:
-$$ 
-\begin{array}{c|ccc}
- \succcurlyeq & x & y & z & w\\
-\hline
-x  & 1  & 1 & 1 & 0\\
-y  & 0  & 1 & 1 & 0\\
-z  & 0  & 0  & 1 & 0\\
-w & 1  & 1 & 1 & 1\\
-\end{array} \quad \quad \quad \quad U(*) = ?
-$$
-
-Подберите полезность которая представляет такие предпочтения.
-
-## Задача 0.3
-
-Рассмотрим экзотическую модель с предпочтениями $\succcurlyeq$ на $X$, которые заданы следующим образом. Для двух рациональных предпочтений $\succcurlyeq_1$ и $\succcurlyeq_2$ на том же множестве альтернатив, определим
-$$ x \succcurlyeq y \quad \Leftrightarrow \quad x \succcurlyeq_1 y \quad \text{и} \quad x \succcurlyeq_2 y$$ То есть, в нашей экзотической модели, $x$ предпочитается $y$ тогда и только тогда, когда $\succcurlyeq_i$ единогласно предпочитают $x$. Докажите, что $\succcurlyeq$ рациональное предпочтение, или приведите контрпример.
-
-## Задача 0.4
-
-Докажите, что пересечение двух выпуклых множеств выпукло.
-
-## Задача 0.5
-
-Промаксимизируйте функцию $(x-a)^2$ на отрезке $[-1,1]$. Запишите ответ как функцию от $а$.
-
-$$ 
-x^{\ast}(a) = (\ldots)\cdot \mathbb{I}(a> \ldots) +  (\ldots) \cdot \mathbb{I}(a< \ldots)
-$$
-
-## Задача 0.6
-
-Используя сначала метод линий уровня, а затем (или одновременно) метод Лагранжа, решите следующую оптимизацинную задачу:
-
-$$ 
-x y \to \max_{(x,y) \in \mathbb{R}^2_{+}} \quad s.t. \quad x^2 + q y^2 \leqslant 1
-$$
-
-Является ли эта задача выпуклой?
-
-## Задача 0.7
-
-Рассмотрим **лексикографические предпочтения** (такие что мы ранжируем сначала по первой координате, потом по второй, и так далее...) на $\mathbb{N}^n_{+}$. Докажите, что предпосылки Теоремы Дебре не выполняются, но полезность, тем не менее, можно построить.
-
-Рассмотрим лексикографические предпочтения  на $\mathbb{R}^n_{+}$. Докажите, что предпосылки Теоремы Дебре не выполняются. Как вы думаете, удастся ли построить полезность? Если нет, то в чем проблема? --></div>
+<h2>Литература<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><strong>Вариан, 1.1-1.5</strong> доступно о моделировании, спросе, оптимизации и равновесии</p></li>
+<li><p><strong>Вариан, 3.1-3.4</strong> доступно о предпочтениях</p></li>
+<li><p><strong>Вариан, 4.1-4.3</strong> доступно о полезностях</p></li>
+<li><p><strong>JR, 1.2</strong> очень формально о полезностях и предпочтениях</p></li>
+<li><p><strong>БЖЦ 1.5-1.6, 1А</strong> связь предпочтений и полезностей</p></li>
+<li><p><strong>БЖЦ 1А</strong> модель выбора</p></li>
+</ul>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -310,17 +272,17 @@ $$
         
             <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="lecture_1_2.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="../table.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Лекция 1, часть 2</p>
+            <p class="prev-next-title">Содержание</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="homework_1.html" title="next page">
+    <a class='right-next' id="next-link" href="lecture_1_1.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Домашнее задание 1</p>
+        <p class="prev-next-title">Лекция 1, часть 1</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
