@@ -250,7 +250,7 @@ $$
 
 :::{admonition} Линейная полезность
 :class: note
-\
+
 $$U(x, y) = x/a +y/b,$$ 
 
 :::
@@ -297,7 +297,7 @@ $$ap = bq$$
 
 :::{admonition} CES полезность
 :class: note
-\
+
 $$U(x, y) = (\alpha x^{\rho} + (1-\alpha)y^{\rho})^{1/\rho}, \quad \rho < 1.$$
 
 :::
