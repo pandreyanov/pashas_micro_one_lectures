@@ -3,3 +3,6 @@
 
 format: jb-book
 root: table
+
+chapters:
+- file: lecture_1
