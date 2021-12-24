@@ -102,6 +102,11 @@
 </p>
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
+  <a class="reference internal" href="intro_1.html">
+   Содержание и цели
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="lecture_1_1.html">
    Лекция 1, часть 1
   </a>
@@ -214,6 +219,53 @@
      Задача 1.1 (1 балла)
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     Задача 1.2 (2 балла)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id5">
+     Задача 1.3 (2 балла)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id6">
+     Задача 1.4 (5 балла)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id7">
+   Второй блок задач (10 баллов)
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id8">
+     Задача 2.1 (1 балл)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id9">
+     Задача 2.2 (1 балл)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a">
+     Задача 2.3 (2 баллa)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id10">
+     Задача 2.4 (2 балл)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id11">
+     Задача 2.5 (4 балла)
+    </a>
+   </li>
   </ul>
  </li>
 </ul>
@@ -234,96 +286,100 @@
 <div class="section" id="id3">
 <h3>Задача 1.1 (1 балла)<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
 <p>Рассмотрим нео-классическую модель с предпочтениями <span class="math notranslate nohighlight">\(\succcurlyeq\)</span> на множестве альтернатив <span class="math notranslate nohighlight">\(X = \{-2, -1, 1, 2\}\)</span>, заданные графом на Рис. 1 в лекции.</p>
-<!-- Заполните матрицу бинарного отношения а также подберите глобальную функцию (композиция элементарных), которая ее представляет:
-$$ 
+<p>Заполните матрицу бинарного отношения а также подберите глобальную функцию (композиция элементарных), которая ее представляет:
+$<span class="math notranslate nohighlight">\( 
 \begin{array}{c|ccc}
- \succcurlyeq & -2 & -1 & 1 & 2\\
+ \succcurlyeq &amp; -2 &amp; -1 &amp; 1 &amp; 2\\
 \hline
--2  & 1  & * & * & *\\
--1  & *  & 1 & * & *\\
-1  & *  & *  & 1 & *\\
-2 & *  & * & * & 1\\
+-2  &amp; 1  &amp; * &amp; * &amp; *\\
+-1  &amp; *  &amp; 1 &amp; * &amp; *\\
+1  &amp; *  &amp; *  &amp; 1 &amp; *\\
+2 &amp; *  &amp; * &amp; * &amp; 1\\
 \end{array} \quad \quad \quad \quad U(*) = ?
-$$
-
-### Задача 1.2 (2 балла)
-Рассмотрим нео-классическую модель с предпочтениями $\succcurlyeq$ на множестве альтернатив $X = \{x, y, z, w\}$, матрицей
-$$ 
+\)</span>$</p>
+</div>
+<div class="section" id="id4">
+<h3>Задача 1.2 (2 балла)<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p>Рассмотрим нео-классическую модель с предпочтениями <span class="math notranslate nohighlight">\(\succcurlyeq\)</span> на множестве альтернатив <span class="math notranslate nohighlight">\(X = \{x, y, z, w\}\)</span>, матрицей</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} 
 \begin{array}{c|ccc}
- \succcurlyeq & x & y & z & w\\
+ \succcurlyeq &amp; x &amp; y &amp; z &amp; w\\
 \hline
-x  & *  & * & * & *\\
-y  & 0  & * & * & * \\
-z  & *  & 0  & * & * \\
-w & 0  & 0 & 0 & * \\
+x  &amp; *  &amp; * &amp; * &amp; *\\
+y  &amp; 0  &amp; * &amp; * &amp; * \\
+z  &amp; *  &amp; 0  &amp; * &amp; * \\
+w &amp; 0  &amp; 0 &amp; 0 &amp; * \\
 \end{array}
-$$
-
-Как вы думаете, какое минимально необходимое число экспериментов надо провести, чтобы гарантированно полностью откалибровать эту модель? Аргументируйте.
-
-Эксперимент это вопрос, который вы задаете человеку в Лаборатории Экспериментальной Экономики. Когда вы калибруете нео-классическую модель, вы предполагаете, что все необходимые аксиомы выполнены.
-
-### Задача 1.3 (2 балла)
-
-Рассмотрим экзотическую модель с предпочтениями $\succcurlyeq$ на $X$, которые заданы следующим образом. Для двух рациональных предпочтений $\succcurlyeq_1$ и $\succcurlyeq_2$ на том же множестве альтернатив, определим
-$$ x \succcurlyeq y \quad \Leftrightarrow \quad x \succ_1 y \quad \text{или} \quad (x \sim_1 y \quad \text{и} \quad x \succcurlyeq_2 y)$$ То есть, в нашей экзотической модели, $x$ предпочитается $y$ тогда и только тогда, когда либо $\succcurlyeq_1$ предпочитает $x$, либо $\succcurlyeq_1$ безразличен но тогда $\succcurlyeq_2$ предпочитает $x$. Докажите, что $\succcurlyeq$ рациональное предпочтение, или приведите контрпример.
-
-### Задача 1.4 (5 балла)
-
-Рассмотрим новую модель поведения потребителя, отличную от предпочтений и полезностей. Модель состоит из пространства альтернатив $X$ и отображения $C$ которое ставит любому подмножеству $Y \subset X$ уже его подмножество $Z \subset Y \subset X$, обязательно непустое. Будем называть $Y$ - **меню** a $Z$ - **выбор**.
-
-То есть, мы предлагаем агенту меню с товарами, а он вычеркивает из него часть (или, возможно, ничего не вычеркивает, но главное чтобы он не вычеркнул вообще все) и возвращает меню со словами "это мой выбор".
-
-> **Слабая Аксиома Выбора** (WARP) говорит, что для двух портфелей $x, y \in X$ невозможно, чтобы в одном меню $Y'$: $x$ был выбран в присутствие $y$, а в другом меню $Y''$: $y$ был выбран в присутствие $x$, но $x$ выбран не был. Подразумевается, что $x, y \in Y'$ и $x, y \in Y''$.
-
-Придумайте как вывести модель выбора из модели предпочтений. Докажите, что для рациональных предпочтений, ассоциированный с ними выбор всегда удовлетворяет WARP. 
-
-> **Обобщенная Аксиома Выбора** (GARP) говорит, что для последовательности  портфелей $x_1, x_2, \ldots x_n \in X$ невозможно, чтобы в одном меню: $x_1$ был выбран в присутствие $x_2$, в другом меню $x_2$ был выбран в присутствие $x_3$, и так далее... до $x_n$. А в еще одном меню $x_n$ был выбран в присутствие $x_1$, но $x_1$ выбран не был. 
-
-Придумайте как вывести модель предпочтений из модели выбора. Докажите, что в модели выбора, удовлетворяющей GARP, ассоциированные предпочтения обязательно рациональны.
-
-## Второй блок задач (10 баллов)
-
-### Задача 2.1 (1 балл)
-
-Дозаполните определения выпуклого множества, полезности и предпочтения, постарайтесь не запутаться:
-
-> множество $X$ выпукло если для любых $x,y \in X$: $$ \forall \alpha \in (0,1): \quad \alpha x + \ldots$$
-
-> полезность $U$ выпуклa если для любых $x,y \in X$: $$ \forall \alpha \in (0,1): \ldots$$
-
-> предпочтения $\succcurlyeq$ выпуклы если для любых $z \in X$ и $x, y \in L_{+}(x)$: $$ \forall \alpha \in (0,1): \quad \alpha x + \ldots$$
-
-### Задача 2.2 (1 балл)
-
-Докажите, что объединение двух выпуклых множеств выпукло, либо приведите контрпример.
-
-### Задача 2.3 (2 баллa)
-
-Промаксимизируйте функцию $-(x-1)^2$ на отрезке $[-b,b]$. Запишите ответ как функцию от $b>0$.
-
-$$ 
-x^{\ast}(b) = (\ldots)\cdot \mathbb{I}(b> \ldots) +  (\ldots) \cdot \mathbb{I}(b< \ldots)
-$$
-
-### Задача 2.4 (2 балл)
-
-Используя сначала метод линий уровня, а затем метод Лагранжа (если сможете), решите следующую оптимизацинную задачу:
-
-$$ 
+\end{split}\]</div>
+<p>Как вы думаете, какое минимально необходимое число экспериментов надо провести, чтобы гарантированно полностью откалибровать эту модель? Аргументируйте.</p>
+<p>Эксперимент это вопрос, который вы задаете человеку в Лаборатории Экспериментальной Экономики. Когда вы калибруете нео-классическую модель, вы предполагаете, что все необходимые аксиомы выполнены.</p>
+</div>
+<div class="section" id="id5">
+<h3>Задача 1.3 (2 балла)<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<p>Рассмотрим экзотическую модель с предпочтениями <span class="math notranslate nohighlight">\(\succcurlyeq\)</span> на <span class="math notranslate nohighlight">\(X\)</span>, которые заданы следующим образом. Для двух рациональных предпочтений <span class="math notranslate nohighlight">\(\succcurlyeq_1\)</span> и <span class="math notranslate nohighlight">\(\succcurlyeq_2\)</span> на том же множестве альтернатив, определим
+$<span class="math notranslate nohighlight">\( x \succcurlyeq y \quad \Leftrightarrow \quad x \succ_1 y \quad \text{или} \quad (x \sim_1 y \quad \text{и} \quad x \succcurlyeq_2 y)\)</span><span class="math notranslate nohighlight">\( То есть, в нашей экзотической модели, \)</span>x<span class="math notranslate nohighlight">\( предпочитается \)</span>y<span class="math notranslate nohighlight">\( тогда и только тогда, когда либо \)</span>\succcurlyeq_1<span class="math notranslate nohighlight">\( предпочитает \)</span>x<span class="math notranslate nohighlight">\(, либо \)</span>\succcurlyeq_1<span class="math notranslate nohighlight">\( безразличен но тогда \)</span>\succcurlyeq_2<span class="math notranslate nohighlight">\( предпочитает \)</span>x<span class="math notranslate nohighlight">\(. Докажите, что \)</span>\succcurlyeq$ рациональное предпочтение, или приведите контрпример.</p>
+</div>
+<div class="section" id="id6">
+<h3>Задача 1.4 (5 балла)<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<p>Рассмотрим новую модель поведения потребителя, отличную от предпочтений и полезностей. Модель состоит из пространства альтернатив <span class="math notranslate nohighlight">\(X\)</span> и отображения <span class="math notranslate nohighlight">\(C\)</span> которое ставит любому подмножеству <span class="math notranslate nohighlight">\(Y \subset X\)</span> уже его подмножество <span class="math notranslate nohighlight">\(Z \subset Y \subset X\)</span>, обязательно непустое. Будем называть <span class="math notranslate nohighlight">\(Y\)</span> - <strong>меню</strong> a <span class="math notranslate nohighlight">\(Z\)</span> - <strong>выбор</strong>.</p>
+<p>То есть, мы предлагаем агенту меню с товарами, а он вычеркивает из него часть (или, возможно, ничего не вычеркивает, но главное чтобы он не вычеркнул вообще все) и возвращает меню со словами “это мой выбор”.</p>
+<blockquote>
+<div><p><strong>Слабая Аксиома Выбора</strong> (WARP) говорит, что для двух портфелей <span class="math notranslate nohighlight">\(x, y \in X\)</span> невозможно, чтобы в одном меню <span class="math notranslate nohighlight">\(Y'\)</span>: <span class="math notranslate nohighlight">\(x\)</span> был выбран в присутствие <span class="math notranslate nohighlight">\(y\)</span>, а в другом меню <span class="math notranslate nohighlight">\(Y''\)</span>: <span class="math notranslate nohighlight">\(y\)</span> был выбран в присутствие <span class="math notranslate nohighlight">\(x\)</span>, но <span class="math notranslate nohighlight">\(x\)</span> выбран не был. Подразумевается, что <span class="math notranslate nohighlight">\(x, y \in Y'\)</span> и <span class="math notranslate nohighlight">\(x, y \in Y''\)</span>.</p>
+</div></blockquote>
+<p>Придумайте как вывести модель выбора из модели предпочтений. Докажите, что для рациональных предпочтений, ассоциированный с ними выбор всегда удовлетворяет WARP.</p>
+<blockquote>
+<div><p><strong>Обобщенная Аксиома Выбора</strong> (GARP) говорит, что для последовательности  портфелей <span class="math notranslate nohighlight">\(x_1, x_2, \ldots x_n \in X\)</span> невозможно, чтобы в одном меню: <span class="math notranslate nohighlight">\(x_1\)</span> был выбран в присутствие <span class="math notranslate nohighlight">\(x_2\)</span>, в другом меню <span class="math notranslate nohighlight">\(x_2\)</span> был выбран в присутствие <span class="math notranslate nohighlight">\(x_3\)</span>, и так далее… до <span class="math notranslate nohighlight">\(x_n\)</span>. А в еще одном меню <span class="math notranslate nohighlight">\(x_n\)</span> был выбран в присутствие <span class="math notranslate nohighlight">\(x_1\)</span>, но <span class="math notranslate nohighlight">\(x_1\)</span> выбран не был.</p>
+</div></blockquote>
+<p>Придумайте как вывести модель предпочтений из модели выбора. Докажите, что в модели выбора, удовлетворяющей GARP, ассоциированные предпочтения обязательно рациональны.</p>
+</div>
+</div>
+<div class="section" id="id7">
+<h2>Второй блок задач (10 баллов)<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id8">
+<h3>Задача 2.1 (1 балл)<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<p>Дозаполните определения выпуклого множества, полезности и предпочтения, постарайтесь не запутаться:</p>
+<blockquote>
+<div><p>множество <span class="math notranslate nohighlight">\(X\)</span> выпукло если для любых <span class="math notranslate nohighlight">\(x,y \in X\)</span>: $<span class="math notranslate nohighlight">\( \forall \alpha \in (0,1): \quad \alpha x + \ldots\)</span>$</p>
+</div></blockquote>
+<blockquote>
+<div><p>полезность <span class="math notranslate nohighlight">\(U\)</span> выпуклa если для любых <span class="math notranslate nohighlight">\(x,y \in X\)</span>: $<span class="math notranslate nohighlight">\( \forall \alpha \in (0,1): \ldots\)</span>$</p>
+</div></blockquote>
+<blockquote>
+<div><p>предпочтения <span class="math notranslate nohighlight">\(\succcurlyeq\)</span> выпуклы если для любых <span class="math notranslate nohighlight">\(z \in X\)</span> и <span class="math notranslate nohighlight">\(x, y \in L_{+}(x)\)</span>: $<span class="math notranslate nohighlight">\( \forall \alpha \in (0,1): \quad \alpha x + \ldots\)</span>$</p>
+</div></blockquote>
+</div>
+<div class="section" id="id9">
+<h3>Задача 2.2 (1 балл)<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<p>Докажите, что объединение двух выпуклых множеств выпукло, либо приведите контрпример.</p>
+</div>
+<div class="section" id="a">
+<h3>Задача 2.3 (2 баллa)<a class="headerlink" href="#a" title="Permalink to this headline">¶</a></h3>
+<p>Промаксимизируйте функцию <span class="math notranslate nohighlight">\(-(x-1)^2\)</span> на отрезке <span class="math notranslate nohighlight">\([-b,b]\)</span>. Запишите ответ как функцию от <span class="math notranslate nohighlight">\(b&gt;0\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[ 
+x^{\ast}(b) = (\ldots)\cdot \mathbb{I}(b&gt; \ldots) +  (\ldots) \cdot \mathbb{I}(b&lt; \ldots)
+\]</div>
+</div>
+<div class="section" id="id10">
+<h3>Задача 2.4 (2 балл)<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<p>Используя сначала метод линий уровня, а затем метод Лагранжа (если сможете), решите следующую оптимизацинную задачу:</p>
+<div class="math notranslate nohighlight">
+\[ 
 \min(x, y) \to \max_{(x,y) \in \mathbb{R}^2_{+}} \quad s.t. \quad x + q y \leqslant 1
-$$
-
-Является ли эта задача выпуклой?
-
-### Задача 2.5 (4 балла)
-
-Рассмотрим полезность вида $U(x, y) = x^{\alpha} y^{\beta}$ в пространстве  альтернатив $\mathbb{R}^2_{+}$, то есть, $x, y>0$. 
-- Используя *Гессиан*, найдите все $\alpha, \beta >0$ такие что полезность вогнутая. 
-- Используя *Окаймленный Гессиан*, найдите все  $\alpha, \beta>0$ при которых полезность квази-вогнутая. 
-- Наконец, найдите все  $\alpha, \beta>0$ при которых полезность является монотонным преобразованием некоторой вогнутой функции.
-
-Пользуйтесь строгими версиями вогнутости или критерия, по вкусу. --></div>
+\]</div>
+<p>Является ли эта задача выпуклой?</p>
+</div>
+<div class="section" id="id11">
+<h3>Задача 2.5 (4 балла)<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<p>Рассмотрим полезность вида <span class="math notranslate nohighlight">\(U(x, y) = x^{\alpha} y^{\beta}\)</span> в пространстве  альтернатив <span class="math notranslate nohighlight">\(\mathbb{R}^2_{+}\)</span>, то есть, <span class="math notranslate nohighlight">\(x, y&gt;0\)</span>.</p>
+<ul class="simple">
+<li><p>Используя <em>Гессиан</em>, найдите все <span class="math notranslate nohighlight">\(\alpha, \beta &gt;0\)</span> такие что полезность вогнутая.</p></li>
+<li><p>Используя <em>Окаймленный Гессиан</em>, найдите все  <span class="math notranslate nohighlight">\(\alpha, \beta&gt;0\)</span> при которых полезность квази-вогнутая.</p></li>
+<li><p>Наконец, найдите все  <span class="math notranslate nohighlight">\(\alpha, \beta&gt;0\)</span> при которых полезность является монотонным преобразованием некоторой вогнутой функции.</p></li>
+</ul>
+<p>Пользуйтесь строгими версиями вогнутости или критерия, по вкусу.</p>
+</div>
 </div>
 </div>
 
