@@ -343,8 +343,9 @@
 <h1>Лекция 1, часть 1<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="id2">
 <h2>Зачем нужны модели<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p>В прошлом вы уже сталкивались с разнообразными моделями, например, <em>уравнение Ома</em> <span class="math notranslate nohighlight">\(I = U/R\)</span> описывает связь между током и напряжением, а  <em>уравнение Ньютона</em> <span class="math notranslate nohighlight">\(F = m a\)</span> описывает связь между силой и ускорением. Возможно, вы слышали, что <em>кинетическая</em> энергия задается уравнением
-$<span class="math notranslate nohighlight">\(E_k = \sum_{i=1}^n \frac{m v_i^2}{2}.\)</span>$</p>
+<p>В прошлом вы уже сталкивались с разнообразными моделями, например, <em>уравнение Ома</em> <span class="math notranslate nohighlight">\(I = U/R\)</span> описывает связь между током и напряжением, а  <em>уравнение Ньютона</em> <span class="math notranslate nohighlight">\(F = m a\)</span> описывает связь между силой и ускорением. Возможно, вы слышали, что <em>кинетическая</em> энергия задается уравнением</p>
+<div class="math notranslate nohighlight">
+\[E_k = \sum_{i=1}^n \frac{m v_i^2}{2}.\]</div>
 <p>Возможно, вы не отдавали себе в этом отчет, но это всего лишь модели реальности. Понять это очень легко, потому что каждый раз в уравнении присутствует латентная переменная, которую невозможно увидеть или измерить напрямую. В уравнении Ома это <em>ток</em>, а в уравнении Ньютона это <em>сила</em>. Массу и ускорение мы можем почувствовать, но кинетическая энергия существует лишь в нашем воображении.</p>
 <p>Похожим образом, в экономике тоже есть большое количество вымышленных объектов. Как и в физике, эти уравнения связывают что то что можно измерить с чем то, что измерить нельзя. Чего стоит одна <em>невидимая рука рынка</em> Адама Смита:</p>
 <p><em>По-видимому, какая-то невидимая рука заставляет их принимать участие в таком же распределении предметов, необходимых для жизни, какое существовало бы, если бы земля была распределена поровну между всеми населяющими её людьми. Таким образом, без всякого преднамеренного желания и вовсе того не подозревая, богатый служит общественным интересам и умножению человеческого рода..</em></p>
@@ -427,8 +428,11 @@ $<span class="math notranslate nohighlight">\(E_k = \sum_{i=1}^n \frac{m v_i^2}{
 <p>У полезностей в <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span> часто бывает несколько (если не все) из нижеперечисленных свойств. Пусть <span class="math notranslate nohighlight">\(a, b\)</span> это какие то комбинации товаров из множества альтернатив <span class="math notranslate nohighlight">\(X \subset \mathbb{R}^n\)</span>.</p>
 <p>Мы начнем с двух эквивалентных определений непрерывности.</p>
 <blockquote>
-<div><p>Определение 1.1: полезность <span class="math notranslate nohighlight">\(U\)</span> <strong>непрерывна</strong> в <span class="math notranslate nohighlight">\(X\)</span>, если для любого <span class="math notranslate nohighlight">\(x \in X\)</span> множества <span class="math notranslate nohighlight">\(L_{+}(x)\)</span> и <span class="math notranslate nohighlight">\(L_{-}(x)\)</span> замкнуты, где
-$<span class="math notranslate nohighlight">\( L_{+}(x) = \{y \in X: U(y) \geqslant U(x)\}, \quad L_{-}(x) = \{y \in X: U(y) \leqslant U(x)\}\)</span>$</p>
+<div><p>Определение 1.1: полезность <span class="math notranslate nohighlight">\(U\)</span> <strong>непрерывна</strong> в <span class="math notranslate nohighlight">\(X\)</span>, если для любого <span class="math notranslate nohighlight">\(x \in X\)</span> множества <span class="math notranslate nohighlight">\(L_{+}(x)\)</span> и <span class="math notranslate nohighlight">\(L_{-}(x)\)</span> замкнуты, где</p>
+</div></blockquote>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[ L_{+}(x) = \{y \in X: U(y) \geqslant U(x)\}, \quad L_{-}(x) = \{y \in X: U(y) \leqslant U(x)\}\]</div>
 </div></blockquote>
 <p>Описанные выше множества <span class="math notranslate nohighlight">\(L_{+}(x)\)</span> (или <span class="math notranslate nohighlight">\(L_{-}(x)\)</span>) это подмножества допустимых альтернатив,  которые не хуже (или не лучше) чем сам <span class="math notranslate nohighlight">\(x\)</span>. Иногда в литературе они называются верхним и нижним Лебеговым множеством.</p>
 <blockquote>
@@ -444,8 +448,11 @@ $<span class="math notranslate nohighlight">\( L_{+}(x) = \{y \in X: U(y) \geqsl
 <div><p>Определение 3.1: полезность <span class="math notranslate nohighlight">\(U\)</span> <strong>квази-вогнутa</strong> в <span class="math notranslate nohighlight">\(X\)</span>, если для любого <span class="math notranslate nohighlight">\(x \in X\)</span> множество <span class="math notranslate nohighlight">\(L_{+}(x)\)</span> выпукло, то есть, оно содержит пределы всех своих последовательностей.</p>
 </div></blockquote>
 <blockquote>
-<div><p>Определение 3.2: полезность <span class="math notranslate nohighlight">\(U\)</span> <strong>квази-вогнута</strong> в <span class="math notranslate nohighlight">\(X\)</span> если для любых <span class="math notranslate nohighlight">\(x, y \in X\)</span> их линейная комбинация не хуже чем худшая из двух:
-$<span class="math notranslate nohighlight">\( \forall \alpha \in (0,1): U(\alpha x + (1-\alpha) y)) \geqslant \min(U(x), U(y))\)</span>$</p>
+<div><p>Определение 3.2: полезность <span class="math notranslate nohighlight">\(U\)</span> <strong>квази-вогнута</strong> в <span class="math notranslate nohighlight">\(X\)</span> если для любых <span class="math notranslate nohighlight">\(x, y \in X\)</span> их линейная комбинация не хуже чем худшая из двух:</p>
+</div></blockquote>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[ \forall \alpha \in (0,1): U(\alpha x + (1-\alpha) y)) \geqslant \min(U(x), U(y))\]</div>
 </div></blockquote>
 <p>P.S. Иногда я буду делать приставку “строго”, это значит что либо множество строго выпукло, либо неравенство строгое. Смотрите на контекст.</p>
 <div class="section" id="id11">
@@ -507,12 +514,14 @@ $<span class="math notranslate nohighlight">\( \forall \alpha \in (0,1): U(\alph
 <blockquote>
 <div><p>Утверждение 2: Если <span class="math notranslate nohighlight">\(U(x)\)</span> квази-вогнута, то <span class="math notranslate nohighlight">\(\varphi(U(x))\)</span> тоже квази-вогнута для любого строго монотонного преобразования <span class="math notranslate nohighlight">\(\varphi\)</span>.</p>
 </div></blockquote>
-<p>Доказательство этого факта легко выписывается, используя любое из двух определений, если знать следующие свойства:
-$<span class="math notranslate nohighlight">\( \begin{align*}
+<p>Доказательство этого факта легко выписывается, используя любое из двух определений, если знать следующие свойства:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} \begin{align*}
 U(x) \leqslant U(y) \quad \Leftrightarrow \quad \varphi(U(x)) \leqslant \varphi(U(y))\\
 U(x) \geqslant U(y) \quad \Leftrightarrow \quad \varphi(U(x)) \geqslant \varphi(U(y))\\
 \min(\varphi(U(x)), \varphi(U(y))) = \varphi(\min(U(x),U(y)))
-\end{align*}\)</span><span class="math notranslate nohighlight">\( верное для любых функций \)</span>U<span class="math notranslate nohighlight">\( и строго монотонных преобразований \)</span>\varphi$.</p>
+\end{align*}\end{split}\]</div>
+<p>верное для любых функций <span class="math notranslate nohighlight">\(U\)</span> и строго монотонных преобразований <span class="math notranslate nohighlight">\(\varphi\)</span>.</p>
 <p>Более того, если начать с выпуклой функции и начать ее монотонно деформировать, то мы можем гарантировать квази-вогнутость (но не вогнутость).</p>
 <blockquote>
 <div><p>Утверждение 3: Если <span class="math notranslate nohighlight">\(U(x)\)</span> вогнута, то <span class="math notranslate nohighlight">\(\varphi(U(x))\)</span> квази-вогнута для любого строго монотонного преобразования <span class="math notranslate nohighlight">\(\varphi\)</span>.</p>
@@ -577,9 +586,10 @@ z &amp; 0 &amp; 1 &amp; *\\
 <h3>Непрерывность и выпуклость<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h3>
 <p>Практически копипастой мы определяем непрерывность предпочтений.</p>
 <blockquote>
-<div><p>Определение 1.3: предпочтения <span class="math notranslate nohighlight">\(\succcurlyeq\)</span> <strong>непрерывны</strong> в <span class="math notranslate nohighlight">\(X\)</span>, если для любого <span class="math notranslate nohighlight">\(x \in X\)</span> множества <span class="math notranslate nohighlight">\(L_{+}(x)\)</span> и <span class="math notranslate nohighlight">\(L_{-}(x)\)</span> замкнуты, где
-$<span class="math notranslate nohighlight">\( L_{+}(x) = \{y \in X: U(y) \geqslant X\}, \quad L_{-}(x) = \{y \in X: U(y) \leqslant X\}\)</span>$</p>
+<div><p>Определение 1.3: предпочтения <span class="math notranslate nohighlight">\(\succcurlyeq\)</span> <strong>непрерывны</strong> в <span class="math notranslate nohighlight">\(X\)</span>, если для любого <span class="math notranslate nohighlight">\(x \in X\)</span> множества <span class="math notranslate nohighlight">\(L_{+}(x)\)</span> и <span class="math notranslate nohighlight">\(L_{-}(x)\)</span> замкнуты, где</p>
 </div></blockquote>
+<div class="math notranslate nohighlight">
+\[ L_{+}(x) = \{y \in X: U(y) \geqslant X\}, \quad L_{-}(x) = \{y \in X: U(y) \leqslant X\}\]</div>
 <p>И совершенно аналогично мы переносим квази-вогнутость в мир предпочтений, однако, вопреки логике, термин квази-ВОГНутости полезности превращается в ВЫПУклость предпочтений.</p>
 <blockquote>
 <div><p>Определение 3.3: предпочтения <span class="math notranslate nohighlight">\(\succcurlyeq\)</span> <strong>выпуклы</strong> в <span class="math notranslate nohighlight">\(X\)</span>, если для любого <span class="math notranslate nohighlight">\(x \in X\)</span> множество <span class="math notranslate nohighlight">\(L_{+}(x)\)</span> выпукло, то есть, оно содержит пределы всех своих последовательностей.</p>
