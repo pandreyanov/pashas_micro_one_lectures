@@ -5,7 +5,6 @@ format: jb-book
 root: table
 
 parts:
-- caption: Программа курса
   chapters:
     - file: intro
 - caption: Первая неделя
