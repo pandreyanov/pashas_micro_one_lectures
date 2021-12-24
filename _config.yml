@@ -29,6 +29,10 @@ parse:
     - substitution
     - linkify
 
+sphinx:
+  extra_extensions:
+    - sphinxcontrib.mermaid
+
 # Information about where the book exists on the web
 repository:
   url: https://github.com/pandreyanov.github.io/pashas_micro_one_lectures  # Online location of your book
