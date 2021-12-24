@@ -14,4 +14,7 @@ parts:
     - file: week_1/homework_1
 - caption: Вторая неделя
   chapters:
-    - file: week_2/lecture_2
+    - file: week_2/intro_2
+    - file: week_2/lecture_2_1
+    - file: week_2/lecture_2_2
+    - file: week_2/practice_2
