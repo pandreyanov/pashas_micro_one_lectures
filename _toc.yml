@@ -7,14 +7,9 @@ root: table
 parts:
 - caption: Первая неделя
   chapters:
-    - file: lecture_1/lecture_1
-    - file: lecture_1/homework_1
+    - file: week_1/lecture_1
+    - file: week_1/practice_1
+    - file: week_1/homework_1
 - caption: Вторая неделя
   chapters:
-    - file: lecture_2/lecture_2
-
-
-# chapters:
-#   - file: lecture_1/lecture_1
-#   - file: lecture_1/homework_1
-#   - file: lecture_2/lecture_2
+    - file: week_2/lecture_2
