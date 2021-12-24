@@ -4,7 +4,17 @@
 format: jb-book
 root: table
 
-chapters:
-  - file: lecture_1/lecture_1
-  - file: lecture_1/homework_1
-  - file: lecture_2/lecture_2
+parts:
+- caption: Лекция 1
+  chapters:
+    - file: lecture_1/lecture_1
+    - file: lecture_1/homework_1
+- caption: Лекция 2
+  chapters:
+    - file: lecture_2/lecture_2
+
+
+# chapters:
+#   - file: lecture_1/lecture_1
+#   - file: lecture_1/homework_1
+#   - file: lecture_2/lecture_2
