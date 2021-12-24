@@ -5,11 +5,11 @@ format: jb-book
 root: table
 
 parts:
-- caption: Лекция 1
+- caption: Первая неделя
   chapters:
     - file: lecture_1/lecture_1
     - file: lecture_1/homework_1
-- caption: Лекция 2
+- caption: Вторая неделя
   chapters:
     - file: lecture_2/lecture_2
 
