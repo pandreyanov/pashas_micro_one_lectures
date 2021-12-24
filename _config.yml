@@ -1,0 +1,36 @@
+# Book settings
+# Learn more at https://jupyterbook.org/customize/config.html
+
+title: Undergraduate Lectures in Microeconomics at HSE
+author: Pasha Andreyanov
+# logo: logo.png
+
+options:
+  numbered: true
+
+# Force re-execution of notebooks on each build.
+# See https://jupyterbook.org/content/execute.html
+# execute:
+#   execute_notebooks: force
+
+# Define the name of the latex output file for PDF builds
+latex:
+  latex_documents:
+    targetname: book.tex
+
+parse:
+  myst_enable_extensions:
+    # don't forget to list any other extensions you want enabled,
+    # including those that are enabled by default!
+    - amsmath
+    - dollarmath
+    - smartquotes
+    - colon_fence
+    - substitution
+    - linkify
+
+# Information about where the book exists on the web
+repository:
+  url: https://github.com/pandreyanov.github.io/pashas_micro_one_lectures  # Online location of your book
+  #path_to_book: docs  # Optional path to your book, relative to the repository root
+  #branch: master  # Which branch of the repository should be used when creating links (optional)
