@@ -101,15 +101,14 @@ $$\log x = \log I - \log p + \log(\alpha) - \log(\alpha + \beta + \gamma), \quad
 
 ### Перекрестная эластичность
 
-Чуть более интересным представляется анализ перекрестной эластичности, которых $n(n-1)$ штук для $n$ товаров. Это очень большое число, поэтому мы редко будем работать с $n>3$. Пусть будет три товара: $x,y,z$.
+Чуть более интересным представляется анализ перекрестной эластичности, которых $n(n-1)$ штук для $n$ товаров. Это очень большое число, поэтому мы редко будем работать с $n>3$. Пусть будет три товара: $x,y,z$, тогда есть шесть эластичнотей:
 
 \begin{gather*}
-\varepsilon_{x,q}, \quad \varepsilon_{x,r}\\
-\varepsilon_{y,p}, \quad \varepsilon_{y,q}\\
-\varepsilon_{z,q}, \quad \varepsilon_{z,r}
+\varepsilon_{x,q}, \varepsilon_{x,r}, \varepsilon_{y,p}, \varepsilon_{y,q}, 
+\varepsilon_{z,q}, \varepsilon_{z,r}.
 \end{gather*}
 
-Эти шесть эластичностей хранят информацию о, грубо говоря, тенденциях к замещению между нашими товарами. Поскольку цены и спросы неотрицательны, мы можем однозначно связать знак эластичности с природой замещения между любыми двумя товарами.
+Эти эластичности хранят информацию о, грубо говоря, тенденциях к замещению между нашими товарами. Поскольку цены и спросы неотрицательны, мы можем однозначно связать знак эластичности с природой замещения между любыми двумя товарами.
 
 :::{admonition} Утверждение
 :class: important
@@ -123,8 +122,8 @@ $$\log x = \log I - \log p + \log(\alpha) - \log(\alpha + \beta + \gamma), \quad
 
 $$
 \begin{gather*}
-\log x = \log I - \log p + \log(ap) - \log (ap + bq + cr) , \quad \Rightarrow \quad \varepsilon_{x,p} = \\
-= - \frac{\partial \log (ap + bq + cr)}{ \partial \log q} = -\frac{b}{ap + bq + cr}\frac{ap + bq + cr}{bq} = -1/q
+\log x = \log I - \log p + \log(ap) - \log (ap + bq + cr), \Rightarrow \\\varepsilon_{x,p} = - \frac{\partial \log (ap + bq + cr)}{ \partial \log q} = \\
+= -\frac{b}{ap + bq + cr}\frac{ap + bq + cr}{bq} = -1/q < 0
 \end{gather*}
 $$
 
