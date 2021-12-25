@@ -5,6 +5,9 @@ title: Лекции по Микро 1, ИП
 author: Паша Андреянов
 # logo: logo.png
 
+launch_buttons:
+  colab_url: "https://colab.research.google.com"
+
 options:
   numbered: true
 
