@@ -255,22 +255,22 @@ $$U(x,y) \to \max_{x,y \geqslant 0}, \quad s.t. \quad B(x,y) \leqslant 0$$
 
 Постарайтесь ответить, являются ли непрерывными и строго выпуклыми следующие задачи:
 
-### Пример 1
+- Пример 1
 
 $$\log x + \log y + \log z \to \max \quad s.t. \quad x^2 + y^2 + z^2 \leqslant 1$$
 
-### Пример 2
+- Пример 2
 
 $$x + \log y + \log z \to \max \quad s.t. \quad x^2 + y^2 + z^2 \leqslant 1$$
 
-### Пример 3
+- Пример 3
 
 $$x + y + \log z \to \max \quad s.t. \quad x + y + z \leqslant 1$$
 
-### Пример 4
+- Пример 4
 
 $$x + y + \sqrt{z} \to \max \quad s.t. \quad x^2 + y^2 + z^2 \leqslant 1$$
 
-### Пример 5
+- Пример 5
 
 $$x + y + z^2 \to \max \quad s.t. \quad x^2 + y^2 + z^2 \leqslant 1$$
