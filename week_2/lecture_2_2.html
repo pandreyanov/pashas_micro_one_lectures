@@ -379,6 +379,11 @@
      Спросы
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id21">
+     Косвенная полезность
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -387,12 +392,12 @@
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id21">
+    <a class="reference internal nav-link" href="#id22">
      Лагранжиан
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id22">
+    <a class="reference internal nav-link" href="#id23">
      Условия Первого Порядка
     </a>
    </li>
@@ -643,7 +648,7 @@ y^{\ast} = \max (0, I-px^{\ast}).
 <p class="admonition-title">Утверждение</p>
 <p>Косвенная полезность в квазилинейной полезности (с точностью до преобразования) имеет вид</p>
 <div class="math notranslate nohighlight">
-\[V(p,q,I) = U(x^{\ast}, \ldots) = \max(f((f')^{-1}(k p)) + I - p (f')^{-1}(k p) \text{если} I - p (f')^{-1}(k p) &gt; 0 \text{в противном случае} f(I/p)).\]</div>
+\[V(p,q,I) = U(x^{\ast}, \ldots) = f((f')^{-1}(k p)) + I - p (f')^{-1}(k p) \text{если} I - p (f')^{-1}(k p) &gt; 0 \text{в противном случае} f(I/p)).\]</div>
 </div>
 </div>
 </div>
@@ -685,6 +690,16 @@ y^{\ast} = \max (0, I-px^{\ast}).
 <p>Все товары в линейной полезности нормальные и являются попарно субститутами.</p>
 </div>
 </div>
+<div class="section" id="id21">
+<h3>Косвенная полезность<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h3>
+<p>Мы знаем, что решение либо в одном углу, либо в другом. Соответственно, ответ это наибольшая из двух полезностей этих кандидатов.</p>
+<div class="important admonition">
+<p class="admonition-title">Утверждение</p>
+<p>Косвенная полезность в линейной полезности (с точностью до преобразования) имеет вид</p>
+<div class="math notranslate nohighlight">
+\[V(p,q,I) = U(x^{\ast}, \ldots) = I \cdot \max(a/p, b/q).\]</div>
+</div>
+</div>
 </div>
 <div class="section" id="ces">
 <h2>CES полезность<a class="headerlink" href="#ces" title="Permalink to this headline">¶</a></h2>
@@ -695,15 +710,15 @@ y^{\ast} = \max (0, I-px^{\ast}).
 \[U(x, y) = (\alpha x^{\rho} + (1-\alpha)y^{\rho})^{1/\rho}, \quad \rho &lt; 1.\]</div>
 </div>
 <p>Основное замечательное свойство этой полезности в том, что у нее постоянны эластичности спроса. Что такое <strong>эластичность</strong> мы с вами разберем на следующей лекции.</p>
-<div class="section" id="id21">
-<h3>Лагранжиан<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id22">
+<h3>Лагранжиан<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h3>
 <p>Выпишем Лагранжиан:</p>
 <div class="math notranslate nohighlight">
 \[\mathcal{L} =\alpha x^{\rho} + (1-\alpha)y^{\rho} - \lambda(p x + q y - I).\]</div>
 <p>Заметьте, что я сходу применил монотонное преобразование к полезности. Это хороший, гладкий Лагранжиан. Но является ли он вогнутым или квази-вогнутым? Подумайте сами.</p>
 </div>
-<div class="section" id="id22">
-<h3>Условия Первого Порядка<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id23">
+<h3>Условия Первого Порядка<a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h3>
 <p>Я сразу запишу условия в слегка преобразованной форме:</p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(\alpha \rho x^{\rho} = \lambda p x\)</span></p></li>
