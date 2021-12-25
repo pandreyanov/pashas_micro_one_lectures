@@ -365,7 +365,7 @@
 <p>Но какое это отношение имеет к процентам?</p>
 <details class="sphinx-bs dropdown card mb-3">
 <summary class="summary-title card-header">
-Подсказка: воспользуемся разложением Тэйлора в единице <span class="math notranslate nohighlight">\(\log(1+x) \approx 1 + x\)</span>.<div class="summary-down docutils">
+Подсказка: воспользуемся разложением Тэйлора в единице.<div class="summary-down docutils">
 <svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="summary-up docutils">
 <svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
@@ -431,6 +431,13 @@
 </div>
 <p>Рассмотрим полезность <strong>совершенные субституты</strong> и убедимся, что перекрестная эластичность неотрицательная.</p>
 <p>Рассмотрим полезность <strong>совершенные комплементы</strong> и убедимся, что перекрестная эластичность однозначно меньше нуля.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{gather*}
+\log x = \log I - \log p + \log(ap) - \log (ap + bq + cr) , \quad \Rightarrow \quad \varepsilon_{x,p} = \\
+= - \frac{\partial \log (ap + bq + cr)}{ \partial \log q} = -\frac{b}{ap + bq + cr}\frac{ap + bq + cr}{bq} = -1/q
+\end{gather*}
+\end{split}\]</div>
 </div>
 </div>
 <div class="section" id="id7">
