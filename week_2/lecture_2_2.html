@@ -504,10 +504,11 @@ z^{\ast} = \frac{\alpha}{\alpha + \beta + \gamma} \frac{I}{r}
 <p>Аналогично считается логарифм спроса на другие товары. Теперь надо просто подставить их в полезность:</p>
 <div class="important admonition">
 <p class="admonition-title">Утверждение</p>
-<p>Косвенная полезность в Кобб-Дугласе (с точностью до преобразования) имеет вид
-$<span class="math notranslate nohighlight">\(V(p,q,I) = U(x^{\ast}, \ldots) = (\alpha + \beta + \gamma) \log I - \alpha \log p - \beta \log q - \gamma \log r + \text{какие то константы} \)</span>$</p>
+<p>Косвенная полезность в Кобб-Дугласе (с точностью до преобразования) имеет вид</p>
+<div class="math notranslate nohighlight">
+\[V(p,q,I) = U(x^{\ast}, \ldots) = (\alpha + \beta + \gamma) \log I - \alpha \log p - \beta \log q - \gamma \log r + C \]</div>
 </div>
-<p>Константы можно, как правило, не выписывать так как они исчезнут при первой же попытке продифференцировать.</p>
+<p>Константы <span class="math notranslate nohighlight">\(C\)</span> можно, как правило, не выписывать так как они исчезнут при первой же попытке продифференцировать.</p>
 </div>
 <div class="section" id="id8">
 <h3>Геометрический анализ<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
@@ -577,8 +578,9 @@ z^{\ast} = \frac{cr}{ap + bq + cr} \frac{I}{r}
 <p>Заметим, что в оптимуме полезности в обоих позициях аргумента - одинаковые. То есть, косвенная полезность равна одновременно левому и правому аргументу.</p>
 <div class="important admonition">
 <p class="admonition-title">Утверждение</p>
-<p>Косвенная полезность в Леонтьеве (с точностью до преобразования) имеет вид
-$<span class="math notranslate nohighlight">\(V(p,q,I) = U(x^{\ast}, \ldots) = \frac{I}{ap + bq + cr} \)</span>$</p>
+<p>Косвенная полезность в Леонтьеве (с точностью до преобразования) имеет вид</p>
+<div class="math notranslate nohighlight">
+\[V(p,q,I) = U(x^{\ast}, \ldots) = \frac{I}{ap + bq + cr}\]</div>
 </div>
 </div>
 </div>
@@ -648,7 +650,11 @@ y^{\ast} = \max (0, I-px^{\ast}).
 <p class="admonition-title">Утверждение</p>
 <p>Косвенная полезность в квазилинейной полезности (с точностью до преобразования) имеет вид</p>
 <div class="math notranslate nohighlight">
-\[V(p,q,I) = U(x^{\ast}, \ldots) = f((f')^{-1}(k p)) + I - p (f')^{-1}(k p) \text{если} I - p (f')^{-1}(k p) &gt; 0 \text{в противном случае} f(I/p)).\]</div>
+\[V(p,q,I) = U(x^{\ast}, \ldots) = f((f')^{-1}(k p)) + I - p (f')^{-1}(k p)\]</div>
+<p>если <span class="math notranslate nohighlight">\(I - p (f')^{-1}(k p) &gt; 0\)</span>, и</p>
+<div class="math notranslate nohighlight">
+\[V(p,q,I) = U(x^{\ast}, \ldots) = f(I/p)\]</div>
+<p>в противном случае.</p>
 </div>
 </div>
 </div>
