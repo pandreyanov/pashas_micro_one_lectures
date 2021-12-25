@@ -72,7 +72,9 @@ $$\varepsilon_{x,I} = \frac{\partial x}{\partial I} \frac{I}{x}.$$
 :::{admonition} Утверждение
 :class: important
 
-$$\varepsilon_{x,I}s_x + \varepsilon_{y,I}s_y + \varepsilon_{z,I}s_z = 1$$
+Всегда выполнено следующее тождество:
+
+$$\varepsilon_{x,I} \cdot s_x + \varepsilon_{y,I} \cdot s_y + \varepsilon_{z,I} \cdot s_z = 1$$
 
 где $s_x, s_y, s_z$ доли расходов на соответствующие товары.
 :::
