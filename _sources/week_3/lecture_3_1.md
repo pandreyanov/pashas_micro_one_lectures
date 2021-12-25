@@ -69,7 +69,7 @@ $$\varepsilon_{x,I} = \frac{\partial x}{\partial I} \frac{I}{x}.$$
 
 Любопытным является то, что эластичности по доходу у всех товаров связаны простым линейным соотношением, правда разным в каждой новой точке.
 
-:::{admonition}
+:::{admonition} Утверждение
 :class: important
 
 $$\varepsilon_{x,I}s_x + \varepsilon_{y,I}s_y + \varepsilon_{z,I}s_z = 1$$
