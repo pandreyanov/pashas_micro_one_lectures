@@ -65,10 +65,15 @@ $$ x \succcurlyeq y \quad \Leftrightarrow \quad x \succ_1 y \quad \text{или} 
 Дозаполните определения выпуклого множества, полезности и предпочтения, постарайтесь не запутаться:
 
 - множество $X$ выпукло если для любых $x,y \in X$: 
+
 $$\forall \alpha \in (0,1): \quad \alpha x + \ldots$$
+
 - полезность $U$ выпуклa если для любых $x,y \in X$: 
+
 $$\forall \alpha \in (0,1): \ldots$$
+
 - предпочтения $\succcurlyeq$ выпуклы если для любых $z \in X$ и $x, y \in L_{+}(x)$: 
+
 $$ \forall \alpha \in (0,1): \quad \alpha x + \ldots$$
 
 ### Задача 2.2 (1 балл)
