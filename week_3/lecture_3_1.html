@@ -285,16 +285,21 @@
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id3">
-   Эластичность по доходу
+   Функции постоянной эластичности
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id4">
-   Эластичность по цене
+   Эластичность по доходу
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id5">
+   Эластичность по цене
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id6">
    Рыночная власть и эластичность
   </a>
  </li>
@@ -319,7 +324,7 @@
 <p>Где <span class="math notranslate nohighlight">\(x\)</span> это спрос на интересующий нас товар, <span class="math notranslate nohighlight">\(p\)</span> цена этого товара, <span class="math notranslate nohighlight">\(q\)</span> цена другого товара, а <span class="math notranslate nohighlight">\(I\)</span> - бюджет. Что с ними не так?</p>
 <details class="sphinx-bs dropdown card mb-3">
 <summary class="summary-title card-header">
-Подсказка: обратите внимание на единицы измерения. Подумайте, прежде чем прочитать ответ.<div class="summary-down docutils">
+Подумайте, прежде чем прочитать ответ. Подсказка: обратите внимание на единицы измерения. <div class="summary-down docutils">
 <svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="summary-up docutils">
 <svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
@@ -343,25 +348,35 @@
 <p>Но какое это отношение имеет к процентам?</p>
 <details class="sphinx-bs dropdown card mb-3">
 <summary class="summary-title card-header">
-Подсказка: воспользуемся разложением Тэйлора в единице <span class="math notranslate nohighlight">\(\log(1+x) \approx 1 + x\)</span>. Подумайте, прежде чем прочитать ответ. <div class="summary-down docutils">
+Подумайте, прежде чем прочитать ответ. Подсказка: воспользуемся разложением Тэйлора в единице <span class="math notranslate nohighlight">\(\log(1+x) \approx 1 + x\)</span>.<div class="summary-down docutils">
 <svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="summary-up docutils">
 <svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="summary-content card-body docutils">
-<p class="card-text">Связь между процентами и логарифмами следующая. Рассмотрим как логарифм меняется при небольшом приращении аргумента:</p>
+<p class="card-text">Связь между процентами и логарифмами следующая. Рассмотрим отношение процентного изменения <span class="math notranslate nohighlight">\(x\)</span> к процентному изменению <span class="math notranslate nohighlight">\(p\)</span>:</p>
 <div class="math notranslate nohighlight">
-\[\frac{\log (x + \delta x)}{x} = \frac{\log (x/\delta x +  1)}{x/ \delta x} \approx \frac{x/\delta x + 1}{x/\delta x} = \frac{x + \delta x}{x}\]</div>
-<p class="card-text">Правая часть уравнения это, как раз, и есть относительное приращение. Умножив его на 100, мы получим классическое приращение в процентах.</p>
+\[\frac{100 (x + \delta x) / x}{100 (p + \delta p) / p}\]</div>
+<p class="card-text">где <span class="math notranslate nohighlight">\(\delta x, \delta x\)</span> это маленькие приращения. Заметим что много посокращается и тогда:</p>
+<div class="math notranslate nohighlight">
+\[\frac{1 + \delta x / x}{1 + \delta p / p} \approx \frac{\log(1 + \delta x / x)}{\log(1 + \delta p / p)}\]</div>
+<p class="card-text">далее надо прибавить и вычесть логарифмы <span class="math notranslate nohighlight">\(x\)</span> и <span class="math notranslate nohighlight">\(p\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\frac{\log(x + \delta x) - \log x}{\log(p + \delta p) - \log p}\]</div>
+<p class="card-text">и то, что мы получаем это приращение логарифма <span class="math notranslate nohighlight">\(x\)</span> относително логарифма <span class="math notranslate nohighlight">\(p\)</span>.</p>
 </div>
-</details></div>
+</details><p>Очень важно, что приращения маленькие, без этого не только определения эластичности не похожи друг на друга, но и смысла в них особого нет. Эластичность - локальное свойство функции.</p>
+</div>
 <div class="section" id="id3">
-<h2>Эластичность по доходу<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<h2>Функции постоянной эластичности<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 </div>
 <div class="section" id="id4">
-<h2>Эластичность по цене<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<h2>Эластичность по доходу<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
 </div>
 <div class="section" id="id5">
-<h2>Рыночная власть и эластичность<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<h2>Эластичность по цене<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="id6">
+<h2>Рыночная власть и эластичность<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 
