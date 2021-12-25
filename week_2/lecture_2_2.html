@@ -330,42 +330,52 @@
      Спросы
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id12">
+     Косвенная полезность
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id12">
+  <a class="reference internal nav-link" href="#id13">
    Квазилинейная полезность
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id13">
+    <a class="reference internal nav-link" href="#id14">
      Лагранжиан
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id14">
+    <a class="reference internal nav-link" href="#id15">
      Условия Первого Порядка
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id15">
+    <a class="reference internal nav-link" href="#id16">
      Спросы
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id17">
+     Косвенная полезность
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id16">
+  <a class="reference internal nav-link" href="#id18">
    Линейная полезность
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id17">
+    <a class="reference internal nav-link" href="#id19">
      Геометрический анализ
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id18">
+    <a class="reference internal nav-link" href="#id20">
      Спросы
     </a>
    </li>
@@ -377,12 +387,12 @@
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id19">
+    <a class="reference internal nav-link" href="#id21">
      Лагранжиан
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id20">
+    <a class="reference internal nav-link" href="#id22">
      Условия Первого Порядка
     </a>
    </li>
@@ -542,7 +552,7 @@ $<span class="math notranslate nohighlight">\(V(p,q,I) = U(x^{\ast}, \ldots) = (
 <div class="math notranslate nohighlight">
 \[\begin{split} 
 \begin{gather*}
-x^{\ast} = \frac{a p}{ap + bq + cr} \frac{I}{p}, \\
+x^{\ast} = \frac{ap}{ap + bq + cr} \frac{I}{p}, \\
 y^{\ast} = \frac{bq}{ap + bq + cr} \frac{I}{q}, \\
 z^{\ast} = \frac{cr}{ap + bq + cr} \frac{I}{r}
 \end{gather*}
@@ -557,9 +567,18 @@ z^{\ast} = \frac{cr}{ap + bq + cr} \frac{I}{r}
 <p><em>Вопрос 13: о каком отличии идет речь?</em></p>
 <p><em>Вопрос 14: убедитесь, что все товары в Леонтьевской полезности, действительно, являются строго комплементами.</em></p>
 </div>
-</div>
 <div class="section" id="id12">
-<h2>Квазилинейная полезность<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
+<h3>Косвенная полезность<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+<p>Заметим, что в оптимуме полезности в обоих позициях аргумента - одинаковые. То есть, косвенная полезность равна одновременно левому и правому аргументу.</p>
+<div class="important admonition">
+<p class="admonition-title">Утверждение</p>
+<p>Косвенная полезность в Леонтьеве (с точностью до преобразования) имеет вид
+$<span class="math notranslate nohighlight">\(V(p,q,I) = U(x^{\ast}, \ldots) = \frac{I}{ap + bq + cr} \)</span>$</p>
+</div>
+</div>
+</div>
+<div class="section" id="id13">
+<h2>Квазилинейная полезность<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h2>
 <p>Пожалуй, третья самая важная полезность имеет следующий вид:</p>
 <div class="note admonition">
 <p class="admonition-title">Квазилинейная полезность</p>
@@ -568,15 +587,15 @@ z^{\ast} = \frac{cr}{ap + bq + cr} \frac{I}{r}
 <p>где <span class="math notranslate nohighlight">\(f\)</span> - вогнутая функция.</p>
 </div>
 <p>Интерпретация последней координаты - это деньги на счету. То есть, вам не обязательно тратить весь бюджет как раньше и остаток средств на счету конвертируется в утили по курсу 1:<span class="math notranslate nohighlight">\(k\)</span>.</p>
-<div class="section" id="id13">
-<h3>Лагранжиан<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id14">
+<h3>Лагранжиан<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
 <p>Выпишем Лагранжиан:</p>
 <div class="math notranslate nohighlight">
 \[\mathcal{L} = f(x) + k y - \lambda (px + y - I).\]</div>
 <p>Легко, правда?</p>
 </div>
-<div class="section" id="id14">
-<h3>Условия Первого Порядка<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id15">
+<h3>Условия Первого Порядка<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h3>
 <p>Сейчас мы попробуем найти внутреннее решение.</p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(\mathcal{L}'_x = f'_x - \lambda p = 0\)</span></p></li>
@@ -592,8 +611,8 @@ z^{\ast} = \frac{cr}{ap + bq + cr} \frac{I}{r}
 <p>Однако, эта система не всегда имеет решение в <span class="math notranslate nohighlight">\(\mathbb{R}^2_{+}\)</span>. легко видеть, что спрос на товар <span class="math notranslate nohighlight">\(x\)</span> никак не зависит от бюджета, а стало быть, при достаточно маленьком бюджете, спрос на товар <span class="math notranslate nohighlight">\(y\)</span> упрется в ноль.</p>
 <p>Мы оказались в ситуации о которой я предупреждал. Условия первого порядка указали на точку, которая может оказаться вне допустимой области. Если это так, это значит что решение  не внутреннее а краевое. В таком случае, мы заменяем условие первого порядка  <span class="math notranslate nohighlight">\(x = (f')^{-1}(\lambda p)\)</span> на краевое условие <span class="math notranslate nohighlight">\(y=0\)</span>, или, эквивалентно <span class="math notranslate nohighlight">\(x = I/p\)</span>.</p>
 </div>
-<div class="section" id="id15">
-<h3>Спросы<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id16">
+<h3>Спросы<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
 <p>В этой задаче есть два взаимоисключающих режима: внутреннее решение и краевое решение. Но вместо перебора случаев, можно записать ответ в компактной форме, если проявить немного смекалки.</p>
 <div class="important admonition">
 <p class="admonition-title">Утверждение</p>
@@ -612,9 +631,24 @@ y^{\ast} = \max (0, I-px^{\ast}).
 <p>Все товары в квазилинейной полезности являются нормальными, a деньги (переменная <span class="math notranslate nohighlight">\(y\)</span>) являются универсальным комплементом.</p>
 </div>
 </div>
+<div class="section" id="id17">
+<h3>Косвенная полезность<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h3>
+<p>Поскольку в задаче два режима, скорее всего ответ будет иметь форму максимума или минимума из двух выражений. Если бы ограничения не было, решение было бы всегда внутреннее а полезность равна</p>
+<div class="math notranslate nohighlight">
+\[f((f')^{-1}(k p)) + I - p (f')^{-1}(k p).\]</div>
+<p>Когда ограничение активно, оно мешает нам достигнуть этой полезности и мы получаем вместо нее</p>
+<div class="math notranslate nohighlight">
+\[ f(I/p) + 0.\]</div>
+<div class="important admonition">
+<p class="admonition-title">Утверждение</p>
+<p>Косвенная полезность в квазилинейной полезности (с точностью до преобразования) имеет вид</p>
+<div class="math notranslate nohighlight">
+\[V(p,q,I) = U(x^{\ast}, \ldots) = \max(f((f')^{-1}(k p)) + I - p (f')^{-1}(k p) \text{если} I - p (f')^{-1}(k p) &gt; 0 \text{в противном случае} f(I/p)).\]</div>
 </div>
-<div class="section" id="id16">
-<h2>Линейная полезность<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="id18">
+<h2>Линейная полезность<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h2>
 <p>Простая с виду, но очень неудобная на практике:</p>
 <div class="note admonition">
 <p class="admonition-title">Линейная полезность</p>
@@ -623,8 +657,8 @@ y^{\ast} = \max (0, I-px^{\ast}).
 </div>
 <p>интерпретируется как способность извлекать одну и туже полезность из разных источников.  Конкретно, вы можете получить одну единицу полезности либо из <span class="math notranslate nohighlight">\(a\)</span> единиц товара <span class="math notranslate nohighlight">\(x\)</span>, либо из <span class="math notranslate nohighlight">\(b\)</span> единиц товара <span class="math notranslate nohighlight">\(y\)</span>.</p>
 <p>Это значит, что <span class="math notranslate nohighlight">\(x, y\)</span> обладают высокой взаимозаменяемостью, либо, вообще представляют собой один и тот же товар в пачках/таре разного размера. Такая полезность еще часто называется <strong>совершенные субституты</strong>.</p>
-<div class="section" id="id17">
-<h3>Геометрический анализ<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id19">
+<h3>Геометрический анализ<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h3>
 <p>Решение в этой задаче не похоже на предыдущие, оно вообще всегда краевое. Почему так? Посмотрим внимательно на бюджетное ограничение:</p>
 <div class="math notranslate nohighlight">
 \[B(x,y) = px + qy - I \leqslant 0\]</div>
@@ -635,8 +669,8 @@ y^{\ast} = \max (0, I-px^{\ast}).
 <p>Интуитивно понятно, что вы будете тратить все на <span class="math notranslate nohighlight">\(x\)</span> когда его вес в полезности относительно большой а его цена относительно маленькая. То есть, когда <span class="math notranslate nohighlight">\(ap\)</span> относительно маленький.</p>
 <p>Относительно чего? Конечно же, относительно <span class="math notranslate nohighlight">\(bq\)</span>.</p>
 </div>
-<div class="section" id="id18">
-<h3>Спросы<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id20">
+<h3>Спросы<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h3>
 <div class="important admonition">
 <p class="admonition-title">Утверждение</p>
 <p>Спрос на каждый товар описывается следующими уравнениями:</p>
@@ -661,15 +695,15 @@ y^{\ast} = \max (0, I-px^{\ast}).
 \[U(x, y) = (\alpha x^{\rho} + (1-\alpha)y^{\rho})^{1/\rho}, \quad \rho &lt; 1.\]</div>
 </div>
 <p>Основное замечательное свойство этой полезности в том, что у нее постоянны эластичности спроса. Что такое <strong>эластичность</strong> мы с вами разберем на следующей лекции.</p>
-<div class="section" id="id19">
-<h3>Лагранжиан<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id21">
+<h3>Лагранжиан<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h3>
 <p>Выпишем Лагранжиан:</p>
 <div class="math notranslate nohighlight">
 \[\mathcal{L} =\alpha x^{\rho} + (1-\alpha)y^{\rho} - \lambda(p x + q y - I).\]</div>
 <p>Заметьте, что я сходу применил монотонное преобразование к полезности. Это хороший, гладкий Лагранжиан. Но является ли он вогнутым или квази-вогнутым? Подумайте сами.</p>
 </div>
-<div class="section" id="id20">
-<h3>Условия Первого Порядка<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id22">
+<h3>Условия Первого Порядка<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h3>
 <p>Я сразу запишу условия в слегка преобразованной форме:</p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(\alpha \rho x^{\rho} = \lambda p x\)</span></p></li>
