@@ -300,6 +300,11 @@
    </li>
   </ul>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id11">
+   Непрерывнисть спроса
+  </a>
+ </li>
 </ul>
 
             </nav>
@@ -375,7 +380,7 @@
 <p>Совершенно независимо, была разработана более общая (но и более муторная) технология решения невыпуклых задач оптимизации, начиная с 1939 года, и носящая имя сразу трех математиков: Каруш, Кун и Такера. Вам она, скорее всего известна как <strong>Условия Первого Порядка</strong> и <strong>Условия Второго Порядка</strong>.</p>
 <div class="warning admonition">
 <p class="admonition-title"><strong>Теорема ККТ</strong></p>
-<p>В гладкой задаче оптимизации, экстремальные точки характеризуются тем, что градиенты ограничений и самой функции линейно зависимы (а в случае 1 ограничения сонаправлены), то есть:</p>
+<p>В гладкой задаче оптимизации, экстремальные точки характеризуются тем, что градиенты ограничений и самой функции линейно зависимы, то есть:</p>
 <div class="math notranslate nohighlight">
 \[\nabla_{(x,y)} U -  \lambda \cdot \nabla_{(x,y)}B = 0\]</div>
 </div>
@@ -460,13 +465,14 @@
 <p><strong>Комплементами</strong> (complements) называются пары товаров, кривые спроса которых монотонно убывают по ценам друг друга, то есть, <span class="math notranslate nohighlight">\(x\)</span> комплемент к <span class="math notranslate nohighlight">\(y\)</span>, если <span class="math notranslate nohighlight">\(\frac{\partial x^{\ast}}{\partial q} &lt; 0,\)</span> a <span class="math notranslate nohighlight">\(y\)</span> комплемент к <span class="math notranslate nohighlight">\(x\)</span>, если <span class="math notranslate nohighlight">\(\frac{\partial y^{\ast}}{\partial p} &lt; 0.\)</span></p>
 </div>
 <p>К сожалению, это свойство не является симметричным, то есть, <span class="math notranslate nohighlight">\(x\)</span> может быть субститутом к <span class="math notranslate nohighlight">\(y\)</span>, но y при этом может оказаться комплементом к <span class="math notranslate nohighlight">\(x\)</span>, хоть и в очень редких случаях. Это сигнализирует нам о том, что определение выбрано не совсем удачно, но какое то время нам придется с этим противоречием смириться.</p>
-<p>##Непрерывнисть спроса</p>
+</div>
+</div>
+<div class="section" id="id11">
+<h2>Непрерывнисть спроса<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
+<p>В большей часть примеров, которые мы будем рассматривать, спросы будут выражаться через элементарные функции, такие как <span class="math notranslate nohighlight">\(x^2, \log x, 1/x\)</span>… Все эти функции непрерывны. Является ли это совпадением? Оказывается что нет.</p>
 <div class="warning admonition">
 <p class="admonition-title"><strong>Теорема Максимума</strong></p>
-<p>…</p>
-<div class="math notranslate nohighlight">
-\[...\]</div>
-</div>
+<p>В строго выпуклой задаче оптимизации, решение, если оно существует, то единственно. Более того, если задача непрерывна по параметрам, то как координаты решения так и значение целевой фунцкии непрерывны по параметру.</p>
 </div>
 </div>
 </div>
