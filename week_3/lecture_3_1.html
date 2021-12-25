@@ -417,14 +417,13 @@
 </div>
 <div class="section" id="id6">
 <h3>Перекрестная эластичность<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
-<p>Чуть более интересным представляется анализ перекрестной эластичности, которых <span class="math notranslate nohighlight">\(n(n-1)\)</span> штук для <span class="math notranslate nohighlight">\(n\)</span> товаров. Это очень большое число, поэтому мы редко будем работать с <span class="math notranslate nohighlight">\(n&gt;3\)</span>. Пусть будет три товара: <span class="math notranslate nohighlight">\(x,y,z\)</span>.</p>
+<p>Чуть более интересным представляется анализ перекрестной эластичности, которых <span class="math notranslate nohighlight">\(n(n-1)\)</span> штук для <span class="math notranslate nohighlight">\(n\)</span> товаров. Это очень большое число, поэтому мы редко будем работать с <span class="math notranslate nohighlight">\(n&gt;3\)</span>. Пусть будет три товара: <span class="math notranslate nohighlight">\(x,y,z\)</span>, тогда есть шесть эластичнотей:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{gather*}
-\varepsilon_{x,q}, \quad \varepsilon_{x,r}\\
-\varepsilon_{y,p}, \quad \varepsilon_{y,q}\\
-\varepsilon_{z,q}, \quad \varepsilon_{z,r}
+\varepsilon_{x,q}, \varepsilon_{x,r}, \varepsilon_{y,p}, \varepsilon_{y,q}, 
+\varepsilon_{z,q}, \varepsilon_{z,r}.
 \end{gather*}\]</div>
-<p>Эти шесть эластичностей хранят информацию о, грубо говоря, тенденциях к замещению между нашими товарами. Поскольку цены и спросы неотрицательны, мы можем однозначно связать знак эластичности с природой замещения между любыми двумя товарами.</p>
+<p>Эти эластичности хранят информацию о, грубо говоря, тенденциях к замещению между нашими товарами. Поскольку цены и спросы неотрицательны, мы можем однозначно связать знак эластичности с природой замещения между любыми двумя товарами.</p>
 <div class="important admonition">
 <p class="admonition-title">Утверждение</p>
 <p>Если <span class="math notranslate nohighlight">\(\varepsilon_{x,q} \geqslant 0\)</span> то <span class="math notranslate nohighlight">\(x\)</span> это субститут по отношению к <span class="math notranslate nohighlight">\(y\)</span>. Если <span class="math notranslate nohighlight">\(\varepsilon_{x,q} &lt; 0\)</span> то <span class="math notranslate nohighlight">\(x\)</span> это комплемент по отношению к <span class="math notranslate nohighlight">\(y\)</span>.</p>
@@ -434,8 +433,8 @@
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{gather*}
-\log x = \log I - \log p + \log(ap) - \log (ap + bq + cr) , \quad \Rightarrow \quad \varepsilon_{x,p} = \\
-= - \frac{\partial \log (ap + bq + cr)}{ \partial \log q} = -\frac{b}{ap + bq + cr}\frac{ap + bq + cr}{bq} = -1/q
+\log x = \log I - \log p + \log(ap) - \log (ap + bq + cr), \Rightarrow \\\varepsilon_{x,p} = - \frac{\partial \log (ap + bq + cr)}{ \partial \log q} = \\
+= -\frac{b}{ap + bq + cr}\frac{ap + bq + cr}{bq} = -1/q &lt; 0
 \end{gather*}
 \end{split}\]</div>
 </div>
