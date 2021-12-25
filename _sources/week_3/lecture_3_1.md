@@ -19,7 +19,7 @@ $$\frac{\partial x^{\ast}}{\partial p}, \quad \frac{\partial x^{\ast}}{\partial 
 Этот трюк заключается в измерении всего в процентах.
 :::
 
-:::{admonition}
+:::{admonition} Определение
 :class: note
 
 **Эластичность** $\varepsilon$ любой функции $x(p)$ по параметру $p$ это 
@@ -27,6 +27,12 @@ $$\frac{\partial x^{\ast}}{\partial p}, \quad \frac{\partial x^{\ast}}{\partial 
 $$ \varepsilon = \frac{\partial \log x}{\partial \log p} = \frac{\partial x}{\partial p} \frac{p}{x}$$
 
 :::
+
+Таким образом, мы получаем три эластичности:
+
+$$\varepsilon_{x,p} = \frac{\partial \log x^{\ast}}{\partial \log p}, \quad \varepsilon_{x,q} = \frac{\partial \log x^{\ast}}{\partial \log q}, \quad \varepsilon_{x,I} = \frac{\partial \log x^{\ast}}{\partial \log I}.$$
+
+Легко видеть, что у эластичности нет единиц измерения, так как они успешно сокращаются в правой части формулы. Но какое это отношение имеет к процентам?
 
 ## Эластичность по доходу
 
