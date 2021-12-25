@@ -105,7 +105,12 @@ $$\log x^{\ast} = \log \alpha - \log (\alpha + \beta + \gamma) + \log I - \log p
 
 Аналогично считается логарифм спроса на другие товары. Теперь надо просто подставить их в полезность:
 
-$$V(p,q,I) = U(\log x^{\ast}, \ldots) = (\alpha + \beta + \gamma) \log I - \alpha \log p - \beta \log q - \gamma \log r + \text{какие то константы} $$
+:::{admonition} Утверждение
+:class: important
+Косвенная полезность в Кобб-Дугласе (с точностью до преобразования) имеет вид
+$$V(p,q,I) = U(x^{\ast}, \ldots) = (\alpha + \beta + \gamma) \log I - \alpha \log p - \beta \log q - \gamma \log r + \text{какие то константы} $$
+
+:::
 
 Константы можно, как правило, не выписывать так как они исчезнут при первой же попытке продифференцировать.
 
