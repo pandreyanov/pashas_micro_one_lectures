@@ -24,3 +24,9 @@ parts:
     - file: week_2/lecture_2_1
     - file: week_2/lecture_2_2
     - file: week_2/practice_2
+- caption: Третья неделя
+  chapters:
+    - file: week_3/intro_3
+    - file: week_3/lecture_3_1
+    - file: week_3/lecture_3_2
+    - file: week_3/practice_3
