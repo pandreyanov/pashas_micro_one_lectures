@@ -336,6 +336,33 @@
   <a class="reference internal nav-link" href="#id12">
    Непрерывнисть спроса
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id13">
+     Пример 1
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id14">
+     Пример 2
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id15">
+     Пример 3
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id16">
+     Пример 4
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id17">
+     Пример 5
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -417,7 +444,7 @@
 \[\nabla_{(x,y)} U -  \lambda \cdot \nabla_{(x,y)}B = 0\]</div>
 </div>
 <p>Это мистическим образом совпадает с условием на экстремум Лагранжиана. Отсюда Условия первого Порядка и Метод Множителей Лагранжа.</p>
-<p>A Условия Второго Порядка при линейном ограничении упрощаются до</p>
+<p>A Условия Второго Порядка принимают вид отрицателъной определенности квадратичной формы:</p>
 <div class="math notranslate nohighlight">
 \[\nabla^2_{(x,y)} U - \lambda \cdot \nabla^2_{(x,y)}B \leqslant 0\]</div>
 <p>на касательном к ограничении пространстве.</p>
@@ -530,16 +557,42 @@
 <p>и тогда все будет гарантированно непрерывным.</p>
 <p>Осталось понять, что значит строгая выпуклость и непрерывность задачи. Это несколько субъективные понятия, и я не хочу вдаваться в технические и философские детали. Поэтому, мы сфокусируемся на более-менее общей постановке в теории потребителя, в которой их легко идентифицировать:</p>
 <div class="math notranslate nohighlight">
-\[U(x,y) \to \max_{x,y \geqslant 0}, \quad s.t. B(x,y) \leqslant 0\]</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
+\[U(x,y) \to \max_{x,y \geqslant 0}, \quad s.t. \quad B(x,y) \leqslant 0\]</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
 <p>В <strong>строго выпуклой задаче</strong>, функция <span class="math notranslate nohighlight">\(U\)</span> (квази) вогнутa, функция <span class="math notranslate nohighlight">\(B\)</span> (квази) выпукла, причем одна из двух строго.</p>
 </div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
 <p>В <strong>непрерывной</strong> задаче, обе функции <span class="math notranslate nohighlight">\(U\)</span> и <span class="math notranslate nohighlight">\(B\)</span> непрерывны.</p>
 </div>
 <p>Непрерывность спроса означает, что, грубо говоря, вы всегда сможете найти <strong>частичное равновесие</strong> на рынке любого отдельно взятого товара, как пересечение спроса с предложением. Мы обсудим частичное равновесие ближе к концу курса.</p>
+<p>Постарайтесь ответить, являются ли непрерывными и строго выпуклыми следующие задачи:</p>
+<div class="section" id="id13">
+<h3>Пример 1<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
+<div class="math notranslate nohighlight">
+\[\log x + \log y + \log z \to \max \quad s.t. \quad x^2 + y^2 + z^2 \leqslant 1\]</div>
+</div>
+<div class="section" id="id14">
+<h3>Пример 2<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
+<div class="math notranslate nohighlight">
+\[x + \log y + \log z \to \max \quad s.t. \quad x^2 + y^2 + z^2 \leqslant 1\]</div>
+</div>
+<div class="section" id="id15">
+<h3>Пример 3<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h3>
+<div class="math notranslate nohighlight">
+\[x + y + \log z \to \max \quad s.t. \quad x + y + z \leqslant 1\]</div>
+</div>
+<div class="section" id="id16">
+<h3>Пример 4<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
+<div class="math notranslate nohighlight">
+\[x + y + \sqrt{z} \to \max \quad s.t. \quad x^2 + y^2 + z^2 \leqslant 1\]</div>
+</div>
+<div class="section" id="id17">
+<h3>Пример 5<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h3>
+<div class="math notranslate nohighlight">
+\[x + y + z^2 \to \max \quad s.t. \quad x^2 + y^2 + z^2 \leqslant 1\]</div>
+</div>
 </div>
 </div>
 
