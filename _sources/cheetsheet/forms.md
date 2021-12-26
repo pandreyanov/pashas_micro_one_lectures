@@ -7,11 +7,11 @@
 
 Тогда градиент равен:
 
-$$ \nabla f = \begin{pmatrix} 2 x y + 1\\ x^2 + 1\end{pmatrix}$$
+$$ \nabla f = \begin{pmatrix} \frac{\partial f}{\partial x}\\ \frac{\partial f}{\partial y}\end{pmatrix} = \begin{pmatrix} 2 x y + 1\\ x^2 + 1\end{pmatrix}$$
 
 а Гессиан равен:
 
-$$ \nabla^2 f = \begin{pmatrix} 2 y & 2 x \\ 2 x & 0\end{pmatrix}$$
+$$ \nabla^2 f = \begin{pmatrix} \frac{\partial^2 f}{\partial^2 x} & \frac{\partial^2 f}{\partial x \partial y} \\ \frac{\partial^2 f}{\partial y \partial x} & \frac{\partial^2 f}{\partial^2 x}\end{pmatrix} = \begin{pmatrix} 2 y & 2 x \\ 2 x & 0\end{pmatrix}$$
 
 Квадратичная форма применяется к векторам и выдает обычные числа. Например, если вектор равен $v=(a, b)$, тогда
 
