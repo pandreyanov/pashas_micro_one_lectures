@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Дифференциалы &#8212; Учебник по Микро 1, для ИП, ФЭН ВШЭ</title>
+    <title>Кв. формы &#8212; Учебник по Микро 1, для ИП, ФЭН ВШЭ</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -55,7 +55,6 @@
     <script>mermaid.initialize({startOnLoad:true});</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="Второе домашнее задание" href="../week_3/homework_3.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -217,9 +216,9 @@
   Мат. шпаргалка
  </span>
 </p>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="differentials.html">
    Дифференциалы
   </a>
  </li>
@@ -264,7 +263,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/cheetsheet/differentials.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/cheetsheet/forms.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -297,13 +296,15 @@
         
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="differentials">
-<span id="id1"></span><h1>Дифференциалы<a class="headerlink" href="#differentials" title="Permalink to this headline">¶</a></h1>
-<p>Когда я пишу рубленый <span class="math notranslate nohighlight">\(\frac{d}{dx}\)</span> это <strong>полный дифференциал</strong>, он отыскивает все упоминания о <span class="math notranslate nohighlight">\(x\)</span> в выражении и суммирует все связанные с ними частные производные и дифференциирует дальше вглубь. Когда я пишу курсивный <span class="math notranslate nohighlight">\(\frac{\partial}{\partial x}\)</span> это <strong>частная производная</strong>, она дифференциирует функцию по аргументу, не по значению аргумента.</p>
-<p>Почуствуйте разницу:</p>
+  <div class="tex2jax_ignore mathjax_ignore section" id="forms">
+<span id="id1"></span><h1>Кв. формы<a class="headerlink" href="#forms" title="Permalink to this headline">¶</a></h1>
+<p>С точки зрения пользователя, <strong>квадратичная форма</strong> это просто квадратная матрица, которая является при этом также симметричной. В нашем курсе такие матрицы появятся при повторном дифференциировании гладких функций, то есть, при выписывания Гессиана.</p>
+<p>Пусть, к примеру у нас есть фунция <span class="math notranslate nohighlight">\(f(x, y) = x^2 y + x + y\)</span> тогда градиент</p>
 <div class="math notranslate nohighlight">
-\[ f(x,y) = \sin x + \sin y \quad \Rightarrow \quad \frac{\partial}{\partial x} f(x, x^2) = \cos x, \quad \frac{d}{d x} f(x, x^2) = \cos x + 2x \cos x\]</div>
-<p>Не во всех учебниках делается различие, потому что из контекста обычно понятно, частная производная берется или полный дифференциал.</p>
+\[\begin{split} \nabla f = \begin{bmatrix} 2 x y + 1\\ x^2 + 1\end{bmatix}\end{split}\]</div>
+<p>а Гессиан</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} \nabla^2 f = \begin{bmatrix} 2 y &amp; 2 х \\ 2х &amp; 0\end{bmatix}\end{split}\]</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -330,14 +331,7 @@
               
         
             <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="../week_3/homework_3.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Второе домашнее задание</p>
-        </div>
-    </a>
+<div class='prev-next-area'>
 </div>
         
         </div>
