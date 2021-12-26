@@ -24,7 +24,7 @@ $$
 $$
 
 :::{seealso}
-[differentials lol](differentials)
+[Прочитайте, если вы не понимаете разницу между частным и полным дифференциалом.](differentials)
 :::
 
 
