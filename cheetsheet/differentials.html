@@ -311,13 +311,13 @@
 \[ f(x,y) = \sin x + \sin y \quad \Rightarrow \quad \frac{\partial}{\partial x} f(x, x^2) = \cos x, \quad \frac{d}{d x} f(x, x^2) = \cos x + 2x \cos x\]</div>
 <p>Не во всех учебниках делается различие, потому что из контекста обычно понятно, частная производная берется или полный дифференциал.</p>
 <p>Елси бы это был курс по программированию, я бы сказал:</p>
-<p>‘’’{python}
-def f(x, y):
-return np.sin(x) + np.sin(y)</p>
-<p>def g(x):
-return f(x, x^2)</p>
-<p>‘’’</p>
-<p>Полный дифференциал функции <span class="math notranslate nohighlight">\(f(x, x^2)\)</span> по <span class="math notranslate nohighlight">\(x\)</span> это <span class="math notranslate nohighlight">\(\lim_{\delta x \to 0} \frac{g(x + \delta x)}{\delta x}\)</span>, a частная производная <span class="math notranslate nohighlight">\(f(x, x^2)\)</span> по <span class="math notranslate nohighlight">\(x\)</span> это <span class="math notranslate nohighlight">\(\lim_{\delta x \to 0} \frac{f(x + \delta x, x^2)}{\delta x}\)</span>.</p>
+<p>Полный дифференциал функции <span class="math notranslate nohighlight">\(f(x, x^2)\)</span> по <span class="math notranslate nohighlight">\(x\)</span> это</p>
+<div class="math notranslate nohighlight">
+\[\lim_{\delta x \to 0} \frac{f(x + \delta x, (x + \delta x)^2}{\delta x}\]</div>
+<p>a частная производная <span class="math notranslate nohighlight">\(f(x, x^2)\)</span> по <span class="math notranslate nohighlight">\(x\)</span> это</p>
+<div class="math notranslate nohighlight">
+\[\lim_{\delta x \to 0} \frac{f(x + \delta x, x^2)}{\delta x}.\]</div>
+<p>Постарайтесь не запутаться.</p>
 </div>
 
     <script type="text/x-thebe-config">
