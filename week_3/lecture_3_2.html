@@ -696,7 +696,7 @@ a = V(a,b,c) = \max_{x,y} a-a(x-b)^2 - (y-c)^2 \Rightarrow \\
 <p>лучше всего запомнить это наизусть. Также можно запомнить (с точностью до константы <span class="math notranslate nohighlight">\(C\)</span>) неявную полезностъ в логарифмической форме с весами суммирующимися в единицу:</p>
 <div class="math notranslate nohighlight">
 \[V(p,q,I) = \log I - \alpha \log p - \beta \log q + C\]</div>
-<p>Нам осталось найти хиксианские спросы и функцию расходов.</p>
+<p>Нам осталось найти хиксианские спросы и функцию расходов. Но давайте не торопиться, а сначала рассмотрим наши опции. Один способ - сфомулировать задачу минимизации расходов, решить ее, и затем, чисто механически, вычислить функцию расходов. Другой способ - пройти горизонтально от косвенной полезности к функции расходов, а затем спуститься вниз по Лемме Шепарда.</p>
 <details class="sphinx-bs dropdown card mb-3">
 <summary class="summary-title card-header">
 В какой последовательности лучше делать?<div class="summary-down docutils">
@@ -704,18 +704,24 @@ a = V(a,b,c) = \max_{x,y} a-a(x-b)^2 - (y-c)^2 \Rightarrow \\
 <div class="summary-up docutils">
 <svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="summary-content card-body docutils">
-<p class="card-text">Сначала вывести функцию расходов по дуалъности, а затем спуститься вниз по Лемме Шепарда. Оба шага исключительно простые.</p>
-<p class="card-text">Сначала используем дуальсность, тобы перейти от <span class="math notranslate nohighlight">\((p,q,I)\)</span> к <span class="math notranslate nohighlight">\((p,q,\bar U)\)</span>:</p>
+<p class="card-text">Сначала вывести функцию расходов по дуалъности, а затем спуститься вниз по Лемме Шепарда.</p>
+</div>
+</details><div class="proof admonition" id="proof">
+<p>Proof. Сначала используем дуальсность, тобы перейти от <span class="math notranslate nohighlight">\((p,q,I)\)</span> к <span class="math notranslate nohighlight">\((p,q,\bar U)\)</span>:</p>
 <div class="math notranslate nohighlight">
-\[ \begin{align}\begin{aligned}\bar U = V(p,q,Е(p,q,\bar U)) = \log Е(p,q,\bar U) - \alpha \log p - \beta \log q - C\\Применяя экспоненту к правой и левой части, получаем:\end{aligned}\end{align} \]</div>
-<p class="card-text">Е(p,q,\bar U) = e^{\bar U + C} p^{\alpha} q^{\beta}
-$$</p>
-<p class="card-text">И прямо таки дифференциируем ее по ценам.</p>
+\[\bar U = V(p,q,Е(p,q,\bar U)) = \log Е(p,q,\bar U) - \alpha \log p - \beta \log q - C
+\]</div>
+<p>Применяя экспоненту к правой и левой части, получаем:</p>
+<div class="math notranslate nohighlight">
+\[
+Е(p,q,\bar U) = e^{\bar U + C} p^{\alpha} q^{\beta}
+\]</div>
+<p>И прямо таки дифференциируем ее по ценам.</p>
 <div class="math notranslate nohighlight">
 \[ h_x = e^{\bar U + C} \frac{\alpha}{p} p^{\alpha} q^{\beta}, \quad h_y = e^{\bar U + C} \frac{\beta}{q} p^{\alpha} q^{\beta}.\]</div>
-<p class="card-text">Собственно, все.</p>
+<p>Собственно, все.</p>
 </div>
-</details></div>
+</div>
 <div class="section" id="id18">
 <h3>Леонтьевская полезность<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h3>
 </div>
