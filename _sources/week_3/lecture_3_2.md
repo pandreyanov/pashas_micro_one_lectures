@@ -168,4 +168,4 @@ $$\mathcal{L} = \alpha x^{\rho} + (1-\alpha)y^{\rho} - \lambda(p x + q y - I).$$
 
 Используя несложную подстановку, получаем: 
 
-$$\lambda I = \lambda p x + \lambda q y = \bar U / \rho$$
+$$\lambda I = \lambda p x + \lambda q y = \rho \bar U$$
