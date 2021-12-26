@@ -19,10 +19,10 @@
 
 ## Литература
 
-- **Вариан, ** - 
-- **JR, 1.4 ** - математика косвенной полезности и функции расходов (не путать с издержками)
+- **Вариан,** - 
+- **JR, 1.4** - математика косвенной полезности и функции расходов (не путать с издержками)
 
 
 Дополнительные материалы
 
-- {https://www.wikiwand.com/en/Small_but_significant_and_non-transitory_increase_in_price}[SSNIP вместо индекса Лернера] 
+- [https://www.wikiwand.com/en/Small_but_significant_and_non-transitory_increase_in_price]
