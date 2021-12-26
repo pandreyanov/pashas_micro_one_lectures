@@ -407,13 +407,13 @@
 </div>
 <div class="section" id="id4">
 <h2>Теорема об Огибающей<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
-<p>Это чрезвычайно важная Теорема, и, в отличие от остальных, по настоящему полезная.</p>
+<p>Это чрезвычайно важная теорема, и, в отличие от остальных, по настоящему полезная. Лично я пользуюсь этой теоремой практически каждый день.</p>
 <p>Рассмотрим семейство опорных функций <span class="math notranslate nohighlight">\(f(x, p)\)</span>, где <span class="math notranslate nohighlight">\(x\)</span> - переменная а <span class="math notranslate nohighlight">\(p\)</span> - параметр. Определим огибающую <span class="math notranslate nohighlight">\(V(p)\)</span> как результат оптимизации функции <span class="math notranslate nohighlight">\(f\)</span> по какому-то статическому множеству <span class="math notranslate nohighlight">\(Х\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[ V(p) := \max_{x \in Х} f(x, p),\]</div>
 <p>тогда…</p>
 <div class="proof theorem remark admonition" id="theorem-1">
-<p class="admonition-title"><span class="caption-number">Theorem 7 </span></p>
+<p class="admonition-title"><span class="caption-number">Theorem 7 </span> (Об Огибающей)</p>
 <div class="theorem-content section" id="proof-content">
 <p>Функция <span class="math notranslate nohighlight">\(V(p)\)</span> (почти всюду) дифференциируема и</p>
 <div class="math notranslate nohighlight">
@@ -498,6 +498,21 @@ a = V(a,b,c) = \max_{x,y} a-a(x-b)^2 - (y-c)^2 \Rightarrow \\
 </div>
 <div class="section" id="ces">
 <h2>Возвращение к CES<a class="headerlink" href="#ces" title="Permalink to this headline">¶</a></h2>
+<p>Сформулируем Лагранжиан для задачи минимизации расходов:</p>
+<div class="math notranslate nohighlight">
+\[\mathcal{L} = \alpha x^{\rho} + (1-\alpha)y^{\rho} - \lambda(p x + q y - I).\]</div>
+<p>На самом деле, неважно, к которому из двух членов добавлять множитель лагранжа: к полезности или к бюджету. Поэтому я скопирую условия первого порядка из Лекции 2.</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\alpha \rho x^{\rho} = \lambda p x\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\((1-\alpha) \rho y^{\rho} = \lambda q y\)</span></p></li>
+</ul>
+<p>Единственное что изменилось это ограничение</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\alpha x^{\rho} + (1-\alpha)y^{\rho} = \bar U\)</span></p></li>
+</ul>
+<p>Используя несложную подстановку, получаем:</p>
+<div class="math notranslate nohighlight">
+\[\lambda I = \lambda p x + \lambda q y = \bar U / \rho\]</div>
 </div>
 </div>
 
