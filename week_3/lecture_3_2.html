@@ -569,9 +569,9 @@ a = V(a,b,c) = \max_{x,y} a-a(x-b)^2 - (y-c)^2 \Rightarrow \\
 \end{split}\]</div>
 <p>Легко видеть, что для того, чтобы решения совпали, необходимо чтобы</p>
 <ul class="simple">
-<li><p>во первых, <span class="math notranslate nohighlight">\(\gamma \lambda = 1\)</span></p></li>
+<li><p>во первых, <span class="math notranslate nohighlight">\(\gamma \lambda = 1\)</span>, но это никак не ограничивает, так как мы сами выбираем множитель Лагранжа, соответственно, мы можем всегда подогнать один к другому.</p></li>
 <li><p>во вторых, для любого <span class="math notranslate nohighlight">\(I\)</span> найдется <span class="math notranslate nohighlight">\(\bar U\)</span> и наоборот.</p></li>
-<li><p>в третьих, при достижении таргетированной полезности обязательно расходовался весь бюджет</p></li>
+<li><p>в третьих, при достижении таргетированной полезности обязательно расходовался весь бюджет.</p></li>
 </ul>
 <p>Последнее условие известно как <strong>Закон Вальраса</strong>. Если он выполнен, и задача выпуклая, то минимизация издержек порождает абсолютно такую же систему условий первого порядка, как и максимизация полезности.</p>
 </div>
@@ -581,7 +581,7 @@ a = V(a,b,c) = \max_{x,y} a-a(x-b)^2 - (y-c)^2 \Rightarrow \\
 <p>Действительно, с точки зрения полезности, все бюджетное множество состоит из оптимумов. Однако, лишь одна точка <span class="math notranslate nohighlight">\((x,y)=(0,0)\)</span> по настоящему минимизирует издержки, при таргетированной полезности <span class="math notranslate nohighlight">\(\bar U = 0\)</span>. Что тут произошло?</p>
 <p>Дело в том, что у полезности <span class="math notranslate nohighlight">\(U(x,y) = 1\)</span> <strong>толстые линии уровня</strong>. Чтобы Закон Вальраса заработал, необходимо исключить появление таких линий уровня. Это свойство называется локальной ненасыщаемостью в <span class="math notranslate nohighlight">\(\mathbb{R}^2_{+}\)</span>.</p>
 <div class="proof definition admonition" id="definition-4">
-<p class="admonition-title"><span class="caption-number">Definition 31 </span></p>
+<p class="admonition-title"><span class="caption-number">Definition 32 </span></p>
 <div class="definition-content section" id="proof-content">
 <p>Полезность <strong>локально ненасыщаема</strong> в <span class="math notranslate nohighlight">\(X\)</span>, если для каждой точки <span class="math notranslate nohighlight">\(x \in X\)</span> и для любой сколько угодно малой окрестности этой точки в <span class="math notranslate nohighlight">\(X\)</span>, найдется вторая точка <span class="math notranslate nohighlight">\(y\)</span> в этой окрестности, такая что <span class="math notranslate nohighlight">\(U(y)&gt;U(x)\)</span>.</p>
 </div>
@@ -589,7 +589,7 @@ a = V(a,b,c) = \max_{x,y} a-a(x-b)^2 - (y-c)^2 \Rightarrow \\
 <div class="proof theorem remark admonition" id="theorem-5">
 <p class="admonition-title"><span class="caption-number">Theorem 8 </span> (Закон Вальраса)</p>
 <div class="theorem-content section" id="proof-content">
-<p>Если полезность локально ненасыщаема, то любое из решений любой задачи максимизации полезности всегда лежит на бюджетном ограничении.</p>
+<p>Если полезность локально ненасыщаема в <span class="math notranslate nohighlight">\(\mathbb{R}^n_{+}\)</span>, то любое из решений задачи максимизации полезности всегда лежит на бюджетном ограничении.</p>
 </div>
 </div><p>Осталось убедиться, что для любого <span class="math notranslate nohighlight">\(I\)</span> найдется <span class="math notranslate nohighlight">\(\bar U\)</span> и наоборот.</p>
 </div>
