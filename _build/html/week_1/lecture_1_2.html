@@ -439,11 +439,12 @@
 <div class="section" id="id8">
 <h3>Существование решений<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
 <p>Существование решения, как правило, мы можем легко показать при помощи следующей теоремы</p>
-<div class="warning admonition">
-<p class="admonition-title"><strong>Теорема Вейерштрасса</strong></p>
+<div class="proof theorem remark admonition" id="theorem-0">
+<p class="admonition-title"><span class="caption-number">Theorem 2 </span> (Вейерштрасса)</p>
+<div class="theorem-content section" id="proof-content">
 <p>Непрерывная функция на компакте гарантированно достигает своего минимума и максимума.</p>
 </div>
-<p>Что такое непрерывная функция вы уже знаете. A <strong>компакт</strong> в <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span> это просто ограниченное и замкнутое множество. В контексте одномерной оптимизации, <span class="math notranslate nohighlight">\([a,b]\)</span> это компакт, а <span class="math notranslate nohighlight">\((a,b]\)</span>, <span class="math notranslate nohighlight">\([a,b)\)</span>, <span class="math notranslate nohighlight">\((a,b)\)</span>, <span class="math notranslate nohighlight">\([a,\infty)\)</span>,<span class="math notranslate nohighlight">\((a,\infty)\)</span> это все не компакты.</p>
+</div><p>Что такое непрерывная функция вы уже знаете. A <strong>компакт</strong> в <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span> это просто ограниченное и замкнутое множество. В контексте одномерной оптимизации, <span class="math notranslate nohighlight">\([a,b]\)</span> это компакт, а <span class="math notranslate nohighlight">\((a,b]\)</span>, <span class="math notranslate nohighlight">\([a,b)\)</span>, <span class="math notranslate nohighlight">\((a,b)\)</span>, <span class="math notranslate nohighlight">\([a,\infty)\)</span>,<span class="math notranslate nohighlight">\((a,\infty)\)</span> это все не компакты.</p>
 <p>Говоря другими словами, у вас есть всего два сценария как решение оптимизационной задачи с непрерывной функцией могло бы не существовать: либо оно вообще бесконечно, либо оно конечно, но достигается в точке которая попала на границу области.</p>
 </div>
 </div>
@@ -486,15 +487,17 @@ A -- no --&gt; C[ищем на границе...];
 <div class="section" id="id12">
 <h2>Линии уровня<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
 <p>Наконец, линии уровня это очень удобный инструмент для отлова и классификации кандидатов на решение оптимизационной задачи.</p>
-<div class="note admonition">
-<p class="admonition-title">Определение</p>
+<div class="proof definition admonition" id="definition-1">
+<p class="admonition-title"><span class="caption-number">Definition 13 </span></p>
+<div class="definition-content section" id="proof-content">
 <p><strong>Линией уровня</strong> полезности <span class="math notranslate nohighlight">\(U\)</span>, проходящей через точку <span class="math notranslate nohighlight">\(x\)</span> называется множество всех точек <span class="math notranslate nohighlight">\(y \in X\)</span> таких что <span class="math notranslate nohighlight">\(U(y) = U(x)\)</span>.</p>
 </div>
-<div class="note admonition">
-<p class="admonition-title">Определение</p>
+</div><div class="proof definition admonition" id="definition-2">
+<p class="admonition-title"><span class="caption-number">Definition 14 </span></p>
+<div class="definition-content section" id="proof-content">
 <p><strong>Кривой безразличия</strong> предпочтений <span class="math notranslate nohighlight">\(\succcurlyeq\)</span>, проходящей через точку <span class="math notranslate nohighlight">\(x\)</span> называется множество всех точек <span class="math notranslate nohighlight">\(y \in X\)</span> таких что <span class="math notranslate nohighlight">\(x \sim y\)</span>.</p>
 </div>
-<p>Совершенно ясно, что в контексте представлений предпочтений полезностями и наоборот, кривая безразличия и линия уровня это одно и то же.</p>
+</div><p>Совершенно ясно, что в контексте представлений предпочтений полезностями и наоборот, кривая безразличия и линия уровня это одно и то же.</p>
 <p>Рассмотрим несколько примеров</p>
 <div class="section" id="id13">
 <h3>Пример 1: Линейная полезность<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
