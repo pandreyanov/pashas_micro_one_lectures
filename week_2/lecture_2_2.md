@@ -107,7 +107,7 @@ $$\log x^{\ast} = \log \alpha - \log (\alpha + \beta + \gamma) + \log I - \log p
 :::{prf:property}
 Косвенная полезность в Кобб-Дугласе (с точностью до преобразования) имеет вид
 
-$$V(p,q,I) = U(x^{\ast}, \ldots) = (\alpha + \beta + \gamma) \log I - \alpha \log p - \beta \log q - \gamma \log r + C $$
+$$V(p,q,I) = (\alpha + \beta + \gamma) \log I - \alpha \log p - \beta \log q - \gamma \log r + C $$
 
 :::
 
@@ -203,7 +203,7 @@ $$
 :::{prf:property}
 Косвенная полезность в Леонтьеве (с точностью до преобразования) имеет вид
 
-$$V(p,q,I) = U(x^{\ast}, \ldots) = \frac{I}{ap + bq + cr}$$
+$$V(p,q,I) = \frac{I}{ap + bq + cr}$$
 
 :::
 
@@ -285,11 +285,11 @@ $$ f(I/p) + 0.$$
 :::{prf:property}
 Косвенная полезность в квазилинейной полезности (с точностью до преобразования) имеет вид
 
-$$V(p,q,I) = U(x^{\ast}, \ldots) = f((f')^{-1}(k p)) + I - p (f')^{-1}(k p)$$
+$$V(p,q,I) = f((f')^{-1}(k p)) + I - p (f')^{-1}(k p)$$
 
 если $I - p (f')^{-1}(k p) > 0$, и 
 
-$$V(p,q,I) = U(x^{\ast}, \ldots) = f(I/p)$$
+$$V(p,q,I) = f(I/p)$$
 
 в противном случае.
 
@@ -348,7 +348,7 @@ $$ap = bq$$
 :::{prf:property}
 Косвенная полезность в линейной полезности (с точностью до преобразования) имеет вид
 
-$$V(p,q,I) = U(x^{\ast}, \ldots) = I \cdot \max(a/p, b/q).$$
+$$V(p,q,I) = I \cdot \max(a/p, b/q).$$
 
 :::
 
@@ -386,4 +386,38 @@ $$\mathcal{L} =\alpha x^{\rho} + (1-\alpha)y^{\rho} - \lambda(p x + q y - I).$$
 
 $$\rho (\alpha x^{\rho} + (1-\alpha) y^{\rho})= \lambda I$$
 
-Получается нелинейная система уравнений, которую не так то просто решить в лоб. Мы дорешаем эту задачу на следующей лекции, когда освоим некоторые новые приемы связанные с минимизацией расходов (не путать с издержками).
+И еще раз подставляя...
+
+$$\rho \left(
+
+\alpha (\frac{\lambda p}{\alpha \rho})^{\frac{\rho}{\rho-1}} + 
+(1-\alpha) (\frac{\lambda q}{(1-\alpha) \rho})^{\frac{\rho}{\rho-1}}
+
+\right)
+= \lambda I$$
+
+И преобразуя еще раз, и используя сокращение $\sigma = 1-\frac{\rho}{\rho-1}$:
+
+$$\rho^\sigma \left(
+
+\alpha^\sigma p^{1-\sigma} + 
+(1-\alpha)^{\sigma} q^{1-\sigma}
+
+\right)
+= \lambda^\sigma I$$
+
+Отсюда выражается множитель Лагранжа и, наконец, спросы:
+
+:::{prf:property}
+Спрос на каждый товар описывается следующими уравнениями: 
+
+$$
+
+x^{\ast} = \frac{\alpha^{\sigma} p^{1-\sigma}}{\alpha^{\sigma} p^{1-\sigma} + (1-\alpha)^{\sigma} q^{1-\sigma}}\frac{I}{p},\\
+
+y^{\ast} = \frac{(1-\alpha)^{\sigma} q^{1-\sigma}}{\alpha^{\sigma} p^{1-\sigma} + (1-\alpha)^{\sigma} q^{1-\sigma}}\frac{I}{q}.
+$$
+
+:::
+
+Тут много чего магически сократилось, потому что $\sigma(1-\rho) = 1$.
