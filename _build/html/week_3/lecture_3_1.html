@@ -377,13 +377,14 @@
 <p class="card-text">Хуже того, даже американский доллар отличается от года к году, поэтому, формально говоря это может быть доллар-2019, доллар-2020 или доллар-2021. Получается, что открывая статью по экономике, в которой изучается эффект чего либо на что либо, экономист должен конвертировать коэффициенты на год, страну, и, возможно провинцию. А также на объем тары/упаковки, литраж или штуки соответствующего товара. Это сделало бы любые исследования бесполезными.</p>
 <p class="card-text">Поэтому экономисты придумали математический трюк для того, чтобы избавиться от единиц измерения раз и навсегда. Этот трюк заключается в измерении всего в процентах.</p>
 </div>
-</details><div class="note admonition">
-<p class="admonition-title">Определение</p>
+</details><div class="proof definition admonition" id="definition-0">
+<p class="admonition-title"><span class="caption-number">Definition 29 </span></p>
+<div class="definition-content section" id="proof-content">
 <p><strong>Эластичность</strong> <span class="math notranslate nohighlight">\(\varepsilon_{x,p}\)</span> любой функции <span class="math notranslate nohighlight">\(x(p)\)</span> по параметру <span class="math notranslate nohighlight">\(p\)</span> это</p>
 <div class="math notranslate nohighlight">
 \[ \varepsilon = \frac{\partial \log x}{\partial \log p} = \frac{\partial x}{\partial p} \frac{p}{x}\]</div>
 </div>
-<p>Таким образом, мы получаем три эластичности:</p>
+</div><p>Таким образом, мы получаем три эластичности:</p>
 <div class="math notranslate nohighlight">
 \[\varepsilon_{x,p} = \frac{\partial \log x^{\ast}}{\partial \log p}, \quad \varepsilon_{x,q} = \frac{\partial \log x^{\ast}}{\partial \log q}, \quad \varepsilon_{x,I} = \frac{\partial \log x^{\ast}}{\partial \log I}.\]</div>
 <p>Легко видеть, что у эластичности нет единиц измерения, так как они успешно сокращаются в правой части формулы.</p>
@@ -417,14 +418,15 @@
 <div class="math notranslate nohighlight">
 \[\varepsilon_{x,I} = \frac{\partial x}{\partial I} \frac{I}{x}.\]</div>
 <p>Любопытным является то, что эластичности по доходу у всех товаров связаны простым линейным соотношением, правда разным в каждой новой точке.</p>
-<div class="important admonition">
-<p class="admonition-title">Утверждение</p>
+<div class="proof property admonition" id="property-1">
+<p class="admonition-title"><span class="caption-number">Property 19 </span></p>
+<div class="property-content section" id="proof-content">
 <p>Всегда выполнено следующее тождество:</p>
 <div class="math notranslate nohighlight">
 \[\varepsilon_{x,I} \cdot s_x + \varepsilon_{y,I} \cdot s_y + \varepsilon_{z,I} \cdot s_z = 1\]</div>
 <p>где <span class="math notranslate nohighlight">\(s_x, s_y, s_z\)</span> доли расходов на соответствующие товары.</p>
 </div>
-<p>Доказательство этого факта вытекает прямиком из бюджетного ограничения. Поскольку доли всегда неотрицателъные, то это еще один раз показывает, что все товары не могут быть одновременно инфериорными.</p>
+</div><p>Доказательство этого факта вытекает прямиком из бюджетного ограничения. Поскольку доли всегда неотрицателъные, то это еще один раз показывает, что все товары не могут быть одновременно инфериорными.</p>
 </div>
 <div class="section" id="id4">
 <h2>Эластичность по цене<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
@@ -449,11 +451,12 @@
 \varepsilon_{z,q}, \varepsilon_{z,r}.
 \end{gather*}\]</div>
 <p>Эти эластичности хранят информацию о, грубо говоря, тенденциях к замещению между нашими товарами. Поскольку цены и спросы неотрицательны, мы можем однозначно связать знак эластичности с природой замещения между любыми двумя товарами.</p>
-<div class="important admonition">
-<p class="admonition-title">Утверждение</p>
+<div class="proof property admonition" id="property-2">
+<p class="admonition-title"><span class="caption-number">Property 20 </span></p>
+<div class="property-content section" id="proof-content">
 <p>Если <span class="math notranslate nohighlight">\(\varepsilon_{x,q} \geqslant 0\)</span> то <span class="math notranslate nohighlight">\(x\)</span> это субститут по отношению к <span class="math notranslate nohighlight">\(y\)</span>. Если <span class="math notranslate nohighlight">\(\varepsilon_{x,q} &lt; 0\)</span> то <span class="math notranslate nohighlight">\(x\)</span> это комплемент по отношению к <span class="math notranslate nohighlight">\(y\)</span>.</p>
 </div>
-<p>Рассмотрим полезность <strong>совершенные субституты</strong>…</p>
+</div><p>Рассмотрим полезность <strong>совершенные субституты</strong>…</p>
 <div class="math notranslate nohighlight">
 \[\log x = \mathbb{I}(ap &lt; bq) \cdot (\log I - \log p) + \mathbb{I}(ap &gt; bq) \cdot \infty\]</div>
 <p>и убедимся, что перекрестная эластичность неотрицательная, если она вообще определена. Действительно, пока потребление <span class="math notranslate nohighlight">\(x\)</span> положительно то оно не чувствительно к изменениям других цен.</p>
@@ -492,27 +495,29 @@ P(x) - C + P'(x)x = 0\\
 (P(x) - C)/P(x) = - P'(x)x/P(x) = - \delta
 \end{gather*}
 \end{split}\]</div>
-<p>То есть, маржа (то что слева) равна минус эластичности обратной фунцкии спроса.</p>
+<p>То есть, маржа/цена (то что слева) равна минус эластичности обратной фунцкии спроса.</p>
 <p>А как это связано с (прямой) функцией спроса? Оказывается, что у обратных функций эластичность - тоже обратная. То есть,</p>
-<div class="important admonition">
-<p class="admonition-title">Утверждение</p>
+<div class="proof property admonition" id="property-3">
+<p class="admonition-title"><span class="caption-number">Property 21 </span></p>
+<div class="property-content section" id="proof-content">
 <p>Если у (прямой) функции спроса эластичность равна <span class="math notranslate nohighlight">\(\varepsilon\)</span>, то маржа (как доля от цены) монополиста (с постоянными издержками <span class="math notranslate nohighlight">\(c\)</span>) в оптимуме должна равняться в точности обратной эластичности, с минусом:</p>
 <div class="math notranslate nohighlight">
 \[\frac{p-c}{p} = - \frac{1}{\varepsilon}\]</div>
 </div>
-<p>Вообще говоря, <strong>маржа</strong> (по английски <strong>markup</strong>) это <span class="math notranslate nohighlight">\(p-c\)</span>, но, по причинам которые я озвучил в начале лекции, экономисты любят ее безразмерную версию <span class="math notranslate nohighlight">\((p-c)/p\)</span> или <span class="math notranslate nohighlight">\(100(p-c)/p\)</span>. Последнее выражение означает, что маржа озвучивается <strong>в процентах от цены</strong>.</p>
+</div><p>Вообще говоря, <strong>маржа</strong> (по английски <strong>markup</strong>) это <span class="math notranslate nohighlight">\(p-c\)</span>, но, по причинам которые я озвучил в начале лекции, экономисты любят ее безразмерную версию <span class="math notranslate nohighlight">\(100(p-c)/p\)</span>, то есть <strong>в процентах от цены</strong>.</p>
 </div>
 <div class="section" id="id9">
 <h3>Индекс Лернера<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
 <p>Сейчас мы поставим себя на место контролирующего органа и будем решать, в некотором смысле, обратную задачу. Пусть спрос на товар <span class="math notranslate nohighlight">\(x\)</span> описывается <strong>обратной фунцкией спроса</strong> <span class="math notranslate nohighlight">\(P(x)\)</span> с постоянной эластичностью <span class="math notranslate nohighlight">\(\delta\)</span>, а маржинальные издержки (не обязательно постоянные) монополиста равны <span class="math notranslate nohighlight">\(MC\)</span> при текущем обьеме. Цена установлена монополистом на уровне <span class="math notranslate nohighlight">\(P^{\ast}\)</span>.</p>
 <p>Как измерить рыночную власть монополиста?</p>
-<div class="note admonition">
-<p class="admonition-title">Определение</p>
+<div class="proof definition admonition" id="definition-4">
+<p class="admonition-title"><span class="caption-number">Definition 30 </span></p>
+<div class="definition-content section" id="proof-content">
 <p>Индекс Лернера <span class="math notranslate nohighlight">\(L\)</span> вычисляется по формуле</p>
 <div class="math notranslate nohighlight">
 \[L = \frac{P^{\ast}-MC}{P^{\ast}}\]</div>
 </div>
-<p>То есть, <strong>индекс Лернера</strong> это и есть маржа в долях (не в процентах).</p>
+</div><p>То есть, <strong>индекс Лернера</strong> это и есть маржа в долях (не в процентах).</p>
 <p>В Американских исследованиях, эластичность потребления многих товаров (например бензин) оценивается около .37, соответственно, для типичной бензоколонки, индекс Лернера выше .37 вызовет интерес со стороны контролирующего органа (в США это Федеральная Торговая Комиссия, в России это Федеральная Антимонопольная Служба) и сулит судебные иски по поводу злоупотребления рыночной властью.</p>
 </div>
 </div>
