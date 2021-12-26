@@ -411,6 +411,7 @@ $$\rho^\sigma \left(
 :::{prf:property}
 Спрос на каждый товар описывается следующими уравнениями: 
 
+$$
 \begin{gather*}
 
 x = (\frac{I}{\rho^\sigma \left(
