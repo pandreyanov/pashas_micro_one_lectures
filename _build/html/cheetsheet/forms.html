@@ -311,14 +311,14 @@
 \[\begin{split} \nabla f = \begin{pmatrix} 2 x y + 1\\ x^2 + 1\end{pmatrix}\end{split}\]</div>
 <p>а Гессиан равен:</p>
 <div class="math notranslate nohighlight">
-\[\begin{split} \nabla^2 f = \begin{pmatrix} 2 y &amp; 2 х \\ 2 x &amp; 0\end{pmatrix}\end{split}\]</div>
-<p>Квадратичная форма применяется к векторам и дает либо положительные либо отрицательные значения. Например, если вектор равен <span class="math notranslate nohighlight">\(v=(a,b)\)</span>, тогда</p>
+\[\begin{split} \nabla^2 f = \begin{pmatrix} 2 y &amp; 2 x \\ 2 x &amp; 0\end{pmatrix}\end{split}\]</div>
+<p>Квадратичная форма применяется к векторам и выдает обычные числа. Например, если вектор равен <span class="math notranslate nohighlight">\(v=(a, b)\)</span>, тогда</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}\nabla^2 f (v) = \begin{pmatrix} a &amp; b \end{pmatrix} \begin{pmatrix} 2 y &amp; 2 x \\ 2 x &amp; 0\end{pmatrix} \begin{pmatrix} a \\ b \end{pmatrix}\end{split}\]</div>
 <p>Перемножая все три матрицы вручную, мы получаем:</p>
 <div class="math notranslate nohighlight">
-\[\nabla^2 f (v) = 2 y a^2 + 4 x a b.\]</div>
-<p>Это функция от координат вектора <span class="math notranslate nohighlight">\(v = (a,b)\)</span>, а <span class="math notranslate nohighlight">\(x,y\)</span> это параметры. Довольно легко подогнать параметры так, чтобы значение функции было гарантированно полоэительным или гарантированно отрицательным на всех векторах <span class="math notranslate nohighlight">\(v\)</span>, отличных от нуля.</p>
+\[\nabla^2 f (v) = a^2 \cdot 2 y + a b \cdot x y + b^2 \cdot 0.\]</div>
+<p>Это функция от координат вектора <span class="math notranslate nohighlight">\(v = (a,b)\)</span>, а <span class="math notranslate nohighlight">\(x, y\)</span> это параметры. Довольно легко подогнать параметры так, чтобы значение функции было гарантированно полоэительным или гарантированно отрицательным на всех векторах <span class="math notranslate nohighlight">\(v\)</span>, отличных от нуля.</p>
 <p>Например, если <span class="math notranslate nohighlight">\(x = 0, y = 1\)</span> то форма положительно определена и мы пишем <span class="math notranslate nohighlight">\(\nabla^2 f &gt; 0\)</span>. Если же <span class="math notranslate nohighlight">\(x = 0, y = -1\)</span> то форма отрицательно определена и мы пишем <span class="math notranslate nohighlight">\(\nabla^2 f &lt; 0\)</span>.</p>
 </div>
 
