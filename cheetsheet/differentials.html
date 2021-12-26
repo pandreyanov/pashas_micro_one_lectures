@@ -305,11 +305,19 @@
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="differentials">
 <span id="id1"></span><h1>Дифференциалы<a class="headerlink" href="#differentials" title="Permalink to this headline">¶</a></h1>
-<p>Когда я пишу рубленый <span class="math notranslate nohighlight">\(\frac{d}{dx}\)</span> это <strong>полный дифференциал</strong>, он отыскивает все упоминания о <span class="math notranslate nohighlight">\(x\)</span> в выражении и суммирует все связанные с ними частные производные и дифференциирует дальше вглубь. Когда я пишу курсивный <span class="math notranslate nohighlight">\(\frac{\partial}{\partial x}\)</span> это <strong>частная производная</strong>, она дифференциирует функцию по аргументу, не по значению аргумента.</p>
+<p>Когда я пишу рубленый <span class="math notranslate nohighlight">\(\frac{d}{dx}\)</span> это <strong>полный дифференциал</strong>, он отыскивает все упоминания о <span class="math notranslate nohighlight">\(x\)</span> в выражении и суммирует все связанные с ними частные производные и дифференциирует дальше вглубь. Когда я пишу курсивный <span class="math notranslate nohighlight">\(\frac{\partial}{\partial x}\)</span> это <strong>частная производная</strong>, она дифференциирует функцию по аргументу (вернее даже по позиции аргумента) согласно определению функции, но не по значению переменной во время вызова функции.</p>
 <p>Почуствуйте разницу:</p>
 <div class="math notranslate nohighlight">
 \[ f(x,y) = \sin x + \sin y \quad \Rightarrow \quad \frac{\partial}{\partial x} f(x, x^2) = \cos x, \quad \frac{d}{d x} f(x, x^2) = \cos x + 2x \cos x\]</div>
 <p>Не во всех учебниках делается различие, потому что из контекста обычно понятно, частная производная берется или полный дифференциал.</p>
+<p>Елси бы это был курс по программированию, я бы сказал:</p>
+<p>‘’’{python}
+def f(x, y):
+return np.sin(x) + np.sin(y)</p>
+<p>def g(x):
+return f(x, x^2)</p>
+<p>‘’’</p>
+<p>Полный дифференциал функции <span class="math notranslate nohighlight">\(f(x, x^2)\)</span> по <span class="math notranslate nohighlight">\(x\)</span> это <span class="math notranslate nohighlight">\(\lim_{\delta x \to 0} \frac{g(x + \delta x)}{\delta x}\)</span>, a частная производная <span class="math notranslate nohighlight">\(f(x, x^2)\)</span> по <span class="math notranslate nohighlight">\(x\)</span> это <span class="math notranslate nohighlight">\(\lim_{\delta x \to 0} \frac{f(x + \delta x, x^2)}{\delta x}\)</span>.</p>
 </div>
 
     <script type="text/x-thebe-config">
