@@ -355,6 +355,11 @@
      Закон Вальраса
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id12">
+     Дуальность
+    </a>
+   </li>
   </ul>
  </li>
 </ul>
@@ -516,19 +521,20 @@ a = V(a,b,c) = \max_{x,y} a-a(x-b)^2 - (y-c)^2 \Rightarrow \\
 <p>На самом деле, эти две задачи очень близко связаны. Давайте выпишем Лагранжианы в обеих задачах, но обозначим множители Лагранжа по разному.</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\mathcal{L}^{P1} = U(x, y) - \lambda (px + qy - I)\\
-\mathcal{L}^{P2} = (px + qy - I) - \gamma (\bar U - U(x,y))
+\mathcal{L}^{1} = U(x, y) - \lambda (px + qy - I)\\
+\mathcal{L}^{2} = (px + qy - I) - \gamma (\bar U - U(x,y))
 \end{split}\]</div>
 <p>Поверим на слово, что обе задачи выпуклые, и выпишем УПП для поиска оптимума:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}  
-\text{P1:} U'_x = \lambda p, \quad U'_y = \lambda q, \quad px + qy = I\\
+\text{P1:} \quad U'_x = \lambda p, \quad U'_y = \lambda q, \quad px + qy = I\\
 \text{P2:} \quad p = \gamma U'_x, \quad q = \gamma U'_y, \quad U(x,y) = \bar U
 \end{split}\]</div>
 <p>Легко видеть, что для того, чтобы решения совпали, необходимо чтобы</p>
 <ul class="simple">
-<li><p>во первых, <span class="math notranslate nohighlight">\(\gamma \lambda = 1\)</span>, что нас никак не ограничивает</p></li>
-<li><p>во вторых, при достижении таргетированной полезности обязательно расходовался весь бюджет и наоборот</p></li>
+<li><p>во первых, <span class="math notranslate nohighlight">\(\gamma \lambda = 1\)</span></p></li>
+<li><p>во вторых, для любого <span class="math notranslate nohighlight">\(I\)</span> найдется <span class="math notranslate nohighlight">\(\bar U\)</span> и наоборот.</p></li>
+<li><p>в третьих, при достижении таргетированной полезности обязательно расходовался весь бюджет</p></li>
 </ul>
 <p>Последнее условие известно как <strong>Закон Вальраса</strong>. Если он выполнен, и задача выпуклая, то минимизация издержек порождает абсолютно такую же систему условий первого порядка, как и максимизация полезности.</p>
 </div>
@@ -542,11 +548,20 @@ a = V(a,b,c) = \max_{x,y} a-a(x-b)^2 - (y-c)^2 \Rightarrow \\
 <div class="definition-content section" id="proof-content">
 <p>Полезность <strong>локально ненасыщаема</strong> в <span class="math notranslate nohighlight">\(X\)</span>, если для каждой точки <span class="math notranslate nohighlight">\(x \in X\)</span> и для любой сколько угодно малой окрестности этой точки в <span class="math notranslate nohighlight">\(X\)</span>, найдется вторая точка <span class="math notranslate nohighlight">\(y\)</span> в этой окрестности, такая что <span class="math notranslate nohighlight">\(U(y)&gt;U(x)\)</span>.</p>
 </div>
-</div><p>Теперь мы готовы сформулировать теорему</p>
+</div><p>Теперь мы готовы сформулировать первую теорему</p>
 <div class="proof theorem remark admonition" id="theorem-5">
 <p class="admonition-title"><span class="caption-number">Theorem 8 </span> (Закон Вальраса)</p>
 <div class="theorem-content section" id="proof-content">
 <p>Если полезность локально ненасыщаема, то любое из решений любой задачи максимизации полезности всегда лежит на бюджетном ограничении.</p>
+</div>
+</div><p>Осталось убедиться, что для любого <span class="math notranslate nohighlight">\(I\)</span> найдется <span class="math notranslate nohighlight">\(\bar U\)</span> и наоборот.</p>
+</div>
+<div class="section" id="id12">
+<h3>Дуальность<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+<div class="proof theorem remark admonition" id="theorem-6">
+<p class="admonition-title"><span class="caption-number">Theorem 9 </span> (Дуальность)</p>
+<div class="theorem-content section" id="proof-content">
+<p>Если полезность (квази-)вогнутая и локально ненасыщаемая, то любое решение <span class="math notranslate nohighlight">\(P1\)</span> воспроизводится как одно из решений <span class="math notranslate nohighlight">\(P2\)</span> и наоборот. То есть, <span class="math notranslate nohighlight">\(P1 и P2\)</span> эквивалентны.</p>
 </div>
 </div></div>
 </div>
