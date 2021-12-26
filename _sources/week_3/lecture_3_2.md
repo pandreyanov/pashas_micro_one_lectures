@@ -24,7 +24,7 @@ $$
 $$
 
 :::{seealso}
-[differentials](label-text)
+[differentials lol](differentials)
 :::
 
 
