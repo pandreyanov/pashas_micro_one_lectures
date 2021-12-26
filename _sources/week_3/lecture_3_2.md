@@ -325,16 +325,19 @@ $$V(p,q,I) = \log I - \alpha \log p - \beta \log q + C$$
 
 Сначала вывести функцию расходов по дуалъности, а затем спуститься вниз по Лемме Шепарда. Оба шага исключительно простые.
 
-Сначала обращаем косвенную полезность:
+Сначала используем дуальсность, тобы перейти от $(p,q,I)$ к $(p,q,\bar U)$:
 
 $$\bar U = V(p,q,Е(p,q,\bar U)) = \log Е(p,q,\bar U) - \alpha \log p - \beta \log q - C
 
-Е(p,q,\bar U) = e^{\bar U + C} p^{\alpha} q^{beta}
+Применяя экспоненту к правой и левой части, получаем:
+
+$$
+Е(p,q,\bar U) = e^{\bar U + C} p^{\alpha} q^{\beta}
 $$
 
 И прямо таки дифференциируем ее по ценам.
 
-$$ h_x = e^{\bar U + C} \frac{\alpha}{p} p^{\alpha} q^{beta}, \quad h_y = e^{\bar U + C} \frac{\beta}{q} p^{\alpha} q^{beta}.$$
+$$ h_x = e^{\bar U + C} \frac{\alpha}{p} p^{\alpha} q^{\beta}, \quad h_y = e^{\bar U + C} \frac{\beta}{q} p^{\alpha} q^{\beta}.$$
 
 Собственно, все.
 :::
