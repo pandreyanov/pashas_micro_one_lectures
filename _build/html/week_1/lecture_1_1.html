@@ -521,39 +521,44 @@
 <h2>Свойства полезности<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
 <p>У полезностей в <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span> часто бывает несколько (если не все) из нижеперечисленных свойств. Пусть <span class="math notranslate nohighlight">\(a, b\)</span> это какие то комбинации товаров из множества альтернатив <span class="math notranslate nohighlight">\(X \subset \mathbb{R}^n\)</span>.</p>
 <p>Мы начнем с двух эквивалентных определений непрерывности.</p>
-<div class="note admonition">
-<p class="admonition-title">Определение</p>
+<div class="proof definition admonition" id="definition-1">
+<p class="admonition-title"><span class="caption-number">Definition 2 </span></p>
+<div class="definition-content section" id="proof-content">
 <p>Полезность <span class="math notranslate nohighlight">\(U\)</span> <strong>непрерывна</strong> в <span class="math notranslate nohighlight">\(X\)</span>, если для любого <span class="math notranslate nohighlight">\(x \in X\)</span> множества <span class="math notranslate nohighlight">\(L_{+}(x)\)</span> и <span class="math notranslate nohighlight">\(L_{-}(x)\)</span> замкнуты, где</p>
 <div class="math notranslate nohighlight">
 \[ L_{+}(x) = \{y \in X: U(y) \geqslant U(x)\}, \quad L_{-}(x) = \{y \in X: U(y) \leqslant U(x)\}\]</div>
 </div>
-<p>Описанные выше множества <span class="math notranslate nohighlight">\(L_{+}(x)\)</span> (или <span class="math notranslate nohighlight">\(L_{-}(x)\)</span>) это подмножества допустимых альтернатив,  которые не хуже (или не лучше) чем сам <span class="math notranslate nohighlight">\(x\)</span>. Иногда в литературе они называются верхним и нижним Лебеговым множеством.</p>
-<div class="note admonition">
-<p class="admonition-title">Определение</p>
+</div><p>Описанные выше множества <span class="math notranslate nohighlight">\(L_{+}(x)\)</span> (или <span class="math notranslate nohighlight">\(L_{-}(x)\)</span>) это подмножества допустимых альтернатив,  которые не хуже (или не лучше) чем сам <span class="math notranslate nohighlight">\(x\)</span>. Иногда в литературе они называются верхним и нижним Лебеговым множеством.</p>
+<div class="proof definition admonition" id="definition-2">
+<p class="admonition-title"><span class="caption-number">Definition 3 </span></p>
+<div class="definition-content section" id="proof-content">
 <p>Полезность <span class="math notranslate nohighlight">\(U\)</span> <strong>непрерывна</strong> в <span class="math notranslate nohighlight">\(X\)</span>, если для любого <span class="math notranslate nohighlight">\(\varepsilon &gt; 0\)</span> существует <span class="math notranslate nohighlight">\(\delta &gt;0\)</span> такой что для любых <span class="math notranslate nohighlight">\(x, y \in X\)</span> верно что:</p>
 <div class="math notranslate nohighlight">
 \[||x - y|| &lt; \delta \quad \Rightarrow \quad ||U(x) - U(y)|| &lt; \varepsilon\]</div>
 </div>
-<p>Большую роль в истории физики и математики играют выпуклые и вогнутые функции. Например, в физике твердых тел все объекты минимизирует свою энергию. Заметим, что кинетическая энергия выпуклая, то есть, энергия с минусом вогнутая функция. Следовательно, все в физике максимизирует какую то вогнутую функцию. Естественным образом, это понятие появилось и в экономике.</p>
-<div class="note admonition">
-<p class="admonition-title">Определение</p>
+</div><p>Большую роль в истории физики и математики играют выпуклые и вогнутые функции. Например, в физике твердых тел все объекты минимизирует свою энергию. Заметим, что кинетическая энергия выпуклая, то есть, энергия с минусом вогнутая функция. Следовательно, все в физике максимизирует какую то вогнутую функцию. Естественным образом, это понятие появилось и в экономике.</p>
+<div class="proof definition admonition" id="definition-3">
+<p class="admonition-title"><span class="caption-number">Definition 4 </span></p>
+<div class="definition-content section" id="proof-content">
 <p>Полезность <span class="math notranslate nohighlight">\(U\)</span> <strong>вогнута</strong> если для любых <span class="math notranslate nohighlight">\(x, y \in X\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[ \forall \alpha \in (0,1): U(\alpha x + (1-\alpha) y)) \geqslant \alpha U(x) + (1-\alpha) U(y)\]</div>
 </div>
-<p>Давать определение выпуклой полезности не имеет большого смысла с экономической точки зрения, считается, что все полезности скорее вогнуты чем выпуклы.</p>
+</div><p>Давать определение выпуклой полезности не имеет большого смысла с экономической точки зрения, считается, что все полезности скорее вогнуты чем выпуклы.</p>
 <p>Зато большим смыслом обладает понятие квази-вогнутости. У него тоже будут две версии, которые почти (но не совсем) эквивалентны друг другу.</p>
-<div class="note admonition">
-<p class="admonition-title">Определение</p>
+<div class="proof definition admonition" id="definition-4">
+<p class="admonition-title"><span class="caption-number">Definition 5 </span></p>
+<div class="definition-content section" id="proof-content">
 <p>Полезность <span class="math notranslate nohighlight">\(U\)</span> <strong>квази-вогнутa</strong> в <span class="math notranslate nohighlight">\(X\)</span>, если для любого <span class="math notranslate nohighlight">\(x \in X\)</span> множество <span class="math notranslate nohighlight">\(L_{+}(x)\)</span> выпукло, то есть, оно содержит пределы всех своих последовательностей.</p>
 </div>
-<div class="note admonition">
-<p class="admonition-title">Определение</p>
+</div><div class="proof definition admonition" id="definition-5">
+<p class="admonition-title"><span class="caption-number">Definition 6 </span></p>
+<div class="definition-content section" id="proof-content">
 <p>Полезность <span class="math notranslate nohighlight">\(U\)</span> <strong>квази-вогнута</strong> в <span class="math notranslate nohighlight">\(X\)</span> если для любых <span class="math notranslate nohighlight">\(x, y \in X\)</span> их линейная комбинация не хуже чем худшая из двух:</p>
 <div class="math notranslate nohighlight">
 \[ \forall \alpha \in (0,1): U(\alpha x + (1-\alpha) y)) \geqslant \min(U(x), U(y))\]</div>
 </div>
-<p>P.S. Иногда я буду делать приставку “строго”, это значит что либо множество строго выпукло, либо неравенство строгое. Смотрите на контекст.</p>
+</div><p>P.S. Иногда я буду делать приставку “строго”, это значит что либо множество строго выпукло, либо неравенство строгое. Смотрите на контекст.</p>
 <div class="section" id="id11">
 <h3>Вогнутость против квази вогнутости<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
 <p>Я буду иногда называть комбинацию товаров <strong>портфелем</strong>, как в финансах, вместо <strong>потребительской корзины</strong>, для краткости.</p>
@@ -573,8 +578,9 @@
 <div class="section" id="id14">
 <h4>Связь вогнутости и квази-вогнутости<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h4>
 <p>Оба термина: вогнутость и квази-вогнутость, означают либо <strong>любовь агентов к разнообразию</strong>, либо <strong>комплементарность товаров</strong>, либо <strong>боязнь риска</strong>, но вогнутость однозначно сильнее чем квази-вогнутость. Докажем этот простой факт:</p>
-<div class="important admonition">
-<p class="admonition-title">Утверждение</p>
+<div class="proof property admonition" id="property-6">
+<p class="admonition-title"><span class="caption-number">Property 1 </span></p>
+<div class="property-content section" id="proof-content">
 <p>Из вогнутости следует квази вогнутость
 Достаточно выписать цепочку неравенств:</p>
 <div class="math notranslate nohighlight">
@@ -586,18 +592,19 @@
 \end{align*}
 \end{split}\]</div>
 </div>
-<p>Однако, неверно что из квази-вогнутости обязательно следует вогнутость. Можно привести огромное количество контр-примеров, например функция, напоминающая перевернутую крышу пагоды (китайский домик):</p>
+</div><p>Однако, неверно что из квази-вогнутости обязательно следует вогнутость. Можно привести огромное количество контр-примеров, например функция, напоминающая перевернутую крышу пагоды (китайский домик):</p>
 <div class="math notranslate nohighlight">
 \[ U(x) = -(|x|-1)^2, \quad x \in [-1,1]\]</div>
 <p>является квази-вогнутой, но не вогнутой.</p>
 <p>При всем этом множество <span class="math notranslate nohighlight">\(X\)</span> у нас будет именно выпуклым, а не вогнутым.</p>
-<div class="note admonition">
-<p class="admonition-title">Определение</p>
+<div class="proof definition admonition" id="definition-7">
+<p class="admonition-title"><span class="caption-number">Definition 7 </span></p>
+<div class="definition-content section" id="proof-content">
 <p>Mножество <span class="math notranslate nohighlight">\(X\)</span> <strong>выпукло</strong> если для любых <span class="math notranslate nohighlight">\(x, y \in X\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[ \forall \alpha \in (0,1): \alpha x + (1-\alpha) y \in X\]</div>
 </div>
-<p>Выпуклое множество содержит все свои хорды. А у квази-вогнутой функции все <span class="math notranslate nohighlight">\(L_{+}(x)\)</span> содержат все свой хорды. Вогнутых множеств вообще не бывает.</p>
+</div><p>Выпуклое множество содержит все свои хорды. А у квази-вогнутой функции все <span class="math notranslate nohighlight">\(L_{+}(x)\)</span> содержат все свой хорды. Вогнутых множеств вообще не бывает.</p>
 <p>P.S. Если множество <span class="math notranslate nohighlight">\(X\)</span> выпукло, а функция <span class="math notranslate nohighlight">\(U\)</span> вогнута или квази-вогнута то такая задача называется выпуклой. Выпуклые задачи имеют упрощенный алгоритм решения, я к этому вернусь ближе к концу лекции.</p>
 </div>
 </div>
@@ -617,11 +624,12 @@
 <p>То есть, нет никакой возможности откалибровать полезность в пространстве функций. Это очень грустный вывод, от него веет какой то безвыходностью.</p>
 <p>Хуже того, всеми любимое свойство вогнутости с легкостью нарушается при монотонной трансформации. Поэтому, оно совершенно не подходит для экономического анализа.</p>
 <p>Однако, не все так плохо. Квази-вогнутость сохраняется при таких трансформациях.</p>
-<div class="important admonition">
-<p class="admonition-title">Утверждение</p>
+<div class="proof property admonition" id="property-8">
+<p class="admonition-title"><span class="caption-number">Property 2 </span></p>
+<div class="property-content section" id="proof-content">
 <p>Если <span class="math notranslate nohighlight">\(U(x)\)</span> квази-вогнута, то <span class="math notranslate nohighlight">\(\varphi(U(x))\)</span> тоже квази-вогнута для любого строго монотонного преобразования <span class="math notranslate nohighlight">\(\varphi\)</span>.</p>
 </div>
-<p>Доказательство этого факта легко выписывается, используя любое из двух определений, если знать следующие свойства:</p>
+</div><p>Доказательство этого факта легко выписывается, используя любое из двух определений, если знать следующие свойства:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split} \begin{align*}
 U(x) \leqslant U(y) \quad \Leftrightarrow \quad \varphi(U(x)) \leqslant \varphi(U(y))\\
@@ -630,11 +638,12 @@ U(x) \geqslant U(y) \quad \Leftrightarrow \quad \varphi(U(x)) \geqslant \varphi(
 \end{align*}\end{split}\]</div>
 <p>верное для любых функций <span class="math notranslate nohighlight">\(U\)</span> и строго монотонных преобразований <span class="math notranslate nohighlight">\(\varphi\)</span>.</p>
 <p>Более того, если начать с выпуклой функции и начать ее монотонно деформировать, то мы можем гарантировать квази-вогнутость (но не вогнутость).</p>
-<div class="important admonition">
-<p class="admonition-title">Утверждение</p>
+<div class="proof property admonition" id="property-9">
+<p class="admonition-title"><span class="caption-number">Property 3 </span></p>
+<div class="property-content section" id="proof-content">
 <p>Если <span class="math notranslate nohighlight">\(U(x)\)</span> вогнута, то <span class="math notranslate nohighlight">\(\varphi(U(x))\)</span> квази-вогнута для любого строго монотонного преобразования <span class="math notranslate nohighlight">\(\varphi\)</span>.</p>
 </div>
-<p>Доказательство этого факта тривиально следует из того, что вогнутая функция уже квази-вогнута, и предыдущего утверждения. Все это дает надежду на то, что должен быть способ построить модель, инвариантную к монотонным преобразованиям.</p>
+</div><p>Доказательство этого факта тривиально следует из того, что вогнутая функция уже квази-вогнута, и предыдущего утверждения. Все это дает надежду на то, что должен быть способ построить модель, инвариантную к монотонным преобразованиям.</p>
 <p>P.S. Конечно, можно сказать что вместо конкретной полезности у агента мы рассматриваем класс эквивалентности по отношению к трансформациям <span class="math notranslate nohighlight">\(\varphi\)</span>. Однако, это ту мач абстрактно.</p>
 </div>
 </div>
@@ -667,8 +676,9 @@ z &amp; 0 &amp; 1 &amp; 0\\
 <div class="section" id="id18">
 <h2>Рациональность<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h2>
 <p>Ясно, что бинарные отношения, как они есть, это слишком абстрактно. Попробуем добавить немножко структуры.</p>
-<div class="note admonition">
-<p class="admonition-title">Определение</p>
+<div class="proof definition admonition" id="definition-10">
+<p class="admonition-title"><span class="caption-number">Definition 8 </span></p>
+<div class="definition-content section" id="proof-content">
 <p>Предпочтения <strong>рациональны</strong> если выполнены следующие три свойства:</p>
 <ul class="simple">
 <li><p>для любыx альтернатив <span class="math notranslate nohighlight">\(x, y \in X\)</span>, хотя бы <span class="math notranslate nohighlight">\(x \succcurlyeq y\)</span> либо <span class="math notranslate nohighlight">\(y \succcurlyeq x\)</span>.</p></li>
@@ -678,7 +688,7 @@ z &amp; 0 &amp; 1 &amp; 0\\
 <div class="math notranslate nohighlight">
 \[x \succcurlyeq y, y \succcurlyeq z \quad \Rightarrow \quad x \succcurlyeq z\]</div>
 </div>
-<p>Последнее свойство - самое важное и называется <strong>транзитивностью</strong>. Рациональность накладывают структуру на то как может заполняться матрица. Попробуйте до-заполнить следующую матрицу так, чтобы предпочтения были рациональными:</p>
+</div><p>Последнее свойство - самое важное и называется <strong>транзитивностью</strong>. Рациональность накладывают структуру на то как может заполняться матрица. Попробуйте до-заполнить следующую матрицу так, чтобы предпочтения были рациональными:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split} 
 \begin{array}{c|cc}
@@ -690,25 +700,28 @@ z &amp; 0 &amp; 1 &amp; *\\
 \end{array}
 \end{split}\]</div>
 <p>Ясно, что на диагонали всегда обязаны стоять единички. Также, если где то вне диагонали стоит ноль, то на симметричной относительно диагонали позиции обязательно стоит единица.</p>
-<div class="note admonition">
-<p class="admonition-title">Определение</p>
+<div class="proof definition admonition" id="definition-11">
+<p class="admonition-title"><span class="caption-number">Definition 9 </span></p>
+<div class="definition-content section" id="proof-content">
 <p>Формально <strong>нео-классическая модель</strong> (для одного агента) это пара: множество альтернатив <span class="math notranslate nohighlight">\(X \subset \mathbb{R}^n_{+}\)</span> и предпочтения <span class="math notranslate nohighlight">\(\succcurlyeq: X^2 \to \{0,1\}\)</span>. Предпочтения должны быть рациональные.</p>
 </div>
-<div class="section" id="id19">
+</div><div class="section" id="id19">
 <h3>Непрерывность и выпуклость<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h3>
 <p>Практически копипастой мы определяем непрерывность предпочтений.</p>
-<div class="note admonition">
-<p class="admonition-title">Определение</p>
+<div class="proof definition admonition" id="definition-12">
+<p class="admonition-title"><span class="caption-number">Definition 10 </span></p>
+<div class="definition-content section" id="proof-content">
 <p>Предпочтения <span class="math notranslate nohighlight">\(\succcurlyeq\)</span> <strong>непрерывны</strong> в <span class="math notranslate nohighlight">\(X\)</span>, если для любого <span class="math notranslate nohighlight">\(x \in X\)</span> множества <span class="math notranslate nohighlight">\(L_{+}(x)\)</span> и <span class="math notranslate nohighlight">\(L_{-}(x)\)</span> замкнуты, где</p>
 <div class="math notranslate nohighlight">
 \[ L_{+}(x) = \{y \in X: U(y) \geqslant X\}, \quad L_{-}(x) = \{y \in X: U(y) \leqslant X\}\]</div>
 </div>
-<p>И совершенно аналогично мы переносим квази-вогнутость в мир предпочтений, однако, вопреки логике, термин квази-ВОГНутости полезности превращается в ВЫПУклость предпочтений.</p>
-<div class="note admonition">
-<p class="admonition-title">Определение</p>
+</div><p>И совершенно аналогично мы переносим квази-вогнутость в мир предпочтений, однако, вопреки логике, термин квази-ВОГНутости полезности превращается в ВЫПУклость предпочтений.</p>
+<div class="proof definition admonition" id="definition-13">
+<p class="admonition-title"><span class="caption-number">Definition 11 </span></p>
+<div class="definition-content section" id="proof-content">
 <p>Предпочтения <span class="math notranslate nohighlight">\(\succcurlyeq\)</span> <strong>выпуклы</strong> в <span class="math notranslate nohighlight">\(X\)</span>, если для любого <span class="math notranslate nohighlight">\(x \in X\)</span> множество <span class="math notranslate nohighlight">\(L_{+}(x)\)</span> выпукло, то есть, оно содержит пределы всех своих последовательностей.</p>
 </div>
-<p>Парадокс в том, что вогнутые полезности квази-вогнуты, которые, в свою очередь, ассоциированы с выпуклыми предпочтениями. А выпуклые полезности с выпуклыми предпочтениями вообще никак не связаны и даже прямо противоположны им. Это просто ужасный  выбор слов и вызывает огромную путаницу. Постарайтесь запомнить что</p>
+</div><p>Парадокс в том, что вогнутые полезности квази-вогнуты, которые, в свою очередь, ассоциированы с выпуклыми предпочтениями. А выпуклые полезности с выпуклыми предпочтениями вообще никак не связаны и даже прямо противоположны им. Это просто ужасный  выбор слов и вызывает огромную путаницу. Постарайтесь запомнить что</p>
 <ul class="simple">
 <li><p>хорошие множества выпуклы</p></li>
 <li><p>хорошие полезности (квази) вогнуты</p></li>
@@ -735,16 +748,18 @@ z &amp; 0 &amp; 1 &amp; *\\
 <h2>Обратная связь, Теорема Дебре<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h2>
 <p>Предположим, что у вас уже есть откалиброванные рациональные предпочтения. Можно ли восстановить по ним хотя бы одну непротиворечивую полезность?</p>
 <p>Оказывается, что в простых случаях, действительно, можно.</p>
-<div class="important admonition">
-<p class="admonition-title">Утверждение</p>
+<div class="proof property admonition" id="property-14">
+<p class="admonition-title"><span class="caption-number">Property 4 </span></p>
+<div class="property-content section" id="proof-content">
 <p>Если <span class="math notranslate nohighlight">\(X\)</span> конечно, то для любых рациональных предпочтений <span class="math notranslate nohighlight">\(\succcurlyeq\)</span> существует полезность <span class="math notranslate nohighlight">\(U\)</span>, представляющая <span class="math notranslate nohighlight">\(\succcurlyeq\)</span>.</p>
 </div>
-<p>Когда <span class="math notranslate nohighlight">\(X\)</span> конечное, то можно решить эту задачу алгоритмически. На <span class="math notranslate nohighlight">\(i\)</span> ом шаге алгоритма вы ищите минимальный (с точки зрения <span class="math notranslate nohighlight">\(\succcurlyeq\)</span>) элемент, выставляете ему полезность <span class="math notranslate nohighlight">\(i\)</span> и удаляете. На следующем шаге  находите минимальный из оставшихся, выставляете ему полезность <span class="math notranslate nohighlight">\(i+1\)</span>, снова удаляете, и.т.д. Если минимальных несколько, даете им одинаковую полезность.</p>
-<div class="important admonition">
-<p class="admonition-title">Утверждение</p>
+</div><p>Когда <span class="math notranslate nohighlight">\(X\)</span> конечное, то можно решить эту задачу алгоритмически. На <span class="math notranslate nohighlight">\(i\)</span> ом шаге алгоритма вы ищите минимальный (с точки зрения <span class="math notranslate nohighlight">\(\succcurlyeq\)</span>) элемент, выставляете ему полезность <span class="math notranslate nohighlight">\(i\)</span> и удаляете. На следующем шаге  находите минимальный из оставшихся, выставляете ему полезность <span class="math notranslate nohighlight">\(i+1\)</span>, снова удаляете, и.т.д. Если минимальных несколько, даете им одинаковую полезность.</p>
+<div class="proof property admonition" id="property-15">
+<p class="admonition-title"><span class="caption-number">Property 5 </span></p>
+<div class="property-content section" id="proof-content">
 <p>Если <span class="math notranslate nohighlight">\(X\)</span> счетно, то для любых рациональных предпочтений <span class="math notranslate nohighlight">\(\succcurlyeq\)</span>, таких что для каждого элемента <span class="math notranslate nohighlight">\(x \in X\)</span> есть конечное число элементов не хуже него, существует полезность <span class="math notranslate nohighlight">\(U\)</span>, представляющая <span class="math notranslate nohighlight">\(\succcurlyeq\)</span>.</p>
 </div>
-<p>Доказательство аналогично предыдущему утверждению, только здесь можно сразу назначить полезность <span class="math notranslate nohighlight">\(U(x)\)</span> равную числу элементов не хуже <span class="math notranslate nohighlight">\(x\)</span>, и все.</p>
+</div><p>Доказательство аналогично предыдущему утверждению, только здесь можно сразу назначить полезность <span class="math notranslate nohighlight">\(U(x)\)</span> равную числу элементов не хуже <span class="math notranslate nohighlight">\(x\)</span>, и все.</p>
 <p>В сложных случаях нам придется потребовать непрерывность предпочтений.  Это очень сложная Теорема, я не буду ее доказывать. Но на семинаре я попрошу, чтобы вам разобрали контр-пример предпочтений, которые не являются непрерывными, чтобы вы поняли существенность этого ограничения.</p>
 <div class="warning admonition">
 <p class="admonition-title"><strong>Теорема Дебре</strong></p>
