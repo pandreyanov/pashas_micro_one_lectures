@@ -308,15 +308,32 @@
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#id3">
-     Зачем нужно тождество Роя?
+     Зачем оно нужно?
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id4">
-   Тождество Роя
+   Теорема об Огибающей
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id5">
+     Интуиция огибающей
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id6">
+     Примеры
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+     Практическая польза
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#ces">
@@ -372,14 +389,38 @@
 </div>
 </div><p>Заметьте, что я меняю интерпретацию знаков <span class="math notranslate nohighlight">\(x, p\)</span> в зависимости от контекста. К этому надо привыкать, контекст задачи важен. Например, <span class="math notranslate nohighlight">\(\nabla\)</span> обычно означает вектор, но в знаменателе <span class="math notranslate nohighlight">\(\nabla_I = \frac{\partial V}{\partial I}\)</span> это число, потому что <span class="math notranslate nohighlight">\(I\)</span> это скаляр.</p>
 <div class="section" id="id3">
-<h3>Зачем нужно тождество Роя?<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<h3>Зачем оно нужно?<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
 <p>У тождества Роя есть две основные задачи.</p>
 <p>Во первых, ваши эконометрические данные могут быть в терминах косвенной полезности а не бюджетов. Например, в социальном опросе может быть вопрос: “оцените по шкале от 1 до 10 ваше благосостояние в 2010, 2011 и 2012 году”, вместо “запишите ваш доход в 2010, 2011 и 2012 году”. Считается, что люди неохотно сообщают свои настоящий доход, богатые занижают а бедные завышают.</p>
 <p>Во вторых, иногда проще запомнить косвенную полезность и вывести из нее спросы, чем запоминать спросы. Также, про косвенную полезность удобно составлять задачи, чтобы потом тестировать вас на экзамене.</p>
 </div>
 </div>
 <div class="section" id="id4">
-<h2>Тождество Роя<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<h2>Теорема об Огибающей<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p>Это чрезвычайно важная Теорема, и, в отличие от остальных, по настоящему полезная.</p>
+<div class="proof theorem remark admonition" id="theorem-1">
+<p class="admonition-title"><span class="caption-number">Theorem 7 </span></p>
+<div class="theorem-content section" id="proof-content">
+<p>Рассмотрим семейство опорных функций <span class="math notranslate nohighlight">\(f(x, p)\)</span>, где <span class="math notranslate nohighlight">\(x\)</span> - переменная а <span class="math notranslate nohighlight">\(p\)</span> - параметр. Определим огибающую <span class="math notranslate nohighlight">\(V(p)\)</span> как результат оптимизации функции <span class="math notranslate nohighlight">\(f\)</span> по какому-то статическому множеству <span class="math notranslate nohighlight">\(Х\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[ V(p) := \max_{x \in X} f(x, p)\]</div>
+<p>тогда функция <span class="math notranslate nohighlight">\(V(p)\)</span> (почти всюду) дифференциируема и</p>
+<div class="math notranslate nohighlight">
+\[\frac{\partial V(p)}{\partial p} = \frac{\partial f(x, p)}{\partial p}|_{x = x^{\ast}(p)}.\]</div>
+</div>
+</div><div class="section" id="id5">
+<h3>Интуиция огибающей<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<p>Представьте себе, что вы свалили в кучу какие то крупные объекты и накрыли все эластичной пленкой.</p>
+<p>Пленка плотно прилегла к тем объектам, которые оказались наверху. Можно сказать, что пленка - это (верхняя) огибающая вашего семейства опорных объектов, поскольку она лежит там, где находится самый высокий объект в каждой точке.</p>
+<p>Теперь посмотрим на нашу эластичную пленку. В точках касания с теми опорными объектами что остановили ее от падения, наклон пленки равен наклону этих объектов, так как она повторяет их форму.</p>
+<p>Этот практиически умозрительный факт и есть основная идея Теоремы об Огибающей: <strong>наклон огибающей функции в точке касания равен наклону (соответствующей) опорной функции</strong>.</p>
+</div>
+<div class="section" id="id6">
+<h3>Примеры<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="id7">
+<h3>Практическая польза<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+</div>
 </div>
 <div class="section" id="ces">
 <h2>Возвращение к CES<a class="headerlink" href="#ces" title="Permalink to this headline">¶</a></h2>
