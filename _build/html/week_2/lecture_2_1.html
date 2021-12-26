@@ -420,14 +420,15 @@
 <div class="section" id="id5">
 <h3>Выпуклая интерпретация<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
 <p>Выпуклая интерпретация метода Лагранжа, также называемая <strong>Сильным Принципом Лагранжа</strong> или <strong>Сильная Дуальность</strong> или <strong>Теорема о Минимаксе</strong>, была сформулирована Вон Нейманом - американским математиком Венгерского происхождения в 1928 году и существенно повлияло на развитие экономической мысли.</p>
-<div class="warning admonition">
-<p class="admonition-title"><strong>Теорема о Минимаксе</strong></p>
+<div class="proof theorem remark admonition" id="theorem-0">
+<p class="admonition-title"><span class="caption-number">Theorem 3 </span> (Минимакс)</p>
+<div class="theorem-content section" id="proof-content">
 <p>Значение задачи оптимизации с ограничением (левая часть) связано со значением некоторой дуальной задачи (правая часть):</p>
 <div class="math notranslate nohighlight">
 \[ \min_{\lambda \geqslant 0} \max_{x,y \geqslant 0} \mathcal{L}(x,y | \lambda) =  \max_{x,y \geqslant 0} \min_{\lambda \geqslant 0} \mathcal{L}(x,y | \lambda) \]</div>
 <p>если только задача выпукла, то есть, ограничения выпуклы а функция вогнута или квази-вогнута. Более того, их экстремумы совпадают, но правую задачу решать намного приятнее.</p>
 </div>
-<p>Поиск экстремума (конкретно седла) правой задачи как раз характеризуется решением системы уравнений</p>
+</div><p>Поиск экстремума (конкретно седла) правой задачи как раз характеризуется решением системы уравнений</p>
 <div class="math notranslate nohighlight">
 \[\nabla_{(x,y)} \mathcal{L} = 0, \quad \nabla_{\lambda} \mathcal{L} = 0.\]</div>
 <p>Никаких условий второго порядка проверять не надо, потому что задача уже выпукла, по построению. Чтобы проверить себя, попробуйте ответить на следующие вопросы.</p>
@@ -437,13 +438,14 @@
 <div class="section" id="id6">
 <h3>Невыпуклая интерпретация<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
 <p>Совершенно независимо, была разработана более общая (но и более муторная) технология решения невыпуклых задач оптимизации, начиная с 1939 года, и носящая имя сразу трех математиков: Каруш, Кун и Такера. Вам она, скорее всего известна как <strong>Условия Первого Порядка</strong> и <strong>Условия Второго Порядка</strong>.</p>
-<div class="warning admonition">
-<p class="admonition-title"><strong>Теорема ККТ</strong></p>
+<div class="proof theorem remark admonition" id="theorem-1">
+<p class="admonition-title"><span class="caption-number">Theorem 4 </span> (<strong>ККТ</strong>)</p>
+<div class="theorem-content section" id="proof-content">
 <p>В гладкой задаче оптимизации, экстремальные точки характеризуются тем, что градиенты ограничений и самой функции линейно зависимы, то есть:</p>
 <div class="math notranslate nohighlight">
 \[\nabla_{(x,y)} U -  \lambda \cdot \nabla_{(x,y)}B = 0\]</div>
 </div>
-<p>Это мистическим образом совпадает с условием на экстремум Лагранжиана. Отсюда Условия первого Порядка и Метод Множителей Лагранжа.</p>
+</div><p>Это мистическим образом совпадает с условием на экстремум Лагранжиана. Отсюда Условия первого Порядка и Метод Множителей Лагранжа.</p>
 <p>A Условия Второго Порядка принимают вид отрицателъной определенности квадратичной формы:</p>
 <div class="math notranslate nohighlight">
 \[\nabla^2_{(x,y)} U - \lambda \cdot \nabla^2_{(x,y)}B \leqslant 0\]</div>
@@ -466,44 +468,49 @@
 </div>
 <div class="section" id="id8">
 <h2>Функции спроса<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
-<div class="note admonition">
-<p class="admonition-title">Определение</p>
+<div class="proof definition admonition" id="definition-2">
+<p class="admonition-title"><span class="caption-number">Definition 15 </span></p>
+<div class="definition-content section" id="proof-content">
 <p>Назовем <strong>функциями (кривыми) спроса</strong> <span class="math notranslate nohighlight">\(x^{\ast}(p, q, I), y^{\ast}(p, q, I)\)</span> решение задачи максимизации полезности при бюджетном ограничении:</p>
 <div class="math notranslate nohighlight">
 \[U(x,y) \to \max_{x, y \in \mathbb{R}_{+}^2}, \quad s.t. \quad B(x,y) = p x + q y -I \leqslant 0.\]</div>
 </div>
-<p>Функция спроса на первый товар <span class="math notranslate nohighlight">\(x^{\ast}(p, q, I)\)</span> и на второй товар <span class="math notranslate nohighlight">\(y^{\ast}(p, q, I)\)</span> зависят от трех разных параметров: своей цены, чужой цены и бюджета. Чаще всего нас будут интересовать</p>
-<div class="note admonition">
-<p class="admonition-title">Определение</p>
+</div><p>Функция спроса на первый товар <span class="math notranslate nohighlight">\(x^{\ast}(p, q, I)\)</span> и на второй товар <span class="math notranslate nohighlight">\(y^{\ast}(p, q, I)\)</span> зависят от трех разных параметров: своей цены, чужой цены и бюджета. Чаще всего нас будут интересовать</p>
+<div class="proof definition admonition" id="definition-3">
+<p class="admonition-title"><span class="caption-number">Definition 16 </span></p>
+<div class="definition-content section" id="proof-content">
 <ul class="simple">
 <li><p>кривые “цена-потребление” <span class="math notranslate nohighlight">\(x^{\ast}(p, \ldots)\)</span>, <span class="math notranslate nohighlight">\(y^{\ast}(q, \ldots)\)</span>, обычно называемые просто <strong>кривые спроса</strong>.</p></li>
 <li><p>кривые “доход-потребление” <span class="math notranslate nohighlight">\(x^{\ast}(I, \ldots)\)</span>, <span class="math notranslate nohighlight">\(y^{\ast}(I, \ldots)\)</span>, также называемые <strong>кривые Энгеля</strong> в честь немецкого статистика Эрнста Энгеля (Engel).</p></li>
 </ul>
 </div>
-<div class="section" id="id9">
+</div><div class="section" id="id9">
 <h3>Нормальные и инфериорные товары<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
 <p>В этот раз обойдемся без великих людей.</p>
-<div class="note admonition">
-<p class="admonition-title">Определение</p>
+<div class="proof definition admonition" id="definition-4">
+<p class="admonition-title"><span class="caption-number">Definition 17 </span></p>
+<div class="definition-content section" id="proof-content">
 <p><strong>Нормальными товарами</strong> называются товары, кривые спроса которых монотонно возрастают по доходу, то есть, <span class="math notranslate nohighlight">\(x\)</span> нормальный, если</p>
 <div class="math notranslate nohighlight">
 \[\frac{\partial x^{\ast}}{\partial I} \geqslant 0.\]</div>
 </div>
-<p>Проверка нормальности при аккуратно выведенных кривых спроса - это механическое упражнение в дифференцировании.</p>
+</div><p>Проверка нормальности при аккуратно выведенных кривых спроса - это механическое упражнение в дифференцировании.</p>
 <p>Считается, что большая часть товаров - нормальны, однако есть исключения. Например, хлеб, рис, консервы и другие “товары первой необходимости” иногда интерпретируются как худшими (инфериорными) по отношению к красному мясу, рыбе, овощам и фруктам.</p>
-<div class="note admonition">
-<p class="admonition-title">Определение</p>
+<div class="proof definition admonition" id="definition-5">
+<p class="admonition-title"><span class="caption-number">Definition 18 </span></p>
+<div class="definition-content section" id="proof-content">
 <p>Товар у которого нормальность нарушается хотя бы при каких то значениях параметров то есть,</p>
 <div class="math notranslate nohighlight">
 \[\frac{\partial x^{\ast}}{\partial I} &lt; 0,\]</div>
 <p>называется <strong>инфериорным</strong> (при этих значениях параметров).</p>
 </div>
-<p>Инфериорность, от английского <em>inferior</em>, означает что ваш товар <span class="math notranslate nohighlight">\(x\)</span> является худшим по отношению к какому то другому товару <span class="math notranslate nohighlight">\(y\)</span>. Когда бюджет растет, вы тратите большую часть дохода на <span class="math notranslate nohighlight">\(y\)</span>, и меньшую на <span class="math notranslate nohighlight">\(x\)</span>, да так что в абсолютном значении потребление <span class="math notranslate nohighlight">\(x\)</span> уменьшается. Для того, чтобы сломать нормальность <span class="math notranslate nohighlight">\(x\)</span>, обязательно должен быть хотя бы один не инфериорный товар <span class="math notranslate nohighlight">\(y\)</span>, по отношению к которому <span class="math notranslate nohighlight">\(x\)</span> будет инфериорным.</p>
-<div class="important admonition">
-<p class="admonition-title">Утверждение</p>
+</div><p>Инфериорность, от английского <em>inferior</em>, означает что ваш товар <span class="math notranslate nohighlight">\(x\)</span> является худшим по отношению к какому то другому товару <span class="math notranslate nohighlight">\(y\)</span>. Когда бюджет растет, вы тратите большую часть дохода на <span class="math notranslate nohighlight">\(y\)</span>, и меньшую на <span class="math notranslate nohighlight">\(x\)</span>, да так что в абсолютном значении потребление <span class="math notranslate nohighlight">\(x\)</span> уменьшается. Для того, чтобы сломать нормальность <span class="math notranslate nohighlight">\(x\)</span>, обязательно должен быть хотя бы один не инфериорный товар <span class="math notranslate nohighlight">\(y\)</span>, по отношению к которому <span class="math notranslate nohighlight">\(x\)</span> будет инфериорным.</p>
+<div class="proof proposition admonition" id="proposition-6">
+<p class="admonition-title"><span class="caption-number">Proposition 1 </span></p>
+<div class="proposition-content section" id="proof-content">
 <p>Все товары не могут быть одновременно инфериорными, хотя бы один точно нормальный.</p>
 </div>
-<p>Доказать это утверждение очень легко. Если бюджетное ограничение таково, что оптимум находится “внутри”, то небольшое изменение параметра <span class="math notranslate nohighlight">\(I\)</span> не повлияет на оптимум. Если бюджетное ограничение таково, что оптимум находится “на бюджетной линии”, то дифференциируя <span class="math notranslate nohighlight">\(B(x,y)= 0\)</span> по <span class="math notranslate nohighlight">\(I\)</span> мы получаем:</p>
+</div><p>Доказать это утверждение очень легко. Если бюджетное ограничение таково, что оптимум находится “внутри”, то небольшое изменение параметра <span class="math notranslate nohighlight">\(I\)</span> не повлияет на оптимум. Если бюджетное ограничение таково, что оптимум находится “на бюджетной линии”, то дифференциируя <span class="math notranslate nohighlight">\(B(x,y)= 0\)</span> по <span class="math notranslate nohighlight">\(I\)</span> мы получаем:</p>
 <div class="math notranslate nohighlight">
 \[ p \frac{\partial x^{\ast}}{\partial I}  + q \frac{\partial y^{\ast}}{\partial I}  = 1.\]</div>
 <p>Поскольку цены неотрицательные, то инфериорность всех товаров означает, что слева стоит отрицательное число, а справа единица. Противоречие.</p>
@@ -514,26 +521,29 @@
 <div class="section" id="id10">
 <h3>Субституты и комплементы<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
 <p>Мы продолжаем исследовать свойства кривых спроса. Одним из самых важных понятий в теории потребителя является <strong>замещаемость</strong> (substitutability). Считается, что многие товары в той или иной степени замещаемы, некоторые больше некоторые меньше. Некоторые пары товаров особенно выделяются в этом плане, например: пепси и кола, лыжи и сноуборд… Если цена одного такого товара в паре сильно вырастет, то спрос на второй товар скорее всего вырастет. Такие товары называются субститутами.</p>
-<div class="note admonition">
-<p class="admonition-title">Определение</p>
+<div class="proof definition admonition" id="definition-7">
+<p class="admonition-title"><span class="caption-number">Definition 19 </span></p>
+<div class="definition-content section" id="proof-content">
 <p><strong>Субститутами</strong> (substitutes) называются пары товаров, кривые спроса которых монотонно возрастают по ценам друг друга, то есть, <span class="math notranslate nohighlight">\(x\)</span> субститут к <span class="math notranslate nohighlight">\(y\)</span>, если <span class="math notranslate nohighlight">\(\frac{\partial x^{\ast}}{\partial q} \geqslant 0,\)</span> a <span class="math notranslate nohighlight">\(y\)</span> субститут к <span class="math notranslate nohighlight">\(x\)</span>, если <span class="math notranslate nohighlight">\(\frac{\partial y^{\ast}}{\partial p} \geqslant 0.\)</span></p>
 </div>
-<p>У некоторых пар товаров наблюдается прямо противоположное свойство, их обычно покупают вместе, например: кайак и весло, компьютер и монитор…  Если цена одного такого товара в паре сильно вырастет, то спрос на второй товар скорее всего упадет. Такие товары называются комплементами.</p>
-<div class="note admonition">
-<p class="admonition-title">Определение</p>
+</div><p>У некоторых пар товаров наблюдается прямо противоположное свойство, их обычно покупают вместе, например: кайак и весло, компьютер и монитор…  Если цена одного такого товара в паре сильно вырастет, то спрос на второй товар скорее всего упадет. Такие товары называются комплементами.</p>
+<div class="proof definition admonition" id="definition-8">
+<p class="admonition-title"><span class="caption-number">Definition 20 </span></p>
+<div class="definition-content section" id="proof-content">
 <p><strong>Комплементами</strong> (complements) называются пары товаров, кривые спроса которых монотонно убывают по ценам друг друга, то есть, <span class="math notranslate nohighlight">\(x\)</span> комплемент к <span class="math notranslate nohighlight">\(y\)</span>, если <span class="math notranslate nohighlight">\(\frac{\partial x^{\ast}}{\partial q} &lt; 0,\)</span> a <span class="math notranslate nohighlight">\(y\)</span> комплемент к <span class="math notranslate nohighlight">\(x\)</span>, если <span class="math notranslate nohighlight">\(\frac{\partial y^{\ast}}{\partial p} &lt; 0.\)</span></p>
 </div>
-<p>К сожалению, это свойство не является симметричным, то есть, <span class="math notranslate nohighlight">\(x\)</span> может быть субститутом к <span class="math notranslate nohighlight">\(y\)</span>, но y при этом может оказаться комплементом к <span class="math notranslate nohighlight">\(x\)</span>, хоть и в очень редких случаях. Это сигнализирует нам о том, что определение выбрано не совсем удачно, но какое то время нам придется с этим противоречием смириться.</p>
+</div><p>К сожалению, это свойство не является симметричным, то есть, <span class="math notranslate nohighlight">\(x\)</span> может быть субститутом к <span class="math notranslate nohighlight">\(y\)</span>, но y при этом может оказаться комплементом к <span class="math notranslate nohighlight">\(x\)</span>, хоть и в очень редких случаях. Это сигнализирует нам о том, что определение выбрано не совсем удачно, но какое то время нам придется с этим противоречием смириться.</p>
 </div>
 </div>
 <div class="section" id="id11">
 <h2>Косвенная полезность<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
 <p>В каждой задаче оптимизации есть два объекта, идущие рука об руку: координаты оптимума и значение целевой функции (полезности). Мы довольно много внимания уделили координатам оптимума, то есть кривым спроса. А как насчет второго?</p>
-<div class="note admonition">
-<p class="admonition-title">Определение</p>
+<div class="proof definition admonition" id="definition-9">
+<p class="admonition-title"><span class="caption-number">Definition 21 </span></p>
+<div class="definition-content section" id="proof-content">
 <p>Значение полезности в оптимуме, как функция от параметров, называется <strong>косвенной функцией полезности</strong> и обозначается <span class="math notranslate nohighlight">\(V(p,q,I)\)</span> или, иногда, <span class="math notranslate nohighlight">\(U^{\ast}(p,q,I)\)</span>.</p>
 </div>
-<p>На самом деле, не столь важно какой буквой обозначается косвенная полезность: <span class="math notranslate nohighlight">\(U^{\ast}\)</span> или <span class="math notranslate nohighlight">\(V\)</span>. Гораздо важнее набор аргументов: <span class="math notranslate nohighlight">\(p,q, I\)</span>, подсказывающий что координатам <span class="math notranslate nohighlight">\(x,y\)</span> были присвоены какие то значения в процессе оптимизации.</p>
+</div><p>На самом деле, не столь важно какой буквой обозначается косвенная полезность: <span class="math notranslate nohighlight">\(U^{\ast}\)</span> или <span class="math notranslate nohighlight">\(V\)</span>. Гораздо важнее набор аргументов: <span class="math notranslate nohighlight">\(p,q, I\)</span>, подсказывающий что координатам <span class="math notranslate nohighlight">\(x,y\)</span> были присвоены какие то значения в процессе оптимизации.</p>
 <p>Когда вас просят решить оптимизационную задачу, если не сказано обратное, от вас скорее всего ожидают оба объекта: спрос и косвенную полезность. Но будте аккуратны, потому что…</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
@@ -545,11 +555,12 @@
 <h2>Непрерывнисть спроса<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
 <p>В большей часть примеров, которые мы будем рассматривать, спросы будут выражаться через элементарные функции, такие как <span class="math notranslate nohighlight">\(x^2, \log x, 1/x\)</span>… Все эти функции непрерывны. Совпадение?</p>
 <p>Ответить на этот вопрос нам поможет следующая теорема.</p>
-<div class="warning admonition">
-<p class="admonition-title"><strong>Теорема Максимума</strong></p>
+<div class="proof theorem remark admonition" id="theorem-10">
+<p class="admonition-title"><span class="caption-number">Theorem 5 </span> (<strong>Максимум</strong>)</p>
+<div class="theorem-content section" id="proof-content">
 <p>В строго выпуклой задаче оптимизации, решение, если оно существует, то единственно. Более того, если <strong>задача непрерывна по параметрам</strong>, то как координаты оптимума так и значение целевой функции непрерывны по параметру.</p>
 </div>
-<p>То есть, каждый раз когда вы ищите спрос, вам надо убедиться, что</p>
+</div><p>То есть, каждый раз когда вы ищите спрос, вам надо убедиться, что</p>
 <ul class="simple">
 <li><p>задача строго выпуклая</p></li>
 <li><p>задача непрерывна</p></li>
@@ -558,42 +569,49 @@
 <p>Осталось понять, что значит строгая выпуклость и непрерывность задачи. Это несколько субъективные понятия, и я не хочу вдаваться в технические и философские детали. Поэтому, мы сфокусируемся на более-менее общей постановке в теории потребителя, в которой их легко идентифицировать:</p>
 <div class="math notranslate nohighlight">
 \[U(x,y) \to \max_{x,y \geqslant 0}, \quad s.t. \quad B(x,y) \leqslant 0\]</div>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
+<div class="proof definition admonition" id="definition-11">
+<p class="admonition-title"><span class="caption-number">Definition 22 </span></p>
+<div class="definition-content section" id="proof-content">
 <p>В <strong>строго выпуклой задаче</strong>, функция <span class="math notranslate nohighlight">\(U\)</span> (квази) вогнутa, функция <span class="math notranslate nohighlight">\(B\)</span> (квази) выпукла, причем одна из двух строго.</p>
 </div>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
+</div><div class="proof definition admonition" id="definition-12">
+<p class="admonition-title"><span class="caption-number">Definition 23 </span></p>
+<div class="definition-content section" id="proof-content">
 <p>В <strong>непрерывной</strong> задаче, обе функции <span class="math notranslate nohighlight">\(U\)</span> и <span class="math notranslate nohighlight">\(B\)</span> непрерывны.</p>
 </div>
-<p>Непрерывность спроса означает, что, грубо говоря, вы всегда сможете найти <strong>частичное равновесие</strong> на рынке любого отдельно взятого товара, как пересечение спроса с предложением. Мы обсудим частичное равновесие ближе к концу курса.</p>
+</div><p>Непрерывность спроса означает, что, грубо говоря, вы всегда сможете найти <strong>частичное равновесие</strong> на рынке любого отдельно взятого товара, как пересечение спроса с предложением. Мы обсудим частичное равновесие ближе к концу курса.</p>
 <p>Постарайтесь ответить, являются ли непрерывными и строго выпуклыми следующие задачи:</p>
-<ul class="simple">
-<li><p>Пример 1</p></li>
-</ul>
+<div class="proof example admonition" id="example-13">
+<p class="admonition-title"><span class="caption-number">Example 12 </span></p>
+<div class="example-content section" id="proof-content">
 <div class="math notranslate nohighlight">
 \[\log x + \log y + \log z \to \max \quad s.t. \quad x^2 + y^2 + z^2 \leqslant 1\]</div>
-<ul class="simple">
-<li><p>Пример 2</p></li>
-</ul>
+</div>
+</div><div class="proof example admonition" id="example-14">
+<p class="admonition-title"><span class="caption-number">Example 13 </span></p>
+<div class="example-content section" id="proof-content">
 <div class="math notranslate nohighlight">
 \[x + \log y + \log z \to \max \quad s.t. \quad x^2 + y^2 + z^2 \leqslant 1\]</div>
-<ul class="simple">
-<li><p>Пример 3</p></li>
-</ul>
+</div>
+</div><div class="proof example admonition" id="example-15">
+<p class="admonition-title"><span class="caption-number">Example 14 </span></p>
+<div class="example-content section" id="proof-content">
 <div class="math notranslate nohighlight">
 \[x + y + \log z \to \max \quad s.t. \quad x + y + z \leqslant 1\]</div>
-<ul class="simple">
-<li><p>Пример 4</p></li>
-</ul>
+</div>
+</div><div class="proof example admonition" id="example-16">
+<p class="admonition-title"><span class="caption-number">Example 15 </span></p>
+<div class="example-content section" id="proof-content">
 <div class="math notranslate nohighlight">
 \[x + y + \sqrt{z} \to \max \quad s.t. \quad x^2 + y^2 + z^2 \leqslant 1\]</div>
-<ul class="simple">
-<li><p>Пример 5</p></li>
-</ul>
+</div>
+</div><div class="proof example admonition" id="example-17">
+<p class="admonition-title"><span class="caption-number">Example 16 </span></p>
+<div class="example-content section" id="proof-content">
 <div class="math notranslate nohighlight">
 \[x + y + z^2 \to \max \quad s.t. \quad x^2 + y^2 + z^2 \leqslant 1\]</div>
 </div>
+</div></div>
 </div>
 
     <script type="text/x-thebe-config">

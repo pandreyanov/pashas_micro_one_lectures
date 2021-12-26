@@ -335,21 +335,6 @@
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#id8">
-     Пример 1: Линейная полезность
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id9">
-     Пример 2: Гиперболическая полезность
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id10">
-     Пример 3: Полезность минимум (уголки)
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id11">
      Зачем нужны линии уровня?
     </a>
    </li>
@@ -474,8 +459,9 @@ A -- no --&gt; C[ищем на границе...];
 </div>
 </div><p>Совершенно ясно, что в контексте представлений предпочтений полезностями и наоборот, кривая безразличия и линия уровня это одно и то же.</p>
 <p>Рассмотрим несколько примеров</p>
-<div class="section" id="id8">
-<h3>Пример 1: Линейная полезность<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<div class="proof example admonition" id="example-8">
+<p class="admonition-title"><span class="caption-number">Example 9 </span> (Линейная полезность)</p>
+<div class="example-content section" id="proof-content">
 <p>Рассмотрим полезность вида: <span class="math notranslate nohighlight">\(U(x, y) = ax + by\)</span>. Тогда линия уровня ищется следующим образом:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -487,8 +473,9 @@ y = \frac{c-ax}{b}
 \end{split}\]</div>
 <p>Линия уровня это прямая вида <span class="math notranslate nohighlight">\(y = \alpha x + \beta\)</span>.</p>
 </div>
-<div class="section" id="id9">
-<h3>Пример 2: Гиперболическая полезность<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+</div><div class="proof example admonition" id="example-9">
+<p class="admonition-title"><span class="caption-number">Example 10 </span> (Гиперболическая полезность)</p>
+<div class="example-content section" id="proof-content">
 <p>Рассмотрим полезность вида: <span class="math notranslate nohighlight">\(U(x, y) = a \log x + \log y\)</span>. Тогда линия уровня ищется следующим образом:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -500,8 +487,9 @@ y =\frac{e^{c}}{x^a}
 \end{split}\]</div>
 <p>Линия уровня это гипербола вида <span class="math notranslate nohighlight">\(y = x^\alpha \beta\)</span>.</p>
 </div>
-<div class="section" id="id10">
-<h3>Пример 3: Полезность минимум (уголки)<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+</div><div class="proof example admonition" id="example-10">
+<p class="admonition-title"><span class="caption-number">Example 11 </span> (Полезность минимум)</p>
+<div class="example-content section" id="proof-content">
 <p>Рассмотрим полезность вида: <span class="math notranslate nohighlight">\(U(x, y) = \min(ax, by)\)</span>. Тогда линия уровня ищется следующим образом:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -513,8 +501,8 @@ y = \frac{c}{b} \mathbb{I}(ax &gt; c), \quad x = \frac{c}{a} \mathbb{I}(by &gt; 
 \end{split}\]</div>
 <p>Линия уровня это конкатенация горизонтальной и вертикальной линий, соединенных вдоль <span class="math notranslate nohighlight">\(ax = by\)</span>.</p>
 </div>
-<div class="section" id="id11">
-<h3>Зачем нужны линии уровня?<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+</div><div class="section" id="id8">
+<h3>Зачем нужны линии уровня?<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
 <p>Очень часто, в задачах есть выпуклое ограничение типа неравенства, например, бюджетное ограничение. В таком случае, все кандидаты будут формально не внутренние. Однако, с точки зрения выпуклой оптимизации, такие точки можно интерпретировать как “внутренние”, если решать методом Лагранжа. О методе Лагранжа мы поговорим на следующей лекции.</p>
 <p>Внутреннее решение выпуклой (и гладкой) оптимизационной задачи можно охарактеризовать как точку касания линии уровня с выпуклым ограничением.</p>
 <p>Иногда задача вообще не является гладкой, как в случае Леонтьефских полезностей. Тогда линии уровня это самый быстрый и надежный подход к решению задачи.</p>
