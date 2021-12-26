@@ -656,8 +656,8 @@ a = V(a,b,c) = \max_{x,y} a-a(x-b)^2 - (y-c)^2 \Rightarrow \\
 </summary><div class="summary-content card-body docutils">
 <p class="card-text">Хочется сказать что расходы <span class="math notranslate nohighlight">\(p x + q y\)</span> но правильный ответ это Лагранжиан</p>
 <div class="math notranslate nohighlight">
-\[\mathcal{L}=px + qy - I - \lambda(\bar U - U(x,y))\]</div>
-<p class="card-text">но это ничего не меняет, так как прибавка не зависит от параметров.</p>
+\[\mathcal{L}=px + qy - I - \lambda(\bar U - U(x,y)).\]</div>
+<p class="card-text">Правда, это ничего не меняет, так как прибавка не зависит от параметров.</p>
 </div>
 </details><p>Теперь, когда мы знаем чему равна опорная функция, мы можем сформулировать следующую теорему:</p>
 <div class="proof theorem remark admonition" id="theorem-9">
@@ -675,8 +675,8 @@ a = V(a,b,c) = \max_{x,y} a-a(x-b)^2 - (y-c)^2 \Rightarrow \\
 <h2>Как не запутаться?<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h2>
 <p>Подводя итог, у нас было две задачи: максимизации полезности и минимизации расходов. Каждая задача имела свой набор параметров: первая <span class="math notranslate nohighlight">\((p,q,I)\)</span> а вторая <span class="math notranslate nohighlight">\((p,q,\bar U)\)</span>. Каждая задача произвела три обьекта:</p>
 <ul class="simple">
-<li><p>маршалианский спрос <span class="math notranslate nohighlight">\(mx(p,q,I), my(p,q,I)\)</span> и косвенная полезность <span class="math notranslate nohighlight">\(V(p,q,I)\)</span> в первой задаче</p></li>
-<li><p>хиксианский спрос <span class="math notranslate nohighlight">\(hx(p,q,\bar U), hy(p,q,\bar U)\)</span> и функция расходов <span class="math notranslate nohighlight">\(E(p,q,\bar U)\)</span> во второй задаче</p></li>
+<li><p>оптимальные <span class="math notranslate nohighlight">\(mx(p,q,I), my(p,q,I)\)</span> и косвенная полезность <span class="math notranslate nohighlight">\(V(p,q,I)\)</span> в первой задаче</p></li>
+<li><p>оптимальные <span class="math notranslate nohighlight">\(hx(p,q,\bar U), hy(p,q,\bar U)\)</span> и функция расходов <span class="math notranslate nohighlight">\(E(p,q,\bar U)\)</span> во второй задаче</p></li>
 </ul>
 <p>Если вы решали задачу максимизации полезности и нашли маршалианский спрос, который зависит от <span class="math notranslate nohighlight">\(\bar U\)</span> то правильным ответом это быть не может, поскольку вам разрешено только пользоваться <span class="math notranslate nohighlight">\((p,q,I)\)</span>. Это значит, что вы недоподставили где то, недоиспользовали Дуальность.</p>
 <p>Далее, при помощи дуальности и спросов вы можете свободно перемещаться “горизонтально” между <span class="math notranslate nohighlight">\(V\)</span> и <span class="math notranslate nohighlight">\(E\)</span>. И наоборот, при помощи дуальности и <span class="math notranslate nohighlight">\(V\)</span>, <span class="math notranslate nohighlight">\(E\)</span> вы можете свободно перемещаться “горизонтально” между спросами.</p>
