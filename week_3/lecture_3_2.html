@@ -213,6 +213,18 @@
   </a>
  </li>
 </ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Мат. шпаргалка
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../cheetsheet/differentials.html">
+   Дифференциалы
+  </a>
+ </li>
+</ul>
 
     </div>
 </nav> <!-- To handle the deprecated key -->
@@ -285,16 +297,11 @@
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id2">
-   Теорема об огибающей
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id3">
    Тождество Роя
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id4">
+    <a class="reference internal nav-link" href="#id3">
     </a>
    </li>
   </ul>
@@ -319,10 +326,7 @@
 <h1>Лекция 3, часть 2<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 <p>Пусть есть, для простоты, два товара. Как обычно, будем обозначать их (и их спросы) как <span class="math notranslate nohighlight">\(x,y\)</span> а соответствующие цены как <span class="math notranslate nohighlight">\(p,q\)</span>.</p>
 <div class="section" id="id2">
-<h2>Теорема об огибающей<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="id3">
-<h2>Тождество Роя<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<h2>Тождество Роя<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <p>Мы хотим связать между собой три объекта: <span class="math notranslate nohighlight">\(x^{\ast}(p,q,I), y^{\ast}(p,q,I)\)</span> и  <span class="math notranslate nohighlight">\(V(\ast)(p,q,I)\)</span>. Для этого мы воспользуемся фундаментальным свойством, что косвенная полезность это полезность, в которую подставили спросы:</p>
 <div class="math notranslate nohighlight">
 \[V(p, q, px + qy) = U(x, y),\]</div>
@@ -339,11 +343,12 @@
 \frac{d V}{d p} = \frac{\partial V}{\partial p} + \frac{\partial V}{\partial I} \cdot \frac{\partial I}{\partial p} = 0
 \end{gather*}
 \]</div>
-<p>Обратите внимание, что рубленый <span class="math notranslate nohighlight">\(d\)</span> это <strong>полный дифференциал</strong>, он отыскивает все упоминания о цене <span class="math notranslate nohighlight">\(p\)</span> в выражении и суммирует все связанные с ними частные производные и дифференциирует дальше вглубь. Курсивная <span class="math notranslate nohighlight">\(\partial\)</span> это <strong>частная производная</strong>, она дифференциирует функцию по аргументу, не по значению аргумента. Почуствуйте разницу:</p>
-<div class="math notranslate nohighlight">
-\[ f(x,y) = sin x + y \quad \Rightarrow \quad \frac{\partial}{\partial x} f(x, x^2) = \cos x, \quad \frac{d}{d x} f(x, x^2) = \cos x + 2x\]</div>
-<div class="section" id="id4">
-<h3><a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><span class="xref myst">differentials</span></p>
+</div>
+<div class="section" id="id3">
+<h3><a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
 </div>
 </div>
 <div class="section" id="ces">

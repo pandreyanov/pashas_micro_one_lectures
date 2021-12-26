@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Задачи для тренировки &#8212; Учебник по Микро 1, для ИП, ФЭН ВШЭ</title>
+    <title>Дифференциалы &#8212; Учебник по Микро 1, для ИП, ФЭН ВШЭ</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -42,6 +42,8 @@
     <script src="../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe"
@@ -53,8 +55,7 @@
     <script>mermaid.initialize({startOnLoad:true});</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Второе домашнее задание" href="homework_3.html" />
-    <link rel="prev" title="Лекция 3, часть 2" href="lecture_3_2.html" />
+    <link rel="prev" title="Второе домашнее задание" href="../week_3/homework_3.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -184,29 +185,29 @@
   Третья неделя
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="intro_3.html">
+  <a class="reference internal" href="../week_3/intro_3.html">
    Содержание
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="lecture_3_1.html">
+  <a class="reference internal" href="../week_3/lecture_3_1.html">
    Лекция 3, часть 1
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="lecture_3_2.html">
+  <a class="reference internal" href="../week_3/lecture_3_2.html">
    Лекция 3, часть 2
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_3/practice_3.html">
    Задачи для тренировки
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="homework_3.html">
+  <a class="reference internal" href="../week_3/homework_3.html">
    Второе домашнее задание
   </a>
  </li>
@@ -216,9 +217,9 @@
   Мат. шпаргалка
  </span>
 </p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../cheetsheet/differentials.html">
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Дифференциалы
   </a>
  </li>
@@ -263,7 +264,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/week_3/practice_3.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/cheetsheet/differentials.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -288,19 +289,6 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id2">
-   Задача 0.1
-  </a>
- </li>
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -309,11 +297,13 @@
         
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="id1">
-<h1>Задачи для тренировки<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="id2">
-<h2>Задача 0.1<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-</div>
+  <div class="tex2jax_ignore mathjax_ignore section" id="differentials">
+<span id="id1"></span><h1>Дифференциалы<a class="headerlink" href="#differentials" title="Permalink to this headline">¶</a></h1>
+<p>Когда я пишу рубленый <span class="math notranslate nohighlight">\(\frac{d}{dx}\)</span> это <strong>полный дифференциал</strong>, он отыскивает все упоминания о <span class="math notranslate nohighlight">\(x\)</span> в выражении и суммирует все связанные с ними частные производные и дифференциирует дальше вглубь. Когда я пишу курсивный $<span class="math notranslate nohighlight">\(\frac{\partial}{\partial x}\)</span>$ это <strong>частная производная</strong>, она дифференциирует функцию по аргументу, не по значению аргумента.</p>
+<p>Почуствуйте разницу:</p>
+<div class="math notranslate nohighlight">
+\[ f(x,y) = sin x + y \quad \Rightarrow \quad \frac{\partial}{\partial x} f(x, x^2) = \cos x, \quad \frac{d}{d x} f(x, x^2) = \cos x + 2x\]</div>
+<p>Не во всех учебниках делается различие, потому что из контекста обычно понятно, частная производная берется или полный дифференциал.</p>
 </div>
 
     <script type="text/x-thebe-config">
@@ -329,7 +319,7 @@
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./week_3"
+            path: "./cheetsheet"
         },
         predefinedOutput: true
     }
@@ -341,19 +331,12 @@
         
             <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="lecture_3_2.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="../week_3/homework_3.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Лекция 3, часть 2</p>
+            <p class="prev-next-title">Второе домашнее задание</p>
         </div>
-    </a>
-    <a class='right-next' id="next-link" href="homework_3.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Второе домашнее задание</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
     </a>
 </div>
         
