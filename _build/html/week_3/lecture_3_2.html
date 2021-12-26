@@ -365,12 +365,12 @@
      Функция расходов и Дуальность
     </a>
    </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id14">
-     Лемма Шепарда
-    </a>
-   </li>
   </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id14">
+   Лемма Шепарда
+  </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id15">
@@ -601,17 +601,18 @@ a = V(a,b,c) = \max_{x,y} a-a(x-b)^2 - (y-c)^2 \Rightarrow \\
 <p>Назовем <strong>Хиксианским</strong> спрос в задаче минимизации расходов, и <strong>Маршалианским</strong> спрос в задаче максимизации полезности.</p>
 <p>Для товаров <span class="math notranslate nohighlight">\(x,y\)</span> будем обозначать Хиксианские спросы как</p>
 <div class="math notranslate nohighlight">
-\[hx(p,q,\bar U), \quad hy(p,q,\bar U)\]</div>
+\[h_x(p,q,\bar U), \quad h_y(p,q,\bar U)\]</div>
 <p>а Маршалианские спросы как</p>
 <div class="math notranslate nohighlight">
-\[mx(p,q,I), \quad my(p,q,I).\]</div>
+\[m_x(p,q,I), \quad m_y(p,q,I).\]</div>
+<p>Разрешаю писать просто <span class="math notranslate nohighlight">\(hx, hy, mx, my\)</span>.</p>
 </div>
 </div><p>Тогда, в для задачи максимизации полезности с параметрами <span class="math notranslate nohighlight">\((p,q,I)\)</span> существует</p>
 <div class="math notranslate nohighlight">
-\[ \bar U_0 := V(mx(p,q,I), my(p,q,I))\]</div>
+\[ \bar U_0 := V(m_x(p,q,I), m_y(p,q,I))\]</div>
 <p>такой что задача минимизации расходов с <span class="math notranslate nohighlight">\((p, q, \bar U_0)\)</span> эквивалентна ей. Аналогично, для задачи миимизации расходов с <span class="math notranslate nohighlight">\((p, q, I)\)</span> существует</p>
 <div class="math notranslate nohighlight">
-\[ I_0 := p hx(p,q, \bar U) + q hy(p,q, \bar U)\]</div>
+\[ I_0 := p h_x(p,q, \bar U) + q h_y(p,q, \bar U)\]</div>
 <p>такой что задача максимизации полезности с <span class="math notranslate nohighlight">\((p, q, I_0)\)</span> эквивалентна ей.</p>
 </div>
 <div class="section" id="id13">
@@ -628,7 +629,7 @@ a = V(a,b,c) = \max_{x,y} a-a(x-b)^2 - (y-c)^2 \Rightarrow \\
 <div class="definition-content section" id="proof-content">
 <p>Назовем <strong>функцией расходов</strong> значение целевой функции в оптимуме, в задаче минимизации расходов:</p>
 <div class="math notranslate nohighlight">
-\[ E(p,q,\bar U) = p hx(p,q,\bar U) + q hy(p,q,\bar U).\]</div>
+\[ E(p,q,\bar U) = p h_x(p,q,\bar U) + q h_y(p,q,\bar U).\]</div>
 </div>
 </div><p>Это совершенно аналогично тому, как мы ввели косвенную полезность <span class="math notranslate nohighlight">\(V(p,q,I)\)</span> через значение целевой функции в оптимуме в задаче максимизации полезности.</p>
 <details class="sphinx-bs dropdown card mb-3">
@@ -638,14 +639,15 @@ a = V(a,b,c) = \max_{x,y} a-a(x-b)^2 - (y-c)^2 \Rightarrow \\
 <div class="summary-up docutils">
 <svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="summary-content card-body docutils">
-<p class="card-text">Любой Маршалианский спроса <span class="math notranslate nohighlight">\(mx(p,q,I)\)</span> совпадает с Хиксианским с подставленной косвенной функцией <span class="math notranslate nohighlight">\(hx(p,q,V(p,q,I))\)</span>. А любой Хиксианский спрос <span class="math notranslate nohighlight">\(hx(p,q,\bar U)\)</span> совпадает с Маршалианским с подставленной функцией расходов <span class="math notranslate nohighlight">\(mx(p,q,E(p,q,\bar U))\)</span>.</p>
+<p class="card-text">Любой Маршалианский спроса <span class="math notranslate nohighlight">\(m_x(p,q,I)\)</span> совпадает с Хиксианским с подставленной косвенной функцией <span class="math notranslate nohighlight">\(h_x(p,q,V(p,q,I))\)</span>. А любой Хиксианский спрос <span class="math notranslate nohighlight">\(h_x(p,q,\bar U)\)</span> совпадает с Маршалианским с подставленной функцией расходов <span class="math notranslate nohighlight">\(m_x(p,q,E(p,q,\bar U))\)</span>.</p>
 </div>
 </details></div>
+</div>
 <div class="section" id="id14">
-<h3>Лемма Шепарда<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
+<h2>Лемма Шепарда<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h2>
 <p>Мы проходили сегодня уже Теорему об Огибающей и успешно применили ее к задаче максимизации полезности. А что произойдет, если мы применим ее к задаче минимизации расходов?</p>
 <div class="math notranslate nohighlight">
-\[ E(p,q,\bar U) = p hx(p,q,\bar U) + q hy(p,q,\bar U), \quad \frac{\partial E}{\partial p} = ?\]</div>
+\[ E(p,q,\bar U) = p h_x(p,q,\bar U) + q h_y(p,q,\bar U), \quad \frac{\partial E}{\partial p} = ?\]</div>
 <p>Прежде всего, мы должны ответить на следующий вопрос:</p>
 <details class="sphinx-bs dropdown card mb-3">
 <summary class="summary-title card-header">
@@ -670,13 +672,12 @@ a = V(a,b,c) = \max_{x,y} a-a(x-b)^2 - (y-c)^2 \Rightarrow \\
 </div>
 </div><p>Лемма Шепарда это первая манифестация Теоремы об Огибающей в нашем курсе, которых будет очень, очень много.</p>
 </div>
-</div>
 <div class="section" id="id15">
 <h2>Как не запутаться?<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h2>
 <p>Подводя итог, у нас было две задачи: максимизации полезности и минимизации расходов. Каждая задача имела свой набор параметров: первая <span class="math notranslate nohighlight">\((p,q,I)\)</span> а вторая <span class="math notranslate nohighlight">\((p,q,\bar U)\)</span>. Каждая задача произвела три обьекта:</p>
 <ul class="simple">
-<li><p>оптимальные <span class="math notranslate nohighlight">\(mx(p,q,I), my(p,q,I)\)</span> и косвенная полезность <span class="math notranslate nohighlight">\(V(p,q,I)\)</span> в первой задаче</p></li>
-<li><p>оптимальные <span class="math notranslate nohighlight">\(hx(p,q,\bar U), hy(p,q,\bar U)\)</span> и функция расходов <span class="math notranslate nohighlight">\(E(p,q,\bar U)\)</span> во второй задаче</p></li>
+<li><p>оптимальные <span class="math notranslate nohighlight">\(m_x(p,q,I), m_y(p,q,I)\)</span> и косвенная полезность <span class="math notranslate nohighlight">\(V(p,q,I)\)</span> в первой задаче</p></li>
+<li><p>оптимальные <span class="math notranslate nohighlight">\(h_x(p,q,\bar U), h_y(p,q,\bar U)\)</span> и функция расходов <span class="math notranslate nohighlight">\(E(p,q,\bar U)\)</span> во второй задаче</p></li>
 </ul>
 <p>Если вы решали задачу максимизации полезности и нашли маршалианский спрос, который зависит от <span class="math notranslate nohighlight">\(\bar U\)</span> то правильным ответом это быть не может, поскольку вам разрешено только пользоваться <span class="math notranslate nohighlight">\((p,q,I)\)</span>. Это значит, что вы недоподставили где то, недоиспользовали Дуальность.</p>
 <p>Далее, при помощи дуальности и спросов вы можете свободно перемещаться “горизонтально” между <span class="math notranslate nohighlight">\(V\)</span> и <span class="math notranslate nohighlight">\(E\)</span>. И наоборот, при помощи дуальности и <span class="math notranslate nohighlight">\(V\)</span>, <span class="math notranslate nohighlight">\(E\)</span> вы можете свободно перемещаться “горизонтально” между спросами.</p>
