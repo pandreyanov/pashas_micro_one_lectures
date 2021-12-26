@@ -341,8 +341,6 @@ $$
 
 $$ h_x = e^{\bar U + C} \frac{\alpha}{p} p^{\alpha} q^{\beta}, \quad h_y = e^{\bar U + C} \frac{\beta}{q} p^{\alpha} q^{\beta}.$$
 
-:::
-
 Собственно, все.
 
 :::
