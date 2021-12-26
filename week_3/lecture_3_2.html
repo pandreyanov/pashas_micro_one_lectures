@@ -344,6 +344,18 @@
   <a class="reference internal nav-link" href="#id9">
    Минимизация расходов
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id10">
+     Условия Первого Порядка
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id11">
+     Закон Вальраса
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -482,17 +494,61 @@ a = V(a,b,c) = \max_{x,y} a-a(x-b)^2 - (y-c)^2 \Rightarrow \\
 </details><p>Любопытным также является факт, что теорема об огибающей позволяет найти производную косвенной полезности по бюджету.</p>
 <details class="sphinx-bs dropdown card mb-3">
 <summary class="summary-title card-header">
-Чему она равна?<div class="summary-down docutils">
+Чему равна <span class="math notranslate nohighlight">\(\partial V/ \partial I\)</span>?<div class="summary-down docutils">
 <svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="summary-up docutils">
 <svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="summary-content card-body docutils">
-<p class="card-text">Множителю Лагранжа <span class="math notranslate nohighlight">\(\lambda\)</span>, она же <strong>теневая цена</strong> ослабления бюджета.</p>
+<p class="card-text">Множителю Лагранжа <span class="math notranslate nohighlight">\(\lambda\)</span>.</p>
 </div>
 </details></div>
 </div>
 <div class="section" id="id9">
 <h2>Минимизация расходов<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+<p>Сейчас мы перейдем к задаче, на первый взгляд, никак не связанной с максимизацией полезности. Если быть точными, мы будем минимизировать сумму расходов на все товары при минимально заданном таргетированном уровне полезности <span class="math notranslate nohighlight">\(\bar U\)</span>. Для простоты, пусть будут два товара <span class="math notranslate nohighlight">\(x, y\)</span> с ценами <span class="math notranslate nohighlight">\(p, q\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\text{P2:} \quad p x + q y \to \min_{x,y \geqslant 0}, \quad \text{s.t.} \quad U(x,y) \geqslant 0.\]</div>
+<p>Сравните с классической задачей максимизации полезности</p>
+<div class="math notranslate nohighlight">
+\[\text{P1:} \quad U(x, y) \to \max_{x,y \geqslant 0}, \quad \text{s.t.} \quad p x + q y \leqslant 0.\]</div>
+<div class="section" id="id10">
+<h3>Условия Первого Порядка<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<p>На самом деле, эти две задачи очень близко связаны. Давайте выпишем Лагранжианы в обеих задачах, но обозначим множители Лагранжа по разному.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\mathcal{L}^{P1} = U(x, y) - \lambda (px + qy - I)\\
+\mathcal{L}^{P2} = (px + qy - I) - \gamma (\bar U - U(x,y))
+\end{split}\]</div>
+<p>Поверим на слово, что обе задачи выпуклые, и выпишем УПП для поиска оптимума:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}  
+\text{P1:} U'_x = \lambda p, \quad U'_y = \lambda q, \quad px + qy = I\\
+\text{P2:} \quad p = \gamma U'_x, \quad q = \gamma U'_y, \quad U(x,y) = \bar U
+\end{split}\]</div>
+<p>Легко видеть, что для того, чтобы решения совпали, необходимо чтобы</p>
+<ul class="simple">
+<li><p>во первых, <span class="math notranslate nohighlight">\(\gamma \lambda = 1\)</span>, что нас никак не ограничивает</p></li>
+<li><p>во вторых, при достижении таргетированной полезности обязательно расходовался весь бюджет и наоборот</p></li>
+</ul>
+<p>Последнее условие известно как <strong>Закон Вальраса</strong>. Если он выполнен, и задача выпуклая, то минимизация издержек порождает абсолютно такую же систему условий первого порядка, как и максимизация полезности.</p>
+</div>
+<div class="section" id="id11">
+<h3>Закон Вальраса<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<p>Для начала приведем пример полезности, при которой Закон Вальраса не выполнен, это постоянная полезность <span class="math notranslate nohighlight">\(U(x,y) = 1\)</span>.</p>
+<p>Действительно, с точки зрения полезности, все бюджетное множество состоит из оптимумов. Однако, лишь одна точка <span class="math notranslate nohighlight">\((x,y)=(0,0)\)</span> по настоящему минимизирует издержки, при таргетированной полезности <span class="math notranslate nohighlight">\(\bar U = 0\)</span>. Что тут произошло?</p>
+<p>Дело в том, что у полезности <span class="math notranslate nohighlight">\(U(x,y) = 1\)</span> <strong>толстые линии уровня</strong>. Чтобы Закон Вальраса заработал, необходимо исключить появление таких линий уровня. Это свойство называется локальной ненасыщаемостью в <span class="math notranslate nohighlight">\(\mathbb{R}^2_{+}\)</span>.</p>
+<div class="proof definition admonition" id="definition-4">
+<p class="admonition-title"><span class="caption-number">Definition 31 </span></p>
+<div class="definition-content section" id="proof-content">
+<p>Полезность <strong>локально ненасыщаема</strong> в <span class="math notranslate nohighlight">\(X\)</span>, если для каждой точки <span class="math notranslate nohighlight">\(x \in X\)</span> и для любой сколько угодно малой окрестности этой точки в <span class="math notranslate nohighlight">\(X\)</span>, найдется вторая точка <span class="math notranslate nohighlight">\(y\)</span> в этой окрестности, такая что <span class="math notranslate nohighlight">\(U(y)&gt;U(x)\)</span>.</p>
+</div>
+</div><p>Теперь мы готовы сформулировать теорему</p>
+<div class="proof theorem remark admonition" id="theorem-5">
+<p class="admonition-title"><span class="caption-number">Theorem 8 </span> (Закон Вальраса)</p>
+<div class="theorem-content section" id="proof-content">
+<p>Если полезность локально ненасыщаема, то любое из решений любой задачи максимизации полезности всегда лежит на бюджетном ограничении.</p>
+</div>
+</div></div>
 </div>
 </div>
 
