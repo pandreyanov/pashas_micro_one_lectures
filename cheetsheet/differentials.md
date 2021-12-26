@@ -5,6 +5,6 @@
 
 Почуствуйте разницу:
 
-$$ f(x,y) = sin x + y \quad \Rightarrow \quad \frac{\partial}{\partial x} f(x, x^2) = \cos x, \quad \frac{d}{d x} f(x, x^2) = \cos x + 2x$$
+$$ f(x,y) = \sin x + \sin y \quad \Rightarrow \quad \frac{\partial}{\partial x} f(x, x^2) = \cos x, \quad \frac{d}{d x} f(x, x^2) = \cos x + \cos(x) \cdot 2x$$
 
 Не во всех учебниках делается различие, потому что из контекста обычно понятно, частная производная берется или полный дифференциал.
