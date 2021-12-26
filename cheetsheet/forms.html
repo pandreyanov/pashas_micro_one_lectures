@@ -305,12 +305,19 @@
   <div class="tex2jax_ignore mathjax_ignore section" id="forms">
 <span id="id1"></span><h1>Кв. формы<a class="headerlink" href="#forms" title="Permalink to this headline">¶</a></h1>
 <p>С точки зрения пользователя, <strong>квадратичная форма</strong> это просто квадратная матрица, которая является при этом также симметричной. В нашем курсе такие матрицы появятся при повторном дифференциировании гладких функций, то есть, при выписывания Гессиана.</p>
-<p>Пусть, к примеру у нас есть фунция <span class="math notranslate nohighlight">\(f(x, y) = x^2 y + x + y\)</span> тогда градиент</p>
+<p>Пусть, к примеру у нас есть фунция <span class="math notranslate nohighlight">\(f(x, y) = x^2 y + x + y\)</span></p>
+<p>Тогда градиент равен:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split} \nabla f = \begin{pmatrix} 2 x y + 1\\ x^2 + 1\end{pmatrix}\end{split}\]</div>
-<p>а Гессиан</p>
+<p>а Гессиан равен:</p>
 <div class="math notranslate nohighlight">
-\[\begin{split} \nabla^2 f = \begin{pmatrix} 2 y &amp; 2 х \\ 2х &amp; 0\end{pmatrix}\end{split}\]</div>
+\[\begin{split} \nabla^2 f = \begin{pmatrix} 2 y &amp; 2 х \\ 2 x &amp; 0\end{pmatrix}\end{split}\]</div>
+<p>Квадратичная форма применяется к векторам и дает либо положительные либо отрицательные значения. Например, если вектор равен <span class="math notranslate nohighlight">\(v=(a,b)\)</span>, тогда</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\nabla^2 f (v) = \begin{pmatrix} a &amp; b \end{pmatrix} \begin{pmatrix} 2 y &amp; 2 х \\ 2 x &amp; 0\end{pmatrix} \begin{pmatrix} a \\ b \end{pmatrix}\end{split}\]</div>
+<p>Перемножая все три матрицы вручную, мы получаем:</p>
+<div class="math notranslate nohighlight">
+\[\nabla^2 f (v) = 2 y a^2 + 4 x a b.\]</div>
 </div>
 
     <script type="text/x-thebe-config">
