@@ -334,7 +334,7 @@
 <p>Пусть есть, для простоты, два товара. Как обычно, будем обозначать их (и их спросы) как <span class="math notranslate nohighlight">\(x,y\)</span> а соответствующие цены как <span class="math notranslate nohighlight">\(p,q\)</span>.</p>
 <div class="section" id="id2">
 <h2>Тождество Роя<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p>Мы хотим связать между собой три объекта: <span class="math notranslate nohighlight">\(x^{\ast}(p,q,I), y^{\ast}(p,q,I)\)</span> и  <span class="math notranslate nohighlight">\(V(\ast)(p,q,I)\)</span>. Для этого мы воспользуемся фундаментальным свойством, что косвенная полезность это полезность, в которую подставили спросы:</p>
+<p>Мы хотим связать между собой три объекта: <span class="math notranslate nohighlight">\(x^{\ast}(p,q,I), y^{\ast}(p,q,I)\)</span> и  <span class="math notranslate nohighlight">\(V^{\ast}(p,q,I)\)</span>. Для этого мы воспользуемся фундаментальным свойством, что косвенная полезность это полезность, в которую подставили спросы:</p>
 <div class="math notranslate nohighlight">
 \[V(p, q, px + qy) = U(x, y),\]</div>
 <p>Убедитесь, что это, действительно, корректная запись.</p>
@@ -360,9 +360,9 @@
 <div class="theorem-content section" id="proof-content">
 <p>Если <span class="math notranslate nohighlight">\(\vec{x}\)</span> - весь вектор спросов, а <span class="math notranslate nohighlight">\(\vec{p}\)</span> - весь вектор цен то</p>
 <div class="math notranslate nohighlight">
-\[\vec{x} = - \frac{\nabla_{\vec{p}} V}{\nabla_I V}\]</div>
+\[\vec{x} = - \nabla_{\vec{p}} V / \nabla_I V\]</div>
 </div>
-</div><p>Заметьте, что я меняю интерпретацию знаков <span class="math notranslate nohighlight">\(x, p\)</span> в зависимости от контекста. К этому надо привыкать, контекст задачи важен.</p>
+</div><p>Заметьте, что я меняю интерпретацию знаков <span class="math notranslate nohighlight">\(x, p\)</span> в зависимости от контекста. К этому надо привыкать, контекст задачи важен. Например, <span class="math notranslate nohighlight">\(\nabla\)</span> обычно означает вектор, но в знаменателе <span class="math notranslate nohighlight">\(\nabla_I\)</span> это число, потому что <span class="math notranslate nohighlight">\(I\)</span> это скаляр.</p>
 <div class="section" id="id3">
 <h3>Зачем нужно тождество Роя?<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
 </div>
