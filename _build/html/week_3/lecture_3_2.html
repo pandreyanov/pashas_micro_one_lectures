@@ -333,7 +333,17 @@
      Практическая польза
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id8">
+     Как насчет косвенной полезности
+    </a>
+   </li>
   </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id9">
+   Минимизация расходов
+  </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#ces">
@@ -398,17 +408,19 @@
 <div class="section" id="id4">
 <h2>Теорема об Огибающей<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
 <p>Это чрезвычайно важная Теорема, и, в отличие от остальных, по настоящему полезная.</p>
+<p>Рассмотрим семейство опорных функций <span class="math notranslate nohighlight">\(f(x, p)\)</span>, где <span class="math notranslate nohighlight">\(x\)</span> - переменная а <span class="math notranslate nohighlight">\(p\)</span> - параметр. Определим огибающую <span class="math notranslate nohighlight">\(V(p)\)</span> как результат оптимизации функции <span class="math notranslate nohighlight">\(f\)</span> по какому-то статическому множеству <span class="math notranslate nohighlight">\(Х\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[ V(p) := \max_{x \in Х} f(x, p),\]</div>
+<p>тогда…</p>
 <div class="proof theorem remark admonition" id="theorem-1">
 <p class="admonition-title"><span class="caption-number">Theorem 7 </span></p>
 <div class="theorem-content section" id="proof-content">
-<p>Рассмотрим семейство опорных функций <span class="math notranslate nohighlight">\(f(x, p)\)</span>, где <span class="math notranslate nohighlight">\(x\)</span> - переменная а <span class="math notranslate nohighlight">\(p\)</span> - параметр. Определим огибающую <span class="math notranslate nohighlight">\(V(p)\)</span> как результат оптимизации функции <span class="math notranslate nohighlight">\(f\)</span> по какому-то статическому множеству <span class="math notranslate nohighlight">\(Х\)</span>:</p>
-<div class="math notranslate nohighlight">
-\[ V(p) := \max_{x \in X} f(x, p)\]</div>
-<p>тогда функция <span class="math notranslate nohighlight">\(V(p)\)</span> (почти всюду) дифференциируема и</p>
+<p>Функция <span class="math notranslate nohighlight">\(V(p)\)</span> (почти всюду) дифференциируема и</p>
 <div class="math notranslate nohighlight">
 \[\frac{\partial V(p)}{\partial p} = \frac{\partial f(x, p)}{\partial p}|_{x = x^{\ast}(p)}.\]</div>
 </div>
-</div><div class="section" id="id5">
+</div><p>… то есть, наклон огибающей в точке касания равен наклону соответствующей опорной функции в этой точке.</p>
+<div class="section" id="id5">
 <h3>Интуиция огибающей<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
 <p>Представьте себе, что вы свалили в кучу какие то крупные объекты и накрыли все эластичной пленкой.</p>
 <p>Пленка плотно прилегла к тем объектам, которые оказались наверху. Можно сказать, что пленка - это (верхняя) огибающая вашего семейства опорных объектов, поскольку она лежит там, где находится самый высокий объект в каждой точке.</p>
@@ -417,10 +429,62 @@
 </div>
 <div class="section" id="id6">
 <h3>Примеры<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<div class="proof example admonition" id="example-2">
+<p class="admonition-title"><span class="caption-number">Example 12 </span></p>
+<div class="example-content section" id="proof-content">
+<div class="math notranslate nohighlight">
+\[ a = V(a) = \max_x a-(x-a)^2 \quad \Rightarrow \quad \frac{\partial V(a)}{\partial a} = 1 + 2(x-a)|_{x = a} = 1\]</div>
 </div>
+</div><div class="proof example admonition" id="example-3">
+<p class="admonition-title"><span class="caption-number">Example 13 </span></p>
+<div class="example-content section" id="proof-content">
+<div class="math notranslate nohighlight">
+\[ a = V(a,b,c) = \max_{x,y} a-a(x-b)^2 - (y-c)^2 \quad \Rightarrow \quad \frac{\partial V(a, b, c)}{\partial a} = 1 + 2a(x-b)_{x = b} + 2(x-c)_{y = c} = 1\]</div>
+</div>
+</div></div>
 <div class="section" id="id7">
 <h3>Практическая польза<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<p>Может показаться, что дифференцирование опорной функции и подстановка это лишняя трата времени, ведь можно просто решить задачу и продифференцировать <span class="math notranslate nohighlight">\(V\)</span> по параметру, в лоб.</p>
+<p>Это правда, однако, если у вас абстрактная функция, вы не можете просто так ее промаксимизировать. Поэтому, эта теорема очень удобна при доказательствах, но не только.</p>
+<p>Зачастую, видение огибающей позволяет сэкономить время при дифференцировании, в том смысле, что вам не надо лишний раз протаскивать производную по правилу дифференциирования сложной функции.</p>
+<p>К примеру, предположим, что у вас есть функция <span class="math notranslate nohighlight">\(F(x, y, p)\)</span> и eще две функции <span class="math notranslate nohighlight">\(x = g(p), y = h(p)\)</span>. Если вас попросят найти полную производную <span class="math notranslate nohighlight">\(F(х(p), y(p), p)\)</span> по <span class="math notranslate nohighlight">\(p\)</span> то получится:</p>
+<div class="math notranslate nohighlight">
+\[\frac{d}{dp} F(х(p), y(p), p) = \frac{\partial F}{\partial x} \frac{\partial x}{\partial p} + \frac{\partial F}{\partial y} \frac{\partial y}{\partial p} + \frac{\partial F}{\partial p}.\]</div>
+<p>Теперь предположим, что нам стало известно, что <span class="math notranslate nohighlight">\(x = g(p), y = h(p)\)</span> это, на самом деле, оптимумы функции <span class="math notranslate nohighlight">\(F\)</span>. Тогда, по Теореме об Огибающей</p>
+<div class="math notranslate nohighlight">
+\[\frac{d}{dp} F(х(p), y(p), p) = \frac{\partial F}{\partial p}.\]</div>
+<p>Получается, что Теорема об Огибающей позволяет нам <strong>игнорировать параметр находящийся внутри оптимальной точки</strong> при подсчете полного дифференциала. Это знание позволяет в отдельных упражнениях сэкономить 10-20 минут изнурительных вычислений.</p>
 </div>
+<div class="section" id="id8">
+<h3>Как насчет косвенной полезности<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<p>Для того, чтобы активировать всю мощь Теоремы об Огибающей, вам достаточно взять любую функцию, которая является результатом оптимизации и продифференциировать ее по любому параметру.</p>
+<p>К примеру, мы могли бы продифференциировать косвенную полезность по ценам. Тогда Теорема об Огибающей даст вам связь этих производных с производными опорной функции в точках оптимума.</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+А что есть опорная функция для косвенной полезности <span class="math notranslate nohighlight">\(V(p,q,I)\)</span>?<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Хочется сказать что сама полезность <span class="math notranslate nohighlight">\(U(x,y)\)</span> но правильный ответ это Лагранжиан</p>
+<div class="math notranslate nohighlight">
+\[\mathcal{L}=U(x,y) - \lambda(px + qy - I)\]</div>
+<p class="card-text">по крайней мере он подходит формально, так как зависит от <span class="math notranslate nohighlight">\(p,q,I\)</span>.</p>
+</div>
+</details><p>Любопытным также является факт, что теорема об огибающей позволяет найти производную косвенной полезности по бюджету.</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Чему она равна?<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Множителю Лагранжа <span class="math notranslate nohighlight">\(\lambda\)</span>, она же <strong>теневая цена</strong> ослабления бюджета.</p>
+</div>
+</details></div>
+</div>
+<div class="section" id="id9">
+<h2>Минимизация расходов<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
 </div>
 <div class="section" id="ces">
 <h2>Возвращение к CES<a class="headerlink" href="#ces" title="Permalink to this headline">¶</a></h2>
