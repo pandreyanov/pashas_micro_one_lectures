@@ -411,6 +411,16 @@ $$\rho^\sigma \left(
 :::{prf:property}
 Спрос на каждый товар описывается следующими уравнениями: 
 
-$$ x = \lambda^{\frac{1}{\rho-1}} \cdot (\frac{p}{\alpha \rho})^{\frac{1}{\rho-1}}$$
+\begin{gather*}
+
+x = (\frac{I}{\rho^\sigma \left(
+
+\alpha^\sigma p^{1-\sigma} + 
+(1-\alpha)^{\sigma} q^{1-\sigma}
+
+\right)})^{\frac{-1}{\sigma(\rho-1)}} \cdot (\frac{p}{\alpha \rho})^{\frac{1}{\rho-1}} 
+
+\end{gather*}
+$$
 
 :::
