@@ -5,8 +5,8 @@
 
 Пусть, к примеру у нас есть фунция $f(x, y) = x^2 y + x + y$ тогда градиент
 
-$$ \nabla f = \begin{bmatrix} 2 x y + 1\\ x^2 + 1\end{bmatix}$$
+$$ \nabla f = \begin{pmatrix} 2 x y + 1\\ x^2 + 1\end{pmatix}$$
 
 а Гессиан 
 
-$$ \nabla^2 f = \begin{bmatrix} 2 y & 2 х \\ 2х & 0\end{bmatix}$$
+$$ \nabla^2 f = \begin{pmatrix} 2 y & 2 х \\ 2х & 0\end{pmatix}$$
