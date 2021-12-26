@@ -413,9 +413,11 @@ $$\rho^\sigma \left(
 
 $$
 
-x = \frac{\alpha^{\sigma} p^{1-\sigma}}{\alpha^{\sigma} p^{1-\sigma} + (1-\alpha)^{\sigma} q^{1-\sigma}}\frac{I}{p}\\
+x^{\ast} = \frac{\alpha^{\sigma} p^{1-\sigma}}{\alpha^{\sigma} p^{1-\sigma} + (1-\alpha)^{\sigma} q^{1-\sigma}}\frac{I}{p},\\
 
-x = \frac{\alpha^{\sigma} p^{1-\sigma}}{\alpha^{\sigma} p^{1-\sigma} + (1-\alpha)^{\sigma} q^{1-\sigma}}\frac{I}{p}
+y^{\ast} = \frac{(1-\alpha)^{\sigma} q^{1-\sigma}}{\alpha^{\sigma} p^{1-\sigma} + (1-\alpha)^{\sigma} q^{1-\sigma}}\frac{I}{p}.
 $$
+
+Потому, что $\sigma(1-\rho) = 1$.
 
 :::
