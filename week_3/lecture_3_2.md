@@ -32,8 +32,11 @@ $$
 
 $$\frac{d V}{d p} = \frac{\partial V}{\partial p} + \frac{\partial V}{\partial I} \cdot x = 0$$
 
+Aналогично для второй цены
 
-Aналогично для остальных цен, мы пришли к:
+$$\frac{d V}{d q} = \frac{\partial V}{\partial q} + \frac{\partial V}{\partial I} \cdot y = 0$$
+
+Комбинируя это в векторной форме, мы получаем:
 
 :::{prf:theorem} Тождество Роя
 :class: remark
