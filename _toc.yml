@@ -34,3 +34,4 @@ parts:
 - caption: Мат. шпаргалка
   chapters:
     - file: cheetsheet/differentials
+    - file: cheetsheet/forms

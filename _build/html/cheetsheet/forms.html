@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Задачи для тренировки &#8212; Учебник по Микро 1, для ИП, ФЭН ВШЭ</title>
+    <title>Кв. формы &#8212; Учебник по Микро 1, для ИП, ФЭН ВШЭ</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -55,8 +55,7 @@
     <script>mermaid.initialize({startOnLoad:true});</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Содержание" href="../week_3/intro_3.html" />
-    <link rel="prev" title="Лекция 2, часть 2" href="lecture_2_2.html" />
+    <link rel="prev" title="Дифференциалы" href="differentials.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -159,24 +158,24 @@
   Вторая неделя
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="intro_2.html">
+  <a class="reference internal" href="../week_2/intro_2.html">
    Содержание
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="lecture_2_1.html">
+  <a class="reference internal" href="../week_2/lecture_2_1.html">
    Лекция 2, часть 1
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="lecture_2_2.html">
+  <a class="reference internal" href="../week_2/lecture_2_2.html">
    Лекция 2, часть 2
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_2/practice_2.html">
    Задачи для тренировки
   </a>
  </li>
@@ -218,14 +217,14 @@
   Мат. шпаргалка
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../cheetsheet/differentials.html">
+  <a class="reference internal" href="differentials.html">
    Дифференциалы
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../cheetsheet/forms.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Кв. формы
   </a>
  </li>
@@ -270,7 +269,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/week_2/practice_2.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/cheetsheet/forms.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -295,19 +294,6 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id2">
-   Задача 0.1
-  </a>
- </li>
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -316,15 +302,15 @@
         
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="id1">
-<h1>Задачи для тренировки<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="id2">
-<h2>Задача 0.1<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p>Назовем предпочтения <strong>гомотетичными</strong>, если для любого <span class="math notranslate nohighlight">\(\lambda &gt;0\)</span> верно:</p>
+  <div class="tex2jax_ignore mathjax_ignore section" id="forms">
+<span id="id1"></span><h1>Кв. формы<a class="headerlink" href="#forms" title="Permalink to this headline">¶</a></h1>
+<p>С точки зрения пользователя, <strong>квадратичная форма</strong> это просто квадратная матрица, которая является при этом также симметричной. В нашем курсе такие матрицы появятся при повторном дифференциировании гладких функций, то есть, при выписывания Гессиана.</p>
+<p>Пусть, к примеру у нас есть фунция <span class="math notranslate nohighlight">\(f(x, y) = x^2 y + x + y\)</span> тогда градиент</p>
 <div class="math notranslate nohighlight">
-\[x \sim y \quad \Leftrightarrow \quad \lambda x \sim \lambda y.\]</div>
-<p>Какие из перечисленных на лекции полезностей соответствуют (представляют собой) такие предпочтения?</p>
-</div>
+\[\begin{split} \nabla f = \begin{bmatrix} 2 x y + 1\\ x^2 + 1\end{bmatix}\end{split}\]</div>
+<p>а Гессиан</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} \nabla^2 f = \begin{bmatrix} 2 y &amp; 2 х \\ 2х &amp; 0\end{bmatix}\end{split}\]</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -340,7 +326,7 @@
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./week_2"
+            path: "./cheetsheet"
         },
         predefinedOutput: true
     }
@@ -352,19 +338,12 @@
         
             <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="lecture_2_2.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="differentials.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Лекция 2, часть 2</p>
+            <p class="prev-next-title">Дифференциалы</p>
         </div>
-    </a>
-    <a class='right-next' id="next-link" href="../week_3/intro_3.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Содержание</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
     </a>
 </div>
         
