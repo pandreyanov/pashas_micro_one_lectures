@@ -406,20 +406,16 @@ $$\rho^\sigma \left(
 \right)
 = \lambda^\sigma I$$
 
-ну и, наконец, спросы:
+Отсюда выражается множитель Лагранжа и, наконец, спросы:
 
 :::{prf:property}
 Спрос на каждый товар описывается следующими уравнениями: 
 
 $$
 
-x = (\frac{I}{\rho^\sigma \left(
+x = \frac{\alpha^{\sigma} p^{1-\sigma}}{\alpha^{\sigma} p^{1-\sigma} + (1-\alpha)^{\sigma} q^{1-\sigma}}\frac{I}{p}\\
 
-\alpha^\sigma p^{1-\sigma} + 
-(1-\alpha)^{\sigma} q^{1-\sigma}
-
-\right)})^{\frac{-1}{\sigma(\rho-1)}} \cdot (\frac{p}{\alpha \rho})^{\frac{1}{\rho-1}} 
-
+x = \frac{\alpha^{\sigma} p^{1-\sigma}}{\alpha^{\sigma} p^{1-\sigma} + (1-\alpha)^{\sigma} q^{1-\sigma}}\frac{I}{p}
 $$
 
 :::
