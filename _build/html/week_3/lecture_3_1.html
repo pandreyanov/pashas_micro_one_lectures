@@ -335,12 +335,12 @@
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#id8">
-     Формула обратной эластичности
+     Индекс Лернера
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#id9">
-     Индекс Лернера
+     Формула обратной эластичности
     </a>
    </li>
   </ul>
@@ -478,13 +478,36 @@
 <p>В идеальном (с точки зрения экономики и общества) конкурентном рынке, все фирмы ценополучатели, то есть, никто не пользуется рыночной властью. Однако, считается, что все фирмы по умолчанию пользуются своей рыночной властью, и чем больше фирма - тем больше вреда она способна нанести экономике.</p>
 <p>Эластичность позволяет сделать любую из двух вещей:</p>
 <ul class="simple">
-<li><p>если вы находитесь в позиции истинного монополиста, эластичность спроса позволит вам установить цену, максимизирующую прибыль</p></li>
 <li><p>если вы находитесь в позиции контролирующего органа, эластичность спроса позволит вам понять, пользуется ли монополист своей рыночной властью</p></li>
+<li><p>если вы находитесь в позиции истинного монополиста, эластичность спроса позволит вам установить цену, максимизирующую прибыль</p></li>
 </ul>
 <p>Сейчас мы вкратце обсудим каждую из них</p>
 <div class="section" id="id8">
-<h3>Формула обратной эластичности<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
-<p>Пусть спрос на товар <span class="math notranslate nohighlight">\(x\)</span> описывается <strong>обратной фунцкией спроса</strong> <span class="math notranslate nohighlight">\(P(x)\)</span> с постоянной эластичностью <span class="math notranslate nohighlight">\(\delta\)</span>, а издержки монополиста не зависят от объемов и равны <span class="math notranslate nohighlight">\(C\)</span>. Тогда задача монополиста это:</p>
+<h3>Индекс Лернера<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<p>Пусть на рынке установлена цена <span class="math notranslate nohighlight">\(P^{\ast}\)</span> а маржинальные издержки (не обязательно постоянные) фирмы равны <span class="math notranslate nohighlight">\(MC\)</span> при текущем обьеме.</p>
+<p>Как измерить рыночную власть монополиста?</p>
+<div class="proof definition admonition" id="definition-3">
+<p class="admonition-title"><span class="caption-number">Definition 30 </span></p>
+<div class="definition-content section" id="proof-content">
+<p><strong>Индекс Лернера</strong> <span class="math notranslate nohighlight">\(L\)</span> вычисляется по формуле</p>
+<div class="math notranslate nohighlight">
+\[L = \frac{P^{\ast}-MC}{P^{\ast}}\]</div>
+</div>
+</div><p>Индекс Лернера <span class="math notranslate nohighlight">\(L\)</span> показывает отношение маржи фирмы к действующей цене.</p>
+<div class="proof definition admonition" id="definition-4">
+<p class="admonition-title"><span class="caption-number">Definition 31 </span></p>
+<div class="definition-content section" id="proof-content">
+<p><strong>Маржа</strong> (по английски markup) это</p>
+<div class="math notranslate nohighlight">
+\[P^{\ast}-MC\]</div>
+</div>
+</div><p>Сама по себе маржа не является злом, однако, злом считается <span class="math notranslate nohighlight">\(L\)</span>. Чем больше <span class="math notranslate nohighlight">\(L\)</span>, тем более вероятно, что фирма злоупотребляет своим монопольным положением (если таковое есть).</p>
+<p>В Американских исследованиях, “подозрительной” будет фирма, у которой индекс Лернера выше .35. Такие фирмы, как правило, находятся под пристальным взглядом Федеральной Торговой Комиссии - контролирующего органа США.</p>
+<p>Но почему? Ответ кроется в эластичностях.</p>
+</div>
+<div class="section" id="id9">
+<h3>Формула обратной эластичности<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<p>Пусть спрос на товар <span class="math notranslate nohighlight">\(x\)</span> описывается <strong>обратной фунцкией спроса</strong> <span class="math notranslate nohighlight">\(P(x)\)</span> с постоянной эластичностью <span class="math notranslate nohighlight">\(\delta\)</span>, а издержки монополиста не зависят от объемов и равны <span class="math notranslate nohighlight">\(MC\)</span>. Тогда задача монополиста это:</p>
 <div class="math notranslate nohighlight">
 \[ (P(x) - C)x \to \max_x\]</div>
 <p>Используя условия первого порядка</p>
@@ -497,28 +520,15 @@ P(x) - C + P'(x)x = 0\\
 \end{split}\]</div>
 <p>То есть, маржа/цена (то что слева) равна минус эластичности обратной фунцкии спроса.</p>
 <p>А как это связано с (прямой) функцией спроса? Оказывается, что у обратных функций эластичность - тоже обратная. То есть,</p>
-<div class="proof property admonition" id="property-3">
+<div class="proof property admonition" id="property-5">
 <p class="admonition-title"><span class="caption-number">Property 22 </span></p>
 <div class="property-content section" id="proof-content">
-<p>Если у (прямой) функции спроса эластичность равна <span class="math notranslate nohighlight">\(\varepsilon\)</span>, то маржа (как доля от цены) монополиста (с постоянными издержками <span class="math notranslate nohighlight">\(c\)</span>) в оптимуме должна равняться в точности обратной эластичности, с минусом:</p>
+<p>Если у функции спроса эластичность по цене равна <span class="math notranslate nohighlight">\(\varepsilon\)</span>, то маржа (как доля от цены) монополиста (с постоянными издержками <span class="math notranslate nohighlight">\(MC\)</span>) в оптимуме должна равняться в точности обратной эластичности, с минусом:</p>
 <div class="math notranslate nohighlight">
-\[\frac{p-c}{p} = - \frac{1}{\varepsilon}\]</div>
+\[\frac{P-MC}{P} = - \frac{1}{\varepsilon}\]</div>
 </div>
-</div><p>Вообще говоря, <strong>маржа</strong> (по английски <strong>markup</strong>) это <span class="math notranslate nohighlight">\(p-c\)</span>, но, по причинам которые я озвучил в начале лекции, экономисты любят ее безразмерную версию <span class="math notranslate nohighlight">\(100(p-c)/p\)</span>, то есть <strong>в процентах от цены</strong>.</p>
-</div>
-<div class="section" id="id9">
-<h3>Индекс Лернера<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
-<p>Сейчас мы поставим себя на место контролирующего органа и будем решать, в некотором смысле, обратную задачу. Пусть спрос на товар <span class="math notranslate nohighlight">\(x\)</span> описывается <strong>обратной фунцкией спроса</strong> <span class="math notranslate nohighlight">\(P(x)\)</span> с постоянной эластичностью <span class="math notranslate nohighlight">\(\delta\)</span>, а маржинальные издержки (не обязательно постоянные) монополиста равны <span class="math notranslate nohighlight">\(MC\)</span> при текущем обьеме. Цена установлена монополистом на уровне <span class="math notranslate nohighlight">\(P^{\ast}\)</span>.</p>
-<p>Как измерить рыночную власть монополиста?</p>
-<div class="proof definition admonition" id="definition-4">
-<p class="admonition-title"><span class="caption-number">Definition 30 </span></p>
-<div class="definition-content section" id="proof-content">
-<p>Индекс Лернера <span class="math notranslate nohighlight">\(L\)</span> вычисляется по формуле</p>
-<div class="math notranslate nohighlight">
-\[L = \frac{P^{\ast}-MC}{P^{\ast}}\]</div>
-</div>
-</div><p>То есть, <strong>индекс Лернера</strong> это и есть маржа в долях (не в процентах).</p>
-<p>В Американских исследованиях, эластичность потребления многих товаров (например бензин) оценивается около .37, соответственно, для типичной бензоколонки, индекс Лернера выше .37 вызовет интерес со стороны контролирующего органа (в США это Федеральная Торговая Комиссия, в России это Федеральная Антимонопольная Служба) и сулит судебные иски по поводу злоупотребления рыночной властью.</p>
+</div><p>Так вот, в Американских исследованиях установлено, что типичная эластичность (скажем, бензина) по цене равна приблизительно -.35. Соответственно, у бензоколонки, желающей злоупотребить своим монопольным положением, индекс Лернера будет как раз .35.</p>
+<p>К сожалению, аккуратная оценка индекса Лернера практически невозможна, так как практически невозможно оценить истинные издержки фирмы, поэтому, сейчас для этого использутся более сложные метрики, например SSNIP.</p>
 </div>
 </div>
 </div>
