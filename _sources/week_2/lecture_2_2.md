@@ -107,7 +107,7 @@ $$\log x^{\ast} = \log \alpha - \log (\alpha + \beta + \gamma) + \log I - \log p
 :::{prf:property}
 Косвенная полезность в Кобб-Дугласе (с точностью до преобразования) имеет вид
 
-$$V(p,q,I) = U(x^{\ast}, \ldots) = (\alpha + \beta + \gamma) \log I - \alpha \log p - \beta \log q - \gamma \log r + C $$
+$$V(p,q,I) = (\alpha + \beta + \gamma) \log I - \alpha \log p - \beta \log q - \gamma \log r + C $$
 
 :::
 
@@ -203,7 +203,7 @@ $$
 :::{prf:property}
 Косвенная полезность в Леонтьеве (с точностью до преобразования) имеет вид
 
-$$V(p,q,I) = U(x^{\ast}, \ldots) = \frac{I}{ap + bq + cr}$$
+$$V(p,q,I) = \frac{I}{ap + bq + cr}$$
 
 :::
 
@@ -285,11 +285,11 @@ $$ f(I/p) + 0.$$
 :::{prf:property}
 Косвенная полезность в квазилинейной полезности (с точностью до преобразования) имеет вид
 
-$$V(p,q,I) = U(x^{\ast}, \ldots) = f((f')^{-1}(k p)) + I - p (f')^{-1}(k p)$$
+$$V(p,q,I) = f((f')^{-1}(k p)) + I - p (f')^{-1}(k p)$$
 
 если $I - p (f')^{-1}(k p) > 0$, и 
 
-$$V(p,q,I) = U(x^{\ast}, \ldots) = f(I/p)$$
+$$V(p,q,I) = f(I/p)$$
 
 в противном случае.
 
@@ -348,7 +348,7 @@ $$ap = bq$$
 :::{prf:property}
 Косвенная полезность в линейной полезности (с точностью до преобразования) имеет вид
 
-$$V(p,q,I) = U(x^{\ast}, \ldots) = I \cdot \max(a/p, b/q).$$
+$$V(p,q,I) = I \cdot \max(a/p, b/q).$$
 
 :::
 
@@ -405,3 +405,12 @@ $$\rho^\sigma \left(
 
 \right)
 = \lambda^\sigma I$$
+
+ну и, наконец, спросы:
+
+:::{prf:property}
+Спрос на каждый товар описывается следующими уравнениями: 
+
+$$ x = \lambda^{\frac{1}{\rho-1}} \cdot (\frac{p}{\alpha \rho})^{\frac{1}{\rho-1}}$$
+
+:::
