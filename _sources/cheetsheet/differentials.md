@@ -11,7 +11,7 @@ $$ f(x,y) = \sin x + \sin y \quad \Rightarrow \quad \frac{\partial}{\partial x} 
 
 Елси бы это был курс по программированию, я бы сказал:
 
-:::{code-cell} ipython3
+:::{code} ipython3
 def f(x, y):
 	return np.sin(x) + np.sin(y)
 :::
