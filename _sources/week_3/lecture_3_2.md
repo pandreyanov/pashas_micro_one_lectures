@@ -88,13 +88,25 @@ $$\frac{\partial V(p)}{\partial p} = \frac{\partial f(x, p)}{\partial p}|_{x = x
 
 :::{prf:example}
 
-$$ a = V(a) = \max_x a-(x-a)^2 \quad \Rightarrow \quad \frac{\partial V(a)}{\partial a} = 1 + 2(x-a)|_{x = a} = 1$$
+$$ 
+\begin{gather*}
+a = V(a) = \max_x a-(x-a)^2 \Rightarrow \\
+\frac{\partial V(a)}{\partial a} = 1 + 2(x-a)|_{x = a} = 1
+\end{gather*}
+$$
 
 :::
 
 :::{prf:example}
 
-$$ a = V(a,b,c) = \max_{x,y} a-a(x-b)^2 - (y-c)^2 \quad \Rightarrow \quad \frac{\partial V(a, b, c)}{\partial a} = 1 + 2a(x-b)_{x = b} + 2(x-c)_{y = c} = 1$$
+
+$$ 
+\begin{gather*}
+a = V(a,b,c) = \max_{x,y} a-a(x-b)^2 - (y-c)^2 \Rightarrow \\
+\frac{\partial V(a, b, c)}{\partial a} = 1 + 2a(x-b)_{x = b} + 2(x-c)_{y = c} = 1 
+\end{gather*}
+$$
+
 
 :::
 
