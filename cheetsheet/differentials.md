@@ -18,10 +18,10 @@ def f(x, y):
 
 Полный дифференциал функции $f(x, x^2)$ по $x$ это 
 
-$$\lim_{\delta x \to 0} \frac{f(x + \delta x, (x + \delta x)^2}{\delta x}$$
+$$\lim_{\delta x \to 0} \frac{f(x + \delta x, (x + \delta x)^2) - f(x, x^2)}{\delta x}$$
 
 a частная производная $f(x, x^2)$ по $x$ это 
 
-$$\lim_{\delta x \to 0} \frac{f(x + \delta x, x^2)}{\delta x}.$$
+$$\lim_{\delta x \to 0} \frac{f(x + \delta x, x^2) - f(x, x^2)}{\delta x}.$$
 
-Постарайтесь не запутаться.
+Почуствуйте разницу.
