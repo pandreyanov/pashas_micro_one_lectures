@@ -251,32 +251,16 @@ $$U(x,y) \to \max_{x,y \geqslant 0}, \quad s.t. \quad B(x,y) \leqslant 0$$
 
 Постарайтесь ответить, являются ли непрерывными и строго выпуклыми следующие задачи:
 
-:::{prf:example}
+:::{dropdown}
 
-$$\log x + \log y + \log z \to \max \quad s.t. \quad x^2 + y^2 + z^2 \leqslant 1$$
-
-:::
-
-:::{prf:example}
-
-$$x + \log y + \log z \to \max \quad s.t. \quad x^2 + y^2 + z^2 \leqslant 1$$
-
-:::
-
-:::{prf:example}
-
-$$x + y + \log z \to \max \quad s.t. \quad x + y + z \leqslant 1$$
-
-:::
-
-:::{prf:example}
-
-$$x + y + \sqrt{z} \to \max \quad s.t. \quad x^2 + y^2 + z^2 \leqslant 1$$
-
-:::
-
-:::{prf:example}
-
-$$x + y + z^2 \to \max \quad s.t. \quad x^2 + y^2 + z^2 \leqslant 1$$
+$$ 
+\begin{gather*}
+\log x + \log y + \log z \to \max \quad s.t. \quad x^2 + y^2 + z^2 \leqslant 1\\
+x + \log y + \log z \to \max \quad s.t. \quad x^2 + y^2 + z^2 \leqslant 1\\
+x + y + \log z \to \max \quad s.t. \quad x + y + z \leqslant 1\\
+x + y + \sqrt{z} \to \max \quad s.t. \quad x^2 + y^2 + z^2 \leqslant 1\\
+x + y + z^2 \to \max \quad s.t. \quad x^2 + y^2 + z^2 \leqslant 1
+\end{gather*}
+$$
 
 :::
