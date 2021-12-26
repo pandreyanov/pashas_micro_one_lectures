@@ -249,18 +249,16 @@ $$U(x,y) \to \max_{x,y \geqslant 0}, \quad s.t. \quad B(x,y) \leqslant 0$$
 
 Непрерывность спроса означает, что, грубо говоря, вы всегда сможете найти **частичное равновесие** на рынке любого отдельно взятого товара, как пересечение спроса с предложением. Мы обсудим частичное равновесие ближе к концу курса.
 
-Постарайтесь ответить, являются ли непрерывными и строго выпуклыми следующие задачи:
-
-:::{dropdown}
+:::{dropdown} Постарайтесь ответить, являются ли непрерывными и строго выпуклыми следующие задачи:
 
 $$ 
-\begin{gather*}
-\log x + \log y + \log z \to \max \quad s.t. \quad x^2 + y^2 + z^2 \leqslant 1\\
-x + \log y + \log z \to \max \quad s.t. \quad x^2 + y^2 + z^2 \leqslant 1\\
-x + y + \log z \to \max \quad s.t. \quad x + y + z \leqslant 1\\
-x + y + \sqrt{z} \to \max \quad s.t. \quad x^2 + y^2 + z^2 \leqslant 1\\
-x + y + z^2 \to \max \quad s.t. \quad x^2 + y^2 + z^2 \leqslant 1
-\end{gather*}
+\begin{align*}
+\log x + \log y + \log z \to \max \quad & s.t. \quad x^2 + y^2 + z^2 \leqslant 1\\
+x + \log y + \log z \to \max \quad & s.t. \quad x^2 + y^2 + z^2 \leqslant 1\\
+x + y + \log z \to \max \quad & s.t. \quad x + y + z \leqslant 1\\
+x + y + \sqrt{z} \to \max \quad & s.t. \quad x^2 + y^2 + z^2 \leqslant 1\\
+x + y + z^2 \to \max \quad & s.t. \quad x^2 + y^2 + z^2 \leqslant 1
+\end{align*}
 $$
 
 :::
