@@ -25,4 +25,4 @@
 
 Дополнительные материалы
 
-- [https://www.wikiwand.com/en/Small_but_significant_and_non-transitory_increase_in_price]{SSNIP}
+- {https://www.wikiwand.com/en/Small_but_significant_and_non-transitory_increase_in_price}[SSNIP вместо индекса Лернера] 
