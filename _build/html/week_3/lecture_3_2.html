@@ -28,6 +28,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/proof.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
@@ -304,12 +305,6 @@
   <a class="reference internal nav-link" href="#id2">
    Тождество Роя
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id3">
-    </a>
-   </li>
-  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#ces">
@@ -352,10 +347,21 @@
 <p class="admonition-title">See also</p>
 <p><a class="reference internal" href="../cheetsheet/differentials.html#differentials"><span class="std std-ref">Прочитайте, если вы не понимаете разницу между частным и полным дифференциалом.</span></a></p>
 </div>
-<div class="section" id="id3">
-<h3><a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<div class="proof theorem admonition" id="my-theorem">
+<p class="admonition-title"><span class="caption-number">Theorem 1 </span> (Orthogonal-Projection-Theorem)</p>
+<div class="theorem-content section" id="proof-content">
+<p>Given <span class="math notranslate nohighlight">\(y \in \mathbb R^n\)</span> and linear subspace <span class="math notranslate nohighlight">\(S \subset \mathbb R^n\)</span>,
+there exists a unique solution to the minimization problem</p>
+<div class="math notranslate nohighlight">
+\[\hat y := \argmin_{z \in S} \|y - z\|\]</div>
+<p>The minimizer <span class="math notranslate nohighlight">\(\hat y\)</span> is the unique vector in <span class="math notranslate nohighlight">\(\mathbb R^n\)</span> that satisfies</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\hat y \in S\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(y - \hat y \perp S\)</span></p></li>
+</ul>
+<p>The vector <span class="math notranslate nohighlight">\(\hat y\)</span> is called the <strong>orthogonal projection</strong> of <span class="math notranslate nohighlight">\(y\)</span> onto <span class="math notranslate nohighlight">\(S\)</span>.</p>
 </div>
-</div>
+</div></div>
 <div class="section" id="ces">
 <h2>Возвращение к CES<a class="headerlink" href="#ces" title="Permalink to this headline">¶</a></h2>
 </div>

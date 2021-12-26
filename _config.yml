@@ -35,6 +35,7 @@ parse:
 sphinx:
   extra_extensions:
     - sphinxcontrib.mermaid
+    - sphinx_proof
 
 # Information about where the book exists on the web
 repository:

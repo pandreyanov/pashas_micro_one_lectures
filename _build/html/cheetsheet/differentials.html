@@ -28,6 +28,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/proof.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
@@ -311,13 +312,17 @@
 \[ f(x,y) = \sin x + \sin y \quad \Rightarrow \quad \frac{\partial}{\partial x} f(x, x^2) = \cos x, \quad \frac{d}{d x} f(x, x^2) = \cos x + 2x \cos x\]</div>
 <p>Не во всех учебниках делается различие, потому что из контекста обычно понятно, частная производная берется или полный дифференциал.</p>
 <p>Елси бы это был курс по программированию, я бы сказал:</p>
-<p>‘’’{python}
-def f(x, y):
-return np.sin(x) + np.sin(y)</p>
-<p>def g(x):
-return f(x, x^2)</p>
-<p>‘’’</p>
-<p>Полный дифференциал функции <span class="math notranslate nohighlight">\(f(x, x^2)\)</span> по <span class="math notranslate nohighlight">\(x\)</span> это <span class="math notranslate nohighlight">\(\lim_{\delta x \to 0} \frac{g(x + \delta x)}{\delta x}\)</span>, a частная производная <span class="math notranslate nohighlight">\(f(x, x^2)\)</span> по <span class="math notranslate nohighlight">\(x\)</span> это <span class="math notranslate nohighlight">\(\lim_{\delta x \to 0} \frac{f(x + \delta x, x^2)}{\delta x}\)</span>.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+	<span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Полный дифференциал функции <span class="math notranslate nohighlight">\(f(x, x^2)\)</span> по <span class="math notranslate nohighlight">\(x\)</span> это</p>
+<div class="math notranslate nohighlight">
+\[\lim_{\delta x \to 0} \frac{f(x + \delta x, (x + \delta x)^2}{\delta x}\]</div>
+<p>a частная производная <span class="math notranslate nohighlight">\(f(x, x^2)\)</span> по <span class="math notranslate nohighlight">\(x\)</span> это</p>
+<div class="math notranslate nohighlight">
+\[\lim_{\delta x \to 0} \frac{f(x + \delta x, x^2)}{\delta x}.\]</div>
+<p>Постарайтесь не запутаться.</p>
 </div>
 
     <script type="text/x-thebe-config">

@@ -11,13 +11,17 @@ $$ f(x,y) = \sin x + \sin y \quad \Rightarrow \quad \frac{\partial}{\partial x} 
 
 Елси бы это был курс по программированию, я бы сказал:
 
-'''{python}
+:::{code} ipython3
 def f(x, y):
 	return np.sin(x) + np.sin(y)
+:::
 
-def g(x):
-	return f(x, x^2)
+Полный дифференциал функции $f(x, x^2)$ по $x$ это 
 
-'''
+$$\lim_{\delta x \to 0} \frac{f(x + \delta x, (x + \delta x)^2}{\delta x}$$
 
-Полный дифференциал функции $f(x, x^2)$ по $x$ это $\lim_{\delta x \to 0} \frac{g(x + \delta x)}{\delta x}$, a частная производная $f(x, x^2)$ по $x$ это $\lim_{\delta x \to 0} \frac{f(x + \delta x, x^2)}{\delta x}$.
+a частная производная $f(x, x^2)$ по $x$ это 
+
+$$\lim_{\delta x \to 0} \frac{f(x + \delta x, x^2)}{\delta x}.$$
+
+Постарайтесь не запутаться.
