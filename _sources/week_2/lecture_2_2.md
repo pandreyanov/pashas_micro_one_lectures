@@ -412,7 +412,6 @@ $$\rho^\sigma \left(
 Спрос на каждый товар описывается следующими уравнениями: 
 
 $$
-\begin{gather*}
 
 x = (\frac{I}{\rho^\sigma \left(
 
@@ -421,7 +420,6 @@ x = (\frac{I}{\rho^\sigma \left(
 
 \right)})^{\frac{-1}{\sigma(\rho-1)}} \cdot (\frac{p}{\alpha \rho})^{\frac{1}{\rho-1}} 
 
-\end{gather*}
 $$
 
 :::
