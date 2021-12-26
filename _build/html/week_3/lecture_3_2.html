@@ -42,6 +42,8 @@
     <script src="../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe"
@@ -282,6 +284,22 @@
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   Теорема об огибающей
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   Тождество Роя
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#ces">
    Возвращение к CES
   </a>
@@ -299,6 +317,35 @@
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="id1">
 <h1>Лекция 3, часть 2<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>Пусть есть, для простоты, два товара. Как обычно, будем обозначать их (и их спросы) как <span class="math notranslate nohighlight">\(x,y\)</span> а соответствующие цены как <span class="math notranslate nohighlight">\(p,q\)</span>.</p>
+<div class="section" id="id2">
+<h2>Теорема об огибающей<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="id3">
+<h2>Тождество Роя<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>Мы хотим связать между собой три объекта: <span class="math notranslate nohighlight">\(x^{\ast}(p,q,I), y^{\ast}(p,q,I)\)</span> и  <span class="math notranslate nohighlight">\(V(\ast)(p,q,I)\)</span>. Для этого мы воспользуемся фундаментальным свойством, что косвенная полезность это полезность, в которую подставили спросы:</p>
+<div class="math notranslate nohighlight">
+\[V(p, q, px + qy) = U(x, y),\]</div>
+<p>Убедитесь, что это, действительно, корректная запись.</p>
+<p>Что можно сделать с этим тождеством?</p>
+<ul class="simple">
+<li><p>продифференциировать по <span class="math notranslate nohighlight">\(p\)</span></p></li>
+<li><p>продифференциировать по <span class="math notranslate nohighlight">\(q\)</span></p></li>
+</ul>
+<p>Заметим, что цены входят слева дважды, а справа не входят вообще. То есть, с точки зрения дифференциирования по ценам, справа стоит константа, а слева сложная функция. По правилам дифференциирования, полный дифференциал функции <span class="math notranslate nohighlight">\(V\)</span> по <span class="math notranslate nohighlight">\(p\)</span> равен:</p>
+<div class="math notranslate nohighlight">
+\[ 
+\begin{gather*}
+\frac{d V}{d p} = \frac{\partial V}{\partial p} + \frac{\partial V}{\partial I} \cdot \frac{\partial I}{\partial p} = 0
+\end{gather*}
+\]</div>
+<p>Обратите внимание, что рубленый <span class="math notranslate nohighlight">\(d\)</span> это <strong>полный дифференциал</strong>, он отыскивает все упоминания о цене <span class="math notranslate nohighlight">\(p\)</span> в выражении и суммирует все связанные с ними частные производные и дифференциирует дальше вглубь. Курсивная <span class="math notranslate nohighlight">\(\partial\)</span> это <strong>частная производная</strong>, она дифференциирует функцию по аргументу, не по значению аргумента. Почуствуйте разницу:</p>
+<div class="math notranslate nohighlight">
+\[ f(x,y) = sin x + y \quad \Rightarrow \quad \frac{\partial}{\partial x} f(x, x^2) = \cos x, \quad \frac{d}{d x} f(x, x^2) = \cos x + 2x\]</div>
+<div class="section" id="id4">
+<h3><a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
 <div class="section" id="ces">
 <h2>Возвращение к CES<a class="headerlink" href="#ces" title="Permalink to this headline">¶</a></h2>
 </div>
