@@ -25,6 +25,8 @@
 
 Дополнительные материалы
 
-- [Инструкции FTC по анализу злоупотребления рыночной властью](https://www.wikiwand.com/en/Small_but_significant_and_non-transitory_increase_in_price)
+- [HHI](https://www.wikiwand.com/en/Herfindahl%E2%80%93Hirschman_index)
+
+- [SSNIP](https://www.wikiwand.com/en/Small_but_significant_and_non-transitory_increase_in_price)
 
 - [Реестр ФАС естественных монополий](https://fas.gov.ru/documents/b-n-7a897f93-87da-4a22-86b7-fb4d8c97cbe5)
