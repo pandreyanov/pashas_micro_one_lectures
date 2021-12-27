@@ -112,7 +112,7 @@ $$ L_{+}(x) = \{y \in X: U(y) \geqslant U(x)\}, \quad L_{-}(x) = \{y \in X: U(y)
 
 :::{image} ./lebeg_sets.png
 :alt: Верхние и нижние Лебеговы множества
-:width: 300px
+:width: 400px
 :align: center
 :::
 
