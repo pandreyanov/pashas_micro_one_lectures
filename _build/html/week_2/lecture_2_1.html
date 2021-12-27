@@ -379,16 +379,24 @@
 <div class="math notranslate nohighlight">
 \[B(x,y) = p x + q y - I \leqslant 0\]</div>
 <p>которая, в пересечении с <span class="math notranslate nohighlight">\(\mathbb{R}^2_{+}\)</span> дает прямоугольный треугольник. Сразу оговорюсь, что <strong>цены будут всегда неотрицательные</strong> и, по большей части, даже строго положительные.</p>
-<p>Пусть горизонтальная ось соответствует товару <span class="math notranslate nohighlight">\(х\)</span>. Тогда координаты вершин треугольника находятся как пересечение гипотенузы с осями: <span class="math notranslate nohighlight">\((\frac{I}{p}, 0)\)</span> и <span class="math notranslate nohighlight">\((0, \frac{I}{q})\)</span>. Чаще всего мы будем иметь дело именно с таким бюджетным ограничением, поэтому потренируйтесь быстро рисовать его по вершинам. Постарайтесь также ответить на следующие вопросы.</p>
+<p>Пусть горизонтальная ось соответствует товару <span class="math notranslate nohighlight">\(х\)</span>. Тогда координаты вершин треугольника находятся как пересечение гипотенузы с осями: <span class="math notranslate nohighlight">\((\frac{I}{p}, 0)\)</span> и <span class="math notranslate nohighlight">\((0, \frac{I}{q})\)</span>. Чаще всего мы будем иметь дело именно с таким бюджетным ограничением, поэтому потренируйтесь быстро рисовать его по вершинам.</p>
+<a class="reference internal image-reference" href="../_images/budget_2d.png"><img alt="Двумерный бюджет" class="align-center" src="../_images/budget_2d.png" style="width: 400px;" /></a>
+<p>Постарайтесь также ответить на следующие вопросы.</p>
 <p><em>Вопрос 1: Является ли такое бюджетное ограничение выпуклым?</em></p>
 <p>Попробуйте ответить самостоятельно…</p>
 <p><em>Вопрос 2: Как меняется бюджетное ограничение при увеличении цены товара <span class="math notranslate nohighlight">\(x\)</span>?</em></p>
 <p>Поскольку координата соответствующего (правого нижнего) угла треугольника стремится к нулю, то треугольник уменьшается за счет “поворота” гипотенузы вокруг противоположной вершины.</p>
 <p><em>Вопрос 3: Как меняется бюджетное ограничение при увеличении бюджета <span class="math notranslate nohighlight">\(I\)</span>?</em></p>
 <p>Поскольку координаты обеих вершин увеличиваются пропорционально, то гипотенуза “отъезжает” в сторону противоположную началу координат.</p>
-<p><em>Вопрос 4: Повторите все рассуждения для трех товаров <span class="math notranslate nohighlight">\(x, y, z\)</span> в <span class="math notranslate nohighlight">\(\mathbb{R}^3_{+}\)</span>.</em></p>
-<p>… вместо треугольника будет эдакая пирамида, а для произвольного числа товаров это множество называется <strong>симплекс</strong> в <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span>.</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Повторите все рассуждения для трех товаров <span class="math notranslate nohighlight">\(x, y, z\)</span>.*<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
 </div>
+</details></div>
 <div class="section" id="id3">
 <h2>Метод Лагранжа<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <p>Метод (Множителей) Лагранжа своими корнями уходит в физику и был разработан, в первую очередь, для решения выпуклых оптимизационных задач. Однако, даже если задача не выпуклая, анализ все равно можно проводить на языке Лагранжа, пусть и с оговорками. Таким образом, существует две основные интерпретации метода: выпуклая и невыпуклая.</p>
