@@ -305,58 +305,48 @@
   <a class="reference internal nav-link" href="#id2">
    Линейное бюджетное ограничение
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id3">
-   Метод Лагранжа
-  </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id4">
-     Собственно метод
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id5">
+    <a class="reference internal nav-link" href="#id3">
      Выпуклая интерпретация
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id6">
+    <a class="reference internal nav-link" href="#id4">
      Невыпуклая интерпретация
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id7">
+    <a class="reference internal nav-link" href="#id5">
      Интерпретация множителя Лагранжа
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id8">
+  <a class="reference internal nav-link" href="#id6">
    Функции спроса
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id9">
+    <a class="reference internal nav-link" href="#id7">
      Нормальные и инфериорные товары
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id10">
+    <a class="reference internal nav-link" href="#id8">
      Субституты и комплементы
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id11">
+  <a class="reference internal nav-link" href="#id9">
    Косвенная полезность
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id12">
+  <a class="reference internal nav-link" href="#id10">
    Непрерывнисть спроса
   </a>
  </li>
@@ -390,43 +380,52 @@
 <p>Поскольку координаты обеих вершин увеличиваются пропорционально, то гипотенуза “отъезжает” в сторону противоположную началу координат.</p>
 <details class="sphinx-bs dropdown card mb-3">
 <summary class="summary-title card-header">
-Повторите все рассуждения для трех товаров <span class="math notranslate nohighlight">\(x, y, z\)</span>.*<div class="summary-down docutils">
+Повторите все рассуждения для трех товаров <span class="math notranslate nohighlight">\(x, y, z\)</span>.<div class="summary-down docutils">
 <svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="summary-up docutils">
 <svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="summary-content card-body docutils">
+<a class="reference internal image-reference" href="../_images/budget_3d.png"><img alt="Трехмерный бюджет" class="align-center" src="../_images/budget_3d.png" style="width: 400px;" /></a>
 </div>
-</details></div>
-<div class="section" id="id3">
-<h2>Метод Лагранжа<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
-<p>Метод (Множителей) Лагранжа своими корнями уходит в физику и был разработан, в первую очередь, для решения выпуклых оптимизационных задач. Однако, даже если задача не выпуклая, анализ все равно можно проводить на языке Лагранжа, пусть и с оговорками. Таким образом, существует две основные интерпретации метода: выпуклая и невыпуклая.</p>
-<p>Предположим, что наше бюджетное ограничение</p>
-<div class="math notranslate nohighlight">
-\[B(x,y) = p x + q y - I \leqslant 0\]</div>
-<p>а функция <span class="math notranslate nohighlight">\(U(x, y)\)</span> - непрерывная. Мы хотим промаксимизировать эту полезность на бюджетном ограничении:</p>
-<div class="math notranslate nohighlight">
-\[U(x,y) \to \max_{x, y \in \mathbb{R}_{+}^2}, \quad s.t. \quad B(x,y) \leqslant 0.\]</div>
-<div class="section" id="id4">
-<h3>Собственно метод<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
-<p>Mетод Лагранжа заключается в выписывании новой функции, называемой Лагранжианом. Она зависит от всех переменных, по которым мы оптимизируем, но также обладает новыми переменными, называемыми множителями Лагранжа, по одному на каждое (существенное) ограничение:</p>
-<div class="math notranslate nohighlight">
-\[ \mathcal{L} (x, y| \lambda) = U(x,y) - \lambda B(x, y).\]</div>
-<p>Если есть сомнения в том, что решения не осях, надо выписать более общий Лагранжиан:</p>
-<div class="math notranslate nohighlight">
-\[ \mathcal{L} (x, y| \lambda, \gamma, \delta) = U(x,y) - \lambda B(x, y)  + \gamma x + \delta y,\]</div>
-<p>поскольку <span class="math notranslate nohighlight">\(x \geqslant 0\)</span> и <span class="math notranslate nohighlight">\(y \geqslant 0\)</span> это тоже ограничения. Но до этого, как правило, не доходит, потому что в экономических приложениях решение, как правило, внутреннее.</p>
-<p>Далее, предлагается найти экстремум Лагранжиана по всем переменным, включая множители Лагранжа, то есть, надо решить следующую систему уравнений:</p>
-<div class="math notranslate nohighlight">
-\[\nabla_{(x,y)} \mathcal{L} = 0, \quad \nabla_{\lambda} \mathcal{L} = 0.\]</div>
-<p>Затем, возможно, провести анализ второго порядка, то есть, среди полученных кандидатов отобрать те, для которых <span class="math notranslate nohighlight">\(\nabla^2 \mathcal{L}_{(x,y)} \leqslant 0\)</span> на касательном к ограничению пространстве, то есть, квадратичная форма Гессиана отрицательно (полу-)определена.</p>
-<div class="admonition seealso">
-<p class="admonition-title">See also</p>
-<p><a class="reference internal" href="../cheetsheet/forms.html#forms"><span class="std std-ref">Прочитайте, если вы не знаете про квадратичные формы.</span></a></p>
+</details><p>Вместо треугольника будет эдакая пирамида, а для произвольного числа товаров это множество называется <strong>симплекс</strong> в <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+## Метод Лагранжа
+
+Метод (Множителей) Лагранжа своими корнями уходит в физику и был разработан, в первую очередь, для решения выпуклых оптимизационных задач. Однако, даже если задача не выпуклая, анализ все равно можно проводить на языке Лагранжа, пусть и с оговорками. Таким образом, существует две основные интерпретации метода: выпуклая и невыпуклая. 
+
+Предположим, что наше бюджетное ограничение 
+
+$$B(x,y) = p x + q y - I \leqslant 0$$ 
+
+а функция $U(x, y)$ - непрерывная. Мы хотим промаксимизировать эту полезность на бюджетном ограничении: 
+
+$$U(x,y) \to \max_{x, y \in \mathbb{R}_{+}^2}, \quad s.t. \quad B(x,y) \leqslant 0.$$
+
+### Собственно метод
+
+Mетод Лагранжа заключается в выписывании новой функции, называемой Лагранжианом. Она зависит от всех переменных, по которым мы оптимизируем, но также обладает новыми переменными, называемыми множителями Лагранжа, по одному на каждое (существенное) ограничение: 
+
+$$ \mathcal{L} (x, y| \lambda) = U(x,y) - \lambda B(x, y).$$ 
+
+Если есть сомнения в том, что решения не осях, надо выписать более общий Лагранжиан:
+
+$$ \mathcal{L} (x, y| \lambda, \gamma, \delta) = U(x,y) - \lambda B(x, y)  + \gamma x + \delta y,$$ 
+
+поскольку $x \geqslant 0$ и $y \geqslant 0$ это тоже ограничения. Но до этого, как правило, не доходит, потому что в экономических приложениях решение, как правило, внутреннее. 
+
+Далее, предлагается найти экстремум Лагранжиана по всем переменным, включая множители Лагранжа, то есть, надо решить следующую систему уравнений: 
+
+$$\nabla_{(x,y)} \mathcal{L} = 0, \quad \nabla_{\lambda} \mathcal{L} = 0.$$
+
+Затем, возможно, провести анализ второго порядка, то есть, среди полученных кандидатов отобрать те, для которых $\nabla^2 \mathcal{L}_{(x,y)} \leqslant 0$ на касательном к ограничению пространстве, то есть, квадратичная форма Гессиана отрицательно (полу-)определена.
+
+:::{seealso}
+[Прочитайте, если вы не знаете про квадратичные формы.](forms)
+</pre></div>
 </div>
 <p>Как это вообще связано с оригинальной задачей, вообще говоря, не совсем понятно.</p>
-</div>
-<div class="section" id="id5">
-<h3>Выпуклая интерпретация<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id3">
+<h3>Выпуклая интерпретация<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
 <p>Выпуклая интерпретация метода Лагранжа, также называемая <strong>Сильным Принципом Лагранжа</strong> или <strong>Сильная Дуальность</strong> или <strong>Теорема о Минимаксе</strong>, была сформулирована Вон Нейманом - американским математиком Венгерского происхождения в 1928 году и существенно повлияло на развитие экономической мысли.</p>
 <div class="proof theorem remark admonition" id="theorem-0">
 <p class="admonition-title"><span class="caption-number">Theorem 3 </span> (Минимакс)</p>
@@ -443,8 +442,8 @@
 <p><em>Вопрос 1: Когда Лагранжиан является выпуклым по <span class="math notranslate nohighlight">\(x,y\)</span>?</em></p>
 <p><em>Вопрос 2: Если <span class="math notranslate nohighlight">\(U(x,y)\)</span> не вогнута но квази-вогнута, что делать?</em></p>
 </div>
-<div class="section" id="id6">
-<h3>Невыпуклая интерпретация<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id4">
+<h3>Невыпуклая интерпретация<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
 <p>Совершенно независимо, была разработана более общая (но и более муторная) технология решения невыпуклых задач оптимизации, начиная с 1939 года, и носящая имя сразу трех математиков: Каруш, Кун и Такера. Вам она, скорее всего известна как <strong>Условия Первого Порядка</strong> и <strong>Условия Второго Порядка</strong>.</p>
 <div class="proof theorem remark admonition" id="theorem-1">
 <p class="admonition-title"><span class="caption-number">Theorem 4 </span> (<strong>ККТ</strong>)</p>
@@ -461,8 +460,8 @@
 <p><em>Вопрос 3: Убедитесь, что проверка Условия Второго Порядка совпадает с проверкой квази-вогнутости функции <span class="math notranslate nohighlight">\(U\)</span> в экстремальной точке.</em></p>
 <p><em>Вопрос 4: Как вы думаете, может ли быть так что Условия Второго Порядка выполнены, но при этом функция не квази-вогнутая?.</em></p>
 </div>
-<div class="section" id="id7">
-<h3>Интерпретация множителя Лагранжа<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id5">
+<h3>Интерпретация множителя Лагранжа<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
 <p>У множителя Лагранжа есть специальная экономическая интерпретация.</p>
 <p>Давайте интерпретировать <span class="math notranslate nohighlight">\(B(x,y) = px + qy - I\)</span> как перерасход бюджетных средств. Тогда Лагранжиан имеет вид:</p>
 <div class="math notranslate nohighlight">
@@ -474,8 +473,8 @@
 <p>и множитель Лагранжа <span class="math notranslate nohighlight">\(\gamma\)</span> интерпретируется как <strong>теневая цена</strong> дополнительной единицы  товара <span class="math notranslate nohighlight">\(x\)</span> сверх квоты. То есть, мы как будто покупаем его на черном рынке по цене <span class="math notranslate nohighlight">\(\gamma\)</span>.</p>
 </div>
 </div>
-<div class="section" id="id8">
-<h2>Функции спроса<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id6">
+<h2>Функции спроса<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
 <div class="proof definition admonition" id="definition-2">
 <p class="admonition-title"><span class="caption-number">Definition 15 </span></p>
 <div class="definition-content section" id="proof-content">
@@ -492,8 +491,8 @@
 <li><p>кривые “доход-потребление” <span class="math notranslate nohighlight">\(x^{\ast}(I, \ldots)\)</span>, <span class="math notranslate nohighlight">\(y^{\ast}(I, \ldots)\)</span>, также называемые <strong>кривые Энгеля</strong> в честь немецкого статистика Эрнста Энгеля (Engel).</p></li>
 </ul>
 </div>
-</div><div class="section" id="id9">
-<h3>Нормальные и инфериорные товары<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+</div><div class="section" id="id7">
+<h3>Нормальные и инфериорные товары<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
 <p>В этот раз обойдемся без великих людей.</p>
 <div class="proof definition admonition" id="definition-4">
 <p class="admonition-title"><span class="caption-number">Definition 17 </span></p>
@@ -526,8 +525,8 @@
 <p><em>Вопрос 6: Придумайте жизненный пример товара, у которого кривая Энгеля выходит на плато.</em></p>
 <p><em>Вопрос 7: Придумайте аргументы за и против того, что общественный транспорт является инфериорным благом.</em></p>
 </div>
-<div class="section" id="id10">
-<h3>Субституты и комплементы<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id8">
+<h3>Субституты и комплементы<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
 <p>Мы продолжаем исследовать свойства кривых спроса. Одним из самых важных понятий в теории потребителя является <strong>замещаемость</strong> (substitutability). Считается, что многие товары в той или иной степени замещаемы, некоторые больше некоторые меньше. Некоторые пары товаров особенно выделяются в этом плане, например: пепси и кола, лыжи и сноуборд… Если цена одного такого товара в паре сильно вырастет, то спрос на второй товар скорее всего вырастет. Такие товары называются субститутами.</p>
 <div class="proof definition admonition" id="definition-7">
 <p class="admonition-title"><span class="caption-number">Definition 19 </span></p>
@@ -543,8 +542,8 @@
 </div><p>К сожалению, это свойство не является симметричным, то есть, <span class="math notranslate nohighlight">\(x\)</span> может быть субститутом к <span class="math notranslate nohighlight">\(y\)</span>, но y при этом может оказаться комплементом к <span class="math notranslate nohighlight">\(x\)</span>, хоть и в очень редких случаях. Это сигнализирует нам о том, что определение выбрано не совсем удачно, но какое то время нам придется с этим противоречием смириться.</p>
 </div>
 </div>
-<div class="section" id="id11">
-<h2>Косвенная полезность<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id9">
+<h2>Косвенная полезность<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
 <p>В каждой задаче оптимизации есть два объекта, идущие рука об руку: координаты оптимума и значение целевой функции (полезности). Мы довольно много внимания уделили координатам оптимума, то есть кривым спроса. А как насчет второго?</p>
 <div class="proof definition admonition" id="definition-9">
 <p class="admonition-title"><span class="caption-number">Definition 21 </span></p>
@@ -561,8 +560,8 @@
 </div>
 <p>Если вы применили преобразование, например, <span class="math notranslate nohighlight">\(\log x\)</span> чтобы быстрее решить задачу, и получили косвенную полезность, то вам придется ее “откатить”, то есть применить к ней обратное преобразование <span class="math notranslate nohighlight">\(e^x\)</span>, чтобы ответ был формально верным.</p>
 </div>
-<div class="section" id="id12">
-<h2>Непрерывнисть спроса<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id10">
+<h2>Непрерывнисть спроса<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
 <p>В большей часть примеров, которые мы будем рассматривать, спросы будут выражаться через элементарные функции, такие как <span class="math notranslate nohighlight">\(x^2, \log x, 1/x\)</span>… Все эти функции непрерывны. Совпадение?</p>
 <p>Ответить на этот вопрос нам поможет следующая теорема.</p>
 <div class="proof theorem remark admonition" id="theorem-10">
