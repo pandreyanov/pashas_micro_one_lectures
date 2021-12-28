@@ -406,5 +406,5 @@ $$E(p, q, \bar U) = \bar U \cdot \min(ap, bq).$$
 
 Наконец, мы можем спуститься в Хиксианский спрос:
 
-$$h_x = \bar U a \mathbb{I}(ap < bq), \quad h_y = \bar U b \mathbb{I}(ap > bq).$$
+$$h_x = \bar U a \cdot \mathbb{I}(ap < bq), \quad h_y = \bar U b \cdot \mathbb{I}(ap > bq).$$
 
