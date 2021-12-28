@@ -753,14 +753,20 @@ y^{\ast} = \max (0, I-px^{\ast}).
 </div></div>
 <div class="section" id="id21">
 <h3>Косвенная полезность<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h3>
-<p>Мы знаем, что решение либо в одном углу, либо в другом. Соответственно, ответ это наибольшая из двух полезностей этих кандидатов.</p>
+<p>Мы знаем, что решение либо в одном углу, либо в другом. Соответственно, ответ это наибольшая из двух полезностей этих кандидатов, то есть,</p>
+<div class="math notranslate nohighlight">
+\[V(p,q,I) = I \cdot \max(\frac{1}{ap}, \frac{1}{bq}).\]</div>
+<p>Пользуясь тем, что максимум коммутирует с монотонно возрастающими преобразованиями</p>
+<div class="math notranslate nohighlight">
+\[ \varphi'(x) &gt;0 \quad \Rightarrow \quad \max(\varphi(x), \varphi(x)) = \varphi(\max(x, y)\]</div>
+<p>и с монотонно убывающими преобразованиями, в некотором смысле, тоже</p>
+<div class="math notranslate nohighlight">
+\[ \psi'(x) &lt; 0 \quad \Rightarrow \quad \max(\psi(x), \psi(x)) = \psi(\min(x, y)\]</div>
+<p>можно вывести следующее красивое свойство:</p>
 <div class="proof property admonition" id="property-15">
 <p class="admonition-title"><span class="caption-number">Property 18 </span></p>
 <div class="property-content section" id="proof-content">
 <p>Косвенная полезность в линейной полезности (с точностью до преобразования) имеет вид</p>
-<div class="math notranslate nohighlight">
-\[V(p,q,I) = I \cdot \max(\frac{1}{ap}, \frac{1}{bq}),\]</div>
-<p>или эквивалентно</p>
 <div class="math notranslate nohighlight">
 \[V(p,q,I) = I / \min(ap, bq),\]</div>
 </div>
