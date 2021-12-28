@@ -319,7 +319,7 @@ $$\vec{h} = \nabla_{\vec{p}} E$$
 
 Можно изобразить "схему перемещений" между объектами:
 
-:::{image} ./envelope.png
+:::{image} ./scheme.png
 :alt: Огибающая
 :width: 400px
 :align: center
