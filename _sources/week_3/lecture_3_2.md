@@ -339,7 +339,7 @@ $$
 
 И прямо таки дифференциируем ее по ценам.
 
-$$ h_x = \frac{\alpha}{p} e^{\bar U + C} p^{\alpha} q^{\beta}, \quad h_y = \frac{\beta}{q} e^{\bar U + C} p^{\alpha} q^{\beta}.$$
+$$ h_x = \frac{\alpha}{p} E, \quad h_y = \frac{\beta}{q} E, \quad Е = e^{\bar U + C} p^{\alpha} q^{\beta}$$
 
 Обратите внимание, что понижение степени, к которому вы привыкли в курсах матанализа, равносильно делению. Это удобно.
 
