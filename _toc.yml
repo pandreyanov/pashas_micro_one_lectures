@@ -4,6 +4,9 @@
 format: jb-book
 root: table
 
+options:  # The options key will be applied to all chapters, but not sub-sections
+  numbered: True
+
 parts:
 - caption: Программа курса
   chapters:
@@ -12,7 +15,6 @@ parts:
     - file: week_0/module 3
     - file: week_0/module 4
 - caption: Первая неделя
-  numbered: True
   chapters:
     - file: week_1/intro_1
     - file: week_1/lecture_1_1
@@ -20,14 +22,12 @@ parts:
     - file: week_1/practice_1
     - file: week_1/homework_1
 - caption: Вторая неделя
-  numbered: True
   chapters:
     - file: week_2/intro_2
     - file: week_2/lecture_2_1
     - file: week_2/lecture_2_2
     - file: week_2/practice_2
 - caption: Третья неделя
-  numbered: True
   chapters:
     - file: week_3/intro_3
     - file: week_3/lecture_3_1
@@ -35,7 +35,6 @@ parts:
     - file: week_3/practice_3
     - file: week_3/homework_3
 - caption: Мат. шпаргалка
-  numbered: True
   chapters:
     - file: cheetsheet/differentials
     - file: cheetsheet/forms
