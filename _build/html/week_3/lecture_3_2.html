@@ -480,10 +480,12 @@
 <p>Теперь посмотрим на нашу эластичную пленку. В точках касания с теми опорными объектами что остановили ее от падения, наклон пленки равен наклону этих объектов, так как она повторяет их форму.</p>
 <a class="reference internal image-reference" href="../_images/envelope2.png"><img alt="Огибающая 2" class="align-center" src="../_images/envelope2.png" style="width: 400px;" /></a>
 <p>Этот практиически умозрительный факт и есть основная идея Теоремы об Огибающей: <strong>наклон огибающей равен наклону опорной функции в точке касания</strong>, то есть, нужно из всех опорных функций (они индексированы через <span class="math notranslate nohighlight">\(x\)</span>) выбрать ту, на которую в этой точке (точка это значение параметра <span class="math notranslate nohighlight">\(p\)</span>) опирается огибающая, и взять ее наклон (в пространстве параметса <span class="math notranslate nohighlight">\(p\)</span>).</p>
-<p>Чтобы не перепутать, какие роли у <span class="math notranslate nohighlight">\(x\)</span> и у <span class="math notranslate nohighlight">\(p\)</span>, помните, что <strong>огибающая - это функция от параметра <span class="math notranslate nohighlight">\(p\)</span></strong> а не от индекса опорной функции <span class="math notranslate nohighlight">\(x\)</span>. Соответственно, все наклоны измеряются по <span class="math notranslate nohighlight">\(p\)</span>.</p>
+<p>Чтобы не перепутать, какие роли у <span class="math notranslate nohighlight">\(x\)</span> и у <span class="math notranslate nohighlight">\(p\)</span>, помните, что <strong>огибающая - это функция от параметра</strong> а не от индекса опорной функции. Соответственно, <strong>огибание происходит в пространстве парамера, а не в пространстве переменных по которой вы оптимизировали</strong>.</p>
+<p>Параметрами у нас, как правило выступают цены <span class="math notranslate nohighlight">\(p, q\)</span> и бюджет <span class="math notranslate nohighlight">\(I\)</span>.</p>
 </div>
 <div class="section" id="id6">
 <h3>Примеры<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<p>Для демонстрации Теоремы об Огибающей, рассмотрим несколько абстрактных примеров.</p>
 <div class="proof example admonition" id="example-2">
 <p class="admonition-title"><span class="caption-number">Example 12 </span></p>
 <div class="example-content section" id="proof-content">
@@ -693,7 +695,10 @@ a = V(a,b,c) = \max_{x,y} a-a(x-b)^2 - (y-c)^2 \Rightarrow \\
 <h2>Примеры<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="id17">
 <h3>Полезность Кобб-Дуглас<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h3>
-<p>При работе с Кобб-Дугласом, приятнее всего начинать с задачи максимизации прибыли. Как мы помним, расходы на каждый из товаров делятся в пропорциях, которые не зависят ни от цен, ни от доходов. Пусть есть два товара <span class="math notranslate nohighlight">\(x,y\)</span>, <span class="math notranslate nohighlight">\(\alpha + \beta = 1\)</span> тогда</p>
+<p>При работе с Кобб-Дугласом</p>
+<div class="math notranslate nohighlight">
+\[ U(x,y) = \alpha \log x + \beta \log y\]</div>
+<p>приятнее всего начинать с задачи максимизации прибыли. Как мы помним, расходы на каждый из товаров делятся в пропорциях, которые не зависят ни от цен, ни от доходов. Пусть для простоты суммируются в единицу: <span class="math notranslate nohighlight">\(\alpha + \beta = 1\)</span>, тогда</p>
 <div class="math notranslate nohighlight">
 \[m_x = \alpha\frac{I}{p}, \quad m_y = \beta\frac{I}{q},\]</div>
 <p>лучше всего запомнить это наизусть. Также можно запомнить (с точностью до константы <span class="math notranslate nohighlight">\(C\)</span>) неявную полезностъ в логарифмической форме с весами суммирующимися в единицу:</p>
@@ -727,9 +732,36 @@ a = V(a,b,c) = \max_{x,y} a-a(x-b)^2 - (y-c)^2 \Rightarrow \\
 </details></div>
 <div class="section" id="id18">
 <h3>Леонтьевская полезность<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h3>
+<p>Когда мы имеем дело с Леонтьевской полезностью</p>
+<div class="math notranslate nohighlight">
+\[U(x, y) = \min(x/a, y/b) \]</div>
+<p>проще сначала вывести Хиксианский спрос, потому что мы знаем, что в оптимуме все аргументы минимума должны выдавать одно и то же значение, равное таргетированному уровню полезности <span class="math notranslate nohighlight">\(\bar U\)</span>. Таким образом:</p>
+<div class="math notranslate nohighlight">
+\[h_x = a \bar U, \quad h_y = b \bar U\]</div>
+<p>откуда легко выводится функция расходов</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}Е(p, q, \bar U) = (p a + q b)\bar U$\\а уже из нее, по дуальности, косвенную полезность\\$$V(p,q, I) = I/(p a + q b).\end{aligned}\end{align} \]</div>
+<p>Наконец, при помощи косвенной полезности, мы можем легко превратить Хиксианский спрос в Маршалианский.</p>
+<div class="math notranslate nohighlight">
+\[m_x = a I/(p a + q b), \quad m_y = b I/(p a + q b).\]</div>
 </div>
 <div class="section" id="id19">
 <h3>Линейная полезность<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h3>
+<p>Когда мы имеем дело с линейной полезностью</p>
+<div class="math notranslate nohighlight">
+\[U(x, y) = x/a + y/b\]</div>
+<p>легко видеть, что косвенная полезность это максимум из двух: значение самой полезности в верхнем левом углу, или правом нижнем углу бюджетного множества. То есть,</p>
+<div class="math notranslate nohighlight">
+\[V(p,q ,I) = I \cdot \max(\frac{1}{a p}, \frac{1}{b q}).\]</div>
+<p>Заметим, что можно вынести монотонное убывающее преобразование из под максимума, превратив его тем самым в минимум</p>
+<div class="math notranslate nohighlight">
+\[V(p,q ,I) = I /\min(a p, b q).\]</div>
+<p>далее, по дуальности,</p>
+<div class="math notranslate nohighlight">
+\[E(p, q, \bar U) = \bar U \cdot \min(ap, bq).\]</div>
+<p>Наконец, мы можем спуститься в Хиксианский спрос:</p>
+<div class="math notranslate nohighlight">
+\[ h_x = \bar U a \mathbb{I}(ap &lt; bq), \quad h_y = \bar U b \mathbb{I}(ap &gt; bq).\]</div>
 </div>
 </div>
 </div>
