@@ -45,7 +45,7 @@ $$V(p,q,I,\tau) = \log I - \alpha \log(p + \tau_x) - \beta \log (q + \tau_y), \q
 
 Максимизация чистых налоговых своров это задача безусловной оптимизации:
 
-$$T = \alpha I \frac{\tau_x}{p+\tau_x} + \beta I \frac{\tau_y}{q+\tau_y}$$
+$$T =  I \frac{ \alpha\tau_x}{p+\tau_x} + I \frac{\beta \tau_y}{q+\tau_y}$$
 
 У этой задачи несколько контринтуитивное решение: необходимо назначить бесконечно большой налог на оба товара, тогда удастся собрать, в пределе, точно $I$. Это, конечно, не очень реалистично, но модель есть модель.
 
@@ -53,13 +53,13 @@ $$T = \alpha I \frac{\tau_x}{p+\tau_x} + \beta I \frac{\tau_y}{q+\tau_y}$$
 
 $$\mathcal{L} = - \alpha \log(p + \tau_x) - \beta \log (q + \tau_y) + \lambda (\alpha I \frac{\tau_x}{p+\tau_x} + \beta I \frac{\tau_y}{q+\tau_y} - T)$$
 
-#### Налог на второй товар
+Условия первого порядка:
 
-Если налог товарный на второй товар, то косвенная полезность и налоговые сборы будут равны:
+$$ - \frac{\alpha}{p + \tau_x} + \lambda I \frac{\alpha}{(p + \tau_x)^2} = 0, \quad - \frac{\beta}{q + \tau_y} + \lambda I \frac{\beta}{(q + \tau_y)^2} = 0$$
 
-$$V(p,q,I,\tau) = \log I - \alpha \log(p) - \beta \log (q + \tau), \quad T = \beta I \frac{\tau}{q+\tau}$$
+Другими словами,
 
-Максимизация чистых налоговых сборов тут, аналогично, приводит к $\beta I$ в пределе.
+$$p + \tau_x = \lambda = q + \tau_y$$
 
 ### Правило Рамсея
 
