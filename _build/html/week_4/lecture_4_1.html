@@ -345,7 +345,7 @@
      </li>
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#id5">
-       Налог на первый товар
+       Товарный налог
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
@@ -354,6 +354,11 @@
       </a>
      </li>
     </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+     Правило Рамсея
+    </a>
    </li>
   </ul>
  </li>
@@ -389,7 +394,7 @@
 <p>Рассмотрим полезность Кобб Дуглас</p>
 <div class="math notranslate nohighlight">
 \[U(x,y) = \alpha \log x + \beta \log y, \quad \alpha + \beta = 1\]</div>
-<p>и введем налог размера <span class="math notranslate nohighlight">\(\tau\)</span>.</p>
+<p>и введем налог размера <span class="math notranslate nohighlight">\(\tau\)</span>. Наш анализ оптимального налогообложения будет сильно зависеть от того, с какой легкостью мы выписываем косвенную полезность.</p>
 <div class="section" id="id4">
 <h4>Подоходный налог<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
 <p>Если налог подоходный, то косвенная полезность и налоговые сборы будут равны:</p>
@@ -398,17 +403,28 @@
 <p>Максимизация чистых налоговых своров тут не представляет сложности - надо просто выставить <span class="math notranslate nohighlight">\(\tau = 1\)</span>, то есть отобрать все деньги. Максимизация косвенной полезности при фиксированных налоговых сборах тоже тривиальна: <span class="math notranslate nohighlight">\(\tau = T/I\)</span>.</p>
 </div>
 <div class="section" id="id5">
-<h4>Налог на первый товар<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
-<p>Если налог товарный на первый товар, то косвенная полезность и налоговые сборы будут равны:</p>
+<h4>Товарный налог<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
+<p>Пусть товарные налоги равны $<span class="math notranslate nohighlight">\(\tau_x, \tau_y\)</span>$ соответственно, тогда косвенная полезность и налоговые сборы будут равны:</p>
 <div class="math notranslate nohighlight">
-\[V(p,q,I,\tau) = \log I - \alpha \log(p + \tau) - \beta \log q, \quad T = \alpha I \frac{\tau}{p+\tau}\]</div>
+\[V(p,q,I,\tau) = \log I - \alpha \log(p + \tau_x) - \beta \log (q + \tau_y), \quad T = \alpha I \frac{\tau}{p+\tau_x} + \beta I \frac{\tau}{q+\tau_y}\]</div>
+<p>Максимизация чистых налоговых своров это задача безусловной оптимизации:</p>
+<div class="math notranslate nohighlight">
+\[T = \alpha I \frac{\tau_x}{p+\tau_x} + \beta I \frac{\tau_y}{q+\tau_y}\]</div>
+<p>У этой задачи несколько контринтуитивное решение: необходимо назначить бесконечно большой налог на оба товара, тогда удастся собрать, в пределе, точно <span class="math notranslate nohighlight">\(I\)</span>. Это, конечно, не очень реалистично, но модель есть модель.</p>
+<p>Максимизация косвенной полезности при фиксированных налоговых сборах это задача условной опримизации. Она уже более интересная:</p>
+<div class="math notranslate nohighlight">
+\[\mathcal{L} = - \alpha \log(p + \tau_x) - \beta \log (q + \tau_y) + \lambda (\alpha I \frac{\tau_x}{p+\tau_x} + \beta I \frac{\tau_y}{q+\tau_y} - T)\]</div>
 </div>
 <div class="section" id="id6">
 <h4>Налог на второй товар<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h4>
 <p>Если налог товарный на второй товар, то косвенная полезность и налоговые сборы будут равны:</p>
 <div class="math notranslate nohighlight">
 \[V(p,q,I,\tau) = \log I - \alpha \log(p) - \beta \log (q + \tau), \quad T = \beta I \frac{\tau}{q+\tau}\]</div>
+<p>Максимизация чистых налоговых сборов тут, аналогично, приводит к <span class="math notranslate nohighlight">\(\beta I\)</span> в пределе.</p>
 </div>
+</div>
+<div class="section" id="id7">
+<h3>Правило Рамсея<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
 </div>
 </div>
 </div>
