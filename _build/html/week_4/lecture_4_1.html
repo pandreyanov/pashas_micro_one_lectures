@@ -414,8 +414,8 @@
 \[ - \frac{\alpha}{p + \tau_x} + \lambda I \frac{\alpha}{(p + \tau_x)^2} = 0, \quad - \frac{\beta}{q + \tau_y} + \lambda I \frac{\beta}{(q + \tau_y)^2} = 0\]</div>
 <p>Другими словами,</p>
 <div class="math notranslate nohighlight">
-\[1 + \tau_x / p = \lambda I = 1 + \tau_y/q\]</div>
-<p>То есть, кажется, что оптимальные налоги должны быть выставлены пропорционально ценам, хм. Это классный вывод, только нам осталось проверить что задача выпуклая. Благо, Гессиан - диагональная матрица.</p>
+\[1 + \tau_x / p = \lambda I = 1 + \tau_y / q\]</div>
+<p>То есть, кажется, что <strong>оптимальные налоги должны быть выставлены пропорционально ценам</strong>. Это классный вывод, только нам осталось проверить что задача выпуклая. Благо, Гессиан - диагональная матрица.</p>
 <details class="sphinx-bs dropdown card mb-3">
 <summary class="summary-title card-header">
 Вычислим вторые производные.<div class="summary-down docutils">
@@ -430,10 +430,19 @@
 </div>
 <p class="card-text">Нам очень повезло, и Гессиан, действительно, отрицательно определен:</p>
 <div class="math notranslate nohighlight">
-\[ \frac{\partial^2 \mathcal{L}}{\partial^2 \tau_x} = \frac{-\alpha}{(p+\tau_x)^2}, \quad \frac{\partial^2 \mathcal{L}}{\partial^2 \tau_x} = \frac{-\beta}{(p+\tau_y)^2}\]</div>
+\[ \frac{\partial^2 \mathcal{L}}{\partial^2 \tau_x} = \frac{-\alpha}{(p+\tau_x)^2}, \quad \frac{\partial^2 \mathcal{L}}{\partial^2 \tau_y} = \frac{-\beta}{(p+\tau_y)^2}\]</div>
 <p class="card-text">Значит наше внутреннее решение - локальный оптимум.</p>
 </div>
-</details></div>
+</details><p>Подставляя оптималный налог в спросы можно вывести, что</p>
+<div class="math notranslate nohighlight">
+\[ p х^{\ast} = \alpha \frac{1}{\lambda}, \quad q y^{\ast} = \beta \frac{1}{\lambda}\]</div>
+<p>Складывается впечатление, что <strong>оптимальные налоги устроены так, что они не меняют доли расходов, потраченные на каждый товар</strong>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Оптимальные налоги - не искажают потребление.</p>
+</div>
+<p>По хорошему, надо еще проверить что потенциальные краевые решения не лучше чем наш внутренний локальный оптимум, но это упражнение я оставлю читателю.</p>
+</div>
 </div>
 <div class="section" id="id6">
 <h3>Правило Рамсея<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
