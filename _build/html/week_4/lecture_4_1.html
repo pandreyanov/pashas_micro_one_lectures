@@ -337,6 +337,23 @@
     <a class="reference internal nav-link" href="#id3">
      Налоги в Кобб-Дуглас
     </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id4">
+       Подоходный налог
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id5">
+       Налог на первый товар
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id6">
+       Налог на второй товар
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
@@ -366,21 +383,32 @@
 <p>Обычный <strong>пропорциональный налог</strong> означает, что каждый агент платит пропорционально своему доходу. К примеру, когда король Ричард Львиное Сердце попал в плен, английской короне пришлось платить выкуп, за счет временного пропорционального налогообложения размером 25%. Таким образом, удалось в короткие сроки собрать огромную по тем временам сумму, примерно составляющую трехгодовой объем английской казны.</p>
 <p>В современной экономике, основную роль играет товарный налог: VAT в США и НДС в России. Идея этого налога в том, что за каждую единицу проданного товара или оказанную услугу, предпрениматель платит процент от добавленной стоимости.</p>
 <p><strong>Товарный налог</strong> хорошо скейлится и адаптируется под быстро меняющуюся экономику. Например, если какой то город начинает экономически расти, растут требования к окружающей его инфраструктуре: дороги, дома для рабочих, школы и университеты и так далее. Но также растут продажи товаров и услуг и соответственно растут налоговые сборы, покрывающие инвестиции в инфраструктуру.</p>
-<p>Задача налогообложения может быть сформулирована как либо максимизация чистых налоговых сборов, либо максимизация полезности при фиксированных налоговых сборах. На выбор, как правило, есть либо подоходный либо товарный налог.</p>
+<p>Задача налогообложения может быть сформулирована как либо максимизация чистых налоговых сборов, либо максимизация косвенной полезности при фиксированных налоговых сборах. На выбор, как правило, есть либо подоходный либо товарный налог.</p>
 <div class="section" id="id3">
 <h3>Налоги в Кобб-Дуглас<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
 <p>Рассмотрим полезность Кобб Дуглас</p>
-<p><span class="math notranslate nohighlight">\(U(x,y) = \alpha \log x + \beta \log y, \quad \alpha + \beta = 1\)</span></p>
+<div class="math notranslate nohighlight">
+\[U(x,y) = \alpha \log x + \beta \log y, \quad \alpha + \beta = 1\]</div>
 <p>и введем налог размера <span class="math notranslate nohighlight">\(\tau\)</span>.</p>
+<div class="section" id="id4">
+<h4>Подоходный налог<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
+<p>Если налог подоходный, то косвенная полезность и налоговые сборы будут равны:</p>
+<div class="math notranslate nohighlight">
+\[ V(p,q,I,\tau) = \log I + \log (1-\tau) - \alpha \log(p) - \beta \log (q), \quad T = \tau I \]</div>
+<p>Максимизация чистых налоговых своров тут не представляет сложности - надо просто выставить <span class="math notranslate nohighlight">\(\tau = 1\)</span>, то есть отобрать все деньги. Максимизация косвенной полезности при фиксированных налоговых сборах тоже тривиальна: <span class="math notranslate nohighlight">\(\tau = T/I\)</span>.</p>
+</div>
+<div class="section" id="id5">
+<h4>Налог на первый товар<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
 <p>Если налог товарный на первый товар, то косвенная полезность и налоговые сборы будут равны:</p>
 <div class="math notranslate nohighlight">
 \[V(p,q,I,\tau) = \log I - \alpha \log(p + \tau) - \beta \log q, \quad T = \alpha I \frac{\tau}{p+\tau}\]</div>
+</div>
+<div class="section" id="id6">
+<h4>Налог на второй товар<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h4>
 <p>Если налог товарный на второй товар, то косвенная полезность и налоговые сборы будут равны:</p>
 <div class="math notranslate nohighlight">
 \[V(p,q,I,\tau) = \log I - \alpha \log(p) - \beta \log (q + \tau), \quad T = \beta I \frac{\tau}{q+\tau}\]</div>
-<p>Если налог подоходный, то косвенная полезность и налоговые сборы будут равны:</p>
-<div class="math notranslate nohighlight">
-\[V(p,q,I,\tau) = \log (I + \tau) - \alpha \log(p) - \beta \log (q), \quad T = \beta I \frac{\tau}{q+\tau}\]</div>
+</div>
 </div>
 </div>
 </div>
