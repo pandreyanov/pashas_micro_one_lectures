@@ -414,9 +414,21 @@
 \[ - \frac{\alpha}{p + \tau_x} + \lambda I \frac{\alpha}{(p + \tau_x)^2} = 0, \quad - \frac{\beta}{q + \tau_y} + \lambda I \frac{\beta}{(q + \tau_y)^2} = 0\]</div>
 <p>Другими словами,</p>
 <div class="math notranslate nohighlight">
-\[p + \tau_x = \lambda = q + \tau_y\]</div>
-<p>Это довольно интересно, то есть налоги должны быть выставлены так, чтобы <strong>эффективные цены товаров</strong> были одинаковые.</p>
+\[1 + \tau_x / p = \lambda I = 1 + \tau_y/q\]</div>
+<p>То есть, кажется, что оптимальные налоги должны быть выставлены пропорционально ценам, хм. Это классный вывод, только нам осталось проверить что задача выпуклая. Благо, Гессиан - диагональная матрица.</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Выпишем вторые производные.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sub</span> <span class="o">=</span> <span class="n">Solve</span><span class="p">[</span><span class="n">D</span><span class="p">[</span><span class="o">-</span><span class="n">a</span> <span class="n">Log</span><span class="p">[</span><span class="n">p</span> <span class="o">+</span> <span class="n">x</span><span class="p">]</span> <span class="o">+</span> <span class="n">l</span> <span class="n">a</span> <span class="n">x</span><span class="o">/</span><span class="p">(</span><span class="n">p</span> <span class="o">+</span> <span class="n">x</span><span class="p">),</span> <span class="p">{</span><span class="n">x</span><span class="p">,</span> <span class="mi">1</span><span class="p">}]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">,</span> <span class="n">l</span><span class="p">][[</span><span class="mi">1</span><span class="p">]]</span>
+<span class="n">D</span><span class="p">[</span><span class="o">-</span><span class="n">a</span> <span class="n">Log</span><span class="p">[</span><span class="n">p</span> <span class="o">+</span> <span class="n">x</span><span class="p">]</span> <span class="o">+</span> <span class="n">l</span> <span class="n">a</span> <span class="n">x</span><span class="o">/</span><span class="p">(</span><span class="n">p</span> <span class="o">+</span> <span class="n">x</span><span class="p">),</span> <span class="p">{</span><span class="n">x</span><span class="p">,</span> <span class="mi">2</span><span class="p">}]</span> <span class="o">/.</span> <span class="n">sub</span> <span class="o">//</span> <span class="n">Simplify</span>
+</pre></div>
 </div>
+</div>
+</details></div>
 </div>
 <div class="section" id="id6">
 <h3>Правило Рамсея<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
