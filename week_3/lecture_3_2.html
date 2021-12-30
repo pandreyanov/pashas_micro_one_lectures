@@ -113,6 +113,11 @@
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="../week_0/hours.html">
+   Часы
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="../week_0/module%203.html">
    Структура третьего модуля
   </a>
@@ -624,7 +629,9 @@ a = V(a,b,c) = \max_{x,y} a-a(x-b)^2 - (y-c)^2 \Rightarrow \\
 <div class="theorem-content section" id="proof-content">
 <p>Если полезность локально ненасыщаема в <span class="math notranslate nohighlight">\(\mathbb{R}^n_{+}\)</span>, то любое из решений задачи максимизации полезности всегда лежит на бюджетном ограничении.</p>
 </div>
-</div><p>Осталось убедиться, что для любого <span class="math notranslate nohighlight">\(I\)</span> найдется <span class="math notranslate nohighlight">\(\bar U\)</span> и наоборот.</p>
+</div><p>Это утверждение доказывается от противного, но я предпочитаю интерпретировать его так: у локально ненасыщаемой в <span class="math notranslate nohighlight">\(\mathbb{R}^n_{+}\)</span> полезности, в любой точке есть направление роста, указывающее внутрь <span class="math notranslate nohighlight">\(\mathbb{R}^n_{+}\)</span>. Поэтому, если бюджетное ограничение убрать, можно бесконечно подниматься по этому направлению и никогда не достигнуть оптимума. Единственное, что может остановить градиентный подъем - бюджетная линия, см. иллюстрацию.</p>
+<a class="reference internal image-reference" href="../_images/gr_desc.png"><img alt="Градиентный подьем" class="align-center" src="../_images/gr_desc.png" style="width: 400px;" /></a>
+<p>Осталось убедиться, что для любого <span class="math notranslate nohighlight">\(I\)</span> найдется <span class="math notranslate nohighlight">\(\bar U\)</span> и наоборот.</p>
 </div>
 <div class="section" id="id12">
 <h3>Хиксианский и Маршалианский спрос<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
@@ -654,7 +661,7 @@ a = V(a,b,c) = \max_{x,y} a-a(x-b)^2 - (y-c)^2 \Rightarrow \\
 <div class="proof theorem remark admonition" id="theorem-7">
 <p class="admonition-title"><span class="caption-number">Theorem 9 </span> (Дуальность)</p>
 <div class="theorem-content section" id="proof-content">
-<p>Если полезность (квази-)вогнутая и локально ненасыщаемая, то любое решение задачи минимизации расходов воспроизводится как одно из решений максимизации полезности и наоборот.</p>
+<p>Если полезность (квази-)вогнутая и локально ненасыщаемая, то любое решение (как функция от цен) задачи минимизации расходов воспроизводится как одно из решений (опять же, как функция от цен) максимизации полезности и наоборот.</p>
 </div>
 </div><p>Это значит, что задача максимизации полезности и задача минимизации расходов, по большому счету эквивалентны. И их решения, в определенном геометрическом смысле совпадают. Есть только одна проблема - у Маршалианского и Хиксианского спросов разный набор аргументов, поэтому они не могут совпадать номинально. Для того, чтобы поправить ситуацию, нам понадобится еще одна новая функция.</p>
 <div class="proof definition admonition" id="definition-8">
