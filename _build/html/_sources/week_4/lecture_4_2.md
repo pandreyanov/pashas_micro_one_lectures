@@ -188,5 +188,4 @@ SE = h' - h \approx \delta p \cdot \nabla h = \delta p \cdot S
 \end{gather*}
 $$
 
-p^T}{2}$$
-
+Этим приближением можно пользоваться, или не пользоваться, по вкусу.
