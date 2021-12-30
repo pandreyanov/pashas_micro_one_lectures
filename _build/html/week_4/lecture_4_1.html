@@ -366,6 +366,18 @@
   <a class="reference internal nav-link" href="#id7">
    Компенсирующие и эквивалентные вариации
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id8">
+     Компенсирующая вариация
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id9">
+     Эквивалентная вариация
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -497,6 +509,30 @@ V = \min_{\lambda} \max_{x,y} \mathcal{L}, \quad \mathcal{L} = U(x, y) - \lambda
 </div>
 <div class="section" id="id7">
 <h2>Компенсирующие и эквивалентные вариации<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<p>Мы освоили технику оптимального налогообложения. Это очень удобно, но иногда все равно приходится идти на попятную и точечно корректировать доход отдельным людям, возможно, из социально незащищенных слоев населения.</p>
+<p>Поставим задачу вычисления денежной компенсации, которая сбалансирует повышение цен связанное с налогообложением или еще чем то. Сделать это можно двумя способами: при помощи компенсирующей и эквивалентной вариации.</p>
+<div class="section" id="id8">
+<h3>Компенсирующая вариация<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<p>Предположим, что полезность агентов была изначально на уровне <span class="math notranslate nohighlight">\(\bar U_0\)</span> и произошло смещение цен <span class="math notranslate nohighlight">\(p \to p'\)</span>. Полезность агентов, конечно же упала. Определим компенсирующую вариацию как изменение дохода, которое вернет их на изначалььный уровень <span class="math notranslate nohighlight">\(\bar U_0\)</span>.</p>
+<div class="proof definition admonition" id="definition-2">
+<p class="admonition-title"><span class="caption-number">Definition 36 </span></p>
+<div class="definition-content section" id="proof-content">
+<p>Компенсирующая вариация определяется как изменение в расходах, ассоциированных с первоначальным уровнем полезности</p>
+<div class="math notranslate nohighlight">
+\[CV = E(p',\bar U_0) - E(p,\bar U_0), \quad \bar U_0 = U(x^{\ast}(p), y^{\ast}(p))\]</div>
+</div>
+</div></div>
+<div class="section" id="id9">
+<h3>Эквивалентная вариация<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<p>Предположим, опять, смещение цен <span class="math notranslate nohighlight">\(p \to p'\)</span> и что полезность агентов упала до уровня <span class="math notranslate nohighlight">\(\bar U_1\)</span>. Определим эквивалентную вариацию как изменение дохода, которое было бы эквивалентно этому смещению цен.</p>
+<div class="proof definition admonition" id="definition-3">
+<p class="admonition-title"><span class="caption-number">Definition 37 </span></p>
+<div class="definition-content section" id="proof-content">
+<p><strong>Эквивалентная вариация</strong> определяется как изменение в расходах, ассоциированных с новым уровнем полезности</p>
+<div class="math notranslate nohighlight">
+\[CV = E(p',\bar U_1) - E(p,\bar U_1), \quad \bar U_1 = U(x^{\ast}(p'), y^{\ast}(p'))\]</div>
+</div>
+</div></div>
 </div>
 </div>
 
