@@ -216,6 +216,33 @@
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
+  Четвертая неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_4/intro_4.html">
+   Содержание
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_4/lecture_4_1.html">
+   Четвертая лекция, часть 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_4/lecture_4_2.html">
+   Четвертая лекция, часть 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_4/practice_4.html">
+   Задачи для тренировки
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
   Мат. шпаргалка
  </span>
 </p>
@@ -331,32 +358,37 @@
      Интерпретация множителя Лагранжа
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id8">
+     Значение Лагранжиана в оптимуме
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id8">
+  <a class="reference internal nav-link" href="#id9">
    Функции спроса
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id9">
+    <a class="reference internal nav-link" href="#id10">
      Нормальные и инфериорные товары
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id10">
+    <a class="reference internal nav-link" href="#id11">
      Субституты и комплементы
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id11">
+  <a class="reference internal nav-link" href="#id12">
    Косвенная полезность
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id12">
+  <a class="reference internal nav-link" href="#id13">
    Непрерывнисть спроса
   </a>
  </li>
@@ -475,9 +507,16 @@
 \[ \mathcal{L} (x, y| \lambda, \gamma) = U(x,y) - \lambda B(x,y) - \gamma (x - \bar x),\]</div>
 <p>и множитель Лагранжа <span class="math notranslate nohighlight">\(\gamma\)</span> интерпретируется как <strong>теневая цена</strong> дополнительной единицы  товара <span class="math notranslate nohighlight">\(x\)</span> сверх квоты. То есть, мы как будто покупаем его на черном рынке по цене <span class="math notranslate nohighlight">\(\gamma\)</span>.</p>
 </div>
-</div>
 <div class="section" id="id8">
-<h2>Функции спроса<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<h3>Значение Лагранжиана в оптимуме<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<p>Важно также помнить один факт. Если вы решили задачу максимизации полезности и получили, скажем, <span class="math notranslate nohighlight">\(V(p,q,I)\)</span> как значение целевой функции, то оно обязательно совпадает с самим Лагранжианом в седловой точке <span class="math notranslate nohighlight">\(x^{\ast}, y^{\ast}, \lambda^{\ast}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[V(p,q,I) = \mathcal{L} (x^{\ast}, y^{\ast}| \lambda^{\ast}) = U(x^{\ast}, y^{\ast}) - \lambda^{\ast} B(x^{\ast}, y^{\ast}).\]</div>
+<p>Это знание сильно пригодится нам в будущем.</p>
+</div>
+</div>
+<div class="section" id="id9">
+<h2>Функции спроса<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
 <div class="proof definition admonition" id="definition-2">
 <p class="admonition-title"><span class="caption-number">Definition 15 </span></p>
 <div class="definition-content section" id="proof-content">
@@ -494,8 +533,8 @@
 <li><p>кривые “доход-потребление” <span class="math notranslate nohighlight">\(x^{\ast}(I, \ldots)\)</span>, <span class="math notranslate nohighlight">\(y^{\ast}(I, \ldots)\)</span>, также называемые <strong>кривые Энгеля</strong> в честь немецкого статистика Эрнста Энгеля (Engel).</p></li>
 </ul>
 </div>
-</div><div class="section" id="id9">
-<h3>Нормальные и инфериорные товары<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+</div><div class="section" id="id10">
+<h3>Нормальные и инфериорные товары<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
 <p>В этот раз обойдемся без великих людей.</p>
 <div class="proof definition admonition" id="definition-4">
 <p class="admonition-title"><span class="caption-number">Definition 17 </span></p>
@@ -528,8 +567,8 @@
 <p><em>Вопрос 6: Придумайте жизненный пример товара, у которого кривая Энгеля выходит на плато.</em></p>
 <p><em>Вопрос 7: Придумайте аргументы за и против того, что общественный транспорт является инфериорным благом.</em></p>
 </div>
-<div class="section" id="id10">
-<h3>Субституты и комплементы<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id11">
+<h3>Субституты и комплементы<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
 <p>Мы продолжаем исследовать свойства кривых спроса. Одним из самых важных понятий в теории потребителя является <strong>замещаемость</strong> (substitutability). Считается, что многие товары в той или иной степени замещаемы, некоторые больше некоторые меньше. Некоторые пары товаров особенно выделяются в этом плане, например: пепси и кола, лыжи и сноуборд… Если цена одного такого товара в паре сильно вырастет, то спрос на второй товар скорее всего вырастет. Такие товары называются субститутами.</p>
 <div class="proof definition admonition" id="definition-7">
 <p class="admonition-title"><span class="caption-number">Definition 19 </span></p>
@@ -545,8 +584,8 @@
 </div><p>К сожалению, это свойство не является симметричным, то есть, <span class="math notranslate nohighlight">\(x\)</span> может быть субститутом к <span class="math notranslate nohighlight">\(y\)</span>, но y при этом может оказаться комплементом к <span class="math notranslate nohighlight">\(x\)</span>, хоть и в очень редких случаях. Это сигнализирует нам о том, что определение выбрано не совсем удачно, но какое то время нам придется с этим противоречием смириться.</p>
 </div>
 </div>
-<div class="section" id="id11">
-<h2>Косвенная полезность<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id12">
+<h2>Косвенная полезность<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
 <p>В каждой задаче оптимизации есть два объекта, идущие рука об руку: координаты оптимума и значение целевой функции (полезности). Мы довольно много внимания уделили координатам оптимума, то есть кривым спроса. А как насчет второго?</p>
 <div class="proof definition admonition" id="definition-9">
 <p class="admonition-title"><span class="caption-number">Definition 21 </span></p>
@@ -563,8 +602,8 @@
 </div>
 <p>Если вы применили преобразование, например, <span class="math notranslate nohighlight">\(\log x\)</span> чтобы быстрее решить задачу, и получили косвенную полезность, то вам придется ее “откатить”, то есть применить к ней обратное преобразование <span class="math notranslate nohighlight">\(e^x\)</span>, чтобы ответ был формально верным.</p>
 </div>
-<div class="section" id="id12">
-<h2>Непрерывнисть спроса<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id13">
+<h2>Непрерывнисть спроса<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h2>
 <p>В большей часть примеров, которые мы будем рассматривать, спросы будут выражаться через элементарные функции, такие как <span class="math notranslate nohighlight">\(x^2, \log x, 1/x\)</span>… Все эти функции непрерывны. Совпадение?</p>
 <p>Ответить на этот вопрос нам поможет следующая теорема.</p>
 <div class="proof theorem remark admonition" id="theorem-10">
