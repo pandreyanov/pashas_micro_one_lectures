@@ -350,6 +350,11 @@
    </li>
   </ul>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id5">
+   Парадокс Геффена
+  </a>
+ </li>
 </ul>
 
             </nav>
@@ -439,7 +444,21 @@ h_y
 <div class="math notranslate nohighlight">
 \[ h(p') - h(p) = \int_p^{p'} \frac{\partial}{\partial p} h(x) dx \approx (p'-p) \nabla h\]</div>
 <p>Матрица Слуцкого указывает нам на приращение Хиксианского спроса. То есть, если эластичности оценены хорошо, то можно сказать, что приращение хиксианского спроса это приблизительно произведение матрицы Слуцкого на приращение цен.</p>
+<p>Больше того, приращение функций расходов это площадь под <span class="math notranslate nohighlight">\(\nabla E\)</span>, то есть, примерно площадь трапеции (на боку) с основанием <span class="math notranslate nohighlight">\((p'-p)\)</span> и сторонами <span class="math notranslate nohighlight">\(h(p)\)</span> и <span class="math notranslate nohighlight">\(h(p')\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[ E(p') - E(p) = \int_p^{p'} h(x) dx \approx (p'-p) (h(p') - h(p)) /2\]</div>
+<p>То есть, <span class="math notranslate nohighlight">\(CV\)</span> и <span class="math notranslate nohighlight">\(EV\)</span>, в малых приращениях, это действие квадратичной формы матрицы слуцкого на вектор приращения цен, разделенная пополам. Это уже совершенно космическая теорема, нужно уметь уверенно интегрировать, поэтому только формулировка.</p>
+<div class="proof theorem admonition" id="theorem-2">
+<p class="admonition-title"><span class="caption-number">Theorem 11 </span></p>
+<div class="theorem-content section" id="proof-content">
+<p>При малых изменениях цен, верно следующее</p>
+<div class="math notranslate nohighlight">
+\[CV \approx EV \approx (p'-p)S(p'-p)^T/2\]</div>
 </div>
+</div></div>
+</div>
+<div class="section" id="id5">
+<h2>Парадокс Геффена<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 
