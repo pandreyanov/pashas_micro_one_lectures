@@ -353,9 +353,9 @@
 <h1>Четвертая лекция, часть 2<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="id2">
 <h2>Эффекты дохода и замещения<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p>Чтобы лучше почувствовать разницу между Маршалианским и Хиксианским спросами, сфокусируемся на связывающем их уравнении</p>
+<p>Чтобы лучше почувствовать разницу между Маршалианским и Хиксианским спросами, сфокусируемся на связывающем их уравнении:</p>
 <div class="math notranslate nohighlight">
-\[ \vec h(p, q, V(p,q, I)) = \vec m (p,q,I).\]</div>
+\[ \vec h(\vec p,  V(\vec p, I)) = \vec m (\vec p, I).\]</div>
 <details class="sphinx-bs dropdown card mb-3">
 <summary class="summary-title card-header">
 Помните ли вы условия для Дуальности?<div class="summary-down docutils">
@@ -365,7 +365,10 @@
 </summary><div class="summary-content card-body docutils">
 <p class="card-text">Строго выпуклая задача + локальная ненасыщаемость.</p>
 </div>
-</details></div>
+</details><p>Вас, скорее всего, не учили матричному дифференциированию, но в данном случае оно работает примерно также как и обычное:</p>
+<div class="math notranslate nohighlight">
+\[ \nabla \vec m(\vec p,  I) = \nabla \vec h(\vec p,  \bar U) + \frac{\partial m}{\partial I} \cdot \nabla E = \nabla \vec h(\vec p,  \bar U) + \frac{\partial m}{\partial I} \cdot \vec h \]</div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
