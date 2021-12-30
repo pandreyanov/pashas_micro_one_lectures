@@ -21,7 +21,7 @@ $$ \nabla \vec m(\vec p,  I) = \nabla \vec h(\vec p,  \bar U) + \frac{\partial m
 Должно получиться примерно следующее:
 
 $$ 
-(\nabla m_x, \nabla m_y) = (\nabla h_x, \nabla h_y) + (\frac{\partial}{\partial I} m_x, \frac{\partial}{\partial I} m_y)\cdot(h_x, h_y)^T
+(\nabla m_x, \nabla m_y) = (\nabla h_x, \nabla h_y) + (h_x, h_y)^T \cdot (\frac{\partial}{\partial I} m_x, \frac{\partial}{\partial I} m_y)
 $$
 
-Чтобы не запутаться, достаточно запомнить что координаты спросов идут по горизонтали, градиент по вертикали, а последний вектор $h$ это, на самом деле, тоже градиент.
+Чтобы не запутаться, достаточно запомнить что координаты спросов идут по горизонтали, градиент по вертикали, а вектор $h$ в правой части это, на самом деле, тоже градиент.
