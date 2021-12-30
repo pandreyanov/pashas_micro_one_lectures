@@ -337,6 +337,13 @@
   <a class="reference internal nav-link" href="#id2">
    Матрица Слуцкого
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     Кобб Дуглас
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -369,12 +376,38 @@
 <div class="math notranslate nohighlight">
 \[ \nabla \vec h(\vec p,  \bar U) = \nabla \vec m(\vec p,  \bar U) + \frac{\partial m}{\partial I} \cdot \nabla E(\vec p, \bar U) = \nabla \vec m(\vec p,  \bar U) + \frac{\partial m}{\partial I} \cdot \vec h \]</div>
 <p>Проблема в том, что и <span class="math notranslate nohighlight">\(\frac{\partial m}{\partial I}\)</span> и <span class="math notranslate nohighlight">\(\vec h\)</span> это вектора длины <span class="math notranslate nohighlight">\(n\)</span>, и, поэтому, мы должны подумать, в каком порядке мы их хотим перемножить. Есть два варианта: либо мы умножаем строку <span class="math notranslate nohighlight">\(\frac{\partial m}{\partial I}\)</span> на столбец <span class="math notranslate nohighlight">\(\vec h\)</span>, либо мы умножаем столбец <span class="math notranslate nohighlight">\(\frac{\partial m}{\partial I}\)</span> на строку <span class="math notranslate nohighlight">\(\vec h\)</span>. Один из этих вариантов даст число, а другой матрицу. Тот вариант, который сохранит размерность объекта и будет правильным матричным дифференциированием.</p>
-<p>Однако, это еще не все. В зависимости от того, что идет по строкам: координаты цен или координаты товаров, формула будет выглядеть по разному. Например, если по горизонтали идут товары:</p>
+<p>Однако, это еще не все. В зависимости от того, что идет по строкам: координаты цен или координаты товаров, формула будет выглядеть по разному. Например, если по горизонтали идут товары, то правильная форма:</p>
 <div class="math notranslate nohighlight">
-\[ 
-(\nabla h_x, \nabla h_y) = (\nabla m_x, \nabla m_y) + h^T \cdot  (\frac{\partial m_x}{\partial I}, \frac{\partial m_y}{\partial I})
-\]</div>
-<p>Чтобы не запутаться, достаточно запомнить вектор <span class="math notranslate nohighlight">\(h\)</span> в правой части уравнения это, на самом деле <span class="math notranslate nohighlight">\(\nabla E\)</span>, то есть, он относится к ценам, которые идут по вертикали.</p>
+\[\begin{split} 
+(\nabla h_x, \nabla h_y) = (\nabla m_x, \nabla m_y) + \begin{pmatrix} 
+h_x \\
+h_y
+\end{pmatrix} \cdot  (\frac{\partial m_x}{\partial I}, \frac{\partial m_y}{\partial I})
+\end{split}\]</div>
+<p>Чтобы не запутаться, достаточно запомнить, что вектор <span class="math notranslate nohighlight">\(h\)</span> в правой части уравнения это, на самом деле <span class="math notranslate nohighlight">\(\nabla E\)</span>, то есть, он относится к ценам, которые идут по вертикали.</p>
+<div class="section" id="id3">
+<h3>Кобб Дуглас<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>Есть много способов вывести матрицу Слуцкого для Кобб Дугласа, но, пожалуй, самый естественный - это сосчитать руками Гессиан функции расходов. Напомним, что</p>
+<div class="math notranslate nohighlight">
+\[ \log E = U + C + \alpha \log p + \beta \log q.\]</div>
+<p>Тогда</p>
+<div class="math notranslate nohighlight">
+\[ \frac{\partial}{\partial p} E = \frac{\alpha}{p} E, \quad \frac{\partial}{\partial q} E = \frac{\beta}{q} E \]</div>
+<p>Дифференциируя второй раз, получаем повторную производную:</p>
+<div class="math notranslate nohighlight">
+\[ \frac{\partial^2}{\partial^2 p} E = \frac{-\alpha}{p^2} E + \frac{\alpha^2}{p^2} E, \quad \frac{\partial^2}{\partial^2 q} E = \frac{-\beta}{q^2} E + \frac{\beta^2}{q^2} E\]</div>
+<p>И, конечно, смешанную производную:</p>
+<div class="math notranslate nohighlight">
+\[ \frac{\partial^2}{\partial p \partial q} E = \frac{\alpha \beta}{p q} E.\]</div>
+<p>Наконец, можно вывести матрицу Слуцкого:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} S = E \cdot 
+\begin{pmatrix} 
+\frac{-\alpha + \alpha^2}{p^2} &amp; \frac{\alpha \beta}{p q} \\
+\frac{\alpha \beta}{q^2} &amp; \frac{-\beta +\beta^2}{q^2}
+\end{pmatrix}
+\end{split}\]</div>
+</div>
 </div>
 </div>
 
