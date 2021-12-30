@@ -1,6 +1,6 @@
 # Четвертая лекция, часть 2
 
-### Эффекты дохода и замещения
+## Матрица Слуцкого
 
 Чтобы лучше почувствовать разницу между Маршалианским и Хиксианским спросами, сфокусируемся на связывающем их уравнении:
 
@@ -21,9 +21,6 @@ $$ \nabla \vec m(\vec p,  I) = \nabla \vec h(\vec p,  \bar U) + \frac{\partial m
 Должно получиться примерно следующее:
 
 $$ 
-\begin{pmatrix}
-d m_x/ dp & d m_x /dq \\
-d m_y/ dp & d m_y /dq
-\end{pmatrix}
-
+(\nabla m_x, \nabla m_y) = (\nabla h_x, \nabla h_y) + (\frac{\partial}{\partial I} m_x, \frac{\partial}{\partial I} m_y)\cdot(h_x, h_y)^T
 $$
+
