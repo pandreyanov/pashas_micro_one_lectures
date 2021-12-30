@@ -80,7 +80,7 @@ $$ \frac{\partial h_x}{\partial p} = \frac{m_x}{p} (\varepsilon_{x,p} + \varepsi
 
 $$ \frac{\partial h_x}{\partial q} = \frac{m_x}{q} (\varepsilon_{x,q} + \varepsilon_{x,I} \cdot s_y)$$
 
-Что можно дальше с этой матрицей сделать? Это довольно сложно, но, в двух словах - проинтегрировать:
+Что можно дальше с этой матрицей сделать? В двух словах - проинтегрировать:
 
 $$ h(p') - h(p) = \int_p^{p'} \frac{\partial}{\partial p} h(x) dx \approx (p'-p) \nabla h$$
 
