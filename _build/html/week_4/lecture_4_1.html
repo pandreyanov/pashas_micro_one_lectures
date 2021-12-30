@@ -441,7 +441,7 @@
 <div class="math notranslate nohighlight">
 \[ p x^{\ast} = \alpha \frac{1}{\lambda}, \quad q y^{\ast} = \beta \frac{1}{\lambda}\]</div>
 <p>Это очень похоже на то, что было бы без налогов. Складывается впечатление, что <strong>оптимальные налоги устроены так, что они не меняют доли расходов, потраченные на каждый товар</strong>. Таким налогом, к примеру, является НДС (VAT в США). Более того, если присмотреться, то этот налог эквивалентен подоходному налогу, ведь он тоже не меняет доли. Другими словами, когда товарные налоги пропорциональны ценам, то бюджетное множество сдвигается параллельно, в точности как у подоходного налога.</p>
-<p>Мы только что доказали, хоть и в малой общности, одну из самых глубоких экономических мыслей:</p>
+<p>Мы только что доказали, хоть и в малой общности, одну из самых глубоких экономических мыслей в теории налогообложения:</p>
 <div class="proof property admonition" id="property-0">
 <p class="admonition-title"><span class="caption-number">Property 23 </span> (Оптимальность НДС)</p>
 <div class="property-content section" id="proof-content">
@@ -471,12 +471,16 @@ V = \min_{\lambda} \max_{x,y} U(x, y) - \lambda (p x + q y - I) \\
 \frac{\partial V}{\partial p} = - \lambda x, \quad \frac{\partial V}{\partial q} = - \lambda y
 \end{gather*}
 \end{split}\]</div>
+<p>Получается, что в оптимуме</p>
+<div class="math notranslate nohighlight">
+\[ \frac{\tau_x}{x} \frac{\partial x}{\partial p} = - \lambda / \mu = \frac{\tau_y}{y} \frac{\partial y}{\partial q}\]</div>
+<p>Мы только что доказали, совершенно строго, один из самых нетривиальных фактов в теории оптимального налогообложения:</p>
 <div class="proof property admonition" id="property-1">
 <p class="admonition-title"><span class="caption-number">Property 24 </span> (Правило Рамсея)</p>
 <div class="property-content section" id="proof-content">
-<p>Пусть эластичности потребления товаров по собственной цене равны <span class="math notranslate nohighlight">\(\varepsilon_{x,p}\)</span> и <span class="math notranslate nohighlight">\(\varepsilon_{y, q}\)</span> соответственно.</p>
+<p>Пусть эластичности потребления товаров по собственной цене равны <span class="math notranslate nohighlight">\(\varepsilon_{x,p}\)</span> и <span class="math notranslate nohighlight">\(\varepsilon_{y, q}\)</span> соответственно, тогда оптимальные налоговые ставки пропорциональны обратным эластичностям обычниго (Маршалианского) спроса.</p>
 <div class="math notranslate nohighlight">
-\[ ххх\]</div>
+\[ \frac{\tau_x/p}{\tau_y/q} = \frac{1/\varepsilon_{p,x}}{1/\varepsilon_{q,y}}\]</div>
 </div>
 </div><p>Это правило обобщает результат, который мы вывели в Кобб-Дугласе.</p>
 </div>
