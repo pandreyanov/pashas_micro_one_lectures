@@ -21,10 +21,12 @@ $$ \nabla \vec h(\vec p,  \bar U) = \nabla \vec m(\vec p,  \bar U) + \frac{\part
 Однако, это еще не все. В зависимости от того, что идет по строкам: координаты цен или координаты товаров, формула будет выглядеть по разному. Например, если по горизонтали идут товары, то правильная форма:
 
 $$ 
-(\nabla h_x, \nabla h_y) = (\nabla m_x, \nabla m_y) + \begin{pmatrix} 
+(\nabla h_x, \nabla h_y) = (\nabla m_x, \nabla m_y) + 
+\begin{pmatrix} 
 h_x \\
 h_y
-\end{pmatrix} \cdot  (\frac{\partial m_x}{\partial I}, \frac{\partial m_y}{\partial I})
+\end{pmatrix} 
+\cdot (\frac{\partial m_x}{\partial I}, \frac{\partial m_y}{\partial I})
 $$
 
 Чтобы не запутаться, достаточно запомнить, что вектор $h$ в правой части уравнения это, на самом деле $\nabla E$, то есть, он относится к ценам, которые идут по вертикали.
