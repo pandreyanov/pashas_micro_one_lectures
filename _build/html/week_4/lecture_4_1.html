@@ -399,6 +399,18 @@
   <a class="reference internal nav-link" href="#id10">
    Чистые субституты и комплементы
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id11">
+     Кобб Дуглас
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id12">
+     Леонтьев
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -603,14 +615,17 @@ V = \min_{\lambda} \max_{x,y} \mathcal{L}, \quad \mathcal{L} = U(x, y) - \lambda
 <div class="proof definition admonition" id="definition-4">
 <p class="admonition-title"><span class="caption-number">Definition 38 </span></p>
 <div class="definition-content section" id="proof-content">
-<p><strong>Чистыми субститутами</strong> называются пары товаров, такие что $<span class="math notranslate nohighlight">\(\frac{\partial h_x}{\partial q} \geqslant 0, \quad \frac{\partial h_y}{\partial p} \geqslant 0\)</span>$.</p>
+<p><strong>Чистыми субститутами</strong> называются пары товаров, такие что</p>
+<p>$<span class="math notranslate nohighlight">\(\frac{\partial h_x}{\partial q} &gt; 0, \quad \frac{\partial h_y}{\partial p} &gt; 0\)</span>$.</p>
 </div>
 </div><div class="proof definition admonition" id="definition-5">
 <p class="admonition-title"><span class="caption-number">Definition 39 </span></p>
 <div class="definition-content section" id="proof-content">
-<p><strong>Чистыми комплементами</strong> называются пары товаров, такие что $<span class="math notranslate nohighlight">\(\frac{\partial h_x}{\partial q} \leqslant 0, \quad \frac{\partial h_y}{\partial p} \leqslant 0\)</span>$.</p>
+<p><strong>Чистыми комплементами</strong> называются пары товаров, такие что</p>
+<p>$<span class="math notranslate nohighlight">\(\frac{\partial h_x}{\partial q} \leqslant 0, \quad \frac{\partial h_y}{\partial p} \leqslant 0\)</span>$.</p>
 </div>
-</div><p>На первый взгляд, не совсем понятно, чем помогает замена Маршалианского спроса на Хиксианский в определении. Однако, поскольку Хиксианский спрос это градиент функции расходов, то градиент Хиксианского спроса это Гессиан функции расходов. А матрица Гессиана - симметричная.</p>
+</div><p>На первый взгляд, не совсем понятно, чем помогает замена Маршалианского спроса на Хиксианский в определении. Однако, поскольку Хиксианский спрос это градиент функции расходов, то градиент Хиксианского спроса это Гессиан функции расходов.</p>
+<p>А Гессиан, он же матрица Гессa - симметричная матрица.</p>
 <div class="proof property admonition" id="property-6">
 <p class="admonition-title"><span class="caption-number">Property 25 </span></p>
 <div class="property-content section" id="proof-content">
@@ -619,6 +634,27 @@ V = \min_{\lambda} \max_{x,y} \mathcal{L}, \quad \mathcal{L} = U(x, y) - \lambda
 \[ \nabla \vec h = \nabla^2 E \quad \Rightarrow \quad \nabla \vec h = (\nabla \vec h)^T.\]</div>
 </div>
 </div><p>Другими словами, перекрестные производные Хиксианского спроса по ценам - симметричны и нет больше никакого противоречие. Чистая субститутабильность/комплементарность это свойство пары товаров, неважно как эта пара упорядочена.</p>
+<div class="section" id="id11">
+<h3>Кобб Дуглас<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<p>Напомним, что на предыдущей лекции мы вывввели хиксианские спросы:</p>
+<div class="math notranslate nohighlight">
+\[h_x = \frac{\alpha}{p} E, \quad h_y = \frac{\beta}{q} E, \quad Е = e^{\bar U +C} p^{\alpha} q^{\beta}\]</div>
+<p>Тогда перекрестные производные элементарно выводятся</p>
+<div class="math notranslate nohighlight">
+\[\frac{\partial h_x}{\partial q} = \frac{\alpha}{p} h_y = \frac{\alpha \beta}{p q} E = \frac{\beta}{q} h_x =\frac{\partial h_y}{\partial p}\]</div>
+<div class="proof property admonition" id="property-7">
+<p class="admonition-title"><span class="caption-number">Property 26 </span></p>
+<div class="property-content section" id="proof-content">
+<p>Все товары в Кобб-Дугласе являются чистыми комплементами.</p>
+</div>
+</div></div>
+<div class="section" id="id12">
+<h3>Леонтьев<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+<p>Напомним, что на предыдущей лекции мы вывели хиксианские спросы:</p>
+<div class="math notranslate nohighlight">
+\[h_x = a \bar U, \quad h_y = b \bar U\]</div>
+<p>…</p>
+</div>
 </div>
 </div>
 
