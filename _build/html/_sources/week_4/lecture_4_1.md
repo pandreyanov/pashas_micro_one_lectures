@@ -115,16 +115,23 @@ $$ p x^{\ast} = \alpha \frac{1}{\lambda}, \quad q y^{\ast} = \beta \frac{1}{\lam
 
 Что-то наподобие закона обратной эластичности было выведено для задачи оптимального налогообложения экономистом Фрэнком Рамсеем в начале 20 века. Своей целью он ставил минимизировать ненужные потери общества при потреблении, путём введения дифферинцированной ставки налогообложения на различные товары. То есть, в точности максимизация косвенной полезности при зафиксированных налоговых сборах:
 
-$$\max_{\tau_x, \tau_y} V(p,q,I) - \mu (\tau_x x(p) + \tau_y y(p) - T) $$
+$$\min \max_{\tau_x, \tau_y} \mathcal{L}
+
+\mathcal{L} = V(p,q,I) - \mu (\tau_x x(p) + \tau_y y(p) - T)$$
 
 
 Выпишем условия первого порядка:
 
 $$\frac{\partial V}{\partial p} = \mu \tau_x \frac{\partial x}{\partial p}, \quad \frac{\partial V}{\partial q} = \mu \tau_x \frac{\partial y}{\partial p}$$
 
-Вспомним, что по теореме об Огибающей, производная косвенной полезности пропорциональна обычному (Маршалианскому) спросу:
+Вспомним, что по теореме об Огибающей, производная косвенной полезности пропорциональна обычному (Маршалианскому) спросу. Действительно:
 
-$$ \mathcal{L} = U(x, y) - \lambda (p x + q y - I) \quad \Rightarrow \quad \frac{\partial V}{\partial p} = - \lambda x, \quad \frac{\partial V}{\partial q} = - \lambda y$$
+
+$$ V = \min \max U(x, y) - \lambda (p x + q y - I) 
+
+\frac{\partial V}{\partial p} = - \lambda x, \quad \frac{\partial V}{\partial q} = - \lambda y
+
+$$
 
 
 
