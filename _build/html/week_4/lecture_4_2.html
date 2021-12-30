@@ -446,7 +446,12 @@ h_y
 <p>Матрица Слуцкого указывает нам на приращение Хиксианского спроса. То есть, если эластичности оценены хорошо, то можно сказать, что приращение хиксианского спроса это приблизительно произведение матрицы Слуцкого на приращение цен.</p>
 <p>Больше того, приращение функций расходов это площадь под <span class="math notranslate nohighlight">\(\nabla E\)</span>, то есть, примерно площадь трапеции (на боку) с основанием <span class="math notranslate nohighlight">\((p'-p)\)</span> и сторонами <span class="math notranslate nohighlight">\(h(p)\)</span> и <span class="math notranslate nohighlight">\(h(p')\)</span>.</p>
 <div class="math notranslate nohighlight">
-\[ CV = E(p', \bar U) - E(p, \bar U) = \int_p^{p'} h(x, \bar U) dx \approx \frac{(p'-p)(h(p')+h(p))}{2} = (p'-p)(\frac{h(p') - h(p)}{2} + h(p)) \]</div>
+\[\begin{split} 
+\begin{gather*}
+CV = E(p', \bar U) - E(p, \bar U) = \int_p^{p'} h(x, \bar U) dx \approx\\
+\approx \frac{(p'-p)(h(p')+h(p))}{2} = (p'-p)(\frac{h(p') - h(p)}{2} + h(p))
+\end{gather*}
+\end{split}\]</div>
 <p>То есть, <span class="math notranslate nohighlight">\(CV\)</span> это, в линейном приближении, скалярное произведение хиксианского спроса на приращение цен, а во втором приближении значение квадратичной формы матрицы Слуцкого на векторе приращения цен, пополам:</p>
 <div class="math notranslate nohighlight">
 \[CV \approx \delta p \cdot \vec h + \frac{\delta p \cdot S \cdot \delta p^T}{2}\]</div>
