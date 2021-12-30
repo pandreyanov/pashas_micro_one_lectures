@@ -343,6 +343,11 @@
      Кобб Дуглас
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     Зачем нужны Матрицы Слуцкого?
+    </a>
+   </li>
   </ul>
  </li>
 </ul>
@@ -416,9 +421,24 @@ h_y
 \[\begin{split} S = E \cdot 
 \begin{pmatrix} 
 \frac{-\alpha + \alpha^2}{p^2} &amp; \frac{\alpha \beta}{p q} \\
-\frac{\alpha \beta}{q^2} &amp; \frac{-\beta +\beta^2}{q^2}
+\frac{\alpha \beta}{p q} &amp; \frac{-\beta +\beta^2}{q^2}
 \end{pmatrix}
 \end{split}\]</div>
+</div>
+<div class="section" id="id4">
+<h3>Зачем нужны Матрицы Слуцкого?<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p>Считается, что Матрица Слуцкого это, в некотором смысле, четвертая модель поведения потребителя. То есть, вместо калибровки полезности или предпочтений, мы можем калибровать матрицу замещения.</p>
+<p>Коэффициенты матрицы Слуцкого можно переписать в терминах эластичности, дохода и долей, каждый из которых достаточно легко оценивается в данных.</p>
+<p>К примеру, если <span class="math notranslate nohighlight">\(s_x\)</span> и <span class="math notranslate nohighlight">\(s_y\)</span> это доли товаров <span class="math notranslate nohighlight">\(x, y\)</span> в бюджете то верхний диагональный элемент матрицы Слуцкого можно оценить как:</p>
+<div class="math notranslate nohighlight">
+\[ \frac{\partial h_x}{\partial p} = \frac{m_x}{p} (\varepsilon_{x,p} + \varepsilon_{x,I} \cdot s_x)\]</div>
+<p>А диагоналъный элемент матрицы Слуцкого можно оценить как:</p>
+<div class="math notranslate nohighlight">
+\[ \frac{\partial h_x}{\partial q} = \frac{m_x}{q} (\varepsilon_{x,q} + \varepsilon_{x,I} \cdot s_y)\]</div>
+<p>Что можно дальше с этой матрицей сделать? Это довольно сложно, но, в двух словах - проинтегрировать:</p>
+<div class="math notranslate nohighlight">
+\[ h(p') - h(p) = \int_p^{p'} \frac{\partial}{\partial p} h(x) dx \approx (p'-p) \nabla h\]</div>
+<p>Матрица Слуцкого указывает нам на приращение Хиксианского спроса. То есть, если эластичности оценены хорошо, то можно сказать, что приращение хиксианского спроса это приблизительно произведение матрицы Слуцкого на приращение цен.</p>
 </div>
 </div>
 </div>
