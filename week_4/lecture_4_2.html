@@ -446,14 +446,14 @@ h_y
 <p>Матрица Слуцкого указывает нам на приращение Хиксианского спроса. То есть, если эластичности оценены хорошо, то можно сказать, что приращение хиксианского спроса это приблизительно произведение матрицы Слуцкого на приращение цен.</p>
 <p>Больше того, приращение функций расходов это площадь под <span class="math notranslate nohighlight">\(\nabla E\)</span>, то есть, примерно площадь трапеции (на боку) с основанием <span class="math notranslate nohighlight">\((p'-p)\)</span> и сторонами <span class="math notranslate nohighlight">\(h(p)\)</span> и <span class="math notranslate nohighlight">\(h(p')\)</span>.</p>
 <div class="math notranslate nohighlight">
-\[ E(p') - E(p) = \int_p^{p'} h(x) dx \approx (p'-p) h(p') = (p'-p)(h(p') - h(p) + h(p)) \]</div>
+\[ E(p') - E(p) = \int_p^{p'} h(x) dx \approx \frac{(p'-p)(h(p')+h(p)}{2} = (p'-p)(\frac{h(p') - h(p)}{2} + h(p)) \]</div>
 <p>То есть, <span class="math notranslate nohighlight">\(CV\)</span> и <span class="math notranslate nohighlight">\(EV\)</span>, это, в линейном приближение скалярное произведение хиксианского спроса на приращение цен, а во втором приближении значение квадратичной формы матрицы Слуцкого на векторе приращения цен. Это уже довольно сложная технически теорема, поэтому только формулировка.</p>
 <div class="proof theorem remark admonition" id="theorem-2">
 <p class="admonition-title"><span class="caption-number">Theorem 11 </span> (Зачем нужна <span class="math notranslate nohighlight">\(S\)</span>)</p>
 <div class="theorem-content section" id="proof-content">
 <p>Если полезность дважды дифференцируема, то верно следующее</p>
 <div class="math notranslate nohighlight">
-\[CV \approx EV \approx \delta p \cdot \vec h + \delta p \cdot S \cdot \delta p^T,\]</div>
+\[CV \approx EV \approx \delta p \cdot \vec h + \frac{\delta p \cdot S \cdot \delta p^T}{2},\]</div>
 <p>при малых приращениях цен <span class="math notranslate nohighlight">\(\delta p = \vec p' - \vec p\)</span>, где <span class="math notranslate nohighlight">\(\vec h\)</span> - действующий спрос.</p>
 </div>
 </div><p>Это просто невероятно крутой космический результат, но вы, скорее всего, еще слишком молоды, чтобы это понять.</p>
