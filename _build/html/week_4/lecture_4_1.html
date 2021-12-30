@@ -610,18 +610,16 @@ V = \min_{\lambda} \max_{x,y} \mathcal{L}, \quad \mathcal{L} = U(x, y) - \lambda
 <div class="definition-content section" id="proof-content">
 <p><strong>Чистыми комплементами</strong> называются пары товаров, такие что $<span class="math notranslate nohighlight">\(\frac{\partial h_x}{\partial q} \leqslant 0, \quad \frac{\partial h_y}{\partial p} \leqslant 0\)</span>$.</p>
 </div>
-</div><p>На первый взгляд, не совсем понятно, чем помогает замена Маршалианского спроса на Хиксианский в определении.</p>
+</div><p>На первый взгляд, не совсем понятно, чем помогает замена Маршалианского спроса на Хиксианский в определении. Однако, поскольку Хиксианский спрос это градиент функции расходов, то градиент Хиксианского спроса это Гессиан функции расходов. А матрица Гессиана - симметричная.</p>
 <div class="proof property admonition" id="property-6">
 <p class="admonition-title"><span class="caption-number">Property 25 </span></p>
 <div class="property-content section" id="proof-content">
 <p>Пусть <span class="math notranslate nohighlight">\(h\)</span> - весь вектор Хиксианского спроса, тогда</p>
 <div class="math notranslate nohighlight">
-\[ \nabla \vec h = \nabla^2 E\]</div>
-<p>а значит</p>
-<div class="math notranslate nohighlight">
-\[ \frac{\partial h_x}{\partial q} = \frac{\partial h_y}{\partial p}.\]</div>
+\[ \nabla \vec h = \nabla^2 E \quad \Rightarrow \quad \nabla \vec h = (\nabla \vec h)^T.\]</div>
 </div>
-</div></div>
+</div><p>Другими словами, перекрестные производные Хиксианского спроса по ценам - симметричны и нет больше никакого противоречие. Чистая субститутабильность/комплементарность это свойство пары товаров, неважно как эта пара упорядочена.</p>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
