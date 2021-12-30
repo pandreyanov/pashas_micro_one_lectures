@@ -117,8 +117,7 @@ $$ p x^{\ast} = \alpha \frac{1}{\lambda}, \quad q y^{\ast} = \beta \frac{1}{\lam
 
 $$
 \begin{gather*}
-\min_{\lambda} \max_{\tau_x, \tau_y} \mathcal{L}\\
-\mathcal{L} = V(p,q,I) - \mu (\tau_x x(p) + \tau_y y(p) - T)
+\min_{\lambda} \max_{\tau_x, \tau_y} \mathcal{L}, \quad \mathcal{L} = V(p,q,I) - \mu (\tau_x x(p) + \tau_y y(p) - T)
 \end{gather*}
 $$
 
@@ -130,7 +129,7 @@ $$\frac{\partial V}{\partial p} = \mu \tau_x \frac{\partial x}{\partial p}, \qua
 
 $$ 
 \begin{gather*}
-V = \min_{\lambda} \max_{x,y} U(x, y) - \lambda (p x + q y - I) \\
+V = \min_{\lambda} \max_{x,y} \mathcal{L}, \quad \mathcal{L} = U(x, y) - \lambda (p x + q y - I) \\
 \frac{\partial V}{\partial p} = - \lambda x, \quad \frac{\partial V}{\partial q} = - \lambda y
 \end{gather*}
 $$
@@ -139,7 +138,7 @@ $$
 
 $$ \varepsilon_{p,x}\frac{\tau_{x,p}}{p} = \frac{\tau_x}{x} \frac{\partial x}{\partial p} = - \lambda / \mu = \frac{\tau_y}{y} \frac{\partial y}{\partial q} = \varepsilon_{q,y}\frac{\tau_{y,q}}{q}$$
 
-Мы только что доказали, совершенно строго, один из самых нетривиальных фактов в теории оптимального налогообложения:
+Мы только что доказали (немножко игнорируя вопросы выпуклости) один из самых нетривиальных фактов в теории оптимального налогообложения:
 
 :::{prf:property} Правило Рамсея
 
