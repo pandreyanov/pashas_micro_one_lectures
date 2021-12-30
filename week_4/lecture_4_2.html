@@ -354,6 +354,18 @@
   <a class="reference internal nav-link" href="#id5">
    Парадокс Геффена
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id6">
+     Бесконечно малый анализ
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+     Глобальный анализ
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -455,9 +467,9 @@ CV = E(p', \bar U) - E(p, \bar U) = \int_p^{p'} h(x, \bar U) dx \approx\\
 <p>То есть, <span class="math notranslate nohighlight">\(CV\)</span> это, в линейном приближении, скалярное произведение хиксианского спроса на приращение цен, а во втором приближении значение квадратичной формы матрицы Слуцкого на векторе приращения цен, пополам, см. иллюстрацию:</p>
 <a class="reference internal image-reference" href="../_images/slutsky.png"><img alt="Слуцкий" class="align-center" src="../_images/slutsky.png" style="width: 400px;" /></a>
 <p>Мы только что доказали чрезвычайно сложное технически, и при этом, достаточно полезное на практике свойство:</p>
-<div class="proof theorem remark admonition" id="theorem-2">
-<p class="admonition-title"><span class="caption-number">Theorem 11 </span> (Разложение CV)</p>
-<div class="theorem-content section" id="proof-content">
+<div class="proof property admonition" id="property-2">
+<p class="admonition-title"><span class="caption-number">Property 29 </span> (Разложение CV)</p>
+<div class="property-content section" id="proof-content">
 <p>Компенсирующую (но не эквивалентную) вариацию можно приблизить как:</p>
 <div class="math notranslate nohighlight">
 \[CV \approx \delta p \cdot \vec h + \frac{\delta p \cdot S \cdot \delta p^T}{2}\]</div>
@@ -470,16 +482,41 @@ CV = E(p', \bar U) - E(p, \bar U) = \int_p^{p'} h(x, \bar U) dx \approx\\
 <h2>Парадокс Геффена<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
 <p>В конце 19 века случился (очередной) кризис экономической мысли. Все, как один считали, что кривые спроса обязательно убывающие по своей цене. Это было логично, но формального доказательства никто не мог дать. Затем, именитые экономисты (такие как Маршалл) обратили внимание на так называемый “Парадокс Геффена”.</p>
 <p>Парадокс Геффена заключается в том, что для некоторых товаров, которые пользовались популярностью у бедных: картофель и дешевый хлеб; наблюдалась прямая зависимость между ценой и спросом. Похожая зависимость иногда прослеживается для спроса на рис в современном Китае.</p>
-<p>Разрешение парадокса осуществляется за счет анализа Хиксианского спроса и матриц Слуцкого. Обратим внимание еще раз на эластичность Хиксианского спроса по собственной цене, которую я назову <span class="math notranslate nohighlight">\(\varepsilon^c\)</span>:</p>
+<p>Разрешение парадокса осуществляется за счет анализа Хиксианского спроса и матриц Слуцкого.</p>
+<div class="section" id="id6">
+<h3>Бесконечно малый анализ<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<p>Обратим внимание еще раз на эластичность Хиксианского спроса по собственной цене, которую я назову <span class="math notranslate nohighlight">\(\varepsilon^c_{x,p}\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[\varepsilon^c_{x,p} = \varepsilon_{x,p} + \varepsilon_{x,I} \cdot s_{x},\]</div>
 <p>и перепишем ее так, чтобы маршаллианский спрос был слева:</p>
 <div class="math notranslate nohighlight">
 \[\varepsilon_{x,p} = \varepsilon^c_{x,p} - \varepsilon_{x,I} \cdot s_{x}.\]</div>
-<p>Легко видеть, что если <span class="math notranslate nohighlight">\(\varepsilon_{x,I} &gt; 0\)</span> то, поскольку <span class="math notranslate nohighlight">\(\varepsilon^c_{x,p}\)</span> всегда неположительный, то и <span class="math notranslate nohighlight">\(\varepsilon_{x,p}\)</span> будет неположительный. А нам нужна положительная зависимость между <span class="math notranslate nohighlight">\(x,p\)</span>.</p>
-<p>Предположим, наоборот, что товар <span class="math notranslate nohighlight">\(x\)</span> инфериорный, то есть, это товар низкого качества, тогда <span class="math notranslate nohighlight">\(\varepsilon_{x,I} &lt; 0\)</span>. Предположим также, что доля товара <span class="math notranslate nohighlight">\(x\)</span> в бюджете потребителя достаточно высока, то есть, <span class="math notranslate nohighlight">\(s_{x}\)</span> большой. Наконец, предположим, что для товара <span class="math notranslate nohighlight">\(x\)</span> нет близкого (чистого) субститута, то есть, <span class="math notranslate nohighlight">\(\varepsilon^c_{x,p}\)</span> близок к нулю.</p>
+<p>Легко видеть, что если <span class="math notranslate nohighlight">\(\varepsilon_{x,I} &gt; 0\)</span> то, поскольку <span class="math notranslate nohighlight">\(\varepsilon^c_{x,p}\)</span> всегда неположительный, то и <span class="math notranslate nohighlight">\(\varepsilon_{x,p}\)</span> будет неположительный. А нам нужна положительная зависимость между <span class="math notranslate nohighlight">\(x,p\)</span>. Соответственно, можно сделать следующий вывод:</p>
+<div class="proof property admonition" id="property-3">
+<p class="admonition-title"><span class="caption-number">Property 30 </span></p>
+<div class="property-content section" id="proof-content">
+<p>Нормальный товар не может объяснить парадокс Геффена.</p>
+</div>
+</div><p>Предположим, наоборот, что товар <span class="math notranslate nohighlight">\(x\)</span> инфериорный, то есть, это товар низкого качества, тогда <span class="math notranslate nohighlight">\(\varepsilon_{x,I} &lt; 0\)</span>. Предположим также, что доля товара <span class="math notranslate nohighlight">\(x\)</span> в бюджете потребителя достаточно высока, то есть, <span class="math notranslate nohighlight">\(s_{x}\)</span> большой. Наконец, предположим, что для товара <span class="math notranslate nohighlight">\(x\)</span> нет близкого (чистого) субститута, то есть, <span class="math notranslate nohighlight">\(\varepsilon^c_{x,p}\)</span> близок к нулю.</p>
 <p>Тогда может так случиться, что <span class="math notranslate nohighlight">\(\varepsilon_{x,p}\)</span> станет положительным.</p>
-<p>Вот и все.</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\varepsilon^c_{x,p}\)</span> называется эффектом замещения</p></li>
+<li><p><span class="math notranslate nohighlight">\(\varepsilon_{x,I} \cdot s_{x}\)</span> называется эффектом дохода</p></li>
+</ul>
+<p>Получается, что</p>
+<div class="proof property admonition" id="property-4">
+<p class="admonition-title"><span class="caption-number">Property 31 </span></p>
+<div class="property-content section" id="proof-content">
+<p>Для того, чтобы объяснить парадокс Геффена, нужно иметь слабый эффект замещения, и сильный отрицательный эффект дохода.</p>
+</div>
+</div></div>
+<div class="section" id="id7">
+<h3>Глобальный анализ<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<p>Анализ бесконечно малых показал, что должно случиться для того, чтобы маршаллианский спрос стал возрастать по собственной цене.</p>
+<p>Рассмотрим теперь большое изменение в цене. Сильный отрицательный эффект дохода означает, что при сокращении дохода, потребление товара (который мы рассматриваем) резко увеличивается. Слабый эффект замещения (он всегда отрицательный) означает, что при качении вдоль кривой безразличия, спрос меняется не сильно.</p>
+<p>Вместе эти два эффекта способны объяснить парадокс Геффена, см. иллюстрацию.</p>
+<a class="reference internal image-reference" href="../_images/incomesubstitution.png"><img alt="Эффекты дохода и замещения" class="align-center" src="../_images/incomesubstitution.png" style="width: 400px;" /></a>
+</div>
 </div>
 </div>
 
