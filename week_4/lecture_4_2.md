@@ -186,7 +186,10 @@ $$\varepsilon_{x,p} = \varepsilon^c_{x,p} - \varepsilon_{x,I} \cdot s_{x}.$$
 $$
 IE \approx \delta p \cdot h, \quad SE \approx \delta p \cdot \nabla h
 $$
+
 где $\delta p = p' - p$, а $\nabla h = S$.
 :::
+
+Оба свойства мы, по сути, вывели в ранее в этой лекции.
 
 На этом мы заканчиваем с теорией потребителя.
