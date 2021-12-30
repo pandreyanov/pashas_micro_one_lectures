@@ -21,3 +21,7 @@
 
 - **Вариан,** - ...
 - **JR, 1.4** - ...
+
+Дополнительно 
+
+- Stigler, Notes on the History of the Giffen Paradox 
