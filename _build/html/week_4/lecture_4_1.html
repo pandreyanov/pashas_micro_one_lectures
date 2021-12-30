@@ -377,7 +377,28 @@
      Эквивалентная вариация
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#e">
+     Подсчет вариаций через
+     <span class="math notranslate nohighlight">
+      \(E\)
+     </span>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#v">
+     Подсчет вариаций через
+     <span class="math notranslate nohighlight">
+      \(V\)
+     </span>
+    </a>
+   </li>
   </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id10">
+   Чистые субституты
+  </a>
  </li>
 </ul>
 
@@ -517,22 +538,67 @@ V = \min_{\lambda} \max_{x,y} \mathcal{L}, \quad \mathcal{L} = U(x, y) - \lambda
 <div class="proof definition admonition" id="definition-2">
 <p class="admonition-title"><span class="caption-number">Definition 36 </span></p>
 <div class="definition-content section" id="proof-content">
-<p>Компенсирующая вариация определяется как изменение в расходах, ассоциированных с первоначальным уровнем полезности</p>
+<p><strong>Компенсирующая вариация</strong> определяется как изменение в расходах, ассоциированных с первоначальным уровнем полезности</p>
 <div class="math notranslate nohighlight">
 \[CV = E(p',\bar U_0) - E(p,\bar U_0), \quad \bar U_0 = U(x^{\ast}(p), y^{\ast}(p))\]</div>
 </div>
-</div></div>
+</div><p>Другими словами, государство как бы возвращает агентов на их стартовую полезность. Стартовая полезность это статус кво.</p>
+</div>
 <div class="section" id="id9">
 <h3>Эквивалентная вариация<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
-<p>Предположим, опять, смещение цен <span class="math notranslate nohighlight">\(p \to p'\)</span> и что полезность агентов упала до уровня <span class="math notranslate nohighlight">\(\bar U_1\)</span>. Определим эквивалентную вариацию как изменение дохода, которое было бы эквивалентно этому смещению цен.</p>
+<p>Предположим, опять, смещение цен <span class="math notranslate nohighlight">\(p \to p'\)</span> и что полезность агентов упала до уровня <span class="math notranslate nohighlight">\(\bar U_1\)</span>. Определим эквивалентную вариацию как изменение дохода, которое было бы эквивалентно этому смещению цен, с точки зрения падения полезности.</p>
 <div class="proof definition admonition" id="definition-3">
 <p class="admonition-title"><span class="caption-number">Definition 37 </span></p>
 <div class="definition-content section" id="proof-content">
 <p><strong>Эквивалентная вариация</strong> определяется как изменение в расходах, ассоциированных с новым уровнем полезности</p>
 <div class="math notranslate nohighlight">
-\[CV = E(p',\bar U_1) - E(p,\bar U_1), \quad \bar U_1 = U(x^{\ast}(p'), y^{\ast}(p'))\]</div>
+\[EV = E(p',\bar U_1) - E(p,\bar U_1), \quad \bar U_1 = U(x^{\ast}(p'), y^{\ast}(p'))\]</div>
 </div>
-</div></div>
+</div><p>Другими словами, государство как бы говорит: “если я верну все назад (и не заплачу вариацию), вы потеряете эквивалентно в полезности”. Сдесь новая полезность это стаус кво.</p>
+</div>
+<div class="section" id="e">
+<h3>Подсчет вариаций через <span class="math notranslate nohighlight">\(E\)</span><a class="headerlink" href="#e" title="Permalink to this headline">¶</a></h3>
+<p>Если вам комфортнее думать в терминах функции расходов, то все что вам надо сделать это сосчитать уровни полезности до (для CV) и после (для EV) изменения цен и подставить в определение.</p>
+<p>К примеру, в Леонтьевской полезности функция расходов выписывается бысстро, если вспомнить, что левый и правый аргумент функции минимума обязаны давать одно и то же значение в оптимуме: $<span class="math notranslate nohighlight">\(h_x = a \bar U, \quad h_y = b \bar U, \quad E = (pa + qb) \bar U\)</span>$</p>
+<p>Далее, если цены перешли <span class="math notranslate nohighlight">\((p,q) \to (p',q')\)</span> то полезность перешла</p>
+<div class="math notranslate nohighlight">
+\[ \bar U_0 = \frac{I}{pa + qb} \to \bar U_1 = \frac{I}{p'a + q'b} \]</div>
+<p>Получается, что</p>
+<div class="math notranslate nohighlight">
+\[ CV = (p'a + q' b - pa - qb) \frac{I}{pa + qb}, \quad CV = (p'a + q' b - pa - qb) \frac{I}{p' a + q' b}.\]</div>
+<p>Вот и все.</p>
+</div>
+<div class="section" id="v">
+<h3>Подсчет вариаций через <span class="math notranslate nohighlight">\(V\)</span><a class="headerlink" href="#v" title="Permalink to this headline">¶</a></h3>
+<p>Если вам комфортнее думать в терминах косвенной полезности, то CV и EV это решения достаточно простых нелинейных уравнений:</p>
+<div class="math notranslate nohighlight">
+\[ V(p,q,I) = \bar U_0 = V(p',q',I+CV), \quad V(p,q,I-EV) = \bar U_1 = V(p',q',I)\]</div>
+<p>Преимущество этого подхода в том, что сами уровни полезности вам считать не обязательно. Можно сэкономить на выкладках.</p>
+<p>К примеру, в полезности Кобб Дуглас, косвенную полезность можно запомнить с точностью до константы, которая все равно сократится в правой и левой части уравнения.</p>
+<p>Для компенсирующей вариации:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{gather*}
+ \log I - \alpha \log p - \beta \log q = \log (I+CV) - \alpha \log p' - \beta \log q'\\
+ \log(\frac{I+CV}{I}) = \alpha \log (\frac{p'}{p}) + \beta \log (\frac{q'}{q})
+\end{gather*}
+\end{split}\]</div>
+<p>То есть, если цена <span class="math notranslate nohighlight">\(p\)</span> выросла в 2 раза, а <span class="math notranslate nohighlight">\(q\)</span> в 3 раза, то компенсирующая вариация должна повысить изначальный бюджет в <span class="math notranslate nohighlight">\(2 \alpha + 3 \beta\)</span> раз.</p>
+<p>Для эквивалентной вариации:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{gather*}
+ \log (I - EV) - \alpha \log p - \beta \log q = \log I - \alpha \log p' - \beta \log q'\\
+ \log(\frac{I}{I - EV}) = \alpha \log (\frac{p'}{p}) + \beta \log (\frac{q'}{q})
+\end{gather*}
+\end{split}\]</div>
+<p>То есть, если цена <span class="math notranslate nohighlight">\(p\)</span> выросла в 2 раза, а <span class="math notranslate nohighlight">\(q\)</span> в 3 раза, то эквивалентная вариация должна уменьшить  изначальный бюджет в <span class="math notranslate nohighlight">\(2 \alpha + 3 \beta\)</span> раз.</p>
+<p>Вот и все.</p>
+</div>
+</div>
+<div class="section" id="id10">
+<h2>Чистые субституты<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
+<p>…</p>
 </div>
 </div>
 
