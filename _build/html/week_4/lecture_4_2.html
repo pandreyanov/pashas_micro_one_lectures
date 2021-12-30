@@ -367,7 +367,15 @@
 </div>
 </details><p>Вас, скорее всего, не учили матричному дифференциированию, но в данном случае оно работает примерно также как и обычное:</p>
 <div class="math notranslate nohighlight">
-\[ \nabla \vec m(\vec p,  I) = \nabla \vec h(\vec p,  \bar U) + \frac{\partial m}{\partial I} \cdot \nabla E = \nabla \vec h(\vec p,  \bar U) + \frac{\partial m}{\partial I} \cdot \vec h \]</div>
+\[ \nabla \vec m(\vec p,  I) = \nabla \vec h(\vec p,  \bar U) + \frac{\partial m}{\partial I} \cdot \nabla E(\vec p, \bar U) = \nabla \vec h(\vec p,  \bar U) + \frac{\partial m}{\partial I} \cdot \vec h \]</div>
+<p>Проблема в том, что и <span class="math notranslate nohighlight">\(\frac{\partial m}{\partial I}\)</span> и <span class="math notranslate nohighlight">\(\vec h\)</span> это вектора длины <span class="math notranslate nohighlight">\(n\)</span>, и, поэтому, мы должны подумать, в каком порядке мы их хотим перемножить. Есть два варианта: либо мы умножаем строку <span class="math notranslate nohighlight">\(\frac{\partial m}{\partial I}\)</span> на столбец <span class="math notranslate nohighlight">\(\vec h\)</span>, либо мы умножаем столбец <span class="math notranslate nohighlight">\(\frac{\partial m}{\partial I}\)</span> на строку <span class="math notranslate nohighlight">\(\vec h\)</span>. Один из этих вариантов даст число, а другой матрицу. Тот вариант, который сохранит размерность объекта и будет правильным матричным дифференциированием.</p>
+<p>Должно получиться примерно следующее:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} 
+\begin{pmatrix}
+d m_x/ dp &amp; d m_x /dq \\
+d m_y/ dp &amp; d m_y /dq
+\end{pmatrix}\end{split}\]</div>
 </div>
 </div>
 
