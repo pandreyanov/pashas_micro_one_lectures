@@ -182,10 +182,10 @@ $$\varepsilon_{x,p} = \varepsilon^c_{x,p} - \varepsilon_{x,I} \cdot s_{x}.$$
 Получается, что в последней формулировке, если речь идет об одной цене, то
 
 $$
-
-IE = CV \approx \delta p \cdot \vec h + \frac{\delta p \cdot S \cdot \delta 
+\begin{gather*}
+IE = CV \approx \delta p \cdot \vec h + \frac{\delta p \cdot S \cdot \delta \\
 SE = h' - h \approx \delta p \cdot \nabla h = \delta p \cdot S
-
+\end{gather*}
 $$
 
 p^T}{2}$$
