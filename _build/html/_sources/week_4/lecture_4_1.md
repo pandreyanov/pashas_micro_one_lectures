@@ -137,7 +137,7 @@ $$
 
 Получается, что в оптимуме
 
-$$ \frac{\tau_x}{x} \frac{\partial x}{\partial p} = - \lambda / \mu = \frac{\tau_y}{y} \frac{\partial y}{\partial q}$$
+$$ \varepsilon_{p,x}\frac{\tau_{x,p}}{p} = \frac{\tau_x}{x} \frac{\partial x}{\partial p} = - \lambda / \mu = \frac{\tau_y}{y} \frac{\partial y}{\partial q} = \varepsilon_{q,y}\frac{\tau_{y,q}}{q}$$
 
 Мы только что доказали, совершенно строго, один из самых нетривиальных фактов в теории оптимального налогообложения:
 
@@ -149,4 +149,4 @@ $$ \frac{\tau_x/p}{\tau_y/q} = \frac{1/\varepsilon_{p,x}}{1/\varepsilon_{q,y}}$$
 
 :::
 
-Это правило обобщает результат, который мы вывели в Кобб-Дугласе.
+Это правило обобщает результат, который мы вывели в Кобб-Дугласе, поскольку в Кобб-Дугласе все эластичности потребления по цене постоянны и равны $-1$.
