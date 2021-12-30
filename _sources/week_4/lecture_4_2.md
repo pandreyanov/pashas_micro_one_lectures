@@ -92,7 +92,7 @@ $$ E(p', \bar U) - E(p, \bar U) = \int_p^{p'} h(x) dx \approx \frac{(p'-p)(h(p')
 
 То есть, $CV$ это, в линейном приближение скалярное произведение хиксианского спроса на приращение цен, а во втором приближении значение квадратичной формы матрицы Слуцкого на векторе приращения цен, пополам:
 
-$$CV \approx EV \approx \delta p \cdot \vec h + \frac{\delta p \cdot S \cdot \delta p^T}{2}$$
+$$CV \approx \delta p \cdot \vec h + \frac{\delta p \cdot S \cdot \delta p^T}{2}$$
 
 при малых приращениях цен $\delta p = \vec p' - \vec p$, где $\vec h$ - действующий спрос.
 
