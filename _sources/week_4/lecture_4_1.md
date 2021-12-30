@@ -248,14 +248,18 @@ $$
 :::{prf:definition}
 **Чистыми субститутами** называются пары товаров, такие что 
 
-$$\frac{\partial h_x}{\partial q} > 0, \quad \frac{\partial h_y}{\partial p} > 0$$.
+$$
+\frac{\partial h_x}{\partial q} > 0, \quad \frac{\partial h_y}{\partial p} > 0.
+$$
 
 ::: 
 
 :::{prf:definition}
 **Чистыми комплементами** называются пары товаров, такие что 
 
-$$\frac{\partial h_x}{\partial q} \leqslant 0, \quad \frac{\partial h_y}{\partial p} \leqslant 0$$.
+$$
+\frac{\partial h_x}{\partial q} \leqslant 0, \quad \frac{\partial h_y}{\partial p} \leqslant 0.
+$$
 
 ::: 
 
