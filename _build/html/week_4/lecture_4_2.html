@@ -370,6 +370,16 @@
      Зачем нужны Матрицы Слуцкого?
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#se">
+     SE в первом приближении
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cv">
+     CV во втором приближении
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -413,14 +423,14 @@
 <p>Само по себе это еще не проблема, потому что потребители могли просто переключиться на ближайший субститут. Но могло случиться и так, что достаточно близкого субститута нет, и потребители просто купили меньше потому что… просто товар стал дороже. Первая ситуация - считается в каком то смысле нормальной. Вторая - нет, потому что наши потребители как будто обеднели.</p>
 <p>Попробуем формализовать эту идею. Изменение спроса можно разложить на два эффекта: эффект дохода и эффект замещения. Что это за эффекты?</p>
 <ul class="simple">
-<li><p>эффект замещения (<span class="math notranslate nohighlight">\(SE\)</span>) это “катание” бюджетной линии вдоль кривой безразличия</p></li>
-<li><p>эффект дохода (<span class="math notranslate nohighlight">\(IE\)</span>) это “параллельное смещение” бюджетной линии</p></li>
+<li><p>эффект замещения (SE) это “катание” бюджетной линии вдоль кривой безразличия</p></li>
+<li><p>эффект дохода (IE) это “параллельное смещение” бюджетной линии</p></li>
 </ul>
 <p>Почему всегда можно разложить? См. иллюстрацию:</p>
 <a class="reference internal image-reference" href="../_images/SEIETE.png"><img alt="Эффекты дохода и замещения" class="align-center" src="../_images/SEIETE.png" style="width: 400px;" /></a>
-<p>Есть такюе общий эффект (<span class="math notranslate nohighlight">\(TE\)</span>), он равен сумме эффекта замещения и эффекта дохода и представляет собой просто стандартное изменение маршаллианских спросов:</p>
+<p>Есть такюе общий эффект (TE), он равен сумме эффекта замещения и эффекта дохода и представляет собой просто стандартное изменение маршаллианских спросов:</p>
 <div class="math notranslate nohighlight">
-\[ ТЕ = SE + IE = m(p') - m(p).\]</div>
+\[ \text{TE} = \text{SE} + \text{IE} = m(p') - m(p).\]</div>
 <p>Поскольку маршалианский спрос, как правило, наблюдаем, то можно считать что общий эффект всегда известен. Неизвестно его разложение на эффект дохода и замещения.</p>
 <div class="section" id="id3">
 <h3>Эффект замещения<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
@@ -429,10 +439,12 @@
 <p>Эффект замещения есть, по сути, приращение хиксианского спроса при полезности зафиксированной на изначальном уровне.</p>
 <div class="math notranslate nohighlight">
 \[ SE = h(p', \bar U_0) - h(p, \bar U_0) \]</div>
+<p>Эффект замещения всегда отрицательный (неположительный, если быть точным), если он по своей цене, потому что мы доказали, что <span class="math notranslate nohighlight">\(\nabla^2 E \leqslant 0\)</span>.</p>
 </div>
 <div class="section" id="id4">
 <h3>Эффект дохода<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
 <p>Геометрически это выглядит как “параллельное смещение”, см. иллюстрацию.</p>
+<a class="reference internal image-reference" href="../_images/IE.png"><img alt="Эффекты замещения" class="align-center" src="../_images/IE.png" style="width: 400px;" /></a>
 <p>Эффект дохода есть разница между общим эффектом и эффектом замещения, именно так его надо считать. Однако, сам по себе, он не представляет большого интереса. Вообще, не очень понятно, зачем вычислять кусок спроса, за который отвечает эффект дохода.</p>
 <p>Гораздо интереснее понять, какому изменению бюджета соответствует эффект дохода? Тогда, при любом изменении цен, мы можем сказать насколько мы “ограбили” того или иного потребителя, в рублях.</p>
 <details class="sphinx-bs dropdown card mb-3">
@@ -442,13 +454,13 @@
 <div class="summary-up docutils">
 <svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="summary-content card-body docutils">
-<p class="card-text">Это же компенсирующая вариация!</p>
+<p class="card-text">Это же компенсирующая вариация <span class="math notranslate nohighlight">\(CV\)</span>!</p>
 </div>
 </details></div>
 </div>
 <div class="section" id="id5">
 <h2>Матрица Слуцкого<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
-<p>Чтобы лучше почувствовать разницу между Маршалианским и Хиксианским спросами, сфокусируемся на связывающем их уравнении:</p>
+<p>Сфокусируемся на уравнении, связывающем Хиксианский и Маршаллианский спросы:</p>
 <div class="math notranslate nohighlight">
 \[\vec h (\vec p, \bar U) = \vec m(\vec p,  E(\vec p, \bar U)).\]</div>
 <details class="sphinx-bs dropdown card mb-3">
@@ -516,7 +528,7 @@ E \cdot \alpha \beta \cdot
 </div>
 <div class="section" id="id7">
 <h3>Зачем нужны Матрицы Слуцкого?<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
-<p>Считается, что Матрица Слуцкого это, в некотором смысле, четвертая модель поведения потребителя. То есть, вместо калибровки полезности или предпочтений, мы можем калибровать матрицу замещения.</p>
+<p>Во первых, матрица Слуцкого это, в некотором смысле, четвертая модель поведения потребителя. То есть, вместо калибровки полезности или предпочтений, мы можем калибровать матрицу замещения.</p>
 <p>Коэффициенты матрицы Слуцкого можно переписать в терминах эластичности, дохода и долей, каждый из которых достаточно легко оценивается в данных.</p>
 <p>К примеру, если <span class="math notranslate nohighlight">\(s_x\)</span> и <span class="math notranslate nohighlight">\(s_y\)</span> это доли товаров <span class="math notranslate nohighlight">\(x, y\)</span> в бюджете то верхний диагональный элемент матрицы Слуцкого можно оценить как:</p>
 <div class="math notranslate nohighlight">
@@ -524,10 +536,20 @@ E \cdot \alpha \beta \cdot
 <p>А диагоналъный элемент матрицы Слуцкого можно оценить как:</p>
 <div class="math notranslate nohighlight">
 \[ \frac{\partial h_x}{\partial q} = \frac{m_x}{q} (\varepsilon_{x,q} + \varepsilon_{x,I} \cdot s_y)\]</div>
-<p>Что можно дальше с этой матрицей сделать? В двух словах - проинтегрировать:</p>
+<p>А во вторых - быстро считать эффект замещения.</p>
+</div>
+<div class="section" id="se">
+<h3>SE в первом приближении<a class="headerlink" href="#se" title="Permalink to this headline">¶</a></h3>
+<div class="proof property admonition" id="property-2">
+<p class="admonition-title"><span class="caption-number">Property 29 </span> (SE в первом приближении)</p>
+<div class="property-content section" id="proof-content">
 <div class="math notranslate nohighlight">
 \[ h(p') - h(p) = \int_p^{p'} \frac{\partial}{\partial p} h(x) dx \approx (p'-p) \nabla h\]</div>
-<p>Матрица Слуцкого указывает нам на приращение Хиксианского спроса. То есть, если эластичности оценены хорошо, то можно сказать, что приращение хиксианского спроса это приблизительно произведение матрицы Слуцкого на приращение цен.</p>
+</div>
+</div><p>Матрица Слуцкого указывает нам на приращение Хиксианского спроса. То есть, если эластичности оценены хорошо, то можно сказать, что приращение хиксианского спроса это приблизительно произведение матрицы Слуцкого на приращение цен.</p>
+</div>
+<div class="section" id="cv">
+<h3>CV во втором приближении<a class="headerlink" href="#cv" title="Permalink to this headline">¶</a></h3>
 <p>Больше того, приращение функций расходов это площадь под <span class="math notranslate nohighlight">\(\nabla E\)</span>, то есть, примерно площадь трапеции (на боку) с основанием <span class="math notranslate nohighlight">\((p'-p)\)</span> и сторонами <span class="math notranslate nohighlight">\(h(p)\)</span> и <span class="math notranslate nohighlight">\(h(p')\)</span>.</p>
 <div class="math notranslate nohighlight">
 \[\begin{split} 
@@ -539,8 +561,8 @@ CV = E(p', \bar U) - E(p, \bar U) = \int_p^{p'} h(x, \bar U) dx \approx\\
 <p>То есть, <span class="math notranslate nohighlight">\(CV\)</span> это, в линейном приближении, скалярное произведение хиксианского спроса на приращение цен, а во втором приближении значение квадратичной формы матрицы Слуцкого на векторе приращения цен, пополам, см. иллюстрацию:</p>
 <a class="reference internal image-reference" href="../_images/slutsky.png"><img alt="Слуцкий" class="align-center" src="../_images/slutsky.png" style="width: 400px;" /></a>
 <p>Мы только что доказали чрезвычайно сложное технически, и при этом, достаточно полезное на практике свойство:</p>
-<div class="proof property admonition" id="property-2">
-<p class="admonition-title"><span class="caption-number">Property 29 </span> (компенсирующая вариация во втором приближении)</p>
+<div class="proof property admonition" id="property-3">
+<p class="admonition-title"><span class="caption-number">Property 30 </span> (компенсирующая вариация во втором приближении)</p>
 <div class="property-content section" id="proof-content">
 <p>Компенсирующую (но не эквивалентную) вариацию можно приблизить как:</p>
 <div class="math notranslate nohighlight">
@@ -564,8 +586,8 @@ CV = E(p', \bar U) - E(p, \bar U) = \int_p^{p'} h(x, \bar U) dx \approx\\
 <div class="math notranslate nohighlight">
 \[\varepsilon_{x,p} = \varepsilon^c_{x,p} - \varepsilon_{x,I} \cdot s_{x}.\]</div>
 <p>Легко видеть, что если <span class="math notranslate nohighlight">\(\varepsilon_{x,I} &gt; 0\)</span> то, поскольку <span class="math notranslate nohighlight">\(\varepsilon^c_{x,p}\)</span> всегда неположительный, то и <span class="math notranslate nohighlight">\(\varepsilon_{x,p}\)</span> будет неположительный. А нам нужна положительная зависимость между <span class="math notranslate nohighlight">\(x,p\)</span>. Соответственно, можно сделать следующий вывод:</p>
-<div class="proof property admonition" id="property-3">
-<p class="admonition-title"><span class="caption-number">Property 30 </span></p>
+<div class="proof property admonition" id="property-4">
+<p class="admonition-title"><span class="caption-number">Property 31 </span></p>
 <div class="property-content section" id="proof-content">
 <p>Нормальный товар не может объяснить парадокс Геффена.</p>
 </div>
@@ -576,8 +598,8 @@ CV = E(p', \bar U) - E(p, \bar U) = \int_p^{p'} h(x, \bar U) dx \approx\\
 <li><p><span class="math notranslate nohighlight">\(\varepsilon_{x,I} \cdot s_{x}\)</span> называется эффектом дохода</p></li>
 </ul>
 <p>Получается, что</p>
-<div class="proof property admonition" id="property-4">
-<p class="admonition-title"><span class="caption-number">Property 31 </span></p>
+<div class="proof property admonition" id="property-5">
+<p class="admonition-title"><span class="caption-number">Property 32 </span></p>
 <div class="property-content section" id="proof-content">
 <p>Для того, чтобы объяснить парадокс Геффена, нужно иметь слабый эффект замещения, и сильный отрицательный эффект дохода.</p>
 </div>
@@ -596,8 +618,8 @@ CV = E(p', \bar U) - E(p, \bar U) = \int_p^{p'} h(x, \bar U) dx \approx\\
 <div class="section" id="id11">
 <h3>Анализ в первом приближении<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
 <p>Обе иллюстрации имеют смысл и, на самом деле, <span class="math notranslate nohighlight">\(CV\)</span> и <span class="math notranslate nohighlight">\(EV\)</span> совпадают в первом приближении. Более того, если вас просят сосчитать <span class="math notranslate nohighlight">\(IE, SE\)</span> в первом приближении, вы можете легко это сделать:</p>
-<div class="proof property admonition" id="property-5">
-<p class="admonition-title"><span class="caption-number">Property 32 </span> (доход и замещение в первом приближении)</p>
+<div class="proof property admonition" id="property-6">
+<p class="admonition-title"><span class="caption-number">Property 33 </span> (доход и замещение в первом приближении)</p>
 <div class="property-content section" id="proof-content">
 <div class="math notranslate nohighlight">
 \[
