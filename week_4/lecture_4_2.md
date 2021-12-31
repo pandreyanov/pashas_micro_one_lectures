@@ -59,11 +59,13 @@ $$ \frac{\partial^2}{\partial p \partial q} E = \frac{\alpha \beta}{p q} E.$$
 
 Наконец, можно вывести матрицу Слуцкого:
 
-$$ S = E \cdot 
+$$ S = 
+E \cdot 
 \begin{pmatrix} 
 \frac{-\alpha + \alpha^2}{p^2} & \frac{\alpha \beta}{p q} \\
 \frac{\alpha \beta}{p q} & \frac{-\beta +\beta^2}{q^2}
-\end{pmatrix} = \alpha \beta E \cdot 
+\end{pmatrix} = 
+E \cdot \alpha \beta \cdot
 \begin{pmatrix} 
 \frac{-1}{p^2} & \frac{1}{p q} \\
 \frac{1}{p q} & \frac{-1}{q^2}
