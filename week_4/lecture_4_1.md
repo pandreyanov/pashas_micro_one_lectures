@@ -269,7 +269,7 @@ $$1 + \frac{CV}{I} = 1 + \alpha \frac{\delta p}{p} + \frac{\alpha(\alpha-1)}{2} 
 
 То есть, CV во втором приближении это
 
-$$CV = I \cdot (\alpha \frac{\delta p}{p} + \alpha \beta \frac{\delta^2 p}{p^2}).$$
+$$CV = I \cdot (\alpha \frac{\delta p}{p} + \alpha \beta (\frac{\delta p}{p})^2 ).$$
 
 Когда приращения достаточно большие (между 10 и 90 процентов), рекомендуется делать квадратичное а не линейное приближение. 
 
