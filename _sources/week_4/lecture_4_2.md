@@ -63,6 +63,10 @@ $$ S = E \cdot
 \begin{pmatrix} 
 \frac{-\alpha + \alpha^2}{p^2} & \frac{\alpha \beta}{p q} \\
 \frac{\alpha \beta}{p q} & \frac{-\beta +\beta^2}{q^2}
+\end{pmatrix} = \alpha \beta E \cdot 
+\begin{pmatrix} 
+\frac{-1}{p^2} & \frac{1}{p q} \\
+\frac{1}{p q} & \frac{-1}{q^2}
 \end{pmatrix}
 $$
 
