@@ -540,27 +540,28 @@ E \cdot \alpha \beta \cdot
 </div>
 <div class="section" id="se">
 <h3>SE в первом приближении<a class="headerlink" href="#se" title="Permalink to this headline">¶</a></h3>
+<p>Матрица Слуцкого указывает нам на приращение Хиксианского спроса.</p>
 <div class="proof property admonition" id="property-2">
 <p class="admonition-title"><span class="caption-number">Property 29 </span> (SE в первом приближении)</p>
 <div class="property-content section" id="proof-content">
 <div class="math notranslate nohighlight">
-\[ h(p') - h(p) = \int_p^{p'} \frac{\partial}{\partial p} h(x) dx \approx (p'-p) \nabla h\]</div>
+\[ SE = h(p') - h(p) = \int_p^{p'} \frac{\partial}{\partial p} h(x) dx \approx (p'-p) \nabla h\]</div>
 </div>
-</div><p>Матрица Слуцкого указывает нам на приращение Хиксианского спроса. То есть, если эластичности оценены хорошо, то можно сказать, что приращение хиксианского спроса это приблизительно произведение матрицы Слуцкого на приращение цен.</p>
+</div><p>То есть, если эластичности оценены хорошо, то можно сказать, что приращение Хиксианского спроса это приблизительно произведение матрицы Слуцкого на приращение цен. А приращение Хиксианского спроса это и есть <span class="math notranslate nohighlight">\(SE\)</span>.</p>
 </div>
 <div class="section" id="cv">
 <h3>CV во втором приближении<a class="headerlink" href="#cv" title="Permalink to this headline">¶</a></h3>
-<p>Больше того, приращение функций расходов это площадь под <span class="math notranslate nohighlight">\(\nabla E\)</span>, то есть, примерно площадь трапеции (на боку) с основанием <span class="math notranslate nohighlight">\((p'-p)\)</span> и сторонами <span class="math notranslate nohighlight">\(h(p)\)</span> и <span class="math notranslate nohighlight">\(h(p')\)</span>.</p>
+<p>Компенсированная вариация это приращение функций расходов <span class="math notranslate nohighlight">\(E\)</span>, то есть, это площадь под <span class="math notranslate nohighlight">\(\nabla E\)</span>. А это, в свою очередь примерно площадь трапеции (на боку) с основанием <span class="math notranslate nohighlight">\((p'-p)\)</span> и сторонами <span class="math notranslate nohighlight">\(h(p)\)</span> и <span class="math notranslate nohighlight">\(h(p')\)</span>, см. иллюстрацию:</p>
+<a class="reference internal image-reference" href="../_images/slutsky.png"><img alt="Слуцкий" class="align-center" src="../_images/slutsky.png" style="width: 400px;" /></a>
+<p>Сосчитаем приближенную площадь:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split} 
 \begin{gather*}
-CV = E(p', \bar U) - E(p, \bar U) = \int_p^{p'} h(x, \bar U) dx \approx\\
+E(p', \bar U) - E(p, \bar U) = \int_p^{p'} h(x, \bar U) dx \approx\\
 \approx \frac{(p'-p)(h(p')+h(p))}{2} = (p'-p)(\frac{h(p') - h(p)}{2} + h(p))
 \end{gather*}
 \end{split}\]</div>
-<p>То есть, <span class="math notranslate nohighlight">\(CV\)</span> это, в линейном приближении, скалярное произведение хиксианского спроса на приращение цен, а во втором приближении значение квадратичной формы матрицы Слуцкого на векторе приращения цен, пополам, см. иллюстрацию:</p>
-<a class="reference internal image-reference" href="../_images/slutsky.png"><img alt="Слуцкий" class="align-center" src="../_images/slutsky.png" style="width: 400px;" /></a>
-<p>Мы только что доказали чрезвычайно сложное технически, и при этом, достаточно полезное на практике свойство:</p>
+<p>Мы только что доказали достаточно полезное на практике свойство:</p>
 <div class="proof property admonition" id="property-3">
 <p class="admonition-title"><span class="caption-number">Property 30 </span> (компенсирующая вариация во втором приближении)</p>
 <div class="property-content section" id="proof-content">
@@ -569,7 +570,7 @@ CV = E(p', \bar U) - E(p, \bar U) = \int_p^{p'} h(x, \bar U) dx \approx\\
 \[CV \approx \delta p \cdot \vec h + \frac{\delta p \cdot S \cdot \delta p^T}{2}\]</div>
 <p>при малых приращениях цен <span class="math notranslate nohighlight">\(\delta p = \vec p' - \vec p\)</span>, где <span class="math notranslate nohighlight">\(\vec h\)</span> - действующий спрос.</p>
 </div>
-</div><p>Я не смог его найти в учебниках, но, по моему, оно прикольное.</p>
+</div><p>Сравните ответ с разложением <span class="math notranslate nohighlight">\(CV\)</span> для Кобба Дугласа, которую мы вывели раньше.</p>
 </div>
 </div>
 <div class="section" id="id8">
