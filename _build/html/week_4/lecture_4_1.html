@@ -262,6 +262,11 @@
    Квадратичные формы
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../cheetsheet/approximations.html">
+   Приближения
+  </a>
+ </li>
 </ul>
 
     </div>
@@ -643,18 +648,20 @@ V = \min_{\lambda} \max_{x,y} \mathcal{L}, \quad \mathcal{L} = U(x, y) - \lambda
 <div class="section" id="id11">
 <h3>Второе приближение<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
 <p>Зафиксируем <span class="math notranslate nohighlight">\(q\)</span> и пусть меняется только цена <span class="math notranslate nohighlight">\(p\)</span>.</p>
-<p>Определим <span class="math notranslate nohighlight">\(\delta p = p'-p\)</span> как приращение цены, а <span class="math notranslate nohighlight">\(\delta I = CV\)</span> как приращение бюджета. Мы хотим приблизить нелинейное уравнение</p>
+<p>Определим <span class="math notranslate nohighlight">\(\delta p = p'-p\)</span> как приращение цены. Мы хотим приблизить нелинейное уравнение</p>
 <div class="math notranslate nohighlight">
-\[\log(1 + \frac{\delta I}{I}) = \alpha \log (1 + \frac{\delta p}{p})\]</div>
+\[\log(1 + \frac{CV}{I}) = \alpha \log (1 + \frac{\delta p}{p})\]</div>
 <p>подставим все в экспоненту</p>
 <div class="math notranslate nohighlight">
-\[1 + \frac{\delta I}{I} = (1 + \frac{\delta p}{p})^{\alpha}\]</div>
-<p>получим</p>
+\[1 + \frac{CV}{I} = (1 + \frac{\delta p}{p})^{\alpha}\]</div>
+<p>разложим в ряд Тейлора до второго члена</p>
 <div class="math notranslate nohighlight">
-\[1 + \frac{\delta I}{I} = 1 + \alpha \frac{\delta p}{p} + \frac{\alpha(\alpha-1)}{2} (\frac{\delta p}{p})^2 + \ldots\]</div>
+\[1 + \frac{CV}{I} = 1 + \alpha \frac{\delta p}{p} + \frac{\alpha(\alpha-1)}{2} (\frac{\delta p}{p})^2 + \ldots\]</div>
 <p>То есть, CV во втором приближении это</p>
 <div class="math notranslate nohighlight">
 \[CV = I \cdot (\alpha \frac{\delta p}{p} + \alpha \beta \frac{\delta^2 p}{p^2}).\]</div>
+<p>Когда приращения достаточно большие (между 10 и 90 процентов), рекомендуется делать квадратичное а не линейное приближение.</p>
+<p>Если приращение больше 100 процентов, то никакое приближение не сработает, так как у <span class="math notranslate nohighlight">\(\log(1+x)\)</span> радиус сходимости равен единице.</p>
 </div>
 </div>
 <div class="section" id="id12">
