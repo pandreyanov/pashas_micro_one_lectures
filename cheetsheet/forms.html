@@ -333,22 +333,17 @@
             </div>
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
-   Квадратичные формы
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id2">
    Критерий Сильвестра
   </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#id3">
      Вогнутость
     </a>
    </li>
-   <li class="toc-h2 nav-item toc-entry">
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#id4">
      Квази вогнутость
     </a>
@@ -384,11 +379,10 @@
 \[\nabla^2 f (v) = a^2 \cdot 2 y + a b \cdot x y + b^2 \cdot 0.\]</div>
 <p>Это функция от координат вектора <span class="math notranslate nohighlight">\(v = (a,b)\)</span>, а <span class="math notranslate nohighlight">\(x, y\)</span> это параметры. Довольно легко подогнать параметры так, чтобы значение функции было гарантированно полоэительным или гарантированно отрицательным на всех векторах <span class="math notranslate nohighlight">\(v\)</span>, отличных от нуля.</p>
 <p>Например, если <span class="math notranslate nohighlight">\(x = 0, y = 1\)</span> то форма положительно определена и мы пишем <span class="math notranslate nohighlight">\(\nabla^2 f &gt; 0\)</span>. Если же <span class="math notranslate nohighlight">\(x = 0, y = -1\)</span> то форма отрицательно определена и мы пишем <span class="math notranslate nohighlight">\(\nabla^2 f &lt; 0\)</span>.</p>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="id2">
-<h1>Критерий Сильвестра<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id2">
+<h2>Критерий Сильвестра<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="id3">
-<h2>Вогнутость<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<h3>Вогнутость<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
 <p>Рассмотрим гессиан функции от 3 переменных</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -410,7 +404,28 @@ f''_{zx} &amp; f''_{zy} &amp; f''_{zz}
 \[ \Delta_1 &lt; 0, \quad \Delta_2 &gt; 0, \quad \Delta_3 &lt; 0, \quad \ldots\]</div>
 </div>
 <div class="section" id="id4">
-<h2>Квази вогнутость<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<h3>Квази вогнутость<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p>Для анализа квази вогнутости, нужно заменить гессиан на окаймленный гессиан, у которого сверху и слева приставлен градиент функции в точке, а в левом верхнем углу еще стоит ноль.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{pmatrix} 
+0 &amp; f'_{x} &amp; f'_{y} &amp; f'_{z} \\
+f'_{x} &amp; f''_{xx} &amp; f''_{xy} &amp; f''_{xz} \\
+f'_{y} &amp; f''_{yx} &amp; f''_{yy} &amp; f''_{yz} \\
+f'_{z} &amp; f''_{zx} &amp; f''_{zy} &amp; f''_{zz}
+\end{pmatrix}
+\end{split}\]</div>
+<p>Миноров тут будет на один больше чем в не окаймленном случае:</p>
+<div class="math notranslate nohighlight">
+\[ \Delta_1 = (-f'_{x})^2, \quad \ldots\]</div>
+<p>являющиеся определителями расширяющихся матриц, начиная с левого верхнего угла.</p>
+<p>Необходимым условием для квази вогнутости функции является то, что главные миноры имеют чередующиеся знаки, начиная с первого, который должен быть (нестрого) отрицательным:</p>
+<div class="math notranslate nohighlight">
+\[ \Delta_1 \leqslant 0, \quad \Delta_2 \geqslant 0, \quad \Delta_3 \leqslant 0,  \quad \ldots\]</div>
+<p>Достаточным условием для квази вогнутости функции является то, что главные миноры имеют чередующиеся знаки, начиная с первого, который должен быть (строго) отрицательным:</p>
+<div class="math notranslate nohighlight">
+\[ \Delta_1 &lt; 0, \quad \Delta_2 &gt; 0, \quad \Delta_3 &lt; 0, \quad \ldots\]</div>
+</div>
 </div>
 </div>
 
