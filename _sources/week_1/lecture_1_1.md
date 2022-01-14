@@ -352,7 +352,7 @@ $$
 :::{prf:definition}
 Предпочтения $\succcurlyeq$ **непрерывны** в $X$, если для любого $x \in X$ множества $L_{+}(x)$ и $L_{-}(x)$ замкнуты, где
 
-$$ L_{+}(x) = \{y \in X: y \succurlyeq x\}, \quad L_{-}(x) = \{y \in X: y \preccurlyeq x\}$$
+$$ L_{+}(x) = \{y \in X: y \succcurlyeq x\}, \quad L_{-}(x) = \{y \in X: y \preccurlyeq x\}$$
 
 :::
 
