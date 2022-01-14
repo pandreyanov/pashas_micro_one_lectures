@@ -392,18 +392,22 @@
 <p>Рассмотрим гессиан функции от 3 переменных</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\begin{pmatrix} 
+\nabla^2 f = \begin{pmatrix} 
 f''_{xx} &amp; f''_{xy} &amp; f''_{xz} \\
 f''_{yx} &amp; f''_{yy} &amp; f''_{yz} \\
 f''_{zx} &amp; f''_{zy} &amp; f''_{zz}
 \end{pmatrix}
 \end{split}\]</div>
+<p>У этой матрицы, как и у любой другой, есть главные миноры:</p>
+<div class="math notranslate nohighlight">
+\[ \Delta_1 = f''_{xx}, \quad \Delta_2 = f''_{xx}f''_{yy}-(f''_{xy})^2, \quad \ldots\]</div>
+<p>являющиеся определителями расширяющихся матриц, начиная с левого верхнего угла.</p>
 <p>Необходимым условием для вогнутости функции является то, что главные миноры имеют чередующиеся знаки, начиная с первого, который должен быть (нестрого) отрицательным:</p>
 <div class="math notranslate nohighlight">
-\[ \Delta_1 \leqslant 0, \Delta_2 \geqslant 0, \Delta_3 \leqslant 0\]</div>
+\[ \Delta_1 \leqslant 0, \quad \Delta_2 \geqslant 0, \quad \Delta_3 \leqslant 0,  \quad \ldots\]</div>
 <p>Достаточным условием для вогнутости функции является то, что главные миноры имеют чередующиеся знаки, начиная с первого, который должен быть (строго) отрицательным:</p>
 <div class="math notranslate nohighlight">
-\[ \Delta_1 \leqslant 0, \Delta_2 \geqslant 0, \Delta_3 \leqslant 0\]</div>
+\[ \Delta_1 &lt; 0, \quad \Delta_2 &gt; 0, \quad \Delta_3 &lt; 0, \quad \ldots\]</div>
 </div>
 <div class="section" id="id4">
 <h2>Квази вогнутость<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
