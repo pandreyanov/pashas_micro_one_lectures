@@ -27,7 +27,7 @@ $$\nabla^2 f (v) = a^2 \cdot 2 y + a b \cdot x y + b^2 \cdot 0.$$
 
 # Критерий Сильвестра
 
-### Вогнутость
+## Вогнутость
 
 Рассмотрим гессиан функции от 3 переменных
 
@@ -47,4 +47,4 @@ $$ \Delta_1 \leqslant 0, \Delta_2 \geqslant 0, \Delta_3 \leqslant 0$$
 
 $$ \Delta_1 \leqslant 0, \Delta_2 \geqslant 0, \Delta_3 \leqslant 0$$
 
-### Квази вогнутость
+## Квази вогнутость
