@@ -1,0 +1,537 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Семинар 1 &#8212; Учебник по Микро 1, для ИП, ФЭН ВШЭ</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">Учебник по Микро 1, для ИП, ФЭН ВШЭ</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../table.html">
+   Содержание учебника
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Программа курса
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_0/principles.html">
+   Принципы
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_0/grades.html">
+   Оценивание
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_0/hours.html">
+   Часы
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_0/module%203.html">
+   Структура третьего модуля
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_0/module%204.html">
+   Структура четвертого модуля
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Первая неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro_1.html">
+   Содержание
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lecture_1_1.html">
+   Первая лекция, часть 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lecture_1_2.html">
+   Первая лекция, часть 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="practice_1.html">
+   Задачи для тренировки
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="homework_1.html">
+   Первое домашнее задание
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Вторая неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_2/intro_2.html">
+   Содержание
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_2/lecture_2_1.html">
+   Вторая лекция, часть 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_2/lecture_2_2.html">
+   Вторая лекция, часть 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_2/practice_2.html">
+   Задачи для тренировки
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Третья неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_3/intro_3.html">
+   Содержание
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_3/lecture_3_1.html">
+   Третья лекция, часть 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_3/lecture_3_2.html">
+   Третья лекция, часть 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_3/practice_3.html">
+   Задачи для тренировки
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Четвертая неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_4/intro_4.html">
+   Содержание
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_4/lecture_4_1.html">
+   Четвертая лекция, часть 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_4/lecture_4_2.html">
+   Четвертая лекция, часть 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_4/practice_4.html">
+   Задачи для тренировки
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Мат. шпаргалка
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../cheetsheet/differentials.html">
+   Дифференциалы
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../cheetsheet/forms.html">
+   Квадратичные формы
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../cheetsheet/approximations.html">
+   Приближения
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/week_1/seminar_1.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#markdown">
+   Про markdown
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   Решение простых задачек на предпочтения
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     Задача 1
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     Задача 2
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id5">
+     Задача 3
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id6">
+     Задача 4
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+     Задача 5
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id8">
+   “Большая” оптимизационная задача
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id9">
+     Задача 6
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="id1">
+<h1>Семинар 1<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p><em>14 января 2022. Провела Яна</em> 🐸</p>
+<div class="section" id="markdown">
+<h2>Про markdown<a class="headerlink" href="#markdown" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><span class="xref myst">Файл</span>, который мы с вами написали на семинаре.</p></li>
+<li><p>Для написания работ можно использовать еще <a class="reference external" href="https://code.visualstudio.com">VSCode</a> (рекомендую - дизайн замечательный). Для экспорта в PDF нужно установить расширение. Например, <a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=yzane.markdown-pdf">это</a>.</p></li>
+<li><p><a class="reference external" href="https://about.gitlab.com/handbook/markdown-guide/#markdown-editors">Гайд</a> по базовому синтаксису на GitLab.</p></li>
+</ul>
+<details>
+<summary>Дополнительно (LaTeX)</summary>
+<ul class="simple">
+<li><p><span class="xref myst">Пример</span> оформления графиков и формул в LaTeX (перейдя по ссылке, вы скачаете файл в формате .tex).</p></li>
+<li><p><a class="reference external" href="https://www.overleaf.com">Онлайн-редактор LaTeX</a> (aka оверлиф)</p></li>
+<li><p>Можно также использовать <a class="reference external" href="https://code.visualstudio.com">VSCode</a>. Для этого надо установить <a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=mathiasfrohlich.latexcompile">расширение</a> в самом VSCode.</p></li>
+<li><p>Также есть вариант скачать <a class="reference external" href="https://www.texstudio.org">Texstudio</a>.</p></li>
+</ul>
+</details>
+</div>
+<div class="section" id="id2">
+<h2>Решение простых задачек на предпочтения<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id3">
+<h3>Задача 1<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>Какие свойства предпочтений отвечают за следующие свойства кривых безразличия (специфицируйте минимально необходимый набор):</p>
+<ul class="simple">
+<li><p>кривые безразличия имеют отрицательный наклон;</p></li>
+<li><p>сдвиг вправо или вверх приводит к переходу на более высокую кривую безразличия;</p></li>
+<li><p>две разные кривые безразличия не пересекаются;</p></li>
+<li><p>через любую точку можно провести кривую безразличия.</p></li>
+</ul>
+</div>
+<div class="section" id="id4">
+<h3>Задача 2<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p>Ординалистская функция полезности агента А имеет вид <span class="math notranslate nohighlight">\(u^A(x_1, x_2) = 29x_1x_2\)</span>, а функция полезности агента B относительно тех же товаров принимает вид <span class="math notranslate nohighlight">\(u^B(x_1, x_2) = 5x_1 + 2x_2\)</span>. В настоящий момент агент A имеет корзину, состоящую из 12 единиц первого товара и 6 единиц второго, а агент B обладает набором <span class="math notranslate nohighlight">\((8; 13)\)</span>.</p>
+<ul class="simple">
+<li><p>Можно ли утверждать, что одному из агентов лучше, чем другому?</p></li>
+<li><p>Верно ли, что поскольку предпочтения агентов различны, то мы не можем определить, предпочитает ли каждый из агентов чужой набор собственному?</p></li>
+</ul>
+</div>
+<div class="section" id="id5">
+<h3>Задача 3<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<p>Индивид потребляет только два блага в количестве <span class="math notranslate nohighlight">\(x\)</span> и <span class="math notranslate nohighlight">\(y\)</span>. Он предпочитает набор <span class="math notranslate nohighlight">\((x',y')\)</span> набору <span class="math notranslate nohighlight">\((x, y)\)</span>, если выполнено одно из двух свойств:</p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(2x'+y' \geqslant 2x+y\)</span>;</p></li>
+<li><p><span class="math notranslate nohighlight">\(2x'+y' = 2x+y\)</span> и <span class="math notranslate nohighlight">\(x'&gt;x\)</span>.</p></li>
+</ol>
+<p>Кроме того, наборы эквивалентны в том и только в том случае, если <span class="math notranslate nohighlight">\(x' = x\)</span> и <span class="math notranslate nohighlight">\(y' = y\)</span>. Обладают ли предпочтения индивида свойствами непрерывности, строгой монотонности, строгой выпуклости?</p>
+</div>
+<div class="section" id="id6">
+<h3>Задача 4<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<p>Рассмотрим лексикографические предпочтения. Являются ли они рациональными, непрерывными? Что можно сказать о <span class="math notranslate nohighlight">\(L_+(x)\)</span> (<em>верхнем Лебеговом множестве</em>) этих предпочтений?</p>
+</div>
+<div class="section" id="id7">
+<h3>Задача 5<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<p>Верно ли, что если множество допустимых альтернатив конечно, и предпочтения рациональны, то существует функция полезности, представляющая эти предпочтения?</p>
+</div>
+</div>
+<div class="section" id="id8">
+<h2>“Большая” оптимизационная задача<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<p>Тут мы потренируемся искать максимум/минимум на компакте (ну и определять сам компакт), запишем функцию Лагранжа, а также посмотрим на окаймленный Гессиан.</p>
+<div class="section" id="id9">
+<h3>Задача 6<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<p>Предположим, восемнадцатилетний индивид столкнулся с двумя ограничениями на неотрецательные <span class="math notranslate nohighlight">\(x\)</span> и <span class="math notranslate nohighlight">\(y\)</span>:</p>
+<ol class="simple">
+<li><p>Можно выбрать максимум 20 единиц <span class="math notranslate nohighlight">\(x\)</span> или 10 единиц <span class="math notranslate nohighlight">\(y\)</span>, или любую их линейную комбинацию;</p></li>
+<li><p>Мама запрещает ему употреблять <span class="math notranslate nohighlight">\(x\)</span> больше 15 единиц, или <span class="math notranslate nohighlight">\(y\)</span> больше 15 единиц, или любую их линейную комбинацию.</p></li>
+</ol>
+<p>Ответьте на следующие вопросы для каждой функции полезности, указанной в конце задачи.</p>
+<ul class="simple">
+<li><p>Определите, является ли множество доступных индивиду <span class="math notranslate nohighlight">\(x\)</span> и <span class="math notranslate nohighlight">\(y\)</span> компактом.</p></li>
+<li><p>Определите, удовлетворяет ли безусловный максимум функции полезности перечисленным выше ограничениям. Если нет, то какой выбор (сколько <span class="math notranslate nohighlight">\(x\)</span> и <span class="math notranslate nohighlight">\(y\)</span>) стоит сделать индивиду?</p></li>
+<li><p>Запишите функцию Лагранжа для данной оптимизационной задачи (<em>на семинаре рассмотрим только для третьей функции полезности</em>).</p></li>
+<li><p>Выпишите окаймленный Гессиан (<em>на семинаре рассмотрим только для третьей функции полезности</em>)..</p></li>
+</ul>
+<p>Функции полезности:</p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(U(x, y)=-(x-5)^2+(y-5)^2\)</span>;</p></li>
+<li><p><span class="math notranslate nohighlight">\(U(x, y)=-(x-10)^2+(y-5)^2\)</span>;</p></li>
+<li><p><span class="math notranslate nohighlight">\(U(x, y)=x+2\log y\)</span></p></li>
+</ol>
+</div>
+<details>
+    <summary>Решение</summary>
+</details>
+<details>
+    <summary>Пример оформления оптимизационной задачи в markdown</summary>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>```
+
+```
+</pre></div>
+</div>
+</details></div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./week_1"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By Паша Андреянов<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
