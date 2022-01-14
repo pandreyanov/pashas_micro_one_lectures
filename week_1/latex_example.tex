@@ -1,0 +1,222 @@
+\documentclass[twoside,leqno]{article} 
+
+\usepackage{cmap}
+\usepackage{graphicx} 
+\usepackage{wrapfig}
+\usepackage{lastpage}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{braket}
+\usepackage{verbatim}
+\usetikzlibrary{arrows}
+\usetikzlibrary{calc,positioning,fit,backgrounds}
+\usepackage{amsmath} 
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}	
+\usepackage[english,russian]{babel}
+\usepackage{geometry} 
+\geometry{top=15mm}
+\geometry{bottom=15mm}
+\geometry{left=15mm}
+\geometry{right=15mm}	
+\usepackage{amssymb}
+\usepackage{icomma} 
+\usepackage{multirow}
+\usepackage{mathtext} 
+\usepackage{mathrsfs}
+\usepackage{mathtools}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0,04mm}
+
+ \usepackage{color,hyperref}
+ \usepackage{breakurl}
+ \definecolor{darkblue}{rgb}{0.0,0.0,0.3}
+ \definecolor{medblue}{rgb}{0.0,0.0,0.6}
+ \definecolor{darkgreen}{rgb}{0.0,0.3,0.0}
+ \definecolor{medgreen}{rgb}{0.0,0.6,0.0}
+ \definecolor{darkred}{rgb}{0.3,0.0,0.0}
+ \definecolor{medred}{rgb}{0.6,0.0,0.0}
+
+\usepackage{caption}
+\newenvironment{Figure}
+ {\par\medskip\noindent\minipage{\linewidth}}
+ {\endminipage\par\medskip}
+\usepackage{hyperref}
+\usepackage{mathtext} 
+\usepackage{multicol}
+\rhead{Исследовательский поток}
+\lhead{Микроэкономика - 1}
+%\chead{\date{\today}} 
+\cfoot{\thepage} 
+\makeatletter % сделать "@" "буквой", а не "спецсимволом" - можно использовать "служебные" команды, содержащие @ в названии
+\renewcommand{\headrulewidth}{0,6mm} 
+
+\renewcommand{\maketitle}{\begin{center}
+		\noindent{\bfseries\scshape\LARGE\@title}\par
+		\noindent {\large\itshape\@author}
+		\vskip 2ex\end{center}}
+\makeatother
+	
+\author{Яна Коротова}
+\title{Домашнее задание №1}
+
+\begin{document}
+	\maketitle
+\section{Два отдельных графика}
+
+	\begin{multicols}{2}
+			\begin{tikzpicture}[
+				scale=5,
+				axis/.style={thick, ->, >=stealth'},
+				il/.style={thin},
+				il 1/.style={very thick},
+				d/.style={dashed, thin},
+				pile/.style={thick, ->, >=stealth', shorten <=2pt, shorten
+					>=2pt},
+				every node/.style={color=black}
+				]
+				% axis
+				\draw[axis] (-0.05,0)  -- (.9,0) node(xline)[right] {$x$};
+				\draw[axis] (0,-0.05) -- (0,.9) node(yline)[above] {$y$};
+				% Lines
+				\draw[il] (0,.48) node[left]{$200$} coordinate (a1) -- (.72,0) node[below]{$300$} coordinate (a2)
+				(.48,0) node[below]{$200$} coordinate (b1) -- (0,.72) node[left]{$300$} coordinate (b2);
+				\filldraw (.7,.2) node{КПВ F}
+				(.2,.7) node{КПВ H};
+				\end{tikzpicture} \\
+				\begin{tikzpicture}[
+					scale=5,
+					axis/.style={thick, ->, >=stealth'},
+					il/.style={thin},
+					il 1/.style={very thick},
+					d/.style={dashed, thin},
+					pile/.style={thick, ->, >=stealth', shorten <=2pt, shorten
+						>=2pt},
+					every node/.style={color=black}
+					]
+					% axis
+					\draw[axis] (-0.05,0)  -- (.9,0) node(xline)[right] {$x$};
+					\draw[axis] (0,-0.05) -- (0,.9) node(yline)[above] {$y$};
+					% Lines
+					\draw[il] (0,.8) node[left]{$500$} -- (.48,.48) -- (.8,0) node[below]{$500$};
+					\draw[d] (.48,.48) -- (0,.48) node[left]{$300$}
+					(.48,0) node[below]{$300$} -- (.48,.48); 
+					\filldraw (.33,.73) node{$P^W=\cfrac{2}{3}$}
+					(.77,.32) node{$P^W=\cfrac{3}{2}$};
+					\end{tikzpicture} 
+		\end{multicols}
+\section{Связанные между собой графики}	
+
+\begin{tikzpicture}[
+	scale=5,
+	axis/.style={thick, ->, >=stealth'},
+	il/.style={thin},
+	il 1/.style={very thick},
+	d/.style={dashed, thin},
+	pile/.style={thick, ->, >=stealth', shorten <=2pt, shorten
+		>=2pt},
+	every node/.style={color=black}
+	]
+	% axis 1
+	\draw[axis] (-0.05,0)  -- (1,0) node(xline)[right] {$q$};
+	\draw[axis] (0,-0.05) -- (0,1) node(yline)[align=center, below, left] {$LAC$\\
+	$MC$ \\
+	$P$};
+	% Lines 1
+	\draw[il] (0,0) -- (.8,.8) node[above]{$MC$}
+	(.08,.9) node[right]{$LAC_1$} .. controls (.32,.25) .. (.9,.7);
+	\draw[d] (.385,.385) coordinate (1) -- (.385,0) node[below]{$q_1$}
+	(1) -- (0,.385) node[below, left]{$P^b_1$}
+	(1) -- (2.385,.385);
+	% axis 2
+	\draw[axis] (1.95,0)  -- (3,0) node(xline)[right] {$q$};
+	\draw[axis] (2,-0.05) -- (2,1) node(yline)[align=center, below, left] {$LAC$\\
+	$MC$ \\
+	$P$};
+	% Lines 2
+	\draw[il] (2,0) -- (2.8,.8) node[above]{$MC$}
+	(2.07,.8) node[right]{$LAC_2$} .. controls (2.22,.17) .. (2.9,.6);
+	\draw[d] (2.3,.3) coordinate (2) -- (2.3,0) node[below]{$q_2$}
+	(2) -- (2,.3) node[below left]{$P^b_2$}
+	(2,.3) -- (0,.3);
+\end{tikzpicture} \\
+
+\section{Пример формул}
+
+\[
+\begin{cases}
+	q_1=\cfrac{1}{\beta+2\gamma} \cdot \left(\alpha -p_1\cdot \cfrac{\beta+\gamma}{\beta-\gamma}+p_2\cdot \cfrac{\gamma}{\beta-\gamma}+p_3\cdot \cfrac{\gamma}{\beta-\gamma}\right)\\
+	q_2=\cfrac{1}{\beta+2\gamma} \cdot \left(\alpha +p_1\cdot \cfrac{\gamma}{\beta-\gamma}-p_2\cdot \cfrac{\beta+\gamma}{\beta-\gamma}+p_3\cdot \cfrac{\gamma}{\beta-\gamma} \right) \\
+	q_3=\cfrac{1}{\beta+2\gamma} \cdot \left(\alpha +p_1\cdot \cfrac{\gamma}{\beta-\gamma}+p_2\cdot \cfrac{\gamma}{\beta-\gamma}-p_3\cdot \cfrac{\beta+\gamma}{\beta-\gamma} \right)
+\end{cases}	
+\]
+
+Формулы также можно писать внутри 
+
+$$ 
+F(x, y) = x^2+\log y,
+$$
+
+или внутри строки $F(x, y) = x^2+\log y$.
+
+Вот вам еще матрицы:
+
+\[\det \begin{pmatrix}
+    1 & -1 & 0  \\
+    \gamma & \beta & \gamma \\
+    0 & -1 & 1 
+\end{pmatrix}=\beta+2\gamma  \]
+
+\section{Пример таблицы}
+
+\begin{center}
+    \begin{tabular}{cc|c|c|c|c|}
+        \cline{3-6}
+        & & \multicolumn{4}{c|}{$p_b$} \\ 
+        \cline{3-6} 
+        & & $[80;100]$ & $[60;80]$ & $[30;60]$ & $[0;30]$ \\
+        \hline 
+        \multicolumn{1}{|c||}{\multirow{4}{*}{$p_a$} } &\multicolumn{1}{ c| }{$[80;100]$} & $p_a+p_b-20$ & $p_a+2p_b-30$ & $p_a+3p_b-40$ & $p_a+4p_b-50$ \\ \cline{2-6}
+        \multicolumn{1}{|c||}{} &\multicolumn{1}{ c| }{$[60;80]$} & $2p_a+p_b-30$ & $2p_a+2p_b-40$ &$2p_a+3p_b-50$ & $2p_a+4p_b-60$ \\ \cline{2-6}
+        \multicolumn{1}{|c||}{} &\multicolumn{1}{ c| }{$[30;60]$} & $3p_a+p_b-40$ & $3p_a+2p_b-50$ & $3p_a+3p_b-60$& $3p_a+4p_b-70$ \\ \cline{2-6}
+        \multicolumn{1}{|c||}{} &\multicolumn{1}{ c| }{$[0;30]$} & $4p_a+p_b-50$ & $4p_a+2p_b-60$ & $4p_a+3p_b-70$ & $4p_a+4p_b-80$\\ \hline
+    \end{tabular}
+\end{center}
+
+\section{Advanced}
+
+Можно также задавать конкретные функции:
+
+\begin{Figure}
+	\centering
+	\begin{tikzpicture}
+		\tikzset{                                         % for optional style
+		every pin/.style={circle, scale=1, pin distance=10pt, inner sep=0pt,  font=\footnotesize},
+		small dot/.style={fill=black, circle, scale=0.3}}
+		\begin{axis}[      
+			width=.5\textwidth,
+			height=0.45\textwidth,
+			domain=0:1,ymin=0,ymax=1.1,samples=90,legend pos=north east,
+			no marks,
+		legend entries={%$\mu=0.9$, 
+		$\mu = 0.6$, $\mu=0.3$, $\mu=0$}
+		,title style={at={(0.5,-0.3)},anchor=south,yshift=-0.1},
+		xmajorgrids=true,
+		ymajorgrids=true,
+		grid style=dashed,
+		xlabel = $\alpha$,
+		ylabel=$c$,]
+		%\addplot[green] {\x / (0.1+0.38*\x)};
+		\addplot[medred] {0.38*\x / (0.4+0.38*\x)};
+		\addplot[medblue] {0.38*\x / (0.7+0.38*\x)};
+		\addplot[medgreen] {0.38*\x / (1+0.38*\x)};
+		%\node[small dot, pin=right:{$\gamma=\widetilde{\gamma}$}] at (axis cs: 0.8,0.4){};
+		\end{axis}
+		\end{tikzpicture}
+	% \captionof{figure}{$\eta =0.38$} 
+\end{Figure}
+
+\end{document}
