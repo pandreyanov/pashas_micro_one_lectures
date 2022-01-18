@@ -1,0 +1,132 @@
+\documentclass{beamer}
+\usepackage[russian]{babel}
+\usetheme{metropolis}
+
+\usepackage{amsthm}
+\setbeamertemplate{theorems}[numbered]
+
+\setbeamercolor{block title}{use=structure,fg=white,bg=gray!75!black}
+\setbeamercolor{block body}{use=structure,fg=black,bg=gray!20!white}
+
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\usepackage{hyphenat}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+\AtBeginEnvironment{proof}{\renewcommand{\qedsymbol}{}}{}{}
+
+\title{
+Микроэкономика-I
+}
+\author{
+Павел Андреянов, PhD
+}
+
+\begin{document}
+
+\maketitle
+
+\section{Кобб Дуглас}
+
+\begin{frame}{Кобб Дуглас}
+
+\begin{definition}
+Полезностью Кобб-Дугласа называется:
+$$U(x, y) = x^{\alpha} y^{1-\alpha}, \quad \alpha \in (0,1)$$  
+\end{definition}
+
+Вспомним, что монотонные преобразования полезности не меняют поведение потребителя. Тогда можно применить логарифм и получить:
+$$ U(x, y) = \alpha \log x + (1-\alpha) \log y, \quad \alpha \in (0,1).$$ 
+Заметим, что эта функция вогнута!!! 
+\end{frame}
+
+\begin{frame}{Кобб Дуглас}
+
+Выпишем Лагранжиан:
+$$ \mathcal{L} = \alpha \log x + (1-\alpha) \log y - \lambda (px + qy -I).$$ 
+
+Заметим, что я выставляю знак минус так, чтобы у множителя Лагранжа была интерпретация теневой цены выхода за бюджетное ограничение. Это нам пригодится в следующей лекции, а сейчас просто постарайтесь запомнить.
+\end{frame}
+
+\begin{frame}{Кобб Дуглас}
+
+Бездумно выпишем три уравнения:
+
+$\mathcal{L}'_x = \alpha/ x - \lambda p = 0$
+
+$\mathcal{L}'_y = (1-\alpha)/y - \lambda q = 0$
+
+$\mathcal{L}'_{\lambda} = I - p x - qy = 0$
+
+Легко видеть, что они эквивалентны
+
+$\alpha - \lambda p x= 0$
+
+$(1-\alpha) - \lambda q y= 0$
+
+$px + qy - I = 0$
+
+\end{frame}
+
+\begin{frame}{Кобб Дуглас}
+
+Обозначим доли бюджета потраченные на $x$ и $y$ как $s_x= px$ и $s_y = qy$ соответственно, и умножим последнее уравнение на $\lambda$. 
+
+Тогда уравнения становятся еще проще:
+
+$\alpha = \lambda s_x$
+
+$(1-\alpha) = \lambda s_y$
+
+$\lambda s_x + \lambda s_y = \lambda I$
+
+Эту систему можно уже решить в уме. 
+
+Получается, что теневая цена равна $\lambda = 1/I$, а доли бюджета потраченные на каждый товар постоянны и равны $\alpha$ и $1-\alpha$.
+
+Это интуитивно?
+
+\end{frame}
+
+\begin{frame}{Кобб Дуглас}
+
+Пусть полезность имеет следующий вид:
+$$U(x,y,z) = \alpha \log x + \beta \log y + \gamma \log z$$ 
+а цены равны $p, q, r$ соответственно.
+
+Спрос на каждый товар в Кобб-Дугласе описывается следующими уравнениями:
+\begin{gather*}
+x^{\ast} = \frac{\alpha}{\alpha + \beta + \gamma} \frac{I}{p}, \quad
+y^{\ast} = \frac{\alpha}{\alpha + \beta + \gamma} \frac{I}{q}, \quad
+z^{\ast} = \frac{\alpha}{\alpha + \beta + \gamma} \frac{I}{r}
+\end{gather*}
+
+Такое лучше запомнить наизусть. Также, постарайтесь ответить, являются ли такие товары нормальными, комплементами или субститутами.
+
+\end{frame}
+
+\begin{frame}{Кобб Дуглас}
+
+Нампомним, что косвенная полезность чувствительна к монотонным преобразованиям, поэтому тут важно какая именно спецификация была изначально дана в задаче. 
+
+Для простоты давайте считать, что это спецификация в логарифмах.
+
+Сосчитаем логарифм спроса на первый товар:
+$$\log x^{\ast} = \log \alpha - \log (\alpha + \beta + \gamma) + \log I - \log p$$
+Аналогично считается логарифм спроса на другие товары. Теперь надо просто подставить их в полезность.
+
+\end{frame}
+
+\begin{frame}{Кобб Дуглас}
+
+Косвенная полезность в Кобб-Дугласе (с точностью до преобразования) имеет вид
+$$V(p,q,r,I) = (\alpha + \beta + \gamma) \log I - \alpha \log p - \beta \log q - \gamma \log r + C $$
+Константы $C$ можно, как правило, не выписывать так как они исчезнут при первой же попытке продифференцировать.
+
+\end{frame}
+
+\section{Конец}
+
+\end{document}
