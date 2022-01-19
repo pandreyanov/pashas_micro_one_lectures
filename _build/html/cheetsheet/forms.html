@@ -150,6 +150,11 @@
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="../week_1/seminar_1.html">
+   Семинар 1
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="../week_1/practice_1.html">
    Задачи для тренировки
   </a>
@@ -418,17 +423,16 @@ f'_{y} &amp; f''_{yx} &amp; f''_{yy} &amp; f''_{yz} \\
 f'_{z} &amp; f''_{zx} &amp; f''_{zy} &amp; f''_{zz}
 \end{pmatrix}
 \end{split}\]</div>
-<p>Миноров тут будет на один больше чем в не окаймленном случае:</p>
+<p>Миноров тут будет на один больше чем в не окаймленном случае, но считать надо от второго, иначе достаточные условия никогда не будут выполнены:</p>
 <div class="math notranslate nohighlight">
-\[ \Delta_1 = 0 \cdot f''_{xx} -(f'_{x})^2, \quad \ldots\]</div>
-<p>являющиеся определителями расширяющихся матриц, начиная с левого верхнего угла.</p>
-<p>Необходимым условием для квази вогнутости функции является то, что главные миноры имеют чередующиеся знаки, начиная с первого, который должен быть (нестрого) отрицательным:</p>
+\[ \Delta_2 = 0 \cdot f''_{xx} -(f'_{x})^2, \quad \ldots\]</div>
+<p>Необходимым условием для квази вогнутости функции является то, что главные миноры имеют чередующиеся знаки, начиная со второго, который должен быть (нестрого) отрицательным:</p>
 <div class="math notranslate nohighlight">
-\[ \Delta_1 \leqslant 0, \quad \Delta_2 \geqslant 0, \quad \Delta_3 \leqslant 0,  \quad \ldots\]</div>
+\[ \Delta_2 \leqslant 0, \quad \Delta_3 \geqslant 0, \quad \Delta_4 \leqslant 0,  \quad \ldots\]</div>
 <p>Обратите внимание, что первое условие всегда автоматически выполнено.</p>
 <p>Достаточным условием для квази вогнутости функции является то, что главные миноры имеют чередующиеся знаки, начиная с первого, который должен быть (строго) отрицательным:</p>
 <div class="math notranslate nohighlight">
-\[ \Delta_1 &lt; 0, \quad \Delta_2 &gt; 0, \quad \Delta_3 &lt; 0, \quad \ldots\]</div>
+\[ \Delta_2 &lt; 0, \quad \Delta_3 &gt; 0, \quad \Delta_4 &lt; 0, \quad \ldots\]</div>
 </div>
 </div>
 </div>
