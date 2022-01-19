@@ -77,8 +77,8 @@ $$U(x,y,z) = \alpha \log x + \beta \log y + \gamma \log z$$
 $$ 
 \begin{gather*}
 x^{\ast} = \frac{\alpha}{\alpha + \beta + \gamma} \frac{I}{p}, \\
-y^{\ast} = \frac{\alpha}{\alpha + \beta + \gamma} \frac{I}{q}, \\
-z^{\ast} = \frac{\alpha}{\alpha + \beta + \gamma} \frac{I}{r}
+y^{\ast} = \frac{\beta}{\alpha + \beta + \gamma} \frac{I}{q}, \\
+z^{\ast} = \frac{\gamma}{\alpha + \beta + \gamma} \frac{I}{r}
 \end{gather*}
 $$ 
 
