@@ -15,11 +15,13 @@
 >
 >   <summary> Тут спрятался пёсик </summary>
 > 
+
 :::{image} ./dog.png
 :alt: Винни
 :width: 400px
 :align: center
 :::
+
 >
 ></details>
 
