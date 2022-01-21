@@ -23,7 +23,7 @@ parts:
     - file: week_1/seminar_1
     - file: week_1/practice_1
     - file: week_1/homework_1
-- caption: Вторая неделя
+- caption: Вторая неделя поправка
   chapters:
     - file: week_2/intro_2
     - file: week_2/lecture_2_1
