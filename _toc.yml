@@ -28,7 +28,7 @@ parts:
     - file: week_2/intro_2
     - file: week_2/lecture_2_1
     - file: week_2/lecture_2_2
-    - file: week_1/seminar_2
+    - file: week_2/seminar_2
     - file: week_2/practice_2
 - caption: Третья неделя
   chapters:
