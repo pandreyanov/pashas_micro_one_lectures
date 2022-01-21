@@ -42,9 +42,9 @@
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe"
@@ -56,7 +56,7 @@
     <script>mermaid.initialize({startOnLoad:true});</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Задачи для тренировки" href="practice_1.html" />
+    <link rel="next" title="Семинар 1" href="seminar_1.html" />
     <link rel="prev" title="Первая лекция, часть 1" href="lecture_1_1.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -150,6 +150,11 @@
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="seminar_1.html">
+   Семинар 1
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="practice_1.html">
    Задачи для тренировки
   </a>
@@ -182,6 +187,11 @@
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="../week_2/seminar_2.html">
+   Семинар 2
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="../week_2/practice_2.html">
    Задачи для тренировки
   </a>
@@ -211,11 +221,6 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../week_3/practice_3.html">
    Задачи для тренировки
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../week_3/homework_3.html">
-   Второе домашнее задание
   </a>
  </li>
 </ul>
@@ -313,7 +318,7 @@
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
 </div>
 
@@ -331,7 +336,7 @@
         </div>
 
         <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
@@ -385,7 +390,64 @@
 </div>
     <div id="main-content" class="row">
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-        
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Первая лекция, часть 2</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   Начала оптимизации
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     Существование решений
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id4">
+   Условия первого порядка
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id5">
+   Условия второго порядка
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id6">
+   Выпуклые задачи
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id7">
+   Линии уровня
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id8">
+     Зачем нужны линии уровня?
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
               <div>
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="id1">
@@ -402,48 +464,48 @@
 <p class="admonition-title"><span class="caption-number">Example 4 </span></p>
 <div class="example-content section" id="proof-content">
 <div class="tabbed-set docutils">
-<input checked="checked" id="6b7a68f6-c19b-4647-9952-532466802384" name="adb8b374-f033-4f73-a5cd-84f24e30f5f0" type="radio">
-</input><label class="tabbed-label" for="6b7a68f6-c19b-4647-9952-532466802384">
+<input checked="checked" id="6a56fdbb-fb36-496d-ba48-76a420eb4f87" name="75644428-40e1-44a3-973f-eea0f588b26b" type="radio">
+</input><label class="tabbed-label" for="6a56fdbb-fb36-496d-ba48-76a420eb4f87">
 A</label><div class="tabbed-content docutils">
 <p>Парабола рогами вниз на отрезке от -1 до 1</p>
 <div class="math notranslate nohighlight">
 \[ -x^2 \to \max_{x \in [-1,1]}\]</div>
 <p>Достигает максимума в точке 0.</p>
 </div>
-<input id="d1eff347-270d-44e6-bb59-9159747058bb" name="adb8b374-f033-4f73-a5cd-84f24e30f5f0" type="radio">
-</input><label class="tabbed-label" for="d1eff347-270d-44e6-bb59-9159747058bb">
+<input id="58e0f6e6-8c25-48f1-935e-77d920ded181" name="75644428-40e1-44a3-973f-eea0f588b26b" type="radio">
+</input><label class="tabbed-label" for="58e0f6e6-8c25-48f1-935e-77d920ded181">
 B</label><div class="tabbed-content docutils">
 <p>Парабола рогами вниз на отрезке от -2 до -1</p>
 <div class="math notranslate nohighlight">
 \[ -x^2 \to \max_{x \in [-2,-1]}\]</div>
 <p>Достигает максимума в точке -1.</p>
 </div>
-<input id="838bbaf5-febf-41cd-a855-f1083a8b6d34" name="adb8b374-f033-4f73-a5cd-84f24e30f5f0" type="radio">
-</input><label class="tabbed-label" for="838bbaf5-febf-41cd-a855-f1083a8b6d34">
+<input id="3f9538e6-b332-4cdc-bae6-c5a10609b7fe" name="75644428-40e1-44a3-973f-eea0f588b26b" type="radio">
+</input><label class="tabbed-label" for="3f9538e6-b332-4cdc-bae6-c5a10609b7fe">
 C</label><div class="tabbed-content docutils">
 <p>Парабола рогами вверх на отрезке от -1 до 1</p>
 <div class="math notranslate nohighlight">
 \[ x^2 \to \max_{x \in [-1,1]}\]</div>
 <p>Достигает максимума в точкax -1 и 1.</p>
 </div>
-<input id="cd1e410b-1658-4723-af7a-8ead9d37c9d9" name="adb8b374-f033-4f73-a5cd-84f24e30f5f0" type="radio">
-</input><label class="tabbed-label" for="cd1e410b-1658-4723-af7a-8ead9d37c9d9">
+<input id="2f50358c-f66f-4dfd-9793-43c9b27a3235" name="75644428-40e1-44a3-973f-eea0f588b26b" type="radio">
+</input><label class="tabbed-label" for="2f50358c-f66f-4dfd-9793-43c9b27a3235">
 D</label><div class="tabbed-content docutils">
 <p>Парабола рогами вверх на отрезке от -1 до 1</p>
 <div class="math notranslate nohighlight">
 \[ x^2 \to \max_{x \in [-1,1]}\]</div>
 <p>Достигает максимума в точкax -1 и 1.</p>
 </div>
-<input id="063f8281-d770-480e-a4f5-9e4898f76588" name="adb8b374-f033-4f73-a5cd-84f24e30f5f0" type="radio">
-</input><label class="tabbed-label" for="063f8281-d770-480e-a4f5-9e4898f76588">
+<input id="5b34d4c7-5f4d-45bc-bbce-f54d21585e3d" name="75644428-40e1-44a3-973f-eea0f588b26b" type="radio">
+</input><label class="tabbed-label" for="5b34d4c7-5f4d-45bc-bbce-f54d21585e3d">
 E</label><div class="tabbed-content docutils">
 <p>Парабола рогами вверх на всей числовой прямой</p>
 <div class="math notranslate nohighlight">
 \[ x^2 \to \max_{x \in \mathbb{R}}\]</div>
 <p>Не достигает своего максимума, вообще.</p>
 </div>
-<input id="a6203ea0-6006-40b8-92cf-97fee472cb64" name="adb8b374-f033-4f73-a5cd-84f24e30f5f0" type="radio">
-</input><label class="tabbed-label" for="a6203ea0-6006-40b8-92cf-97fee472cb64">
+<input id="dd45dd21-026d-49a3-bbca-79d9ff5ce156" name="75644428-40e1-44a3-973f-eea0f588b26b" type="radio">
+</input><label class="tabbed-label" for="dd45dd21-026d-49a3-bbca-79d9ff5ce156">
 F</label><div class="tabbed-content docutils">
 <p>Парабола рогами вверх на интервале от -1 до 1</p>
 <div class="math notranslate nohighlight">
@@ -519,8 +581,8 @@ A -- no --&gt; C[ищем на границе...];
 <p class="admonition-title"><span class="caption-number">Example 5 </span></p>
 <div class="example-content section" id="proof-content">
 <div class="tabbed-set docutils">
-<input checked="checked" id="c0500dd1-4d91-4ac6-8fd1-e452c8b3f329" name="caaed105-66bc-421f-88c3-7852aa6864e8" type="radio">
-</input><label class="tabbed-label" for="c0500dd1-4d91-4ac6-8fd1-e452c8b3f329">
+<input checked="checked" id="982a6004-6e1c-4be8-866d-db3c7f40b42f" name="0a92b29a-020b-49e3-9054-554f1c057100" type="radio">
+</input><label class="tabbed-label" for="982a6004-6e1c-4be8-866d-db3c7f40b42f">
 Линейная</label><div class="tabbed-content docutils">
 <p>Рассмотрим полезность вида: <span class="math notranslate nohighlight">\(U(x, y) = ax + by\)</span>. Тогда линия уровня ищется следующим образом:</p>
 <div class="math notranslate nohighlight">
@@ -533,8 +595,8 @@ y = \frac{c-ax}{b}
 \end{split}\]</div>
 <p>Линия уровня это прямая вида <span class="math notranslate nohighlight">\(y = \alpha x + \beta\)</span>.</p>
 </div>
-<input id="8985de41-e745-4be8-bcb7-48fd7091479a" name="caaed105-66bc-421f-88c3-7852aa6864e8" type="radio">
-</input><label class="tabbed-label" for="8985de41-e745-4be8-bcb7-48fd7091479a">
+<input id="549d1a17-6816-47bb-9053-c0a4ebf67b7f" name="0a92b29a-020b-49e3-9054-554f1c057100" type="radio">
+</input><label class="tabbed-label" for="549d1a17-6816-47bb-9053-c0a4ebf67b7f">
 Гиперболическая</label><div class="tabbed-content docutils">
 <p>Рассмотрим полезность вида: <span class="math notranslate nohighlight">\(U(x, y) = a \log x + \log y\)</span>. Тогда линия уровня ищется следующим образом:</p>
 <div class="math notranslate nohighlight">
@@ -547,8 +609,8 @@ y =\frac{e^{c}}{x^a}
 \end{split}\]</div>
 <p>Линия уровня это гипербола вида <span class="math notranslate nohighlight">\(y = x^\alpha \beta\)</span>.</p>
 </div>
-<input id="44c5da6f-428a-4afa-bce2-04b9578900bf" name="caaed105-66bc-421f-88c3-7852aa6864e8" type="radio">
-</input><label class="tabbed-label" for="44c5da6f-428a-4afa-bce2-04b9578900bf">
+<input id="cece3228-3aa4-40e1-a31d-3d541d82bf19" name="0a92b29a-020b-49e3-9054-554f1c057100" type="radio">
+</input><label class="tabbed-label" for="cece3228-3aa4-40e1-a31d-3d541d82bf19">
 Полезность минимум</label><div class="tabbed-content docutils">
 <p>Рассмотрим полезность вида: <span class="math notranslate nohighlight">\(U(x, y) = \min(ax, by)\)</span>. Тогда линия уровня ищется следующим образом:</p>
 <div class="math notranslate nohighlight">
@@ -595,8 +657,8 @@ y = \frac{c}{b} \mathbb{I}(ax &gt; c), \quad x = \frac{c}{a} \mathbb{I}(by &gt; 
 
               </div>
               
-        
-            <!-- Previous / next buttons -->
+            
+                <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
     <a class='left-prev' id="prev-link" href="lecture_1_1.html" title="previous page">
         <i class="fas fa-angle-left"></i>
@@ -605,27 +667,25 @@ y = \frac{c}{b} \mathbb{I}(ax &gt; c), \quad x = \frac{c}{a} \mathbb{I}(by &gt; 
             <p class="prev-next-title">Первая лекция, часть 1</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="practice_1.html" title="next page">
+    <a class='right-next' id="next-link" href="seminar_1.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Задачи для тренировки</p>
+        <p class="prev-next-title">Семинар 1</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-        
+            
         </div>
     </div>
     <footer class="footer">
-    <div class="container">
-      <p>
-        
-          By Паша Андреянов<br/>
-        
-            &copy; Copyright 2021.<br/>
-      </p>
-    </div>
-  </footer>
+  <p>
+    
+      By Паша Андреянов<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
 </main>
 
 
