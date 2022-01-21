@@ -5,16 +5,18 @@ title: Учебник по Микро 1, для ИП, ФЭН ВШЭ
 author: Паша Андреянов
 # logo: logo.png
 
-launch_buttons:
-  colab_url: "https://colab.research.google.com"
+#launch_buttons:
+#  colab_url: "https://colab.research.google.com"
 
-options:
-  numbered: true
+#options:
+#  numbered: true
+
+only_build_toc_files: true
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
-execute:
-  execute_notebooks: force
+#execute:
+#  execute_notebooks: force
 
 # Define the name of the latex output file for PDF builds
 latex:
@@ -39,6 +41,6 @@ sphinx:
 
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/pandreyanov.github.io/pashas_micro_one_lectures  # Online location of your book
-  #path_to_book: docs  # Optional path to your book, relative to the repository root
-  #branch: master  # Which branch of the repository should be used when creating links (optional)
+  url: https://github.com/pandreyanov.github.io/pashas_micro_one_lectures  # Online location of your #book
+#  #path_to_book: docs  # Optional path to your book, relative to the repository root
+#  #branch: master  # Which branch of the repository should be used when creating links (optional)
