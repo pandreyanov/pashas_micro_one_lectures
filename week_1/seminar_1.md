@@ -3,14 +3,14 @@
 
 ## Про markdown
 
-* [Файл](), который мы с вами написали на семинаре.
+* Файл, который мы с вами написали на семинаре.
 * Для написания работ можно использовать еще [VSCode](https://code.visualstudio.com) (рекомендую - дизайн замечательный). Для экспорта в PDF нужно установить расширение. Например, [это](https://marketplace.visualstudio.com/items?itemName=yzane.markdown-pdf).
 * [Гайд](https://about.gitlab.com/handbook/markdown-guide/#markdown-editors) по базовому синтаксису на GitLab.
 
 <details>
 <summary>Дополнительно (LaTeX)</summary>
 
-* [Пример]() оформления графиков и формул в LaTeX (перейдя по ссылке, вы скачаете файл в формате .tex).
+* Пример оформления графиков и формул в LaTeX (перейдя по ссылке, вы скачаете файл в формате .tex).
 * [Онлайн-редактор LaTeX](https://www.overleaf.com) (aka оверлиф)
 * Можно также использовать [VSCode](https://code.visualstudio.com). Для этого надо установить [расширение](https://marketplace.visualstudio.com/items?itemName=mathiasfrohlich.latexcompile) в самом VSCode.
 * Также есть вариант скачать [Texstudio](https://www.texstudio.org).
