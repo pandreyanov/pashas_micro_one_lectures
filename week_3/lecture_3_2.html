@@ -755,9 +755,8 @@ a = V(a,b,c) = \max_{x,y} a-a(x-b)^2 - (y-c)^2 \Rightarrow \\
 <div class="theorem-content section" id="proof-content">
 <p>Если полезность локально ненасыщаема в <span class="math notranslate nohighlight">\(\mathbb{R}^n_{+}\)</span>, то любое из решений задачи максимизации полезности всегда лежит на бюджетном ограничении.</p>
 </div>
-</div><p>Это утверждение доказывается от противного, но я предпочитаю интерпретировать его так: у локально ненасыщаемой в <span class="math notranslate nohighlight">\(\mathbb{R}^n_{+}\)</span> полезности, в любой точке есть направление роста, указывающее внутрь <span class="math notranslate nohighlight">\(\mathbb{R}^n_{+}\)</span>. Поэтому, если бюджетное ограничение убрать, можно бесконечно подниматься по этому направлению и никогда не достигнуть оптимума. Единственное, что может остановить градиентный подъем - бюджетная линия, см. иллюстрацию.</p>
-<a class="reference internal image-reference" href="../_images/gr_desc.png"><img alt="Градиентный подьем" class="align-center" src="../_images/gr_desc.png" style="width: 400px;" /></a>
-<p>Соответственно, решение всегда лежит на бюджетной линии. Осталось убедиться, что для любого <span class="math notranslate nohighlight">\(I\)</span> найдется <span class="math notranslate nohighlight">\(\bar U\)</span> и наоборот.</p>
+</div><p>Это утверждение доказывается от противного, следующим образом. Пусть решение находится в бюджетном множестве, но не на бюджетной линии. Тогда существует точка в его окрестности, которая также содержится в бюджетном множестве (поскольку локальная ненасыщаемость именно в <span class="math notranslate nohighlight">\(\mathbb{R}^n_{+}\)</span>), но дает большую полезность. Противоречие.</p>
+<p>Соответственно, мы убедились, что решение всегда лежит на бюджетной линии. Осталось убедиться, что для любого <span class="math notranslate nohighlight">\(I\)</span> найдется <span class="math notranslate nohighlight">\(\bar U\)</span> и наоборот.</p>
 </div>
 <div class="section" id="id12">
 <h3>Хиксианский и Маршалианский спрос<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
