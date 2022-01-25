@@ -1,0 +1,2 @@
+\babel@toc {russian}{}
+\beamer@sectionintoc {1}{Тождество Роя}{2}{0}{1}
