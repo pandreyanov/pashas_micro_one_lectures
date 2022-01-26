@@ -575,7 +575,7 @@
 <h2>Тождество Роя<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <p>Мы хотим связать между собой три объекта: <span class="math notranslate nohighlight">\(x^{\ast}(p,q,I), y^{\ast}(p,q,I)\)</span> и  <span class="math notranslate nohighlight">\(V^{\ast}(p,q,I)\)</span>. Для этого мы воспользуемся фундаментальным свойством, что косвенная полезность это полезность, в которую подставили спросы:</p>
 <div class="math notranslate nohighlight">
-\[V(p, q, px + qy) = U(x^{\ast}, y^{\ast}),\]</div>
+\[V(p, q, px + qy) = U(x, y),\]</div>
 <p>Убедитесь, что это, действительно, корректная запись.</p>
 <p>Что можно сделать с этим тождеством?</p>
 <ul class="simple">
@@ -620,7 +620,7 @@
 <p>Это чрезвычайно важная теорема, и, в отличие от остальных, по настоящему полезная. Лично я пользуюсь этой теоремой практически каждый день.</p>
 <p>Рассмотрим семейство опорных функций <span class="math notranslate nohighlight">\(f(x, p)\)</span>, где <span class="math notranslate nohighlight">\(x\)</span> - переменная а <span class="math notranslate nohighlight">\(p\)</span> - параметр. Определим огибающую <span class="math notranslate nohighlight">\(V(p)\)</span> как результат оптимизации функции <span class="math notranslate nohighlight">\(f\)</span> по какому-то статическому множеству <span class="math notranslate nohighlight">\(Х\)</span>:</p>
 <div class="math notranslate nohighlight">
-\[ V(p) := \max_{x \in Х} f(x, p),\]</div>
+\[ V(p) := \max_{x \in X} f(x, p),\]</div>
 <p>тогда…</p>
 <div class="proof theorem remark admonition" id="theorem-1">
 <p class="admonition-title"><span class="caption-number">Theorem 7 </span> (Об Огибающей)</p>
@@ -663,7 +663,9 @@ a = V(a) = \max_x a-(x-a)^2 \Rightarrow \\
 \[\begin{split} 
 \begin{gather*}
 a = V(a,b,c) = \max_{x,y} a-a(x-b)^2 - (y-c)^2 \Rightarrow \\
-\frac{\partial V(a, b, c)}{\partial a} = 1 + 2a(x-b)|_{x = b} + 2(y-c)|_{y = c} = 1 
+\frac{\partial V(a, b, c)}{\partial a} = 1 - (x-b)^2|_{x = b,y = c} = 1 \\
+\frac{\partial V(a, b, c)}{\partial b} = 2a(x-b)|_{x = b,y = c} = 0\\
+\frac{\partial V(a, b, c)}{\partial c} = 2(y-c)|_{x = b,y = c} = 0 
 \end{gather*}
 \end{split}\]</div>
 </div>

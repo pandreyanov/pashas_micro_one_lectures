@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.1.21)  25 JAN 2022 20:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.1.21)  25 JAN 2022 22:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1119,7 +1119,106 @@ LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inpu
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
 ) [2
 
-] [3
+]
+LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 47.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/base/ts1cmss.fd
+File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+) [3
+
+] [4
+
+] [5
+
+] [6
+
+]
+
+LaTeX Warning: Command \CYRH invalid in math mode on input line 94.
+
+Missing character: There is no Õ in font cmss10!
+[7
+
+] [8
+
+]
+<envelope2.png, id=118, 652.93938pt x 536.0025pt>
+File: envelope2.png Graphic file (type png)
+<use envelope2.png>
+Package pdftex.def Info: envelope2.png  used on input line 113.
+(pdftex.def)             Requested size: 245.83282pt x 201.80196pt.
+ [9
+
+ <./envelope2.png>] [10
+
+] [11
+
+] [12
+
+] [13
+
+] [14
+
+] [15
+
+] [16
+
+] [17
+
+] [18
+
+] [19
+
+] [20
+
+] [21
+
+] [22
+
+] [23
+
+] [24
+
+] [25
+
+] [26
+
+] [27
+
+] [28
+
+] [29
+
+] [30
+
+] [31
+
+] [32
+
+] [33
+
+] [34
+
+] [35
+
+] [36
+
+] [37
+
+] [38
+
+] [39
+
+] [40
+
+]
+<scheme.png, id=298, 632.86438pt x 284.06125pt>
+File: scheme.png Graphic file (type png)
+<use scheme.png>
+Package pdftex.def Info: scheme.png  used on input line 365.
+(pdftex.def)             Requested size: 276.559pt x 124.13344pt.
+ [41
+
+ <./scheme.png>] [42
 
 ]
 \tf@nav=\write6
@@ -1133,21 +1232,21 @@ File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mat
 
  (/Users/pasha/Documents/GitHub/pashas_micro_one_lectures/week_3/.texpadtmp/Lecture_3_2.aux)
 Package rerunfilecheck Info: File `Lecture_3_2.out' has not changed.
-(rerunfilecheck)             Checksum: 10E8D992E0511A219BE557C843200690;147.
+(rerunfilecheck)             Checksum: FD6E2CB65F77A3570E84B7C7FF6D44A9;1882.
  ) 
 Here is how much of TeX's memory you used:
- 25343 strings out of 478994
- 484680 string characters out of 5858184
- 777214 words of memory out of 5000000
- 42261 multiletter control sequences out of 15000+600000
- 416968 words of font info for 58 fonts, out of 8000000 for 9000
+ 25660 strings out of 478994
+ 489447 string characters out of 5858184
+ 782218 words of memory out of 5000000
+ 42481 multiletter control sequences out of 15000+600000
+ 419023 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 131i,13n,132p,1810b,732s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb>
-Output written on /Users/pasha/Documents/GitHub/pashas_micro_one_lectures/week_3/.texpadtmp/Lecture_3_2.pdf (3 pages, 38858 bytes).
+ 131i,13n,132p,1810b,734s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfsi1095.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb>
+Output written on /Users/pasha/Documents/GitHub/pashas_micro_one_lectures/week_3/.texpadtmp/Lecture_3_2.pdf (42 pages, 450050 bytes).
 PDF statistics:
- 62 PDF objects out of 1000 (max. 8388607)
- 45 compressed objects within 1 object stream
- 8 named destinations out of 1000 (max. 500000)
- 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 396 PDF objects out of 1000 (max. 8388607)
+ 320 compressed objects within 4 object streams
+ 96 named destinations out of 1000 (max. 500000)
+ 141 words of extra memory for PDF output out of 10000 (max. 10000000)
 
