@@ -442,16 +442,32 @@
 </div>
 <div class="section" id="id3">
 <h2>Выпуклость функции издржек<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
-<p>Нас интересует вопрос выпуклости (или вогнутости) функции издержек по ценам факторов <span class="math notranslate nohighlight">\(\vec q\)</span> и (отдельно) по уровням производства <span class="math notranslate nohighlight">\(\vec y\)</span>. Для простоты, предположим, что <span class="math notranslate nohighlight">\(y\)</span> это скаляр, и опустим фикцированные издержки.</p>
+<p>Нас интересует вопрос выпуклости (или вогнутости) функции издержек по ценам факторов <span class="math notranslate nohighlight">\(\vec q\)</span> и, отдельно, по уровням производства <span class="math notranslate nohighlight">\(\vec y\)</span>. Для простоты, предположим, что <span class="math notranslate nohighlight">\(y\)</span> это скаляр, и опустим фиксированные издержки.</p>
 <div class="proof property admonition" id="property-1">
 <p class="admonition-title"><span class="caption-number">Property 33 </span></p>
 <div class="property-content section" id="proof-content">
-<p><strong>Функция издержек</strong> вогнута по ценам факторов <span class="math notranslate nohighlight">\(\vec q\)</span> и, отдельно, выпукла по уровню производства <span class="math notranslate nohighlight">\(y\)</span>.</p>
+<p><strong>Функция издержек</strong></p>
+<ul class="simple">
+<li><p>вогнута по ценам факторов <span class="math notranslate nohighlight">\(\vec q\)</span></p></li>
+<li><p>выпукла по уровню производства <span class="math notranslate nohighlight">\(y\)</span>,</p></li>
+</ul>
+<p>если сама производственная функция <span class="math notranslate nohighlight">\(F\)</span> квази-вогнута.</p>
 </div>
-</div><p>Для того, чтобы доказать это утверждение, надо выписать опорную функцию в этом контексте. Поскольку это минимизация, я могу выписать лагранжиан:</p>
+</div><p>Для того, чтобы доказать это утверждение, надо понять, что есть опорная функция в этом контексте.</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Поскольку это минимизация, я могу выписать лагранжиан…<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
 <div class="math notranslate nohighlight">
-\[ \mathcal{L} = \vec q \cdot \vec x + \lambda \cdot (F(\vec x) - y)\]</div>
-<p>Заметим, что лагранжиан линеен по параметрам задачи <span class="math notranslate nohighlight">\(\vec q\)</span> и <span class="math notranslate nohighlight">\(y\)</span>. Это значит, что</p>
+\[ \min_{\vec x} \max_{\vec \lambda} \mathcal{L}, \quad \mathcal{L} = \vec q \cdot \vec x + \lambda \cdot (F(\vec x) - y)\]</div>
+<p class="card-text">Заметим, что лагранжиан линеен по параметрам задачи <span class="math notranslate nohighlight">\(\vec q\)</span> и <span class="math notranslate nohighlight">\(y\)</span>. Это значит, чуть больше чем обычно. Это значит, что опорные функции - линейны по параметрам.</p>
+<p class="card-text">Огибающие линейного семейства опорных функций они всегда либо выпуклы либо вогнуты, в зависимости от того, с какой стороны происходит огибание. Также, надо помнить, что огибание происходит именно в пространстве параметров, потому что по <span class="math notranslate nohighlight">\(\vec x\)</span> опорные функции вовсе не линейные. Также, надо понять, с какой стороны происходит огибание.</p>
+<p class="card-text">Поскольку мы минимизируем <span class="math notranslate nohighlight">\(\vec q \cdot \vec x\)</span>, по ценам факторов огибание получается “снизу”, поэтому функция издержек вогнута по <span class="math notranslate nohighlight">\(\vec q\)</span>. Точно также, мы доказывали, что функция расходов выпукла по ценам в теории потребителя. С другой стороны, по уровням производства огибание происходит “сверху”, поэтому функция издержек выпукла по <span class="math notranslate nohighlight">\(y\)</span>.</p>
+</div>
+</details><p>Осталось понять, почему вообще можно пользоваться методом Лагранжа здесь. Ответ простой - потому, что <span class="math notranslate nohighlight">\(F\)</span> квази-вогнутый.</p>
 </div>
 </div>
 
