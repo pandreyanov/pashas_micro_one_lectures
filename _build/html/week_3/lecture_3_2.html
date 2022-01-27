@@ -720,10 +720,10 @@ a = V(a,b,c) = \max_{x,y} a-a(x-b)^2 - (y-c)^2 \Rightarrow \\
 <h2>Минимизация расходов<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
 <p>Сейчас мы перейдем к задаче, на первый взгляд, никак не связанной с максимизацией полезности. Если быть точными, мы будем минимизировать сумму расходов на все товары при минимально заданном таргетированном уровне полезности <span class="math notranslate nohighlight">\(\bar U\)</span>. Для простоты, пусть будут два товара <span class="math notranslate nohighlight">\(x, y\)</span> с ценами <span class="math notranslate nohighlight">\(p, q\)</span>.</p>
 <div class="math notranslate nohighlight">
-\[\text{P2:} \quad p x + q y \to \min_{x,y \geqslant 0}, \quad \text{s.t.} \quad U(x,y) \geqslant 0.\]</div>
+\[\text{P2:} \quad p x + q y \to \min_{x,y \geqslant 0}, \quad \text{s.t.} \quad U(x,y) \geqslant \bar U.\]</div>
 <p>Сравните с классической задачей максимизации полезности</p>
 <div class="math notranslate nohighlight">
-\[\text{P1:} \quad U(x, y) \to \max_{x,y \geqslant 0}, \quad \text{s.t.} \quad p x + q y \leqslant 0.\]</div>
+\[\text{P1:} \quad U(x, y) \to \max_{x,y \geqslant 0}, \quad \text{s.t.} \quad p x + q y \leqslant I.\]</div>
 <div class="section" id="id10">
 <h3>Условия Первого Порядка<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
 <p>На самом деле, эти две задачи очень близко связаны. Давайте выпишем Лагранжианы в обеих задачах, но обозначим множители Лагранжа по разному.</p>
@@ -782,7 +782,7 @@ a = V(a,b,c) = \max_{x,y} a-a(x-b)^2 - (y-c)^2 \Rightarrow \\
 </div><p>Тогда, в для задачи максимизации полезности с параметрами <span class="math notranslate nohighlight">\((p,q,I)\)</span> существует</p>
 <div class="math notranslate nohighlight">
 \[ \bar U_0 := V(m_x(p,q,I), m_y(p,q,I))\]</div>
-<p>такой что задача минимизации расходов с <span class="math notranslate nohighlight">\((p, q, \bar U_0)\)</span> эквивалентна ей. Аналогично, для задачи миимизации расходов с <span class="math notranslate nohighlight">\((p, q, I)\)</span> существует</p>
+<p>такой что задача минимизации расходов с <span class="math notranslate nohighlight">\((p, q, \bar U_0)\)</span> эквивалентна ей. Аналогично, для задачи миимизации расходов с <span class="math notranslate nohighlight">\((p, q, \bar U)\)</span> существует</p>
 <div class="math notranslate nohighlight">
 \[ I_0 := p h_x(p,q, \bar U) + q h_y(p,q, \bar U)\]</div>
 <p>такой что задача максимизации полезности с <span class="math notranslate nohighlight">\((p, q, I_0)\)</span> эквивалентна ей.</p>
