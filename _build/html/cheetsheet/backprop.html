@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Задачи для тренировки &#8212; Учебник по Микро 1, для ИП, ФЭН ВШЭ</title>
+    <title>Бэкпроп &#8212; Учебник по Микро 1, для ИП, ФЭН ВШЭ</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -43,6 +43,8 @@
     <script src="../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe"
@@ -54,8 +56,8 @@
     <script>mermaid.initialize({startOnLoad:true});</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Второе домашнее задание" href="homework_3.html" />
-    <link rel="prev" title="Третья лекция, часть 2" href="lecture_3_2.html" />
+    <link rel="next" title="Приближения" href="approximations.html" />
+    <link rel="prev" title="Квадратичные формы" href="forms.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -200,29 +202,29 @@
   Третья неделя
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="intro_3.html">
+  <a class="reference internal" href="../week_3/intro_3.html">
    Содержание
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="lecture_3_1.html">
+  <a class="reference internal" href="../week_3/lecture_3_1.html">
    Третья лекция, часть 1
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="lecture_3_2.html">
+  <a class="reference internal" href="../week_3/lecture_3_2.html">
    Третья лекция, часть 2
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_3/practice_3.html">
    Задачи для тренировки
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="homework_3.html">
+  <a class="reference internal" href="../week_3/homework_3.html">
    Второе домашнее задание
   </a>
  </li>
@@ -259,24 +261,24 @@
   Мат. шпаргалка
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../cheetsheet/differentials.html">
+  <a class="reference internal" href="differentials.html">
    Дифференциалы
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../cheetsheet/forms.html">
+  <a class="reference internal" href="forms.html">
    Квадратичные формы
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../cheetsheet/backprop.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Бэкпроп
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../cheetsheet/approximations.html">
+  <a class="reference internal" href="approximations.html">
    Приближения
   </a>
  </li>
@@ -321,7 +323,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/week_3/practice_3.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/cheetsheet/backprop.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -346,19 +348,6 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id2">
-   Задача 0.1
-  </a>
- </li>
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -366,36 +355,26 @@
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Задачи для тренировки</h1>
+                <h1>Бэкпроп</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id2">
-   Задача 0.1
-  </a>
- </li>
-</ul>
-
-                        </nav>
                     </div>
                 </div>
             </div>
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="id1">
-<h1>Задачи для тренировки<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="id2">
-<h2>Задача 0.1<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p>Докажите, что эластичность обратной функции равна обратной эластичности.</p>
-</div>
+  <div class="tex2jax_ignore mathjax_ignore section" id="backprop">
+<span id="id1"></span><h1>Бэкпроп<a class="headerlink" href="#backprop" title="Permalink to this headline">¶</a></h1>
+<p>Бэкпроп это техника, которая используется в машинном обучении, но, в рудиментарном виде, ей можно пользоваться при разнообразных вычислениях.</p>
+<p>Типичной является ситуация, когда вас просят сосчитать градиент некоторой функции, например, косвенной полезности или функции расходов. Представьте себе, что вы уже умеете находить <span class="math notranslate nohighlight">\(\nabla V\)</span> в какой то спецификации, но из-за монотонного преобразования полезности вас теперь просят найти <span class="math notranslate nohighlight">\(\nabla \log V\)</span> или <span class="math notranslate nohighlight">\(\nabla \exp(V)\)</span>.</p>
+<p>Вместо того, чтобы вычислять всю функцию заново, вы можете взять уже известный вам градиент <span class="math notranslate nohighlight">\(\nabla V\)</span> и “протащить его” через внешнее монотонное преобразование, как если бы градиент был числом:</p>
+<div class="math notranslate nohighlight">
+\[ \nabla \log(V) = \frac{\nabla V}{V}, \quad \nabla \exp(V) = \exp(V) \nabla V\]</div>
+<p>В общем случае, когда преобразование векторзначное, перемножения становятся матричными, и это называется бэкпроп. В частном случае, когда преобразование скалярное, можно пользоваться правилами классического дифференциирования.</p>
+<p>Этой техникой удобно пользоваться при работе с Кобб-Дуглас.</p>
 </div>
 
     <script type="text/x-thebe-config">
@@ -411,7 +390,7 @@
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./week_3"
+            path: "./cheetsheet"
         },
         predefinedOutput: true
     }
@@ -423,17 +402,17 @@
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="lecture_3_2.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="forms.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Третья лекция, часть 2</p>
+            <p class="prev-next-title">Квадратичные формы</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="homework_3.html" title="next page">
+    <a class='right-next' id="next-link" href="approximations.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Второе домашнее задание</p>
+        <p class="prev-next-title">Приближения</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

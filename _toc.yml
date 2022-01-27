@@ -47,4 +47,5 @@ parts:
   chapters:
     - file: cheetsheet/differentials
     - file: cheetsheet/forms
+    - file: cheetsheet/backprop
     - file: cheetsheet/approximations
