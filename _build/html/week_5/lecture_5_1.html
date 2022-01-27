@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Часы &#8212; Учебник по Микро 1, для ИП, ФЭН ВШЭ</title>
+    <title>Пятая лекция, часть 1 &#8212; Учебник по Микро 1, для ИП, ФЭН ВШЭ</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -43,6 +43,8 @@
     <script src="../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe"
@@ -54,8 +56,8 @@
     <script>mermaid.initialize({startOnLoad:true});</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Структура третьего модуля" href="module%203.html" />
-    <link rel="prev" title="Оценивание" href="grades.html" />
+    <link rel="next" title="Дифференциалы" href="../cheetsheet/differentials.html" />
+    <link rel="prev" title="Содержание" href="intro_5.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -99,29 +101,29 @@
   Программа курса
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="principles.html">
+  <a class="reference internal" href="../week_0/principles.html">
    Принципы
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="grades.html">
+  <a class="reference internal" href="../week_0/grades.html">
    Оценивание
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_0/hours.html">
    Часы
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="module%203.html">
+  <a class="reference internal" href="../week_0/module%203.html">
    Структура третьего модуля
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="module%204.html">
+  <a class="reference internal" href="../week_0/module%204.html">
    Структура четвертого модуля
   </a>
  </li>
@@ -259,14 +261,14 @@
   Пятая неделя
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../week_5/intro_5.html">
+  <a class="reference internal" href="intro_5.html">
    Содержание
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../week_5/lecture_5_1.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Пятая лекция, часть 1
   </a>
  </li>
@@ -338,7 +340,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/week_0/hours.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/week_5/lecture_5_1.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -363,6 +365,24 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   Функция издержек
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   Выпуклость функции издржек
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -370,11 +390,29 @@
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Часы</h1>
+                <h1>Пятая лекция, часть 1</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   Функция издержек
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   Выпуклость функции издржек
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -382,10 +420,39 @@
               <div>
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="id1">
-<h1>Часы<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<p><strong>Офис аурз</strong> я планирую во вторник 4-6 вечера, в офисе S1008 и в зуме</p>
-<p><strong>Лекции</strong> проходят по средам, 1-2 пара</p>
-<p><strong>Семинары</strong> проходят в субботу 1-2 и 3-4 пары</p>
+<h1>Пятая лекция, часть 1<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id2">
+<h2>Функция издержек<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>Точно также, как в теории потребителя поведение аганта задавалось функцией полезности, в теории производителя поведение агента задается функцией издержек <span class="math notranslate nohighlight">\(TC(\vec p, \vec y)\)</span>.</p>
+<p>Здесь <span class="math notranslate nohighlight">\(\vec y\)</span> это вектор произведенных товаров а <span class="math notranslate nohighlight">\(\vec q\)</span> это вектор цен на факторы производства. Не путайте функцию издержек с функцией расходов <span class="math notranslate nohighlight">\(E(\vec p, \bar U)\)</span>. Обратите внимание, что я буду теперь везде использовать векторные обозначения.</p>
+<p>Вообще, у нас будут два набора цен: <span class="math notranslate nohighlight">\(\vec q\)</span> на конечные товары и <span class="math notranslate nohighlight">\(\vec p\)</span> на факторы. Также, будут два набора координат: <span class="math notranslate nohighlight">\(\vec y\)</span> для конечных товаров и <span class="math notranslate nohighlight">\(\vec x\)</span> для факторов. Таким образом, суммарная прибыль фирмы производителя можно записать в виде:</p>
+<div class="math notranslate nohighlight">
+\[ \pi(\vec p, \vec q, \vec y) = - FC - \vec p \cdot \vec x + \vec q \cdot \vec y = \vec q \cdot y - TC(\vec p, \vec y)\]</div>
+<p>Постарайтесь не запутаться.</p>
+<div class="proof definition admonition" id="definition-0">
+<p class="admonition-title"><span class="caption-number">Definition 42 </span></p>
+<div class="definition-content section" id="proof-content">
+<p><strong>Функция издержек</strong> определяется как суммарные издержки на все факторы производства, связанные с эффективным производством <span class="math notranslate nohighlight">\(\vec y\)</span> единиц конечного товара, плюс, возможно, фиксированные издержки (которые обозначаются FC).</p>
+</div>
+</div><p>Что значит <strong>эффективность</strong>? Это значит, что из всех производственных планов выбирается тот, который минимизирует издержки, то есть, функция издержек это, на самом деле, целевая функция следующей оптимизационной задачи:</p>
+<div class="math notranslate nohighlight">
+\[ \min_{\vec x} ( FC + \vec q \cdot \vec x ) \quad s.t. \quad \vec y = F(\vec x),\]</div>
+<p>где <span class="math notranslate nohighlight">\(\vec x\)</span> это вектор использованных факторов производства, а <span class="math notranslate nohighlight">\(F\)</span> это производственная функция, которая переводит факторы производства <span class="math notranslate nohighlight">\(\vec x\)</span> в конечные товары <span class="math notranslate nohighlight">\(\vec y\)</span>.</p>
+<p>То есть, функция издержек это, тоже, огибающая.</p>
+</div>
+<div class="section" id="id3">
+<h2>Выпуклость функции издржек<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>Нас интересует вопрос выпуклости (или вогнутости) функции издержек по ценам факторов <span class="math notranslate nohighlight">\(\vec q\)</span> и (отдельно) по уровням производства <span class="math notranslate nohighlight">\(\vec y\)</span>. Для простоты, предположим, что <span class="math notranslate nohighlight">\(y\)</span> это скаляр, и опустим фикцированные издержки.</p>
+<div class="proof property admonition" id="property-1">
+<p class="admonition-title"><span class="caption-number">Property 33 </span></p>
+<div class="property-content section" id="proof-content">
+<p><strong>Функция издержек</strong> вогнута по ценам факторов <span class="math notranslate nohighlight">\(\vec q\)</span> и, отдельно, выпукла по уровню производства <span class="math notranslate nohighlight">\(y\)</span>.</p>
+</div>
+</div><p>Для того, чтобы доказать это утверждение, надо выписать опорную функцию в этом контексте. Поскольку это минимизация, я могу выписать лагранжиан:</p>
+<div class="math notranslate nohighlight">
+\[ \mathcal{L} = \vec q \cdot \vec x + \lambda \cdot (F(\vec x) - y)\]</div>
+<p>Заметим, что лагранжиан линеен по параметрам задачи <span class="math notranslate nohighlight">\(\vec q\)</span> и <span class="math notranslate nohighlight">\(y\)</span>. Это значит, что</p>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -401,7 +468,7 @@
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./week_0"
+            path: "./week_5"
         },
         predefinedOutput: true
     }
@@ -413,17 +480,17 @@
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="grades.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="intro_5.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Оценивание</p>
+            <p class="prev-next-title">Содержание</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="module%203.html" title="next page">
+    <a class='right-next' id="next-link" href="../cheetsheet/differentials.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Структура третьего модуля</p>
+        <p class="prev-next-title">Дифференциалы</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
