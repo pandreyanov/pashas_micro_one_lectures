@@ -517,14 +517,14 @@
 </summary><div class="summary-content card-body docutils">
 <p class="card-text">Связь между процентами и логарифмами следующая. Рассмотрим отношение процентного изменения <span class="math notranslate nohighlight">\(x\)</span> к процентному изменению <span class="math notranslate nohighlight">\(p\)</span>:</p>
 <div class="math notranslate nohighlight">
-\[\frac{100 (x + \delta x) / x}{100 (p + \delta p) / p}\]</div>
-<p class="card-text">где <span class="math notranslate nohighlight">\(\delta x, \delta x\)</span> это маленькие приращения. Заметим что много посокращается и тогда:</p>
+\[\frac{100 \cdot \delta x / x}{100 \cdot \delta p / p}\]</div>
+<p class="card-text">где <span class="math notranslate nohighlight">\(\delta x, \delta x\)</span> это маленькие приращения. Тогда в первом приближении:</p>
 <div class="math notranslate nohighlight">
-\[\frac{1 + \delta x / x}{1 + \delta p / p} \approx \frac{\log(1 + \delta x / x)}{\log(1 + \delta p / p)}\]</div>
+\[\frac{\delta x / x}{\delta p / p} \approx \frac{\log(1 + \delta x / x)}{\log(1 + \delta p / p)}\]</div>
 <p class="card-text">далее надо прибавить и вычесть логарифмы <span class="math notranslate nohighlight">\(x\)</span> и <span class="math notranslate nohighlight">\(p\)</span>:</p>
 <div class="math notranslate nohighlight">
-\[\frac{\log(x + \delta x) - \log x}{\log(p + \delta p) - \log p}\]</div>
-<p class="card-text">и то, что мы получаем это приращение логарифма <span class="math notranslate nohighlight">\(x\)</span> относително логарифма <span class="math notranslate nohighlight">\(p\)</span>.</p>
+\[\frac{\log(x + \delta x) - \log x}{\log(p + \delta p) - \log p} =: \frac{\Delta \log x}{\Delta \log p}\]</div>
+<p class="card-text">и то, что мы получаем это приращение логарифма <span class="math notranslate nohighlight">\(x\)</span> относително логарифма <span class="math notranslate nohighlight">\(p\)</span>. В пределе, мы получаем как раз определение эластичности.</p>
 </div>
 </details><p>Очень важно, что приращения маленькие, без этого не только определения эластичности не похожи друг на друга, но и смысла в них особого нет. Эластичность - локальное свойство функции.</p>
 </div>
