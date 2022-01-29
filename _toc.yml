@@ -35,6 +35,7 @@ parts:
     - file: week_3/intro_3
     - file: week_3/lecture_3_1
     - file: week_3/lecture_3_2
+    - file: week_3/seminar_3
     - file: week_3/practice_3
     - file: week_3/homework_3
 - caption: Четвертая неделя
