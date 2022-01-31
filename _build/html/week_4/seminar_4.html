@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Содержание &#8212; Учебник по Микро 1, для ИП, ФЭН ВШЭ</title>
+    <title>Семинар 4 &#8212; Учебник по Микро 1, для ИП, ФЭН ВШЭ</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -43,6 +43,8 @@
     <script src="../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe"
@@ -54,8 +56,8 @@
     <script>mermaid.initialize({startOnLoad:true});</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Четвертая лекция, часть 1" href="lecture_4_1.html" />
-    <link rel="prev" title="Второе домашнее задание" href="../week_3/homework_3.html" />
+    <link rel="next" title="Задачи для тренировки" href="practice_4.html" />
+    <link rel="prev" title="Четвертая лекция, часть 2" href="lecture_4_2.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -238,8 +240,8 @@
  </span>
 </p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro_4.html">
    Содержание
   </a>
  </li>
@@ -253,8 +255,8 @@
    Четвертая лекция, часть 2
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="seminar_4.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Семинар 4
   </a>
  </li>
@@ -343,7 +345,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/week_4/intro_4.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/week_4/seminar_4.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -375,7 +377,32 @@
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id2">
-   Литература
+   Задача 1: про налоги
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cv-ev-1">
+   Задача 2: про CV и EV (продолжение задачи 1)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cv-ev">
+   Задача 3: про CV и EV на графике функций Хиксианского спроса
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ie-se">
+   Задача 4: про IE и SE для разных типов благ
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   Задача 5: матрица (уравнение) Слуцкого
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id4">
+   Задача 6: про IE и SE для квазилинейной функции полезности
   </a>
  </li>
 </ul>
@@ -388,7 +415,7 @@
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Содержание</h1>
+                <h1>Семинар 4</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -400,7 +427,32 @@
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id2">
-   Литература
+   Задача 1: про налоги
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cv-ev-1">
+   Задача 2: про CV и EV (продолжение задачи 1)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cv-ev">
+   Задача 3: про CV и EV на графике функций Хиксианского спроса
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ie-se">
+   Задача 4: про IE и SE для разных типов благ
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   Задача 5: матрица (уравнение) Слуцкого
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id4">
+   Задача 6: про IE и SE для квазилинейной функции полезности
   </a>
  </li>
 </ul>
@@ -413,32 +465,88 @@
               <div>
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="id1">
-<h1>Содержание<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<p>Мы подходим к завершающей части теории потребителя.</p>
-<p><strong>Первая часть лекции</strong> посвящена трем феноменам, анализ которых является, по моему мнению, самыми полезными приложениями этой теории:</p>
-<ul class="simple">
-<li><p>оптимальному налогообложению</p></li>
-<li><p>понятия “чистых” субститутов и комплементов</p></li>
-<li><p>компенсирующим и эквивалентным вариациям</p></li>
-</ul>
-<p>Мы <strong>обязательно</strong> протеститруем эти три темы на контрольной, надо будет уверенно обладать техникой решения задач.</p>
-<p><strong>Вторая часть лекции</strong> посвящена еще одной, самой сложной теме - анализу замещения (в том числе парадокс Гиффена) при помощи матриц Слуцкого.</p>
-<ul class="simple">
-<li><p>эффекты дохода и замещения</p></li>
-<li><p>матрицы Слуцкого</p></li>
-<li><p>парадокс Гиффена</p></li>
-</ul>
+<h1>Семинар 4<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p><em>5 февраля 2022. Провела Яна</em> 🐸</p>
 <div class="section" id="id2">
-<h2>Литература<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p><strong>Вариан,</strong> - …</p></li>
-<li><p><strong>JR, 1.4</strong> - …</p></li>
-</ul>
-<p>Дополнительно</p>
-<ul class="simple">
-<li><p>Stigler, Notes on the History of the Giffen Paradox</p></li>
-</ul>
+<h2>Задача 1: про налоги<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>Гусь потребляет картофель и свёклу (везде в задаче предполагайте, что картофель и свёкла измеряются в килограммах). Цена картофеля равна 5 рублей, а свёклы - 10. Доход Гуся равен 50 рублям. Полезность, которую Гусь получает от потребления картофеля (<span class="math notranslate nohighlight">\(x\)</span>) и свёклы (y), равна</p>
+<div class="math notranslate nohighlight">
+\[u(x, y)=2\sqrt{x}+y.\]</div>
+<ol class="simple">
+<li><p>Выпишите бюджетное ограничение Гуся.</p></li>
+<li><p>Запишите оптимизационную задачу Гуся и решите её (необязательно с помощью метода множителей Лагранжа).</p></li>
+<li><p>Предположим, что гуседарство теперь облагает картофель потоварным налогом (вспомните, что это) размером <span class="math notranslate nohighlight">\(t\)</span> денежных единиц. Определите, как изменяется в зависимости от ставки <span class="math notranslate nohighlight">\(t\)</span> спрос Гуся на картофель и свёклу.</p></li>
+<li><p>При какой ставке налога <span class="math notranslate nohighlight">\(t\)</span> налоговые сборы гуседарства максимальны?</p></li>
+<li><p>Предположим, потоварный налог отменили, но теперь взымается подоходный налог с Гуся в размере <span class="math notranslate nohighlight">\(100\cdot \alpha\)</span>%, где <span class="math notranslate nohighlight">\(\alpha \in (0, 1)\)</span>. Определите, как спрос Гуся на товары зависит от <span class="math notranslate nohighlight">\(\alpha\)</span> (можно не приводить вычисления). Как суммарные налоговые сборы зависят от <span class="math notranslate nohighlight">\(\alpha\)</span>?</p></li>
+<li><p>Гуседарству не понравился эффект от введенного в предыдущем пункте налога, оно отменило его и ввело паушальный налог на доход Гуся. Ответьте на вопросы предыдущего пункта.</p></li>
+</ol>
 </div>
+<div class="section" id="cv-ev-1">
+<h2>Задача 2: про CV и EV (продолжение задачи 1)<a class="headerlink" href="#cv-ev-1" title="Permalink to this headline">¶</a></h2>
+<p><em>CV - compensating variation, EV - equivalent variation.</em></p>
+<p>Воспользуемся условием и решением предыдущей задачи, предположив, что доход теперь равен 40.</p>
+<ol class="simple">
+<li><p>Предположим, стоимость картофеля выросла на 3 денежные единицы. Расчитайте CV и EV. Изобразите на графике.</p></li>
+<li><p>Предположим, стоимость свёклы выросла на 6 денежных единиц. Расчитайте CV и EV. Изобразите на графике.</p></li>
+</ol>
+</div>
+<div class="section" id="cv-ev">
+<h2>Задача 3: про CV и EV на графике функций Хиксианского спроса<a class="headerlink" href="#cv-ev" title="Permalink to this headline">¶</a></h2>
+<p>Покажите на графике функций спроса по Хиксу компенсирующую вариацию и эквивалентную вариацию. Предполагайте, что у нас два товара, функция полезности <span class="math notranslate nohighlight">\(u(x, y)\)</span> вогнутая, бюджетное ограничение линейно, а решение задачи потребителя находится в точке касания кривой безразличия с бюджетным ограничением.</p>
+</div>
+<div class="section" id="ie-se">
+<h2>Задача 4: про IE и SE для разных типов благ<a class="headerlink" href="#ie-se" title="Permalink to this headline">¶</a></h2>
+<p>Изобразите на графиках в осях <span class="math notranslate nohighlight">\((x, y)\)</span> для благ <span class="math notranslate nohighlight">\(x, y\)</span> эффект дохода и эффект замещения, а также изменение объема потребляемого <span class="math notranslate nohighlight">\(x\)</span> при росте цены на благо <span class="math notranslate nohighlight">\(x\)</span> (при прочих равных), если <span class="math notranslate nohighlight">\(x\)</span>:</p>
+<ol class="simple">
+<li><p>Нормальный товар;</p></li>
+<li><p>Инфериорный товар;</p></li>
+<li><p>Товар Гиффена.</p></li>
+</ol>
+</div>
+<div class="section" id="id3">
+<h2>Задача 5: матрица (уравнение) Слуцкого<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<details>
+    <summary>Немножко теории</summary>
+<hr class="docutils" />
+<p>Для начала зададим определение для элемента на <span class="math notranslate nohighlight">\(i\)</span>-ой строке <span class="math notranslate nohighlight">\(j\)</span>-том столбце матрицы Слуцкого:</p>
+<div class="math notranslate nohighlight">
+\[s_{ij}=\overbrace{\underbrace{\frac{\partial x_i(p, I)}{\partial p_j}}_{\text{Изменение спроса}} + \underbrace{x_j(p, I)\frac{\partial x_i(p, I)}{\partial I}}_{\text{Эффект дохода}}}^{\text{Эффект замещения}}.\]</div>
+<p>Матрица Слуцкого, таким образом, это <span class="math notranslate nohighlight">\(S=\{s_{ij}\}_{i,j\in \overline{1, n}}\)</span>. С таким определением перед глазами проще работать далее.</p>
+<p>В частности, есть такая сущность, как “декомпозиция Слуцкого” (на английском называют Slutsky decomposition или Slutsky equation). Тут надо просто перенести эффект дохода направо и получим:</p>
+<div class="math notranslate nohighlight">
+\[\frac{\partial x_i(p, I)}{\partial p_j} = s_{ij}-x_j(p, I)\frac{\partial x_i(p, I)}{\partial I}=\frac{\partial h_i(p, u)}{\partial p_j}-x_j(p, I)\frac{\partial x_i(p, I)}{\partial I}.\]</div>
+<p>Последний переход к производной хиксианского спроса валиден потому, что элемент <span class="math notranslate nohighlight">\(s_{ij}\)</span> матрицы Слуцкого представляет собой эффект замещения, а он, в свою очередь, равен производной хиксианского спроса.</p>
+<p>А теперь можно перейти к решению задачи.</p>
+<hr class="docutils" />
+</details>
+<p>Полезность Мопса имеет вид <span class="math notranslate nohighlight">\(u(x, y)=\sqrt{x}+y\)</span>. Цены благ <span class="math notranslate nohighlight">\(x, y\)</span>, корм и собачье пиво соответственно, равны <span class="math notranslate nohighlight">\(p, q\)</span> соответственно. Доход Мопса (его хозяйки) равен <span class="math notranslate nohighlight">\(I\)</span>.</p>
+<ol class="simple">
+<li><p>Выведите функции маршалианского спроса Мопса на корм и пиво (<span class="math notranslate nohighlight">\(x, y\)</span>).</p></li>
+<li><p>Выпишите косвенную функцию полезности, <span class="math notranslate nohighlight">\(v(p, q, I)\)</span>, и функцию расходов, <span class="math notranslate nohighlight">\(e(p, q, u)\)</span>.</p></li>
+<li><p>Выпишите функции хиксианского спроса Мопса на корм и пиво, <span class="math notranslate nohighlight">\(h_x(p, q, u), h_y(p, q, u)\)</span>.</p></li>
+<li><p>Выпишите уравнение (декомпозицию) Слуцкого. Являются ли товары субститутами?</p></li>
+<li><p>Выпишите матрицу Слуцкого.</p></li>
+<li><p>Дайте характеристику благам <span class="math notranslate nohighlight">\(x, y\)</span> (комплементы/субституты, нормальные/инфериорные).</p></li>
+</ol>
+</div>
+<div class="section" id="id4">
+<h2>Задача 6: про IE и SE для квазилинейной функции полезности<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<details>
+    <summary>Почему так много квазилинейных функций?</summary>
+<hr class="docutils" />
+<p>Это один из самых распространенных видов функций в экономике, если не самый. С ней очень удобно работать, а дополнительное удобство доставляет отсутствие эффекта дохода.</p>
+<hr class="docutils" />
+</details>
+<p>Давайте покажем, что следующее утверждение верно:</p>
+<div class="proof property admonition" id="property-0">
+<p class="admonition-title"><span class="caption-number">Property 33 </span></p>
+<div class="property-content section" id="proof-content">
+<p>Квазилинейная функция полезности</p>
+<div class="math notranslate nohighlight">
+\[u(x, y)=f(x)+ky,\]</div>
+<p>где <span class="math notranslate nohighlight">\(f(\cdot)\)</span> - вогнутая функция, характеризуется отсутствием эффекта дохода при рассмотрении блага <span class="math notranslate nohighlight">\(x\)</span>.</p>
+</div>
+</div></div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -466,17 +574,17 @@
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="../week_3/homework_3.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="lecture_4_2.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Второе домашнее задание</p>
+            <p class="prev-next-title">Четвертая лекция, часть 2</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="lecture_4_1.html" title="next page">
+    <a class='right-next' id="next-link" href="practice_4.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Четвертая лекция, часть 1</p>
+        <p class="prev-next-title">Задачи для тренировки</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
