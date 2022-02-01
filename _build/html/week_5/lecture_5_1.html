@@ -420,6 +420,11 @@
    Экспорт и потребление
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id10">
+   Кривые производственных возможностей
+  </a>
+ </li>
 </ul>
 
             </nav>
@@ -480,6 +485,11 @@
    Экспорт и потребление
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id10">
+   Кривые производственных возможностей
+  </a>
+ </li>
 </ul>
 
                         </nav>
@@ -522,7 +532,12 @@
 <li><p>вогнута по ценам факторов <span class="math notranslate nohighlight">\(\vec p\)</span></p></li>
 <li><p>выпукла по уровню производства <span class="math notranslate nohighlight">\(y\)</span>,</p></li>
 </ul>
-<p>если сама производственная функция <span class="math notranslate nohighlight">\(F\)</span> вогнута (именно вогнута).</p>
+<p>если сама производственная функция <span class="math notranslate nohighlight">\(F\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+F(\vec x) \geqslant y
+\]</div>
+<p>вогнута (именно вогнута, квази недостаточно).</p>
 </div>
 </div><p>Это практически умозрительное утверждение, если понять, чем является опорная функция в этом контексте.</p>
 <details class="sphinx-bs dropdown card mb-3">
@@ -695,7 +710,39 @@ $<span class="math notranslate nohighlight">\( y = F(k, l)\)</span><span class="
 <div class="proof lemma admonition" id="lemma-7">
 <p class="admonition-title"><span class="caption-number">Lemma 3 </span></p>
 <div class="lemma-content section" id="proof-content">
-<p>Если товар можно потребить внутри фирмы, то он производится в том же объеме, как если бы такой возможности не было. Доля товара, потребленного локально, совпадает с решением задачи потребителя, как если бы он просто покупал этот товар в магазине.</p>
+<p>Если товар можно потребить внутри фирмы, то он производится в том же объеме, как если бы такой возможности не было. Доля товара, потребленного внутри фирмы, совпадает с решением задачи потребителя, как если бы он просто покупал этот товар в магазине.</p>
+</div>
+</div></div>
+<div class="section" id="id10">
+<h2>Кривые производственных возможностей<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
+<p>До сих пор, мы моделировали производство так, что из нескольких факторов, например, труд и капитал, производится один единственный конечный продукт по технологии</p>
+<div class="math notranslate nohighlight">
+\[ F(\vec x) \geqslant y,\]</div>
+<p>где <span class="math notranslate nohighlight">\(F\)</span> - вогнутая производственная функция.</p>
+<p>Альтернативный подход к моделированию производства - это когда много конечных продуктов <span class="math notranslate nohighlight">\(\vec y\)</span> производится из одного абстрактного фактора <span class="math notranslate nohighlight">\(x\)</span>, в этом случае технология описывается</p>
+<div class="math notranslate nohighlight">
+\[ x \geqslant G(\vec y),\]</div>
+<p>где <span class="math notranslate nohighlight">\(G\)</span> - функция, линии уровня которой описывают всевозможные комбинации конечных товаров, которые можно произвести с фиксированным количеством фактора <span class="math notranslate nohighlight">\(x\)</span>. Эти линии уровня называются <strong>кривыми производственных возможностей</strong>.</p>
+<p>Попробуем сформулировать задачу минимизации издержек:</p>
+<div class="math notranslate nohighlight">
+\[ \min_{\vec x \geqslant 0} \max_{\lambda \geqslant 0} \mathcal{L}, \quad \mathcal{L} = p x - \lambda (x - G(\vec y))\]</div>
+<p>Легко видеть, что для повторения тех же шагов, что с вогнутой производственной функцией <span class="math notranslate nohighlight">\(F\)</span>, нам тут необходимо, чтобы <span class="math notranslate nohighlight">\(G\)</span> была квази-выпуклой по <span class="math notranslate nohighlight">\(y\)</span>.</p>
+<p>Именно квази, потому что, в отличие от предыдущего Лагранжиана:</p>
+<div class="math notranslate nohighlight">
+\[ \min_{\vec x \geqslant 0} \max_{\lambda \geqslant 0} \mathcal{L}, \quad \mathcal{L} = \vec p \cdot \vec x - \lambda \cdot (F(\vec x) - y)\]</div>
+<p>в котором присутствовала линейная деформация по <span class="math notranslate nohighlight">\(x\)</span>, способная поломать квази-вогнутость, в случае КПВ такой деформации нет.</p>
+<div class="proof property admonition" id="property-8">
+<p class="admonition-title"><span class="caption-number">Property 35 </span></p>
+<div class="property-content section" id="proof-content">
+<p><strong>Функция издержек</strong></p>
+<ul class="simple">
+<li><p>вогнута по ценам факторов <span class="math notranslate nohighlight">\(\vec p\)</span></p></li>
+<li><p>выпукла по уровню производства <span class="math notranslate nohighlight">\(y\)</span>,</p></li>
+</ul>
+<p>если функция <span class="math notranslate nohighlight">\(G\)</span>, задающая кривые производственных возможностей:</p>
+<div class="math notranslate nohighlight">
+\[КПВ:  x \geqslant G(\vec y)\]</div>
+<p>квази-выпукла.</p>
 </div>
 </div></div>
 </div>
