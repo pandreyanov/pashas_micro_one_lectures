@@ -1,0 +1,9 @@
+\babel@toc {russian}{}
+\beamer@sectionintoc {1}{План}{2}{0}{1}
+\beamer@sectionintoc {2}{Налоги}{4}{0}{2}
+\beamer@sectionintoc {3}{Налоги в Кобб Дуглас}{12}{0}{3}
+\beamer@sectionintoc {4}{Правило Рамсея}{22}{0}{4}
+\beamer@sectionintoc {5}{Компенсирующие и эквивалентные вариации}{28}{0}{5}
+\beamer@sectionintoc {6}{Приближения}{38}{0}{6}
+\beamer@sectionintoc {7}{Чистые субституты и комплементы}{42}{0}{7}
+\beamer@sectionintoc {8}{Перерыв}{47}{0}{8}
