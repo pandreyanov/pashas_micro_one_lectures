@@ -201,16 +201,12 @@ $$ y = F(k, l)$$
 
 Сравним Лагранжианы:
 
-$$
-
 \begin{gather*} 
 
 \mathcal{L^1} = TC^K(k) + TC^L(l) - \lambda (F(k,l) - y)\\
 \mathcal{L^2} = rk + wl - \lambda (F(k,l) - y).
 
 \end{gather*}
-
-$$
 
 Если случится так, что старые $k^{\ast}, l^{\ast}$ такие, что $$ TC^K(k^{\ast}) + TC^L(l^{\ast}) < rk^{\ast} + wl^{\ast}$$
 
