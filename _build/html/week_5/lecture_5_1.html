@@ -504,8 +504,8 @@
 <div class="section" id="id2">
 <h2>Функция издержек<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <p>Точно также, как в теории потребителя поведение аганта задавалось функцией полезности, в теории производителя поведение агента задается функцией издержек <span class="math notranslate nohighlight">\(TC(p, y)\)</span>.</p>
-<p>Здесь <span class="math notranslate nohighlight">\(y\)</span> это количество произведенного товара а <span class="math notranslate nohighlight">\(\vec q\)</span> это вектор цен на факторы производства. Не путайте функцию издержек с функцией расходов <span class="math notranslate nohighlight">\(E(\vec p, \bar U)\)</span>. Обратите внимание, что я буду теперь везде использовать векторные обозначения.</p>
-<p>Вообще, у нас будут два набора цен: <span class="math notranslate nohighlight">\(\vec q\)</span> на конечные товары и <span class="math notranslate nohighlight">\(\vec p\)</span> на факторы. Также, будут два набора координат: <span class="math notranslate nohighlight">\(\vec y\)</span> для конечных товаров и <span class="math notranslate nohighlight">\(\vec x\)</span> для факторов. Но в первой части лекции я, для просстоты, буду говорить только об одном произведенном товаре.</p>
+<p>Здесь <span class="math notranslate nohighlight">\(y\)</span> это количество произведенного товара а <span class="math notranslate nohighlight">\(\vec p\)</span> это вектор цен на факторы производства. Не путайте функцию издержек с функцией расходов <span class="math notranslate nohighlight">\(E(\vec p, \bar U)\)</span>. Обратите внимание, что я буду теперь везде использовать векторные обозначения.</p>
+<p>Вообще, у нас будут два набора цен: <span class="math notranslate nohighlight">\(\vec q\)</span> на конечные товары и <span class="math notranslate nohighlight">\(\vec p\)</span> на факторы. Также, будут два набора координат: <span class="math notranslate nohighlight">\(\vec y\)</span> для конечных товаров и <span class="math notranslate nohighlight">\(\vec x\)</span> для факторов. Но в первой части лекции я, для простоты, буду говорить только об одном произведенном товаре.</p>
 <p>Таким образом, суммарная прибыль фирмы производителя можно записать в виде:</p>
 <div class="math notranslate nohighlight">
 \[ \pi(\vec p, q, y) = - FC - \vec p \cdot \vec x + q y = q y - TC(p, y)\]</div>
@@ -517,7 +517,7 @@
 </div>
 </div><p>Что значит <strong>эффективность</strong>? Это значит, что из всех производственных планов выбирается тот, который минимизирует издержки, то есть, функция издержек это, на самом деле, целевая функция следующей оптимизационной задачи:</p>
 <div class="math notranslate nohighlight">
-\[ \min_{\vec x} ( FC + \vec q \cdot \vec x ) \quad s.t. \quad F(\vec x) \geqslant y,\]</div>
+\[ \min_{\vec x} ( FC + \vec p \cdot \vec x ) \quad s.t. \quad F(\vec x) \geqslant y,\]</div>
 <p>где <span class="math notranslate nohighlight">\(\vec x\)</span> это вектор использованных факторов производства, а <span class="math notranslate nohighlight">\(F\)</span> это производственная функция, которая переводит факторы производства <span class="math notranslate nohighlight">\(\vec x\)</span> в конечный товар <span class="math notranslate nohighlight">\(y\)</span>.</p>
 <p>То есть, функция издержек это, тоже, огибающая.</p>
 </div>
@@ -535,7 +535,7 @@
 <p>если сама производственная функция <span class="math notranslate nohighlight">\(F\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[
-F(\vec x) \geqslant y
+F(\vec x) = y
 \]</div>
 <p>вогнута (именно вогнута, квази недостаточно).</p>
 </div>
@@ -574,7 +574,7 @@ F(\vec x) \geqslant y
 </div><p>Получается, что фирма максимизирует прибыль в два шага: сначала для каждого потенциального уровня производства она оптимально подбирает ресурсы, а затем, оптимизирует по уровню производства.</p>
 <p>Конечно же, прибыль можно было максимизировать сразу:</p>
 <div class="math notranslate nohighlight">
-\[ \max_{x,y} - \vec p \cdot \vec x + q y \quad s.t. \quad F(\vec x)  \geqslant y,\]</div>
+\[ \max_{x,y} (- \vec p \cdot \vec x + q y) \quad s.t. \quad F(\vec x)  \geqslant y,\]</div>
 <p>но тогда не было бы так интрересно.</p>
 </div>
 <div class="section" id="id5">
@@ -741,7 +741,7 @@ $<span class="math notranslate nohighlight">\( y = F(k, l)\)</span><span class="
 </ul>
 <p>если функция <span class="math notranslate nohighlight">\(G\)</span>, задающая кривые производственных возможностей:</p>
 <div class="math notranslate nohighlight">
-\[x \geqslant G(\vec y)\]</div>
+\[x = G(\vec y)\]</div>
 <p>квази-выпукла.</p>
 </div>
 </div></div>
