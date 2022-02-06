@@ -47,11 +47,15 @@ $$y \in Y \Rightarrow \lambda Y \in Y, \quad \forall \lambda \in (0,1)$$
 :class: remark
 Если выполнены аксиомы A1-A5, то технологическое множество выпукло, а для любой группы конечных товаров $i_1, \ldots, i_k$ существуют производственные функции $\{F_{j}\}_{j=1}^k$, описывающая технологическую границу в соответствующем ортанте:
 
+$$
+
 \begin{cases}
 y_{i_1} = F_1(y_i, i \notin i_1, \ldots, i_k),\\
 \ldots\\
 y_{i_k} = F_k(y_i, i \notin i_1, \ldots, i_k).
 \end{cases}
+
+$$
 
 :::
 
