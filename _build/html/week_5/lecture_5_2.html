@@ -228,11 +228,6 @@
    Задачи для тренировки
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../week_3/homework_3.html">
-   Второе домашнее задание
-  </a>
- </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
@@ -480,18 +475,18 @@
 <h2>Технологические множества<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <p>В первой части мы фокусировались на минимизации издержек, однако, это накладывало определенные ограничения, поскольку описать технологию просто можно одним из двух способов:
 $<span class="math notranslate nohighlight">\( x = G(\vec y), \quad F(\vec x) = y,\)</span>$
-то есть, либо один фактор, либо один конечный товар. Нам хотелось бы описать более сложные технологии, в которых есть много факторов и много конечных товаров.</p>
-<p>Оказывается, что удобнее всего отказаться от разделения между факторами и товарами, и думать о них одинаково, а наша технология будет описывать как можно одни товары превращать в другие.</p>
-<p>Пусть есть <span class="math notranslate nohighlight">\(n\)</span> товаров, которые можно произвести в количествах, описываемых точкой в <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span> (не в <span class="math notranslate nohighlight">\(\mathbb{R}^n_+\)</span>), поскольку какие то товары окажутся факторами, потраченными при производстве других.</p>
-<p>Одна технология это одна точка. Множество всех допустимых технологий это область в <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span>, то есть, <strong>технологическое множество</strong>. Эффективное производство (то, что раньше описывалось <span class="math notranslate nohighlight">\(F\)</span> или <span class="math notranslate nohighlight">\(G\)</span>) теперь описывается границей этого множества, то есть, <strong>технологической границей</strong>, см иллюстрацию ниже.</p>
+то есть либо один фактор, либо один конечный товар. Нам хотелось бы описать более сложные технологии, в которых есть много факторов и много конечных товаров.</p>
+<p>Оказывается, что удобнее всего отказаться от разделения между факторами и товарами и думать о них одинаково, а наша технология будет описывать как можно одни товары превращать в другие.</p>
+<p>Пусть есть <span class="math notranslate nohighlight">\(n\)</span> товаров, которые можно произвести в количествах, описываемых точкой в <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span> (не в <span class="math notranslate nohighlight">\(\mathbb{R}^n_+\)</span>), поскольку какие-то товары окажутся факторами, потраченными при производстве других.</p>
+<p>Одна технология это одна точка. Множество всех допустимых технологий это область в <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span>, то есть <strong>технологическое множество</strong>. Эффективное производство (то, что раньше описывалось <span class="math notranslate nohighlight">\(F\)</span> или <span class="math notranslate nohighlight">\(G\)</span>) теперь описывается границей этого множества, то есть <strong>технологической границей</strong>, см. иллюстрацию ниже.</p>
 <a class="reference internal image-reference" href="../_images/prod_set.png"><img alt="Производственное множество" class="align-center" src="../_images/prod_set.png" style="width: 400px;" /></a>
-<p>Формально технологическая граница состоит из точек <span class="math notranslate nohighlight">\(y \in Y\)</span> таких что не существует <span class="math notranslate nohighlight">\(y' \in Y\)</span>, так что <span class="math notranslate nohighlight">\(y_i' \geqslant y_i\)</span> по всем координатам <span class="math notranslate nohighlight">\(i\)</span> и <span class="math notranslate nohighlight">\(y_j' &gt; y_j\)</span> по хотя бы одной координате <span class="math notranslate nohighlight">\(j\)</span>.</p>
+<p>Формально технологическая граница состоит из точек <span class="math notranslate nohighlight">\(y \in Y\)</span> таких, что не существует <span class="math notranslate nohighlight">\(y' \in Y\)</span>, так что <span class="math notranslate nohighlight">\(y_i' \geqslant y_i\)</span> по всем координатам <span class="math notranslate nohighlight">\(i\)</span> и <span class="math notranslate nohighlight">\(y_j' &gt; y_j\)</span> по хотя бы одной координате <span class="math notranslate nohighlight">\(j\)</span>.</p>
 <div class="proof lemma admonition" id="lemma-0">
 <p class="admonition-title"><span class="caption-number">Lemma 4 </span></p>
 <div class="lemma-content section" id="proof-content">
-<p>Технологическая граница ищется как все точки <span class="math notranslate nohighlight">\(z \in Y\)</span>, такие что</p>
+<p>Технологическая граница ищется как все точки <span class="math notranslate nohighlight">\(z \in Y\)</span> такие, что</p>
 <div class="math notranslate nohighlight">
-\[ z \in \argmax \vec q \cdot \vec y, \quad \vec y \in Y,\]</div>
+\[ z \in \text{argmax } \vec q \cdot \vec y, \quad \vec y \in Y,\]</div>
 <p>для хотя бы одного вектора цен <span class="math notranslate nohighlight">\(\vec q \geqslant 0, \vec q \neq 0\)</span>.</p>
 </div>
 </div></div>
@@ -521,16 +516,16 @@ $<span class="math notranslate nohighlight">\( x = G(\vec y), \quad F(\vec x) = 
 <li><p>A5: отсутствие рога изобилия: <span class="math notranslate nohighlight">\(Y \cap \mathbb{R}^n_{+} = \emptyset\)</span>.</p></li>
 </ul>
 </div>
-</div><p>Все эти аксиомы нужны, чтобы вывести из них свойства задачи максимизации полезности, которые нам хорошо известны наперед: непрерывность и выпуклость. Гладкость тоже желательна но, на самом деле, можно обойтись выпуклостью <span class="math notranslate nohighlight">\(Y\)</span>, поскольку выпуклые функции почти всюду дифференциируемы.</p>
+</div><p>Все эти аксиомы нужны, чтобы вывести из них свойства задачи максимизации полезности, которые нам хорошо известны наперед: непрерывность и выпуклость. Гладкость тоже желательна, но, на самом деле, можно обойтись выпуклостью <span class="math notranslate nohighlight">\(Y\)</span>, поскольку выпуклые функции почти всюду дифференцируемы.</p>
 <div class="proof theorem remark admonition" id="theorem-2">
 <p class="admonition-title"><span class="caption-number">Theorem 11 </span> (Без Доказательства)</p>
 <div class="theorem-content section" id="proof-content">
-<p>Если выполнены аксиомы A1-A5, то технологическое множество выпукло. Более того, если производится один товар, то функция <span class="math notranslate nohighlight">\(F\)</span>, описывающие технологическую границу, непрерывна и вогнута.</p>
+<p>Если выполнены аксиомы A1-A5, то технологическое множество выпукло. Более того, если производится один товар, то функция <span class="math notranslate nohighlight">\(F\)</span>, описывающая технологическую границу, непрерывна и вогнута.</p>
 </div>
 </div></div>
 <div class="section" id="id4">
 <h2>Максимизация полезности<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
-<p>В такой абстрактной постановке, удобно анализировать задачу максимизации полезности:</p>
+<p>В такой абстрактной постановке удобно анализировать задачу максимизации полезности:</p>
 <div class="math notranslate nohighlight">
 \[ \pi(q, y) = \vec q \cdot \vec y \to \max, \quad y \in Y\]</div>
 <p>Как обычно, нас интересуют два объекта:</p>
@@ -560,7 +555,7 @@ $<span class="math notranslate nohighlight">\( x = G(\vec y), \quad F(\vec x) = 
 </details></div>
 <div class="section" id="id5">
 <h2>Сложение технологических множеств<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
-<p>Предоложим, что у нас есть два завода, первый обладает технологией <span class="math notranslate nohighlight">\(Y_1\)</span>, второй обладает технологией <span class="math notranslate nohighlight">\(Y_2\)</span>. Теперь представим себе, что компания владеет этими двумя заводами и может свободно перемещать товары с одного завода на другой и комбинировать любые технологические цепочки. Как описать технологическое множество <span class="math notranslate nohighlight">\(Y_1 + Y_2\)</span>, соответствующее этой компании?</p>
+<p>Предоложим, что у нас есть два завода. Первый обладает технологией <span class="math notranslate nohighlight">\(Y_1\)</span>, второй обладает технологией <span class="math notranslate nohighlight">\(Y_2\)</span>. Теперь представим себе, что компания владеет этими двумя заводами и может свободно перемещать товары с одного завода на другой и комбинировать любые технологические цепочки. Как описать технологическое множество <span class="math notranslate nohighlight">\(Y_1 + Y_2\)</span>, соответствующее этой компании?</p>
 <div class="proof definition admonition" id="definition-3">
 <p class="admonition-title"><span class="caption-number">Definition 47 </span></p>
 <div class="definition-content section" id="proof-content">
