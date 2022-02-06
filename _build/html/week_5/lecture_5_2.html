@@ -473,23 +473,38 @@ $<span class="math notranslate nohighlight">\( x = G(\vec y), \quad F(\vec x) = 
 <div class="proof theorem remark admonition" id="theorem-1">
 <p class="admonition-title"><span class="caption-number">Theorem 11 </span> (Без Доказательства)</p>
 <div class="theorem-content section" id="proof-content">
-<p>Если выполнены аксиомы A1-A5, то технологическое множество выпукло, а для любой группы конечных товаров <span class="math notranslate nohighlight">\(i_1, \ldots, i_k\)</span> существуют производственные функции <span class="math notranslate nohighlight">\(\{F_{j}\}_{j=1}^k\)</span>, описывающая технологическую границу в соответствующем ортанте:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{cases}
-y_{i_1} = F_1(y_i, i \notin i_1, \ldots, i_k),\\
-\ldots\\
-y_{i_k} = F_k(y_i, i \notin i_1, \ldots, i_k).
-\end{cases}\end{split}\]</div>
+<p>Если выполнены аксиомы A1-A5, то технологическое множество выпукло. Более того, если производится один товар, то функция <span class="math notranslate nohighlight">\(F\)</span>, описывающие технологическую границу, непрерывна и вогнута.</p>
 </div>
-</div><p>Крышка означает, что аргумент пропущен. Для <span class="math notranslate nohighlight">\(k = 1\)</span> эта теорема доказана в учебнике БЖЦ. Для общего случая это, вообще говоря, моя гипотеза.</p>
-<p>Вогнутость нужна (именно вогнутость, а не квази-вогнутость) потому, что нам нужна выпуклость <span class="math notranslate nohighlight">\(Y\)</span>, то есть, выпуклость подграфика.</p>
-</div>
+</div></div>
 <div class="section" id="id3">
 <h2>Максимизация полезности<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <p>В такой абстрактной постановке, удобно анализировать задачу максимизации полезности:</p>
 <div class="math notranslate nohighlight">
-\[ \vec q \cdot \vec y \to \max, \quad y \in Y\]</div>
+\[ \pi(q, y) = \vec q \cdot \vec y \to \max, \quad y \in Y\]</div>
+<p>Как обычно, нас интересуют два объекта:</p>
+<ul class="simple">
+<li><p>координаты оптимума <span class="math notranslate nohighlight">\(y^{\ast}(\vec q)\)</span>, функция предложения?</p></li>
+<li><p>значение целевой функции <span class="math notranslate nohighlight">\(\pi(\vec q, y^{\ast})\)</span></p></li>
+</ul>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Вопрос: Чему равен градиент <span class="math notranslate nohighlight">\(\pi(q, y^{\ast})\)</span>?<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Функции предложения.</p>
 </div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Вопрос: Какова форма функции <span class="math notranslate nohighlight">\(\pi(\vec q, y^{\ast})\)</span>?<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Выпуклая.</p>
+</div>
+</details></div>
 </div>
 
     <script type="text/x-thebe-config">
