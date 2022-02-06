@@ -23,6 +23,7 @@ $$ x = G(\vec y), \quad F(\vec x) = y,$$
 :::{prf:lemma}
 
 Технологическая граница ищется как все точки $z \in Y$, такие что 
+
 $$ z \in \argmax \vec q \cdot \vec y, \quad \vec y \in Y,$$
 
 для хотя бы одного вектора цен $\vec q \geqslant 0, \vec q \neq 0$.
