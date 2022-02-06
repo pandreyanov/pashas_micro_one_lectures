@@ -390,6 +390,11 @@
    Технологические множества
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   Максимизация полезности
+  </a>
+ </li>
 </ul>
 
             </nav>
@@ -415,6 +420,11 @@
    Технологические множества
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   Максимизация полезности
+  </a>
+ </li>
 </ul>
 
                         </nav>
@@ -433,7 +443,7 @@ $<span class="math notranslate nohighlight">\( x = G(\vec y), \quad F(\vec x) = 
 то есть, либо один фактор, либо один конечный товар. Нам хотелось бы описать более сложные технологии, в которых есть много факторов и много конечных товаров.</p>
 <p>Оказывается, что удобнее всего отказаться от разделения между факторами и товарами, и думать о них одинаково, а наша технология будет описывать как можно одни товары превращать в другие.</p>
 <p>Пусть есть <span class="math notranslate nohighlight">\(n\)</span> товаров, которые можно произвести в количествах, описываемых точкой в <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span> (не в <span class="math notranslate nohighlight">\(\mathbb{R}^n_+\)</span>), поскольку какие то товары окажутся факторами, потраченными при производстве других.</p>
-<p>Одна технология это одна точка. Множество всех допустимых технологий это область в <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span>, или, <strong>технологическое множество</strong>. Эффективное производство (то, что раньше описывалось <span class="math notranslate nohighlight">\(F\)</span> или <span class="math notranslate nohighlight">\(G\)</span>) теперь описывается границей этого множества, см иллюстрацию ниже.</p>
+<p>Одна технология это одна точка. Множество всех допустимых технологий это область в <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span>, то есть, <strong>технологическое множество</strong>. Эффективное производство (то, что раньше описывалось <span class="math notranslate nohighlight">\(F\)</span> или <span class="math notranslate nohighlight">\(G\)</span>) теперь описывается границей этого множества, то есть, <strong>технологической границей</strong>, см иллюстрацию ниже.</p>
 <a class="reference internal image-reference" href="../_images/prod_set.png"><img alt="Производственное множество" class="align-center" src="../_images/prod_set.png" style="width: 400px;" /></a>
 <p>Фирма воспринимает технологическое множество и максимизирует прибыль:</p>
 <div class="math notranslate nohighlight">
@@ -461,14 +471,26 @@ $<span class="math notranslate nohighlight">\( x = G(\vec y), \quad F(\vec x) = 
 </div>
 </div><p>Все эти аксиомы нужны, чтобы вывести из них свойства задачи максимизации полезности, которые нам хорошо известны наперед: непрерывность и выпуклость. Гладкость тоже желательна но, на самом деле, можно обойтись выпуклостью <span class="math notranslate nohighlight">\(Y\)</span>, поскольку выпуклые функции почти всюду дифференциируемы.</p>
 <div class="proof theorem remark admonition" id="theorem-1">
-<p class="admonition-title"><span class="caption-number">Theorem 11 </span> (Из учебника БЖЦ)</p>
+<p class="admonition-title"><span class="caption-number">Theorem 11 </span> (Без Доказательства)</p>
 <div class="theorem-content section" id="proof-content">
-<p>Если выполнены аксиомы A1-A5, то технологическое мноюество выпукло, а для каждого товара <span class="math notranslate nohighlight">\(i\)</span> существует производственная функция <span class="math notranslate nohighlight">\(F_i\)</span>, описывающая технологическую границу:</p>
-<div class="math notranslate nohighlight">
-\[y_i = F_i(y_1, \ldots, \hat y_i \ldots, y_n),\]</div>
+<p>Если выполнены аксиомы A1-A5, то технологическое мноюество выпукло, а для любой группы конечных товаров <span class="math notranslate nohighlight">\(i_1, \ldots, i_k\)</span> существуют производственные функции <span class="math notranslate nohighlight">\(\{F_{j}\}_{j=1^k}\)</span>, описывающая технологическую границу в соответствующем ортанте:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{gather*}
+y_{i_1} = F_1(y_i, i \notin i_1, \ldots, i_k),\\
+\ldots\\
+y_{i_k} = F_k(y_i, i \notin i_1, \ldots, i_k),
+\end{gather*}\]</div>
 <p>вогнутую и непрерывную.</p>
 </div>
-</div></div>
+</div><p>Крышка означает, что аргумент пропущен. Для <span class="math notranslate nohighlight">\(k = 1\)</span> эта теорема доказана в учебнике БЖЦ. Для общего случая это, вообще говоря, моя гипотеза.</p>
+<p>Вогнутость нужна (именно вогнутость, а не квази-вогнутость) потому, что нам нужна выпуклость <span class="math notranslate nohighlight">\(Y\)</span>, то есть, выпуклость подграфика.</p>
+</div>
+<div class="section" id="id3">
+<h2>Максимизация полезности<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>В такой абстрактной постановке, удобно анализировать задачу максимизации полезности:</p>
+<div class="math notranslate nohighlight">
+\[ \vec q \cdot \vec y \to \max, \quad y \in Y\]</div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
