@@ -29,9 +29,11 @@ $$ \vec q \cdot y \to \max, \quad \vec y \in Y.$$
 
 - A1: $Y$ содержит $\vec{0}$
 - A2: свобода расходования
+
 $$ y \in Y, y' < y \quad \Rightarrow \quad y' \in Y$$
 
-- A3: невозрастающая отдача от масштаба: 
+- A3: невозрастающая отдача от масштаба:
+
 $$y \in Y \Rightarrow \lambda Y \in Y, \quad \forall \lambda \in (0,1)$$
 
 - A4: непусто, замкнуто
@@ -44,6 +46,7 @@ $$y \in Y \Rightarrow \lambda Y \in Y, \quad \forall \lambda \in (0,1)$$
 :::{prf:theorem} Из учебника БЖЦ
 :class: remark
 Если выполнены аксиомы A1-A5, то технологическое мноюество выпукло, а для каждого товара $i$ существует производственная функция $F_i$, описывающая технологическую границу:
+
 $$y_i = F_i(y_1, \ldots, \hat y_i \ldots, y_n),$$
 
 вогнутую и непрерывную.
