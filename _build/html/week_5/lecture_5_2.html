@@ -405,6 +405,16 @@
    Сложение технологических множеств
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id6">
+   Сложение технологических границ
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id7">
+   Примеры…
+  </a>
+ </li>
 </ul>
 
             </nav>
@@ -443,6 +453,16 @@
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id5">
    Сложение технологических множеств
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id6">
+   Сложение технологических границ
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id7">
+   Примеры…
   </a>
  </li>
 </ul>
@@ -565,13 +585,33 @@ $<span class="math notranslate nohighlight">\( z \in \argmax \vec q \cdot \vec y
 \[ \alpha(a + b) + (1-\alpha)(a'+b') = [\alpha a + (1-\alpha) a'] + [\alpha b + (1-\alpha) b']\]</div>
 <p class="card-text">Соответственно, она тоже лежит в <span class="math notranslate nohighlight">\(A + B\)</span>.</p>
 </div>
-</details><p>Предположим далее, что <span class="math notranslate nohighlight">\(Y_1\)</span> описывается производственной функцией <span class="math notranslate nohighlight">\(F_1\)</span>, а <span class="math notranslate nohighlight">\(Y_2\)</span> описывается производственной функцией <span class="math notranslate nohighlight">\(F_2\)</span>. Как будет выглядеть производственная функция для <span class="math notranslate nohighlight">\(Y_1 + Y_2\)</span>?</p>
+</details></div>
+<div class="section" id="id6">
+<h2>Сложение технологических границ<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<p>Предположим далее, что <span class="math notranslate nohighlight">\(Y_1\)</span> описывается производственной функцией <span class="math notranslate nohighlight">\(F_1\)</span>, а <span class="math notranslate nohighlight">\(Y_2\)</span> описывается производственной функцией <span class="math notranslate nohighlight">\(F_2\)</span>. Как будет выглядеть производственная функция для <span class="math notranslate nohighlight">\(Y_1 + Y_2\)</span>?</p>
 <p>Какие есть кандидаты?</p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(F_1 + F_2\)</span></p></li>
 <li><p><span class="math notranslate nohighlight">\(\max(F_1 + F_2)\)</span></p></li>
 <li><p><span class="math notranslate nohighlight">\(\nabla F_1 = \nabla F_2\)</span></p></li>
 </ul>
+<p>Легко видеть, что производственная функция <span class="math notranslate nohighlight">\(F\)</span> множества <span class="math notranslate nohighlight">\(Y_1 + Y_2\)</span> определяется как верхняя огибающая семейства опорных функций: $<span class="math notranslate nohighlight">\(F(x_1, \ldots, x_n) : = \max_{\hat x} \left(F_1(\hat x_1, \ldots, \hat x_n) + F_2(x_1 - \hat x_1, \ldots, x_n - \hat x_n)\right),\)</span>$</p>
+<p>то есть, мы сначала решаем сколько произвести на первом заводе, а потом производим остальное на втором заводе. Что нам говорит Теорема об Огибающей? Наклон огибающей равен наклону опорной функции в точке касания:</p>
+<div class="math notranslate nohighlight">
+\[ \nabla F = \nabla F_2.\]</div>
+<p>С другой стороны, можно сказать, что</p>
+<div class="math notranslate nohighlight">
+\[F(x_1, \ldots, x_n) : = \max_{\hat x} \left(F_2(\hat x_1, \ldots, \hat x_n) + F_1(x_1 - \hat x_1, \ldots, x_n - \hat x_n)\right),\]</div>
+<p>то есть, мы сначала решаем сколько произвести на первом заводе, а потом производим остальное на втором заводе. И снова, Теорема об Огибающей:</p>
+<div class="math notranslate nohighlight">
+\[ \nabla F = \nabla F_1.\]</div>
+<p>Получается, что необходимым условием для того, чтобы точка лежала на границе объединенного технологического множества <span class="math notranslate nohighlight">\(\vec y \in Y_1 + Y_2\)</span> является то, что, при разложении <span class="math notranslate nohighlight">\(\vec y = \vec y_1 + \vec y_2\)</span> этой точки на вектор <span class="math notranslate nohighlight">\(\vec y_1 \in Y_1\)</span> и вектор <span class="math notranslate nohighlight">\(\vec y_2 \in Y_2\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[ \nabla F_1(\vec y_1) =  \nabla F_2(\vec y_2).\]</div>
+<p>С другой стороны, очевидно, что при разложении <span class="math notranslate nohighlight">\(\vec y = \vec y_1 + \vec y_2\)</span> этой точки, <span class="math notranslate nohighlight">\(\vec y_1\)</span> на границе <span class="math notranslate nohighlight">\(Y_1\)</span>, а <span class="math notranslate nohighlight">\(\vec y_2\)</span> лежит на границе <span class="math notranslate nohighlight">\(Y_2\)</span>. Таким образом, для того, чтобы описать суммарную технологическую границу, надо сложить только те пары точек <span class="math notranslate nohighlight">\(y_1 = F_1(\vec x_1)\)</span> и <span class="math notranslate nohighlight">\(y_2 \in F_2(\vec x_2)\)</span>, в которых наклоны равны, и сосчитать <span class="math notranslate nohighlight">\((\vec x_1 + \vec x_2, y_1 + y_2)\)</span>.</p>
+</div>
+<div class="section" id="id7">
+<h2>Примеры…<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 
