@@ -50,10 +50,8 @@ $$y \in Y \Rightarrow \lambda Y \in Y, \quad \forall \lambda \in (0,1)$$
 \begin{gather*}
 y_{i_1} = F_1(y_i, i \notin i_1, \ldots, i_k),\\
 \ldots\\
-y_{i_k} = F_k(y_i, i \notin i_1, \ldots, i_k),
+y_{i_k} = F_k(y_i, i \notin i_1, \ldots, i_k).
 \end{gather*}
-
-вогнутую и непрерывную.
 
 :::
 
