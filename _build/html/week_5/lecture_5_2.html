@@ -409,11 +409,13 @@
   <a class="reference internal nav-link" href="#id6">
    Сложение технологических границ
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id7">
-   Примеры…
-  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+     Пример
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -459,11 +461,13 @@
   <a class="reference internal nav-link" href="#id6">
    Сложение технологических границ
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id7">
-   Примеры…
-  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+     Пример
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -609,10 +613,29 @@ $<span class="math notranslate nohighlight">\( x = G(\vec y), \quad F(\vec x) = 
 <p>Получается, что необходимым условием для того, чтобы точка лежала на границе объединенного технологического множества <span class="math notranslate nohighlight">\(\vec y \in Y_1 + Y_2\)</span> является то, что, при разложении <span class="math notranslate nohighlight">\(\vec y = \vec y_1 + \vec y_2\)</span> этой точки на вектор <span class="math notranslate nohighlight">\(\vec y_1 \in Y_1\)</span> и вектор <span class="math notranslate nohighlight">\(\vec y_2 \in Y_2\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[ \nabla F_1(\vec y_1) =  \nabla F_2(\vec y_2).\]</div>
-<p>С другой стороны, очевидно, что при разложении <span class="math notranslate nohighlight">\(\vec y = \vec y_1 + \vec y_2\)</span> этой точки, <span class="math notranslate nohighlight">\(\vec y_1\)</span> на границе <span class="math notranslate nohighlight">\(Y_1\)</span>, а <span class="math notranslate nohighlight">\(\vec y_2\)</span> лежит на границе <span class="math notranslate nohighlight">\(Y_2\)</span>. Таким образом, для того, чтобы описать суммарную технологическую границу, надо сложить только те пары точек <span class="math notranslate nohighlight">\(y_1 = F_1(\vec x_1)\)</span> и <span class="math notranslate nohighlight">\(y_2 \in F_2(\vec x_2)\)</span>, в которых наклоны равны, и сосчитать <span class="math notranslate nohighlight">\((\vec x_1 + \vec x_2, y_1 + y_2)\)</span>.</p>
-</div>
+<p>С другой стороны, очевидно, что при разложении <span class="math notranslate nohighlight">\(\vec y = \vec y_1 + \vec y_2\)</span> этой точки, <span class="math notranslate nohighlight">\(\vec y_1\)</span> на границе <span class="math notranslate nohighlight">\(Y_1\)</span>, а <span class="math notranslate nohighlight">\(\vec y_2\)</span> лежит на границе <span class="math notranslate nohighlight">\(Y_2\)</span>.</p>
+<p>Таким образом, для того, чтобы описать суммарную технологическую границу, надо сложить только те пары точек <span class="math notranslate nohighlight">\(y_1 = F_1(\vec x_1)\)</span> и <span class="math notranslate nohighlight">\(y_2 \in F_2(\vec x_2)\)</span>, в которых наклоны равны, и сосчитать <span class="math notranslate nohighlight">\((\vec x_1 + \vec x_2, y_1 + y_2)\)</span>.</p>
 <div class="section" id="id7">
-<h2>Примеры…<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<h3>Пример<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<p>Пусть технологии заданы производственными функциями:</p>
+<div class="math notranslate nohighlight">
+\[ F_1(k,l) = (k^2 l)^{1/3}, \quad F_2(k,l) = (k l^2)^{1/3}.\]</div>
+<p>Посмотрим, хватит ли нам уравнений, чтобы вычуслить суммарную производственную функцию.</p>
+<p>Первым делом, разобьем <span class="math notranslate nohighlight">\(k\)</span>,<span class="math notranslate nohighlight">\(l\)</span> на <span class="math notranslate nohighlight">\(k_1+k_2\)</span> и <span class="math notranslate nohighlight">\(l_1+l_2\)</span> соответственно. Тогда уже известно, что объем произведенного конечного товара будет равен:</p>
+<div class="math notranslate nohighlight">
+\[y_1 + y_2\]</div>
+<p>Надо найти шесть уравнений, которые помогут нам исключить <span class="math notranslate nohighlight">\(k_1, k_2, l_1, l_2, y_1, y_2\)</span>, оставив при этом <span class="math notranslate nohighlight">\(k,l\)</span>. Я утверждаю, что это:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{gather*}
+3 \log y_1 = 2 \log k_1 + \log l_1 \\
+3 \log y_2 = \log k_2 + 2 \log l_2 \\
+\log y_1 + \log(2/3) - \log k_1 = \log y_2 + \log(1/3) - \log k_1 \\
+\log y_2 + \log(1/3) - \log l_1 = \log y_1 + \log(2/3) - \log l_1 \\
+k_1 + k_2 = k\\
+l_1 + l_2 = l
+\end{gather*}\end{split}\]</div>
+<p>Это шесть уравнений и шесть неизвестных. В явном виде оно, к сожалению, не решается, но иногда просто полезно знать о том, что такая система есть.</p>
+</div>
 </div>
 </div>
 
