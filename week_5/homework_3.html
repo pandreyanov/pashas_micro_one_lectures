@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Квадратичные формы &#8212; Учебник по Микро 1, для ИП, ФЭН ВШЭ</title>
+    <title>Третье домашнее задание &#8212; Учебник по Микро 1, для ИП, ФЭН ВШЭ</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -56,8 +56,8 @@
     <script>mermaid.initialize({startOnLoad:true});</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Бэкпроп" href="backprop.html" />
-    <link rel="prev" title="Дифференциалы" href="differentials.html" />
+    <link rel="next" title="Дифференциалы" href="../cheetsheet/differentials.html" />
+    <link rel="prev" title="Пятая лекция, часть 2" href="lecture_5_2.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -271,24 +271,24 @@
   Пятая неделя
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../week_5/intro_5.html">
+  <a class="reference internal" href="intro_5.html">
    Содержание
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../week_5/lecture_5_1.html">
+  <a class="reference internal" href="lecture_5_1.html">
    Пятая лекция, часть 1
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../week_5/lecture_5_2.html">
+  <a class="reference internal" href="lecture_5_2.html">
    Пятая лекция, часть 2
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../week_5/homework_3.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Третье домашнее задание
   </a>
  </li>
@@ -298,24 +298,24 @@
   Мат. шпаргалка
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="differentials.html">
+  <a class="reference internal" href="../cheetsheet/differentials.html">
    Дифференциалы
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../cheetsheet/forms.html">
    Квадратичные формы
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="backprop.html">
+  <a class="reference internal" href="../cheetsheet/backprop.html">
    Бэкпроп
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="approximations.html">
+  <a class="reference internal" href="../cheetsheet/approximations.html">
    Приближения
   </a>
  </li>
@@ -360,7 +360,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/cheetsheet/forms.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/week_5/homework_3.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -392,20 +392,23 @@
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id2">
-   Критерий Сильвестра
+   Монеты и шлемы (2 балла)
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id3">
-     Вогнутость
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id4">
-     Квази вогнутость
-    </a>
-   </li>
-  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   Заводы (4 балла)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id4">
+   Слуцкий (6 баллов)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cv-ev-8">
+   CV и EV (8 баллов)
+  </a>
  </li>
 </ul>
 
@@ -417,7 +420,7 @@
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Квадратичные формы</h1>
+                <h1>Третье домашнее задание</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -429,20 +432,23 @@
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id2">
-   Критерий Сильвестра
+   Монеты и шлемы (2 балла)
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id3">
-     Вогнутость
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id4">
-     Квази вогнутость
-    </a>
-   </li>
-  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   Заводы (4 балла)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id4">
+   Слуцкий (6 баллов)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cv-ev-8">
+   CV и EV (8 баллов)
+  </a>
  </li>
 </ul>
 
@@ -453,74 +459,61 @@
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="forms">
-<span id="id1"></span><h1>Квадратичные формы<a class="headerlink" href="#forms" title="Permalink to this headline">¶</a></h1>
-<p>С точки зрения пользователя, <strong>квадратичная форма</strong> это просто квадратная матрица, которая является при этом также симметричной. В нашем курсе такие матрицы появятся при повторном дифференциировании гладких функций, то есть, при выписывания Гессиана.</p>
-<p>Пусть, к примеру у нас есть фунция <span class="math notranslate nohighlight">\(f(x, y) = x^2 y + x + y\)</span></p>
-<p>Тогда градиент равен:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split} \nabla f = \begin{pmatrix} \frac{\partial f}{\partial x}\\ \frac{\partial f}{\partial y}\end{pmatrix} = \begin{pmatrix} 2 x y + 1\\ x^2 + 1\end{pmatrix}\end{split}\]</div>
-<p>а Гессиан равен:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split} \nabla^2 f = \begin{pmatrix} \frac{\partial^2 f}{\partial^2 x} &amp; \frac{\partial^2 f}{\partial x \partial y} \\ \frac{\partial^2 f}{\partial y \partial x} &amp; \frac{\partial^2 f}{\partial^2 y}\end{pmatrix} = \begin{pmatrix} 2 y &amp; 2 x \\ 2 x &amp; 0\end{pmatrix}\end{split}\]</div>
-<p>Квадратичная форма применяется к векторам и выдает обычные числа. Например, если вектор равен <span class="math notranslate nohighlight">\(v=(a, b)\)</span>, тогда</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\nabla^2 f (v) = \begin{pmatrix} a &amp; b \end{pmatrix} \begin{pmatrix} 2 y &amp; 2 x \\ 2 x &amp; 0\end{pmatrix} \begin{pmatrix} a \\ b \end{pmatrix}\end{split}\]</div>
-<p>Перемножая все три матрицы вручную, мы получаем:</p>
-<div class="math notranslate nohighlight">
-\[\nabla^2 f (v) = a^2 \cdot 2 y + a b \cdot x y + b^2 \cdot 0.\]</div>
-<p>Это функция от координат вектора <span class="math notranslate nohighlight">\(v = (a,b)\)</span>, а <span class="math notranslate nohighlight">\(x, y\)</span> это параметры. Довольно легко подогнать параметры так, чтобы значение функции было гарантированно полоэительным или гарантированно отрицательным на всех векторах <span class="math notranslate nohighlight">\(v\)</span>, отличных от нуля.</p>
-<p>Например, если <span class="math notranslate nohighlight">\(x = 0, y = 1\)</span> то форма положительно определена и мы пишем <span class="math notranslate nohighlight">\(\nabla^2 f &gt; 0\)</span>. Если же <span class="math notranslate nohighlight">\(x = 0, y = -1\)</span> то форма отрицательно определена и мы пишем <span class="math notranslate nohighlight">\(\nabla^2 f &lt; 0\)</span>.</p>
+  <div class="tex2jax_ignore mathjax_ignore section" id="id1">
+<h1>Третье домашнее задание<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="id2">
-<h2>Критерий Сильвестра<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p>Для дважды дифференциируемых функций существуют удобные дифференциальные критерии вогнутости (отрицательной полу-определенности) и квази вогнутости (отрицательной полу-определенности на касательном к ограночению пространстве).</p>
-<p>Критерий состоит из двух тестов: слабого и сильного. Если функция не проходит слабый тест, то она точно не (квази) вогнута. Если функция проходит сильный тест, то она точно (квази) вогнута.</p>
-<p>Если функция проходит слабый но не сильный тест, то она попадает в узкий класс, про который критерий Сильвестра ничего сказать не может. В таком случае, проверку придется осуществлять по определению. Например, можно изобразить случайно взятое верхнее Лебегово множество и убедиться в том, что оно выпукло.</p>
+<h2>Монеты и шлемы (2 балла)<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>Некоторая фирма в сто тридчать четвертом государстве производит два товара: монеты (<span class="math notranslate nohighlight">\(y_1\)</span>, в килограммах) и шлемы (<span class="math notranslate nohighlight">\(y_2\)</span>, в килограммах). Для производства обоих товаров необходим металл (<span class="math notranslate nohighlight">\(x\)</span>). Всего в стране припасено <span class="math notranslate nohighlight">\(M\)</span> килограмм металла. Если нужно произвести меньше <span class="math notranslate nohighlight">\(M/4\)</span> килограмм монет, то для производства <span class="math notranslate nohighlight">\(x_1\)</span> монет нам необходимо <span class="math notranslate nohighlight">\(x_1\)</span> килограмм металла. Если же фирма решила произвести монет больше чем <span class="math notranslate nohighlight">\(M/4\)</span> килограмм, то при использовании <span class="math notranslate nohighlight">\(x_1\)</span> килограмм металла фирма получит только <span class="math notranslate nohighlight">\(\sqrt{x_1}\)</span> килограмм монет. Со шлемами всё проще — для производства <span class="math notranslate nohighlight">\(x_2\)</span> килограмм шлемов потребуется <span class="math notranslate nohighlight">\(x_2\)</span> киллограмм металла.</p>
+<p>Фирма продает монеты и шлемы по ценам <span class="math notranslate nohighlight">\(p_1\)</span> и <span class="math notranslate nohighlight">\(p_2\)</span>, соответственно. Предположим, что соотношение цен равно единице: <span class="math notranslate nohighlight">\(p_1/p_2=1\)</span>. Найдите объем производства монет, <span class="math notranslate nohighlight">\(y_1\)</span>, если фирма максимизирует свою прибыль.</p>
+</div>
 <div class="section" id="id3">
-<h3>Вогнутость<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
-<p>Рассмотрим гессиан функции от 3 переменных</p>
+<h2>Заводы (4 балла)<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>Фирма Ф владеет двумя заводами, на которых производит идентичный товар <span class="math notranslate nohighlight">\(x\)</span> (количество, произведенное на заводе <span class="math notranslate nohighlight">\(i\)</span> равно <span class="math notranslate nohighlight">\(x_i\)</span>). Производственная функция на первом заводе (сколько <span class="math notranslate nohighlight">\(x_1\)</span> из <span class="math notranslate nohighlight">\(K\)</span> капитала и <span class="math notranslate nohighlight">\(L\)</span> труда можно произвести) равна</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}
-\nabla^2 f = \begin{pmatrix} 
-f''_{xx} &amp; f''_{xy} &amp; f''_{xz} \\
-f''_{yx} &amp; f''_{yy} &amp; f''_{yz} \\
-f''_{zx} &amp; f''_{zy} &amp; f''_{zz}
-\end{pmatrix}
-\end{split}\]</div>
-<p>У этой матрицы, как и у любой другой, есть главные миноры:</p>
+\[
+x_1=(\sqrt{K}+\sqrt{L})^2.
+\]</div>
+<p>Производственная функция на втором заводе имеет квазилинейный вид</p>
 <div class="math notranslate nohighlight">
-\[ \Delta_1 = f''_{xx}, \quad \Delta_2 = f''_{xx}f''_{yy}-(f''_{xy})^2, \quad \ldots\]</div>
-<p>являющиеся определителями расширяющихся матриц, начиная с левого верхнего угла.</p>
-<p>Необходимым условием для вогнутости функции является то, что главные миноры имеют чередующиеся знаки, начиная с первого, который должен быть (нестрого) отрицательным:</p>
-<div class="math notranslate nohighlight">
-\[ \Delta_1 \leqslant 0, \quad \Delta_2 \geqslant 0, \quad \Delta_3 \leqslant 0,  \quad \ldots\]</div>
-<p>Достаточным условием для вогнутости функции является то, что главные миноры имеют чередующиеся знаки, начиная с первого, который должен быть (строго) отрицательным:</p>
-<div class="math notranslate nohighlight">
-\[ \Delta_1 &lt; 0, \quad \Delta_2 &gt; 0, \quad \Delta_3 &lt; 0, \quad \ldots\]</div>
+\[
+x_2=2\sqrt{K}+L.
+\]</div>
+<p>Стоимость труда и капитала равна, соответственно, <span class="math notranslate nohighlight">\(w\)</span> и <span class="math notranslate nohighlight">\(r\)</span>.</p>
+<p>а) Если фирма не может производить одновременно на двух заводах, каковы её суммарные издержки при каждом объеме производства <span class="math notranslate nohighlight">\(x\)</span> (<span class="math notranslate nohighlight">\(TC(x)\)</span>)?</p>
+<p>б) Если фирма может производить одновременно на двух заводах, каковы её суммарные издержки при каждом объеме производства <span class="math notranslate nohighlight">\(x\)</span> (<span class="math notranslate nohighlight">\(TC(x)\)</span>)?</p>
+<p>в) Если фирме для того, чтобы задействовать в производстве второй завод, необходимо сделать одноразовый платеж в размере <span class="math notranslate nohighlight">\(s\)</span> денежных единиц, какой вид примут издержки производства, если <span class="math notranslate nohighlight">\(i)\)</span> нельзя производить одновременно на двух заводах; <span class="math notranslate nohighlight">\(ii)\)</span> можно производить одновременно на двух заводах?</p>
 </div>
 <div class="section" id="id4">
-<h3>Квази вогнутость<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
-<p>Для анализа квази вогнутости, нужно заменить гессиан на окаймленный гессиан, у которого сверху и слева приставлен градиент функции в точке, а в левом верхнем углу еще стоит ноль.</p>
+<h2>Слуцкий (6 баллов)<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p>Рассмотрим полезность вида:</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{pmatrix} 
-0 &amp; f'_{x} &amp; f'_{y} &amp; f'_{z} \\
-f'_{x} &amp; f''_{xx} &amp; f''_{xy} &amp; f''_{xz} \\
-f'_{y} &amp; f''_{yx} &amp; f''_{yy} &amp; f''_{yz} \\
-f'_{z} &amp; f''_{zx} &amp; f''_{zy} &amp; f''_{zz}
-\end{pmatrix}
-\end{split}\]</div>
-<p>Миноров тут будет на один больше чем в не окаймленном случае, но считать надо от второго, иначе достаточные условия никогда не будут выполнены:</p>
-<div class="math notranslate nohighlight">
-\[ \Delta_2 = 0 \cdot f''_{xx} -(f'_{x})^2, \quad \ldots\]</div>
-<p>Необходимым условием для квази вогнутости функции является то, что главные миноры имеют чередующиеся знаки, начиная со второго, который должен быть (нестрого) отрицательным:</p>
-<div class="math notranslate nohighlight">
-\[ \Delta_2 \leqslant 0, \quad \Delta_3 \geqslant 0, \quad \Delta_4 \leqslant 0,  \quad \ldots\]</div>
-<p>Обратите внимание, что первое условие всегда автоматически выполнено.</p>
-<p>Достаточным условием для квази вогнутости функции является то, что главные миноры имеют чередующиеся знаки, начиная с первого, который должен быть (строго) отрицательным:</p>
-<div class="math notranslate nohighlight">
-\[ \Delta_2 &lt; 0, \quad \Delta_3 &gt; 0, \quad \Delta_4 &lt; 0, \quad \ldots\]</div>
+\[ U(x, y, z, w) = (xy)^{1/3} + (zw)^{1/3}\]</div>
+<p>а цены товаров <span class="math notranslate nohighlight">\(x,y,z,w\)</span> пусть будут равны <span class="math notranslate nohighlight">\(p,q,r,s\)</span> соответственно.</p>
+<ol class="simple">
+<li><p>Выпишите матрицу Слуцкого</p></li>
+<li><p>Пусть цена товара <span class="math notranslate nohighlight">\(x\)</span> выросла на 400%, посчитайте компенсирующую вариацию и эффект замещения.</p></li>
+<li><p>Предположим теперь другое. Пусть цена товара <span class="math notranslate nohighlight">\(x\)</span> выросла на 30%, цена товара <span class="math notranslate nohighlight">\(y\)</span> на 40%, цена товара <span class="math notranslate nohighlight">\(z\)</span> на 50% и товара <span class="math notranslate nohighlight">\(w\)</span> на 60%. Посчитайте компенсирующую вариацию.</p></li>
+</ol>
+<p>В этой задаче можно пользоваться приближениями, если это уместно.</p>
 </div>
+<div class="section" id="cv-ev-8">
+<h2>CV и EV (8 баллов)<a class="headerlink" href="#cv-ev-8" title="Permalink to this headline">¶</a></h2>
+<p>Рассмотрим вполне рационального Антона.</p>
+<p>Его полезность задается функцкцикй <span class="math notranslate nohighlight">\(U(f, k) = f k\)</span>, где <span class="math notranslate nohighlight">\(f\)</span> - количество месяцев подписки на футбол, а <span class="math notranslate nohighlight">\(k\)</span> - комплексные обеды. Поработав ассистентом на курсе Микро-1 Антон заработал 30000 рублей.</p>
+<ol class="simple">
+<li><p>Комплекс на Покре подешевел до 100 рублей. При этом Монополист Okko назначает цену <span class="math notranslate nohighlight">\(p\)</span> на подписку за футбол, а спрос на подписки предъявляют 300 репрезентативных Антонов. Найдите какую цену он Okko. Найдите эластичность выручки монополиста по цене, установленной им <span class="math notranslate nohighlight">\(E^{TR}_P\)</span>.</p></li>
+<li><p>Добавим к условию, что монополист Okko имел изначально нулевые предельные издержки. Государство начинает контролировать рынок подписок и устанавливает цену в 100 рублей(если вы не смогли найти изначальную цену, предположите, что она составляла 300).</p></li>
+</ol>
+<ol class="simple">
+<li><p>Найдите то, насколько ВШЭ должна уменьшить доход Антона, чтобы вернутьтему старую полезность.</p></li>
+<li><p>Найдите то, насколько ВШЭ должна была бы изменить доход, чтобы Антону стало так же хорошо, как и при государственном вмешательстве.</p></li>
+<li><p>Скажите, что из этого CV, а что EV.</p></li>
+</ol>
+<ol class="simple">
+<li><p>Антон задался вопросом. Что будет, если государство назначит произвольный потолок цены - <span class="math notranslate nohighlight">\(p^*\)</span> больше нуля, но ниже монопольной? Чему будет равнятся <span class="math notranslate nohighlight">\(E^{\frac{CV}{EV}}_{p^*}\)</span>? Вот только он забыл свойства эластичности. Помогите ему это сделать.</p></li>
+<li><p>Предположим, что монополист получил Okko получил власть и над ценой комплексов. Найдите цены, которые монополист установит на комплекс и на подписку на футбол.</p></li>
+<li><p>Одногруппники, взявшие финрынынке, а не матан-2, посоветовали Антону купить акции Сбера, который владеет и okko и комплексами на покре. Теперь полезность Антона зависит и от выручки монополиста: <span class="math notranslate nohighlight">\(U = f k + \frac{I}{30000}TR\)</span>, где <span class="math notranslate nohighlight">\(I\)</span> - размер инвестиций. Монополист будет делать все возможное, чтобы Антон от него не ушел, а он сам имел прибыль строго больше 0. Найдите все значения I для Антона, при которых он предпочел купить ноутбук, потратив на него все свои деньги, но получив взамен полезность <span class="math notranslate nohighlight">\(U = 10000\)</span></p></li>
+</ol>
 </div>
 </div>
 
@@ -537,7 +530,7 @@ f'_{z} &amp; f''_{zx} &amp; f''_{zy} &amp; f''_{zz}
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./cheetsheet"
+            path: "./week_5"
         },
         predefinedOutput: true
     }
@@ -549,17 +542,17 @@ f'_{z} &amp; f''_{zx} &amp; f''_{zy} &amp; f''_{zz}
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="differentials.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="lecture_5_2.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Дифференциалы</p>
+            <p class="prev-next-title">Пятая лекция, часть 2</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="backprop.html" title="next page">
+    <a class='right-next' id="next-link" href="../cheetsheet/differentials.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Бэкпроп</p>
+        <p class="prev-next-title">Дифференциалы</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
