@@ -75,7 +75,7 @@ $$\vec h (\vec p, \bar U) = \vec m(\vec p,  E(\vec p, \bar U)).$$
 
 Вас, скорее всего, не учили матричному дифференциированию, но в данном случае оно работает примерно также как и обычное:
 
-$$ \nabla \vec h(\vec p,  \bar U) = \nabla \vec m(\vec p,  \bar U) + \frac{\partial m}{\partial I} \cdot \nabla E(\vec p, \bar U) = \nabla \vec m(\vec p,  \bar U) + \frac{\partial m}{\partial I} \cdot \vec h $$
+$$ \nabla \vec h(\vec p,  \bar U) = \nabla \vec m(\vec p,  I) + \frac{\partial m}{\partial I} \cdot \nabla E(\vec p, \bar U) = \nabla \vec m(\vec p,  I) + \frac{\partial m}{\partial I} \cdot \vec h $$
 
 Проблема в том, что и $\frac{\partial m}{\partial I}$ и $\vec h$ это вектора длины $n$, и, поэтому, мы должны подумать, в каком порядке мы их хотим перемножить. Есть два варианта: либо мы умножаем строку $\frac{\partial m}{\partial I}$ на столбец $\vec h$, либо мы умножаем столбец $\frac{\partial m}{\partial I}$ на строку $\vec h$. Один из этих вариантов даст число, а другой матрицу. Тот вариант, который сохранит размерность объекта и будет правильным матричным дифференциированием. 
 
