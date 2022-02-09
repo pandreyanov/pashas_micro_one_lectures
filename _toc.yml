@@ -50,6 +50,7 @@ parts:
     - file: week_5/intro_5
     - file: week_5/lecture_5_1
     - file: week_5/lecture_5_2
+    - file: week_5/seminar_5
     - file: week_5/homework_3
 - caption: Мат. шпаргалка
   chapters:
