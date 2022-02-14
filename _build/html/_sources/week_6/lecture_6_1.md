@@ -117,7 +117,7 @@ $$ MC(Q_i) = ATC(Q_i) \quad \Rightarrow \quad Q_i = \sqrt{2}$$
 
 P = 100 - n Q_i\\
 Q_i = P\\
-Q_i = \srqt{2}
+Q_i = \sqrt{2}
 
 \end{gather*}
 
