@@ -52,6 +52,10 @@ parts:
     - file: week_5/lecture_5_2
     - file: week_5/seminar_5
     - file: week_5/homework_3
+- caption: Шестая неделя
+  chapters:
+    - file: week_6/intro_6
+    - file: week_6/lecture_6_1
 - caption: Мат. шпаргалка
   chapters:
     - file: cheetsheet/differentials
