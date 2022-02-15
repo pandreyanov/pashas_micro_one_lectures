@@ -480,6 +480,23 @@
   <a class="reference internal nav-link" href="#id13">
    Агрегирование
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id14">
+     Пример со спросом
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id15">
+     Пример с предложением
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id16">
+   Частичное равновесие
+  </a>
  </li>
 </ul>
 
@@ -563,6 +580,23 @@
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id13">
    Агрегирование
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id14">
+     Пример со спросом
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id15">
+     Пример с предложением
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id16">
+   Частичное равновесие
   </a>
  </li>
 </ul>
@@ -682,6 +716,44 @@
 </div>
 <div class="section" id="id13">
 <h2>Агрегирование<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h2>
+<p>Иногда мы будем моделировать несколько потребителей и несколько производителей. Тогда, необходимо сложить их соответствующие кривые спроса и предложений “горизонтально”. То есть необходимо сложить решения соответствующих задач потребителя/производителя, при каждой возможной цене.</p>
+<p>В следующих примерах я буду использовать обозначение <span class="math notranslate nohighlight">\(p,q,r\)</span> для цен товаров и факторов, a <span class="math notranslate nohighlight">\(Q^s_{\sum}\)</span>, <span class="math notranslate nohighlight">\(Q^d_{\sum}\)</span> для агрегированного предложения и спроса на товар <span class="math notranslate nohighlight">\(x\)</span>.</p>
+<div class="section" id="id14">
+<h3>Пример со спросом<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
+<p>Предположим, что есть два потребителя с одинаковым доходом, но разной полезностью:</p>
+<div class="math notranslate nohighlight">
+\[ U_1(x,y) = \sqrt(x,y), \quad U_2(x,y) = \min(x,y)\]</div>
+<p>Нас будет интересовать агрегированный спрос, например, на товар <span class="math notranslate nohighlight">\(х\)</span>, как функция от его цены <span class="math notranslate nohighlight">\(p\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[ Q^s_{\sum}(p) = \frac{I}{2p} + \frac{I}{p + q} \]</div>
+<p>где <span class="math notranslate nohighlight">\(q\)</span> это цена товара <span class="math notranslate nohighlight">\(y\)</span>, являющаяся параметром задачи.</p>
+</div>
+<div class="section" id="id15">
+<h3>Пример с предложением<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h3>
+<p>Предположим, что есть два производителя с технологиями:</p>
+<p><span class="math notranslate nohighlight">\(G_1(x,y) = 2 x^2 + y^2 \leqslant z, \quad G_2(x,y) = x^2 + 2 y^2 \leqslant z\)</span></p>
+<p>где <span class="math notranslate nohighlight">\(z\)</span> это единый фактор производства с ценой <span class="math notranslate nohighlight">\(r\)</span>. Выпишем лагранжианы:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\mathcal{L}_1 = px + qy - rz - \lambda(2x^2 + y^2 - z)\\
+\mathcal{L}_2 = px + qy - rz - \gamma(x^2 + 2y^2 - z)
+\end{split}\]</div>
+<p>Отсюда легко находятся множители лагранжа <span class="math notranslate nohighlight">\(\lambda = \gamma = r\)</span>, и, собственно предложения товара <span class="math notranslate nohighlight">\(x\)</span> от каждого из заводов.</p>
+<div class="math notranslate nohighlight">
+\[ Q^d_{\sum}(p) = \frac{p}{4 r} + \frac{p}{2r}.\]</div>
+</div>
+</div>
+<div class="section" id="id16">
+<h2>Частичное равновесие<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h2>
+<div class="proof definition admonition" id="definition-0">
+<p class="admonition-title"><span class="caption-number">Definition 55 </span></p>
+<div class="definition-content section" id="proof-content">
+<p><strong>Частичным равновесием</strong> на рынке товара <span class="math notranslate nohighlight">\(x\)</span> называется цена <span class="math notranslate nohighlight">\(P^{\ast}\)</span> и количество <span class="math notranslate nohighlight">\(Q^{\ast}\)</span> лежащее в пересечении агрегированных кривых спроса и предложения.</p>
+<div class="math notranslate nohighlight">
+\[(P^{\ast},Q^{\ast}) \in Q^d_{\sum} \cap Q^s_{\sum}(p)\]</div>
+</div>
+</div><p>Как правило, частичное равновесие существует, поскольку кривые спроса монотонны и непрерывны по общим теоремам. Однако, есть исключения. Например, при анализе предложения в присутствие фиксированных издержек, фирма “разрывно” перемещает свое предложение в ноль, в момент, когда цена проходит через точку закрытия рынка. Это значит, что равновесия может не быть, см. иллюстрацию.</p>
+<a class="reference internal image-reference" href="../_images/nonexistence.png"><img alt="Нет равновесия" class="align-center" src="../_images/nonexistence.png" style="width: 400px;" /></a>
 </div>
 </div>
 
