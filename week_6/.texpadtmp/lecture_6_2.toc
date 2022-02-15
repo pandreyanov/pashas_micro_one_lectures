@@ -1,0 +1,5 @@
+\babel@toc {russian}{}
+\beamer@sectionintoc {1}{Рынок одного товара}{2}{0}{1}
+\beamer@sectionintoc {2}{Сдвиги кривых спроса (на товары)}{4}{0}{2}
+\beamer@sectionintoc {3}{Появление субститутов}{5}{0}{3}
+\beamer@sectionintoc {4}{Появление комплементов}{9}{0}{4}
