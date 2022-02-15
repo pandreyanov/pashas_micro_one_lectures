@@ -43,6 +43,8 @@
     <script src="../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe"
@@ -403,6 +405,51 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   Сдвиги кривых спроса (на товары)
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     Появление субститутов
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     Появление комплементов
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id5">
+     Изменение цен другие товары
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id6">
+     Изменение дохода и числа потребителей
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+     Изменение собственной цены
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id8">
+   Сдвиги кривых спроса (на факторы)
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -415,6 +462,51 @@
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   Сдвиги кривых спроса (на товары)
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     Появление субститутов
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     Появление комплементов
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id5">
+     Изменение цен другие товары
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id6">
+     Изменение дохода и числа потребителей
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+     Изменение собственной цены
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id8">
+   Сдвиги кривых спроса (на факторы)
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -423,6 +515,68 @@
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="id1">
 <h1>Шестая лекция, часть 2<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>В этой секции мы поговорим о собственно кривых спроса и предложения, которые получаются в результате решения задач потребителя и производителя. Потребитель создает кривые спроса на конечные товары, а производитель на факторы. Также, производитель создает кривые предложения.</p>
+<p>Важным моментом во всем последующем анализе является то, что мы фокусируемся на рынке одного единственного товара, на который есть спрос и предложение. Это называется <strong>частичным равновесием</strong>. Остальные товары, спросы и цены на них, выносятся за рамки анализа.</p>
+<p>Пусть количество интересующего нас товара, а также равновесная цена на него ообозначаются <span class="math notranslate nohighlight">\(Q,P\)</span>.</p>
+<div class="section" id="id2">
+<h2>Сдвиги кривых спроса (на товары)<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>Зафиксируем кривую предложения <span class="math notranslate nohighlight">\(Q^s(P)\)</span>.</p>
+<div class="section" id="id3">
+<h3>Появление субститутов<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>Когда появляется новый субститут на товар, то мы считаем, что спрос на него падает (сокращается). На самом деле, не просто спрос в равновесии, а вся кривая спроса <span class="math notranslate nohighlight">\(Q^d(P)\)</span> падает, в том смысле, что при одной и той же цене, потребители согласны купить меньше этого товара.</p>
+<a class="reference internal image-reference" href="../_images/dem_contract.png"><img alt="Сокращение спроса" class="align-center" src="../_images/dem_contract.png" style="width: 400px;" /></a>
+<p>И только в результате пересечения с предложением, мы можем утверждать о собственно падении (значения) спроса.</p>
+<p>Формально замоделировать появление комплемента можно, например, при помощи полезности Кобб-Дугласа. Пусть для товара <span class="math notranslate nohighlight">\(x\)</span> появился близкий субститут <span class="math notranslate nohighlight">\(\tilde x\)</span> так, что полезность изменилась следующим образом.</p>
+<div class="math notranslate nohighlight">
+\[ x^{1/2} \quad \to \quad x^{1/4}\tilde x^{1/4}\]</div>
+<p>Проанализируйте, как изменится кривая спроса <span class="math notranslate nohighlight">\(x(p)\)</span> как функция от собственной цены.</p>
+</div>
+<div class="section" id="id4">
+<h3>Появление комплементов<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p>Когда появляется новый комплемент к нашему товару, то мы считаем, что спрос на него растет (расширяется). Представьте себе, что ученые открыли бы способ использовать старые покрышки вместо ядерного топлива. Это привело бы к увеличению спроса (даже на новые) покрышки и повышению цены.</p>
+<p>Чуть сложнее смоделировать появление комплемента, но, при большом желании можно.</p>
+<div class="math notranslate nohighlight">
+\[ x^{1/2} \quad \to \quad x^{1/2} + \min(x, \tilde x)\]</div>
+<p>Тот же вопрос.</p>
+</div>
+<div class="section" id="id5">
+<h3>Изменение цен другие товары<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<p>Когда цены другох товаров меняются, то сдвигается кривая спроса на наш товар, в зависимости от того, были ли они (валовыми) субститутами или комплементами.</p>
+<p>Мы знаем, что Леонтьевская полезность дает комплементарную связь между товарами, а Кобб-Дуглас что то среднее между субститутом и комплементом, так как спрос там не реагирует на изменения цен других товаров.</p>
+<p>Товары в CES полезности, которая рассмотрена во 2 лекции будут связаны как субституты. Действительно, вспомним формулу:</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\begin{split}x^{\ast} = \frac{\alpha^{\sigma} p^{1-\sigma}}{\alpha^{\sigma} p^{1-\sigma} + (1-\alpha)^{\sigma} q^{1-\sigma}}\frac{I}{p},\\\end{split}\\y^{\ast} = \frac{(1-\alpha)^{\sigma} q^{1-\sigma}}{\alpha^{\sigma} p^{1-\sigma} + (1-\alpha)^{\sigma} q^{1-\sigma}}\frac{I}{q}.\end{aligned}\end{align} \]</div>
+</div>
+<div class="section" id="id6">
+<h3>Изменение дохода и числа потребителей<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<p>Довольно предсказуемо ведет себя кривая спроса при увеличении дохода - она будет расширяться. Конечно, если товар не нормальный, будет верно обратное, но мы уже знаем, что для этого нужны очень специфические условия.</p>
+<p>При увеличении числа потребителей кривая спроса, конечно же, расширяется. Если потребителей стало больше, скажем, за счет, открытия новых рынков сбыта товара, то количество запрошенного товара увеличится при каждом уровне цены.</p>
+</div>
+<div class="section" id="id7">
+<h3>Изменение собственной цены<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<p>Ну и, конечно, тяжело обойти стороной самое главное - изменение собственной цены.</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Как обычно ведет себя кривая спроса при увеличении собственной цены?<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Никак, она уже зависит от собственной цены, в каждой точке. Соответственно, изменение собственной цены представляется перемещением вдоль кривой, но не самой кривой спроса.</p>
+</div>
+</details></div>
+</div>
+<div class="section" id="id8">
+<h2>Сдвиги кривых спроса (на факторы)<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<p>Ничего не мешает нам исследовать частичное равновесие на рынке факторов производства. В таком случае, фирмы ведут себя как потребители. Поставщиками факторов могут являться другие фирмы, или может быть просто неизменная мировая цена на фактор, если речь идет о нефти, угле или металле.</p>
+<p>Вот список событий, которые могут спровоцировать сокращение спроса на факторы производства.</p>
+<ul class="simple">
+<li><p>общее улучшение технологии, скажем, за счет равномерного роста производственной функции</p></li>
+<li><p>увеличение цены на фактор, который находится в комплиментарной связи (в смысле производства, подумайте  что это значит) с тем, который мы изучаем</p></li>
+<li><p>уменьшение цены на фактор, который является субститутом (опять же, в смысле производства)</p></li>
+<li><p>уменьшение цены на конечный товар, использующий этот фактор в производстве</p></li>
+</ul>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
