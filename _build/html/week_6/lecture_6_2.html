@@ -454,6 +454,33 @@
    Сдвиги кривых спроса (на факторы)
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id9">
+   Сдвиги кривых предложения
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id10">
+     Увеличение цен на факторы
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id11">
+     Санкции, квоты, катаклизмы
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id12">
+     Цена на сам товар
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id13">
+   Агрегирование
+  </a>
+ </li>
 </ul>
 
             </nav>
@@ -509,6 +536,33 @@
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id8">
    Сдвиги кривых спроса (на факторы)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id9">
+   Сдвиги кривых предложения
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id10">
+     Увеличение цен на факторы
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id11">
+     Санкции, квоты, катаклизмы
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id12">
+     Цена на сам товар
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id13">
+   Агрегирование
   </a>
  </li>
 </ul>
@@ -582,7 +636,51 @@
 <li><p>увеличение цены на фактор, который находится в комплиментарной связи (в смысле производства, подумайте  что это значит) с тем, который мы изучаем</p></li>
 <li><p>уменьшение цены на фактор, который является субститутом (опять же, в смысле производства)</p></li>
 <li><p>уменьшение цены на конечный товар, использующий этот фактор в производстве</p></li>
+<li><p>уменьшение числа фирм (внезапное)</p></li>
 </ul>
+</div>
+<div class="section" id="id9">
+<h2>Сдвиги кривых предложения<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+<p>Зафиксируем кривую спроса <span class="math notranslate nohighlight">\(Q^d(P)\)</span>. Сдвиги кривых предложения чуть более хитрые, поскольку важны оси.</p>
+<ul class="simple">
+<li><p>сокращение кривой предложение это уменьшение Q при том же P</p></li>
+<li><p>расширение кривой предложение это увеличение Q при том же P</p></li>
+</ul>
+<p>По скольку цена, как правило, находится на вертикальной оси, то расширение это движение вправо. Постарайтесь не запутаться.</p>
+<div class="section" id="id10">
+<h3>Увеличение цен на факторы<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<p>Довольно стандартной является ситуация, что цены на факторы производства растут. Напомню, что функция издержек зависит от цен на факторы. Поскольку функция издержек это огибающая издержек, ее наклон по параметрам равен условному спросу на факторы производства, то есть, у нее положительный наклон:</p>
+<div class="math notranslate nohighlight">
+\[ \nabla_p TC(p, y) = x^{\ast}(p, y) \geqslant 0\]</div>
+<p>Но, на самом деле, этого еще не достаточно, чтобы заявить о монотонности оптимального уровня производства по ценам на факторы. Для этого надо вспомнить, что гессиан (выпуклой) функции издержек это градиент от условного спроса</p>
+<div class="math notranslate nohighlight">
+\[ \nabla^2_p TC(p, y) = \nabla_p x^{\ast}(p, y) \geqslant 0.\]</div>
+<p>A значит, сам условный спрос монотонно убывает по ценам. Ну а раз условный спрос убывает, то и количество произведенного товара, конечно же, тоже убывает.</p>
+</div>
+<div class="section" id="id11">
+<h3>Санкции, квоты, катаклизмы<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<p>Конечно же, когда вмешивается некоторый внешний фактор, физически запрещающий производить определенный товар, то предложение этого товара должно упасть. Примерами могут служить</p>
+<ul class="simple">
+<li><p>запрет на оборот (вредного) товара</p></li>
+<li><p>пожары, цунами…</p></li>
+<li><p>войны, санкции…</p></li>
+</ul>
+</div>
+<div class="section" id="id12">
+<h3>Цена на сам товар<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Как ведет себя кривая предложения при увеличении цены на сам товар?<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Никак.</p>
+</div>
+</details></div>
+</div>
+<div class="section" id="id13">
+<h2>Агрегирование<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 
