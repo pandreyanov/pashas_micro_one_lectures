@@ -57,7 +57,7 @@ parts:
     - file: week_6/intro_6
     - file: week_6/lecture_6_1
     - file: week_6/lecture_6_2
-    - file: week_5/seminar_6
+    - file: week_6/seminar_6
 - caption: Мат. шпаргалка
   chapters:
     - file: cheetsheet/differentials
