@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.1.21)  16 FEB 2022 00:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.1.21)  16 FEB 2022 00:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1128,7 +1128,7 @@ File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mat
 ] [6
 
 ]
-<dem_contract.png, id=74, 454.19687pt x 442.15187pt>
+<dem_contract.png, id=126, 454.19687pt x 442.15187pt>
 File: dem_contract.png Graphic file (type png)
 <use dem_contract.png>
 Package pdftex.def Info: dem_contract.png  used on input line 58.
@@ -1147,6 +1147,105 @@ Overfull \vbox (5.61864pt too high) detected at line 58
 
 ] [11
 
+] [12
+
+] [13
+
+] [14
+
+] [15
+
+] [16
+
+] [17
+
+] [18
+
+] [19
+
+] [20
+
+]
+LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 146.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/base/ts1cmss.fd
+File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+) [21
+
+] [22
+
+] [23
+
+] [24
+
+] [25
+
+] [26
+
+] [27
+
+]
+<sup_contract.png, id=253, 457.20813pt x 448.67625pt>
+File: sup_contract.png Graphic file (type png)
+<use sup_contract.png>
+Package pdftex.def Info: sup_contract.png  used on input line 197.
+(pdftex.def)             Requested size: 215.10196pt x 211.08325pt.
+
+Overfull \vbox (7.30502pt too high) detected at line 197
+ []
+
+[28
+
+ <./sup_contract.png>] [29
+
+] [30
+
+] [31
+
+] [32
+
+] [33
+
+] [34
+
+] [35
+
+]
+
+LaTeX Warning: Command \cyrh invalid in math mode on input line 233.
+
+Missing character: There is no õ in font cmss10!
+[36
+
+] [37
+
+] [38
+
+] [39
+
+] [40
+
+] [41
+
+] [42
+
+]
+<nonexistence.png, id=341, 540.51938pt x 528.97626pt>
+File: nonexistence.png Graphic file (type png)
+<use nonexistence.png>
+Package pdftex.def Info: nonexistence.png  used on input line 283.
+(pdftex.def)             Requested size: 215.10196pt x 210.50516pt.
+
+Overfull \vbox (6.72693pt too high) detected at line 283
+ []
+
+[43
+
+ <./nonexistence.png>] [44
+
+] [45
+
+] [46
+
 ]
 \tf@nav=\write6
 \openout6 = `lecture_6_2.nav'.
@@ -1159,21 +1258,21 @@ Overfull \vbox (5.61864pt too high) detected at line 58
 
  (/Users/pasha/Documents/GitHub/pashas_micro_one_lectures/week_6/.texpadtmp/lecture_6_2.aux)
 Package rerunfilecheck Info: File `lecture_6_2.out' has not changed.
-(rerunfilecheck)             Checksum: 25ABF9B721ED0006CB2FBAB81A89F6DE;924.
+(rerunfilecheck)             Checksum: AAF1F48B6A1B3F8C828E3B6689413244;3829.
  ) 
 Here is how much of TeX's memory you used:
- 25414 strings out of 478994
- 485644 string characters out of 5858184
- 779214 words of memory out of 5000000
- 42310 multiletter control sequences out of 15000+600000
- 417796 words of font info for 59 fonts, out of 8000000 for 9000
+ 25704 strings out of 478994
+ 489855 string characters out of 5858184
+ 780216 words of memory out of 5000000
+ 42511 multiletter control sequences out of 15000+600000
+ 418141 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  131i,13n,132p,1810b,734s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb>
-Output written on /Users/pasha/Documents/GitHub/pashas_micro_one_lectures/week_6/.texpadtmp/lecture_6_2.pdf (11 pages, 192080 bytes).
+{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb>
+Output written on /Users/pasha/Documents/GitHub/pashas_micro_one_lectures/week_6/.texpadtmp/lecture_6_2.pdf (46 pages, 459425 bytes).
 PDF statistics:
- 155 PDF objects out of 1000 (max. 8388607)
- 120 compressed objects within 2 object streams
- 27 named destinations out of 1000 (max. 500000)
- 80 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 448 PDF objects out of 1000 (max. 8388607)
+ 368 compressed objects within 4 object streams
+ 110 named destinations out of 1000 (max. 500000)
+ 194 words of extra memory for PDF output out of 10000 (max. 10000000)
 
