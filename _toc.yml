@@ -58,6 +58,10 @@ parts:
     - file: week_6/lecture_6_1
     - file: week_6/lecture_6_2
     - file: week_6/seminar_6
+- caption: Седьмая неделя
+  chapters:
+    - file: week_7/intro_7
+    - file: week_7/practice_7
 - caption: Мат. шпаргалка
   chapters:
     - file: cheetsheet/differentials
