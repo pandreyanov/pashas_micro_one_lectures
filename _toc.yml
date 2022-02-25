@@ -62,6 +62,7 @@ parts:
   chapters:
     - file: week_7/intro_7
     - file: week_7/practice_7
+    - file: week_7/lecture_7_1
 - caption: Мат. шпаргалка
   chapters:
     - file: cheetsheet/differentials
