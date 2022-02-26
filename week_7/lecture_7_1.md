@@ -111,15 +111,11 @@ $$ TS = PS + CS + T$$
 
 Поехали
 
-\begin{gather*}
-
 $$
 Q^d_{home} = 10 - P, \quad Q^d_{foreign} = 20 - 2P \quad \Rightarrow \quad Q^d_{\sum} = 30 - 3P \\
 with \ trade: \quad 30 - 3P = P \quad \Rightarrow P^{\ast}_{trade} = 30/4 = 7.5 \\
-without \ trade: \quad 10 - P = P \quad \Rightarrow P^{\ast}_{war} = 10/2 = 5 \\
+without \ trade: \quad 10 - P = P \quad \Rightarrow P^{\ast}_{war} = 10/2 = 5
 $$
-
-\end{gather*}
 
 Посмотрим на излишки потребителя:
 
