@@ -353,7 +353,7 @@ $$P^{true}_D = P_D - e$$
 
 :::{image} ./ext.png
 :alt: экстерналии
-:width: 700px
+:width: 400px
 :align: center
 :::
 
