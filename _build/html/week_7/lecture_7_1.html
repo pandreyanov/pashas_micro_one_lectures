@@ -543,11 +543,6 @@
      второй способ
     </a>
    </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id16">
-     Тут будет картинка
-    </a>
-   </li>
   </ul>
  </li>
 </ul>
@@ -662,11 +657,6 @@
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#id15">
      второй способ
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id16">
-     Тут будет картинка
     </a>
    </li>
   </ul>
@@ -877,8 +867,10 @@ PS_{war} = (5-0)*(10-5)/2 = 5^2/2 = 12.5
 <p>Убедимся, что <span class="math notranslate nohighlight">\(Q(\tau) \leqslant 4\)</span>. Получается, что</p>
 <div class="math notranslate nohighlight">
 \[TS(\tau) = \tau*\frac{8-\tau}{2} + (\frac{8-\tau}{2})^2/2 = (\frac{8-\tau}{2})(\tau + 2 - \frac{\tau}{4})\]</div>
-<p>Для того, чтобы найти оптимальный налог надо промаксимизировать параболу $<span class="math notranslate nohighlight">\( (8 - \tau)(\tau + 2/3) \to \max_{\tau},\)</span><span class="math notranslate nohighlight">\(
-решение будет равноудалено от корней \)</span>8<span class="math notranslate nohighlight">\( и \)</span>-2/3<span class="math notranslate nohighlight">\(, то есть, \)</span>(8-2/3)/2 = 11/3$.</p>
+<p>Для того, чтобы найти оптимальный налог надо промаксимизировать параболу</p>
+<div class="math notranslate nohighlight">
+\[ (8 - \tau)(\tau + 2/3) \to \max_{\tau},\]</div>
+<p>решение будет равноудалено от корней <span class="math notranslate nohighlight">\(8\)</span> и <span class="math notranslate nohighlight">\(-2/3\)</span>, то есть, <span class="math notranslate nohighlight">\((8-2/3)/2 = 11/3\)</span>.</p>
 </div>
 <div class="section" id="id11">
 <h2>Налоги и импорт<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
@@ -892,14 +884,14 @@ PS_{war} = (5-0)*(10-5)/2 = 5^2/2 = 12.5
 <div class="math notranslate nohighlight">
 \[ \tau = \tau_i + \tau_e\]</div>
 <p>где <span class="math notranslate nohighlight">\(\tau_i\)</span> - налог на импорт, а <span class="math notranslate nohighlight">\(\tau_e\)</span> - налог на экспорт.</p>
-<a class="reference internal image-reference" href="../_images/nash.png"><img alt="импорт-экспорт" class="align-center" src="../_images/nash.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../_images/nash.png"><img alt="импорт-экспорт" class="align-center" src="../_images/nash.png" style="width: 700px;" /></a>
 <p>Получается, что импортер максимизирует</p>
 <div class="math notranslate nohighlight">
 \[\tau_i*\frac{8-\tau}{2} + (\frac{8-\tau}{2})^2/2 \to \max_{\tau_i}\]</div>
 <p>а экспортер максимизирует</p>
 <div class="math notranslate nohighlight">
 \[\tau_e*\frac{8-\tau}{2} + (\frac{8-\tau}{2})^2/2 \to \max_{\tau_e}.\]</div>
-<p>Мы будем искать <strong>симметричное равновесие Нэша</strong> - тройку <span class="math notranslate nohighlight">\((\tau_i,\tau_e, \tau)\)</span> такую что <span class="math notranslate nohighlight">\(\tau_i = \tau_e = \tau/2\)</span> и такую что <span class="math notranslate nohighlight">\(\tau_i\)</span> является наилучшим ответом импортера на <span class="math notranslate nohighlight">\(\tau_e\)</span> и наоборот.</p>
+<p>Мы будем искать симметричное (так как задача симметрична) <strong>равновесие Нэша</strong> - тройку <span class="math notranslate nohighlight">\((\tau_i,\tau_e, \tau)\)</span> такую что <span class="math notranslate nohighlight">\(\tau_i = \tau_e = \tau/2\)</span> и такую что <span class="math notranslate nohighlight">\(\tau_i\)</span> является наилучшим ответом импортера на <span class="math notranslate nohighlight">\(\tau_e\)</span> и наоборот.</p>
 <p>Наберемся храбрости и начнем дифференциировать (любую из двух задач)…</p>
 <div class="math notranslate nohighlight">
 \[\frac{8-\tau}{2} + \tau_i* \frac{\partial}{\partial \tau_i}(\frac{8-\tau}{2}) + \frac{8-\tau}{2}*\frac{\partial}{\partial \tau_i}(\frac{8-\tau}{2}) = 0\]</div>
@@ -935,9 +927,7 @@ PS_{war} = (5-0)*(10-5)/2 = 5^2/2 = 12.5
 \[P^{true}_D = P_D - e\]</div>
 <p>то это означает, что за каждую единицу купленного товара, выделяются (отрицательные) экстерналии. Соответственно, мы говорим что потребители терпят эти экстерналии, а значит при подсчете <span class="math notranslate nohighlight">\(CS\)</span> надо брать не площадь под <span class="math notranslate nohighlight">\(P_D\)</span> а площадь под <span class="math notranslate nohighlight">\(P_D^{true}\)</span>.</p>
 <p>По сути, это то же самое, просто <span class="math notranslate nohighlight">\(E(Q) = - e Q\)</span>, как площадь параллелограмма.</p>
-</div>
-<div class="section" id="id16">
-<h3>Тут будет картинка<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
+<a class="reference internal image-reference" href="../_images/ext.png"><img alt="экстерналии" class="align-center" src="../_images/ext.png" style="width: 700px;" /></a>
 <p>Можно сказать, что <span class="math notranslate nohighlight">\(P^{true}_D\)</span> - это <strong>истинная</strong>, или <strong>социальная</strong> квивая спроса. Однако, не стоит забывать, что потребители ведут себя эгоистично и не знают о существовании <span class="math notranslate nohighlight">\(P^{true}_D\)</span>, поэтому, равнoвесие определяется при помощи <span class="math notranslate nohighlight">\(P_D\)</span> а не <span class="math notranslate nohighlight">\(P^{true}_D\)</span>.</p>
 </div>
 </div>
