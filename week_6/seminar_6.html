@@ -43,15 +43,14 @@
     <script src="../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
     <script>mermaid.initialize({startOnLoad:true});</script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -343,7 +342,29 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../week_7/lecture_7_1.html">
-   Седьмая лекция, часть 1
+   Седьмая лекция
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_7/seminar_7.html">
+   Семинар 7
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_7/homework_4.html">
+   Четвертое домашнее задание
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Восьмая неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_8/seminar_8.html">
+   Семинар 8
   </a>
  </li>
 </ul>
@@ -459,11 +480,6 @@
    Задача 3
   </a>
  </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id5">
-   Задача 4
-  </a>
- </li>
 </ul>
 
             </nav>
@@ -497,11 +513,6 @@
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id4">
    Задача 3
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id5">
-   Задача 4
   </a>
  </li>
 </ul>
@@ -556,22 +567,6 @@
 <li><p>Увеличится стоимость ресурсов для производства товара</p></li>
 <li><p>Потребители будут ожидать увеличение цены</p></li>
 <li><p>Какие ещё факторы изменения равновесия вы знаете?</p></li>
-</ul>
-</div></blockquote>
-</div>
-<div class="section" id="id5">
-<h2>Задача 4<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
-<p>Совокупный спрос на плюшевых мишек описывается функцией <span class="math notranslate nohighlight">\(x^A(p) = 400-10p\)</span>, а совокупное предложение — <span class="math notranslate nohighlight">\(y(p) = 20p - 20\)</span>. В отрасли введен налог <span class="math notranslate nohighlight">\(t\)</span> на продажу каждой единицы блага.</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>Какие содержательные результаты зависят от того, будет ли этот налог платить потребитель или производитель?
-*Какова должна быть величина налога, чтобы в результате его введения равновесный объем выпуска сократился в тринадцать раз?</p></li>
-<li><p>Изобразите графически излишек потребителя, излишек производителя и чистые потери общества до и после введения налога.</p></li>
-<li><p>Вычислите все упомянутые в предыдущем пункте показатели как по графику, так и пользуясь определениями. Убедитесь, что результаты, полученные разными способами, совпадают.</p></li>
-<li><p>Выведите уравнение кривой Лаффера для данного налога и найдите такую ставку <span class="math notranslate nohighlight">\(t^*\)</span>, которая максимизирует налоговые поступления, и сами налоговые поступления при такой ставке.</p></li>
-<li><p>Пусть теперь вместо потоварного налога вводится адвалорный акциз, то есть в бюджет уплачивается доля <span class="math notranslate nohighlight">\(\tau_1\)</span> от расходов потребителей на данный товар. Выведите уравнение кривой Лаффера для такого типа налога и найдите максимальные налоговые поступления. Сравните результат с ответом предыдущего пункта. Объясните.</p></li>
-<li><p>Отменяя все предыдущие налоги, государство вводит адвалорный налог с продаж: теперь в бюджет уплачивается доля <span class="math notranslate nohighlight">\(\tau_2\)</span> от выручки, которая остается у продавцов после налогообложения. Выведите кривую Лаффера для этого налога, найдите максимальные налоговые поступления. Объясните, почему результат отличается (или не отличается) от предыдущего пункта.</p></li>
-<li><p>Отменяя все налоги, государство вводит потоварную субсидию в~размере четверти от первоначальной равновесной цены.</p></li>
 </ul>
 </div></blockquote>
 </div>
