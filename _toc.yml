@@ -65,6 +65,9 @@ parts:
     - file: week_7/lecture_7_1
     - file: week_7/seminar_7
     - file: week_7/homework_4
+- caption: Восьмая неделя
+  chapters:
+    - file: week_8/seminar_8
 - caption: Мат. шпаргалка
   chapters:
     - file: cheetsheet/differentials
