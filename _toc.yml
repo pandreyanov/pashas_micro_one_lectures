@@ -72,7 +72,7 @@ parts:
 - caption: Девятая неделя
   chapters:
     - file: week_9/intro_9
-    # - file: week_9/seminar_9
+    - file: week_9/seminar_9
 - caption: Мат. шпаргалка
   chapters:
     - file: cheetsheet/differentials
