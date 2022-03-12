@@ -43,15 +43,14 @@
     <script src="../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
     <script>mermaid.initialize({startOnLoad:true});</script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -229,7 +228,7 @@
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../week_3/homework_3.html">
+  <a class="reference internal" href="../week_3/homework_2.html">
    Второе домашнее задание
   </a>
  </li>
@@ -280,6 +279,92 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../week_5/lecture_5_1.html">
    Пятая лекция, часть 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_5/lecture_5_2.html">
+   Пятая лекция, часть 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_5/seminar_5.html">
+   Семинар 5
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_5/homework_3.html">
+   Третье домашнее задание
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Шестая неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_6/intro_6.html">
+   Содержание
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_6/lecture_6_1.html">
+   Шестая лекция, часть 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_6/lecture_6_2.html">
+   Шестая лекция, часть 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_6/seminar_6.html">
+   Семинар 6
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Седьмая неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_7/intro_7.html">
+   Содержание
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_7/practice_7.html">
+   Задачи для тренировки
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_7/lecture_7_1.html">
+   Седьмая лекция
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_7/seminar_7.html">
+   Семинар 7
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_7/homework_4.html">
+   Четвертое домашнее задание
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Восьмая неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_8/seminar_8.html">
+   Семинар 8
   </a>
  </li>
 </ul>
@@ -485,6 +570,137 @@
 <li><p>Предположим, потоварный налог отменили, но теперь взымается подоходный налог с Гуся в размере <span class="math notranslate nohighlight">\(100\cdot \alpha\)</span>%, где <span class="math notranslate nohighlight">\(\alpha \in (0, 1)\)</span>. Определите, как спрос Гуся на товары зависит от <span class="math notranslate nohighlight">\(\alpha\)</span> (можно не приводить вычисления). Как суммарные налоговые сборы зависят от <span class="math notranslate nohighlight">\(\alpha\)</span>?</p></li>
 <li><p>Гуседарству не понравился эффект от введенного в предыдущем пункте налога, оно отменило его и ввело паушальный налог на доход Гуся. Ответьте на вопросы предыдущего пункта.</p></li>
 </ol>
+<details>
+    <summary>Решение</summary>
+<ol class="simple">
+<li><p>Запишем его бюджетное ограничение:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+5x + 10y - 50=0.
+\]</div>
+<ol class="simple">
+<li><p>Давайте решим задачу заменой переменной. Заметим, что функция полезности монотонно возрастает по обоим аргументам, значит, решение будет находиться в точке касания бюджетного ограничения и кривой безразличия (задача выпуклая). Выразим <span class="math notranslate nohighlight">\(y\)</span> из бюджетного ограничения:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+y=\frac{1}{10}(50-5x)=5-0.5x.
+\]</div>
+<p>Тогда оптимизационная задача примет вид:</p>
+<div class="math notranslate nohighlight">
+\[
+\max_{x \in [0; 10]} 2\sqrt{x} + 5 - 0.5x
+\]</div>
+<p>Ограничение <span class="math notranslate nohighlight">\(x \in [0; 10]\)</span> взято из того условия, что мы не можем оказаться за границами бюджетного множества, а также количество блага не может измеряться отрицательным числом.</p>
+<p>Мы видим, что целевая функция - это парабола с ветвями вниз относительно <span class="math notranslate nohighlight">\(\sqrt{x}\)</span>, значит, её вершина определяет решение оптимизационной задачи Гуся:</p>
+<div class="math notranslate nohighlight">
+\[
+\sqrt{x^*}=\frac{-b}{2a}=\frac{-2}{-0.5 * 2}=2\Rightarrow x^*=4.
+\]</div>
+<p>Чтобы найти <span class="math notranslate nohighlight">\(y^*\)</span>, нужно найденный <span class="math notranslate nohighlight">\(x^*\)</span> подставить в бюджетное ограничение (границу бюджетного множества):</p>
+<div class="math notranslate nohighlight">
+\[
+y^*=5-0.5x^*=5-0.5\cdot 4=3.
+\]</div>
+<ol class="simple">
+<li><p>Введение <strong>потоварного налога</strong> по ставке <span class="math notranslate nohighlight">\(t\)</span> на картофель означает, что стоимость картофеля теперь равна <span class="math notranslate nohighlight">\(5+t\)</span>. При неизменной величине дохода и <span class="math notranslate nohighlight">\(t&gt;0\)</span> (исключим возможность <em>субсидирования</em> - это, простыми словами, мера, прямо противоположная налогу) это значит, что доступное множество пар <span class="math notranslate nohighlight">\((x, y)\)</span> станет меньше. Иными словами, граница бюджетного ограничения “повернётся” вокруг точки пересечения с осью <span class="math notranslate nohighlight">\(y\)</span>:</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/sem4_p1tax.png"><img alt="tax" class="align-center" src="../_images/sem4_p1tax.png" style="width: 400px;" /></a>
+<p>Запишем обновленное бюджетное ограничение:</p>
+<div class="math notranslate nohighlight">
+\[
+(5+t)x+10y-50=0.
+\]</div>
+<p>Аналогично предыдущему пункту, выразим <span class="math notranslate nohighlight">\(y\)</span> из бюджетного ограничения:</p>
+<div class="math notranslate nohighlight">
+\[
+y=\frac{1}{10}(50-(5+t)x)=5-(0.5+0.1t)x.
+\]</div>
+<p>Подставим этот <span class="math notranslate nohighlight">\(y\)</span> в целевую функцию (полезность) и промаксимизируем:</p>
+<div class="math notranslate nohighlight">
+\[
+\max_{x\in \left[0; \frac{50}{5+t}\right]} 2\sqrt{x} + 5 - (0.5+0.1t)x
+\]</div>
+<p>И снова это парабола с ветвями вниз относительно <span class="math notranslate nohighlight">\(\sqrt{x} \Rightarrow\)</span> максимум в вершине:</p>
+<div class="math notranslate nohighlight">
+\[
+\sqrt{x^*} = \frac{-b}{2a} = \frac{-2}{-2\cdot (0.5+0.1t)}=\frac{1}{0.5+0.1t} = \frac{10}{5+t} \Rightarrow x^*=\frac{100}{(5+t)^2}.
+\]</div>
+<details>
+    <summary>Проверим себя</summary>
+<hr class="docutils" />
+<p>Подставив <span class="math notranslate nohighlight">\(t=0\)</span>, мы должны получить значение из предыдущего пункта, и это действительно так:</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{100}{(5+t)^2} = \frac{100}{(5+0)^2}=\frac{100}{25}=4.
+\]</div>
+<hr class="docutils" />
+</details>
+<p>Чтобы получить <span class="math notranslate nohighlight">\(y^*\)</span>, нам нужно, опять, подставить найденный <span class="math notranslate nohighlight">\(x^*\)</span> в бюджетное ограничение:</p>
+<div class="math notranslate nohighlight">
+\[ 
+y^* = 5 - (0.5+0.1t)x^*=5 - (0.5+0.1t) \cdot \left(\frac{1}{0.5+0.1t}\right)^2 
+\]</div>
+<div class="math notranslate nohighlight">
+\[ = 5-\frac{1}{0.5+0.1t} \]</div>
+<!-- % & = \frac{1.5+0.5t}{0.5+0.1t} \\
+ -->
+<div class="math notranslate nohighlight">
+\[ = \frac{15+5t}{5+t} . \]</div>
+<p>Давайте не будем брать производные, потому что можно и без них определить характер зависимости.</p>
+<ul class="simple">
+<li><p>Во-первых, рассмотрим <span class="math notranslate nohighlight">\(x^*(t)\)</span>. Заметим, что <span class="math notranslate nohighlight">\(t&gt;0\)</span> находится в знаменателе. Потому мы можем сделать вывод, что <span class="math notranslate nohighlight">\(x^*_t&lt;0\)</span> (<span class="math notranslate nohighlight">\(x^*\)</span> <em>убывает по <span class="math notranslate nohighlight">\(t\)</span></em>).</p></li>
+<li><p>Во-вторых, рассмотрим <span class="math notranslate nohighlight">\(y^*(t)\)</span>. Преобразуем выражение для этой зависимости, полученное ранее:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+y^*=\frac{15+5t}{5+t} = \frac{5(5+t)-10}{5+t}=\left[5-\left(\frac{10}{5+t}\right)\Big\downarrow \right] \Big\uparrow.
+\]</div>
+<p>Стрелочки указывают, что происходит с <span class="math notranslate nohighlight">\(y^*\)</span> при росте <span class="math notranslate nohighlight">\(t\)</span>. Так, <span class="math notranslate nohighlight">\(y^*_t&gt;0\)</span>.</p>
+<p>Получается, чем дороже Гусю обходится картофель, тем меньше картофеля и тем больше свёклы он покупает.</p>
+<ol class="simple">
+<li><p>Во-первых, давайте определим, как в нашем случае выглядят <em>налоговые сборы</em>. В данной задаче это то, сколько рублей государство собирает суммарно с каждого килограмма картофеля, или, формульно,</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+T_x=x^*(t)\cdot t,
+\]</div>
+<p>поскольку ставка влияет на то, сколько картофеля будет приобретено. <span class="math notranslate nohighlight">\(T_x\)</span> достаточно распространенное обозначение для суммарных налоговых сборов (это не отсылка к тому, что налог взымается с блага <span class="math notranslate nohighlight">\(x\)</span>).</p>
+<p>Значит, оптимизационная задача государства имеет вид:</p>
+<div class="math notranslate nohighlight">
+\[
+\max_{t\geqslant 0} \frac{100}{(5+t)^2}\cdot t.
+\]</div>
+<p>Запишем условие первого порядка:</p>
+<div class="math notranslate nohighlight">
+\[ 
+\text{F.O.C.: } \frac{100}{(5+t)^2}-2t\cdot \frac{100}{(5+t)^3}=0 \]</div>
+<div class="math notranslate nohighlight">
+\[
+100(5+t)-200t=500+100t-200t=500-100t=0 \Rightarrow t^*=5 \]</div>
+<div class="math notranslate nohighlight">
+\[
+\text{S.O.C.: } -2\cdot \frac{100}{(5+t)^3}-2\cdot \frac{100}{(5+t)^3}+6t\cdot \frac{100}{(5+t)^4} \text{ Vs. } 0
+\]</div>
+<div class="math notranslate nohighlight">
+\[ 
+-400(5+t)+600t=-2000+200t&lt;0 \text{ когда } t&lt;10 
+\]</div>
+<p>Значит, при <span class="math notranslate nohighlight">\(t&lt;10\)</span> мы находимся на участке вогнутости функции, причем на этом участке находится найденный экстремум. Можно также проверить, что это глобальный максимум, но это можно понять, посмотрев на первую производную целевой функции - при <span class="math notranslate nohighlight">\(t&gt;5\)</span> функция монотонно убывает по <span class="math notranslate nohighlight">\(t\)</span>, и при <span class="math notranslate nohighlight">\(t&lt;5\)</span> она монотонно возрастает.</p>
+<p>Значит, при <span class="math notranslate nohighlight">\(t=5\)</span> налоговые сборы государства максимальны.</p>
+<ol class="simple">
+<li><p>Вычисления можно не приводить потому, что теперь доход не 50, а <span class="math notranslate nohighlight">\(50(1-\alpha)\)</span>, что сразу можно подставить в ответы первого пункта. Вдобавок, можно заметить, что потребление <span class="math notranslate nohighlight">\(x\)</span> <em>не зависит от дохода Гуся</em> - это вы могли заметить еще на 3 семинаре, когда выводили Маршалианские спросы для квазилинейной функции полезности. Значит, остается только посчитать <span class="math notranslate nohighlight">\(y^*\)</span>:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+y^*=\frac{1}{10}(50(1-\alpha)-5\cdot 4)=5(1-\alpha)-2.
+\]</div>
+<p>Видим, что потребление <span class="math notranslate nohighlight">\(y\)</span> сокращается с ростом <span class="math notranslate nohighlight">\(\alpha\)</span>, а потребление <span class="math notranslate nohighlight">\(x\)</span> остается неизменным.</p>
+<p>Что касается налоговых сборов, то в случае подоходного налога они равны <span class="math notranslate nohighlight">\(50\alpha\)</span>, возрастают по <span class="math notranslate nohighlight">\(\alpha\)</span> и не зависят от потребления благ (напоминает паушальный налог).</p>
+<ol class="simple">
+<li><p>Пусть величина паушального налога равна <span class="math notranslate nohighlight">\(T\)</span>. Тогда в распоряжении Гуся остается <span class="math notranslate nohighlight">\(50-T\)</span>. Заметим, что это очень похоже на ситуацию в предыдущем пункте: при подоходном налоге в распоряжении Гуся оставалось <span class="math notranslate nohighlight">\(50-50\alpha\)</span>. Можно сказать, что <span class="math notranslate nohighlight">\(\alpha = T/50\)</span>, тогда решение этого пункта полностью повторяет пункт 5. Отвечать на зависимость налоговых сборов от <span class="math notranslate nohighlight">\(\alpha\)</span> тут, очевидно, не нужно.</p></li>
+</ol>
+</details>
 </div>
 <div class="section" id="cv-ev-1">
 <h2>Задача 2: про CV и EV (продолжение задачи 1)<a class="headerlink" href="#cv-ev-1" title="Permalink to this headline">¶</a></h2>
@@ -494,19 +710,63 @@
 <li><p>Предположим, стоимость картофеля выросла на 3 денежные единицы. Расчитайте CV и EV. Изобразите на графике.</p></li>
 <li><p>Предположим, стоимость свёклы выросла на 6 денежных единиц. Расчитайте CV и EV. Изобразите на графике.</p></li>
 </ol>
+<details>
+    <summary>Решение</summary>
+<hr class="docutils" />
+<ol class="simple">
+<li><p>Рост цены на картошку</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/sem4_p21.png"><img alt="картошка" class="align-center" src="../_images/sem4_p21.png" style="width: 400px;" /></a>
+<ol class="simple">
+<li><p>Рост цены на свёеклу</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/sem4_p22.png"><img alt="свекла" class="align-center" src="../_images/sem4_p22.png" style="width: 400px;" /></a>
+<hr class="docutils" />
+</details>
 </div>
 <div class="section" id="cv-ev">
 <h2>Задача 3: про CV и EV на графике функций Хиксианского спроса<a class="headerlink" href="#cv-ev" title="Permalink to this headline">¶</a></h2>
 <p>Покажите на графике функций спроса по Хиксу компенсирующую вариацию и эквивалентную вариацию. Предполагайте, что у нас два товара, функция полезности <span class="math notranslate nohighlight">\(u(x, y)\)</span> вогнутая, бюджетное ограничение линейно, а решение задачи потребителя находится в точке касания кривой безразличия с бюджетным ограничением.</p>
+<details>
+    <summary>Решение</summary>
+<hr class="docutils" />
+<p>Как хиксианский спрос выводится:</p>
+<a class="reference internal image-reference" href="../_images/sem4_p31.png"><img alt="вывод" class="align-center" src="../_images/sem4_p31.png" style="width: 400px;" /></a>
+<p>Площадь под графиком хиксианского спроса - расходы:</p>
+<a class="reference internal image-reference" href="../_images/sem4_p32.png"><img alt="расх" class="align-center" src="../_images/sem4_p32.png" style="width: 400px;" /></a>
+<p>Собственно, вариации:</p>
+<a class="reference internal image-reference" href="../_images/sem4_p33.png"><img alt="вариации" class="align-center" src="../_images/sem4_p33.png" style="width: 400px;" /></a>
+<hr class="docutils" />
+</details>
 </div>
 <div class="section" id="ie-se">
 <h2>Задача 4: про IE и SE для разных типов благ<a class="headerlink" href="#ie-se" title="Permalink to this headline">¶</a></h2>
+<p><em>IE - income effect, SE - substitution effect.</em></p>
 <p>Изобразите на графиках в осях <span class="math notranslate nohighlight">\((x, y)\)</span> для благ <span class="math notranslate nohighlight">\(x, y\)</span> эффект дохода и эффект замещения, а также изменение объема потребляемого <span class="math notranslate nohighlight">\(x\)</span> при росте цены на благо <span class="math notranslate nohighlight">\(x\)</span> (при прочих равных), если <span class="math notranslate nohighlight">\(x\)</span>:</p>
 <ol class="simple">
 <li><p>Нормальный товар;</p></li>
 <li><p>Инфериорный товар;</p></li>
 <li><p>Товар Гиффена.</p></li>
 </ol>
+<details>
+    <summary>Решение</summary>
+<hr class="docutils" />
+<ol class="simple">
+<li><p><strong>Нормальное благо</strong></p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/sem4_p4n.png"><img alt="норм" class="align-center" src="../_images/sem4_p4n.png" style="width: 400px;" /></a>
+<hr class="docutils" />
+<ol class="simple">
+<li><p><strong>Инфериорное благо</strong></p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/sem4_p4i.png"><img alt="инф" class="align-center" src="../_images/sem4_p4i.png" style="width: 400px;" /></a>
+<hr class="docutils" />
+<ol class="simple">
+<li><p><strong>Товар Гиффена</strong></p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/sem4_p4g.png"><img alt="гиффен" class="align-center" src="../_images/sem4_p4g.png" style="width: 400px;" /></a>
+<hr class="docutils" />
+</details>
 </div>
 <div class="section" id="id3">
 <h2>Задача 5: матрица (уравнение) Слуцкого<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
@@ -515,11 +775,15 @@
 <hr class="docutils" />
 <p>Для начала зададим определение для элемента на <span class="math notranslate nohighlight">\(i\)</span>-ой строке <span class="math notranslate nohighlight">\(j\)</span>-том столбце матрицы Слуцкого:</p>
 <div class="math notranslate nohighlight">
-\[s_{ij}=\overbrace{\underbrace{\frac{\partial x_i(p, I)}{\partial p_j}}_{\text{Изменение спроса}} + \underbrace{x_j(p, I)\frac{\partial x_i(p, I)}{\partial I}}_{\text{Эффект дохода}}}^{\text{Эффект замещения}}.\]</div>
+\[
+s_{ij}=\overbrace{\underbrace{\frac{\partial x_i(p, I)}{\partial p_j}}_{\text{Изменение спроса}} + \underbrace{x_j(p, I)\frac{\partial x_i(p, I)}{\partial I}}_{\text{Эффект дохода}}}^{\text{Эффект замещения}}.
+\]</div>
 <p>Матрица Слуцкого, таким образом, это <span class="math notranslate nohighlight">\(S=\{s_{ij}\}_{i,j\in \overline{1, n}}\)</span>. С таким определением перед глазами проще работать далее.</p>
 <p>В частности, есть такая сущность, как “декомпозиция Слуцкого” (на английском называют Slutsky decomposition или Slutsky equation). Тут надо просто перенести эффект дохода направо и получим:</p>
 <div class="math notranslate nohighlight">
-\[\frac{\partial x_i(p, I)}{\partial p_j} = s_{ij}-x_j(p, I)\frac{\partial x_i(p, I)}{\partial I}=\frac{\partial h_i(p, u)}{\partial p_j}-x_j(p, I)\frac{\partial x_i(p, I)}{\partial I}.\]</div>
+\[
+\frac{\partial x_i(p, I)}{\partial p_j} = s_{ij}-x_j(p, I)\frac{\partial x_i(p, I)}{\partial I}=\frac{\partial h_i(p, u)}{\partial p_j}-x_j(p, I)\frac{\partial x_i(p, I)}{\partial I}.
+\]</div>
 <p>Последний переход к производной хиксианского спроса валиден потому, что элемент <span class="math notranslate nohighlight">\(s_{ij}\)</span> матрицы Слуцкого представляет собой эффект замещения, а он, в свою очередь, равен производной хиксианского спроса.</p>
 <p>А теперь можно перейти к решению задачи.</p>
 <hr class="docutils" />
@@ -533,6 +797,128 @@
 <li><p>Выпишите матрицу Слуцкого.</p></li>
 <li><p>Дайте характеристику благам <span class="math notranslate nohighlight">\(x, y\)</span> (комплементы/субституты, нормальные/инфериорные).</p></li>
 </ol>
+<details>
+    <summary>Решение</summary>
+<ol class="simple">
+<li><p>Запишем бюджетное ограничение:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+px+qy-I=0.
+\]</div>
+<p>Из бюджетного ограничения выразим <span class="math notranslate nohighlight">\(y\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+y=\frac{1}{q}(I-px)=\frac{I}{q} - \frac{p}{q} x.
+\]</div>
+<p>Подставим этот <span class="math notranslate nohighlight">\(y\)</span> в целевую функцию (которая окажется параболой с ветвями вниз относительно <span class="math notranslate nohighlight">\(\sqrt{x}\)</span>) и промаксимизируем:</p>
+<div class="math notranslate nohighlight">
+\[
+\max_{x\in \left[0; \frac{I}{p}\right]} \sqrt{x} + \frac{I}{q} - \frac{p}{q} x
+\]</div>
+<p>Максимум в вершине:</p>
+<div class="math notranslate nohighlight">
+\[
+\sqrt{x^*}=\frac{-b}{2a}=\frac{-1}{-2p/q}=\frac{q}{2p}\Rightarrow x^* = \frac{q^2}{4p^2}.
+\]</div>
+<p><span class="math notranslate nohighlight">\(y^*\)</span> найдем из бюджетного ограничения:</p>
+<div class="math notranslate nohighlight">
+\[
+y^*=\frac{I}{q} - \frac{p}{q} x^*=\frac{I}{q} - \frac{p}{q} \cdot \frac{q^2}{4p^2} = \frac{I}{q} - \frac{q}{4p}.
+\]</div>
+<p><span class="math notranslate nohighlight">\(x^*, y^*\)</span> - необходимые нам Маршалианские спросы.</p>
+<ol class="simple">
+<li><p>Косвенная функция полезности имеет вид:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+v(q, p, I)=\sqrt{x^*} + y^*=\frac{q}{2p}+ \frac{I}{q} - \frac{q}{4p}=\frac{I}{q} + \frac{q}{4p}.
+\]</div>
+<p>Функция расходов:</p>
+<div class="math notranslate nohighlight">
+\[
+e(p, q, u)=q\left(u-\frac{q}{4p}\right)
+\]</div>
+<ol class="simple">
+<li><p>По <em>лемме Шепарда</em>, Хиксианские спросы определяются частными производными функции расходов:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[
+h_x(p, q, u) =e'_p = \frac{q^2}{4p^2}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+h_y(p, q, u) =e'_q = u-\frac{q}{2p}
+\]</div>
+<ol class="simple">
+<li><p>Запишем уравнение Слуцкого. Для начала рассмотрим благо <span class="math notranslate nohighlight">\(x\)</span>. Изменение спроса на это благо по его цене <span class="math notranslate nohighlight">\(p\)</span> равно:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[ 
+\frac{\partial x(p, q, I)}{\partial p} = \frac{\partial h_x(p, q, u)}{\partial p}-x(p, q, I)\frac{\partial x(p, q, I)}{\partial I}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+= -\frac{q^2}{2p^3}-\frac{q^2}{4p^2}\cdot 0
+\]</div>
+<div class="math notranslate nohighlight">
+\[ 
+= -\frac{q^2}{2p^3}
+\]</div>
+<p>В последней задаче мы поговорим о том, что для квазилинейных полезностей характерно отсутствие эффекта дохода, а сейчас мы увидели это на примере конкретной функции.</p>
+<p>Обратимся к изменению спроса на <span class="math notranslate nohighlight">\(x\)</span> по цене другого блага, <span class="math notranslate nohighlight">\(q\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[ 
+\frac{\partial x(p, q, I)}{\partial q} = \frac{\partial h_x(p, q, u)}{\partial q}-y(p, q, I)\frac{\partial x(p, q, I)}{\partial I}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+= \underbrace{\frac{q}{2p^2}}_{SE&gt;0}-\underbrace{\left(\frac{I}{q} - \frac{q}{4p}\right) \cdot 0}_{IE=0} 
+\]</div>
+<p>Теперь рассмотрим благо <span class="math notranslate nohighlight">\(y\)</span>. Изменение спроса на <span class="math notranslate nohighlight">\(y\)</span> в ответ на изменение его цены <span class="math notranslate nohighlight">\(q\)</span> равно:</p>
+<div class="math notranslate nohighlight">
+\[ 
+\frac{\partial y(p, q, I)}{\partial q} = \frac{\partial h_y(p, q, u)}{\partial q}-y(p, q, I)\frac{\partial y(p, q, I)}{\partial I}
+\]</div>
+<div class="math notranslate nohighlight">
+\[= -\frac{1}{2p} - \left(\frac{I}{q} - \frac{q}{4p}\right)\cdot \frac{1}{q} 
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+= -\frac{1}{2p}-\frac{I}{q^2}+\frac{1}{4p} 
+\]</div>
+<div class="math notranslate nohighlight">
+\[ 
+= -\frac{1}{4p} -\frac{I}{q^2}.
+\]</div>
+<p>Обратимся к изменению спроса на <span class="math notranslate nohighlight">\(y\)</span> по цене другого блага, <span class="math notranslate nohighlight">\(p\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[ 
+\frac{\partial y(p, q, I)}{\partial p} = \frac{\partial h_y(p, q, u)}{\partial p}-x(p, q, I)\frac{\partial y(p, q, I)}{\partial I}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+= \underbrace{\frac{q}{2p^2}}_{SE&gt;0}-\underbrace{\frac{q^2}{4p^2}\cdot \frac{1}{q}}_{IE&gt;0}
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+= \frac{q}{4p^2} 
+\]</div>
+<p>Так, мы рассмотрели все варианты и выписали декомпозиции для каждого случая.</p>
+<ol class="simple">
+<li><p>Матрица Слуцкого - матрица производных функций Хиксианских спросов по ценам. Используя знания из предыдущего пункта (что мы ранее посчитали), давайте заполним матрицу. Она будет иметь вид:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+S = \begin{pmatrix}
+\frac{\partial h_x(p, q, I)}{\partial p} &amp; \frac{\partial h_x(p, q, I)}{\partial q}\\
+\frac{\partial h_y(p, q, I)}{\partial p} &amp; \frac{\partial h_y(p, q, I)}{\partial q}
+\end{pmatrix} = \begin{pmatrix}
+-\frac{q^2}{2p^3} &amp; \frac{q}{2p^2} \\ 
+\frac{q}{2p^2} &amp; -\frac{1}{2p}
+\end{pmatrix}
+\end{split}\]</div>
+</details>
 </div>
 <div class="section" id="id4">
 <h2>Задача 6: про IE и SE для квазилинейной функции полезности<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
@@ -544,14 +930,47 @@
 </details>
 <p>Давайте покажем, что следующее утверждение верно:</p>
 <div class="proof property admonition" id="property-0">
-<p class="admonition-title"><span class="caption-number">Property 33 </span></p>
+<p class="admonition-title"><span class="caption-number">Property 31 </span></p>
 <div class="property-content section" id="proof-content">
 <p>Квазилинейная функция полезности</p>
 <div class="math notranslate nohighlight">
 \[u(x, y)=f(x)+ky,\]</div>
 <p>где <span class="math notranslate nohighlight">\(f(\cdot)\)</span> - вогнутая функция, характеризуется отсутствием эффекта дохода при рассмотрении блага <span class="math notranslate nohighlight">\(x\)</span>.</p>
 </div>
-</div></div>
+</div><details>
+    <summary>Решение</summary>
+<p>Пусть цены товаров <span class="math notranslate nohighlight">\(x, y\)</span> равны <span class="math notranslate nohighlight">\(p, q\)</span> соответственно, а доход агента равен <span class="math notranslate nohighlight">\(I\)</span>. Запишем бюджетное ограничение и выразим из него <span class="math notranslate nohighlight">\(y\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+px+qy-I=0 \Rightarrow y=\frac{I}{q}-\frac{p}{q}x.
+\]</div>
+<p>Подставим этот <span class="math notranslate nohighlight">\(y\)</span> в целевую функцию и промаксимизируем по <span class="math notranslate nohighlight">\(x\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[ 
+\max_{x\in \left[0; \frac{I}{p}\right]} f(x) + k\left(\frac{I}{q}-\frac{p}{q}x\right) 
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\text{F.O.C.: } f_x-k\cdot \frac{p}{q}=0
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+\text{S.O.C.: } f_{xx} &lt; 0, \text{ т.к. $f$ -- вогнутая} 
+\]</div>
+<p>Значит, оптимальный <span class="math notranslate nohighlight">\(x^*\)</span> определяется как решение уравнения <span class="math notranslate nohighlight">\(f_x-k\cdot \frac{p}{q}=0\)</span>.</p>
+<p>Далее, запишем <span class="math notranslate nohighlight">\(x^*_I\)</span>, применив знание о производной неявной функции к <span class="math notranslate nohighlight">\(f_x-k\cdot \frac{p}{q}=0\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+f_{xx}\cdot \frac{\partial x^*}{\partial I}-0=0\Rightarrow f_{xx}\cdot \frac{\partial x^*}{\partial I}=0
+\]</div>
+<p>Мы знаем, что <span class="math notranslate nohighlight">\(f_{xx}&lt;0\)</span>, значит, <span class="math notranslate nohighlight">\(x^*_I=0\)</span>. Этого достаточно, чтобы утверждать, что спрос на благо <span class="math notranslate nohighlight">\(x\)</span> характеризуется нулевым эффектом дохода.</p>
+<p>Давайте запишем <span class="math notranslate nohighlight">\(x^*_q\)</span>, вновь применив знание о производной неявной функции к <span class="math notranslate nohighlight">\(f_x-k\cdot \frac{p}{q}=0\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+f_{xx}\cdot \frac{\partial x^*}{\partial q}+k\cdot \frac{p}{q^2}=0\Rightarrow \frac{\partial x^*}{\partial q}=-k\cdot \frac{p}{q^2}\cdot \frac{1}{f_{xx}} &gt; 0
+\]</div>
+<p>Значит, блага <span class="math notranslate nohighlight">\(x\)</span> и <span class="math notranslate nohighlight">\(y\)</span> - субституты.</p>
+</details></div>
 </div>
 
     <script type="text/x-thebe-config">

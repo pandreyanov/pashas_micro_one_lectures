@@ -43,20 +43,19 @@
     <script src="../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
     <script>mermaid.initialize({startOnLoad:true});</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Дифференциалы" href="../cheetsheet/differentials.html" />
+    <link rel="next" title="Пятая лекция, часть 2" href="lecture_5_2.html" />
     <link rel="prev" title="Содержание" href="intro_5.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -229,7 +228,7 @@
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../week_3/homework_3.html">
+  <a class="reference internal" href="../week_3/homework_2.html">
    Второе домашнее задание
   </a>
  </li>
@@ -280,6 +279,92 @@
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    Пятая лекция, часть 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lecture_5_2.html">
+   Пятая лекция, часть 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="seminar_5.html">
+   Семинар 5
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="homework_3.html">
+   Третье домашнее задание
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Шестая неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_6/intro_6.html">
+   Содержание
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_6/lecture_6_1.html">
+   Шестая лекция, часть 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_6/lecture_6_2.html">
+   Шестая лекция, часть 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_6/seminar_6.html">
+   Семинар 6
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Седьмая неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_7/intro_7.html">
+   Содержание
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_7/practice_7.html">
+   Задачи для тренировки
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_7/lecture_7_1.html">
+   Седьмая лекция
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_7/seminar_7.html">
+   Семинар 7
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_7/homework_4.html">
+   Четвертое домашнее задание
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Восьмая неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_8/seminar_8.html">
+   Семинар 8
   </a>
  </li>
 </ul>
@@ -402,26 +487,31 @@
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id6">
-   Убывающая отдача от масштаба
+   Разные спросы
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id7">
-   Оптимальное распределение производства
+   Убывающая отдача от масштаба
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id8">
-   Производственные цепочки
+   Оптимальное распределение производства
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id9">
-   Экспорт и потребление
+   Производственные цепочки
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id10">
+   Экспорт и потребление
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id11">
    Кривые производственных возможностей
   </a>
  </li>
@@ -467,26 +557,31 @@
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id6">
-   Убывающая отдача от масштаба
+   Разные спросы
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id7">
-   Оптимальное распределение производства
+   Убывающая отдача от масштаба
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id8">
-   Производственные цепочки
+   Оптимальное распределение производства
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id9">
-   Экспорт и потребление
+   Производственные цепочки
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id10">
+   Экспорт и потребление
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id11">
    Кривые производственных возможностей
   </a>
  </li>
@@ -503,9 +598,9 @@
 <h1>Пятая лекция, часть 1<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="id2">
 <h2>Функция издержек<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p>Точно также, как в теории потребителя поведение аганта задавалось функцией полезности, в теории производителя поведение агента задается функцией издержек <span class="math notranslate nohighlight">\(TC(p, y)\)</span>.</p>
-<p>Здесь <span class="math notranslate nohighlight">\(y\)</span> это количество произведенного товара а <span class="math notranslate nohighlight">\(\vec q\)</span> это вектор цен на факторы производства. Не путайте функцию издержек с функцией расходов <span class="math notranslate nohighlight">\(E(\vec p, \bar U)\)</span>. Обратите внимание, что я буду теперь везде использовать векторные обозначения.</p>
-<p>Вообще, у нас будут два набора цен: <span class="math notranslate nohighlight">\(\vec q\)</span> на конечные товары и <span class="math notranslate nohighlight">\(\vec p\)</span> на факторы. Также, будут два набора координат: <span class="math notranslate nohighlight">\(\vec y\)</span> для конечных товаров и <span class="math notranslate nohighlight">\(\vec x\)</span> для факторов. Но в первой части лекции я, для просстоты, буду говорить только об одном произведенном товаре.</p>
+<p>Точно так же, как в теории потребителя поведение агента задавалось функцией полезности, в теории производителя поведение агента задается функцией издержек <span class="math notranslate nohighlight">\(TC(p, y)\)</span>.</p>
+<p>Здесь <span class="math notranslate nohighlight">\(y\)</span> это количество произведенного товара, а <span class="math notranslate nohighlight">\(\vec p\)</span> это вектор цен на факторы производства. Не путайте функцию издержек с функцией расходов <span class="math notranslate nohighlight">\(E(\vec p, \bar U)\)</span>. Обратите внимание, что я буду теперь везде использовать векторные обозначения.</p>
+<p>Вообще, у нас будут два набора цен: <span class="math notranslate nohighlight">\(\vec q\)</span> на конечные товары и <span class="math notranslate nohighlight">\(\vec p\)</span> на факторы. Также, будут два набора координат: <span class="math notranslate nohighlight">\(\vec y\)</span> для конечных товаров и <span class="math notranslate nohighlight">\(\vec x\)</span> для факторов. Но в первой части лекции я, для простоты, буду говорить только об одном произведенном товаре.</p>
 <p>Таким образом, суммарная прибыль фирмы производителя можно записать в виде:</p>
 <div class="math notranslate nohighlight">
 \[ \pi(\vec p, q, y) = - FC - \vec p \cdot \vec x + q y = q y - TC(p, y)\]</div>
@@ -515,17 +610,17 @@
 <div class="definition-content section" id="proof-content">
 <p><strong>Функция издержек</strong> (общие издержки) TC определяется как суммарные издержки на все факторы производства, связанные с эффективным производством <span class="math notranslate nohighlight">\(y\)</span> единиц конечного товара, плюс, возможно, фиксированные издержки (которые обозначаются FC).</p>
 </div>
-</div><p>Что значит <strong>эффективность</strong>? Это значит, что из всех производственных планов выбирается тот, который минимизирует издержки, то есть, функция издержек это, на самом деле, целевая функция следующей оптимизационной задачи:</p>
+</div><p>Что значит <strong>эффективность</strong>? Это значит, что из всех производственных планов выбирается тот, который минимизирует издержки, то есть функция издержек это, на самом деле, целевая функция следующей оптимизационной задачи:</p>
 <div class="math notranslate nohighlight">
-\[ \min_{\vec x} ( FC + \vec q \cdot \vec x ) \quad s.t. \quad F(\vec x) \geqslant y,\]</div>
+\[ \min_{\vec x} ( FC + \vec p \cdot \vec x ) \quad s.t. \quad F(\vec x) \geqslant y,\]</div>
 <p>где <span class="math notranslate nohighlight">\(\vec x\)</span> это вектор использованных факторов производства, а <span class="math notranslate nohighlight">\(F\)</span> это производственная функция, которая переводит факторы производства <span class="math notranslate nohighlight">\(\vec x\)</span> в конечный товар <span class="math notranslate nohighlight">\(y\)</span>.</p>
-<p>То есть, функция издержек это, тоже, огибающая.</p>
+<p>То есть функция издержек это тоже огибающая.</p>
 </div>
 <div class="section" id="id3">
 <h2>Выпуклость функции издержек<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <p>Нас интересует вопрос выпуклости (или вогнутости) функции издержек по ценам факторов <span class="math notranslate nohighlight">\(\vec q\)</span> и, отдельно, по уровню производства <span class="math notranslate nohighlight">\(y\)</span>. Для простоты, опустим фиксированные издержки.</p>
 <div class="proof property admonition" id="property-1">
-<p class="admonition-title"><span class="caption-number">Property 34 </span></p>
+<p class="admonition-title"><span class="caption-number">Property 32 </span></p>
 <div class="property-content section" id="proof-content">
 <p><strong>Функция издержек</strong></p>
 <ul class="simple">
@@ -535,7 +630,7 @@
 <p>если сама производственная функция <span class="math notranslate nohighlight">\(F\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[
-F(\vec x) \geqslant y
+F(\vec x) = y
 \]</div>
 <p>вогнута (именно вогнута, квази недостаточно).</p>
 </div>
@@ -574,7 +669,7 @@ F(\vec x) \geqslant y
 </div><p>Получается, что фирма максимизирует прибыль в два шага: сначала для каждого потенциального уровня производства она оптимально подбирает ресурсы, а затем, оптимизирует по уровню производства.</p>
 <p>Конечно же, прибыль можно было максимизировать сразу:</p>
 <div class="math notranslate nohighlight">
-\[ \max_{x,y} - \vec p \cdot \vec x + q y \quad s.t. \quad F(\vec x)  \geqslant y,\]</div>
+\[ \max_{x,y} (- \vec p \cdot \vec x + q y) \quad s.t. \quad F(\vec x)  \geqslant y,\]</div>
 <p>но тогда не было бы так интрересно.</p>
 </div>
 <div class="section" id="id5">
@@ -627,7 +722,44 @@ $<span class="math notranslate nohighlight">\( TC(r,w,y) = r k^{\ast} + w l^{\as
 </div></blockquote>
 </div>
 <div class="section" id="id6">
-<h2>Убывающая отдача от масштаба<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<h2>Разные спросы<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<p>Рассмотрим задачу минимизации издержек</p>
+<div class="math notranslate nohighlight">
+\[ \min_{\vec x} \vec p \cdot \vec x \quad s.t. \quad F(\vec x) \geqslant y,\]</div>
+<div class="proof definition admonition" id="definition-5">
+<p class="admonition-title"><span class="caption-number">Definition 46 </span></p>
+<div class="definition-content section" id="proof-content">
+<p>Назовем условным спросом <span class="math notranslate nohighlight">\(\tilde x(p, y)\)</span> на факторы производства - решение задачи минимизации издержек, а обычным спросом</p>
+<div class="math notranslate nohighlight">
+\[x^{\ast}(p, q) = \tilde x(p, y^{\ast}(p, q)).\]</div>
+</div>
+</div><blockquote>
+<div><p>Вопрос: как связаны градиент функции издержек (по ценам факторов) и условный спрос?</p>
+</div></blockquote>
+<p>В краткосрочной перспективе, некоторые факторы производства нельзя оптимизировать. В зависимости от страны, это может быть либо труд либо капитал. В США рынок труда очень динамичен, поэтому считается кто капитал зафиксирован. Во многих странах Европы, увольть сотрудника, наоборот, гораздо сложнее чем избавиться от капитала.</p>
+<p>И обычный, и условный спрос, можно найти в краткосрочном периоде. Это означает, что тот фактор, что менять нельзя, необходимо зафиксировать на каком то уровне. Например, мы можем зафиксировать капитал <span class="math notranslate nohighlight">\(k\)</span> на уровне <span class="math notranslate nohighlight">\(\hat k\)</span>.</p>
+<p>Далее, необходимо перерешать все так, будто <span class="math notranslate nohighlight">\(\hat k\)</span> это параметр задачи.</p>
+<div class="proof definition admonition" id="definition-6">
+<p class="admonition-title"><span class="caption-number">Definition 47 </span></p>
+<div class="definition-content section" id="proof-content">
+<p>Назовем условным спросом в краткосрочном периоде <span class="math notranslate nohighlight">\(\tilde x_{k}(p, y, \hat k)\)</span> на факторы производства - решение задачи минимизации издержек, а обычным спросом  в краткосрочном периоде</p>
+<div class="math notranslate nohighlight">
+\[x_k^{\ast}(p, q, \hat k) = \tilde x_k(p, y^{\ast}(p, q, \hat k), \hat k).\]</div>
+</div>
+</div><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Как связаны эти четыре спроса?<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Обычный спрос - это условный спрос, в который подставили оптимальный уровень производства. А условный спрос - это условный спрос в краткосрочном периоде, в который подставили оптимальную условную <span class="math notranslate nohighlight">\(k\)</span>.</p>
+<p class="card-text">Также, обычный спрос - это обычный спрос в краткосрочном периоде, в который подставили оптимальную <span class="math notranslate nohighlight">\(k\)</span>.</p>
+<p class="card-text">Соответственно, вы можете решать задачу постепенно: сначала найти все в краткосрочном периоде, а потом дополнительно прооптимизировать по фактору, который был зафиксировам.</p>
+</div>
+</details></div>
+<div class="section" id="id7">
+<h2>Убывающая отдача от масштаба<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
 <p>На самом деле, можно заметить, что как бы ни была устроена минимизация издержек, нам абсолютно необходимо, чтобы в задаче максимизации прибыли:</p>
 <div class="math notranslate nohighlight">
 \[ \max_{y} \pi, \quad \pi(\vec p, q, y) = q y - TC(\vec p, y)\]</div>
@@ -636,8 +768,8 @@ $<span class="math notranslate nohighlight">\( TC(r,w,y) = r k^{\ast} + w l^{\as
 <p>Считается, что все фирмы сначала проходят период быстрого роста, от стартапов и бутиков до компаний средних размеров, и затем испытывают сложности при дальнейшем расширении. Выходя за пределы своих локальных рынков, они принимают корпоративную структуру и становятся медленными и неповоротливыми, теряя эффективность.</p>
 <p>Есть, конечно, исключения. Например, компания Google давно вышла за пределы своего штата и, даже, страны. Это говорит от том, что технология обработки поисковых запросов, скорее всего, обладает возрастающей отдачей от масштаба.</p>
 </div>
-<div class="section" id="id7">
-<h2>Оптимальное распределение производства<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id8">
+<h2>Оптимальное распределение производства<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
 <p>Предположим, что у нас есть два завода, обладающие производственными технологиями:
 $<span class="math notranslate nohighlight">\( y_1 = F_1(\vec x), \quad y_2 = F_2(\vec x).\)</span>$</p>
 <p>Как эффективно разделить уровень производства <span class="math notranslate nohighlight">\(y = y_1 + y_2\)</span> и чему будет равна функция издержек <span class="math notranslate nohighlight">\(TC(y)\)</span>?</p>
@@ -649,7 +781,7 @@ $<span class="math notranslate nohighlight">\( y_1 = F_1(\vec x), \quad y_2 = F_
 <div class="math notranslate nohighlight">
 \[ MC(y_1) = \lambda = MC(y_2), \quad y_1 + y_2 = y.\]</div>
 <p>Таким образом, мы доказали, сами того не ожидая, следующее утвержение:</p>
-<div class="proof lemma admonition" id="lemma-5">
+<div class="proof lemma admonition" id="lemma-7">
 <p class="admonition-title"><span class="caption-number">Lemma 1 </span></p>
 <div class="lemma-content section" id="proof-content">
 <p>Эффективное производство устроено так, что маржинальные издержки равны друг другу.</p>
@@ -662,8 +794,8 @@ $<span class="math notranslate nohighlight">\( y_1 = F_1(\vec x), \quad y_2 = F_
 \[ TC(y) := TC_1(y_1^{\ast}) + TC_2(y_2^{\ast}).\]</div>
 <p>Обратите внимание, что мы не перерешиваем для каждого завода, как правильно закупить факторы производства <span class="math notranslate nohighlight">\(\vec x\)</span>, а только пользуемся их функциями издержек. Это сильный ход, потому что мы не потребовали производственную функцию <span class="math notranslate nohighlight">\(F_i\)</span> каждого завода, а воспользовались более простым объектом <span class="math notranslate nohighlight">\(TC_i\)</span>, который проще откалибровать.</p>
 </div>
-<div class="section" id="id8">
-<h2>Производственные цепочки<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id9">
+<h2>Производственные цепочки<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
 <p>Предположим, что у нас есть производственная функция
 $<span class="math notranslate nohighlight">\( y = F(k, l)\)</span><span class="math notranslate nohighlight">\(
 и цены факторов производства равны \)</span>r, w$ соответственно. Мы уже знаем, как решать такую задачу.</p>
@@ -674,8 +806,8 @@ $<span class="math notranslate nohighlight">\( y = F(k, l)\)</span><span class="
 <div class="amsmath math notranslate nohighlight">
 \[\begin{gather*} 
 
-\mathcal{L^1} = TC^K(k) + TC^L(l) - \lambda (F(k,l) - y)\\
-\mathcal{L^2} = rk + wl - \lambda (F(k,l) - y).
+\mathcal{L}^1 = TC^K(k) + TC^L(l) - \lambda (F(k,l) - y)\\
+\mathcal{L}^2 = rk + wl - \lambda (F(k,l) - y).
 
 \end{gather*}\]</div>
 <p>Если случится так, что старые <span class="math notranslate nohighlight">\(k^{\ast}, l^{\ast}\)</span> такие, что $<span class="math notranslate nohighlight">\( TC^K(k^{\ast}) + TC^L(l^{\ast}) &lt; rk^{\ast} + wl^{\ast}\)</span>$</p>
@@ -687,7 +819,7 @@ $<span class="math notranslate nohighlight">\( y = F(k, l)\)</span><span class="
 <div class="math notranslate nohighlight">
 \[ MC^K(\hat k) = r, \quad MC^L(\hat l) = w, \quad \frac{r}{w} = \frac{MPK}{MPL}.\]</div>
 <p>Мы доказали еще одно любопытное свойство.</p>
-<div class="proof lemma admonition" id="lemma-6">
+<div class="proof lemma admonition" id="lemma-8">
 <p class="admonition-title"><span class="caption-number">Lemma 2 </span></p>
 <div class="lemma-content section" id="proof-content">
 <p>Если фактор производства <span class="math notranslate nohighlight">\(x_i\)</span> можно либо купить по цене <span class="math notranslate nohighlight">\(p_i\)</span> либо произвести самостоятельно с функцией расходов <span class="math notranslate nohighlight">\(TC^i(x_i)\)</span>, то он производится согласно условиям первого порядка:</p>
@@ -696,8 +828,8 @@ $<span class="math notranslate nohighlight">\( y = F(k, l)\)</span><span class="
 <p>а все остальное закупается по рыночным ценам.</p>
 </div>
 </div></div>
-<div class="section" id="id9">
-<h2>Экспорт и потребление<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id10">
+<h2>Экспорт и потребление<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
 <p>Предположим, что фирма, производящая товар <span class="math notranslate nohighlight">\(\vec y\)</span> с функцией издержек <span class="math notranslate nohighlight">\(TC(\vec y)\)</span>, может либо отправить его на экспорт (продать свой товар на рынке) по цене <span class="math notranslate nohighlight">\(\vec q\)</span> либо потребить его сама (раздать рабочим, установить в офисе) с вогнутой полезностью <span class="math notranslate nohighlight">\(U(\vec y)\)</span>.</p>
 <p>Как будет выглядеть оптимальное поведение фирмы?</p>
 <p>Обозначим внутреннее потребление товара за <span class="math notranslate nohighlight">\(\hat y\)</span>, тогда:</p>
@@ -707,14 +839,14 @@ $<span class="math notranslate nohighlight">\( y = F(k, l)\)</span><span class="
 <div class="math notranslate nohighlight">
 \[ \nabla U = \vec q, \quad \vec q = \nabla T(\vec y),\]</div>
 <p>таким образом.</p>
-<div class="proof lemma admonition" id="lemma-7">
+<div class="proof lemma admonition" id="lemma-9">
 <p class="admonition-title"><span class="caption-number">Lemma 3 </span></p>
 <div class="lemma-content section" id="proof-content">
 <p>Если товар можно потребить внутри фирмы, то он производится в том же объеме, как если бы такой возможности не было. Доля товара, потребленного внутри фирмы, совпадает с решением задачи потребителя, как если бы он просто покупал этот товар в магазине.</p>
 </div>
 </div></div>
-<div class="section" id="id10">
-<h2>Кривые производственных возможностей<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id11">
+<h2>Кривые производственных возможностей<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
 <p>До сих пор, мы моделировали производство так, что из нескольких факторов, например, труд и капитал, производится один единственный конечный продукт по технологии</p>
 <div class="math notranslate nohighlight">
 \[ F(\vec x) \geqslant y,\]</div>
@@ -731,8 +863,8 @@ $<span class="math notranslate nohighlight">\( y = F(k, l)\)</span><span class="
 <div class="math notranslate nohighlight">
 \[ \min_{\vec x \geqslant 0} \max_{\lambda \geqslant 0} \mathcal{L}, \quad \mathcal{L} = \vec p \cdot \vec x - \lambda \cdot (F(\vec x) - y)\]</div>
 <p>в котором присутствовала линейная деформация по <span class="math notranslate nohighlight">\(x\)</span>, способная поломать квази-вогнутость, в случае КПВ такой деформации нет.</p>
-<div class="proof property admonition" id="property-8">
-<p class="admonition-title"><span class="caption-number">Property 35 </span></p>
+<div class="proof property admonition" id="property-10">
+<p class="admonition-title"><span class="caption-number">Property 33 </span></p>
 <div class="property-content section" id="proof-content">
 <p><strong>Функция издержек</strong></p>
 <ul class="simple">
@@ -741,7 +873,7 @@ $<span class="math notranslate nohighlight">\( y = F(k, l)\)</span><span class="
 </ul>
 <p>если функция <span class="math notranslate nohighlight">\(G\)</span>, задающая кривые производственных возможностей:</p>
 <div class="math notranslate nohighlight">
-\[x \geqslant G(\vec y)\]</div>
+\[x = G(\vec y)\]</div>
 <p>квази-выпукла.</p>
 </div>
 </div></div>
@@ -779,10 +911,10 @@ $<span class="math notranslate nohighlight">\( y = F(k, l)\)</span><span class="
             <p class="prev-next-title">Содержание</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="../cheetsheet/differentials.html" title="next page">
+    <a class='right-next' id="next-link" href="lecture_5_2.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Дифференциалы</p>
+        <p class="prev-next-title">Пятая лекция, часть 2</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

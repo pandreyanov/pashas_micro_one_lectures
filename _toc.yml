@@ -37,7 +37,7 @@ parts:
     - file: week_3/lecture_3_2
     - file: week_3/seminar_3
     - file: week_3/practice_3
-    - file: week_3/homework_3
+    - file: week_3/homework_2
 - caption: Четвертая неделя
   chapters:
     - file: week_4/intro_4
@@ -49,6 +49,30 @@ parts:
   chapters:
     - file: week_5/intro_5
     - file: week_5/lecture_5_1
+    - file: week_5/lecture_5_2
+    - file: week_5/seminar_5
+    - file: week_5/homework_3
+- caption: Шестая неделя
+  chapters:
+    - file: week_6/intro_6
+    - file: week_6/lecture_6_1
+    - file: week_6/lecture_6_2
+    - file: week_6/seminar_6
+- caption: Седьмая неделя
+  chapters:
+    - file: week_7/intro_7
+    - file: week_7/practice_7
+    - file: week_7/lecture_7_1
+    - file: week_7/seminar_7
+    - file: week_7/homework_4
+- caption: Восьмая неделя
+  chapters:
+    - file: week_8/intro_8
+    - file: week_8/seminar_8
+- caption: Девятая неделя
+  chapters:
+    - file: week_9/intro_9
+    - file: week_9/seminar_9
 - caption: Мат. шпаргалка
   chapters:
     - file: cheetsheet/differentials

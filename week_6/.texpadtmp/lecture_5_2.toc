@@ -1,0 +1,8 @@
+\babel@toc {russian}{}
+\beamer@sectionintoc {1}{Технологические множества}{2}{0}{1}
+\beamer@sectionintoc {2}{Аксиомы производителя}{8}{0}{2}
+\beamer@sectionintoc {3}{Максимизация полезности}{13}{0}{3}
+\beamer@sectionintoc {4}{Максимизация полезности}{16}{0}{4}
+\beamer@sectionintoc {5}{Сложение технологических множеств}{17}{0}{5}
+\beamer@sectionintoc {6}{Сложение технологических границ}{22}{0}{6}
+\beamer@sectionintoc {7}{Конец}{30}{0}{7}

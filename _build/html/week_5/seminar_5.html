@@ -1,0 +1,893 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Семинар 5 &#8212; Учебник по Микро 1, для ИП, ФЭН ВШЭ</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Третье домашнее задание" href="homework_3.html" />
+    <link rel="prev" title="Пятая лекция, часть 2" href="lecture_5_2.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">Учебник по Микро 1, для ИП, ФЭН ВШЭ</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../table.html">
+   Содержание учебника
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Программа курса
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_0/principles.html">
+   Принципы
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_0/grades.html">
+   Оценивание
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_0/hours.html">
+   Часы
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_0/module%203.html">
+   Структура третьего модуля
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_0/module%204.html">
+   Структура четвертого модуля
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Первая неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_1/intro_1.html">
+   Содержание
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_1/lecture_1_1.html">
+   Первая лекция, часть 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_1/lecture_1_2.html">
+   Первая лекция, часть 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_1/seminar_1.html">
+   Семинар 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_1/practice_1.html">
+   Задачи для тренировки
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_1/homework_1.html">
+   Первое домашнее задание
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Вторая неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_2/intro_2.html">
+   Содержание
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_2/lecture_2_1.html">
+   Вторая лекция, часть 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_2/lecture_2_2.html">
+   Вторая лекция, часть 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_2/seminar_2.html">
+   Семинар 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_2/practice_2.html">
+   Задачи для тренировки
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Третья неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_3/intro_3.html">
+   Содержание
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_3/lecture_3_1.html">
+   Третья лекция, часть 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_3/lecture_3_2.html">
+   Третья лекция, часть 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_3/seminar_3.html">
+   Семинар 3
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_3/practice_3.html">
+   Задачи для тренировки
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_3/homework_2.html">
+   Второе домашнее задание
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Четвертая неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_4/intro_4.html">
+   Содержание
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_4/lecture_4_1.html">
+   Четвертая лекция, часть 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_4/lecture_4_2.html">
+   Четвертая лекция, часть 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_4/seminar_4.html">
+   Семинар 4
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_4/practice_4.html">
+   Задачи для тренировки
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Пятая неделя
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro_5.html">
+   Содержание
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lecture_5_1.html">
+   Пятая лекция, часть 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lecture_5_2.html">
+   Пятая лекция, часть 2
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Семинар 5
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="homework_3.html">
+   Третье домашнее задание
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Шестая неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_6/intro_6.html">
+   Содержание
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_6/lecture_6_1.html">
+   Шестая лекция, часть 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_6/lecture_6_2.html">
+   Шестая лекция, часть 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_6/seminar_6.html">
+   Семинар 6
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Седьмая неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_7/intro_7.html">
+   Содержание
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_7/practice_7.html">
+   Задачи для тренировки
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_7/lecture_7_1.html">
+   Седьмая лекция
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_7/seminar_7.html">
+   Семинар 7
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_7/homework_4.html">
+   Четвертое домашнее задание
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Восьмая неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_8/seminar_8.html">
+   Семинар 8
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Мат. шпаргалка
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../cheetsheet/differentials.html">
+   Дифференциалы
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../cheetsheet/forms.html">
+   Квадратичные формы
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../cheetsheet/backprop.html">
+   Бэкпроп
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../cheetsheet/approximations.html">
+   Приближения
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/week_5/seminar_5.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   Задача 1: отдача от масштаба
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     Часть 1
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     Часть 2
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id5">
+   Задача 2: обсуждаем издержки
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id6">
+   Задача 3: вывод функции издержек
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id7">
+   Задача 4: максимизация прибыли фирмы
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id8">
+   Задача 5: два завода
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#aka">
+   Задача 6: кривая производственных возможностей, aka КПВ
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Семинар 5</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   Задача 1: отдача от масштаба
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     Часть 1
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     Часть 2
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id5">
+   Задача 2: обсуждаем издержки
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id6">
+   Задача 3: вывод функции издержек
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id7">
+   Задача 4: максимизация прибыли фирмы
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id8">
+   Задача 5: два завода
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#aka">
+   Задача 6: кривая производственных возможностей, aka КПВ
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="id1">
+<h1>Семинар 5<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p><em>12 февраля 2022. Провела Яна</em> 🐸</p>
+<div class="section" id="id2">
+<h2>Задача 1: отдача от масштаба<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<details>
+    <summary>Немножко теории</summary>
+<p>Отдача от масштаба определяется так. Если есть некоторая производственная функция <span class="math notranslate nohighlight">\(F(K, L)\)</span>, а <span class="math notranslate nohighlight">\(t&gt;1\)</span>:</p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(F(tK, tL)&lt; tF(K, L)\)</span> - убывающая отдача;</p></li>
+<li><p><span class="math notranslate nohighlight">\(F(tK, tL)= tF(K, L)\)</span> - постоянная отдача;</p></li>
+<li><p><span class="math notranslate nohighlight">\(F(tK, tL)&gt; tF(K, L)\)</span> - возрастающая отдача.</p></li>
+</ol>
+<p>Наверное, при виде этого определения у вас всплывут в памяти однородные функции, и не зря. Если производственная функция <span class="math notranslate nohighlight">\(F(K, L)\)</span> однородна и степень однородности равна <span class="math notranslate nohighlight">\(m\)</span>, то если <span class="math notranslate nohighlight">\(m\in (0;1)\)</span>, то она обладает <strong>убывающей отдачей от масштаба</strong>, если <span class="math notranslate nohighlight">\(m=1\)</span>, то она обладает <strong>постоянной отдачей от масштаба</strong>, а если <span class="math notranslate nohighlight">\(m&gt;1\)</span>, то она обладает <strong>возрастающей отдачей от масштаба</strong>. Однако характер отдачи можно определить и не для однородной функции.</p>
+</details>
+<hr class="docutils" />
+<div class="section" id="id3">
+<h3>Часть 1<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>Пусть некоторая фирма производит два товара - <span class="math notranslate nohighlight">\(x\)</span> и <span class="math notranslate nohighlight">\(y\)</span>. В координатах <span class="math notranslate nohighlight">\((x, y)\)</span> изобразите производство с:</p>
+<ol class="simple">
+<li><p>Убывающей отдачей от масштаба;</p></li>
+<li><p>Постоянной отдачей от масштаба;</p></li>
+<li><p>Возрастающей отдачей от масштаба.</p></li>
+</ol>
+</div>
+<hr class="docutils" />
+<div class="section" id="id4">
+<h3>Часть 2<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p>Для каждой из производственных функций определите, какой отдачей от масштаба она характеризуется:</p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(q=\sqrt{KL}\)</span>;</p></li>
+<li><p><span class="math notranslate nohighlight">\(q=\sqrt{K}+\sqrt{L}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(q=KL\)</span>;</p></li>
+<li><p><span class="math notranslate nohighlight">\(q=K+\sqrt{L}\)</span>;</p></li>
+<li><p><span class="math notranslate nohighlight">\(q=K^2+L\)</span>.</p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="id5">
+<h2>Задача 2: обсуждаем издержки<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<p>Определите, к какому виду (переменные, постоянные, квази-постоянные, предельные, средние общие, средние переменные) относится каждый из примеров издержек:</p>
+<ol class="simple">
+<li><p>Стоимость покупки помещения для производства;</p></li>
+<li><p>Стоимость обслуживания станков;</p></li>
+<li><p>Заработная плата рабочих;</p></li>
+<li><p>Стоимость дополнительно произведенной печеньки;</p></li>
+<li><p>Себестоимость пирожного;</p></li>
+<li><p>Стоимость электричества;</p></li>
+<li><p>Цена завода, который Иван Иваныч хочет приобрести для расширения производства;</p></li>
+<li><p>Стоимость воды, затраченной на производство одного килограмма картофельного пюре.</p></li>
+</ol>
+</div>
+<div class="section" id="id6">
+<h2>Задача 3: вывод функции издержек<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<p>На заводе по производству мягких игрушек из <span class="math notranslate nohighlight">\(L\)</span> килограммов ваты и <span class="math notranslate nohighlight">\(K\)</span> рулонов мягкой ткани можно произвести</p>
+<div class="math notranslate nohighlight">
+\[
+q=(\sqrt{L}+\sqrt{K})^2,
+\]</div>
+<p>потому что часть ткани приохдит в непригодность в процессе вырезания форм для игрушек. Стоимость килограмма ваты равна <span class="math notranslate nohighlight">\(w\)</span>, одного рулона ткани - <span class="math notranslate nohighlight">\(r\)</span>.</p>
+<ol class="simple">
+<li><p>Запишите издержки фирмы как функцию от цен и количеств ресурсов.</p></li>
+<li><p>Запишите задачу минимизации издержек фирмы при фиксированном объеме производимых игрушек <span class="math notranslate nohighlight">\(q\)</span>.</p></li>
+<li><p>Решите задачу минимизации издержек фирмы.</p></li>
+<li><p>Выпишите полученную функцию издержек фирмы.</p></li>
+</ol>
+</div>
+<div class="section" id="id7">
+<h2>Задача 4: максимизация прибыли фирмы<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<p>Рассмотрим рынок резиновых покрышек. Стоимость одной покрышки постоянна и равна <span class="math notranslate nohighlight">\(p\)</span>. Фирма П обладает функцией издержек производства покрышек при изготовлении <span class="math notranslate nohighlight">\(q\)</span> единиц товара (предполагайте, что покрышки бесконечно делимы) равна</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+TC(q)=\begin{cases}
+    0, &amp; q=0 \\
+    0.5q^2+8, &amp; q&gt;0
+\end{cases}
+\end{split}\]</div>
+<ol class="simple">
+<li><p>Запишите задачу максимизации прибыли фирмы П.</p></li>
+<li><p>Решите задачу максимизации прибыли фирмы П. Сколько покрышек фирма произведет при каждой цене <span class="math notranslate nohighlight">\(p\geqslant 0\)</span>? Объясните.</p></li>
+</ol>
+</div>
+<div class="section" id="id8">
+<h2>Задача 5: два завода<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<p>На некотором рынке есть фирма, производящая товар ИКС (<span class="math notranslate nohighlight">\(x\)</span>) на двух заводах. Для каждой пары функций издержек определите суммарные издержки фирмы.</p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(TC_1(x_1)=10x_1\)</span>, <span class="math notranslate nohighlight">\(TC_2(x_2)=5x_2\)</span>;</p></li>
+<li><p>[Самостоятельно] <span class="math notranslate nohighlight">\(TC_1(x_1)=10x_1\)</span>, <span class="math notranslate nohighlight">\(TC_2(x_2)=0.5x_2^2\)</span>;</p></li>
+<li><p><span class="math notranslate nohighlight">\(TC_1(x_1)=x_1^2\)</span>, <span class="math notranslate nohighlight">\(TC_2(x_2)=x_2^2\)</span>;</p></li>
+<li><p>[Самостоятельно] <span class="math notranslate nohighlight">\(TC_1(x_1)=\sqrt{x_1}\)</span>, <span class="math notranslate nohighlight">\(TC_2(x_2)=2\sqrt{x_2}\)</span>.</p></li>
+</ol>
+<details>
+    <summary>Решение</summary>
+<hr class="docutils" />
+<p>Одним из самых распространенных способов решения таких задач является минимизация в лоб с использованием того факта, что суммарно мы производим <span class="math notranslate nohighlight">\(x=x_1+x_2\)</span>, откуда мы выражаем <span class="math notranslate nohighlight">\(x_1=x-x_2\)</span>, подставляем в целевую функцию и минимизируем по переменной <span class="math notranslate nohighlight">\(x_2\)</span>, а <span class="math notranslate nohighlight">\(x\)</span> воспринимаем как константу. Конечно, внутреннее решение всегда нужно проверять на допустимость, то есть неотрицательность (ведь количество производимого товара не может быть отрицательным).</p>
+<p>Вот, например, ссылки на задачки, которые могут показаться полезными:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://iloveeconomics.ru/z/2366">Мини-задачи Григория Хацевича</a>;</p></li>
+<li><p><a class="reference external" href="https://iloveeconomics.ru/z/2795">Графическая задача</a> про вогнутые функции издержек от Григория Хацевича и Алексея Суздальцева (стоит обратить внимание на решение через средние суммарные издержки <span class="math notranslate nohighlight">\(AC\)</span>, aka <span class="math notranslate nohighlight">\(ATC\)</span>).</p></li>
+</ul>
+<p><strong>2.</strong> Помним, что <span class="math notranslate nohighlight">\(x_1+x_2=x\)</span>. Запишем целевую функцию:</p>
+<div class="math notranslate nohighlight">
+\[
+TC=TC_1+TC_2=10x_1+0.5x_2^2\to \min_{x_1, x_2\geqslant 0}
+\]</div>
+<p>Вместо <span class="math notranslate nohighlight">\(x_1\)</span> подставим <span class="math notranslate nohighlight">\(x-x_2\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+TC=TC_1+TC_2=10(x-x_2)+0.5x_2^2=10x-10x_2+0.5x_2^2\to \min_{x_2\geqslant 0}
+\]</div>
+<p>Минимизируемая функция является квадратичной параболой с ветвями вверх. Значит, её минимум достигается в вершине:</p>
+<div class="math notranslate nohighlight">
+\[
+x_2^*=\frac{-b}{2a}=\frac{10}{2\cdot 0.5}=10, \ x_1^*=x-10.
+\]</div>
+<p>Видим, что при некоторых <span class="math notranslate nohighlight">\(x\)</span> производство на первом заводе <span class="math notranslate nohighlight">\(x_1^*\)</span> отрицательно. Значит, при <span class="math notranslate nohighlight">\(x&lt;10\)</span> мы ничего не производим на первом заводе, <span class="math notranslate nohighlight">\(x_1^*=0\)</span>, и <span class="math notranslate nohighlight">\(x_2^*=x\)</span>. Функция издержек в этом случае:</p>
+<div class="math notranslate nohighlight">
+\[
+TC(x)=0.5x^2.
+\]</div>
+<p>Однако если <span class="math notranslate nohighlight">\(x\geqslant 10\)</span>, нам выгодно производить <span class="math notranslate nohighlight">\(10\)</span> единиц товара на втором заводе, оставшиеся <span class="math notranslate nohighlight">\(x-10\)</span> - на втором. В этом случае функция издержек примет вид:</p>
+<div class="math notranslate nohighlight">
+\[
+TC(x)=0.5\cdot 10^2+10(x-10)=10x-50.
+\]</div>
+<p>В итоге имеем:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+TC(x)=\begin{cases}
+    0.5x^2, &amp; x\in [0;10)\\
+    10x-50, &amp; x\geqslant 10
+\end{cases}
+\end{split}\]</div>
+<p>Эту задачу также можно было решить с помощью предельных издержек, которые имеют вид:</p>
+<div class="math notranslate nohighlight">
+\[
+MC_1(x_1)=10, \ MC_2(x_2)=x_2.
+\]</div>
+<p>Предположим, мы ничего не производим, то есть <span class="math notranslate nohighlight">\(x=x_1=x_2=0\)</span>. Начнем наращивать производство. Пока предельные издержки производства меньше на втором заводе, производство наращиваем используя только второй завод. В какой-то момент, а именно, когда <span class="math notranslate nohighlight">\(MC_1=MC_2\)</span>, мы переключаемся на первый завод, то есть все единицы продукции сверх 10, произведенных на втором заводе, производим на первом заводе.</p>
+<p><strong>4.</strong> Помним, что <span class="math notranslate nohighlight">\(x_1+x_2=x\)</span>. Запишем целевую функцию:</p>
+<div class="math notranslate nohighlight">
+\[
+TC=TC_1+TC_2=\sqrt{x_1}+2\sqrt{x_2}\to \min_{x_1, x_2\geqslant 0}
+\]</div>
+<p>Вместо <span class="math notranslate nohighlight">\(x_1\)</span> подставим <span class="math notranslate nohighlight">\(x-x_2\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+TC=TC_1+TC_2=\sqrt{x-x_2}+2\sqrt{x_2} \to \min_{x_2\geqslant 0}
+\]</div>
+<p>Рассмотрим условия первого и второго порядка:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \text{F.O.C.: } &amp; \frac{1}{\sqrt{x_2}}-\frac{1}{2\sqrt{x-x_2}}\\
+    \text{S.O.C.: } &amp; -\frac{1}{2x_2^{3/2}}-\frac{1}{4(x-x_2)^{3/2}}&lt;0
+\end{align*}
+\end{split}\]</div>
+<p>Условие второго порядка говорит о том, что функция вогнутая, значит, её максимум достигается на одной из границ доступного множества <span class="math notranslate nohighlight">\(x_2\)</span>. Проверим <span class="math notranslate nohighlight">\(x_2=x\)</span>, подставив его в функцию издержек:</p>
+<div class="math notranslate nohighlight">
+\[
+TC=2\sqrt{x}.
+\]</div>
+<p>Проверим <span class="math notranslate nohighlight">\(x_2=0\)</span>, подставив его в функцию издержек:</p>
+<div class="math notranslate nohighlight">
+\[
+TC=\sqrt{x} \leqslant 2\sqrt{x} \ \forall x\geqslant 0.
+\]</div>
+<p>Значит, нам выгодно использовать только первый завод.</p>
+<p>К этому выводу можно было прийти, рассмотрев функции предельных издержек. Аналогично первому пункту, предельные издержки на одном из заводов всегда меньше, чем на другом:</p>
+<div class="math notranslate nohighlight">
+\[
+MC_1=\frac{1}{2\sqrt{x_1}} &lt; MC_2=\frac{1}{\sqrt{x_2}},
+\]</div>
+<p>значит, каждую последующую единицу продукции (сверх нуля :)) выгодно производить на первом заводе.</p>
+<hr class="docutils" />
+</details>
+</div>
+<div class="section" id="aka">
+<h2>Задача 6: кривая производственных возможностей, aka КПВ<a class="headerlink" href="#aka" title="Permalink to this headline">¶</a></h2>
+<p>Фермер Левап может выращивать морковь и редис. Для этого он использует одно поле и удобрение (представим, что это агрегированное удобрение, которое совмещает в себе воду, минералы и прочее). Из <span class="math notranslate nohighlight">\(L_1\)</span> килограммов удобрения он может вырастить <span class="math notranslate nohighlight">\(m=\sqrt{L_1}\)</span> килограммов моркови, а из <span class="math notranslate nohighlight">\(L_2\)</span> килограммов удобрения он может произвести <span class="math notranslate nohighlight">\(r=0.5L_2\)</span> килограммов редиса. Ресурсы Левапа не позволяют ему использовать больше <span class="math notranslate nohighlight">\(\overline{L}\)</span> килограммов удобрения.</p>
+<ol class="simple">
+<li><p>Выпишите аналитически и изобразите графически КПВ фермера.</p></li>
+<li><p>Пусть <span class="math notranslate nohighlight">\(\overline{L}=16\)</span>, а Левап получил в подарок еще одно поле, на котором можно произвести или 8 килограммов редиса, или 4 килограмма моркови, или любую их линейную комбинацию. Запишите аналитически и изобразите графически новую КПВ фермера.</p></li>
+</ol>
+<details>
+    <summary>Решение</summary>
+<hr class="docutils" />
+<p><strong>1.</strong> Во-первых, важно задуматься об ограниченности ресурсов:</p>
+<div class="math notranslate nohighlight">
+\[
+L_1+L_2=\overline{L}.
+\]</div>
+<p>Во-вторых, подставим в это ограничение количество товаров, которое можно произвести из таких количеств моркови, то есть:</p>
+<div class="math notranslate nohighlight">
+\[
+m=\sqrt{L_1}\Rightarrow L_1=m^2, \ r=0.5L_2\Rightarrow L_2=2r.
+\]</div>
+<p>Подставив такие <span class="math notranslate nohighlight">\(L_1\)</span> и <span class="math notranslate nohighlight">\(L_2\)</span> в ограничение, получаем:</p>
+<div class="math notranslate nohighlight">
+\[
+L_1+L_2=m^2+2r=\overline{L}.
+\]</div>
+<p>Это и будет нашей КПВ.</p>
+<p><strong>2.</strong> Теперь <span class="math notranslate nohighlight">\(\overline{L}=16\)</span>. КПВ тогда примет вид:</p>
+<div class="math notranslate nohighlight">
+\[
+m^2+2r=16\Rightarrow r=8-0.5m^2.
+\]</div>
+<p>Выведем КПВ второго поля. Что значит “любую их линейную комбинацию”? Говоря простыми словами, в осях <span class="math notranslate nohighlight">\((r, m)\)</span> мы соединям точки <span class="math notranslate nohighlight">\((8, 0)\)</span> и <span class="math notranslate nohighlight">\((0, 4)\)</span> прямой линией - это и будет КПВ второго поля. Формульно это выглядит так:</p>
+<div class="math notranslate nohighlight">
+\[
+2m+r=8\Rightarrow r=8-2m.
+\]</div>
+<p>Осталось “сложить” эти две КПВ. Один из способов, как всегда, оптимизация “в лоб”. Пусть <span class="math notranslate nohighlight">\(r_i, m_i\)</span> равны количествам редиса и моркови, выращенных на поле <span class="math notranslate nohighlight">\(i\)</span>, а <span class="math notranslate nohighlight">\(r, m\)</span> - суммарное количество редиса и моркови (также это <em>точка на суммарной КПВ фермера</em>):</p>
+<div class="math notranslate nohighlight">
+\[
+r=r_1+r_2=(8-0.5m_1^2)+(8-2m_2)=16-0.5m_1^2-2m_2.
+\]</div>
+<p>Выразив <span class="math notranslate nohighlight">\(m_2\)</span> из <span class="math notranslate nohighlight">\(m=m_1+m_2\)</span> и подставив в выражение для <span class="math notranslate nohighlight">\(r\)</span>, получим:</p>
+<div class="math notranslate nohighlight">
+\[
+r=16-0.5m_1^2-2(m-m_1)=16-0.5m_1^2-2m+2m_1.
+\]</div>
+<p><span class="math notranslate nohighlight">\(r\)</span> как функция от <span class="math notranslate nohighlight">\(m_1\)</span> - квадратичная парабола с ветвями вниз. Значит, её максимум в вершине:</p>
+<div class="math notranslate nohighlight">
+\[
+m_1^*=\frac{-b}{2a}=\frac{-2}{2\cdot (-0.5)}=2, \ m_2^*=m-2\geqslant 0.
+\]</div>
+<p>Значит, морковь на втором поле мы производим, если нам нужно произвести <span class="math notranslate nohighlight">\(m\geqslant 2\)</span>. В противном случае, всю морковь мы выращиваем на первом поле. Однако мы не можем произвести больше 4 килограммов моркови на втором поле. Значит, если нам нужно <span class="math notranslate nohighlight">\(m&gt;6\)</span>, на втором поле мы производим только морковь (а именно, 4 килограмма моркови), на первом поле мы производим <span class="math notranslate nohighlight">\(m-4\)</span> килограммов моркови и</p>
+<div class="math notranslate nohighlight">
+\[
+r_1=8-0.5(m-4)^2
+\]</div>
+<p>килограммов редиса.</p>
+<p>В итоге КПВ фермера Левапа имеет вид:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+r=\begin{cases}
+    16-0.5m^2, &amp; m\in [0; 2) \\
+    16-0.5\cdot 2^2-2(m-2)=18-2m, &amp; m\in [2; 6) \\
+    16-0.5(m-4)^2-2\cdot 4=4m-0.5m^2, &amp; m\in [6; 8]
+\end{cases}
+\end{split}\]</div>
+<p>Это мы получили, подставляя соответствующие значения <span class="math notranslate nohighlight">\(m_1, m_2\)</span> в</p>
+<div class="math notranslate nohighlight">
+\[
+r=16-0.5m_1^2-2m_2.
+\]</div>
+<hr class="docutils" />
+</details></div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./week_5"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="lecture_5_2.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Пятая лекция, часть 2</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="homework_3.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Третье домашнее задание</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Паша Андреянов<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
