@@ -43,15 +43,14 @@
     <script src="../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
     <script>mermaid.initialize({startOnLoad:true});</script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -229,7 +228,7 @@
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../week_3/homework_3.html">
+  <a class="reference internal" href="../week_3/homework_2.html">
    Второе домашнее задание
   </a>
  </li>
@@ -280,6 +279,92 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../week_5/lecture_5_1.html">
    Пятая лекция, часть 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_5/lecture_5_2.html">
+   Пятая лекция, часть 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_5/seminar_5.html">
+   Семинар 5
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_5/homework_3.html">
+   Третье домашнее задание
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Шестая неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_6/intro_6.html">
+   Содержание
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_6/lecture_6_1.html">
+   Шестая лекция, часть 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_6/lecture_6_2.html">
+   Шестая лекция, часть 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_6/seminar_6.html">
+   Семинар 6
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Седьмая неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_7/intro_7.html">
+   Содержание
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_7/practice_7.html">
+   Задачи для тренировки
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_7/lecture_7_1.html">
+   Седьмая лекция
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_7/seminar_7.html">
+   Семинар 7
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_7/homework_4.html">
+   Четвертое домашнее задание
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Восьмая неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_8/seminar_8.html">
+   Семинар 8
   </a>
  </li>
 </ul>
@@ -395,32 +480,22 @@
        Подоходный налог
       </a>
      </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id5">
-       Товарный налог
-      </a>
-     </li>
     </ul>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id6">
-     Правило Рамсея
-    </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id7">
+  <a class="reference internal nav-link" href="#id5">
    Компенсирующие и эквивалентные вариации
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id8">
+    <a class="reference internal nav-link" href="#id6">
      Компенсирующая вариация
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id9">
+    <a class="reference internal nav-link" href="#id7">
      Эквивалентная вариация
     </a>
    </li>
@@ -441,34 +516,34 @@
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id10">
+    <a class="reference internal nav-link" href="#id8">
      Первое приближение
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id11">
+    <a class="reference internal nav-link" href="#id9">
      Второе приближение
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id12">
+  <a class="reference internal nav-link" href="#id10">
    Чистые субституты и комплементы
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id13">
+    <a class="reference internal nav-link" href="#id11">
      Кобб Дуглас
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id14">
+    <a class="reference internal nav-link" href="#id12">
      Леонтьев
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id15">
+    <a class="reference internal nav-link" href="#id13">
      Почему ноль это комплементы?
     </a>
    </li>
@@ -509,32 +584,22 @@
        Подоходный налог
       </a>
      </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id5">
-       Товарный налог
-      </a>
-     </li>
     </ul>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id6">
-     Правило Рамсея
-    </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id7">
+  <a class="reference internal nav-link" href="#id5">
    Компенсирующие и эквивалентные вариации
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id8">
+    <a class="reference internal nav-link" href="#id6">
      Компенсирующая вариация
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id9">
+    <a class="reference internal nav-link" href="#id7">
      Эквивалентная вариация
     </a>
    </li>
@@ -555,34 +620,34 @@
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id10">
+    <a class="reference internal nav-link" href="#id8">
      Первое приближение
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id11">
+    <a class="reference internal nav-link" href="#id9">
      Второе приближение
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id12">
+  <a class="reference internal nav-link" href="#id10">
    Чистые субституты и комплементы
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id13">
+    <a class="reference internal nav-link" href="#id11">
      Кобб Дуглас
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id14">
+    <a class="reference internal nav-link" href="#id12">
      Леонтьев
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id15">
+    <a class="reference internal nav-link" href="#id13">
      Почему ноль это комплементы?
     </a>
    </li>
@@ -629,99 +694,115 @@
 <div class="math notranslate nohighlight">
 \[ V(p,q,I,\tau) = \log I + \log (1-\tau) - \alpha \log(p) - \beta \log (q), \quad T = \tau I \]</div>
 <p>Максимизация чистых налоговых своров тут не представляет сложности - надо просто выставить <span class="math notranslate nohighlight">\(\tau = 1\)</span>, то есть отобрать все деньги. Максимизация косвенной полезности при фиксированных налоговых сборах тоже тривиальна: <span class="math notranslate nohighlight">\(\tau = T/I\)</span>.</p>
-</div>
-<div class="section" id="id5">
-<h4>Товарный налог<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
-<p>Пусть товарные налоги равны <span class="math notranslate nohighlight">\(\tau_x, \tau_y\)</span> соответственно, тогда косвенная полезность и налоговые сборы будут равны:</p>
-<div class="math notranslate nohighlight">
-\[V(p,q,I,\tau) = \log I - \alpha \log(p + \tau_x) - \beta \log (q + \tau_y), \quad T = \alpha I \frac{\tau_x}{p+\tau_x} + \beta I \frac{\tau_y}{q+\tau_y}\]</div>
-<p>Максимизация чистых налоговых своров это задача безусловной оптимизации:</p>
-<div class="math notranslate nohighlight">
-\[T =  I \frac{ \alpha\tau_x}{p+\tau_x} + I \frac{\beta \tau_y}{q+\tau_y}\]</div>
-<p>У этой задачи несколько контринтуитивное решение: необходимо назначить бесконечно большой налог на оба товара, тогда удастся собрать, в пределе, точно <span class="math notranslate nohighlight">\(I\)</span>. Это, конечно, не очень реалистично, но модель есть модель.</p>
-<p>Максимизация косвенной полезности при фиксированных налоговых сборах это задача условной опримизации. Она уже более интересная:</p>
-<div class="math notranslate nohighlight">
-\[\mathcal{L} = - \alpha \log(p + \tau_x) - \beta \log (q + \tau_y) + \lambda (\alpha I \frac{\tau_x}{p+\tau_x} + \beta I \frac{\tau_y}{q+\tau_y} - T)\]</div>
-<p>Условия первого порядка:</p>
-<div class="math notranslate nohighlight">
-\[ - \frac{\alpha}{p + \tau_x} + \lambda I \frac{\alpha}{(p + \tau_x)^2} = 0, \quad - \frac{\beta}{q + \tau_y} + \lambda I \frac{\beta}{(q + \tau_y)^2} = 0\]</div>
-<p>Другими словами,</p>
-<div class="math notranslate nohighlight">
-\[1 + \tau_x / p = \lambda I = 1 + \tau_y / q\]</div>
-<p>То есть, кажется, что <strong>оптимальные налоги должны быть выставлены пропорционально ценам</strong>. Это классный вывод, только нам осталось проверить что задача выпуклая. Благо, Гессиан - диагональная матрица.</p>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Вычислим вторые производные.<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">Это не бог весть какое сложное упражнение, но вот код в wolframscript, который можно установить бесплатно.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sub</span> <span class="o">=</span> <span class="n">Solve</span><span class="p">[</span><span class="n">D</span><span class="p">[</span><span class="o">-</span><span class="n">a</span> <span class="n">Log</span><span class="p">[</span><span class="n">p</span> <span class="o">+</span> <span class="n">x</span><span class="p">]</span> <span class="o">+</span> <span class="n">l</span> <span class="n">a</span> <span class="n">B</span> <span class="n">x</span><span class="o">/</span><span class="p">(</span><span class="n">p</span> <span class="o">+</span> <span class="n">x</span><span class="p">),</span> <span class="p">{</span><span class="n">x</span><span class="p">,</span> <span class="mi">1</span><span class="p">}]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">,</span> <span class="n">l</span><span class="p">][[</span><span class="mi">1</span><span class="p">]]</span>
-<span class="n">D</span><span class="p">[</span><span class="o">-</span><span class="n">a</span> <span class="n">Log</span><span class="p">[</span><span class="n">p</span> <span class="o">+</span> <span class="n">x</span><span class="p">]</span> <span class="o">+</span> <span class="n">l</span> <span class="n">a</span> <span class="n">B</span> <span class="n">x</span><span class="o">/</span><span class="p">(</span><span class="n">p</span> <span class="o">+</span> <span class="n">x</span><span class="p">),</span> <span class="p">{</span><span class="n">x</span><span class="p">,</span> <span class="mi">2</span><span class="p">}]</span> <span class="o">/.</span> <span class="n">sub</span> <span class="o">//</span> <span class="n">Simplify</span>
-</pre></div>
-</div>
-<p class="card-text">Нам очень повезло, и Гессиан, действительно, отрицательно определен:</p>
-<div class="math notranslate nohighlight">
-\[ \frac{\partial^2 \mathcal{L}}{\partial^2 \tau_x} = \frac{-\alpha}{(p+\tau_x)^2}, \quad \frac{\partial^2 \mathcal{L}}{\partial^2 \tau_y} = \frac{-\beta}{(p+\tau_y)^2}\]</div>
-<p class="card-text">Значит наше внутреннее решение - локальный оптимум.</p>
-</div>
-</details><p>Подставляя оптималный налог в спросы можно вывести, что</p>
-<div class="math notranslate nohighlight">
-\[ p x^{\ast} = \alpha \frac{1}{\lambda}, \quad q y^{\ast} = \beta \frac{1}{\lambda}\]</div>
-<p>Это очень похоже на то, что было бы без налогов. Складывается впечатление, что <strong>оптимальные налоги устроены так, что они не меняют доли расходов, потраченные на каждый товар</strong>. Таким налогом, к примеру, является НДС (VAT в США). Более того, если присмотреться, то этот налог эквивалентен подоходному налогу, ведь он тоже не меняет доли. Другими словами, когда товарные налоги пропорциональны ценам, то бюджетное множество сдвигается параллельно, в точности как у подоходного налога.</p>
-<p>Мы только что доказали, хоть и в малой общности, одну из самых глубоких экономических мыслей в теории налогообложения:</p>
-<div class="proof property admonition" id="property-0">
-<p class="admonition-title"><span class="caption-number">Property 23 </span> (Оптимальность НДС)</p>
-<div class="property-content section" id="proof-content">
-<p>Оптимальные налоги в Кобб-Дугласе - не искажают потребление.</p>
-</div>
-</div><p>По хорошему, надо еще проверить что потенциальные краевые решения не лучше чем наш внутренний локальный оптимум, но это упражнение я оставлю читателю.</p>
-</div>
-</div>
-<div class="section" id="id6">
-<h3>Правило Рамсея<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
-<p>Что-то наподобие закона обратной эластичности было выведено для задачи оптимального налогообложения экономистом Фрэнком Рамсеем в начале 20 века. Своей целью он ставил минимизировать ненужные потери общества при потреблении, путём введения дифферинцированной ставки налогообложения на различные товары. То есть, в точности максимизация косвенной полезности при зафиксированных налоговых сборах:</p>
-<div class="math notranslate nohighlight">
-\[
+<!-- #### Товарный налог
+
+Пусть товарные налоги равны $\tau_x, \tau_y$ соответственно, тогда косвенная полезность и налоговые сборы будут равны:
+
+$$V(p,q,I,\tau) = \log I - \alpha \log(p + \tau_x) - \beta \log (q + \tau_y), \quad T = \alpha I \frac{\tau_x}{p+\tau_x} + \beta I \frac{\tau_y}{q+\tau_y}$$
+
+Максимизация чистых налоговых своров это задача безусловной оптимизации:
+
+$$T =  I \frac{ \alpha\tau_x}{p+\tau_x} + I \frac{\beta \tau_y}{q+\tau_y}$$
+
+У этой задачи несколько контринтуитивное решение: необходимо назначить бесконечно большой налог на оба товара, тогда удастся собрать, в пределе, точно $I$. Это, конечно, не очень реалистично, но модель есть модель.
+
+Максимизация косвенной полезности при фиксированных налоговых сборах это задача условной опримизации. Она уже более интересная:
+
+$$\mathcal{L} = - \alpha \log(p + \tau_x) - \beta \log (q + \tau_y) + \lambda (\alpha I \frac{\tau_x}{p+\tau_x} + \beta I \frac{\tau_y}{q+\tau_y} - T)$$
+
+Условия первого порядка:
+
+$$ - \frac{\alpha}{p + \tau_x} + \lambda I \frac{\alpha}{(p + \tau_x)^2} = 0, \quad - \frac{\beta}{q + \tau_y} + \lambda I \frac{\beta}{(q + \tau_y)^2} = 0$$
+
+Другими словами,
+
+$$1 + \tau_x / p = \lambda I = 1 + \tau_y / q$$
+
+То есть, кажется, что **оптимальные налоги должны быть выставлены пропорционально ценам**. Это классный вывод, только нам осталось проверить что задача выпуклая. Благо, Гессиан - диагональная матрица.
+
+::::{dropdown} Вычислим вторые производные.
+
+Это не бог весть какое сложное упражнение, но вот код в wolframscript, который можно установить бесплатно. 
+
+:::{code}
+sub = Solve[D[-a Log[p + x] + l a B x/(p + x), {x, 1}] == 0, l][[1]]
+D[-a Log[p + x] + l a B x/(p + x), {x, 2}] /. sub // Simplify
+
+:::
+
+Нам очень повезло, и Гессиан, действительно, отрицательно определен:
+
+$$ \frac{\partial^2 \mathcal{L}}{\partial^2 \tau_x} = \frac{-\alpha}{(p+\tau_x)^2}, \quad \frac{\partial^2 \mathcal{L}}{\partial^2 \tau_y} = \frac{-\beta}{(p+\tau_y)^2}$$
+
+Значит наше внутреннее решение - локальный оптимум.
+
+::::
+
+Подставляя оптималный налог в спросы можно вывести, что
+
+$$ p x^{\ast} = \alpha \frac{1}{\lambda}, \quad q y^{\ast} = \beta \frac{1}{\lambda}$$
+
+Это очень похоже на то, что было бы без налогов. Складывается впечатление, что **оптимальные налоги устроены так, что они не меняют доли расходов, потраченные на каждый товар**. Более того, если присмотреться, то этот налог эквивалентен подоходному налогу, ведь он тоже не меняет доли. Другими словами, когда товарные налоги пропорциональны ценам, то бюджетное множество сдвигается параллельно, в точности как у подоходного налога.
+
+Мы только что доказали, хоть и в малой общности, одну из самых глубоких экономических мыслей в теории налогообложения:
+
+:::{prf:property} Оптимальность НДС
+Оптимальный налог в Кобб-Дугласе не искажает потребление, это НДС.
+:::
+
+По хорошему, надо еще проверить что потенциальные краевые решения не лучше чем наш внутренний локальный оптимум, но это упражнение я оставлю читателю.
+
+### Правило Рамсея
+
+Что-то наподобие закона обратной эластичности было выведено для задачи оптимального налогообложения экономистом Фрэнком Рамсеем в начале 20 века. Своей целью он ставил минимизировать ненужные потери общества при потреблении, путём введения дифферинцированной ставки налогообложения на различные товары. То есть, в точности максимизация косвенной полезности при зафиксированных налоговых сборах:
+
+$$
 \begin{gather*}
 \min_{\lambda} \max_{\tau_x, \tau_y} \mathcal{L}, \quad \mathcal{L} = V(p,q,I) - \mu (\tau_x x(p) + \tau_y y(p) - T)
 \end{gather*}
-\]</div>
-<p>Выпишем условия первого порядка:</p>
-<div class="math notranslate nohighlight">
-\[\frac{\partial V}{\partial p} = \mu \tau_x \frac{\partial x}{\partial p}, \quad \frac{\partial V}{\partial q} = \mu \tau_x \frac{\partial y}{\partial p}\]</div>
-<p>Вспомним, что по теореме об Огибающей, производная косвенной полезности пропорциональна обычному (Маршалианскому) спросу. Действительно:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split} 
+$$
+
+Выпишем условия первого порядка:
+
+$$\frac{\partial V}{\partial p} = \mu \tau_x \frac{\partial x}{\partial p}, \quad \frac{\partial V}{\partial q} = \mu \tau_x \frac{\partial y}{\partial p}$$
+
+Вспомним, что по теореме об Огибающей, производная косвенной полезности пропорциональна обычному (Маршалианскому) спросу. Действительно:
+
+$$ 
 \begin{gather*}
 V = \min_{\lambda} \max_{x,y} \mathcal{L}, \quad \mathcal{L} = U(x, y) - \lambda (p x + q y - I) \\
 \frac{\partial V}{\partial p} = - \lambda x, \quad \frac{\partial V}{\partial q} = - \lambda y
 \end{gather*}
-\end{split}\]</div>
-<p>Получается, что в оптимуме</p>
-<div class="math notranslate nohighlight">
-\[ \varepsilon_{x,p}\frac{\tau_{x}}{p} = \frac{\tau_x}{x} \frac{\partial x}{\partial p} = - \lambda / \mu = \frac{\tau_y}{y} \frac{\partial y}{\partial q} = \varepsilon_{y,q}\frac{\tau_{y}}{q}\]</div>
-<p>Мы только что доказали (немножко игнорируя вопросы выпуклости) один из самых нетривиальных фактов в теории оптимального налогообложения:</p>
-<div class="proof property admonition" id="property-1">
-<p class="admonition-title"><span class="caption-number">Property 24 </span> (Правило Рамсея)</p>
-<div class="property-content section" id="proof-content">
-<p>Оптимальные налоговые ставки пропорциональны обратным эластичностям обычного (Маршалианского) спроса:</p>
-<div class="math notranslate nohighlight">
-\[ \frac{\tau_x/p}{\tau_y/q} = \frac{1/\varepsilon_{x,p}}{1/\varepsilon_{y,q}},\]</div>
-<p>другими словами, менее эластичные товары должны облагаться более сильным налогом чем более эластичные.</p>
+$$
+
+Получается, что в оптимуме
+
+$$ \varepsilon_{x,p}\frac{\tau_{x}}{p} = \frac{\tau_x}{x} \frac{\partial x}{\partial p} = - \lambda / \mu = \frac{\tau_y}{y} \frac{\partial y}{\partial q} = \varepsilon_{y,q}\frac{\tau_{y}}{q}$$
+
+Мы только что доказали (немножко игнорируя вопросы выпуклости) один из самых нетривиальных фактов в теории оптимального налогообложения:
+
+:::{prf:property} Правило Рамсея
+
+Оптимальные налоговые ставки пропорциональны обратным эластичностям обычного (Маршалианского) спроса:
+
+$$ \frac{\tau_x/p}{\tau_y/q} = \frac{1/\varepsilon_{x,p}}{1/\varepsilon_{y,q}},$$
+
+другими словами, менее эластичные товары должны облагаться более сильным налогом чем более эластичные.
+
+:::
+
+Это правило обобщает результат, который мы вывели в Кобб-Дугласе, поскольку в Кобб-Дугласе все эластичности потребления по цене постоянны, равны друг другу и равны $-1$. -->
 </div>
-</div><p>Это правило обобщает результат, который мы вывели в Кобб-Дугласе, поскольку в Кобб-Дугласе все эластичности потребления по цене постоянны, равны друг другу и равны <span class="math notranslate nohighlight">\(-1\)</span>.</p>
 </div>
 </div>
-<div class="section" id="id7">
-<h2>Компенсирующие и эквивалентные вариации<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id5">
+<h2>Компенсирующие и эквивалентные вариации<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
 <p>Мы освоили технику оптимального налогообложения. Это очень удобно, но иногда все равно приходится идти на попятную и точечно корректировать доход отдельным людям, возможно, из социально незащищенных слоев населения.</p>
 <p>Поставим задачу вычисления денежной компенсации, которая сбалансирует повышение цен связанное с налогообложением или еще чем то. Сделать это можно двумя способами: при помощи компенсирующей и эквивалентной вариации.</p>
-<div class="section" id="id8">
-<h3>Компенсирующая вариация<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id6">
+<h3>Компенсирующая вариация<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
 <p>Предположим, что полезность агентов была изначально на уровне <span class="math notranslate nohighlight">\(\bar U_0\)</span> и произошло смещение цен <span class="math notranslate nohighlight">\(p \to p'\)</span>. Полезность агентов, конечно же упала. Определим компенсирующую вариацию как изменение дохода, которое вернет их на изначалььный уровень <span class="math notranslate nohighlight">\(\bar U_0\)</span>.</p>
-<div class="proof definition admonition" id="definition-2">
+<div class="proof definition admonition" id="definition-0">
 <p class="admonition-title"><span class="caption-number">Definition 37 </span></p>
 <div class="definition-content section" id="proof-content">
 <p><strong>Компенсирующая вариация</strong> определяется как изменение в расходах, ассоциированных с первоначальным уровнем полезности</p>
@@ -730,10 +811,10 @@ V = \min_{\lambda} \max_{x,y} \mathcal{L}, \quad \mathcal{L} = U(x, y) - \lambda
 </div>
 </div><p>Другими словами, государство как бы возвращает агентов на их стартовую полезность. Стартовая полезность это статус кво.</p>
 </div>
-<div class="section" id="id9">
-<h3>Эквивалентная вариация<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id7">
+<h3>Эквивалентная вариация<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
 <p>Предположим, опять, смещение цен <span class="math notranslate nohighlight">\(p \to p'\)</span> и что полезность агентов упала до уровня <span class="math notranslate nohighlight">\(\bar U_1\)</span>. Определим эквивалентную вариацию как изменение дохода, которое было бы эквивалентно этому смещению цен, с точки зрения падения полезности.</p>
-<div class="proof definition admonition" id="definition-3">
+<div class="proof definition admonition" id="definition-1">
 <p class="admonition-title"><span class="caption-number">Definition 38 </span></p>
 <div class="definition-content section" id="proof-content">
 <p><strong>Эквивалентная вариация</strong> определяется как изменение в расходах, ассоциированных с новым уровнем полезности</p>
@@ -787,8 +868,8 @@ V = \min_{\lambda} \max_{x,y} \mathcal{L}, \quad \mathcal{L} = U(x, y) - \lambda
 \end{split}\]</div>
 </div>
 </details></div>
-<div class="section" id="id10">
-<h3>Первое приближение<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id8">
+<h3>Первое приближение<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
 <p>Посмотрим внимательно на компенсирующую вариацию:</p>
 <div class="math notranslate nohighlight">
 \[\log(\frac{I+CV}{I}) = \alpha \log (\frac{p'}{p}) + \beta \log (\frac{q'}{q})\]</div>
@@ -799,8 +880,8 @@ V = \min_{\lambda} \max_{x,y} \mathcal{L}, \quad \mathcal{L} = U(x, y) - \lambda
 </div>
 <p>Кстати, ни эквивалентная, ни компенсирующая вариации не зависят от нормировки полезности, поэтому вы можете выбирать удобную вам трансформацию. Вот и все.</p>
 </div>
-<div class="section" id="id11">
-<h3>Второе приближение<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id9">
+<h3>Второе приближение<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
 <p>Зафиксируем <span class="math notranslate nohighlight">\(q\)</span> и пусть меняется только цена <span class="math notranslate nohighlight">\(p\)</span>.</p>
 <p>Определим <span class="math notranslate nohighlight">\(\delta p = p'-p\)</span> как приращение цены. Мы хотим приблизить нелинейное уравнение</p>
 <div class="math notranslate nohighlight">
@@ -818,11 +899,11 @@ V = \min_{\lambda} \max_{x,y} \mathcal{L}, \quad \mathcal{L} = U(x, y) - \lambda
 <p>Если приращение больше 100 процентов, то никакое приближение не сработает, так как у <span class="math notranslate nohighlight">\(\log(1+x)\)</span> радиус сходимости равен единице.</p>
 </div>
 </div>
-<div class="section" id="id12">
-<h2>Чистые субституты и комплементы<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id10">
+<h2>Чистые субституты и комплементы<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
 <p>Напомню, что первое определение субститутов и комплементов опиралось на перекрестные производные (маршаллианских) спросов по ценам. Несмотря на кажущуюся простоту и интуитивность этого определения, ничего не сдерживало нас от построения таких примеров где товар <span class="math notranslate nohighlight">\(х\)</span> был бы субститутом к <span class="math notranslate nohighlight">\(y\)</span>, при этом, <span class="math notranslate nohighlight">\(y\)</span> был комплементом к <span class="math notranslate nohighlight">\(x\)</span>.</p>
 <p>Сейчас мы дадим альтернативное определение субститутов и комплементов. Для экспозиции, предположим два товара <span class="math notranslate nohighlight">\(х,y\)</span> с ценами <span class="math notranslate nohighlight">\(p,q\)</span>.</p>
-<div class="proof definition admonition" id="definition-4">
+<div class="proof definition admonition" id="definition-2">
 <p class="admonition-title"><span class="caption-number">Definition 39 </span></p>
 <div class="definition-content section" id="proof-content">
 <p><strong>Чистыми субститутами</strong> называются пары товаров, такие что</p>
@@ -831,7 +912,7 @@ V = \min_{\lambda} \max_{x,y} \mathcal{L}, \quad \mathcal{L} = U(x, y) - \lambda
 \frac{\partial h_x}{\partial q} &gt; 0, \quad \frac{\partial h_y}{\partial p} &gt; 0.
 \]</div>
 </div>
-</div><div class="proof definition admonition" id="definition-5">
+</div><div class="proof definition admonition" id="definition-3">
 <p class="admonition-title"><span class="caption-number">Definition 40 </span></p>
 <div class="definition-content section" id="proof-content">
 <p><strong>Чистыми комплементами</strong> называются пары товаров, такие что</p>
@@ -842,43 +923,43 @@ V = \min_{\lambda} \max_{x,y} \mathcal{L}, \quad \mathcal{L} = U(x, y) - \lambda
 </div>
 </div><p>На первый взгляд, не совсем понятно, чем помогает замена Маршалианского спроса на Хиксианский в определении. Однако, поскольку Хиксианский спрос это градиент функции расходов, то градиент Хиксианского спроса это Гессиан функции расходов.</p>
 <p>А Гессиан, он же матрица Гессa - симметричная матрица.</p>
-<div class="proof property admonition" id="property-6">
-<p class="admonition-title"><span class="caption-number">Property 25 </span></p>
+<div class="proof property admonition" id="property-4">
+<p class="admonition-title"><span class="caption-number">Property 23 </span></p>
 <div class="property-content section" id="proof-content">
 <p>Пусть <span class="math notranslate nohighlight">\(h\)</span> - весь вектор Хиксианского спроса, тогда</p>
 <div class="math notranslate nohighlight">
 \[ \nabla \vec h = \nabla^2 E \quad \Rightarrow \quad \nabla \vec h = (\nabla \vec h)^T.\]</div>
 </div>
 </div><p>Другими словами, перекрестные производные Хиксианского спроса по ценам - симметричны и нет больше никакого противоречие. Чистая субститутабильность/комплементарность это свойство пары товаров, неважно как эта пара упорядочена.</p>
-<div class="section" id="id13">
-<h3>Кобб Дуглас<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id11">
+<h3>Кобб Дуглас<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
 <p>Напомним, что на предыдущей лекции мы вывввели хиксианские спросы:</p>
 <div class="math notranslate nohighlight">
 \[h_x = \frac{\alpha}{p} E, \quad h_y = \frac{\beta}{q} E, \quad Е = e^{\bar U +C} p^{\alpha} q^{\beta}\]</div>
 <p>Тогда перекрестные производные элементарно выводятся</p>
 <div class="math notranslate nohighlight">
 \[\frac{\partial h_x}{\partial q} = \frac{\alpha}{p} h_y = \frac{\alpha \beta}{p q} E = \frac{\beta}{q} h_x =\frac{\partial h_y}{\partial p}\]</div>
-<div class="proof property admonition" id="property-7">
-<p class="admonition-title"><span class="caption-number">Property 26 </span></p>
+<div class="proof property admonition" id="property-5">
+<p class="admonition-title"><span class="caption-number">Property 24 </span></p>
 <div class="property-content section" id="proof-content">
 <p>Все товары в Кобб-Дугласе являются чистыми субститутами.</p>
 </div>
 </div></div>
-<div class="section" id="id14">
-<h3>Леонтьев<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id12">
+<h3>Леонтьев<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
 <p>Напомним, что на предыдущей лекции мы вывели хиксианские спросы:</p>
 <div class="math notranslate nohighlight">
 \[h_x = a \bar U, \quad h_y = b \bar U\]</div>
 <p>Тогда перекрестные производные равны нулю.</p>
-<div class="proof property admonition" id="property-8">
-<p class="admonition-title"><span class="caption-number">Property 27 </span></p>
+<div class="proof property admonition" id="property-6">
+<p class="admonition-title"><span class="caption-number">Property 25 </span></p>
 <div class="property-content section" id="proof-content">
 <p>Все товары в Кобб-Дугласе являются чистыми комплементами.</p>
 </div>
 </div><p>Действительно, при фиксированной кривой безразличия изменение цен просто вращает бюджетную линию вокруг точки касания, а спросы при этом не меняются.</p>
 </div>
-<div class="section" id="id15">
-<h3>Почему ноль это комплементы?<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id13">
+<h3>Почему ноль это комплементы?<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
 <p>Конечно, можно было сказать что ноль это что-то среднее между субститутами и комплементами, но исторически ноль закреплен именно за комплементами, поскольку полезность “уголки” скорее интерпретируется как “комплементы”.</p>
 <p>Некоторые авторы предпочитают строгие неравенства во всех определениях, это дело вкуса.</p>
 </div>

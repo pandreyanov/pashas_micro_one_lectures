@@ -1,0 +1,878 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Шестая лекция, часть 2 &#8212; Учебник по Микро 1, для ИП, ФЭН ВШЭ</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Семинар 6" href="seminar_6.html" />
+    <link rel="prev" title="Шестая лекция, часть 1" href="lecture_6_1.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">Учебник по Микро 1, для ИП, ФЭН ВШЭ</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../table.html">
+   Содержание учебника
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Программа курса
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_0/principles.html">
+   Принципы
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_0/grades.html">
+   Оценивание
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_0/hours.html">
+   Часы
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_0/module%203.html">
+   Структура третьего модуля
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_0/module%204.html">
+   Структура четвертого модуля
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Первая неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_1/intro_1.html">
+   Содержание
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_1/lecture_1_1.html">
+   Первая лекция, часть 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_1/lecture_1_2.html">
+   Первая лекция, часть 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_1/seminar_1.html">
+   Семинар 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_1/practice_1.html">
+   Задачи для тренировки
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_1/homework_1.html">
+   Первое домашнее задание
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Вторая неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_2/intro_2.html">
+   Содержание
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_2/lecture_2_1.html">
+   Вторая лекция, часть 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_2/lecture_2_2.html">
+   Вторая лекция, часть 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_2/seminar_2.html">
+   Семинар 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_2/practice_2.html">
+   Задачи для тренировки
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Третья неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_3/intro_3.html">
+   Содержание
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_3/lecture_3_1.html">
+   Третья лекция, часть 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_3/lecture_3_2.html">
+   Третья лекция, часть 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_3/seminar_3.html">
+   Семинар 3
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_3/practice_3.html">
+   Задачи для тренировки
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_3/homework_2.html">
+   Второе домашнее задание
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Четвертая неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_4/intro_4.html">
+   Содержание
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_4/lecture_4_1.html">
+   Четвертая лекция, часть 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_4/lecture_4_2.html">
+   Четвертая лекция, часть 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_4/seminar_4.html">
+   Семинар 4
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_4/practice_4.html">
+   Задачи для тренировки
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Пятая неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_5/intro_5.html">
+   Содержание
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_5/lecture_5_1.html">
+   Пятая лекция, часть 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_5/lecture_5_2.html">
+   Пятая лекция, часть 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_5/seminar_5.html">
+   Семинар 5
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_5/homework_3.html">
+   Третье домашнее задание
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Шестая неделя
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro_6.html">
+   Содержание
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lecture_6_1.html">
+   Шестая лекция, часть 1
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Шестая лекция, часть 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="seminar_6.html">
+   Семинар 6
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Седьмая неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_7/intro_7.html">
+   Содержание
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_7/practice_7.html">
+   Задачи для тренировки
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_7/lecture_7_1.html">
+   Седьмая лекция
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_7/seminar_7.html">
+   Семинар 7
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_7/homework_4.html">
+   Четвертое домашнее задание
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Восьмая неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_8/seminar_8.html">
+   Семинар 8
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Мат. шпаргалка
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../cheetsheet/differentials.html">
+   Дифференциалы
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../cheetsheet/forms.html">
+   Квадратичные формы
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../cheetsheet/backprop.html">
+   Бэкпроп
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../cheetsheet/approximations.html">
+   Приближения
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/week_6/lecture_6_2.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   Сдвиги кривых спроса (на товары)
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     Появление субститутов
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     Появление комплементов
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id5">
+     Изменение цен другие товары
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id6">
+     Изменение дохода и числа потребителей
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+     Изменение собственной цены
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id8">
+   Сдвиги кривых спроса (на факторы)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id9">
+   Сдвиги кривых предложения
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id10">
+     Увеличение цен на факторы
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id11">
+     Санкции, квоты, катаклизмы
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id12">
+     Цена на сам товар
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id13">
+   Агрегирование
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id14">
+     Пример со спросом
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id15">
+     Пример с предложением
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id16">
+   Частичное равновесие
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Шестая лекция, часть 2</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   Сдвиги кривых спроса (на товары)
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     Появление субститутов
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     Появление комплементов
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id5">
+     Изменение цен другие товары
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id6">
+     Изменение дохода и числа потребителей
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+     Изменение собственной цены
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id8">
+   Сдвиги кривых спроса (на факторы)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id9">
+   Сдвиги кривых предложения
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id10">
+     Увеличение цен на факторы
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id11">
+     Санкции, квоты, катаклизмы
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id12">
+     Цена на сам товар
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id13">
+   Агрегирование
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id14">
+     Пример со спросом
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id15">
+     Пример с предложением
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id16">
+   Частичное равновесие
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="id1">
+<h1>Шестая лекция, часть 2<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>В этой секции мы поговорим о кривых спроса и предложения, которые получаются в результате решения задач потребителя и производителя. Потребитель создает кривые спроса на конечные товары, а производитель - на факторы. Вдобавок, производитель создает кривые предложения конечных товаров.</p>
+<p>Важным моментом во всем последующем анализе является то, что мы фокусируемся на рынке одного единственного товара, на который есть спрос и предложение. Это называется <strong>частичным равновесием</strong>. Остальные товары, спросы и цены на них, выносятся за рамки анализа.</p>
+<p>Пусть количество интересующего нас товара и равновесная цена на него ообозначаются <span class="math notranslate nohighlight">\(Q,P\)</span> соответственно.</p>
+<div class="section" id="id2">
+<h2>Сдвиги кривых спроса (на товары)<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>Зафиксируем кривую предложения <span class="math notranslate nohighlight">\(Q^s(P)\)</span>.</p>
+<div class="section" id="id3">
+<h3>Появление субститутов<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>Когда появляется новый субститут товара, то мы считаем, что спрос на на рассматриваемый товар падает (сокращается). На самом деле не просто спрос в равновесии, а вся кривая спроса <span class="math notranslate nohighlight">\(Q^d(P)\)</span> падает, в том смысле, что при одной и той же цене потребители согласны купить этот товар в меньшем количестве.</p>
+<a class="reference internal image-reference" href="../_images/dem_contract.png"><img alt="Сокращение спроса" class="align-center" src="../_images/dem_contract.png" style="width: 400px;" /></a>
+<p>И только в результате пересечения спроса с предложением мы можем утверждать о, собственно, падении (значения) спроса.</p>
+<p>Формально замоделировать появление комплемента можно, например, при помощи функции полезности Кобба-Дугласа. Пусть для товара <span class="math notranslate nohighlight">\(x\)</span> появился близкий субститут <span class="math notranslate nohighlight">\(\tilde x\)</span> такой, что полезность агента изменилась следующим образом:</p>
+<div class="math notranslate nohighlight">
+\[ x^{1/2} \quad \to \quad x^{1/4}\tilde x^{1/4}.\]</div>
+<p>Проанализируйте, как изменится кривая спроса <span class="math notranslate nohighlight">\(x(p)\)</span> как функция от собственной цены.</p>
+</div>
+<div class="section" id="id4">
+<h3>Появление комплементов<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p>Когда появляется новый комплемент товара, то мы считаем, что спрос на рассматриваемый товар растет (расширяется). Представьте себе, что ученые открыли способ использовать старые покрышки вместо ядерного топлива. Это привело бы к увеличению спроса (даже на новые) покрышки и повышению цены.</p>
+<p>Чуть сложнее смоделировать появление комплемента, но, при большом желании, можно:</p>
+<div class="math notranslate nohighlight">
+\[ x^{1/2} \quad \to \quad x^{1/2} + \min(x, \tilde x)\]</div>
+<p>Тот же вопрос, что и в случае появления субститута.</p>
+</div>
+<div class="section" id="id5">
+<h3>Изменение цен другие товары<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<p>Когда цены других товаров меняются, направление сдвига кривой спроса на наш товар зависит от того, были ли они (валовыми) субститутами или комплементами.</p>
+<p>Мы знаем, что Леонтьевская полезность дает комплементарную связь между товарами, а полезность Кобба-Дугласа что-то среднее между субститутом и комплементом, так как спрос при такой полезности не реагирует на изменения цен других товаров.</p>
+<p>Товары в CES полезности, которая рассмотрена во 2 лекции, будут связаны как субституты. Действительно, вспомним формулы:</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\begin{split}x^{\ast} = \frac{\alpha^{\sigma} p^{1-\sigma}}{\alpha^{\sigma} p^{1-\sigma} + (1-\alpha)^{\sigma} q^{1-\sigma}}\frac{I}{p},\\\end{split}\\y^{\ast} = \frac{(1-\alpha)^{\sigma} q^{1-\sigma}}{\alpha^{\sigma} p^{1-\sigma} + (1-\alpha)^{\sigma} q^{1-\sigma}}\frac{I}{q}.\end{aligned}\end{align} \]</div>
+</div>
+<div class="section" id="id6">
+<h3>Изменение дохода и числа потребителей<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<p>Довольно предсказуемо ведет себя кривая спроса при увеличении дохода - она будет расширяться. Конечно, если товар не нормальный, будет верно обратное, но мы уже знаем, что для этого нужны очень специфические условия.</p>
+<p>При увеличении числа потребителей кривая спроса, конечно же, расширяется. Если потребителей стало больше, скажем, за счет открытия новых рынков сбыта товара, то количество запрошенного товара увеличится при каждом уровне цены.</p>
+</div>
+<div class="section" id="id7">
+<h3>Изменение собственной цены<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<p>Ну и, конечно, тяжело обойти стороной самое главное - изменение собственной цены.</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Как обычно ведет себя кривая спроса при увеличении собственной цены?<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Никак, она уже зависит от собственной цены в каждой точке. Соответственно, изменение собственной цены представляется перемещением вдоль кривой, но не перемещением самой кривой спроса.</p>
+</div>
+</details></div>
+</div>
+<div class="section" id="id8">
+<h2>Сдвиги кривых спроса (на факторы)<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<p>Ничто не мешает нам исследовать частичное равновесие на рынке факторов производства. В таком случае фирмы ведут себя как потребители. Поставщиками факторов могут являться другие фирмы или, например, если речь идет о нефти, угле или металле, цены факторов могут быть постоянными.</p>
+<p>Вот список событий, которые могут спровоцировать сокращение спроса на факторы производства:</p>
+<ul class="simple">
+<li><p>Общее улучшение технологии, скажем, за счёт равномерного роста производственной функции;</p></li>
+<li><p>Увеличение цены на фактор, который находится в комплементарной связи (в смысле производства - подумайте, что это значит) с тем, который мы изучаем;</p></li>
+<li><p>Уменьшение цены на фактор, который является субститутом (опять же, в смысле производства);</p></li>
+<li><p>Уменьшение цены на конечный товар, использующий этот фактор в производстве;</p></li>
+<li><p>Уменьшение числа фирм (внезапное).</p></li>
+</ul>
+</div>
+<div class="section" id="id9">
+<h2>Сдвиги кривых предложения<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+<p>Зафиксируем кривую спроса <span class="math notranslate nohighlight">\(Q^d(P)\)</span>. Сдвиги кривых предложения чуть более хитрые, поскольку важны оси.</p>
+<ul class="simple">
+<li><p>Сокращение кривой предложения - это уменьшение <span class="math notranslate nohighlight">\(Q\)</span> при той же цене <span class="math notranslate nohighlight">\(P\)</span>.</p></li>
+<li><p>Расширение кривой предложения - это увеличение <span class="math notranslate nohighlight">\(Q\)</span> при той же цене <span class="math notranslate nohighlight">\(P\)</span>.</p></li>
+</ul>
+<p>Поскольку цена, как правило, находится на вертикальной оси, то расширение - это движение вправо. Постарайтесь не запутаться.</p>
+<div class="section" id="id10">
+<h3>Увеличение цен на факторы<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<p>Довольно стандартной является ситуация, когда цены на факторы производства растут. Напомню, что функция издержек зависит от цен на факторы. Поскольку функция издержек - это огибающая издержек, её наклон по параметрам равен условному спросу на факторы производства, то есть у неё положительный наклон:</p>
+<div class="math notranslate nohighlight">
+\[ \nabla_p TC(p, y) = x^{\ast}(p, y) \geqslant 0.\]</div>
+<p>Но на самом деле этого еще не достаточно, чтобы заявить о монотонности оптимального уровня производства по ценам на факторы. Для этого надо вспомнить, что гессиан (вогнутой по <span class="math notranslate nohighlight">\(p\)</span>) функции издержек - это градиент от условного спроса:</p>
+<div class="math notranslate nohighlight">
+\[ \nabla^2_p TC(p, y) = \nabla_p x^{\ast}(p, y) \leqslant 0.\]</div>
+<p>Значит, сам условный спрос монотонно убывает по ценам. Ну а раз условный спрос убывает, то и количество произведенного товара, конечно же, тоже убывает.</p>
+<a class="reference internal image-reference" href="../_images/sup_contract.png"><img alt="Сокращение предложения" class="align-center" src="../_images/sup_contract.png" style="width: 400px;" /></a>
+</div>
+<div class="section" id="id11">
+<h3>Санкции, квоты, катаклизмы<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<p>Конечно же, когда вмешивается некоторый внешний фактор, физически запрещающий производить определенный товар, то предложение этого товара должно упасть. Примерами могут служить:</p>
+<ul class="simple">
+<li><p>Запрет на оборот (вредного) товара</p></li>
+<li><p>Пожары, цунами…</p></li>
+<li><p>Войны, санкции…</p></li>
+</ul>
+</div>
+<div class="section" id="id12">
+<h3>Цена на сам товар<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Как ведет себя кривая предложения при увеличении цены на сам товар?<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Никак.</p>
+</div>
+</details></div>
+</div>
+<div class="section" id="id13">
+<h2>Агрегирование<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h2>
+<p>Иногда мы будем моделировать несколько потребителей и несколько производителей. Тогда необходимо сложить их соответствующие кривые спроса и предложения “горизонтально”. Иными словами, необходимо сложить решения соответствующих задач потребителя/производителя при каждой возможной цене.</p>
+<p>В следующих примерах я буду использовать обозначения <span class="math notranslate nohighlight">\(p,q,r\)</span> для цен товаров и факторов, a <span class="math notranslate nohighlight">\(Q^s_{\sum}\)</span> и <span class="math notranslate nohighlight">\(Q^d_{\sum}\)</span> для агрегированного предложения и спроса на товар <span class="math notranslate nohighlight">\(x\)</span>.</p>
+<div class="section" id="id14">
+<h3>Пример со спросом<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
+<p>Предположим, что есть два потребителя с одинаковым доходом, но разной полезностью:</p>
+<div class="math notranslate nohighlight">
+\[ U_1(x,y) = \sqrt(x,y), \quad U_2(x,y) = \min(x,y).\]</div>
+<p>Нас будет интересовать агрегированный спрос, например, на товар <span class="math notranslate nohighlight">\(x\)</span>, как функция от его цены <span class="math notranslate nohighlight">\(p\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[ Q^d_{\sum}(p) = \frac{I}{2p} + \frac{I}{p + q}, \]</div>
+<p>где <span class="math notranslate nohighlight">\(q\)</span> - это цена товара <span class="math notranslate nohighlight">\(y\)</span>, являющаяся параметром задачи.</p>
+</div>
+<div class="section" id="id15">
+<h3>Пример с предложением<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h3>
+<p>Предположим, что есть два производителя с технологиями</p>
+<div class="math notranslate nohighlight">
+\[G_1(x,y) = 2 x^2 + y^2 \leqslant z, \quad G_2(x,y) = x^2 + 2 y^2 \leqslant z,\]</div>
+<p>где <span class="math notranslate nohighlight">\(z\)</span> - это единый фактор производства с ценой <span class="math notranslate nohighlight">\(r\)</span>. Выпишем лагранжианы:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\mathcal{L}_1 = px + qy - rz - \lambda(2x^2 + y^2 - z),\\
+\mathcal{L}_2 = px + qy - rz - \gamma(x^2 + 2y^2 - z).
+\end{split}\]</div>
+<p>Отсюда легко находятся множители лагранжа, <span class="math notranslate nohighlight">\(\lambda = \gamma = r\)</span>, и, собственно, предложения товара <span class="math notranslate nohighlight">\(x\)</span> от каждого из заводов. Суммарное предложение равно:</p>
+<div class="math notranslate nohighlight">
+\[ Q^s_{\sum}(p) = \frac{p}{4 r} + \frac{p}{2r}.\]</div>
+</div>
+</div>
+<div class="section" id="id16">
+<h2>Частичное равновесие<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h2>
+<div class="proof definition admonition" id="definition-0">
+<p class="admonition-title"><span class="caption-number">Definition 55 </span></p>
+<div class="definition-content section" id="proof-content">
+<p><strong>Частичным равновесием</strong> на рынке товара <span class="math notranslate nohighlight">\(x\)</span> называется цена <span class="math notranslate nohighlight">\(P^{\ast}\)</span> и количество <span class="math notranslate nohighlight">\(Q^{\ast}\)</span>, лежащие в пересечении агрегированных кривых спроса и предложения:</p>
+<div class="math notranslate nohighlight">
+\[(P^{\ast},Q^{\ast}) \in Q^d_{\sum} \cap Q^s_{\sum}(p).\]</div>
+</div>
+</div><p>Как правило, частичное равновесие существует, поскольку кривые спроса монотонны и непрерывны по общим теоремам. Однако есть исключения. Например, при анализе предложения в присутствии фиксированных издержек. Фирма “разрывно” перемещает свое предложение в ноль, в момент, когда цена проходит через точку закрытия рынка. Это значит, что равновесия может не быть, см. иллюстрацию:</p>
+<a class="reference internal image-reference" href="../_images/nonexistence.png"><img alt="Нет равновесия" class="align-center" src="../_images/nonexistence.png" style="width: 400px;" /></a>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Так это что, получается, невыпуклая задача?<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Да, потому что максимум в <span class="math notranslate nohighlight">\(\max(0, \pi)\)</span> - это выпуклое преобразование, а нам нужно хотя бы вогнутое.</p>
+</div>
+</details></div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./week_6"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="lecture_6_1.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Шестая лекция, часть 1</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="seminar_6.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Семинар 6</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Паша Андреянов<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

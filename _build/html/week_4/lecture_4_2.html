@@ -43,15 +43,14 @@
     <script src="../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
     <script>mermaid.initialize({startOnLoad:true});</script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -229,7 +228,7 @@
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../week_3/homework_3.html">
+  <a class="reference internal" href="../week_3/homework_2.html">
    Второе домашнее задание
   </a>
  </li>
@@ -280,6 +279,92 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../week_5/lecture_5_1.html">
    Пятая лекция, часть 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_5/lecture_5_2.html">
+   Пятая лекция, часть 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_5/seminar_5.html">
+   Семинар 5
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_5/homework_3.html">
+   Третье домашнее задание
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Шестая неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_6/intro_6.html">
+   Содержание
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_6/lecture_6_1.html">
+   Шестая лекция, часть 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_6/lecture_6_2.html">
+   Шестая лекция, часть 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_6/seminar_6.html">
+   Семинар 6
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Седьмая неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_7/intro_7.html">
+   Содержание
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_7/practice_7.html">
+   Задачи для тренировки
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_7/lecture_7_1.html">
+   Седьмая лекция
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_7/seminar_7.html">
+   Семинар 7
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_7/homework_4.html">
+   Четвертое домашнее задание
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Восьмая неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_8/seminar_8.html">
+   Семинар 8
   </a>
  </li>
 </ul>
@@ -544,7 +629,7 @@
 </ul>
 <p>Почему всегда можно разложить? См. иллюстрацию:</p>
 <a class="reference internal image-reference" href="../_images/SEIETE.png"><img alt="Эффекты дохода и замещения" class="align-center" src="../_images/SEIETE.png" style="width: 400px;" /></a>
-<p>Есть такюе общий эффект (TE), он равен сумме эффекта замещения и эффекта дохода и представляет собой просто стандартное изменение маршаллианских спросов:</p>
+<p>Есть также общий эффект (TE), он равен сумме эффекта замещения и эффекта дохода и представляет собой просто стандартное изменение маршаллианских спросов:</p>
 <div class="math notranslate nohighlight">
 \[ \text{TE} = \text{SE} + \text{IE} = m(p') - m(p).\]</div>
 <p>Поскольку маршалианский спрос, как правило, наблюдаем, то можно считать что общий эффект всегда известен. Неизвестно его разложение на эффект дохода и замещения.</p>
@@ -590,7 +675,7 @@
 </div>
 </details><p>Вас, скорее всего, не учили матричному дифференциированию, но в данном случае оно работает примерно также как и обычное:</p>
 <div class="math notranslate nohighlight">
-\[ \nabla \vec h(\vec p,  \bar U) = \nabla \vec m(\vec p,  \bar U) + \frac{\partial m}{\partial I} \cdot \nabla E(\vec p, \bar U) = \nabla \vec m(\vec p,  \bar U) + \frac{\partial m}{\partial I} \cdot \vec h \]</div>
+\[ \nabla \vec h(\vec p,  \bar U) = \nabla \vec m(\vec p,  I) + \frac{\partial m}{\partial I} \cdot \nabla E(\vec p, \bar U) = \nabla \vec m(\vec p,  I) + \frac{\partial m}{\partial I} \cdot \vec h \]</div>
 <p>Проблема в том, что и <span class="math notranslate nohighlight">\(\frac{\partial m}{\partial I}\)</span> и <span class="math notranslate nohighlight">\(\vec h\)</span> это вектора длины <span class="math notranslate nohighlight">\(n\)</span>, и, поэтому, мы должны подумать, в каком порядке мы их хотим перемножить. Есть два варианта: либо мы умножаем строку <span class="math notranslate nohighlight">\(\frac{\partial m}{\partial I}\)</span> на столбец <span class="math notranslate nohighlight">\(\vec h\)</span>, либо мы умножаем столбец <span class="math notranslate nohighlight">\(\frac{\partial m}{\partial I}\)</span> на строку <span class="math notranslate nohighlight">\(\vec h\)</span>. Один из этих вариантов даст число, а другой матрицу. Тот вариант, который сохранит размерность объекта и будет правильным матричным дифференциированием.</p>
 <p>Однако, это еще не все. В зависимости от того, что идет по строкам: координаты цен или координаты товаров, формула будет выглядеть по разному. Например, если по горизонтали идут товары, то правильная форма:</p>
 <div class="math notranslate nohighlight">
@@ -609,7 +694,7 @@ h_y
 <p>Матрица <span class="math notranslate nohighlight">\(S = \nabla h\)</span> называется <strong>матрицей Слуцкого</strong>, или матрицей замещения.</p>
 </div>
 </div><div class="proof property admonition" id="property-1">
-<p class="admonition-title"><span class="caption-number">Property 28 </span></p>
+<p class="admonition-title"><span class="caption-number">Property 26 </span></p>
 <div class="property-content section" id="proof-content">
 <p>Если полезность дважды дифференцируема, то матрица Слуцкого симметрична, так как <span class="math notranslate nohighlight">\(S = \nabla^2 E\)</span>.</p>
 </div>
@@ -658,7 +743,7 @@ E \cdot \alpha \beta \cdot
 <h3>SE в первом приближении<a class="headerlink" href="#se" title="Permalink to this headline">¶</a></h3>
 <p>Матрица Слуцкого указывает нам на приращение Хиксианского спроса.</p>
 <div class="proof property admonition" id="property-2">
-<p class="admonition-title"><span class="caption-number">Property 29 </span> (SE в первом приближении)</p>
+<p class="admonition-title"><span class="caption-number">Property 27 </span> (SE в первом приближении)</p>
 <div class="property-content section" id="proof-content">
 <div class="math notranslate nohighlight">
 \[ SE = h(p') - h(p) = \int_p^{p'} \frac{\partial}{\partial p} h(x) dx \approx (p'-p) \nabla h\]</div>
@@ -679,12 +764,12 @@ E(p', \bar U) - E(p, \bar U) = \int_p^{p'} h(x, \bar U) dx \approx\\
 \end{split}\]</div>
 <p>Мы только что доказали достаточно полезное на практике свойство:</p>
 <div class="proof property admonition" id="property-3">
-<p class="admonition-title"><span class="caption-number">Property 30 </span> (компенсирующая вариация во втором приближении)</p>
+<p class="admonition-title"><span class="caption-number">Property 28 </span> (компенсирующая вариация во втором приближении)</p>
 <div class="property-content section" id="proof-content">
 <p>Компенсирующую (но не эквивалентную) вариацию можно приблизить как:</p>
 <div class="math notranslate nohighlight">
 \[CV \approx \delta p \cdot \vec h + \frac{\delta p \cdot S \cdot \delta p^T}{2}\]</div>
-<p>при малых приращениях цен <span class="math notranslate nohighlight">\(\delta p = \vec p' - \vec p\)</span>, где <span class="math notranslate nohighlight">\(\vec h\)</span> - действующий спрос.</p>
+<p>при малых приращениях цен <span class="math notranslate nohighlight">\(\delta p = p' - p\)</span>, где <span class="math notranslate nohighlight">\(\vec h\)</span> - действующий спрос.</p>
 </div>
 </div><p>Сравните ответ с разложением <span class="math notranslate nohighlight">\(CV\)</span> для Кобба Дугласа, которую мы вывели раньше.</p>
 </div>
@@ -704,7 +789,7 @@ E(p', \bar U) - E(p, \bar U) = \int_p^{p'} h(x, \bar U) dx \approx\\
 \[\varepsilon_{x,p} = \varepsilon^c_{x,p} - \varepsilon_{x,I} \cdot s_{x}.\]</div>
 <p>Легко видеть, что если <span class="math notranslate nohighlight">\(\varepsilon_{x,I} &gt; 0\)</span> то, поскольку <span class="math notranslate nohighlight">\(\varepsilon^c_{x,p}\)</span> всегда неположительный, то и <span class="math notranslate nohighlight">\(\varepsilon_{x,p}\)</span> будет неположительный. А нам нужна положительная зависимость между <span class="math notranslate nohighlight">\(x,p\)</span>. Соответственно, можно сделать следующий вывод:</p>
 <div class="proof property admonition" id="property-4">
-<p class="admonition-title"><span class="caption-number">Property 31 </span></p>
+<p class="admonition-title"><span class="caption-number">Property 29 </span></p>
 <div class="property-content section" id="proof-content">
 <p>Нормальный товар не может объяснить парадокс Геффена.</p>
 </div>
@@ -716,9 +801,9 @@ E(p', \bar U) - E(p, \bar U) = \int_p^{p'} h(x, \bar U) dx \approx\\
 </ul>
 <p>Получается, что</p>
 <div class="proof property admonition" id="property-5">
-<p class="admonition-title"><span class="caption-number">Property 32 </span></p>
+<p class="admonition-title"><span class="caption-number">Property 30 </span></p>
 <div class="property-content section" id="proof-content">
-<p>Для того, чтобы объяснить парадокс Геффена, нужно иметь слабый эффект замещения, и сильный положительый эффект дохода.</p>
+<p>Для того, чтобы объяснить парадокс Геффена, нужно иметь слабый эффект замещения, и сильный отрицательный эффект дохода.</p>
 </div>
 </div></div>
 <div class="section" id="id10">
