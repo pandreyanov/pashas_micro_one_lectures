@@ -363,8 +363,30 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
+  <a class="reference internal" href="../week_8/intro_8.html">
+   Содержание
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="../week_8/seminar_8.html">
    Семинар 8
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Девятая неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_9/intro_9.html">
+   Содержание
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_9/seminar_9.html">
+   Семинар 9
   </a>
  </li>
 </ul>
@@ -576,7 +598,7 @@ const thebe_selector_output = ".output, .cell_output"
 <h1>Первая лекция, часть 2<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="id2">
 <h2>Начала оптимизации<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p>Любая оптимизационная задача это две вещи</p>
+<p>Любая оптимизационная задача - это две вещи:</p>
 <ul class="simple">
 <li><p>функция, которую мы максимизируем</p></li>
 <li><p>область определения аргументов, по которым мы максимизируем</p></li>
@@ -586,48 +608,48 @@ const thebe_selector_output = ".output, .cell_output"
 <p class="admonition-title"><span class="caption-number">Example 4 </span></p>
 <div class="example-content section" id="proof-content">
 <div class="tabbed-set docutils">
-<input checked="checked" id="4f6cfac2-f92e-457f-8130-316d62d2b5d6" name="4889d8d9-c82f-40a8-af20-53ca81b10240" type="radio">
-</input><label class="tabbed-label" for="4f6cfac2-f92e-457f-8130-316d62d2b5d6">
+<input checked="checked" id="c769a769-3405-4efb-946f-bcf4bb16ef44" name="fef17d17-237f-4c76-81d7-df55e9ff347f" type="radio">
+</input><label class="tabbed-label" for="c769a769-3405-4efb-946f-bcf4bb16ef44">
 A</label><div class="tabbed-content docutils">
 <p>Парабола рогами вниз на отрезке от -1 до 1</p>
 <div class="math notranslate nohighlight">
 \[ -x^2 \to \max_{x \in [-1,1]}\]</div>
 <p>Достигает максимума в точке 0.</p>
 </div>
-<input id="5422f5e2-a6ce-47aa-bdd8-7afa33d033c1" name="4889d8d9-c82f-40a8-af20-53ca81b10240" type="radio">
-</input><label class="tabbed-label" for="5422f5e2-a6ce-47aa-bdd8-7afa33d033c1">
+<input id="cd76563e-937a-4842-9b67-e47df62c5cc0" name="fef17d17-237f-4c76-81d7-df55e9ff347f" type="radio">
+</input><label class="tabbed-label" for="cd76563e-937a-4842-9b67-e47df62c5cc0">
 B</label><div class="tabbed-content docutils">
 <p>Парабола рогами вниз на отрезке от -2 до -1</p>
 <div class="math notranslate nohighlight">
 \[ -x^2 \to \max_{x \in [-2,-1]}\]</div>
 <p>Достигает максимума в точке -1.</p>
 </div>
-<input id="39cae6a4-a734-4b58-a7ab-1fbabbc989fa" name="4889d8d9-c82f-40a8-af20-53ca81b10240" type="radio">
-</input><label class="tabbed-label" for="39cae6a4-a734-4b58-a7ab-1fbabbc989fa">
+<input id="8e378141-39ac-4dd6-a96e-bc6e855c57f5" name="fef17d17-237f-4c76-81d7-df55e9ff347f" type="radio">
+</input><label class="tabbed-label" for="8e378141-39ac-4dd6-a96e-bc6e855c57f5">
 C</label><div class="tabbed-content docutils">
 <p>Парабола рогами вверх на отрезке от -1 до 1</p>
 <div class="math notranslate nohighlight">
 \[ x^2 \to \max_{x \in [-1,1]}\]</div>
 <p>Достигает максимума в точкax -1 и 1.</p>
 </div>
-<input id="1d8ae4c9-03ce-49ea-a0d3-dc9ac5abe09b" name="4889d8d9-c82f-40a8-af20-53ca81b10240" type="radio">
-</input><label class="tabbed-label" for="1d8ae4c9-03ce-49ea-a0d3-dc9ac5abe09b">
+<input id="70aaf01e-3f7a-4027-98ee-258b3849c056" name="fef17d17-237f-4c76-81d7-df55e9ff347f" type="radio">
+</input><label class="tabbed-label" for="70aaf01e-3f7a-4027-98ee-258b3849c056">
 D</label><div class="tabbed-content docutils">
 <p>Парабола рогами вверх на отрезке от -1 до 1</p>
 <div class="math notranslate nohighlight">
 \[ x^2 \to \max_{x \in [-1,1]}\]</div>
 <p>Достигает максимума в точкax -1 и 1.</p>
 </div>
-<input id="aa80fac4-26da-4998-b0d6-110e55e1e365" name="4889d8d9-c82f-40a8-af20-53ca81b10240" type="radio">
-</input><label class="tabbed-label" for="aa80fac4-26da-4998-b0d6-110e55e1e365">
+<input id="925b2911-4335-47c7-a8d5-f4b02f4d489d" name="fef17d17-237f-4c76-81d7-df55e9ff347f" type="radio">
+</input><label class="tabbed-label" for="925b2911-4335-47c7-a8d5-f4b02f4d489d">
 E</label><div class="tabbed-content docutils">
 <p>Парабола рогами вверх на всей числовой прямой</p>
 <div class="math notranslate nohighlight">
 \[ x^2 \to \max_{x \in \mathbb{R}}\]</div>
 <p>Не достигает своего максимума, вообще.</p>
 </div>
-<input id="b930fc27-05b1-4aa2-a449-8582be0fe907" name="4889d8d9-c82f-40a8-af20-53ca81b10240" type="radio">
-</input><label class="tabbed-label" for="b930fc27-05b1-4aa2-a449-8582be0fe907">
+<input id="9bbae7bc-6c0c-4e1e-83ea-078e7bfa1f41" name="fef17d17-237f-4c76-81d7-df55e9ff347f" type="radio">
+</input><label class="tabbed-label" for="9bbae7bc-6c0c-4e1e-83ea-078e7bfa1f41">
 F</label><div class="tabbed-content docutils">
 <p>Парабола рогами вверх на интервале от -1 до 1</p>
 <div class="math notranslate nohighlight">
@@ -644,35 +666,35 @@ F</label><div class="tabbed-content docutils">
 <div class="theorem-content section" id="proof-content">
 <p>Непрерывная функция на компакте гарантированно достигает своего минимума и максимума.</p>
 </div>
-</div><p>Что такое непрерывная функция вы уже знаете.</p>
-<p>A <strong>компакт</strong> в <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span> это просто ограниченное и замкнутое множество. В контексте одномерной оптимизации, <span class="math notranslate nohighlight">\([a,b]\)</span> это компакт, а <span class="math notranslate nohighlight">\((a,b]\)</span>, <span class="math notranslate nohighlight">\([a,b)\)</span>, <span class="math notranslate nohighlight">\((a,b)\)</span>, <span class="math notranslate nohighlight">\([a,\infty)\)</span>,<span class="math notranslate nohighlight">\((a,\infty)\)</span> это все не компакты.</p>
-<p>Таким образом, у вас есть всего два сценария как решение оптимизационной задачи с непрерывной функцией могло бы не существовать: либо оно вообще бесконечно, либо оно конечно, но достигается в точке которая попала на границу области.</p>
+</div><p>Что такое непрерывная функция, вы уже знаете.</p>
+<p>A <strong>компакт</strong> в <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span> - это просто ограниченное и замкнутое множество. В контексте одномерной оптимизации, <span class="math notranslate nohighlight">\([a,b]\)</span> - это компакт, а <span class="math notranslate nohighlight">\((a,b]\)</span>, <span class="math notranslate nohighlight">\([a,b)\)</span>, <span class="math notranslate nohighlight">\((a,b)\)</span>, <span class="math notranslate nohighlight">\([a,\infty)\)</span>,<span class="math notranslate nohighlight">\((a,\infty)\)</span> - это все не компакты.</p>
+<p>Таким образом, у вас есть всего два сценария, как решение оптимизационной задачи с непрерывной функцией могло бы не существовать: либо оно вообще бесконечно, либо оно конечно, но достигается в точке которая попала на границу области.</p>
 </div>
 </div>
 <div class="section" id="id4">
 <h2>Условия первого порядка<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
-<p>Если решение лежит внутри области, то обязательно выполнены условия первого порядка. Например, если функция <span class="math notranslate nohighlight">\(U(x, y, z)\)</span> от трех переменных, и вы убедили себя что решение надо искать внутри, то</p>
+<p>Если решение лежит внутри области, то обязательно выполнены условия первого порядка. Например, если функция <span class="math notranslate nohighlight">\(U(x, y, z)\)</span> от трех переменных и вы убедили себя, что решение надо искать внутри, то</p>
 <div class="math notranslate nohighlight">
 \[\text{УПП (FOC)}: \quad  \nabla U = 0\]</div>
-<p>должны выполняться в оптимальной точке <span class="math notranslate nohighlight">\((x^{\ast}, y^{\ast}, z^{\ast})\)</span>. Зачастую, граничных точек не так уж и много, и их можно просто перебрать руками, сравнивая значения. Затем можно выбрать наилучшую из граничных и внутренних точек, удовлетворяющих УПП.</p>
+<p>должны выполняться в оптимальной точке <span class="math notranslate nohighlight">\((x^{\ast}, y^{\ast}, z^{\ast})\)</span>. Зачастую граничных точек не так уж и много, и их можно просто перебрать руками, сравнивая значения. Затем можно выбрать наилучшую из граничных и внутренних точек, удовлетворяющих УПП.</p>
 </div>
 <div class="section" id="id5">
 <h2>Условия второго порядка<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
 <p>Иногда число кандидатов на оптимум, прошедших условия первого порядка,  можно дополнительно сузить за счет условий второго порядка.</p>
 <div class="math notranslate nohighlight">
 \[\text{УВП (SOC)}: \quad  \nabla^2 U \ ? \ 0\]</div>
-<p>Если Гессиан во внутренней точке отрицательно определен <span class="math notranslate nohighlight">\(\nabla^2 U \leqslant 0\)</span> (парабола рогами вниз) то это локальный максимум и этот кандидат проходит отбор. Если Гессиан положительно определен <span class="math notranslate nohighlight">\(\nabla^2 U \geqslant 0\)</span> (парабола рогами вверх) то это локальный минимум и этот кандидат не проходит отбор.</p>
-<p>Если у вас остался один кандидат то он и является оптимумом. Если кандидатов несколько то надо опять сравнивать значения функции руками.</p>
+<p>Если Гессиан во внутренней точке отрицательно определен <span class="math notranslate nohighlight">\(\nabla^2 U \leqslant 0\)</span> (парабола рогами вниз), то это локальный максимум и этот кандидат проходит отбор. Если Гессиан положительно определен <span class="math notranslate nohighlight">\(\nabla^2 U \geqslant 0\)</span> (парабола рогами вверх), то это локальный минимум и этот кандидат не проходит отбор.</p>
+<p>Если у вас остался один кандидат, то он и является оптимумом. Если кандидатов несколько, то надо опять сравнивать значения функции руками.</p>
 </div>
 <div class="section" id="id6">
 <h2>Выпуклые задачи<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
-<p>К счастью, в экономике, зачастую удается показать что, поверх непрерывности, функция полезности</p>
+<p>К счастью, в экономике зачастую удается показать, что поверх непрерывности функция полезности</p>
 <ul class="simple">
 <li><p>либо вогнутая</p></li>
 <li><p>либо она монотонное преобразование вогнутой</p></li>
-<li><p>либо она квази-вогнутая</p></li>
+<li><p>либо она квазивогнутая</p></li>
 </ul>
-<p>Если, вдобавок к этому, область определения не только компакт но и выпуклое множество, то, во первых, решение всегда единственное, а во вторых, условия второго порядка можно не проверять, поскольку они (или что то очень похожее на них) выполнены глобально.</p>
+<p>Если вдобавок к этому область определения не только компакт, но и выпуклое множество, то, во-первых, решение всегда единственное, а во-вторых, условия второго порядка можно не проверять, поскольку они (или что-то очень похожее на них) выполнены глобально.</p>
 <p>Очень важно уметь, глядя на задачу, определять выпуклая она или нет, чтобы не тратить время на анализ второго порядка. Общий алгоритм решения выпуклых и непрерывных задач на компакте очень простой:</p>
 <div class="mermaid">
             graph TD
@@ -682,11 +704,11 @@ D[решаем УПП] --&gt; A((она внутри?));
 A -- yes --&gt; B[это ответ!];
 A -- no --&gt; C[ищем на границе...];
 
-        </div><p>То есть, мы набрасываемся на такую задачу, как будто решение у нее внутреннее. Затем проверяем, что мы не ошиблись. Если кандидат оказался внутри, то это и есть правильный ответ. Если же нет, то мы заново ищем вдоль границы, исходя из геометрических соображений.</p>
+        </div><p>То есть мы набрасываемся на такую задачу, как будто решение у нее внутреннее. Затем проверяем, что мы не ошиблись. Если кандидат оказался внутри, то это и есть правильный ответ. Если же нет, то мы заново ищем вдоль границы, исходя из геометрических соображений.</p>
 </div>
 <div class="section" id="id7">
 <h2>Линии уровня<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
-<p>Наконец, линии уровня это очень удобный инструмент для отлова и классификации кандидатов на решение оптимизационной задачи.</p>
+<p>Наконец, линии уровня - это очень удобный инструмент для отлова и классификации кандидатов на решение оптимизационной задачи.</p>
 <div class="proof definition admonition" id="definition-2">
 <p class="admonition-title"><span class="caption-number">Definition 13 </span></p>
 <div class="definition-content section" id="proof-content">
@@ -695,16 +717,16 @@ A -- no --&gt; C[ищем на границе...];
 </div><div class="proof definition admonition" id="definition-3">
 <p class="admonition-title"><span class="caption-number">Definition 14 </span></p>
 <div class="definition-content section" id="proof-content">
-<p><strong>Кривой безразличия</strong> предпочтений <span class="math notranslate nohighlight">\(\succcurlyeq\)</span>, проходящей через точку <span class="math notranslate nohighlight">\(x\)</span> называется множество всех точек <span class="math notranslate nohighlight">\(y \in X\)</span> таких что <span class="math notranslate nohighlight">\(x \sim y\)</span>.</p>
+<p><strong>Кривой безразличия</strong> предпочтений <span class="math notranslate nohighlight">\(\succcurlyeq\)</span>, проходящей через точку <span class="math notranslate nohighlight">\(x\)</span> называется множество всех точек <span class="math notranslate nohighlight">\(y \in X\)</span> таких, что <span class="math notranslate nohighlight">\(x \sim y\)</span>.</p>
 </div>
-</div><p>Совершенно ясно, что в контексте представлений предпочтений полезностями и наоборот, кривая безразличия и линия уровня это одно и то же.</p>
+</div><p>Совершенно ясно, что в контексте представлений предпочтений полезностями и наоборот, кривая безразличия и линия уровня - это одно и то же.</p>
 <p>Рассмотрим несколько примеров полезностей</p>
 <div class="proof example admonition" id="example-4">
 <p class="admonition-title"><span class="caption-number">Example 5 </span></p>
 <div class="example-content section" id="proof-content">
 <div class="tabbed-set docutils">
-<input checked="checked" id="94a2b317-eb3f-4063-b9f1-b06a1b9a5508" name="b27397ac-862c-49c5-a24a-ed3901000d43" type="radio">
-</input><label class="tabbed-label" for="94a2b317-eb3f-4063-b9f1-b06a1b9a5508">
+<input checked="checked" id="d075331a-6473-4db4-a92e-45d40239a246" name="b0b885dd-d25b-48f0-81b2-d11e99d5f131" type="radio">
+</input><label class="tabbed-label" for="d075331a-6473-4db4-a92e-45d40239a246">
 Линейная</label><div class="tabbed-content docutils">
 <p>Рассмотрим полезность вида: <span class="math notranslate nohighlight">\(U(x, y) = ax + by\)</span>. Тогда линия уровня ищется следующим образом:</p>
 <div class="math notranslate nohighlight">
@@ -715,10 +737,10 @@ c-ax = by\\
 y = \frac{c-ax}{b}
 \end{gather*}
 \end{split}\]</div>
-<p>Линия уровня это прямая вида <span class="math notranslate nohighlight">\(y = \alpha x + \beta\)</span>.</p>
+<p>Линия уровня - это прямая вида <span class="math notranslate nohighlight">\(y = \alpha x + \beta\)</span>.</p>
 </div>
-<input id="18a23b3a-59f3-4ab1-9bef-8eb753d0d6ba" name="b27397ac-862c-49c5-a24a-ed3901000d43" type="radio">
-</input><label class="tabbed-label" for="18a23b3a-59f3-4ab1-9bef-8eb753d0d6ba">
+<input id="2238927a-3a12-47e4-b627-a7c20742cd15" name="b0b885dd-d25b-48f0-81b2-d11e99d5f131" type="radio">
+</input><label class="tabbed-label" for="2238927a-3a12-47e4-b627-a7c20742cd15">
 Гиперболическая</label><div class="tabbed-content docutils">
 <p>Рассмотрим полезность вида: <span class="math notranslate nohighlight">\(U(x, y) = a \log x + \log y\)</span>. Тогда линия уровня ищется следующим образом:</p>
 <div class="math notranslate nohighlight">
@@ -729,10 +751,10 @@ e^{c} = x^a y\\
 y =\frac{e^{c}}{x^a}
 \end{gather*}
 \end{split}\]</div>
-<p>Линия уровня это гипербола вида <span class="math notranslate nohighlight">\(y = x^\alpha \beta\)</span>.</p>
+<p>Линия уровня - это гипербола вида <span class="math notranslate nohighlight">\(y = x^\alpha \beta\)</span>.</p>
 </div>
-<input id="c53213ef-003c-4c6d-90aa-18b6322a0dd5" name="b27397ac-862c-49c5-a24a-ed3901000d43" type="radio">
-</input><label class="tabbed-label" for="c53213ef-003c-4c6d-90aa-18b6322a0dd5">
+<input id="cbbb3831-d945-46bc-a256-7c46a6b50263" name="b0b885dd-d25b-48f0-81b2-d11e99d5f131" type="radio">
+</input><label class="tabbed-label" for="cbbb3831-d945-46bc-a256-7c46a6b50263">
 Полезность минимум</label><div class="tabbed-content docutils">
 <p>Рассмотрим полезность вида: <span class="math notranslate nohighlight">\(U(x, y) = \min(ax, by)\)</span>. Тогда линия уровня ищется следующим образом:</p>
 <div class="math notranslate nohighlight">
@@ -743,16 +765,16 @@ c = \min(ax, by)\\
 y = \frac{c}{b} \mathbb{I}(ax &gt; c), \quad x = \frac{c}{a} \mathbb{I}(by &gt; c)
 \end{gather*}
 \end{split}\]</div>
-<p>Линия уровня это конкатенация горизонтальной и вертикальной линий, соединенных вдоль <span class="math notranslate nohighlight">\(ax = by\)</span>.</p>
+<p>Линия уровня - это конкатенация горизонтальной и вертикальной линий, соединенных вдоль <span class="math notranslate nohighlight">\(ax = by\)</span>.</p>
 </div>
 </div>
 </div>
 </div><div class="section" id="id8">
 <h3>Зачем нужны линии уровня?<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
-<p>Очень часто, в задачах есть выпуклое ограничение типа неравенства, например, бюджетное ограничение. В таком случае, все кандидаты будут формально не внутренние. Однако, с точки зрения выпуклой оптимизации, такие точки можно интерпретировать как “внутренние”, если решать методом Лагранжа. О методе Лагранжа мы поговорим на следующей лекции.</p>
+<p>Очень часто, в задачах есть выпуклое ограничение типа неравенства, например, бюджетное ограничение. В таком случае все кандидаты будут формально не внутренние. Однако с точки зрения выпуклой оптимизации, такие точки можно интерпретировать как “внутренние”, если решать методом Лагранжа. О методе Лагранжа мы поговорим на следующей лекции.</p>
 <p>Внутреннее решение выпуклой (и гладкой) оптимизационной задачи можно охарактеризовать как точку касания линии уровня с выпуклым ограничением, см. иллюстрацию.</p>
 <a class="reference internal image-reference" href="../_images/tangency.png"><img alt="Внутреннее решение" class="align-center" src="../_images/tangency.png" style="width: 400px;" /></a>
-<p>Иногда задача вообще не является гладкой, как в случае Леонтьефских полезностей. Тогда линии уровня это самый быстрый и надежный подход к решению задачи.</p>
+<p>Иногда задача вообще не является гладкой, как в случае Леонтьефских полезностей. Тогда линии уровня - это самый быстрый и надежный подход к решению задачи.</p>
 </div>
 </div>
 </div>
