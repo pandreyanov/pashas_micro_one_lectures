@@ -73,6 +73,9 @@ parts:
   chapters:
     - file: week_9/intro_9
     - file: week_9/seminar_9
+- caption: Десятая неделя
+  chapters:
+    - file: week_10/test_exam_problems
 - caption: Мат. шпаргалка
   chapters:
     - file: cheetsheet/differentials
