@@ -735,9 +735,8 @@ const thebe_selector_output = ".output, .cell_output"
 <li><p>сильная ПО означает, что для любой комбинации весов <span class="math notranslate nohighlight">\((\alpha, \beta) \neq (0,0)\)</span> точка <span class="math notranslate nohighlight">\(x\)</span> (строго) оптимальна в смысле взвешенной полезности агентов. То есть, если нам предлагают претендента <span class="math notranslate nohighlight">\(x'\)</span> такого что всем агентам строго лучше, то одна из таких взвешенных полезностей среагирует.</p></li>
 <li><p>слабая ПО означает то же самое, но веса должны быть строго положительные.</p></li>
 </ul>
-<p>На практике, один из двух весов можно опустить</p>
-<div class="math notranslate nohighlight">
-\[ U(x) = \alpha U_a(x) + U_b(w-x) \to \max_x\]</div>
+<p>На практике, один из двух весов можно положить равным единице:
+$<span class="math notranslate nohighlight">\( U(x) = \alpha U_a(x) + U_b(w-x) \to \max_x\)</span>$</p>
 <p>И тогда мы получим однопараметрическое семейство точек, называемое <strong>Парето границей</strong> или <strong>Парето фронтом</strong>.</p>
 </div>
 <div class="section" id="id8">
