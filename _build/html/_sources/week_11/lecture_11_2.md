@@ -8,6 +8,6 @@
 
 **Равновесием вальраса** экономики обмена называется допустимое состояние $\vec x$ и вектор цен $\vec p$ такие что каждый агент достигает максимума полезности по бюджетному ограничению, с бюджетом равным доходу от продажи своих начальных запасов.
 
-$$ \forall i \in I, \quad \vec x_i \in \argmax U_i(\ast)$$
+$$ \forall i \in I, \quad \vec x_i \in \argmax U_i(\ast) \quad s.t. \quad \vec p \cdot \vec x_i \leqslant \vec p \cdot \vec w_i$$
 
 :::
