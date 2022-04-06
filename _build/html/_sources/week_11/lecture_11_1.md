@@ -60,7 +60,7 @@ $$ x_{b1} = w_{a1} + w_{b1} - x_{a1}, \quad x_{b2} = w_{a2} + w_{b2} - x_{b1}$$
 
 :::{image} ./edge.png
 :alt: Ящик эджворта
-:width: 400px
+:width: 700px
 :align: center
 :::
 
@@ -97,7 +97,7 @@ $$ x_{b1} = w_{a1} + w_{b1} - x_{a1}, \quad x_{b2} = w_{a2} + w_{b2} - x_{b1}$$
 
 :::{image} ./edge2.png
 :alt: Ящик эджворта
-:width: 400px
+:width: 700px
 :align: center
 :::
 
