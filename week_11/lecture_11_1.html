@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Решение тестого экзамена &#8212; Учебник по Микро 1, для ИП, ФЭН ВШЭ</title>
+    <title>Шестая лекция, часть 1 &#8212; Учебник по Микро 1, для ИП, ФЭН ВШЭ</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -49,10 +49,14 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
     <script>mermaid.initialize({startOnLoad:true});</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Дифференциалы" href="../cheetsheet/differentials.html" />
+    <link rel="prev" title="Тестовая контрольная" href="../week_10/test_exam_problems.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -393,7 +397,7 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="test_exam_problems.html">
+  <a class="reference internal" href="../week_10/test_exam_problems.html">
    Тестовая контрольная
   </a>
  </li>
@@ -403,9 +407,9 @@ const thebe_selector_output = ".output, .cell_output"
   Первая неделя
  </span>
 </p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../week_11/lecture_11_1.html">
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Шестая лекция, часть 1
   </a>
  </li>
@@ -477,7 +481,7 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/week_10/test_exam_solution.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/week_11/lecture_11_1.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -502,6 +506,24 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   Что такое экономика обмена?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   Ящик Эджворта
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -509,11 +531,29 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Решение тестого экзамена</h1>
+                <h1>Шестая лекция, часть 1</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   Что такое экономика обмена?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   Ящик Эджворта
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -521,8 +561,54 @@ const thebe_selector_output = ".output, .cell_output"
               <div>
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="id1">
-<h1>Решение тестого экзамена<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<p>…</p>
+<h1>Шестая лекция, часть 1<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>В этой лекции мы поговорим об экономиках обмена.</p>
+<div class="section" id="id2">
+<h2>Что такое экономика обмена?<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>Экономика обмена это</p>
+<ul class="simple">
+<li><p>несколько потребителей (индивидуумов) <span class="math notranslate nohighlight">\(I = \{ a,b,c, \ldots\}\)</span></p></li>
+<li><p>несколько товаров <span class="math notranslate nohighlight">\(K = \{1, 2, 3, \ldots\}\)</span></p></li>
+<li><p>начальные запасы <span class="math notranslate nohighlight">\(\vec w_{a}, \vec w_{b}, \vec w_{c}, \ldots\)</span>
+$<span class="math notranslate nohighlight">\( \vec w_{a} = \{ w_{a1}, w_{a2}, w_{a3}, \ldots\}\)</span>$</p></li>
+<li><p>вектора потребления <span class="math notranslate nohighlight">\(\vec x_{a}, \vec x_{b}, \vec x_{c}, \ldots\)</span>
+$<span class="math notranslate nohighlight">\( \vec x_{a} = \{ x_{a1}, x_{a2}, x_{a3}, \ldots\}\)</span>$</p></li>
+</ul>
+<p>Экономика может находиться в одном из многих допустимых состояний</p>
+<div class="proof definition admonition" id="definition-0">
+<p class="admonition-title"><span class="caption-number">Definition 59 </span></p>
+<div class="definition-content section" id="proof-content">
+<p><strong>Допустимым состоянием</strong> экономики обмена называется набор координат потреблений <span class="math notranslate nohighlight">\(\{x_{ik}\}_{i \in I, k \in K}\)</span> такой что</p>
+<ul class="simple">
+<li><p>потребления неотрицательные
+$<span class="math notranslate nohighlight">\(\forall i \in I, \quad 0 \leqslant x_{ik}\)</span>$</p></li>
+<li><p>сумма потреблений (по каждому товару) совпадает с общими запасами
+$<span class="math notranslate nohighlight">\(\forall i \in I, \quad \sum_{i \in I} x_{ik} = \sum_{i \in I} w_{i1}\)</span>$</p></li>
+</ul>
+<p><strong>Общие запасы</strong> <span class="math notranslate nohighlight">\(\vec w\)</span> это сумма индивидуальных запасов:
+$<span class="math notranslate nohighlight">\( \vec w = \{ w_1, w_2, w_3, \ldots\}, \quad w_i = \sum_{i \in I} w_{i1}\)</span>$</p>
+</div>
+</div><p>Другими словами, надо сложить все запасы (отдельно по товарам) и разделить их между агентами. В контексте экономики обмена нас будут интересовать только допустимые равновесия.</p>
+</div>
+<div class="section" id="id3">
+<h2>Ящик Эджворта<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>Рассмотрим случай, когда <span class="math notranslate nohighlight">\(\dim I = 2, \dim K = 2\)</span>. В таком случае, допустимые состояния это четыре координаты:
+$<span class="math notranslate nohighlight">\( x_{a1}, x_{a2}, x_{b1}, x_{b2}\)</span><span class="math notranslate nohighlight">\(
+причем они связаны соотношениями
+\)</span><span class="math notranslate nohighlight">\( x_{b1} = w_{a1} + w_{b1} - x_{a1}, \quad x_{b2} = w_{a2} + w_{b2} - x_{b1}\)</span><span class="math notranslate nohighlight">\(
+то есть, степеней свободы у допустимого состояния всего две: \)</span>x_{1a}, x_{1b}$.</p>
+<p>Пространство допустимых состояний описывается прямоугольником в <span class="math notranslate nohighlight">\(\mathbb{R}^2\)</span>, высота и ширина которого равны <span class="math notranslate nohighlight">\(w_1\)</span> и <span class="math notranslate nohighlight">\(w_2\)</span> соответственно.</p>
+<p><strong>тут будет картинка</strong></p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+У Кати есть 2 килограмма сахара и 3 килограмма соли, а у Миши есть 3 килограмма сахара и 1 килограмма соли. Опишите своими словами общие запасы и допустимые состояния.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Всего в экономике 5 килограмм сахара и 4 килограмма соли.</p>
+</div>
+</details></div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -538,7 +624,7 @@ const thebe_selector_output = ".output, .cell_output"
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./week_10"
+            path: "./week_11"
         },
         predefinedOutput: true
     }
@@ -549,7 +635,21 @@ const thebe_selector_output = ".output, .cell_output"
               
             
                 <!-- Previous / next buttons -->
-<div class='prev-next-area'>
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="../week_10/test_exam_problems.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Тестовая контрольная</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../cheetsheet/differentials.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Дифференциалы</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
             
         </div>
