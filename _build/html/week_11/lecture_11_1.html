@@ -526,6 +526,16 @@ const thebe_selector_output = ".output, .cell_output"
    Парето Оптимальность
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id5">
+   Геометрическая интерпретация ПО
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id6">
+   Утилитарная интерпретация ПО
+  </a>
+ </li>
 </ul>
 
             </nav>
@@ -559,6 +569,16 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id4">
    Парето Оптимальность
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id5">
+   Геометрическая интерпретация ПО
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id6">
+   Утилитарная интерпретация ПО
   </a>
  </li>
 </ul>
@@ -639,10 +659,37 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="proof definition admonition" id="definition-1">
 <p class="admonition-title"><span class="caption-number">Definition 60 </span></p>
 <div class="definition-content section" id="proof-content">
-<p>Допустимое состояние <strong>сильно ПО</strong> если не существует другого допусимого состояния, которое делает всем агентам (слабо) лучше.</p>
-<p>Допустимое состояние <strong>слабо ПО</strong> если не существует другого допусимого состояния, которое делает всем агентам (слабо) лучше, но хотя бы одному агенту сильно.</p>
+<p>Допустимое состояние <strong>сильно ПО</strong> если не существует другого допустимого состояния, которое делает всем агентам (слабо) лучше, но хотя бы одному агенту сильно.</p>
+<p>Допустимое состояние <strong>слабо ПО</strong> если не существует другого допустимого состояния, которое делает всем агентам (сильно) лучше.</p>
 </div>
-</div><p>Разница между двумя понятиями практически отсутствует, и, на самом деле, можно формально доказать, что ее нет для строго вогнутых предпочтений. Контрпримером к этому факту будут Леонтъивские предпочтения, мы их разберем чуть позже.</p>
+</div><p>Разница между двумя понятиями практически отсутствует, и, на самом деле, можно формально доказать, что ее нет для строго вогнутых предпочтений. Контрпримером к этому факту будут Леонтьевские предпочтения, мы их разберем чуть позже.</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Какое из двух понятий ПО является более сильным, то есть, из того что оно выполняется вытекает, что выполняется второе?<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Из сильного вытекает слабое.</p>
+</div>
+</details></div>
+<div class="section" id="id5">
+<h2>Геометрическая интерпретация ПО<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<p>Рассмотрим точку <span class="math notranslate nohighlight">\(x\)</span> в ящике Эджворта и проведем через нее линии уровня полезностей каждого агента. Для того, чтобы опровергнуть слабую ПО, достаточно привести пример (точку <span class="math notranslate nohighlight">\(x'\)</span>) такую что она находится в <span class="math notranslate nohighlight">\(L_{++}(x)\)</span> для первого агента и <span class="math notranslate nohighlight">\(L_{++}(x)\)</span> для второго агента. Напомним, что</p>
+<ul class="simple">
+<li><p>верхнее лебегово множество <span class="math notranslate nohighlight">\(L_{+}(x)\)</span> это все точки <span class="math notranslate nohighlight">\(x'\)</span> такие что <span class="math notranslate nohighlight">\(x' \succcurlyeq x\)</span></p></li>
+<li><p>верхнее лебегово множество <span class="math notranslate nohighlight">\(L_{++}(x)\)</span> это все точки <span class="math notranslate nohighlight">\(x'\)</span> такие что <span class="math notranslate nohighlight">\(x' \succ x\)</span></p></li>
+</ul>
+<p>Рассмотрим несколько примеров</p>
+<p><strong>тут будет картинка</strong></p>
+<ul class="simple">
+<li><p>точка <span class="math notranslate nohighlight">\(\hat x\)</span> находится в углу ящика эджворта и потому все альтернативные точки <span class="math notranslate nohighlight">\(x'\)</span> делают второму агенту гарантированно хужеэ</p></li>
+<li><p>точка <span class="math notranslate nohighlight">\(\tilde x\)</span> находится на пересечении кривых безразличия, поэтому это ни слабое ни сильное ПО</p></li>
+<li><p>точка <span class="math notranslate nohighlight">\(x^{\ast}\)</span> находится в точке касания кривых безразличия и потому это слабое (а также сильное) ПО</p></li>
+</ul>
+</div>
+<div class="section" id="id6">
+<h2>Утилитарная интерпретация ПО<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 
