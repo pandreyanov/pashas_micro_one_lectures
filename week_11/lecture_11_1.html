@@ -536,6 +536,11 @@ const thebe_selector_output = ".output, .cell_output"
    Утилитарная интерпретация ПО
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id7">
+   Слабая но не сильная ПО
+  </a>
+ </li>
 </ul>
 
             </nav>
@@ -579,6 +584,11 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id6">
    Утилитарная интерпретация ПО
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id7">
+   Слабая но не сильная ПО
   </a>
  </li>
 </ul>
@@ -690,6 +700,18 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 <div class="section" id="id6">
 <h2>Утилитарная интерпретация ПО<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<p>Рассмотрим взвешенную полезность агентов в допустимой точке <span class="math notranslate nohighlight">\(х\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[ U(x) = \alpha U_a(x) + \beta U_b(w-x), \quad \alpha, \beta \geqslant 0\]</div>
+<ul class="simple">
+<li><p>сильная ПО означает, что для любой комбинации весов <span class="math notranslate nohighlight">\(\alpha, \beta \neq 0,0\)</span> точка <span class="math notranslate nohighlight">\(x\)</span> (строго) оптимальна в смысле взвешенной полезности агентов.</p></li>
+<li><p>слабая ПО означает то же самое, но веса должны быть строго положительные.</p></li>
+</ul>
+<p>Как не запутаться, в чем сила?</p>
+<p>Сила сильного ПО в том, что он выдерживает больше тестов чем слабый ПО. Слабый ПО проверяется на строго положительных весах, а сильный проверятся также на весах которые могут равняться нулю/</p>
+</div>
+<div class="section" id="id7">
+<h2>Слабая но не сильная ПО<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 
