@@ -413,6 +413,11 @@ const thebe_selector_output = ".output, .cell_output"
    Первая лекция, часть 1
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_11/lecture_11_2.html">
+   Первая лекция, часть 2
+  </a>
+ </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
@@ -608,12 +613,12 @@ const thebe_selector_output = ".output, .cell_output"
 <h1>Пятая лекция, часть 2<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="id2">
 <h2>Технологические множества<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p>В первой части мы фокусировались на минимизации издержек, однако, это накладывало определенные ограничения, поскольку описать технологию просто можно одним из двух способов:
+<p>В первой части мы фокусировались на минимизации издержек, однако это накладывало определенные ограничения, поскольку описать технологию просто можно одним из двух способов:
 $<span class="math notranslate nohighlight">\( x = G(\vec y), \quad F(\vec x) = y,\)</span>$
 то есть либо один фактор, либо один конечный товар. Нам хотелось бы описать более сложные технологии, в которых есть много факторов и много конечных товаров.</p>
-<p>Оказывается, что удобнее всего отказаться от разделения между факторами и товарами и думать о них одинаково, а наша технология будет описывать как можно одни товары превращать в другие.</p>
+<p>Оказывается, что удобнее всего отказаться от разделения между факторами и товарами и думать о них одинаково, а наша технология будет описывать, как можно одни товары превращать в другие.</p>
 <p>Пусть есть <span class="math notranslate nohighlight">\(n\)</span> товаров, которые можно произвести в количествах, описываемых точкой в <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span> (не в <span class="math notranslate nohighlight">\(\mathbb{R}^n_+\)</span>), поскольку какие-то товары окажутся факторами, потраченными при производстве других.</p>
-<p>Одна технология это одна точка. Множество всех допустимых технологий это область в <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span>, то есть <strong>технологическое множество</strong>. Эффективное производство (то, что раньше описывалось <span class="math notranslate nohighlight">\(F\)</span> или <span class="math notranslate nohighlight">\(G\)</span>) теперь описывается границей этого множества, то есть <strong>технологической границей</strong>, см. иллюстрацию ниже.</p>
+<p>Одна технология – это одна точка. Множество всех допустимых технологий – это область в <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span>, то есть <strong>технологическое множество</strong>. Эффективное производство (то, что раньше описывалось <span class="math notranslate nohighlight">\(F\)</span> или <span class="math notranslate nohighlight">\(G\)</span>) теперь описывается границей этого множества, то есть <strong>технологической границей</strong>, см. иллюстрацию ниже.</p>
 <a class="reference internal image-reference" href="../_images/prod_set.png"><img alt="Производственное множество" class="align-center" src="../_images/prod_set.png" style="width: 400px;" /></a>
 <p>Формально технологическая граница состоит из точек <span class="math notranslate nohighlight">\(y \in Y\)</span> таких, что не существует <span class="math notranslate nohighlight">\(y' \in Y\)</span>, так что <span class="math notranslate nohighlight">\(y_i' \geqslant y_i\)</span> по всем координатам <span class="math notranslate nohighlight">\(i\)</span> и <span class="math notranslate nohighlight">\(y_j' &gt; y_j\)</span> по хотя бы одной координате <span class="math notranslate nohighlight">\(j\)</span>.</p>
 <div class="proof lemma admonition" id="lemma-0">
@@ -698,7 +703,7 @@ $<span class="math notranslate nohighlight">\( x = G(\vec y), \quad F(\vec x) = 
 <div class="math notranslate nohighlight">
 \[ A+B = \{a + b \ | \ a \in A, \ b \in b\}.\]</div>
 </div>
-</div><p>Действительно, компания может “сложить”, в векторном смысле, любые два вектора из множеств <span class="math notranslate nohighlight">\(A, B\)</span>. Первый вектор <span class="math notranslate nohighlight">\(a \in A\)</span> означает, что партия товаров была произведена на первом заводе и была отправлена на склад. Второй вектор <span class="math notranslate nohighlight">\(b \in B\)</span> означает, что партия товаров была произведена на втором заводе и тоже отправлена на склад. На складе партии будут объеденены и суммарный обьем будет соответствовать вектору <span class="math notranslate nohighlight">\(a + b\)</span>.</p>
+</div><p>Действительно, компания может “сложить” в векторном смысле любые два вектора из множеств <span class="math notranslate nohighlight">\(A, B\)</span>. Первый вектор <span class="math notranslate nohighlight">\(a \in A\)</span> означает, что партия товаров была произведена на первом заводе и была отправлена на склад. Второй вектор <span class="math notranslate nohighlight">\(b \in B\)</span> означает, что партия товаров была произведена на втором заводе и тоже отправлена на склад. На складе партии будут объеденены и суммарный обьем будет соответствовать вектору <span class="math notranslate nohighlight">\(a + b\)</span>.</p>
 <div class="proof lemma admonition" id="lemma-4">
 <p class="admonition-title"><span class="caption-number">Lemma 5 </span></p>
 <div class="lemma-content section" id="proof-content">
@@ -711,7 +716,7 @@ $<span class="math notranslate nohighlight">\( x = G(\vec y), \quad F(\vec x) = 
 <div class="summary-up docutils">
 <svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="summary-content card-body docutils">
-<p class="card-text">Любая взвешенная сумма двух векторов из <span class="math notranslate nohighlight">\(A+B\)</span> представляется как сумма двух взвешенных пар векторов из <span class="math notranslate nohighlight">\(A\)</span> и <span class="math notranslate nohighlight">\(B\)</span>, с теми же весами.</p>
+<p class="card-text">Любая взвешенная сумма двух векторов из <span class="math notranslate nohighlight">\(A+B\)</span> представляется как сумма двух взвешенных пар векторов из <span class="math notranslate nohighlight">\(A\)</span> и <span class="math notranslate nohighlight">\(B\)</span> с теми же весами.</p>
 <div class="math notranslate nohighlight">
 \[ \alpha(a + b) + (1-\alpha)(a'+b') = [\alpha a + (1-\alpha) a'] + [\alpha b + (1-\alpha) b']\]</div>
 <p class="card-text">Соответственно, она тоже лежит в <span class="math notranslate nohighlight">\(A + B\)</span>.</p>
@@ -727,13 +732,13 @@ $<span class="math notranslate nohighlight">\( x = G(\vec y), \quad F(\vec x) = 
 <li><p><span class="math notranslate nohighlight">\(\nabla F_1 = \nabla F_2\)</span></p></li>
 </ul>
 <p>Легко видеть, что производственная функция <span class="math notranslate nohighlight">\(F\)</span> множества <span class="math notranslate nohighlight">\(Y_1 + Y_2\)</span> определяется как верхняя огибающая семейства опорных функций: $<span class="math notranslate nohighlight">\(F(x_1, \ldots, x_n) : = \max_{\hat x} \left(F_1(\hat x_1, \ldots, \hat x_n) + F_2(x_1 - \hat x_1, \ldots, x_n - \hat x_n)\right),\)</span>$</p>
-<p>то есть, мы сначала решаем сколько произвести на первом заводе, а потом производим остальное на втором заводе. Что нам говорит Теорема об Огибающей? Наклон огибающей равен наклону опорной функции в точке касания:</p>
+<p>то есть мы сначала решаем сколько произвести на первом заводе, а потом производим остальное на втором заводе. Что нам говорит Теорема об Огибающей? Наклон огибающей равен наклону опорной функции в точке касания:</p>
 <div class="math notranslate nohighlight">
 \[ \nabla F = \nabla F_2.\]</div>
 <p>С другой стороны, можно сказать, что</p>
 <div class="math notranslate nohighlight">
 \[F(x_1, \ldots, x_n) : = \max_{\hat x} \left(F_2(\hat x_1, \ldots, \hat x_n) + F_1(x_1 - \hat x_1, \ldots, x_n - \hat x_n)\right),\]</div>
-<p>то есть, мы сначала решаем сколько произвести на первом заводе, а потом производим остальное на втором заводе. И снова, Теорема об Огибающей:</p>
+<p>то есть мы сначала решаем сколько произвести на первом заводе, а потом производим остальное на втором заводе. И снова Теорема об Огибающей:</p>
 <div class="math notranslate nohighlight">
 \[ \nabla F = \nabla F_1.\]</div>
 <p>Получается, что необходимым условием для того, чтобы точка лежала на границе объединенного технологического множества <span class="math notranslate nohighlight">\(\vec y \in Y_1 + Y_2\)</span> является то, что, при разложении <span class="math notranslate nohighlight">\(\vec y = \vec y_1 + \vec y_2\)</span> этой точки на вектор <span class="math notranslate nohighlight">\(\vec y_1 \in Y_1\)</span> и вектор <span class="math notranslate nohighlight">\(\vec y_2 \in Y_2\)</span>:</p>
