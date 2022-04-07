@@ -541,6 +541,11 @@ const thebe_selector_output = ".output, .cell_output"
    РВ как система уравнений
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id7">
+   Связь РВ с ПО
+  </a>
+ </li>
 </ul>
 
             </nav>
@@ -586,6 +591,11 @@ const thebe_selector_output = ".output, .cell_output"
    РВ как система уравнений
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id7">
+   Связь РВ с ПО
+  </a>
+ </li>
 </ul>
 
                         </nav>
@@ -605,7 +615,7 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="definition-content section" id="proof-content">
 <p><strong>Равновесием Вальраса</strong> экономики обмена называется допустимое состояние <span class="math notranslate nohighlight">\(\vec x\)</span> и вектор цен <span class="math notranslate nohighlight">\(\vec p\)</span> такие что каждый агент достигает максимума полезности по бюджетному ограничению, с бюджетом равным доходу от продажи своих начальных запасов.</p>
 <div class="math notranslate nohighlight">
-\[ \forall i \in I, \quad \vec x_i \in \argmax U_i(\ast) \quad s.t. \quad \vec p \cdot \vec x_i \leqslant \vec p \cdot \vec w_i\]</div>
+\[ \forall i \in I, \quad \vec x_i \in arg \max U_i(\ast) \quad s.t. \quad \vec p \cdot \vec x_i \leqslant \vec p \cdot \vec w_i\]</div>
 </div>
 </div><p>Существование Равновесия Вальраса - неочевидное утверждение.</p>
 <p>Действительно, почему это найдется такой вектор цен, что после большого количества покупок и продаж не возникнет, скажем, дефицита одного из товаров?</p>
@@ -643,9 +653,9 @@ const thebe_selector_output = ".output, .cell_output"
 <h2>РВ как система уравнений<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
 <p>Поиск Равновесия Вальраса можно представить себе как несколько групп уравнений.</p>
 <ul class="simple">
-<li><p>товарные равенства, <span class="math notranslate nohighlight">\(K\)</span> штук: то что сумма товаров в каждой категории равны соответствующим общим запасам</p></li>
-<li><p>условия оптимальности, <span class="math notranslate nohighlight">\(K \cdot I\)</span> штук: это условия первого порядка в задачах потребителя</p></li>
-<li><p>законы вальраса, <span class="math notranslate nohighlight">\(I\)</span> штук: что</p></li>
+<li><p>товарные равенства, <span class="math notranslate nohighlight">\(K\)</span> штук: что сумма товаров в каждой категории равны соответствующим общим запасам, т.е. допустимое состояние экономики</p></li>
+<li><p>условия оптимальности, <span class="math notranslate nohighlight">\(K \cdot I\)</span> штук: что каждый агент выбирает потребление оптимально, т.е. условия первого порядка</p></li>
+<li><p>законы вальраса, <span class="math notranslate nohighlight">\(I\)</span> штук</p></li>
 </ul>
 <p>неизвестные тоже можно разбить на группы</p>
 <ul class="simple">
@@ -654,9 +664,19 @@ const thebe_selector_output = ".output, .cell_output"
 <li><p>множители лагранжа, их <span class="math notranslate nohighlight">\(I\)</span> штук</p></li>
 </ul>
 <p>Казалось бы, у нас система из <span class="math notranslate nohighlight">\(I\cdot K + K + I\)</span> уравнений и столько же неизвестных, но есть один подвох - система линейно зависима.</p>
-<p>Дело в том, что если выполнены все товарные равенства, то есть, мы находимся в ящике эджворта, и выполнены законы Вальраса для всех кроме одного агента, то последний закон Вальраса выполняется автоматически. Другими словами, если все кроме одного агента потратили все деньги, то последний агент также потретил все свои деньги. То есть, уравнений, на самом деле <span class="math notranslate nohighlight">\(I\cdot K + K + I - 1\)</span>.</p>
+<p>Дело в том, что если выполнены все товарные равенства, то есть, мы находимся в ящике эджворта, и выполнены законы Вальраса для всех кроме одного агента, то последний закон Вальраса выполняется автоматически.</p>
+<p>Другими словами, если все кроме одного агента потратили все деньги, и товары перешли из одних руки в другие, то из этого алгебраически вытекает, что последний агент также потретил все свои деньги.</p>
+<p>То есть, линейно независимых уравнений, на самом деле <span class="math notranslate nohighlight">\(I\cdot K + K + I - 1\)</span>.</p>
 <p>Получается, что уравнений больше чем неизвестных?</p>
-<p>Нет, на самом деле, неизвестных тоже меньше, ведь цены определены с точностью до константы, а значит цену одного из товаров (обычно последнего) можно приравнять к 1, без потери общности.</p>
+<p>Нет, на самом деле, неизвестных тоже <span class="math notranslate nohighlight">\(I\cdot K + K + I - 1\)</span>, ведь цены определены с точностью до константы, а значит цену одного из товаров (обычно последнего) можно приравнять к 1, без потери общности.</p>
+</div>
+<div class="section" id="id7">
+<h2>Связь РВ с ПО<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<p>Легко видеть, что первый блок уравнений (товарные равенства) у РВ и ПО - одинаковый. Они просто фиксируют ящик эджворта и точку начальных запасов в нем.</p>
+<p>Второй блок уравнений (условия оптимальности), на самом деле тоже совпадает, потому что это условия касания кривых безразличия в предполагаемом РВ.</p>
+<p>Наконец, третий блок - это условие того, что бюджетная линия проходит сразу через две точки: начальные запасы и предполягаемое РВ.</p>
+<a class="reference internal image-reference" href="../_images/edge7.png"><img alt="Ящик эджворта" class="align-center" src="../_images/edge7.png" style="width: 600px;" /></a>
+<p>Получается, что РВ - выбирает на парето фронте (как правило) одну точку.</p>
 </div>
 </div>
 
