@@ -76,7 +76,7 @@ parts:
 - caption: Десятая неделя
   chapters:
     - file: week_10/test_exam_problems
-- caption: Первая неделя
+- caption: Одиннадцатая неделя
   chapters:
     - file: week_11/lecture_11_1
     - file: week_11/lecture_11_2
