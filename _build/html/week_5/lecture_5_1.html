@@ -363,8 +363,59 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
+  <a class="reference internal" href="../week_8/intro_8.html">
+   Содержание
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="../week_8/seminar_8.html">
    Семинар 8
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Девятая неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_9/intro_9.html">
+   Содержание
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_9/seminar_9.html">
+   Семинар 9
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Десятая неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_10/test_exam_problems.html">
+   Тестовая контрольная
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Первая неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_11/lecture_11_1.html">
+   Первая лекция, часть 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_11/lecture_11_2.html">
+   Первая лекция, часть 2
   </a>
  </li>
 </ul>
@@ -599,9 +650,9 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="section" id="id2">
 <h2>Функция издержек<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <p>Точно так же, как в теории потребителя поведение агента задавалось функцией полезности, в теории производителя поведение агента задается функцией издержек <span class="math notranslate nohighlight">\(TC(p, y)\)</span>.</p>
-<p>Здесь <span class="math notranslate nohighlight">\(y\)</span> это количество произведенного товара, а <span class="math notranslate nohighlight">\(\vec p\)</span> это вектор цен на факторы производства. Не путайте функцию издержек с функцией расходов <span class="math notranslate nohighlight">\(E(\vec p, \bar U)\)</span>. Обратите внимание, что я буду теперь везде использовать векторные обозначения.</p>
-<p>Вообще, у нас будут два набора цен: <span class="math notranslate nohighlight">\(\vec q\)</span> на конечные товары и <span class="math notranslate nohighlight">\(\vec p\)</span> на факторы. Также, будут два набора координат: <span class="math notranslate nohighlight">\(\vec y\)</span> для конечных товаров и <span class="math notranslate nohighlight">\(\vec x\)</span> для факторов. Но в первой части лекции я, для простоты, буду говорить только об одном произведенном товаре.</p>
-<p>Таким образом, суммарная прибыль фирмы производителя можно записать в виде:</p>
+<p>Здесь <span class="math notranslate nohighlight">\(y\)</span> – это количество произведенного товара, а <span class="math notranslate nohighlight">\(\vec p\)</span> – это вектор цен на факторы производства. Не путайте функцию издержек с функцией расходов <span class="math notranslate nohighlight">\(E(\vec p, \bar U)\)</span>. Обратите внимание, что я буду теперь везде использовать векторные обозначения.</p>
+<p>Вообще, у нас будут два набора цен: <span class="math notranslate nohighlight">\(\vec q\)</span> на конечные товары и <span class="math notranslate nohighlight">\(\vec p\)</span> на факторы. Также будут два набора координат: <span class="math notranslate nohighlight">\(\vec y\)</span> для конечных товаров и <span class="math notranslate nohighlight">\(\vec x\)</span> для факторов. Но в первой части лекции я для простоты буду говорить только об одном произведенном товаре.</p>
+<p>Таким образом, суммарную прибыль фирмы-производителя можно записать в виде:</p>
 <div class="math notranslate nohighlight">
 \[ \pi(\vec p, q, y) = - FC - \vec p \cdot \vec x + q y = q y - TC(p, y)\]</div>
 <p>Постарайтесь не запутаться.</p>
@@ -610,15 +661,15 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="definition-content section" id="proof-content">
 <p><strong>Функция издержек</strong> (общие издержки) TC определяется как суммарные издержки на все факторы производства, связанные с эффективным производством <span class="math notranslate nohighlight">\(y\)</span> единиц конечного товара, плюс, возможно, фиксированные издержки (которые обозначаются FC).</p>
 </div>
-</div><p>Что значит <strong>эффективность</strong>? Это значит, что из всех производственных планов выбирается тот, который минимизирует издержки, то есть функция издержек это, на самом деле, целевая функция следующей оптимизационной задачи:</p>
+</div><p>Что значит <strong>эффективность</strong>? Это значит, что из всех производственных планов выбирается тот, который минимизирует издержки, то есть функция издержек – это, на самом деле, целевая функция следующей оптимизационной задачи:</p>
 <div class="math notranslate nohighlight">
 \[ \min_{\vec x} ( FC + \vec p \cdot \vec x ) \quad s.t. \quad F(\vec x) \geqslant y,\]</div>
-<p>где <span class="math notranslate nohighlight">\(\vec x\)</span> это вектор использованных факторов производства, а <span class="math notranslate nohighlight">\(F\)</span> это производственная функция, которая переводит факторы производства <span class="math notranslate nohighlight">\(\vec x\)</span> в конечный товар <span class="math notranslate nohighlight">\(y\)</span>.</p>
-<p>То есть функция издержек это тоже огибающая.</p>
+<p>где <span class="math notranslate nohighlight">\(\vec x\)</span> – это вектор использованных факторов производства, а <span class="math notranslate nohighlight">\(F\)</span> – это производственная функция, которая переводит факторы производства <span class="math notranslate nohighlight">\(\vec x\)</span> в конечный товар <span class="math notranslate nohighlight">\(y\)</span>.</p>
+<p>То есть функция издержек – это тоже огибающая.</p>
 </div>
 <div class="section" id="id3">
 <h2>Выпуклость функции издержек<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
-<p>Нас интересует вопрос выпуклости (или вогнутости) функции издержек по ценам факторов <span class="math notranslate nohighlight">\(\vec q\)</span> и, отдельно, по уровню производства <span class="math notranslate nohighlight">\(y\)</span>. Для простоты, опустим фиксированные издержки.</p>
+<p>Нас интересует вопрос выпуклости (или вогнутости) функции издержек по ценам факторов <span class="math notranslate nohighlight">\(\vec q\)</span> и отдельно по уровню производства <span class="math notranslate nohighlight">\(y\)</span>. Для простоты опустим фиксированные издержки.</p>
 <div class="proof property admonition" id="property-1">
 <p class="admonition-title"><span class="caption-number">Property 32 </span></p>
 <div class="property-content section" id="proof-content">
@@ -637,19 +688,19 @@ F(\vec x) = y
 </div><p>Это практически умозрительное утверждение, если понять, чем является опорная функция в этом контексте.</p>
 <details class="sphinx-bs dropdown card mb-3">
 <summary class="summary-title card-header">
-Найдем седловую точку лагранжиана. Но надо аккуратно записать его так, чтобы при выходе за ограничение вас “наказывали” бесконечно большим, положительным значением <span class="math notranslate nohighlight">\(\lambda\)</span>;<div class="summary-down docutils">
+Найдем седловую точку лагранжиана. Но надо аккуратно записать его так, чтобы при выходе за ограничение вас “наказывали” бесконечно большим положительным значением <span class="math notranslate nohighlight">\(\lambda\)</span>;<div class="summary-down docutils">
 <svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
 <div class="summary-up docutils">
 <svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="summary-content card-body docutils">
 <div class="math notranslate nohighlight">
 \[ \min_{\vec x \geqslant 0} \max_{\lambda \geqslant 0} \mathcal{L}, \quad \mathcal{L} = \vec p \cdot \vec x - \lambda \cdot (F(\vec x) - y)\]</div>
-<p class="card-text">Заметим, что лагранжиан линеен по параметрам задачи <span class="math notranslate nohighlight">\(\vec p\)</span> и <span class="math notranslate nohighlight">\(y\)</span>. Это значит чуть больше чем обычно.</p>
+<p class="card-text">Заметим, что лагранжиан линеен по параметрам задачи <span class="math notranslate nohighlight">\(\vec p\)</span> и <span class="math notranslate nohighlight">\(y\)</span>. Это значит, чуть больше, чем обычно.</p>
 <p class="card-text">Это значит, что опорные функции - линейны по параметрам.</p>
-<p class="card-text">Огибающие линейного семейства опорных функций они всегда либо выпуклы либо вогнуты, в зависимости от того, с какой стороны происходит огибание. Также, надо помнить, что огибание происходит именно в пространстве параметров, потому что по <span class="math notranslate nohighlight">\(\vec x\)</span> опорные функции вовсе не линейные. Также, надо понять, с какой стороны происходит огибание.</p>
+<p class="card-text">Огибающие линейного семейства опорных функций всегда либо выпуклы, либо вогнуты, в зависимости от того, с какой стороны происходит огибание. Также надо помнить, что огибание происходит именно в пространстве параметров, потому что по <span class="math notranslate nohighlight">\(\vec x\)</span> опорные функции вовсе не линейные. Также надо понять, с какой стороны происходит огибание.</p>
 <p class="card-text">Поскольку мы минимизируем <span class="math notranslate nohighlight">\(\vec p \cdot \vec x\)</span>, по ценам факторов огибание получается “снизу”, поэтому функция издержек вогнута по <span class="math notranslate nohighlight">\(\vec p\)</span>. Точно также мы доказывали, что функция расходов выпукла по ценам в теории потребителя. С другой стороны, по уровням производства огибание происходит “сверху”, поэтому функция издержек выпукла по <span class="math notranslate nohighlight">\(y\)</span>.</p>
 </div>
-</details><p>Осталось убедиться, что вообще можно пользоваться методом Лагранжа здесь. Ответ простой - задача выпуклая, потому что <span class="math notranslate nohighlight">\(F\)</span> вогнутая. Но почему недостаточно квази-вогнутости <span class="math notranslate nohighlight">\(F\)</span>? Ответ - линейные члены в лагранжиане не могут поломать вогнутость, но они могут сломать квази-вогнутость.</p>
+</details><p>Осталось убедиться, что вообще можно пользоваться методом Лагранжа здесь. Ответ простой - задача выпуклая, потому что <span class="math notranslate nohighlight">\(F\)</span> вогнутая. Но почему недостаточно квазивогнутости <span class="math notranslate nohighlight">\(F\)</span>? Ответ - линейные члены в лагранжиане не могут поломать вогнутость, но они могут сломать квазивогнутость.</p>
 </div>
 <div class="section" id="id4">
 <h2>Максимизация прибыли<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
@@ -666,26 +717,26 @@ F(\vec x) = y
 <div class="math notranslate nohighlight">
 \[ MC = \frac{\partial}{\partial y} TC(\vec p, y).\]</div>
 </div>
-</div><p>Получается, что фирма максимизирует прибыль в два шага: сначала для каждого потенциального уровня производства она оптимально подбирает ресурсы, а затем, оптимизирует по уровню производства.</p>
+</div><p>Получается, что фирма максимизирует прибыль в два шага: сначала для каждого потенциального уровня производства она оптимально подбирает ресурсы, а затем оптимизирует по уровню производства.</p>
 <p>Конечно же, прибыль можно было максимизировать сразу:</p>
 <div class="math notranslate nohighlight">
 \[ \max_{x,y} (- \vec p \cdot \vec x + q y) \quad s.t. \quad F(\vec x)  \geqslant y,\]</div>
-<p>но тогда не было бы так интрересно.</p>
+<p>но тогда не было бы так интересно.</p>
 </div>
 <div class="section" id="id5">
 <h2>Труд, капитал и Кобб-Дуглас<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
-<p>Типичная постановка задачи фирмы это когда есть два фактора производства: <span class="math notranslate nohighlight">\(k\)</span> - капитал и <span class="math notranslate nohighlight">\(l\)</span> - труд. Можно сказать, что рыночные цены этих факторов это <span class="math notranslate nohighlight">\(r\)</span> - цена аренды капитала и <span class="math notranslate nohighlight">\(w\)</span> - зарплата, соответственно. Тогда задача фирмы это:</p>
+<p>Типичная постановка задачи фирмы – это когда есть два фактора производства: <span class="math notranslate nohighlight">\(k\)</span> - капитал и <span class="math notranslate nohighlight">\(l\)</span> - труд. Можно сказать, что рыночные цены этих факторов – это <span class="math notranslate nohighlight">\(r\)</span> - цена аренды капитала и <span class="math notranslate nohighlight">\(w\)</span> - зарплата соответственно. Тогда задача фирмы это:</p>
 <div class="math notranslate nohighlight">
 \[ \max_y q y - TC(y), \quad TC(y) = \min_{k,l} rk + wl, \quad s.t. \quad F(k,l) \geqslant y\]</div>
 <p>Введем дополнительные обозначения</p>
 <div class="proof definition admonition" id="definition-3">
 <p class="admonition-title"><span class="caption-number">Definition 44 </span></p>
 <div class="definition-content section" id="proof-content">
-<p><strong>Предельная отдача на капитал</strong> MPK и <strong>предельная отдача на труд</strong> MPL это частные производные производственной функции по капиталу и труду соответственно:</p>
+<p><strong>Предельная отдача на капитал</strong> MPK и <strong>предельная отдача на труд</strong> MPL – это частные производные производственной функции по капиталу и труду соответственно:</p>
 <div class="math notranslate nohighlight">
 \[MPK = \frac{\partial}{\partial k}F(k,l), \quad MPL = \frac{\partial}{\partial l}F(k,l)\]</div>
 </div>
-</div><p>Легко видеть из метода Лагранжа, что в оптимуме, верно:</p>
+</div><p>Легко видеть из метода Лагранжа, что в оптимуме верно:</p>
 <div class="math notranslate nohighlight">
 \[ r = \lambda \cdot MPK, \quad w = \lambda \cdot MPL \quad \Rightarrow \quad \frac{r}{w} = \frac{MPK}{MPL},\]</div>
 <p>ведь это всего лишь условия первого порядка для минимизации издержек.</p>
@@ -697,19 +748,19 @@ F(\vec x) = y
 <div class="math notranslate nohighlight">
 \[ F(k,l) = k^{\alpha} l^{\beta}.\]</div>
 </div>
-</div><p>Легко видеть, что у Кобб-Дугласа:</p>
+</div><p>Легко видеть, что у Кобба-Дугласа:</p>
 <div class="math notranslate nohighlight">
 \[ MPK = \alpha \frac{y}{k}, \quad  MPL = \beta \frac{y}{l}\]</div>
 <p>другими словами,</p>
 <div class="math notranslate nohighlight">
-\[ r k^{\ast} = \alpha \cdot \lambda y, \quad w l^{\ast} = \beta \cdot \lambda y\]</div>
-<p>то есть, общие расходы фирмы распределяются между капиталом и трудом в пропорциях <span class="math notranslate nohighlight">\(\alpha, \beta\)</span>. Таким образом, можно, например, откалибровать производственную функцию, обладая доступом к нехитрым налоговым отчетностям фирм.</p>
+\[ r k^{\ast} = \alpha \cdot \lambda y, \quad w l^{\ast} = \beta \cdot \lambda y,\]</div>
+<p>то есть общие расходы фирмы распределяются между капиталом и трудом в пропорциях <span class="math notranslate nohighlight">\(\alpha, \beta\)</span>. Таким образом, можно, например, откалибровать производственную функцию, обладая доступом к нехитрым налоговым отчетностям фирм.</p>
 <p>Далее, легко видеть, что</p>
 <div class="math notranslate nohighlight">
-\[(r k)^{\alpha} = (\alpha \cdot \lambda y)^{\alpha}, \quad (w l)^{\beta} = (\beta \cdot \lambda y)^{\beta}\]</div>
+\[(r k)^{\alpha} = (\alpha \cdot \lambda y)^{\alpha}, \quad (w l)^{\beta} = (\beta \cdot \lambda y)^{\beta},\]</div>
 <p>подставляя в производственную функцию, мы получаем</p>
 <div class="math notranslate nohighlight">
-\[ r^{\alpha}w^{\beta} y = \alpha^{\alpha} \beta^{\beta} \lambda y^{\alpha + \beta}\]</div>
+\[ r^{\alpha}w^{\beta} y = \alpha^{\alpha} \beta^{\beta} \lambda y^{\alpha + \beta},\]</div>
 <p>откуда легко вычисляется множитель Лагранжа <span class="math notranslate nohighlight">\(\lambda^{\ast}\)</span>.</p>
 <p>Наконец, функция расходов вычисляется как:
 $<span class="math notranslate nohighlight">\( TC(r,w,y) = r k^{\ast} + w l^{\ast} = (\alpha + \beta) \lambda^{\ast} y\)</span>$
@@ -718,7 +769,7 @@ $<span class="math notranslate nohighlight">\( TC(r,w,y) = r k^{\ast} + w l^{\as
 <div><p>Вопрос: при каких значениях <span class="math notranslate nohighlight">\(\alpha, \beta\)</span>, функция издержек выпуклая?</p>
 </div></blockquote>
 <blockquote>
-<div><p>Вопрос: Что произойдет, если <span class="math notranslate nohighlight">\(\alpha + \beta = 1\)</span>?</p>
+<div><p>Вопрос: что произойдет, если <span class="math notranslate nohighlight">\(\alpha + \beta = 1\)</span>?</p>
 </div></blockquote>
 </div>
 <div class="section" id="id6">
@@ -736,13 +787,13 @@ $<span class="math notranslate nohighlight">\( TC(r,w,y) = r k^{\ast} + w l^{\as
 </div><blockquote>
 <div><p>Вопрос: как связаны градиент функции издержек (по ценам факторов) и условный спрос?</p>
 </div></blockquote>
-<p>В краткосрочной перспективе, некоторые факторы производства нельзя оптимизировать. В зависимости от страны, это может быть либо труд либо капитал. В США рынок труда очень динамичен, поэтому считается кто капитал зафиксирован. Во многих странах Европы, увольть сотрудника, наоборот, гораздо сложнее чем избавиться от капитала.</p>
-<p>И обычный, и условный спрос, можно найти в краткосрочном периоде. Это означает, что тот фактор, что менять нельзя, необходимо зафиксировать на каком то уровне. Например, мы можем зафиксировать капитал <span class="math notranslate nohighlight">\(k\)</span> на уровне <span class="math notranslate nohighlight">\(\hat k\)</span>.</p>
-<p>Далее, необходимо перерешать все так, будто <span class="math notranslate nohighlight">\(\hat k\)</span> это параметр задачи.</p>
+<p>В краткосрочной перспективе, некоторые факторы производства нельзя оптимизировать. В зависимости от страны это может быть либо труд, либо капитал. В США рынок труда очень динамичен, поэтому считается, что капитал зафиксирован. Во многих странах Европы уволить сотрудника, наоборот, гораздо сложнее, чем избавиться от капитала.</p>
+<p>И обычный, и условный спрос можно найти в краткосрочном периоде. Это означает, что тот фактор, что менять нельзя, необходимо зафиксировать на каком-то уровне. Например, мы можем зафиксировать капитал <span class="math notranslate nohighlight">\(k\)</span> на уровне <span class="math notranslate nohighlight">\(\hat k\)</span>.</p>
+<p>Далее, необходимо перерешать все так, будто <span class="math notranslate nohighlight">\(\hat k\)</span> – это параметр задачи.</p>
 <div class="proof definition admonition" id="definition-6">
 <p class="admonition-title"><span class="caption-number">Definition 47 </span></p>
 <div class="definition-content section" id="proof-content">
-<p>Назовем условным спросом в краткосрочном периоде <span class="math notranslate nohighlight">\(\tilde x_{k}(p, y, \hat k)\)</span> на факторы производства - решение задачи минимизации издержек, а обычным спросом  в краткосрочном периоде</p>
+<p>Назовем условным спросом в краткосрочном периоде <span class="math notranslate nohighlight">\(\tilde x_{k}(p, y, \hat k)\)</span> на факторы производства - решение задачи минимизации издержек, а обычным спросом – в краткосрочном периоде</p>
 <div class="math notranslate nohighlight">
 \[x_k^{\ast}(p, q, \hat k) = \tilde x_k(p, y^{\ast}(p, q, \hat k), \hat k).\]</div>
 </div>
@@ -754,7 +805,7 @@ $<span class="math notranslate nohighlight">\( TC(r,w,y) = r k^{\ast} + w l^{\as
 <svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="summary-content card-body docutils">
 <p class="card-text">Обычный спрос - это условный спрос, в который подставили оптимальный уровень производства. А условный спрос - это условный спрос в краткосрочном периоде, в который подставили оптимальную условную <span class="math notranslate nohighlight">\(k\)</span>.</p>
-<p class="card-text">Также, обычный спрос - это обычный спрос в краткосрочном периоде, в который подставили оптимальную <span class="math notranslate nohighlight">\(k\)</span>.</p>
+<p class="card-text">Также обычный спрос - это обычный спрос в краткосрочном периоде, в который подставили оптимальную <span class="math notranslate nohighlight">\(k\)</span>.</p>
 <p class="card-text">Соответственно, вы можете решать задачу постепенно: сначала найти все в краткосрочном периоде, а потом дополнительно прооптимизировать по фактору, который был зафиксировам.</p>
 </div>
 </details></div>
@@ -764,9 +815,9 @@ $<span class="math notranslate nohighlight">\( TC(r,w,y) = r k^{\ast} + w l^{\as
 <div class="math notranslate nohighlight">
 \[ \max_{y} \pi, \quad \pi(\vec p, q, y) = q y - TC(\vec p, y)\]</div>
 <p>функция издержек была (желательно строго) выпуклой, иначе можно получить бесконечную прибыль.</p>
-<p>Фирмы, обладающие вогнутой производственной функцией, обладают также выпуклой по <span class="math notranslate nohighlight">\(y\)</span> функцией издержек, это мы доказали. На практике это означает, что когда фирма растет, ее общая эффективность постепенно падает, то есть, имеет место <em>убывающая отдача от масштаба</em>.</p>
+<p>Фирмы, обладающие вогнутой производственной функцией, обладают также выпуклой по <span class="math notranslate nohighlight">\(y\)</span> функцией издержек, это мы доказали. На практике это означает, что когда фирма растет, ее общая эффективность постепенно падает, то есть имеет место <em>убывающая отдача от масштаба</em>.</p>
 <p>Считается, что все фирмы сначала проходят период быстрого роста, от стартапов и бутиков до компаний средних размеров, и затем испытывают сложности при дальнейшем расширении. Выходя за пределы своих локальных рынков, они принимают корпоративную структуру и становятся медленными и неповоротливыми, теряя эффективность.</p>
-<p>Есть, конечно, исключения. Например, компания Google давно вышла за пределы своего штата и, даже, страны. Это говорит от том, что технология обработки поисковых запросов, скорее всего, обладает возрастающей отдачей от масштаба.</p>
+<p>Есть, конечно, исключения. Например, компания Google давно вышла за пределы своего штата и даже страны. Это говорит от том, что технология обработки поисковых запросов, скорее всего, обладает возрастающей отдачей от масштаба.</p>
 </div>
 <div class="section" id="id8">
 <h2>Оптимальное распределение производства<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
@@ -777,7 +828,7 @@ $<span class="math notranslate nohighlight">\( y_1 = F_1(\vec x), \quad y_2 = F_
 <p>Чтобы ответить на этот вопрос, выпишем лагранжиан:</p>
 <div class="math notranslate nohighlight">
 \[ \mathcal{L} = TC(y_1) + TC(y_2) - \lambda (y_1 + y_2 - y)\]</div>
-<p>То есть, мы минимизируем суммарные издержки так, чтобы достичь определенного суммарного уровня производства. Выпишем условия первого порядка:</p>
+<p>То есть мы минимизируем суммарные издержки так, чтобы достичь определенного суммарного уровня производства. Выпишем условия первого порядка:</p>
 <div class="math notranslate nohighlight">
 \[ MC(y_1) = \lambda = MC(y_2), \quad y_1 + y_2 = y.\]</div>
 <p>Таким образом, мы доказали, сами того не ожидая, следующее утвержение:</p>
@@ -786,7 +837,7 @@ $<span class="math notranslate nohighlight">\( y_1 = F_1(\vec x), \quad y_2 = F_
 <div class="lemma-content section" id="proof-content">
 <p>Эффективное производство устроено так, что маржинальные издержки равны друг другу.</p>
 </div>
-</div><p>К примеру, если у нас есть выпуклые издержки <span class="math notranslate nohighlight">\(TC_1 = y^2\)</span> и <span class="math notranslate nohighlight">\(TC_2 = y^3\)</span> то необходиму решить систему:</p>
+</div><p>К примеру, если у нас есть выпуклые издержки <span class="math notranslate nohighlight">\(TC_1 = y^2\)</span> и <span class="math notranslate nohighlight">\(TC_2 = y^3\)</span>, то необходиму решить систему:</p>
 <div class="math notranslate nohighlight">
 \[ 2y_1^{\ast} = 3(y_2^{\ast})^2, \quad y = y_1^{\ast} + y_2^{\ast}\]</div>
 <p>и затем определить функцию издержек двух заводов, как:</p>
@@ -799,9 +850,9 @@ $<span class="math notranslate nohighlight">\( y_1 = F_1(\vec x), \quad y_2 = F_
 <p>Предположим, что у нас есть производственная функция
 $<span class="math notranslate nohighlight">\( y = F(k, l)\)</span><span class="math notranslate nohighlight">\(
 и цены факторов производства равны \)</span>r, w$ соответственно. Мы уже знаем, как решать такую задачу.</p>
-<p>Однако, предположим, что мы обладаем также технологией с убывающей отдачей, которая позволяет нам производить <span class="math notranslate nohighlight">\(k,l\)</span> со следующими функциями издержек: $<span class="math notranslate nohighlight">\( TC^K(k), \quad TC^L(l).\)</span>$</p>
+<p>Однако предположим, что мы обладаем также технологией с убывающей отдачей, которая позволяет нам производить <span class="math notranslate nohighlight">\(k,l\)</span> со следующими функциями издержек: $<span class="math notranslate nohighlight">\( TC^K(k), \quad TC^L(l).\)</span>$</p>
 <p>Как решать такую задачу?</p>
-<p>Если мы покупаем <span class="math notranslate nohighlight">\(k,l\)</span> на рынке, то мы платим <span class="math notranslate nohighlight">\(rk\)</span> и <span class="math notranslate nohighlight">\(wl\)</span>, условия первого порядка нам известны. Если мы производим <span class="math notranslate nohighlight">\(k,l\)</span> сами то мы платим <span class="math notranslate nohighlight">\(TC^K(k) + TC^L(l)\)</span>.</p>
+<p>Если мы покупаем <span class="math notranslate nohighlight">\(k,l\)</span> на рынке, то мы платим <span class="math notranslate nohighlight">\(rk\)</span> и <span class="math notranslate nohighlight">\(wl\)</span>, условия первого порядка нам известны. Если мы производим <span class="math notranslate nohighlight">\(k,l\)</span> сами, то мы платим <span class="math notranslate nohighlight">\(TC^K(k) + TC^L(l)\)</span>.</p>
 <p>Сравним Лагранжианы:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{gather*} 
@@ -810,9 +861,9 @@ $<span class="math notranslate nohighlight">\( y = F(k, l)\)</span><span class="
 \mathcal{L}^2 = rk + wl - \lambda (F(k,l) - y).
 
 \end{gather*}\]</div>
-<p>Если случится так, что старые <span class="math notranslate nohighlight">\(k^{\ast}, l^{\ast}\)</span> такие, что $<span class="math notranslate nohighlight">\( TC^K(k^{\ast}) + TC^L(l^{\ast}) &lt; rk^{\ast} + wl^{\ast}\)</span>$</p>
+<p>Если случится так, что старые <span class="math notranslate nohighlight">\(k^{\ast}, l^{\ast}\)</span> такие, что $<span class="math notranslate nohighlight">\( TC^K(k^{\ast}) + TC^L(l^{\ast}) &lt; rk^{\ast} + wl^{\ast},\)</span>$</p>
 <p>то очевидно, что дешевле произвести все самому, чем покупать на рынке. Но сколько именно?</p>
-<p>Интуиция подсказывает, что из-за убывающей отдачи от масштаба, вы захотите произвести какое то количество <span class="math notranslate nohighlight">\(\hat k, \hat l\)</span> сами, а остальное купить на рынке. Давайте запишем Лагранжиан:</p>
+<p>Интуиция подсказывает, что из-за убывающей отдачи от масштаба вы захотите произвести какое-то количество <span class="math notranslate nohighlight">\(\hat k, \hat l\)</span> сами, а остальное купить на рынке. Давайте запишем Лагранжиан:</p>
 <div class="math notranslate nohighlight">
 \[\mathcal{L} = TC^K(\hat k) + TC^L(\hat l) + r(k-\hat k) + w(l - \hat l) - \lambda (F(k,l) - y).\]</div>
 <p>Тогда условия первого порядка будут:</p>
@@ -822,15 +873,15 @@ $<span class="math notranslate nohighlight">\( y = F(k, l)\)</span><span class="
 <div class="proof lemma admonition" id="lemma-8">
 <p class="admonition-title"><span class="caption-number">Lemma 2 </span></p>
 <div class="lemma-content section" id="proof-content">
-<p>Если фактор производства <span class="math notranslate nohighlight">\(x_i\)</span> можно либо купить по цене <span class="math notranslate nohighlight">\(p_i\)</span> либо произвести самостоятельно с функцией расходов <span class="math notranslate nohighlight">\(TC^i(x_i)\)</span>, то он производится согласно условиям первого порядка:</p>
+<p>Если фактор производства <span class="math notranslate nohighlight">\(x_i\)</span> можно либо купить по цене <span class="math notranslate nohighlight">\(p_i\)</span>, либо произвести самостоятельно с функцией расходов <span class="math notranslate nohighlight">\(TC^i(x_i)\)</span>, то он производится согласно условиям первого порядка:</p>
 <div class="math notranslate nohighlight">
-\[ p_i = MC^i(x_i)\]</div>
+\[ p_i = MC^i(x_i),\]</div>
 <p>а все остальное закупается по рыночным ценам.</p>
 </div>
 </div></div>
 <div class="section" id="id10">
 <h2>Экспорт и потребление<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
-<p>Предположим, что фирма, производящая товар <span class="math notranslate nohighlight">\(\vec y\)</span> с функцией издержек <span class="math notranslate nohighlight">\(TC(\vec y)\)</span>, может либо отправить его на экспорт (продать свой товар на рынке) по цене <span class="math notranslate nohighlight">\(\vec q\)</span> либо потребить его сама (раздать рабочим, установить в офисе) с вогнутой полезностью <span class="math notranslate nohighlight">\(U(\vec y)\)</span>.</p>
+<p>Предположим, что фирма, производящая товар <span class="math notranslate nohighlight">\(\vec y\)</span> с функцией издержек <span class="math notranslate nohighlight">\(TC(\vec y)\)</span>, может либо отправить его на экспорт (продать свой товар на рынке) по цене <span class="math notranslate nohighlight">\(\vec q\)</span>, либо потребить его сама (раздать рабочим, установить в офисе) с вогнутой полезностью <span class="math notranslate nohighlight">\(U(\vec y)\)</span>.</p>
 <p>Как будет выглядеть оптимальное поведение фирмы?</p>
 <p>Обозначим внутреннее потребление товара за <span class="math notranslate nohighlight">\(\hat y\)</span>, тогда:</p>
 <div class="math notranslate nohighlight">
@@ -847,7 +898,7 @@ $<span class="math notranslate nohighlight">\( y = F(k, l)\)</span><span class="
 </div></div>
 <div class="section" id="id11">
 <h2>Кривые производственных возможностей<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
-<p>До сих пор, мы моделировали производство так, что из нескольких факторов, например, труд и капитал, производится один единственный конечный продукт по технологии</p>
+<p>До сих пор мы моделировали производство так, что из нескольких факторов, например, труд и капитал, производится один единственный конечный продукт по технологии</p>
 <div class="math notranslate nohighlight">
 \[ F(\vec x) \geqslant y,\]</div>
 <p>где <span class="math notranslate nohighlight">\(F\)</span> - вогнутая производственная функция.</p>
@@ -858,11 +909,11 @@ $<span class="math notranslate nohighlight">\( y = F(k, l)\)</span><span class="
 <p>Попробуем сформулировать задачу минимизации издержек:</p>
 <div class="math notranslate nohighlight">
 \[ \min_{\vec x \geqslant 0} \max_{\lambda \geqslant 0} \mathcal{L}, \quad \mathcal{L} = p x - \lambda (x - G(\vec y))\]</div>
-<p>Легко видеть, что для повторения тех же шагов, что с вогнутой производственной функцией <span class="math notranslate nohighlight">\(F\)</span>, нам тут необходимо, чтобы <span class="math notranslate nohighlight">\(G\)</span> была квази-выпуклой по <span class="math notranslate nohighlight">\(y\)</span>.</p>
+<p>Легко видеть, что для повторения тех же шагов, что с вогнутой производственной функцией <span class="math notranslate nohighlight">\(F\)</span>, нам тут необходимо, чтобы <span class="math notranslate nohighlight">\(G\)</span> была квазивыпуклой по <span class="math notranslate nohighlight">\(y\)</span>.</p>
 <p>Выпуклой, потому что поменялся знак перед интересующей нас функцией в Лагранжиане. Квази, потому что, в отличие от предыдущего Лагранжиана:</p>
 <div class="math notranslate nohighlight">
-\[ \min_{\vec x \geqslant 0} \max_{\lambda \geqslant 0} \mathcal{L}, \quad \mathcal{L} = \vec p \cdot \vec x - \lambda \cdot (F(\vec x) - y)\]</div>
-<p>в котором присутствовала линейная деформация по <span class="math notranslate nohighlight">\(x\)</span>, способная поломать квази-вогнутость, в случае КПВ такой деформации нет.</p>
+\[ \min_{\vec x \geqslant 0} \max_{\lambda \geqslant 0} \mathcal{L}, \quad \mathcal{L} = \vec p \cdot \vec x - \lambda \cdot (F(\vec x) - y),\]</div>
+<p>в котором присутствовала линейная деформация по <span class="math notranslate nohighlight">\(x\)</span>, способная поломать квазивогнутость, в случае КПВ такой деформации нет.</p>
 <div class="proof property admonition" id="property-10">
 <p class="admonition-title"><span class="caption-number">Property 33 </span></p>
 <div class="property-content section" id="proof-content">
@@ -874,7 +925,7 @@ $<span class="math notranslate nohighlight">\( y = F(k, l)\)</span><span class="
 <p>если функция <span class="math notranslate nohighlight">\(G\)</span>, задающая кривые производственных возможностей:</p>
 <div class="math notranslate nohighlight">
 \[x = G(\vec y)\]</div>
-<p>квази-выпукла.</p>
+<p>квазивыпукла.</p>
 </div>
 </div></div>
 </div>
