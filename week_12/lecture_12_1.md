@@ -235,10 +235,16 @@ $$
 
 :::{prf:definition}
 
-**Равновесием Вальраса** экономики Эрроу-Дебре называется допустимое состояние $\vec x, \vec y$ и вектор цен $\vec p$ такие что каждый агент достигает максимума полезности по бюджетному ограничению, с бюджетом равным доходу от продажи своих начальных запасов, а производители максимизируют прибыль, причем прибыль распределяется обратно к агентам в заданных пропорциях $s_{ij}$.
+**Равновесием Вальраса** экономики Эрроу-Дебре называется допустимое состояние $\vec x, \vec y$ и вектор цен $\vec p$ такие что каждый агент достигает максимума полезности по бюджетному ограничению, с бюджетом равным доходу от продажи своих начальных запасов а также какой то доли прибыли фирм:
 
-$$ \forall i \in I, \quad \vec x_i \in arg \max U_i(*) \quad s.t. \quad \vec p \cdot * \leqslant \vec p \cdot \vec w_i + \sum_{j \in J} s_{ij} \pi_j, \quad \pi_j = \vec p \cdot \vec y_j$$
+$$ \forall i \in I, \quad \vec x_i \in arg \max U_i(*) \quad s.t. \quad \vec p \cdot * \leqslant \vec p \cdot \vec w_i + \sum_{j \in J} s_{ij} \pi_j, \quad \pi_j = \vec p \cdot \vec y_j,$$
 
-$$ \forall j \in J, \quad \vec y_j \in arg \max (\vec p \cdot *) \quad s.t. \quad * \in Y_j; \quad \forall j \in J, \quad \sum_{i \in I} s_{ij} = 1.$$
+а производители максимизируют прибыль:
+
+$$ \forall j \in J, \quad \vec y_j \in arg \max (\vec p \cdot *) \quad s.t. \quad * \in Y_j.$$
+
+Ну и, конечно, доли должны суммироваться в единицу:
+
+$$\forall j \in J, \quad \sum_{i \in I} s_{ij} = 1.$$
 
 :::
