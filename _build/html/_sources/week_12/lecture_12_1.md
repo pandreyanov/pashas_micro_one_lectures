@@ -59,7 +59,7 @@ $$ \sum_j \vec y_j \in Y $$
 
 :::{image} ./tech.png
 :alt: Совместное технологическое
-:width: 700px
+:width: 400px
 :align: center
 :::
 
@@ -77,7 +77,7 @@ $$ \sum_j \vec y_j \in Y $$
 
 :::{image} ./tech2.png
 :alt: Совместное технологическое
-:width: 700px
+:width: 400px
 :align: center
 :::
 
@@ -107,7 +107,7 @@ $$ \sum_j \vec y_j \in Y $$
 
 :::{image} ./tech3.png
 :alt: Совместное технологическое
-:width: 700px
+:width: 400px
 :align: center
 :::
 
