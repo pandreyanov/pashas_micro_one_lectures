@@ -817,7 +817,7 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="proof theorem remark admonition" id="theorem-4">
 <p class="admonition-title"><span class="caption-number">Theorem 12 </span> (Первая теорема благосостояния)</p>
 <div class="theorem-content section" id="proof-content">
-<p>Пусть <span class="math notranslate nohighlight">\((\vec x, \vec y, \vec p)\)</span> - общее равновесие в экономике с производством, где все полезности локально ненасыщаемы, тогда <span class="math notranslate nohighlight">\((\vec x, \vec y)\)</span> - парето оптимум.</p>
+<p>Пусть <span class="math notranslate nohighlight">\((\vec x, \vec y, \vec p)\)</span> - общее равновесие в экономике с производством, где все полезности локально ненасыщаемы, тогда <span class="math notranslate nohighlight">\((\vec x, \vec y)\)</span> - парето оптимум в сильном смысле.</p>
 </div>
 </div><details class="sphinx-bs dropdown card mb-3">
 <summary class="summary-title card-header">
@@ -826,9 +826,44 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="summary-up docutils">
 <svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="summary-content card-body docutils">
-<p class="card-text">…</p>
+<p class="card-text">От обратного, предположим что есть слабое парето улучшение, несмотря на то, что а) агенты максимизируют полезности б) фирмы максимизируют прибыль.</p>
+<p class="card-text">Назовем <span class="math notranslate nohighlight">\((\tilde x, \tilde y)\)</span> - кандидат на парето улучшение.</p>
+<p class="card-text"><strong>Точка зрения агентов</strong></p>
+<p class="card-text">Из локальной ненасыщаемости следует, что <span class="math notranslate nohighlight">\(\tilde x\)</span> должна лежать вне бюджетного ограничения для того агента, который строго предпочитает <span class="math notranslate nohighlight">\(\tilde x\)</span> к <span class="math notranslate nohighlight">\(\vec x\)</span>, в противном случае он бы никогда не купил <span class="math notranslate nohighlight">\(\vec x\)</span> в равновесии,</p>
+<div class="math notranslate nohighlight">
+\[ \exists i \in I \quad \vec p \cdot \tilde x_i &gt; \vec p \cdot \vec x_i\]</div>
+<p class="card-text">А для всех остальных агентов либо вне либо в точности на бюджетной гиперплоскости,</p>
+<div class="math notranslate nohighlight">
+\[ \forall i \in I \quad \vec p \cdot \tilde x_i \geqslant \vec p \cdot \vec x_i.\]</div>
+<p class="card-text">Тогда</p>
+<div class="math notranslate nohighlight">
+\[ \vec p \cdot \sum \tilde x_i &gt; \vec p \cdot \sum \vec x_i.\]</div>
+<p class="card-text"><strong>Точка зрения фирм</strong></p>
+<p class="card-text">Поскольку все фирмы максимизируют прибыль,</p>
+<div class="math notranslate nohighlight">
+\[ \forall j \in J \quad \vec p \cdot \tilde y_j \leqslant \vec p \cdot \vec y_j\]</div>
+<p class="card-text">а значит</p>
+<div class="math notranslate nohighlight">
+\[ \vec p \cdot \sum \tilde y_j \leqslant \vec p \cdot \sum \vec y_j.\]</div>
+<p class="card-text"><strong>Доустимое состояние</strong></p>
+<div class="math notranslate nohighlight">
+\[ \forall k \in K: \quad \sum_{i \in I} \tilde x_{ik} = \sum_{i \in I} w_{ik} + \sum_{j \in J} \tilde y_{jk}\]</div>
+<p class="card-text">а значит</p>
+<div class="math notranslate nohighlight">
+\[ \vec p \cdot \sum_{i \in I} \tilde x_{ik} = \vec p \cdot (\sum_{i \in I} w_{ik} + \sum_{j \in J} \tilde y_{jk})\]</div>
+<p class="card-text"><strong>Построим цепочку</strong></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\vec p \cdot \sum \tilde x_i &gt; \vec p \cdot \sum \vec x_i = \\
+= \vec p \cdot (\sum \vec w_i + \sum \vec y_i) \geqslant \\
+\geqslant \vec p \cdot (\sum \vec w_i + \sum \tilde y_i)\end{split}\]</div>
+<p class="card-text">Противоречие.</p>
 </div>
-</details></div>
+</details><div class="proof theorem remark admonition" id="theorem-5">
+<p class="admonition-title"><span class="caption-number">Theorem 13 </span> (Вторая теорема благосостояния (без док-ва))</p>
+<div class="theorem-content section" id="proof-content">
+<p>Пусть <span class="math notranslate nohighlight">\((\vec x, \vec y)\)</span> - внутренний парето оптимум в экономике с производством, где все выпукло, и градиенты не обращаются в ноль, тогда существуют вектор цен и трансферты, такие что <span class="math notranslate nohighlight">\((\vec x, \vec y, \vec p)\)</span> - равновесие вальраса с трансфертами.</p>
+</div>
+</div></div>
 </div>
 
     <script type="text/x-thebe-config">
