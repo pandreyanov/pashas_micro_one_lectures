@@ -845,7 +845,7 @@ const thebe_selector_output = ".output, .cell_output"
 <p class="card-text">а значит</p>
 <div class="math notranslate nohighlight">
 \[ \vec p \cdot \sum \tilde y_j \leqslant \vec p \cdot \sum \vec y_j.\]</div>
-<p class="card-text"><strong>Доустимое состояние</strong></p>
+<p class="card-text"><strong>Допустимое состояние</strong></p>
 <div class="math notranslate nohighlight">
 \[ \forall k \in K: \quad \sum_{i \in I} \tilde x_{ik} = \sum_{i \in I} w_{ik} + \sum_{j \in J} \tilde y_{jk}\]</div>
 <p class="card-text">а значит</p>
@@ -859,11 +859,20 @@ const thebe_selector_output = ".output, .cell_output"
 <p class="card-text">Противоречие.</p>
 </div>
 </details><div class="proof theorem remark admonition" id="theorem-5">
-<p class="admonition-title"><span class="caption-number">Theorem 13 </span> (Вторая теорема благосостояния (без док-ва))</p>
+<p class="admonition-title"><span class="caption-number">Theorem 13 </span> (Вторая теорема благосостояния)</p>
 <div class="theorem-content section" id="proof-content">
-<p>Пусть <span class="math notranslate nohighlight">\((\vec x, \vec y)\)</span> - внутренний парето оптимум в экономике с производством, где все выпукло, и градиенты не обращаются в ноль, тогда существуют вектор цен и трансферты, такие что <span class="math notranslate nohighlight">\((\vec x, \vec y, \vec p)\)</span> - равновесие вальраса с трансфертами.</p>
+<p>Пусть <span class="math notranslate nohighlight">\((\vec x, \vec y)\)</span> - внутренний сильный парето оптимум в экономике с производством, где все выпукло и градиенты не обращаются в ноль, тогда существуют вектор цен и трансферты, такие что <span class="math notranslate nohighlight">\((\vec x, \vec y, \vec p)\)</span> - равновесие вальраса с трансфертами.</p>
 </div>
-</div></div>
+</div><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Идея доказательства<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Выпуклость нужна, чтобы из условий первого порядка вытекали условия второго порядка, а необращение градиентов в ноль необходимо для того, чтобы вектор цен был строго положительный.</p>
+</div>
+</details></div>
 </div>
 
     <script type="text/x-thebe-config">
