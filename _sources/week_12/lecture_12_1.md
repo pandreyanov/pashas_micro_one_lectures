@@ -165,11 +165,62 @@ $$ \forall j \in J, \quad \vec y_j \in arg \max (\vec p \cdot *) \quad s.t. \qua
 
 :::{prf:theorem} Первая теорема благосостояния
 :class: remark
-Пусть $(\vec x, \vec y, \vec p)$ - общее равновесие в экономике с производством, где все полезности локально ненасыщаемы, тогда $(\vec x, \vec y)$ - парето оптимум.
+Пусть $(\vec x, \vec y, \vec p)$ - общее равновесие в экономике с производством, где все полезности локально ненасыщаемы, тогда $(\vec x, \vec y)$ - парето оптимум в сильном смысле.
 :::
 
 :::{dropdown} Доказательство
 
-...
+От обратного, предположим что есть слабое парето улучшение, несмотря на то, что а) агенты максимизируют полезности б) фирмы максимизируют прибыль.
 
+Назовем $(\tilde x, \tilde y)$ - кандидат на парето улучшение. 
+
+**Точка зрения агентов**
+
+Из локальной ненасыщаемости следует, что $\tilde x$ должна лежать вне бюджетного ограничения для того агента, который строго предпочитает $\tilde x$ к $\vec x$, в противном случае он бы никогда не купил $\vec x$ в равновесии,
+
+$$ \exists i \in I \quad \vec p \cdot \tilde x_i > \vec p \cdot \vec x_i$$
+
+А для всех остальных агентов либо вне либо в точности на бюджетной гиперплоскости,
+
+$$ \forall i \in I \quad \vec p \cdot \tilde x_i \geqslant \vec p \cdot \vec x_i.$$
+
+Тогда
+
+$$ \vec p \cdot \sum \tilde x_i > \vec p \cdot \sum \vec x_i.$$
+
+**Точка зрения фирм**
+
+Поскольку все фирмы максимизируют прибыль,
+
+$$ \forall j \in J \quad \vec p \cdot \tilde y_j \leqslant \vec p \cdot \vec y_j$$
+
+а значит
+
+$$ \vec p \cdot \sum \tilde y_j \leqslant \vec p \cdot \sum \vec y_j.$$
+
+**Доустимое состояние**
+
+$$ \forall k \in K: \quad \sum_{i \in I} \tilde x_{ik} = \sum_{i \in I} w_{ik} + \sum_{j \in J} \tilde y_{jk}$$
+
+а значит
+
+$$ \vec p \cdot \sum_{i \in I} \tilde x_{ik} = \vec p \cdot (\sum_{i \in I} w_{ik} + \sum_{j \in J} \tilde y_{jk})$$
+
+**Построим цепочку**
+
+$$
+
+\vec p \cdot \sum \tilde x_i > \vec p \cdot \sum \vec x_i = \\
+= \vec p \cdot (\sum \vec w_i + \sum \vec y_i) \geqslant \\
+\geqslant \vec p \cdot (\sum \vec w_i + \sum \tilde y_i)
+
+$$
+
+Противоречие.
+
+:::
+
+:::{prf:theorem} Вторая теорема благосостояния (без док-ва)
+:class: remark
+Пусть $(\vec x, \vec y)$ - внутренний парето оптимум в экономике с производством, где все выпукло, и градиенты не обращаются в ноль, тогда существуют вектор цен и трансферты, такие что $(\vec x, \vec y, \vec p)$ - равновесие вальраса с трансфертами.
 :::
