@@ -583,6 +583,11 @@ const thebe_selector_output = ".output, .cell_output"
    Теоремы благосостояния
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id12">
+   Экономика Эрроу-Дебре
+  </a>
+ </li>
 </ul>
 
             </nav>
@@ -651,6 +656,11 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id11">
    Теоремы благосостояния
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id12">
+   Экономика Эрроу-Дебре
   </a>
  </li>
 </ul>
@@ -769,7 +779,7 @@ const thebe_selector_output = ".output, .cell_output"
 <p>В таком случае, можно интерпретировать ее как полезность дополнительного агента…</p>
 <div class="math notranslate nohighlight">
 \[ U(x, y) = \lambda U_a(x) + \mu U_b(y + w-x) + F(y) \to \max_{x,y}, \quad \alpha, \beta \geqslant 0\]</div>
-<p>Максимизируем взвешенную полезность, получаем истинный Парето фронт. Заметим, что отсюда моментально следует коллинеарность всех трех градиентов: <span class="math notranslate nohighlight">\(\nabla U_a, \nabla U_b, \nabla F\)</span> в парето оптимуме.</p>
+<p>Максимизируем взвешенную полезность, получаем истинный Парето фронт. Заметим, что отсюда моментально следует коллинеарность всех трех градиентов: <span class="math notranslate nohighlight">\(\nabla U_a, \nabla U_b, \nabla F\)</span> вo внутреннем парето оптимуме.</p>
 </div>
 <div class="section" id="id8">
 <h2>Равновесие Вальраса с производством<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
@@ -861,7 +871,7 @@ const thebe_selector_output = ".output, .cell_output"
 </details><div class="proof theorem remark admonition" id="theorem-5">
 <p class="admonition-title"><span class="caption-number">Theorem 13 </span> (Вторая теорема благосостояния)</p>
 <div class="theorem-content section" id="proof-content">
-<p>Пусть <span class="math notranslate nohighlight">\((\vec x, \vec y)\)</span> - внутренний сильный парето оптимум в экономике с производством, где все выпукло и локально ненасыщаемо, тогда существуют вектор цен и трансферты, такие что <span class="math notranslate nohighlight">\((\vec x, \vec y, \vec p)\)</span> - равновесие вальраса с трансфертами.</p>
+<p>Пусть <span class="math notranslate nohighlight">\((\vec x, \vec y)\)</span> - внутренний сильный парето оптимум в экономике с производством, где все выпукло, непрерывно и локально ненасыщаемо, тогда существуют вектор цен и трансферты, такие что <span class="math notranslate nohighlight">\((\vec x, \vec y, \vec p)\)</span> - равновесие вальраса с трансфертами.</p>
 </div>
 </div><details class="sphinx-bs dropdown card mb-3">
 <summary class="summary-title card-header">
@@ -873,6 +883,18 @@ const thebe_selector_output = ".output, .cell_output"
 <p class="card-text">см. Теорема 4.7 в учебние БЖЦ, опирается на теорему о разделяющей гиперплоскости.</p>
 </div>
 </details></div>
+<div class="section" id="id12">
+<h2>Экономика Эрроу-Дебре<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
+<div class="proof definition admonition" id="definition-6">
+<p class="admonition-title"><span class="caption-number">Definition 67 </span></p>
+<div class="definition-content section" id="proof-content">
+<p><strong>Равновесием Вальраса</strong> экономики Эрроу-Дебре называется допустимое состояние <span class="math notranslate nohighlight">\(\vec x, \vec y\)</span> и вектор цен <span class="math notranslate nohighlight">\(\vec p\)</span> такие что каждый агент достигает максимума полезности по бюджетному ограничению, с бюджетом равным доходу от продажи своих начальных запасов, а производители максимизируют прибыль, причем прибыль распределяется обратно к агентам в заданных пропорциях <span class="math notranslate nohighlight">\(s_{ij}\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[ \forall i \in I, \quad \vec x_i \in arg \max U_i(*) \quad s.t. \quad \vec p \cdot * \leqslant \vec p \cdot \vec w_i + \sum_{j \in J} s_{ij} \pi_j, \quad \pi_j = \vec p \cdot \vec y_j\]</div>
+<div class="math notranslate nohighlight">
+\[ \forall j \in J, \quad \vec y_j \in arg \max (\vec p \cdot *) \quad s.t. \quad * \in Y_j; \quad \forall j \in J, \quad \sum_{i \in I} s_{ij} = 1.\]</div>
+</div>
+</div></div>
 </div>
 
     <script type="text/x-thebe-config">
