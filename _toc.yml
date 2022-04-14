@@ -80,6 +80,10 @@ parts:
   chapters:
     - file: week_11/lecture_11_1
     - file: week_11/lecture_11_2
+- caption: Двенадцатая неделя
+  chapters:
+    - file: week_12/lecture_12_1
+    - file: week_12/lecture_12_2
 - caption: Мат. шпаргалка
   chapters:
     - file: cheetsheet/differentials
