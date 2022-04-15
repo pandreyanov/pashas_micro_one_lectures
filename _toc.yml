@@ -84,7 +84,7 @@ parts:
 - caption: Двенадцатая неделя
   chapters:
     - file: week_12/lecture_12_1
-    - file: week_12/lecture_12_2d
+    - file: week_12/lecture_12_2
     - file: week_12/seminar_13
 - caption: Мат. шпаргалка
   chapters:
