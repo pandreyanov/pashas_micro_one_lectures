@@ -404,18 +404,57 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Первая неделя
+  Одиннадцатая неделя
  </span>
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../week_11/lecture_11_1.html">
-   Первая лекция, часть 1
+   Одиннадцатая лекция, часть 1
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../week_11/lecture_11_2.html">
-   Первая лекция, часть 2
+   Одиннадцатая лекция, часть 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_11/seminar_12.html">
+   Семинар 12
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Двенадцатая неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_12/lecture_12_1.html">
+   Двенадцатая лекция, часть 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_12/lecture_12_2.html">
+   Двенадцатая лекция, часть 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_12/seminar_13.html">
+   Семинар 13
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Тринадцатая неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_13/homework_5.html">
+   Пятое домашнее задание
   </a>
  </li>
 </ul>
@@ -724,10 +763,10 @@ const thebe_selector_output = ".output, .cell_output"
 </summary><div class="summary-content card-body docutils">
 <p class="card-text">Строго выпуклая задача + локальная ненасыщаемость.</p>
 </div>
-</details><p>Вас, скорее всего, не учили матричному дифференциированию, но в данном случае оно работает примерно также, как и обычное:</p>
+</details><p>Вас, скорее всего, не учили матричному дифференцированию, но в данном случае оно работает примерно также, как и обычное:</p>
 <div class="math notranslate nohighlight">
 \[ \nabla \vec h(\vec p,  \bar U) = \nabla \vec m(\vec p,  I) + \frac{\partial m}{\partial I} \cdot \nabla E(\vec p, \bar U) = \nabla \vec m(\vec p,  I) + \frac{\partial m}{\partial I} \cdot \vec h \]</div>
-<p>Проблема в том, что и <span class="math notranslate nohighlight">\(\frac{\partial m}{\partial I}\)</span> и <span class="math notranslate nohighlight">\(\vec h\)</span> – это вектора длины <span class="math notranslate nohighlight">\(n\)</span>, и, поэтому, мы должны подумать, в каком порядке мы их хотим перемножить. Есть два варианта: либо мы умножаем строку <span class="math notranslate nohighlight">\(\frac{\partial m}{\partial I}\)</span> на столбец <span class="math notranslate nohighlight">\(\vec h\)</span>, либо мы умножаем столбец <span class="math notranslate nohighlight">\(\frac{\partial m}{\partial I}\)</span> на строку <span class="math notranslate nohighlight">\(\vec h\)</span>. Один из этих вариантов даст число, а другой – матрицу. Тот вариант, который сохранит размерность объекта, и будет правильным матричным дифференциированием.</p>
+<p>Проблема в том, что и <span class="math notranslate nohighlight">\(\frac{\partial m}{\partial I}\)</span> и <span class="math notranslate nohighlight">\(\vec h\)</span> – это вектора длины <span class="math notranslate nohighlight">\(n\)</span>, и, поэтому, мы должны подумать, в каком порядке мы их хотим перемножить. Есть два варианта: либо мы умножаем строку <span class="math notranslate nohighlight">\(\frac{\partial m}{\partial I}\)</span> на столбец <span class="math notranslate nohighlight">\(\vec h\)</span>, либо мы умножаем столбец <span class="math notranslate nohighlight">\(\frac{\partial m}{\partial I}\)</span> на строку <span class="math notranslate nohighlight">\(\vec h\)</span>. Один из этих вариантов даст число, а другой – матрицу. Тот вариант, который сохранит размерность объекта, и будет правильным матричным дифференцированием.</p>
 <p>Однако это еще не все. В зависимости от того, что идет по строкам: координаты цен или координаты товаров – формула будет выглядеть по-разному. Например, если по горизонтали идут товары, то правильная форма:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split} 
@@ -757,7 +796,7 @@ h_y
 <p>Тогда</p>
 <div class="math notranslate nohighlight">
 \[ \frac{\partial}{\partial p} E = \frac{\alpha}{p} E, \quad \frac{\partial}{\partial q} E = \frac{\beta}{q} E \]</div>
-<p>Дифференциируя второй раз, получаем повторную производную:</p>
+<p>Дифференцируя второй раз, получаем повторную производную:</p>
 <div class="math notranslate nohighlight">
 \[ \frac{\partial^2}{\partial^2 p} E = \frac{-\alpha}{p^2} E + \frac{\alpha^2}{p^2} E, \quad \frac{\partial^2}{\partial^2 q} E = \frac{-\beta}{q^2} E + \frac{\beta^2}{q^2} E\]</div>
 <p>И, конечно, смешанную производную:</p>

@@ -404,18 +404,57 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Первая неделя
+  Одиннадцатая неделя
  </span>
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../week_11/lecture_11_1.html">
-   Первая лекция, часть 1
+   Одиннадцатая лекция, часть 1
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../week_11/lecture_11_2.html">
-   Первая лекция, часть 2
+   Одиннадцатая лекция, часть 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_11/seminar_12.html">
+   Семинар 12
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Двенадцатая неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_12/lecture_12_1.html">
+   Двенадцатая лекция, часть 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_12/lecture_12_2.html">
+   Двенадцатая лекция, часть 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_12/seminar_13.html">
+   Семинар 13
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Тринадцатая неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_13/homework_5.html">
+   Пятое домашнее задание
   </a>
  </li>
 </ul>
@@ -620,11 +659,11 @@ $<span class="math notranslate nohighlight">\( x = G(\vec y), \quad F(\vec x) = 
 <p>Пусть есть <span class="math notranslate nohighlight">\(n\)</span> товаров, которые можно произвести в количествах, описываемых точкой в <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span> (не в <span class="math notranslate nohighlight">\(\mathbb{R}^n_+\)</span>), поскольку какие-то товары окажутся факторами, потраченными при производстве других.</p>
 <p>Одна технология – это одна точка. Множество всех допустимых технологий – это область в <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span>, то есть <strong>технологическое множество</strong>. Эффективное производство (то, что раньше описывалось <span class="math notranslate nohighlight">\(F\)</span> или <span class="math notranslate nohighlight">\(G\)</span>) теперь описывается границей этого множества, то есть <strong>технологической границей</strong>, см. иллюстрацию ниже.</p>
 <a class="reference internal image-reference" href="../_images/prod_set.png"><img alt="Производственное множество" class="align-center" src="../_images/prod_set.png" style="width: 400px;" /></a>
-<p>Формально технологическая граница состоит из точек <span class="math notranslate nohighlight">\(y \in Y\)</span> таких, что не существует <span class="math notranslate nohighlight">\(y' \in Y\)</span>, так что <span class="math notranslate nohighlight">\(y_i' \geqslant y_i\)</span> по всем координатам <span class="math notranslate nohighlight">\(i\)</span> и <span class="math notranslate nohighlight">\(y_j' &gt; y_j\)</span> по хотя бы одной координате <span class="math notranslate nohighlight">\(j\)</span>.</p>
+<p>Формально технологическая граница состоит из точек <span class="math notranslate nohighlight">\(y \in Y\)</span>, таких, что не существует <span class="math notranslate nohighlight">\(y' \in Y\)</span>, так что <span class="math notranslate nohighlight">\(y_i' \geqslant y_i\)</span> по всем координатам <span class="math notranslate nohighlight">\(i\)</span> и <span class="math notranslate nohighlight">\(y_j' &gt; y_j\)</span> по хотя бы одной координате <span class="math notranslate nohighlight">\(j\)</span>.</p>
 <div class="proof lemma admonition" id="lemma-0">
 <p class="admonition-title"><span class="caption-number">Lemma 4 </span></p>
 <div class="lemma-content section" id="proof-content">
-<p>Технологическая граница ищется как все точки <span class="math notranslate nohighlight">\(z \in Y\)</span> такие, что</p>
+<p>Технологическая граница ищется как все точки <span class="math notranslate nohighlight">\(z \in Y\)</span>, такие, что</p>
 <div class="math notranslate nohighlight">
 \[ z \in \text{argmax } \vec q \cdot \vec y, \quad \vec y \in Y,\]</div>
 <p>для хотя бы одного вектора цен <span class="math notranslate nohighlight">\(\vec q \geqslant 0, \vec q \neq 0\)</span>.</p>
@@ -695,7 +734,7 @@ $<span class="math notranslate nohighlight">\( x = G(\vec y), \quad F(\vec x) = 
 </details></div>
 <div class="section" id="id5">
 <h2>Сложение технологических множеств<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
-<p>Предоложим, что у нас есть два завода. Первый обладает технологией <span class="math notranslate nohighlight">\(Y_1\)</span>, второй обладает технологией <span class="math notranslate nohighlight">\(Y_2\)</span>. Теперь представим себе, что компания владеет этими двумя заводами и может свободно перемещать товары с одного завода на другой и комбинировать любые технологические цепочки. Как описать технологическое множество <span class="math notranslate nohighlight">\(Y_1 + Y_2\)</span>, соответствующее этой компании?</p>
+<p>Предположим, что у нас есть два завода. Первый обладает технологией <span class="math notranslate nohighlight">\(Y_1\)</span>, второй обладает технологией <span class="math notranslate nohighlight">\(Y_2\)</span>. Теперь представим себе, что компания владеет этими двумя заводами и может свободно перемещать товары с одного завода на другой и комбинировать любые технологические цепочки. Как описать технологическое множество <span class="math notranslate nohighlight">\(Y_1 + Y_2\)</span>, соответствующее этой компании?</p>
 <div class="proof definition admonition" id="definition-3">
 <p class="admonition-title"><span class="caption-number">Definition 49 </span></p>
 <div class="definition-content section" id="proof-content">
@@ -703,7 +742,7 @@ $<span class="math notranslate nohighlight">\( x = G(\vec y), \quad F(\vec x) = 
 <div class="math notranslate nohighlight">
 \[ A+B = \{a + b \ | \ a \in A, \ b \in b\}.\]</div>
 </div>
-</div><p>Действительно, компания может “сложить” в векторном смысле любые два вектора из множеств <span class="math notranslate nohighlight">\(A, B\)</span>. Первый вектор <span class="math notranslate nohighlight">\(a \in A\)</span> означает, что партия товаров была произведена на первом заводе и была отправлена на склад. Второй вектор <span class="math notranslate nohighlight">\(b \in B\)</span> означает, что партия товаров была произведена на втором заводе и тоже отправлена на склад. На складе партии будут объеденены и суммарный обьем будет соответствовать вектору <span class="math notranslate nohighlight">\(a + b\)</span>.</p>
+</div><p>Действительно, компания может “сложить” в векторном смысле любые два вектора из множеств <span class="math notranslate nohighlight">\(A, B\)</span>. Первый вектор <span class="math notranslate nohighlight">\(a \in A\)</span> означает, что партия товаров была произведена на первом заводе и была отправлена на склад. Второй вектор <span class="math notranslate nohighlight">\(b \in B\)</span> означает, что партия товаров была произведена на втором заводе и тоже отправлена на склад. На складе партии будут объединены и суммарный объем будет соответствовать вектору <span class="math notranslate nohighlight">\(a + b\)</span>.</p>
 <div class="proof lemma admonition" id="lemma-4">
 <p class="admonition-title"><span class="caption-number">Lemma 5 </span></p>
 <div class="lemma-content section" id="proof-content">
@@ -751,7 +790,7 @@ $<span class="math notranslate nohighlight">\( x = G(\vec y), \quad F(\vec x) = 
 <p>Пусть технологии заданы производственными функциями:</p>
 <div class="math notranslate nohighlight">
 \[ F_1(k,l) = (k^2 l)^{1/3}, \quad F_2(k,l) = (k l^2)^{1/3}.\]</div>
-<p>Посмотрим, хватит ли нам уравнений, чтобы вычуслить суммарную производственную функцию.</p>
+<p>Посмотрим, хватит ли нам уравнений, чтобы вычислить суммарную производственную функцию.</p>
 <p>Первым делом, разобьем <span class="math notranslate nohighlight">\(k\)</span>,<span class="math notranslate nohighlight">\(l\)</span> на <span class="math notranslate nohighlight">\(k_1+k_2\)</span> и <span class="math notranslate nohighlight">\(l_1+l_2\)</span> соответственно. Тогда уже известно, что объем произведенного конечного товара будет равен:</p>
 <div class="math notranslate nohighlight">
 \[y_1 + y_2\]</div>
