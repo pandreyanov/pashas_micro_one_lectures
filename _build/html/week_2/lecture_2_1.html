@@ -404,18 +404,57 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Первая неделя
+  Одиннадцатая неделя
  </span>
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../week_11/lecture_11_1.html">
-   Первая лекция, часть 1
+   Одиннадцатая лекция, часть 1
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../week_11/lecture_11_2.html">
-   Первая лекция, часть 2
+   Одиннадцатая лекция, часть 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_11/seminar_12.html">
+   Семинар 12
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Двенадцатая неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_12/lecture_12_1.html">
+   Двенадцатая лекция, часть 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_12/lecture_12_2.html">
+   Двенадцатая лекция, часть 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_12/seminar_13.html">
+   Семинар 13
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Тринадцатая неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_13/homework_5.html">
+   Пятое домашнее задание
   </a>
  </li>
 </ul>
@@ -753,7 +792,7 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="proof theorem remark admonition" id="theorem-1">
 <p class="admonition-title"><span class="caption-number">Theorem 4 </span> (<strong>ККТ</strong>)</p>
 <div class="theorem-content section" id="proof-content">
-<p>В гладкой задаче оптимизации, экстремальные точки характеризуются тем, что градиенты ограничений и самой функции линейно зависимы, то есть:</p>
+<p>В гладкой задаче оптимизации экстремальные точки характеризуются тем, что градиенты ограничений и самой функции линейно зависимы, то есть:</p>
 <div class="math notranslate nohighlight">
 \[\nabla_{(x,y)} U -  \lambda \cdot \nabla_{(x,y)}B = 0\]</div>
 </div>
@@ -775,7 +814,7 @@ const thebe_selector_output = ".output, .cell_output"
 <p>Если по какой-то причине у одного из товаров есть нетривиальная квота <span class="math notranslate nohighlight">\(x \leqslant \bar x\)</span>, то Лагранжиан будет такой:</p>
 <div class="math notranslate nohighlight">
 \[ \mathcal{L} (x, y| \lambda, \gamma) = U(x,y) - \lambda B(x,y) - \gamma (x - \bar x),\]</div>
-<p>и множитель Лагранжа <span class="math notranslate nohighlight">\(\gamma\)</span> интерпретируется как <strong>теневая цена</strong> дополнительной единицы  товара <span class="math notranslate nohighlight">\(x\)</span> сверх квоты. То есть мы как будто покупаем его на черном рынке по цене <span class="math notranslate nohighlight">\(\gamma\)</span>.</p>
+<p>и множитель Лагранжа <span class="math notranslate nohighlight">\(\gamma\)</span> интерпретируется как <strong>теневая цена</strong> дополнительной единицы товара <span class="math notranslate nohighlight">\(x\)</span> сверх квоты. То есть мы как будто покупаем его на черном рынке по цене <span class="math notranslate nohighlight">\(\gamma\)</span>.</p>
 </div>
 <div class="section" id="id8">
 <h3>Значение Лагранжиана в оптимуме<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
@@ -825,11 +864,11 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="property-content section" id="proof-content">
 <p>Все товары не могут быть одновременно инфериорными, хотя бы один точно нормальный.</p>
 </div>
-</div><p>Доказать это утверждение очень легко. Если бюджетное ограничение таково, что оптимум находится “внутри”, то небольшое изменение параметра <span class="math notranslate nohighlight">\(I\)</span> не повлияет на оптимум. Если бюджетное ограничение таково, что оптимум находится “на бюджетной линии”, то дифференциируя <span class="math notranslate nohighlight">\(B(x,y)= 0\)</span> по <span class="math notranslate nohighlight">\(I\)</span> мы получаем:</p>
+</div><p>Доказать это утверждение очень легко. Если бюджетное ограничение таково, что оптимум находится “внутри”, то небольшое изменение параметра <span class="math notranslate nohighlight">\(I\)</span> не повлияет на оптимум. Если бюджетное ограничение таково, что оптимум находится “на бюджетной линии”, то дифференцируя <span class="math notranslate nohighlight">\(B(x,y)= 0\)</span> по <span class="math notranslate nohighlight">\(I\)</span> мы получаем:</p>
 <div class="math notranslate nohighlight">
 \[ p \frac{\partial x^{\ast}}{\partial I}  + q \frac{\partial y^{\ast}}{\partial I}  = 1.\]</div>
 <p>Поскольку цены неотрицательные, то инфериорность всех товаров означает, что слева стоит отрицательное число, а справа единица. Противоречие.</p>
-<p><em>Вопрос 5: Убедитесь, что кривая Энгеля у нормальных товаров всегда неубывает</em></p>
+<p><em>Вопрос 5: Убедитесь, что кривая Энгеля у нормальных товаров всегда не убывает</em></p>
 <p><em>Вопрос 6: Придумайте жизненный пример товара, у которого кривая Энгеля выходит на плато.</em></p>
 <p><em>Вопрос 7: Придумайте аргументы за и против того, что общественный транспорт является инфериорным благом.</em></p>
 </div>
@@ -861,7 +900,7 @@ const thebe_selector_output = ".output, .cell_output"
 \[ V(p,q,I) = U(x^{\ast}, y^{\ast}).\]</div>
 </div>
 </div><p>На самом деле, не столь важно какой буквой обозначается косвенная полезность: <span class="math notranslate nohighlight">\(U^{\ast}\)</span> или <span class="math notranslate nohighlight">\(V\)</span>. Гораздо важнее набор аргументов: <span class="math notranslate nohighlight">\(p,q, I\)</span>, подсказывающий, что координатам <span class="math notranslate nohighlight">\(x,y\)</span> были присвоены какие-то значения в процессе оптимизации.</p>
-<p>Когда вас просят решить оптимизационную задачу, если не сказано обратное, от вас скорее всего ожидают оба объекта: спрос и косвенную полезность. Но будте аккуратны, потому что…</p>
+<p>Когда вас просят решить оптимизационную задачу, если не сказано обратное, от вас скорее всего ожидают оба объекта: спрос и косвенную полезность. Но будьте аккуратны, потому что…</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>В отличие от координат оптимума, косвенная полезность, конечно же, зависит от всех монотонных преобразований, которые вы наложили на свою полезность.</p>
