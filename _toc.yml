@@ -86,6 +86,9 @@ parts:
     - file: week_12/lecture_12_1
     - file: week_12/lecture_12_2
     - file: week_12/seminar_13
+- caption: Тринадцатая неделя
+  chapters:
+    - file: week_13/homework_5
 - caption: Мат. шпаргалка
   chapters:
     - file: cheetsheet/differentials
