@@ -93,6 +93,7 @@ parts:
   chapters:
     - file: week_14/seminar_15
     - file: week_14/lecture_14_1
+    - file: week_14/lecture_14_2
 - caption: Мат. шпаргалка
   chapters:
     - file: cheetsheet/differentials
