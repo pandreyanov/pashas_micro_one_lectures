@@ -56,7 +56,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Дифференциалы" href="../cheetsheet/differentials.html" />
-    <link rel="prev" title="Пятое домашнее задание" href="../week_13/homework_5.html" />
+    <link rel="prev" title="Семинар 15" href="seminar_15.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -464,6 +464,11 @@ const thebe_selector_output = ".output, .cell_output"
  </span>
 </p>
 <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="seminar_15.html">
+   Семинар 15
+  </a>
+ </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    Четырнадцатая лекция, часть 1
@@ -599,6 +604,11 @@ const thebe_selector_output = ".output, .cell_output"
      Пример корректирующих налогов
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id8">
+     Пример с производством
+    </a>
+   </li>
   </ul>
  </li>
 </ul>
@@ -651,6 +661,11 @@ const thebe_selector_output = ".output, .cell_output"
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#id7">
      Пример корректирующих налогов
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id8">
+     Пример с производством
     </a>
    </li>
   </ul>
@@ -777,6 +792,32 @@ $<span class="math notranslate nohighlight">\(
 <p class="card-text">Остальные координаты легко найти.</p>
 </div>
 </details></div>
+<div class="section" id="id8">
+<h3>Пример с производством<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<p>Предположим, что у нас экономика с одним потребителем</p>
+<div class="math notranslate nohighlight">
+\[ U(x,y) = \log x + 2\log y\]</div>
+<p>и одним производителем с технологией</p>
+<div class="math notranslate nohighlight">
+\[ F(x,y) = (1-x) +  \log (1-y) \geqslant 0\]</div>
+<p>причем, в экономике изначально всего 1 товара <span class="math notranslate nohighlight">\(x\)</span> и 0 товара <span class="math notranslate nohighlight">\(y\)</span>. Будем считать, что производство товара <span class="math notranslate nohighlight">\(y\)</span> из <span class="math notranslate nohighlight">\(x\)</span> сопряжено с отрицательными экстерналиями (например, загрязнение воздуха), которые равны <span class="math notranslate nohighlight">\(H(y) = \log y\)</span> в терминах полезости агента.</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Вычислим Парето фронт:<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<div class="math notranslate nohighlight">
+\[ U(x,y) - H(y) + \lambda F(x,y) \to \max\]</div>
+<div class="math notranslate nohighlight">
+\[ \log x + 2\log y - \log y + \lambda (1-x + \log (1-y)) \to \max\]</div>
+<div class="math notranslate nohighlight">
+\[ \frac{1}{x} = \lambda, \quad \frac{1}{y} = \frac{\lambda}{1-y}\]</div>
+<div class="math notranslate nohighlight">
+\[ x = \frac{1}{\lambda}, \quad y = \frac{1}{1+\lambda}, \quad \Rightarrow \quad x = \frac{y}{y-1}\]</div>
+</div>
+</details></div>
 </div>
 </div>
 
@@ -805,11 +846,11 @@ $<span class="math notranslate nohighlight">\(
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="../week_13/homework_5.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="seminar_15.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Пятое домашнее задание</p>
+            <p class="prev-next-title">Семинар 15</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="../cheetsheet/differentials.html" title="next page">
