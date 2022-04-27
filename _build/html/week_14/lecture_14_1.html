@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Задачи для тренировки &#8212; Учебник по Микро 1, для ИП, ФЭН ВШЭ</title>
+    <title>Четырнадцатая лекция, часть 1 &#8212; Учебник по Микро 1, для ИП, ФЭН ВШЭ</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -55,8 +55,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>mermaid.initialize({startOnLoad:true});</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Содержание" href="../week_3/intro_3.html" />
-    <link rel="prev" title="Семинар 2" href="seminar_2.html" />
+    <link rel="next" title="Дифференциалы" href="../cheetsheet/differentials.html" />
+    <link rel="prev" title="Пятое домашнее задание" href="../week_13/homework_5.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -169,29 +169,29 @@ const thebe_selector_output = ".output, .cell_output"
   Вторая неделя
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="intro_2.html">
+  <a class="reference internal" href="../week_2/intro_2.html">
    Содержание
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="lecture_2_1.html">
+  <a class="reference internal" href="../week_2/lecture_2_1.html">
    Вторая лекция, часть 1
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="lecture_2_2.html">
+  <a class="reference internal" href="../week_2/lecture_2_2.html">
    Вторая лекция, часть 2
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="seminar_2.html">
+  <a class="reference internal" href="../week_2/seminar_2.html">
    Семинар 2
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_2/practice_2.html">
    Задачи для тренировки
   </a>
  </li>
@@ -463,9 +463,9 @@ const thebe_selector_output = ".output, .cell_output"
   Четырнадцатая неделя
  </span>
 </p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../week_14/lecture_14_1.html">
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Четырнадцатая лекция, часть 1
   </a>
  </li>
@@ -537,7 +537,7 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/week_2/practice_2.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/week_14/lecture_14_1.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -569,8 +569,37 @@ const thebe_selector_output = ".output, .cell_output"
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id2">
-   Задача 0.1
+   Что такое экстерналии?
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     Первый класс: смешивание полезностей
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     Второй класс: сепарабельные экстерналии
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id5">
+     Третий класс: несепарабельные экстерналии
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id6">
+   Что такое корректирующие налоги?
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+     Пример корректирующих налогов
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -582,7 +611,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Задачи для тренировки</h1>
+                <h1>Четырнадцатая лекция, часть 1</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -594,8 +623,37 @@ const thebe_selector_output = ".output, .cell_output"
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id2">
-   Задача 0.1
+   Что такое экстерналии?
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     Первый класс: смешивание полезностей
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     Второй класс: сепарабельные экстерналии
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id5">
+     Третий класс: несепарабельные экстерналии
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id6">
+   Что такое корректирующие налоги?
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+     Пример корректирующих налогов
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -607,13 +665,118 @@ const thebe_selector_output = ".output, .cell_output"
               <div>
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="id1">
-<h1>Задачи для тренировки<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<h1>Четырнадцатая лекция, часть 1<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>В этой части лекции мы поговорим об экстерналиях и корректирующих налогах.</p>
 <div class="section" id="id2">
-<h2>Задача 0.1<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p>Назовем предпочтения <strong>гомотетичными</strong>, если для любого <span class="math notranslate nohighlight">\(\lambda &gt;0\)</span> верно:</p>
+<h2>Что такое экстерналии?<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>Одной из двух важнейших предпосылок в анализе общего равновесия является <strong>отсутствие экстерналий</strong>, то есть, потребление одного  агента (производство фирмы) не меняет полезность других агентов (технологии других фирм). Формально, первая теорема благосостояния, доказанная на прошлых лекциях опирались на это предположение.</p>
+<p>Посмотрим, что получится, если добавить экстерналии.</p>
+<p>Я рассмотрю три класса экстерналии, которые я различаю по следующему принципу:</p>
+<ul class="simple">
+<li><p>экстерналии, получающиеся смешиванием полезностей</p></li>
+<li><p>сепарабельные экстерналии</p></li>
+<li><p>не сепарабельные экстерналии</p></li>
+</ul>
+<div class="section" id="id3">
+<h3>Первый класс: смешивание полезностей<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>Предположим, что полезности агентов <span class="math notranslate nohighlight">\(a,b\)</span> равны:</p>
 <div class="math notranslate nohighlight">
-\[x \sim y \quad \Leftrightarrow \quad \lambda x \sim \lambda y.\]</div>
-<p>Какие из перечисленных на лекции полезностей соответствуют (представляют собой) такие предпочтения?</p>
+\[ U_a(x_a,y_a|x_b,y_b) = u(x_a,y_a) + \varepsilon u(x_b,y_b), \quad U_b(x_b,y_b|x_a,y_a) = u(x_b,y_b) + \delta u(x_a,y_a)\]</div>
+<p>Можно считать, что агенты “заботятся друг о друге”, поэтому добавляют полезность противника себе с небольшими весами <span class="math notranslate nohighlight">\(\varepsilon, \delta\)</span>. Проанализируем, как изменится Парето фронт.</p>
+<p>Поскольку взвешенная полезность равна</p>
+<div class="math notranslate nohighlight">
+\[U_a + \lambda U_b = (1+\lambda \delta)u(x_a, y_a) + (\lambda + \varepsilon)u(x_b, y_b)\]</div>
+<p>то парето фронт будет абсолютно таким же, как если бы экстерналий не было:</p>
+<div class="math notranslate nohighlight">
+\[ \tilde U_a(x_a,y_a) = u(x_a,y_a), \quad \tilde U_b(x_b,y_b) = u(x_b,y_b)\]</div>
+<p>потому, что изменилась лишь параметризация парето фронта, но не сам он. Действительно, в обоих случаях используется условие сонаправленности градиентов: <span class="math notranslate nohighlight">\(\nabla u(x_a,y_a)\)</span> и <span class="math notranslate nohighlight">\(\nabla u(x_b,y_b)\)</span>. А как насчет равновесия Вальраса?</p>
+<p>Заметим, что полезность оптимизируется только по координатам собственного потребления, то есть, у оптимизационных задач:</p>
+<div class="math notranslate nohighlight">
+\[ U_a(x_a,y_a|x_b,y_b) \to \max_{x_a,y_a},  \quad \tilde U(x_a,y_a) \to \max_{x_a,y_a}\]</div>
+<p>одинаковые условия первого порядка. Действительно, возмущение связанное с добавлением чужой полезности, превратится в ноль при первом же дифференциировании.</p>
+<p>Таким образом, для экстерналий, имеющих вид смешанных полезностей - обе теоремы благосостояния выполнены, поскольку экстерналии не меняют ни парето фронт, ни равновесие.</p>
+</div>
+<div class="section" id="id4">
+<h3>Второй класс: сепарабельные экстерналии<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p>Рассмотрим чуть более общий пример:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} U_a(x_a,y_a|x_b,y_b) = \tilde U_a(x_a,y_a) + f(x_b,y_b)\\
+U_b(x_b,y_b|x_a,y_a) = \tilde U_b(x_b,y_b) + g(x_a,y_a)\end{split}\]</div>
+<p>где <span class="math notranslate nohighlight">\(f,g\)</span> это функции, существенно отличные от <span class="math notranslate nohighlight">\(\tilde U_a\)</span>, <span class="math notranslate nohighlight">\(\tilde U_b\)</span>.</p>
+<p>Заметим, что наличие функций <span class="math notranslate nohighlight">\(f,g\)</span>, опять не меняют равновесие Вальраса. Однако, они скорее всего меняют положение Парето фронта.</p>
+<p>Например, пусть <span class="math notranslate nohighlight">\(f(x_b,y_b) = -x_b\)</span>, а <span class="math notranslate nohighlight">\(g(x_a, y_a) = 0\)</span>. Тогда, при максимизации взвешенной полезности, все кроме одного условия первого порядка:
+$<span class="math notranslate nohighlight">\(
+\frac{\partial}{\partial x_b} \tilde U_a(x_a,y_a) - 1 = \lambda  \frac{\partial}{\partial x_b} U_b(w_x-x_b,w_y - y_b)\)</span>$
+остаются неизменными, а значит система не может иметь то же самое решение, что и без экстерналий.</p>
+<p>Таким образом, для сепарабельных экстерналий - Парето фронт сдвигается, но равновесие Вальраса стоит на месте. Это значит, что теорема благосостояния, скорее всего, нарушается.</p>
+<p>Сепарабельность не обязательно должна быть аддитивной. Если мы будет, например, умножать полезности, то добьемся похожего эффекта.</p>
+</div>
+<div class="section" id="id5">
+<h3>Третий класс: несепарабельные экстерналии<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<p>В общем случае, например</p>
+<div class="math notranslate nohighlight">
+\[U_a(x_a,y_a|x_b,y_b)=x_b \log x_a + \log y_a, \quad U_b(x_b,y_b|x_a,y_a) = \log x_b + x_a\log y_b\]</div>
+<p>Парето фронт и равновесие Вальраса меняются одновременно и, скорее всего, первая теорема благосотояния не выполняется. Однако, наверняка сказать нельзя, поскольку равновесие может “чисто случайно” попасть на парето фронт.</p>
+</div>
+</div>
+<div class="section" id="id6">
+<h2>Что такое корректирующие налоги?<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<p>Предположим, что в силу экстерналий, или каких то других причин, равновесие Вальраса не является парето оптимальным. Тогда, государство может вмешаться и “подвинуть” равновесие ближе к Парето фронту, при помощи <strong>корректирующих налогов</strong>. Примерами таких налогов являются</p>
+<ul class="simple">
+<li><p>налоги и акцизы на табак и алкоголь</p></li>
+<li><p>штрафы за загрязнение окружающей среды</p></li>
+</ul>
+<p>Налоги могут быть товарные, аушальные, а также общие и индивидуальные.</p>
+<div class="section" id="id7">
+<h3>Пример корректирующих налогов<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<p>Рассмотрим положительные экстерналии на потребление в экономике обмена:</p>
+<div class="math notranslate nohighlight">
+\[U_a(x_a,y_a|x_b)= \log x_a + \log y_a + \log x_b, \quad U_b(x_b,y_b) = \log x_b + \log y_b\]</div>
+<p>запасы пусть равняются <span class="math notranslate nohighlight">\((1,1)\)</span>.</p>
+<p>Запишем условия первого порядка для поиска Парето фронта:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} \frac{1}{x_a} = \frac{\lambda + 1}{1-x_a}, \quad \frac{1}{y_a} = \frac{\lambda}{1-y_b}\\\end{split}\]</div>
+<p>что приведет к</p>
+<div class="math notranslate nohighlight">
+\[ x_a = \frac{1}{2+\lambda}, \quad y_a = \frac{1}{1+\lambda}.\]</div>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Попробуем сначала попасть на парето фронт, при помощи <strong>общего налога</strong> <span class="math notranslate nohighlight">\(\tau\)</span> на товар <span class="math notranslate nohighlight">\(x\)</span>, то есть, налога, который платят все агенты.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Запишем условия первого порядка для поиска равновесия Вальраса (положим цену товара <span class="math notranslate nohighlight">\(y\)</span> равной 1):</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} \frac{1}{x_a}/\frac{1}{y_a}  = p + \tau = \frac{1}{1-x_a}/\frac{1}{1-y_a}\\
+(p + \tau) x_a + y_a = (p + \tau) + 1
+\end{split}\]</div>
+<p class="card-text">Легко видеть, что на Парето фронте</p>
+<div class="math notranslate nohighlight">
+\[\frac{1}{x_a}/\frac{1}{y_a}  = \frac{1}{1-x_a}/\frac{1}{1-y_a}\]</div>
+<p class="card-text">тогда и только тогда, когда <span class="math notranslate nohighlight">\(\lambda = \lambda + 1\)</span>, то есть никогда. Получается, что невозможно изменить цены для всех так, чтобы равновесие оказалось Парето оптимальным.</p>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Попробуем теперь попасть на парето фронт, при помощи <strong>индивидуального налога</strong> <span class="math notranslate nohighlight">\(\tau\)</span> на товар <span class="math notranslate nohighlight">\(x\)</span>, который будет платить первый агент.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Запишем условия первого порядка для поиска равновесия Вальраса (положим цену товара <span class="math notranslate nohighlight">\(y\)</span> равной 1):</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} \frac{1}{x_a}/\frac{1}{y_a}  = p + \tau, \quad \frac{1}{1-x_a}/\frac{1}{1-y_a} = p\\
+(p + \tau) x_a + y_a = (p + \tau) + 1
+\end{split}\]</div>
+<p class="card-text">получается система из 5 уравнений (2 от парето фронта, 3 от равновесия) и 5 неизвестных: <span class="math notranslate nohighlight">\(x_a, y_a, p, \tau, \lambda\)</span>; большая часть из которых линейна. Можно упростить до трех:</p>
+<div class="math notranslate nohighlight">
+\[ p + \tau = \frac{1}{x_a}/\frac{1}{y_a} = \frac{2+\lambda}{1+\lambda}  \quad \Rightarrow \quad (\frac{2+\lambda}{1+\lambda} )(\frac{1}{2+\lambda}) + \frac{1}{1+\lambda} = (\frac{2+\lambda}{1+\lambda}) + 1\]</div>
+<p class="card-text">получается</p>
+<div class="math notranslate nohighlight">
+\[ 2 = 3 + 2\lambda \quad \Rightarrow \quad \lambda = -1/2.\]</div>
+<p class="card-text">Остальные координаты легко найти.</p>
+</div>
+</details></div>
 </div>
 </div>
 
@@ -630,7 +793,7 @@ const thebe_selector_output = ".output, .cell_output"
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./week_2"
+            path: "./week_14"
         },
         predefinedOutput: true
     }
@@ -642,17 +805,17 @@ const thebe_selector_output = ".output, .cell_output"
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="seminar_2.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="../week_13/homework_5.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Семинар 2</p>
+            <p class="prev-next-title">Пятое домашнее задание</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="../week_3/intro_3.html" title="next page">
+    <a class='right-next' id="next-link" href="../cheetsheet/differentials.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Содержание</p>
+        <p class="prev-next-title">Дифференциалы</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
