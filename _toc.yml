@@ -89,6 +89,9 @@ parts:
 - caption: Тринадцатая неделя
   chapters:
     - file: week_13/homework_5
+- caption: Четырнадцатая неделя
+  chapters:
+    - file: week_14/seminar_15
 - caption: Мат. шпаргалка
   chapters:
     - file: cheetsheet/differentials
