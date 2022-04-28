@@ -637,8 +637,8 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </div><p>Условие первого порядка гарантируют, что</p>
 <div class="math notranslate nohighlight">
-\[ \sum_{i \in I} \frac{\partial}{\partial z} U_i(...,z) = \frac{\partial}{\partial z}F(...,z),\]</div>
-<p>что называется Уравнением Самуэльсона.</p>
+\[ \sum_{i \in I} \frac{\partial}{\partial z} U_i(...,z) = \frac{\partial}{\partial z}F(z),\]</div>
+<p>где F(z) это расходы на производство <span class="math notranslate nohighlight">\(z\)</span> единиц общественного блага. Это называется Уравнением Самуэльсона.</p>
 <details class="sphinx-bs dropdown card mb-3">
 <summary class="summary-title card-header">
 Выведем уравнение Самуэльсона из Парето оптимальности в квазилинейной экономике.<div class="summary-down docutils">
@@ -649,7 +649,7 @@ const thebe_selector_output = ".output, .cell_output"
 <p class="card-text">Если у всех агентов квазилинейные (по одному частному благу) полезности, то из дифференциальной характеристики парето фронта следует, что веса во взвешенной полезности одинаковые. Убедитесь сами.</p>
 <p class="card-text">Соответственно мы решаем следующую задачу</p>
 <div class="math notranslate nohighlight">
-\[\sum_{i \in I} U_i(x,z) - (z - F(x)) \to \max\]</div>
+\[\sum_{i \in I} U_i(x,z) - (x - F(z)) \to \max\]</div>
 <p class="card-text">откуда и вытекает уравнение Самуэльсона.</p>
 </div>
 </details></div>
