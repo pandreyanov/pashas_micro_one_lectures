@@ -618,7 +618,8 @@ const thebe_selector_output = ".output, .cell_output"
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="id1">
 <h1>Четырнадцатая лекция, часть 2<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<p>Общественное благо - специальная версия экстерналий.</p>
+<p>Комментарий - экономики с производством надо <strong>всегда</strong> делать как Эрроу-Дебре.
+Общественное благо - специальная версия экстерналий.</p>
 <div class="section" id="id2">
 <h2>Общественное благо<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <p>Предположим, что один из товаров является общественным благом. Это означает, что потребление всех агентов зафиксированы на том же уровне. Я буду обозначать общественное благо как <span class="math notranslate nohighlight">\(z\)</span>.</p>
@@ -638,7 +639,20 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="math notranslate nohighlight">
 \[ \sum_{i \in I} \frac{\partial}{\partial z} U_i(...,z) = \frac{\partial}{\partial z}F(...,z),\]</div>
 <p>что называется Уравнением Самуэльсона.</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Выведем уравнение Самуэльсона из Парето оптимальности в квазилинейной экономике.<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Если у всех агентов квазилинейные (по одному частному благу) полезности, то из дифференциальной характеристики парето фронта следует, что веса во взвешенной полезности одинаковые. Убедитесь сами.</p>
+<p class="card-text">Соответственно мы решаем следующую задачу</p>
+<div class="math notranslate nohighlight">
+\[\sum_{i \in I} U_i(x,z) - (z - F(x)) \to \max\]</div>
+<p class="card-text">откуда и вытекает уравнение Самуэльсона.</p>
 </div>
+</details></div>
 </div>
 
     <script type="text/x-thebe-config">
