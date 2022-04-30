@@ -469,6 +469,16 @@ const thebe_selector_output = ".output, .cell_output"
    Четырнадцатая лекция, часть 1
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_14/lecture_14_2.html">
+   Четырнадцатая лекция, часть 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_14/seminar_15.html">
+   Семинар 15
+  </a>
+ </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
@@ -641,7 +651,7 @@ const thebe_selector_output = ".output, .cell_output"
 <p><em>В скобках рядом с каждым пунктом указано количество баллов за этот пункт.</em></p>
 <div class="section" id="a">
 <h2>Задача 1 (4 баллa): два плюс ноль<a class="headerlink" href="#a" title="Permalink to this headline">¶</a></h2>
-<p>Рассмотрим экономику обмена с двумя агентами и двумя товарами:</p>
+<p>Рассмотрим экономику обмена с двумя агентами и двумя товарами. Уровни потребления будем обозначать <span class="math notranslate nohighlight">\(x,y\)</span> для каждого агента (xотя можно было бы использовать обозначения <span class="math notranslate nohighlight">\(x_a, y_a, x_b, y_b\)</span>, но это не должно вас смущать), а начальные запасы <span class="math notranslate nohighlight">\(w_a\)</span> для первого агента и <span class="math notranslate nohighlight">\(w_b\)</span> для второго:</p>
 <div class="math notranslate nohighlight">
 \[
 U_a(x,y) = \log x + y, \quad U_b(x,y) = 2 \log x + \log y, \quad w_a = (1,1), \ w_b=(2,2).
@@ -657,7 +667,7 @@ U_a(x,y) = \log x + y, \quad U_b(x,y) = 2 \log x + \log y, \quad w_a = (1,1), \ 
 </div>
 <div class="section" id="id2">
 <h2>Задача 2 (5 баллов): один плюс один<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p>Рассмотрим экономику, в которой есть один агент и одна фирма, которой владеет этот агент. Фирма подчиняется технологии <span class="math notranslate nohighlight">\(F(y_1, y_2) \geqslant 0\)</span>, а вектор запасов равен <span class="math notranslate nohighlight">\(w\)</span>:</p>
+<p>Рассмотрим экономику, в которой есть один агент и одна фирма, которой владеет этот агент. Агент потребляет <span class="math notranslate nohighlight">\(x_1, x_2\)</span> а фирма производит <span class="math notranslate nohighlight">\(y_1, y_2\)</span> (хотя один из двух <span class="math notranslate nohighlight">\(y_k\)</span> будет отрицательный, то есть это фактор). Фирма подчиняется технологии <span class="math notranslate nohighlight">\(F(y_1, y_2) \geqslant 0\)</span>, обратим внимание что без производства <span class="math notranslate nohighlight">\(F(0,0) = 0\)</span>, а вектор запасов равен <span class="math notranslate nohighlight">\(w\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[
 U(x_1,x_2) = 2 x_1 + x_2, \quad F(y_1, y_2) = - 3 + 2 \sqrt{1-y_1} + \sqrt{1-y_2}, \quad w = (1,1).
@@ -673,7 +683,7 @@ U(x_1,x_2) = 2 x_1 + x_2, \quad F(y_1, y_2) = - 3 + 2 \sqrt{1-y_1} + \sqrt{1-y_2
 </div>
 <div class="section" id="id3">
 <h2>Задача 3 (5 баллов): три плюс ноль<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
-<p>Рассмотрим экономику, в которой есть три агента с функциями полезности</p>
+<p>Рассмотрим экономику, в которой есть три агента с функциями полезности, зависящих от <span class="math notranslate nohighlight">\(x,y\)</span> (xотя можно было бы использовать обозначения <span class="math notranslate nohighlight">\(x_a, y_a, x_b, y_b, x_c, y_c\)</span>, но это не должно вас смущать)</p>
 <div class="math notranslate nohighlight">
 \[
 U_a(x,y) = \log x + \log y, \quad U_b(x,y) = 2 \log x + \log y, \quad U_c = \min(x,2y).
@@ -697,14 +707,19 @@ w_a = (1,0), \quad w_b = (0,1), \quad w_c = (1,1).
 <p>Рассмотрим экономику, в которой есть два агента с функциями полезности</p>
 <div class="math notranslate nohighlight">
 \[
-U_a(x_1, x_2) = \log x_1 + 3 \log x_1, \quad U_b(x,y) = \log x_1 + \log x_2, \quad w_a = (1,2), \ w_b = (2,1)
+U_a(x_1, x_2) = \log x_1 + 3 \log x_1, \quad U_b(x_1,x_2) = \log x_1 + \log x_2\]</div>
+<p>и начальными запасами</p>
+<div class="math notranslate nohighlight">
+\[
+w_a = (1,2), \ w_b = (2,1)
 \]</div>
 <p>и две фирмы с технологиями <span class="math notranslate nohighlight">\(F(y_1, y_2) \leqslant 1\)</span> и <span class="math notranslate nohighlight">\(G(y_1, y_2) \leqslant 1\)</span> соответственно:</p>
 <div class="math notranslate nohighlight">
 \[
-F(y_1, y_2) = y_1^2 + 2 y_2^2, \quad G(y_1, y_2) = 2 y_1^2 + y_2^2.
+F(y_1, y_2) = y_1^2 + y_2^2, \quad G(y_1, y_2) = y_1 + y_2.
 \]</div>
-<p><em>Обратите внимание, что благодаря единичке у фирм есть ресурсы, чтобы производить положительные количества обоих товаров.</em></p>
+<p>Обратите внимание, что благодаря единичке у фирм есть (необьяснимые) ресурсы, чтобы производить положительные количества обоих товаров. К примеру, каждая фирма может произвести 1 первого товара или 1 второго товара.</p>
+<p>Наконец, каждый агент владеет 50% доли каждой из фирм.</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>(1 балл) Вычислите совместную технологическую границу.</p></li>
