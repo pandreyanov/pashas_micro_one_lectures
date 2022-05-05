@@ -88,6 +88,7 @@ parts:
     - file: week_12/seminar_13
 - caption: Тринадцатая неделя
   chapters:
+    - file: week_13/seminar_14
     - file: week_13/homework_5
 - caption: Четырнадцатая неделя
   chapters:
