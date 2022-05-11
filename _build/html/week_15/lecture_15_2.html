@@ -629,6 +629,28 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id6">
+   Добровольное финансирование
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+     Посчитаем неизвестные
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id8">
+     Посчитаем уравнения
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id9">
+     Как решать?
+    </a>
+   </li>
+  </ul>
+ </li>
 </ul>
 
             </nav>
@@ -679,6 +701,28 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id6">
+   Добровольное финансирование
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+     Посчитаем неизвестные
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id8">
+     Посчитаем уравнения
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id9">
+     Как решать?
+    </a>
+   </li>
+  </ul>
+ </li>
 </ul>
 
                         </nav>
@@ -690,7 +734,7 @@ const thebe_selector_output = ".output, .cell_output"
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="id1">
 <h1>Пятнадцатая лекция, часть 2<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<p>Цегодня мы изучим новый тип равновесия, называемое <strong>pавновесием Нэша</strong>.</p>
+<p>Цегодня мы изучим новый тип равновесия, называемое <strong>pавновесием Нэша</strong>, и применим его к задаче финансирования общественного блага.</p>
 <div class="section" id="id2">
 <h2>Равновесие Нэша<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <p>Два преступника ограбили банк, но у шерифа недостаточно доказательств, он может только предьявить им незаконное хранение оружия. Шериф предлагает каждому преступнику сделку - признаться и выйти на свободу, если второй будет молчать. Если оба признаются - срок будет средним, а если никто не признаются, то совсем маленьким.</p>
@@ -826,6 +870,93 @@ const thebe_selector_output = ".output, .cell_output"
 <p class="card-text">Получаем</p>
 <div class="math notranslate nohighlight">
 \[ Q = \frac{\sum_j (100 - c_j)}{2n + 1}\]</div>
+</div>
+</details></div>
+</div>
+<div class="section" id="id6">
+<h2>Добровольное финансирование<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<p>Для простоты, пусть одна специальная фирма <span class="math notranslate nohighlight">\(j^{\ast}\)</span> занимается производством одного общественного блага из частных.</p>
+<div class="proof definition admonition" id="definition-2">
+<p class="admonition-title"><span class="caption-number">Definition 73 </span></p>
+<div class="definition-content section" id="proof-content">
+<p>Равновесием Вальраса с добровольным финансированием это <span class="math notranslate nohighlight">\((\vec p, \vec x, \vec y, z, \vec t)\)</span>, где <span class="math notranslate nohighlight">\(z\)</span>-общественное благо, такие что</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\((\vec x, \vec y, z)\)</span> это допустимое состояние экономики</p></li>
+<li><p>каждый агент <span class="math notranslate nohighlight">\(i\)</span> делает взнос <span class="math notranslate nohighlight">\(t_i\)</span> на производство общ. блага, который является наилучшим ответом на взносы других агентов</p></li>
+<li><p>каждый производитель частного блага <span class="math notranslate nohighlight">\(y\)</span> максимизирует прибыль, а доли фирм распределены между агентами</p></li>
+<li><p>специальная фирма тратит все взносы на производство общественного блага, согласно своей (эффективной) технологии, то есть, ее прибыль равна нулю.</p></li>
+</ul>
+</div>
+</div><div class="section" id="id7">
+<h3>Посчитаем неизвестные<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<p>Неизвестных:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(K-1\)</span> цен частных благ</p></li>
+<li><p><span class="math notranslate nohighlight">\((I+J) \cdot K\)</span> координат потребления и производства</p></li>
+<li><p><span class="math notranslate nohighlight">\(I+J\)</span> множителей Лагранжа</p></li>
+<li><p><span class="math notranslate nohighlight">\(I\)</span> добровольных взносов</p></li>
+<li><p><span class="math notranslate nohighlight">\(1\)</span> координата общественного блага</p></li>
+</ul>
+</div>
+<div class="section" id="id8">
+<h3>Посчитаем уравнения<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<p>Уравнений:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(K\)</span> товарных равенств</p></li>
+<li><p><span class="math notranslate nohighlight">\((I+J) \cdot K\)</span> стандартных условой первого порядка</p></li>
+<li><p><span class="math notranslate nohighlight">\(I-1\)</span> законов вальраса</p></li>
+<li><p><span class="math notranslate nohighlight">\(J\)</span> условой оптимальности фирм</p></li>
+<li><p><span class="math notranslate nohighlight">\(I\)</span> дополнительных условий первого порядка</p></li>
+<li><p>прибыль специальной фирмы равна нулю</p></li>
+</ul>
+</div>
+<div class="section" id="id9">
+<h3>Как решать?<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<p>Я рекомендую подставлять технологию производства общественного блага прямиком в полезность агента, например…</p>
+<ul class="simple">
+<li><p>есть одно частное благо <span class="math notranslate nohighlight">\(x\)</span> (его производство обозначим  <span class="math notranslate nohighlight">\(y\)</span>) и одно общественное благо <span class="math notranslate nohighlight">\(z\)</span></p></li>
+<li><p>есть два агента с одинаковыми полезностями <span class="math notranslate nohighlight">\(\log x + z\)</span></p></li>
+<li><p>у каждого агента единица частного блага</p></li>
+<li><p>фирма производит общественное благо по технологии
+$<span class="math notranslate nohighlight">\( z = \log(-y), \quad -y p = t_1 + t_2\)</span>$</p></li>
+</ul>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Попробуем…<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Запишем полезность первого агента:
+$<span class="math notranslate nohighlight">\( \log x_1 + \log(\frac{t_1 + t_2}{p}) \to \max_{x_1,t_1}, \quad p x_1 + t_1 \leqslant p\)</span>$</p>
+<p class="card-text">или</p>
+<div class="math notranslate nohighlight">
+\[ \log(\frac{p-t_1}{p}) + \log(\frac{t_1 + t_2}{p}) \to \max_{t_1}\]</div>
+<p class="card-text">Запишем полезность второго агента:
+$<span class="math notranslate nohighlight">\( \log x_2 + \log(\frac{t_1 + t_2}{p}) \to \max_{x_2,t_2}, \quad p x_2 + t_2 \leqslant p\)</span>$</p>
+<p class="card-text">или</p>
+<div class="math notranslate nohighlight">
+\[ \log(\frac{p-t_2}{p}) + \log(\frac{t_1 + t_2}{p}) \to \max_{t_2}\]</div>
+<p class="card-text">Заметьте, что мы воспользовались двумя законами вальраса, поэтому нам уже не понадобится единственное товарное равенство: <span class="math notranslate nohighlight">\(x_1 + x_2 + y = 2\)</span> .</p>
+<p class="card-text">Далее оптимизируем по <span class="math notranslate nohighlight">\(t_1, t_2\)</span>, получаем</p>
+<div class="math notranslate nohighlight">
+\[ \frac{1}{p-t_1} = \frac{1}{t_1 + t_2} = \frac{1}{p-t_2}\]</div>
+<p class="card-text">или</p>
+<div class="math notranslate nohighlight">
+\[ p-t_1 = t_1 + t_2 = p-t_2\]</div>
+<p class="card-text">что попросту значит</p>
+<div class="math notranslate nohighlight">
+\[ T = t_1 + t_2 = 2 p /3, \quad t_1 = t_2 = p - T = p/3.\]</div>
+</div>
+</details><p>Далее, по законам вальраса <span class="math notranslate nohighlight">\(x_1 = x_2 = 2/3\)</span> и значит <span class="math notranslate nohighlight">\(y = -2/3\)</span> ушло на производство общественного блага <span class="math notranslate nohighlight">\(z = \log(2/3)\)</span>.</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Как определить цену <span class="math notranslate nohighlight">\(p\)</span>?<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Она норируется к единице.</p>
 </div>
 </details></div>
 </div>
