@@ -49,6 +49,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
     <script>mermaid.initialize({startOnLoad:true});</script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -592,6 +594,34 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   Равновесие Линдаля
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   Пример
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id4">
+   Нейтральность денег
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id5">
+   Общий случай
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -604,6 +634,34 @@ const thebe_selector_output = ".output, .cell_output"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   Равновесие Линдаля
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   Пример
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id4">
+   Нейтральность денег
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id5">
+   Общий случай
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -612,6 +670,97 @@ const thebe_selector_output = ".output, .cell_output"
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="id1">
 <h1>Пятнадцатая лекция, часть 1<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id2">
+<h2>Равновесие Линдаля<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>Напомним себе, что равновесие Линдаля отличается от классического равновесия тем, что появляются общественные блага, цены на них и дополнительное условие (уравнение Самуэльсона). В случае частных благ все потребители сталкиваются с одинаковыми ценами и выбирают разные объемы потребления, в случае общественных благ все наоборот: потребители сталкиваются с разными ценами и имеют одинаковые объемы потребления. Причем, одинаковые объемы общественного блага выбираются независимо, за это отвечают цены.</p>
+</div>
+<div class="section" id="id3">
+<h2>Пример<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>есть одно частное благо <span class="math notranslate nohighlight">\(x\)</span> (его производство обозначим  <span class="math notranslate nohighlight">\(y\)</span>) и одно общественное благо <span class="math notranslate nohighlight">\(z\)</span></p></li>
+<li><p>есть два агента с одинаковыми полезностями <span class="math notranslate nohighlight">\(\log x + z\)</span></p></li>
+<li><p>у каждого агента единица частного блага</p></li>
+<li><p>фирма производит общественное благо по технологии
+$<span class="math notranslate nohighlight">\( z = \log(-y)\)</span>$</p></li>
+<li><p>доли одинаковые</p></li>
+</ul>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Попробуем решить<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Отнормируем цену частного блага к 1 а цену общественного блага для производителя назовем <span class="math notranslate nohighlight">\(q_0\)</span>.</p>
+<p class="card-text">Решим, для начала, задачу фирмы</p>
+<div class="math notranslate nohighlight">
+\[\pi = q_0 \cdot \log(-y) + y \to \max_y\]</div>
+<div class="math notranslate nohighlight">
+\[ q_0/y = -1, \quad \Rightarrow \quad y = -q_0, \quad \pi = \log q_0 - q_0\]</div>
+<p class="card-text">Теперь решим задачу потребителя <span class="math notranslate nohighlight">\(i\)</span> (с ценой <span class="math notranslate nohighlight">\(q_i\)</span>)</p>
+<div class="math notranslate nohighlight">
+\[ \log x + z \to \max_{x,z}, \quad s.t. \quad x + q_i z \leqslant 1 + \frac{\pi}{2}\]</div>
+<div class="math notranslate nohighlight">
+\[ \log x + \frac{1 + \frac{\pi}{2} - x}{q_i} \to \max_x\]</div>
+<div class="math notranslate nohighlight">
+\[ q_i\log x - x \to \max_x\]</div>
+<div class="math notranslate nohighlight">
+\[ \frac{q_i}{x} - 1 = 0\]</div>
+</div>
+</details><p>Получается, что</p>
+<div class="math notranslate nohighlight">
+\[ y^{\ast} = -q_0, \quad x_1^{\ast} = q_1, \quad x_2^{\ast} = q_2, \quad z_i^{\ast} = \frac{1 + \frac{\log q_0 - q_0}{2} - x^{\ast}_i}{q_i}\]</div>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Какие уравнения нам еще понадобятся?<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">На три неизвестные <span class="math notranslate nohighlight">\(q_0, q_1, q_2\)</span> у нас три уравнения:</p>
+<div class="math notranslate nohighlight">
+\[x_1 + x_2 = 2 + y\]</div>
+<div class="math notranslate nohighlight">
+\[z = \log(-y)\]</div>
+<div class="math notranslate nohighlight">
+\[q_1 + q_1 = q_0\]</div>
+<p class="card-text">Нам повезло, смотрите</p>
+<div class="math notranslate nohighlight">
+\[ 2 - q_0 = 2 + y = x_1 + x_2 = q_1 + q_2 = q_0\]</div>
+<p class="card-text">Соответственно <span class="math notranslate nohighlight">\(q_0 = 1\)</span>. Дальше можно догадаться, что <span class="math notranslate nohighlight">\(q_1 = q_2 = 1/2\)</span>.</p>
+</div>
+</details></div>
+<div class="section" id="id4">
+<h2>Нейтральность денег<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p>Возникает вопрос, а что будет, если Уравнение Самуэльсона нарушить? Также у нас остался вопрос с прошлых лекций - что вудет, если сумма трансфертов не будет равняться нулю? И что будет, если не перераспределять прибыли между агентами.</p>
+<p>Дело в том, что при доказательстве существования равновесия на симплексе я опирался на следующее равенство:</p>
+<div class="math notranslate nohighlight">
+\[ \vec p E(\vec p) = 0\]</div>
+<p>Напомню, что при выводе использовался тот факт, что доли фирм суммируются в единицу</p>
+<div class="math notranslate nohighlight">
+\[ (1) \quad \sum_i \gamma_{ij} = 1\]</div>
+<p>Также, легко видеть что нам необходимо чтобы трансферты суммировались в ноль</p>
+<div class="math notranslate nohighlight">
+\[ (2) \quad \sum T_i = 0\]</div>
+<p>Также (в случае общ. блага) нам необходимо Уравнение Самуэльсона</p>
+<div class="math notranslate nohighlight">
+\[ (3) \quad \sum q_i = q_0\]</div>
+<p>поскольку оно гарантирует, что расходы (потребителей) на общественное благо равны доходам (фирм):</p>
+<div class="math notranslate nohighlight">
+\[ \sum q_i z = q_0 z\]</div>
+<p>Все эти условия гарантируют, что</p>
+<ul class="simple">
+<li><p>умножение всех цен на константу не меняет координаты товаров</p></li>
+<li><p>без огранчения общности, одну цену частного товара можно приравнять к 1</p></li>
+<li><p>товарные равенства и законы вальраса линейно зависимы</p></li>
+</ul>
+<p>То, что умножение всех цен на константу не меняет координаты товаров - очень естественное свойство, которое приятно иметь в модели. Нормировка и линейная зависимость - это плата за гарантию такого свойства.</p>
+</div>
+<div class="section" id="id5">
+<h2>Общий случай<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<p>В общем случае, когда любое из трех условий <span class="math notranslate nohighlight">\((1),(2),(3)\)</span> нарушается, мы теряем нейтралность денег. В добавок, цену товара больше нельзя нормировать к единице, и нельзя выбрасывать последний закон вальраса.</p>
+<p>В принципе, мы возвращаемся к ситуации, в которой число неизвестных равно числу уравнений. Доказательство существования равновесия перестает работать, хотя, наверное, его можно починить.</p>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
