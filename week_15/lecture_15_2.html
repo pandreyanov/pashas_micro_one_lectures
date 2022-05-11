@@ -611,20 +611,16 @@ const thebe_selector_output = ".output, .cell_output"
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#id4">
-     Рыбаки
+     Два рыбака
     </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id5">
-       Специальный случай: 2 рыбака
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#n">
-       Общий случай: n рыбаков
-      </a>
-     </li>
-    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#n">
+     <span class="math notranslate nohighlight">
+      \(n\)
+     </span>
+     рыбаков
+    </a>
    </li>
   </ul>
  </li>
@@ -660,20 +656,16 @@ const thebe_selector_output = ".output, .cell_output"
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#id4">
-     Рыбаки
+     Два рыбака
     </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id5">
-       Специальный случай: 2 рыбака
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#n">
-       Общий случай: n рыбаков
-      </a>
-     </li>
-    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#n">
+     <span class="math notranslate nohighlight">
+      \(n\)
+     </span>
+     рыбаков
+    </a>
    </li>
   </ul>
  </li>
@@ -735,9 +727,7 @@ const thebe_selector_output = ".output, .cell_output"
 <h2>Трагедии общин<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <p>При помощи равновесия Нэша удобно исследовать феномен чрезмерного расходования общественных благ.</p>
 <div class="section" id="id4">
-<h3>Рыбаки<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="id5">
-<h4>Специальный случай: 2 рыбака<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
+<h3>Два рыбака<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
 <p>Предположим, что каждый рыбак выбирает время <span class="math notranslate nohighlight">\(x\)</span> которое он потратит на вылов рыбы. Каждый рыбак полычит <span class="math notranslate nohighlight">\(x_i(100-x_1-x_2)\)</span> килограммов рыбы и продаст их по <span class="math notranslate nohighlight">\(p\)</span> рублей за килограмм.</p>
 <p>В равновесии нэша каждый игрок максимизирует свою полезность по своему (но не чужому) действию</p>
 <div class="math notranslate nohighlight">
@@ -765,8 +755,19 @@ const thebe_selector_output = ".output, .cell_output"
 <p>Получается, что суммарный оптимальный вылов равен <span class="math notranslate nohighlight">\(200/4\)</span>, что гораздо меньше чем <span class="math notranslate nohighlight">\(200/3\)</span>. Таким образом, мы показали, что равновесие нэша перерасходует общественное благо (пруд).</p>
 </div>
 <div class="section" id="n">
-<h4>Общий случай: n рыбаков<a class="headerlink" href="#n" title="Permalink to this headline">¶</a></h4>
-</div>
+<h3><span class="math notranslate nohighlight">\(n\)</span> рыбаков<a class="headerlink" href="#n" title="Permalink to this headline">¶</a></h3>
+<p>Выпишем полезности:</p>
+<div class="math notranslate nohighlight">
+\[ U_i(x_i) = p x_i(100-X), \ i = 1, \ldots, n, \ X = \sum x_i\]</div>
+<p>Выпишем условия первого порядка:</p>
+<div class="math notranslate nohighlight">
+\[ x_i = 100 - X, \ i = 1, \ldots, n\]</div>
+<p>Сложим их вместе и посчитаем равновесие:</p>
+<div class="math notranslate nohighlight">
+\[ X = n (100 - X) \quad \Rightarrow \quad X^{\ast} = \frac{100 n}{n+1} \quad \Rightarrow \quad x^{\ast}_i = \frac{100}{n+1}.\]</div>
+<p>А оптимальное <span class="math notranslate nohighlight">\(X\)</span> по прежнему равно <span class="math notranslate nohighlight">\(100/2\)</span>. Более того, легко видеть, что суммарная полезность агентов в равновесии Нэша стремится к нулю, когда <span class="math notranslate nohighlight">\(n \to \infty\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[ \sum U^{\ast} = p 100^2 \frac{n}{(n+1)^2} \to 0\]</div>
 </div>
 </div>
 </div>
