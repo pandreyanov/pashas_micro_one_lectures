@@ -785,7 +785,49 @@ const thebe_selector_output = ".output, .cell_output"
 <p>Также, издержки на производство муки равны <span class="math notranslate nohighlight">\(c_i q_i\)</span>. Таким образом, полезность каждого агента:</p>
 <div class="math notranslate nohighlight">
 \[ U_i(q_i) = (100 - Q)q_i - c_i q_i\]</div>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Найдем равновесие Нэша<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Выпишем условия первого порядка</p>
+<div class="math notranslate nohighlight">
+\[100 - Q - q_i - c_i = 0.\]</div>
+<div class="math notranslate nohighlight">
+\[q_i = 100 - Q - c_i\]</div>
+<p class="card-text">Просуммируем</p>
+<div class="math notranslate nohighlight">
+\[ Q = n(100 - Q) - \sum c_j\]</div>
+<div class="math notranslate nohighlight">
+\[ Q = \frac{100n - \sum_j c_j}{n+1} = \frac{\sum_j(100 - c_j)}{n+1}\]</div>
+<div class="math notranslate nohighlight">
+\[ q_i = (100 - c_i) - \frac{\sum_j (100 - c_j)}{n+1}\]</div>
 </div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Найдем оптимальный выпуск<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Запишем суммарную полезнось как</p>
+<div class="math notranslate nohighlight">
+\[ 
+\sum_i (100- Q - c_i)q_i
+\]</div>
+<p class="card-text">Выпишем условия первого порядка</p>
+<div class="math notranslate nohighlight">
+\[q_i = 100 - Q - c_i - \sum_j q_j = 100 - 2Q - c_i\]</div>
+<p class="card-text">Просуммируем</p>
+<div class="math notranslate nohighlight">
+\[ (2n + 1)Q = 100n - \sum_j c_i\]</div>
+<p class="card-text">Получаем</p>
+<div class="math notranslate nohighlight">
+\[ Q = \frac{\sum_j (100 - c_j)}{2n + 1}\]</div>
+</div>
+</details></div>
 </div>
 </div>
 
