@@ -99,6 +99,8 @@ parts:
   chapters:
     - file: week_16/lecture_16_1
     - file: week_16/lecture_16_2
+    - file: week_16/homework_6
+    - file: week_16/seminar_17
 - caption: Мат. шпаргалка
   chapters:
     - file: cheetsheet/differentials
