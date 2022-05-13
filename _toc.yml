@@ -95,11 +95,13 @@ parts:
     - file: week_14/lecture_14_1
     - file: week_14/lecture_14_2
     - file: week_14/seminar_15
+- caption: Пятнадцатая неделя
+  chapters:
+    - file: week_15/lecture_16_1
+    - file: week_15/lecture_16_2
+    - file: week_15/homework_6
 - caption: Шеснадцатая неделя
   chapters:
-    - file: week_16/lecture_16_1
-    - file: week_16/lecture_16_2
-    - file: week_16/homework_6
     - file: week_16/seminar_17
 - caption: Мат. шпаргалка
   chapters:
