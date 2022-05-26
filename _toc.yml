@@ -100,9 +100,12 @@ parts:
     - file: week_15/lecture_16_1
     - file: week_15/lecture_16_2
     - file: week_15/homework_6
-- caption: Шеснадцатая неделя
+- caption: Шестнадцатая неделя
   chapters:
     - file: week_16/seminar_17
+- caption: Семнадцатая неделя
+  chapters:
+    - file: week_17/homework_7
 - caption: Мат. шпаргалка
   chapters:
     - file: cheetsheet/differentials
