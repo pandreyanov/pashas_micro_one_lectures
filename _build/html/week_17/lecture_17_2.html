@@ -794,16 +794,19 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 <div class="section" id="id3">
 <h2>Пример 1<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
-<p>Есть две страны с одинаковыми потребителями (можно считать что в каждой стране ровно один человек) с полезностями <span class="math notranslate nohighlight">\(U(x,y) = \log x + \log y\)</span>, но разными технологическими множествами (по сути, двумя разными фирмами) <span class="math notranslate nohighlight">\(F_1, F_2\)</span> в <span class="math notranslate nohighlight">\(\mathbb{R}^2_{+}\)</span>:
-$<span class="math notranslate nohighlight">\( F_1 = \{X + Y/2 \leqslant 1\}, \quad F_2 = \{X/2 + Y \leqslant 1\}\)</span><span class="math notranslate nohighlight">\(
-то есть, у первой страны есть преимущество в производстве товара \)</span>y<span class="math notranslate nohighlight">\(, а у второй в производстве товара \)</span>x$. Начальные запасы не важны, можно считать что это любая точка на границе технологического множества.</p>
+<p>Есть две страны с одинаковыми потребителями (можно считать что в каждой стране ровно один человек) с полезностями <span class="math notranslate nohighlight">\(U(x,y) = \log x + \log y\)</span>, но разными технологическими множествами (по сути, двумя разными фирмами) <span class="math notranslate nohighlight">\(F_1, F_2\)</span> в <span class="math notranslate nohighlight">\(\mathbb{R}^2_{+}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[ F_1 = \{X + Y/2 \leqslant 1\}, \quad F_2 = \{X/2 + Y \leqslant 1\}\]</div>
+<p>то есть, у первой страны есть преимущество в производстве товара <span class="math notranslate nohighlight">\(y\)</span>, а у второй в производстве товара <span class="math notranslate nohighlight">\(x\)</span>. Начальные запасы не важны, можно считать что это любая точка на границе технологического множества.</p>
 <p>Пусть цена товара <span class="math notranslate nohighlight">\(x\)</span> нормирована к 1, а цена товара <span class="math notranslate nohighlight">\(y\)</span> равна <span class="math notranslate nohighlight">\(q\)</span>.</p>
 <div class="section" id="id4">
 <h3>1. Найдем равновесие в автаркии<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
-<p>Дифференциальное условие для первой страны можно записать как
-$<span class="math notranslate nohighlight">\( \frac{1/x}{1/y} = \frac{1}{1/2} = \frac{1}{q} \quad \Rightarrow \quad q = 1/2, \ y = 2x\)</span>$</p>
-<p>Дифференциальное условие для второй страны страны можно записать как
-$<span class="math notranslate nohighlight">\( \frac{1/x}{1/y} = \frac{1/2}{1} = \frac{1}{q} \quad \Rightarrow \quad q = 2, \ y = x/2\)</span>$</p>
+<p>Дифференциальное условие для первой страны можно записать как</p>
+<div class="math notranslate nohighlight">
+\[ \frac{1/x}{1/y} = \frac{1}{1/2} = \frac{1}{q} \quad \Rightarrow \quad q = 1/2, \ y = 2x\]</div>
+<p>Дифференциальное условие для второй страны страны можно записать как</p>
+<div class="math notranslate nohighlight">
+\[ \frac{1/x}{1/y} = \frac{1/2}{1} = \frac{1}{q} \quad \Rightarrow \quad q = 2, \ y = x/2\]</div>
 <p>Подставляя в соответствующие технологические границы, мы получаем координаты <span class="math notranslate nohighlight">\((1/2,1)\)</span> для первой страны и <span class="math notranslate nohighlight">\((1/2,1)\)</span> для второй. При этом, полезности в каждой стране равны <span class="math notranslate nohighlight">\(\log(1/2) + \log(1)\)</span>.</p>
 </div>
 <div class="section" id="id5">
@@ -815,9 +818,10 @@ $<span class="math notranslate nohighlight">\( \frac{1/x}{1/y} = \frac{1/2}{1} =
 <p>Если международная торговля разрешена, то цены должны прийти в равновесие Вальраса, которое, как известно, является Парето оптимальным. Это значит, что две фирмы, которые раньше работали отдельно теперь будут оптимально распределять производство, как если бы находились в руках у одного собственника.</p>
 <p>Получается, что для того, чтобы определить общий уровень производства <span class="math notranslate nohighlight">\(X,Y\)</span>, нужно промаксимизировать <span class="math notranslate nohighlight">\(2(\log \frac{X}{2} + \log \frac{Y}{2})\)</span> против совместного технологического множества (мы воспользуемся догадкой о том, что каждый агент потребит ровно половину произведенных товаров <span class="math notranslate nohighlight">\(X,Y\)</span>).</p>
 <p>** здесь будет картинка **</p>
-<p>Легко видеть, что общее производство должно быть на уровне <span class="math notranslate nohighlight">\((X,Y) = (2,2)\)</span> и, поскольку каждый агент потребит половину, цены установятся согласно дифференцияльной характеристике:
-$<span class="math notranslate nohighlight">\( \frac{1/x}{1/y} = \frac{1}{1} = \frac{1}{q} \quad \Rightarrow \quad q = 1,\)</span><span class="math notranslate nohighlight">\(
-то есть, как раз между \)</span>1/2<span class="math notranslate nohighlight">\( и \)</span>2$.</p>
+<p>Легко видеть, что общее производство должно быть на уровне <span class="math notranslate nohighlight">\((X,Y) = (2,2)\)</span> и, поскольку каждый агент потребит половину, цены установятся согласно дифференцияльной характеристике:</p>
+<div class="math notranslate nohighlight">
+\[ \frac{1/x}{1/y} = \frac{1}{1} = \frac{1}{q} \quad \Rightarrow \quad q = 1,\]</div>
+<p>то есть, как раз между <span class="math notranslate nohighlight">\(1/2\)</span> и <span class="math notranslate nohighlight">\(2\)</span>.</p>
 </div>
 <div class="section" id="id7">
 <h3>4. Подведем итог<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
@@ -833,10 +837,12 @@ $<span class="math notranslate nohighlight">\( \frac{1/x}{1/y} = \frac{1}{1} = \
 <p>Будет ли торговля оптимальной тогда?</p>
 <div class="section" id="id9">
 <h3>1. Найдем равновесие в автаркии<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
-<p>Так же как и в первом примере, дифференциальное условие для первой страны можно записать как
-$<span class="math notranslate nohighlight">\( \frac{1/x}{1/y} = \frac{1}{1/2} = \frac{1}{q} \quad \Rightarrow \quad q = 1/2, \ y = 2x\)</span>$</p>
-<p>Дифференциальное условие для второй страны страны можно записать как
-$<span class="math notranslate nohighlight">\( \frac{1/x}{1/y} = \frac{1/2}{1} = \frac{1}{q} \quad \Rightarrow \quad q = 2, \ y = x/2\)</span>$</p>
+<p>Так же как и в первом примере, дифференциальное условие для первой страны можно записать как</p>
+<div class="math notranslate nohighlight">
+\[ \frac{1/x}{1/y} = \frac{1}{1/2} = \frac{1}{q} \quad \Rightarrow \quad q = 1/2, \ y = 2x\]</div>
+<p>Дифференциальное условие для второй страны страны можно записать как</p>
+<div class="math notranslate nohighlight">
+\[ \frac{1/x}{1/y} = \frac{1/2}{1} = \frac{1}{q} \quad \Rightarrow \quad q = 2, \ y = x/2\]</div>
 <p>Подставляя в соответствующие технологические границы, мы получаем координаты <span class="math notranslate nohighlight">\((1/2,1)\)</span> для первой страны и <span class="math notranslate nohighlight">\((2,1)\)</span> для второй.</p>
 </div>
 <div class="section" id="id10">
