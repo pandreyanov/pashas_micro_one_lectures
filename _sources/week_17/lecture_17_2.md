@@ -40,7 +40,7 @@ $$ \frac{1/x}{1/y} = \frac{1/2}{1} = \frac{1}{q} \quad \Rightarrow \quad q = 2, 
 
 :::{image} ./pic1.png
 :alt: совместное технологическое множество
-:width: 400px
+:width: 300px
 :align: center
 :::
 
@@ -56,7 +56,7 @@ $$ \frac{1/x}{1/y} = \frac{1}{1} = \frac{1}{q} \quad \Rightarrow \quad q = 1,$$
 
 :::{image} ./pic2.png
 :alt: равновесие с международной торговлей
-:width: 400px
+:width: 500px
 :align: center
 :::
 
