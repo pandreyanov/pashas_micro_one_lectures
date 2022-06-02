@@ -8,7 +8,7 @@
 
 Рассмотрим экономику с тремя странами: $A,B,C$. Полезность во всех трех странах одинаковая: $\log x + \log y$, где $x,y$ это частные блага. Производственные множества в странах $A,C$ описываются уравнениями
 
-$$ \frac{X_a}{\alpha} + Y_a \leqslant 1, \quad X_b + \frac{Y_a}{\alpha} \leqslant 1, \quad \alpha > 1$$
+$$ \frac{X_a}{\alpha} + Y_a \leqslant 1, \quad X_c + \frac{Y_c}{\alpha} \leqslant 1, \quad \alpha > 1$$
 
 Страна $B$ сама не обладает технологиями но имеет запасы 
 
