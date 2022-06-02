@@ -109,6 +109,9 @@ parts:
     - file: week_17/lecture_17_2
     - file: week_17/homework_7
     - file: week_17/seminar_19
+- caption: Восемнадцатая неделя
+  chapters:
+    - file: week_18/homework_8
 - caption: Мат. шпаргалка
   chapters:
     - file: cheetsheet/differentials
