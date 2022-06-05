@@ -112,6 +112,7 @@ parts:
 - caption: Восемнадцатая неделя
   chapters:
     - file: week_18/homework_8
+    - file: week_18/seminar_20
 - caption: Мат. шпаргалка
   chapters:
     - file: cheetsheet/differentials
