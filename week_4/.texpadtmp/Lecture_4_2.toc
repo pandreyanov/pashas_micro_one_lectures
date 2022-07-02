@@ -1,4 +1,4 @@
-\babel@toc {russian}{}
+\babel@toc {russian}{}\relax 
 \beamer@sectionintoc {1}{Эффекты дохода и замещения}{2}{0}{1}
 \beamer@sectionintoc {2}{Эффект замещения}{7}{0}{2}
 \beamer@sectionintoc {3}{Эффект дохода}{10}{0}{3}
@@ -7,5 +7,5 @@
 \beamer@sectionintoc {6}{Зачем нужны матрицы Слуцкого}{22}{0}{6}
 \beamer@sectionintoc {7}{SE в первом приближении}{25}{0}{7}
 \beamer@sectionintoc {8}{CV во втором приближении}{27}{0}{8}
-\beamer@sectionintoc {9}{Парадокс Геффена}{32}{0}{9}
+\beamer@sectionintoc {9}{Парадокс Гиффена}{32}{0}{9}
 \beamer@sectionintoc {10}{Это была самая сложная лекция}{40}{0}{10}
