@@ -49,12 +49,12 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
     <script>mermaid.initialize({startOnLoad:true});</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Содержание" href="../week_2/intro_2.html" />
-    <link rel="prev" title="Задачи для тренировки" href="practice_1.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -130,7 +130,7 @@ const thebe_selector_output = ".output, .cell_output"
   Первая неделя
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="intro_1.html">
    Содержание
@@ -156,8 +156,8 @@ const thebe_selector_output = ".output, .cell_output"
    Задачи для тренировки
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="homework_1.html">
    Первое домашнее задание
   </a>
  </li>
@@ -655,7 +655,7 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/week_1/homework_1.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/week_1/homework_1_dev.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -680,6 +680,73 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   Первый блок задач (10 баллов = 2%)
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     Задача 1.1 (1 балла)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     Задача 1.2 (2 балла)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id5">
+     Задача 1.3 (2 балла)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id6">
+     Задача 1.4 (5 балла)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id7">
+   Второй блок задач (10 баллов = 2%)
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id8">
+     Задача 2.1 (1 балл)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id9">
+     Задача 2.2 (1 балл)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a">
+     Задача 2.3 (2 баллa)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id10">
+     Задача 2.4 (2 балл)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id11">
+     Задача 2.5 (4 балла)
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -692,6 +759,73 @@ const thebe_selector_output = ".output, .cell_output"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   Первый блок задач (10 баллов = 2%)
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     Задача 1.1 (1 балла)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     Задача 1.2 (2 балла)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id5">
+     Задача 1.3 (2 балла)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id6">
+     Задача 1.4 (5 балла)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id7">
+   Второй блок задач (10 баллов = 2%)
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id8">
+     Задача 2.1 (1 балл)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id9">
+     Задача 2.2 (1 балл)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a">
+     Задача 2.3 (2 баллa)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id10">
+     Задача 2.4 (2 балл)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id11">
+     Задача 2.5 (4 балла)
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -701,6 +835,113 @@ const thebe_selector_output = ".output, .cell_output"
   <div class="tex2jax_ignore mathjax_ignore section" id="id1">
 <h1>Первое домашнее задание<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 <p><em>Домашняя работа сдается строго в формате markdown (.md).</em></p>
+<div class="section" id="id2">
+<h2>Первый блок задач (10 баллов = 2%)<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id3">
+<h3>Задача 1.1 (1 балла)<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>Рассмотрим нео-классическую модель с предпочтениями <span class="math notranslate nohighlight">\(\succcurlyeq\)</span> на множестве альтернатив <span class="math notranslate nohighlight">\(X = \{-2, -1, 1, 2\}\)</span>, заданные графом</p>
+<a class="reference internal image-reference" href="../_images/graph.png"><img alt="Граф предпочтений" class="align-center" src="../_images/graph.png" style="width: 400px;" /></a>
+<p>Заполните матрицу бинарного отношения, а также подберите глобальную функцию (композиция элементарных), которая ее представляет:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} 
+\begin{array}{c|ccc}
+ \succcurlyeq &amp; -2 &amp; -1 &amp; 1 &amp; 2\\
+\hline
+-2  &amp; 1  &amp; * &amp; * &amp; *\\
+-1  &amp; *  &amp; 1 &amp; * &amp; *\\
+1  &amp; *  &amp; *  &amp; 1 &amp; *\\
+2 &amp; *  &amp; * &amp; * &amp; 1\\
+\end{array} \quad \quad \quad \quad U(*) = ?
+\end{split}\]</div>
+</div>
+<div class="section" id="id4">
+<h3>Задача 1.2 (2 балла)<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p>В этой задаче мы хотим, чтобы вы прочитали (неструктурированный)  разговор Ани с мамой и ответили на следующие вопросы.</p>
+<ul class="simple">
+<li><p>можно ли определить предпочтения Ани из текста непротиворечивым образом? о каком множестве альтернатив идет речь? Выпишите предпочтения в виде матрицы</p></li>
+<li><p>Соблюдается ли свойство транзитивности? Поясните.</p></li>
+</ul>
+<p>Привет, мам! Помнишь, я рассказывала тебе, что нам в офис купили вкусный черный чай? Не помнишь? Ну я тогда ещё пила в офисе наш бесплатный кофе каждый день. Да, по три кружки. Да, я все ещё продолжаю пить кофе на работе. Да, у нас есть вода и да, я могу сделать чай с молоком, но я не хочу. Предпочитаю кофе. Что значит, что кофе закончится? Он всегда есть. Маша, наш офис менеджер, всегда его покупает. Хотя в прошлом месяце она болела и кофе закончился, тогда-то я и попробовала чай. Так, о чем это я? Значит на работе купили вкусный чай. А вот к новому году мне в офисе подарили этот чай: черный и зеленый. Он недешёвый, продается только в одном магазине в Москве. Так вот я все праздники пила только этот чай, даже кофе себе не варила, хотя Лёша мне подарил и кофемашину такую же как на работе, и зерна нашёл. Добавляла ли я молоко? Да, я кофе пью только с молоком, но все равно не хотелось. А ты про чай? Нет, я не люблю, ты же знаешь. Да, знаю я, что ты только с молоком пьешь. И что с того? Кстати, черный мне больше понравился, чем зеленый. Так к нам Лена ещё вчера приходила, а я ей специально этот зеленый чай заварила, раз он мне не очень понравился. Так она попросила меня ещё кофе сварить. И вот она целых две кружки выпила, мою и свою, мне так не хотелось кофе. А я понемногу целый чайник зеленого чая выпила. Короче, к чему я это все. Во-первых, без кофе я похудела немного, во-вторых, я тёте Маше решила на день рождения упаковку этого чая подарить, уже отправила тебе. Получишь на почте? Я и тебе подарочек на новый год отправила, но это сюрприз. Про него не буду рассказывать. Ну ладно, мне уже бежать пора, я на работе, перерыв у меня короткий, а кофе сам себя не сделает.</p>
+</div>
+<div class="section" id="id5">
+<h3>Задача 1.3 (2 балла)<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<p>В этой задаче мы хотим, чтобы вы проанализировали нестандартные предпочтения, описывающие поведение группы людей.</p>
+<p>Петя, Вася и Миша втроем снимают квартиру в Москве и хотят договориться о настройках кондиционера зимой. Всего есть три настройки: 1(холодная), 2(нейтральная), 3(жаркая). Петя любит, когда холодно, поэтому его предпочтения 1&gt;2&gt;3. Вася любит когда жарко, поэтому его предпочтения 3&gt;2&gt;1. Миша любит когда ни жарко ни холодно, поэтому его предпочтения 1&gt;2, 1&gt;3, 2=3. Ребята голосуют простым большинством, но Петя основной квартиросьемщик, поэтому его голос - решающий.</p>
+<p>Ответьте на следующие вопросы:</p>
+<ul class="simple">
+<li><p>заполните матрицу их предпочтений на множестве из трех альтернатив 1,2,3</p></li>
+<li><p>являются ли они транзитивными? Поясните</p></li>
+<li><p>можете ли вы представить их полезностью? Поясните</p></li>
+</ul>
+</div>
+<div class="section" id="id6">
+<h3>Задача 1.4 (5 балла)<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<p>В этой задаче мы хотим, чтобы вы прочитали о так называемом Стэнфордском зефирном эксперименте <a class="reference external" href="https://en.wikipedia.org/wiki/Stanford_marshmallow_experiment">https://en.wikipedia.org/wiki/Stanford_marshmallow_experiment</a>, <a class="reference external" href="https://ru.wikipedia.org/wiki/%D0%97%D0%B5%D1%84%D0%B8%D1%80%D0%BD%D1%8B%D0%B9_%D1%8D%D0%BA%D1%81%D0%BF%D0%B5%D1%80%D0%B8%D0%BC%D0%B5%D0%BD%D1%82">https://ru.wikipedia.org/wiki/Зефирный_эксперимент</a>, также <a class="reference external" href="https://anderson-review.ucla.edu/new-study-disavows-marshmallow-tests-predictive-powers/">https://anderson-review.ucla.edu/new-study-disavows-marshmallow-tests-predictive-powers/</a> и <a class="reference external" href="https://www.simplypsychology.org/marshmallow-test.html">https://www.simplypsychology.org/marshmallow-test.html</a>, и написали короткое (&lt;300 слов) эссе. В эссе вам необходимо сагрегировать и пересказать своими словами основные факты из статей (если вы используете собственный источник укажите их) и ответить, кратко и по сути, на следующие вопросы:</p>
+<ul class="simple">
+<li><p>в чем суть эксперимента</p></li>
+<li><p>почему это важно</p></li>
+<li><p>какие выводы были сделаны</p></li>
+<li><p>как это вписывается в тему первой лекции</p></li>
+</ul>
+<p>Последний вопрос - проанализировать тексты критически (то есть рационально, скептически), указать на возможные ошибки и в дизайне эксперимента и, возможно, предложить альтернативные выводы.</p>
+<p>Для подсчета слов используйте <a class="reference external" href="https://wordcounter.net/">https://wordcounter.net/</a>, слишком длинные эссе будут штрафоваться.</p>
+</div>
+</div>
+<div class="section" id="id7">
+<h2>Второй блок задач (10 баллов = 2%)<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id8">
+<h3>Задача 2.1 (1 балл)<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<p>Дозаполните определения выпуклого множества, полезности и предпочтения, постарайтесь не запутаться:</p>
+<ul class="simple">
+<li><p>множество <span class="math notranslate nohighlight">\(X\)</span> выпукло, если для любых <span class="math notranslate nohighlight">\(x,y \in X\)</span>:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\forall \alpha \in (0,1): \quad \alpha x + \ldots\]</div>
+<ul class="simple">
+<li><p>полезность <span class="math notranslate nohighlight">\(U\)</span> выпуклa, если для любых <span class="math notranslate nohighlight">\(x,y \in X\)</span>:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\forall \alpha \in (0,1): \ldots\]</div>
+<ul class="simple">
+<li><p>предпочтения <span class="math notranslate nohighlight">\(\succcurlyeq\)</span> выпуклы, если для любых <span class="math notranslate nohighlight">\(z \in X\)</span> и <span class="math notranslate nohighlight">\(x, y \in L_{+}(x)\)</span>:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[ \forall \alpha \in (0,1): \quad \alpha x + \ldots\]</div>
+</div>
+<div class="section" id="id9">
+<h3>Задача 2.2 (1 балл)<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<p>В этой задаче мы попросим написать короткое доказательство следующего факта: объединение двух выпуклых множеств выпукло; либо привести контрпример.</p>
+<p>В качестве подсказки, мы покажем, как доказать что пересечение двух выпуклых множеств выпукло. Предположим, что <span class="math notranslate nohighlight">\(A,B\)</span> выпуклые множества. Возьмем любые две точки <span class="math notranslate nohighlight">\(a,b\)</span> в их пересечении. Поскольку <span class="math notranslate nohighlight">\(a,b \in A\)</span> то вся хорда <span class="math notranslate nohighlight">\([a,b] \in A\)</span>. Поскольку <span class="math notranslate nohighlight">\(a,b \in B\)</span> то вся хорда <span class="math notranslate nohighlight">\([a,b] \in B\)</span>. Получается, что вся хорда <span class="math notranslate nohighlight">\([a,b] \in A \cap B\)</span>. Значит, <span class="math notranslate nohighlight">\(A \cap B\)</span> выпукло.</p>
+</div>
+<div class="section" id="a">
+<h3>Задача 2.3 (2 баллa)<a class="headerlink" href="#a" title="Permalink to this headline">¶</a></h3>
+<p>Два агента <span class="math notranslate nohighlight">\(a,b\)</span> имеют полезности <span class="math notranslate nohighlight">\(U_a = x+y\)</span> и <span class="math notranslate nohighlight">\(U_b = (x-2)^2 + (y-2)^2\)</span>. Множество алътернатив состоит из трех точек: (1,1), (3,1) и (1,2).</p>
+<ul class="simple">
+<li><p>для каждой точки изобразите (примерно) проходящие через нее линии уровня у каждого агента.</p></li>
+<li><p>для каждой точки найдите и изобразите стрелкой направление, если такое есть, в котором улучшается полезность двух агентов сразу</p></li>
+<li><p>есть ли точка в <span class="math notranslate nohighlight">\(\mathbb{R}^2_+\)</span> которая дает большую полезность каждому агенту, чем любая из трех альтернатив? Если такая точка есть, укажите ее. Если нет, аргументируйте.</p></li>
+</ul>
+<p>Залейте свой рисунок в облако, например, <a class="reference external" href="https://ibb.co/QM9dYyp">https://ibb.co/QM9dYyp</a>.</p>
+</div>
+<div class="section" id="id10">
+<h3>Задача 2.4 (2 балл)<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<p>Используя сначала метод линий уровня, а затем метод Лагранжа (если сможете), решите следующую оптимизационную задачу:</p>
+<div class="math notranslate nohighlight">
+\[ 
+\min(x, y) \to \max_{(x,y) \in \mathbb{R}^2_{+}} \quad s.t. \quad x + q y \leqslant 1
+\]</div>
+<p>Является ли эта задача выпуклой?</p>
+</div>
+<div class="section" id="id11">
+<h3>Задача 2.5 (4 балла)<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<p>Рассмотрим полезность вида <span class="math notranslate nohighlight">\(U(x, y) = x^{\alpha} y^{\beta}\)</span> в пространстве  альтернатив <span class="math notranslate nohighlight">\(\mathbb{R}^2_{+}\)</span>, то есть, <span class="math notranslate nohighlight">\(x, y&gt;0\)</span>.</p>
+<ul class="simple">
+<li><p>Используя <em>Гессиан</em>, найдите все <span class="math notranslate nohighlight">\(\alpha, \beta &gt;0\)</span> такие, что полезность вогнутая.</p></li>
+<li><p>Используя <em>Окаймленный Гессиан</em>, найдите все  <span class="math notranslate nohighlight">\(\alpha, \beta&gt;0\)</span> при которых полезность квазивогнутая.</p></li>
+</ul>
+<p>Пользуйтесь строгими версиями вогнутости или критерия Сильвестра по вкусу.</p>
+</div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -727,21 +968,7 @@ const thebe_selector_output = ".output, .cell_output"
               
             
                 <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="practice_1.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Задачи для тренировки</p>
-        </div>
-    </a>
-    <a class='right-next' id="next-link" href="../week_2/intro_2.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Содержание</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
+<div class='prev-next-area'>
 </div>
             
         </div>
