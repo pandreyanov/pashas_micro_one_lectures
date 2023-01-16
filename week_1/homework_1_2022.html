@@ -55,8 +55,6 @@ const thebe_selector_output = ".output, .cell_output"
     <script>mermaid.initialize({startOnLoad:true});</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Содержание" href="../week_2/intro_2.html" />
-    <link rel="prev" title="Задачи для тренировки" href="practice_1.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -132,7 +130,7 @@ const thebe_selector_output = ".output, .cell_output"
   Первая неделя
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="intro_1.html">
    Содержание
@@ -158,8 +156,8 @@ const thebe_selector_output = ".output, .cell_output"
    Задачи для тренировки
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="homework_1.html">
    Первое домашнее задание
   </a>
  </li>
@@ -657,7 +655,7 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/week_1/homework_1.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/week_1/homework_1_2022.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -842,7 +840,7 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="section" id="id3">
 <h3>Задача 1.1 (1 балла)<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
 <p>Рассмотрим нео-классическую модель с предпочтениями <span class="math notranslate nohighlight">\(\succcurlyeq\)</span> на множестве альтернатив <span class="math notranslate nohighlight">\(X = \{-2, -1, 1, 2\}\)</span>, заданные графом</p>
-<a class="reference internal image-reference" href="https://ibb.co/FHMBvWC"><img alt="Граф предпочтений" class="align-center" src="https://ibb.co/FHMBvWC" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../_images/graph.png"><img alt="Граф предпочтений" class="align-center" src="../_images/graph.png" style="width: 400px;" /></a>
 <p>Заполните матрицу бинарного отношения, а также подберите глобальную функцию (композиция элементарных), которая ее представляет:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split} 
@@ -858,35 +856,43 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 <div class="section" id="id4">
 <h3>Задача 1.2 (2 балла)<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
-<p>В этой задаче мы хотим, чтобы вы прочитали (неструктурированный)  разговор Ани с мамой и ответили на следующие вопросы.</p>
-<ul class="simple">
-<li><p>можно ли определить предпочтения Ани из текста непротиворечивым образом? о каком множестве альтернатив идет речь? Выпишите предпочтения в виде матрицы</p></li>
-<li><p>Соблюдается ли свойство транзитивности? Поясните.</p></li>
-</ul>
-<p>Привет, мам! Помнишь, я рассказывала тебе, что нам в офис купили вкусный черный чай? Не помнишь? Ну я тогда ещё пила в офисе наш бесплатный кофе каждый день. Да, по три кружки. Да, я все ещё продолжаю пить кофе на работе. Да, у нас есть вода и да, я могу сделать чай с молоком, но я не хочу. Предпочитаю кофе. Что значит, что кофе закончится? Он всегда есть. Маша, наш офис менеджер, всегда его покупает. Хотя в прошлом месяце она болела и кофе закончился, тогда-то я и попробовала чай. Так, о чем это я? Значит на работе купили вкусный чай. А вот к новому году мне в офисе подарили этот чай: черный и зеленый. Он недешёвый, продается только в одном магазине в Москве. Так вот я все праздники пила только этот чай, даже кофе себе не варила, хотя Лёша мне подарил и кофемашину такую же как на работе, и зерна нашёл. Добавляла ли я молоко? Да, я кофе пью только с молоком, но все равно не хотелось. А ты про чай? Нет, я не люблю, ты же знаешь. Да, знаю я, что ты только с молоком пьешь. И что с того? Кстати, черный мне больше понравился, чем зеленый. Так к нам Лена ещё вчера приходила, а я ей специально этот зеленый чай заварила, раз он мне не очень понравился. Так она попросила меня ещё кофе сварить. И вот она целых две кружки выпила, мою и свою, мне так не хотелось кофе. А я понемногу целый чайник зеленого чая выпила. Короче, к чему я это все. Во-первых, без кофе я похудела немного, во-вторых, я тёте Маше решила на день рождения упаковку этого чая подарить, уже отправила тебе. Получишь на почте? Я и тебе подарочек на новый год отправила, но это сюрприз. Про него не буду рассказывать. Ну ладно, мне уже бежать пора, я на работе, перерыв у меня короткий, а кофе сам себя не сделает.</p>
+<p>В Лабораторию Экспериментальной Экономики пришел человек с неоклассическими предпочтениями <span class="math notranslate nohighlight">\(\succcurlyeq\)</span> на множестве альтернатив <span class="math notranslate nohighlight">\(X = \{x, y, z, w\}\)</span>. Вам требуется полностью откалибровать его предпочтения.</p>
+<p>Работавший до вас ассистент начал заполнять матрицу бинарных отношений, но оставил много пропусков. Вы должны заполнить ее до конца.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} 
+\begin{array}{c|ccc}
+ \succcurlyeq &amp; x &amp; y &amp; z &amp; w\\
+\hline
+x  &amp; *  &amp; * &amp; * &amp; *\\
+y  &amp; 0  &amp; * &amp; * &amp; * \\
+z  &amp; *  &amp; 0  &amp; * &amp; * \\
+w &amp; 0  &amp; 0 &amp; 0 &amp; * \\
+\end{array}
+\end{split}\]</div>
+<p>Вам разрешено задавать человеку только вопросы типа “верно ли, что вы слабо предпочитаете альтернативу А альтернативе Б”.</p>
+<blockquote>
+<div><p>Вопрос: Какое минимальное число вопросов нужно задать, чтобы полностью откалибровать (заполнить матрицу) предпочтения? Аргументируйте.</p>
+</div></blockquote>
 </div>
 <div class="section" id="id5">
 <h3>Задача 1.3 (2 балла)<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
-<p>В этой задаче мы хотим, чтобы вы проанализировали нестандартные предпочтения, описывающие поведение группы людей.</p>
-<p>Петя, Вася и Миша втроем снимают квартиру в Москве и хотят договориться о настройках кондиционера зимой. Всего есть три настройки: 1(холодная), 2(нейтральная), 3(жаркая). Петя любит, когда холодно, поэтому его предпочтения 1&gt;2&gt;3. Вася любит когда жарко, поэтому его предпочтения 3&gt;2&gt;1. Миша любит когда ни жарко ни холодно, поэтому его предпочтения 1&gt;2, 1&gt;3, 2=3. Ребята голосуют простым большинством, но Петя основной квартиросьемщик, поэтому его голос - решающий.</p>
-<p>Ответьте на следующие вопросы:</p>
-<ul class="simple">
-<li><p>заполните матрицу их предпочтений на множестве из трех альтернатив 1,2,3</p></li>
-<li><p>являются ли они транзитивными? Поясните</p></li>
-<li><p>можете ли вы представить их полезностью? Поясните</p></li>
-</ul>
+<p>Рассмотрим экзотическую модель с предпочтениями <span class="math notranslate nohighlight">\(\succcurlyeq\)</span> на <span class="math notranslate nohighlight">\(X\)</span>, которые заданы следующим образом. Для двух рациональных предпочтений <span class="math notranslate nohighlight">\(\succcurlyeq_1\)</span> и <span class="math notranslate nohighlight">\(\succcurlyeq_2\)</span> на том же множестве альтернатив, определим</p>
+<div class="math notranslate nohighlight">
+\[ x \succcurlyeq y \quad \Leftrightarrow \quad x \succ_1 y \quad \text{или} \quad (x \sim_1 y \quad \text{и} \quad x \succcurlyeq_2 y)\]</div>
+<p>То есть в нашей экзотической модели, <span class="math notranslate nohighlight">\(x\)</span> предпочитается <span class="math notranslate nohighlight">\(y\)</span> тогда и только тогда, когда либо <span class="math notranslate nohighlight">\(\succcurlyeq_1\)</span> предпочитает <span class="math notranslate nohighlight">\(x\)</span>, либо <span class="math notranslate nohighlight">\(\succcurlyeq_1\)</span> безразличен, но тогда <span class="math notranslate nohighlight">\(\succcurlyeq_2\)</span> предпочитает <span class="math notranslate nohighlight">\(x\)</span>. Докажите, что <span class="math notranslate nohighlight">\(\succcurlyeq\)</span> рациональное предпочтение, или приведите контрпример.</p>
 </div>
 <div class="section" id="id6">
 <h3>Задача 1.4 (5 балла)<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
-<p>В этой задаче мы хотим, чтобы вы прочитали о так называемом Стэнфордском зефирном эксперименте <a class="reference external" href="https://en.wikipedia.org/wiki/Stanford_marshmallow_experiment">https://en.wikipedia.org/wiki/Stanford_marshmallow_experiment</a>, <a class="reference external" href="https://ru.wikipedia.org/wiki/%D0%97%D0%B5%D1%84%D0%B8%D1%80%D0%BD%D1%8B%D0%B9_%D1%8D%D0%BA%D1%81%D0%BF%D0%B5%D1%80%D0%B8%D0%BC%D0%B5%D0%BD%D1%82">https://ru.wikipedia.org/wiki/Зефирный_эксперимент</a>, также <a class="reference external" href="https://anderson-review.ucla.edu/new-study-disavows-marshmallow-tests-predictive-powers/">https://anderson-review.ucla.edu/new-study-disavows-marshmallow-tests-predictive-powers/</a> и <a class="reference external" href="https://www.simplypsychology.org/marshmallow-test.html">https://www.simplypsychology.org/marshmallow-test.html</a>, и написали короткое (&lt;300 слов) эссе. В эссе вам необходимо сагрегировать и пересказать своими словами основные факты из статей (если вы используете собственный источник укажите их) и ответить, кратко и по сути, на следующие вопросы:</p>
-<ul class="simple">
-<li><p>в чем суть эксперимента</p></li>
-<li><p>почему это важно</p></li>
-<li><p>какие выводы были сделаны</p></li>
-<li><p>как это вписывается в тему первой лекции</p></li>
-</ul>
-<p>Последний вопрос - проанализировать тексты критически (то есть рационально, скептически), указать на возможные ошибки и в дизайне эксперимента и, возможно, предложить альтернативные выводы.</p>
-<p>Для подсчета слов используйте <a class="reference external" href="https://wordcounter.net/">https://wordcounter.net/</a>, слишком длинные эссе будут штрафоваться.</p>
+<p>Рассмотрим новую модель поведения потребителя, отличную от предпочтений и полезностей. Модель состоит из пространства альтернатив <span class="math notranslate nohighlight">\(X\)</span> и отображения <span class="math notranslate nohighlight">\(C\)</span>, которое ставит любому подмножеству <span class="math notranslate nohighlight">\(Y \subset X\)</span> уже его подмножество <span class="math notranslate nohighlight">\(Z \subset Y \subset X\)</span>, обязательно непустое. Будем называть <span class="math notranslate nohighlight">\(Y\)</span> - <strong>меню</strong> a <span class="math notranslate nohighlight">\(Z\)</span> - <strong>выбор</strong>.</p>
+<p>То есть мы предлагаем агенту меню с товарами, а он вычеркивает из него часть (или, возможно, ничего не вычеркивает, но главное, чтобы он не вычеркнул вообще все) и возвращает меню со словами “это мой выбор”.</p>
+<blockquote>
+<div><p><strong>Слабая Аксиома Выбора</strong> (WARP) говорит, что для двух портфелей <span class="math notranslate nohighlight">\(x, y \in X\)</span> невозможно, чтобы в одном меню <span class="math notranslate nohighlight">\(Y'\)</span>: <span class="math notranslate nohighlight">\(x\)</span> был выбран в присутствии <span class="math notranslate nohighlight">\(y\)</span>, а в другом меню <span class="math notranslate nohighlight">\(Y''\)</span>: <span class="math notranslate nohighlight">\(y\)</span> был выбран в присутствии <span class="math notranslate nohighlight">\(x\)</span>, но <span class="math notranslate nohighlight">\(x\)</span> выбран не был. Подразумевается, что <span class="math notranslate nohighlight">\(x, y \in Y'\)</span> и <span class="math notranslate nohighlight">\(x, y \in Y''\)</span>.</p>
+</div></blockquote>
+<p>Придумайте, как вывести модель выбора из модели рациональных предпочтений. Докажите, что для рациональных предпочтений, ассоциированный с ними выбор всегда удовлетворяет WARP.</p>
+<blockquote>
+<div><p><strong>Обобщенная Аксиома Выбора</strong> (GARP) говорит, что для последовательности  портфелей <span class="math notranslate nohighlight">\(x_1, x_2, \ldots x_n \in X\)</span> невозможно, чтобы в одном меню: <span class="math notranslate nohighlight">\(x_1\)</span> был выбран в присутствие <span class="math notranslate nohighlight">\(x_2\)</span>, в другом меню <span class="math notranslate nohighlight">\(x_2\)</span> был выбран в присутствие <span class="math notranslate nohighlight">\(x_3\)</span>, и так далее… до <span class="math notranslate nohighlight">\(x_n\)</span>. А в еще одном меню <span class="math notranslate nohighlight">\(x_n\)</span> был выбран в присутствие <span class="math notranslate nohighlight">\(x_1\)</span>, но <span class="math notranslate nohighlight">\(x_1\)</span> выбран не был.</p>
+</div></blockquote>
+<p>Придумайте, как вывести модель предпочтений из модели выбора (можно пользоваться дефолтными аксиомами, например, что выбор непуст). Докажите, что в модели выбора, удовлетворяющей GARP, ассоциированные предпочтения обязательно рациональны.</p>
 </div>
 </div>
 <div class="section" id="id7">
@@ -912,12 +918,15 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 <div class="section" id="id9">
 <h3>Задача 2.2 (1 балл)<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
-<p>В этой задаче мы попросим написать короткое доказательство следующего факта: объединение двух выпуклых множеств выпукло; либо привести контрпример.</p>
-<p>В качестве подсказки, мы покажем, как доказать что пересечение двух выпуклых множеств выпукло. Предположим, что <span class="math notranslate nohighlight">\(A,B\)</span> выпуклые множества. Возьмем любые две точки <span class="math notranslate nohighlight">\(a,b\)</span> в их пересечении. Поскольку <span class="math notranslate nohighlight">\(a,b \in A\)</span> то вся хорда <span class="math notranslate nohighlight">\([a,b] \in A\)</span>. Поскольку <span class="math notranslate nohighlight">\(a,b \in B\)</span> то вся хорда <span class="math notranslate nohighlight">\([a,b] \in B\)</span>. Получается, что вся хорда <span class="math notranslate nohighlight">\([a,b] \in A \cap B\)</span>. Значит, <span class="math notranslate nohighlight">\(A \cap B\)</span> выпукло.</p>
+<p>Докажите, что объединение двух выпуклых множеств выпукло, либо приведите контрпример.</p>
 </div>
 <div class="section" id="a">
 <h3>Задача 2.3 (2 баллa)<a class="headerlink" href="#a" title="Permalink to this headline">¶</a></h3>
-<p><a class="reference external" href="https://ibb.co/QM9dYyp">https://ibb.co/QM9dYyp</a></p>
+<p>Промаксимизируйте функцию <span class="math notranslate nohighlight">\(-(x-1)^2\)</span> на отрезке <span class="math notranslate nohighlight">\([-b,b]\)</span>. Запишите ответ как функцию от <span class="math notranslate nohighlight">\(b&gt;0\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[ 
+x^{\ast}(b) = (\ldots)\cdot \mathbb{I}(b&gt; \ldots) +  (\ldots) \cdot \mathbb{I}(b&lt; \ldots)
+\]</div>
 </div>
 <div class="section" id="id10">
 <h3>Задача 2.4 (2 балл)<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
@@ -934,8 +943,9 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="simple">
 <li><p>Используя <em>Гессиан</em>, найдите все <span class="math notranslate nohighlight">\(\alpha, \beta &gt;0\)</span> такие, что полезность вогнутая.</p></li>
 <li><p>Используя <em>Окаймленный Гессиан</em>, найдите все  <span class="math notranslate nohighlight">\(\alpha, \beta&gt;0\)</span> при которых полезность квазивогнутая.</p></li>
+<li><p>Наконец, найдите все  <span class="math notranslate nohighlight">\(\alpha, \beta&gt;0\)</span> при которых полезность является монотонным преобразованием некоторой вогнутой функции.</p></li>
 </ul>
-<p>Пользуйтесь строгими версиями вогнутости или критерия Сильвестра по вкусу.</p>
+<p>Пользуйтесь строгими версиями вогнутости или критерия по вкусу.</p>
 </div>
 </div>
 </div>
@@ -964,21 +974,7 @@ const thebe_selector_output = ".output, .cell_output"
               
             
                 <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="practice_1.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Задачи для тренировки</p>
-        </div>
-    </a>
-    <a class='right-next' id="next-link" href="../week_2/intro_2.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Содержание</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
+<div class='prev-next-area'>
 </div>
             
         </div>
