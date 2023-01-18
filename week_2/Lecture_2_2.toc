@@ -1,7 +1,0 @@
-\babel@toc {russian}{}
-\beamer@sectionintoc {1}{\IeC {\CYRK }\IeC {\cyrr }\IeC {\cyri }\IeC {\cyrv }\IeC {\cyra }\IeC {\cyrya } \IeC {\CYREREV }\IeC {\cyrn }\IeC {\cyrg }\IeC {\cyre }\IeC {\cyrl }\IeC {\cyrya }}{2}{0}{1}
-\beamer@sectionintoc {2}{\IeC {\CYRK }\IeC {\cyro }\IeC {\cyrb }\IeC {\cyrb }-\IeC {\CYRD }\IeC {\cyru }\IeC {\cyrg }\IeC {\cyrl }\IeC {\cyra }\IeC {\cyrs }}{4}{0}{2}
-\beamer@sectionintoc {3}{\IeC {\CYRL }\IeC {\cyre }\IeC {\cyro }\IeC {\cyrn }\IeC {\cyrt }\IeC {\cyrsftsn }\IeC {\cyre }\IeC {\cyrv }}{12}{0}{3}
-\beamer@sectionintoc {4}{\IeC {\CYRK }\IeC {\cyrv }\IeC {\cyra }\IeC {\cyrz }\IeC {\cyri }\IeC {\cyrl }\IeC {\cyri }\IeC {\cyrn }\IeC {\cyre }\IeC {\cyrishrt }\IeC {\cyrn }\IeC {\cyra }\IeC {\cyrya }}{18}{0}{4}
-\beamer@sectionintoc {5}{\IeC {\CYRL }\IeC {\cyri }\IeC {\cyrn }\IeC {\cyre }\IeC {\cyrishrt }\IeC {\cyrn }\IeC {\cyra }\IeC {\cyrya }}{26}{0}{5}
-\beamer@sectionintoc {6}{\IeC {\CYRK }\IeC {\cyro }\IeC {\cyrn }\IeC {\cyre }\IeC {\cyrc }}{33}{0}{6}

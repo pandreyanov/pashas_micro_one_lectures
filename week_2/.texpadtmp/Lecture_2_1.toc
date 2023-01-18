@@ -1,0 +1,21 @@
+\babel@toc {russian}{}\relax 
+\beamer@sectionintoc {1}{Бюджетное ограничение}{2}{0}{1}
+\beamer@sectionintoc {2}{Бюджетное ограничение}{4}{0}{2}
+\beamer@sectionintoc {3}{Метод Лагранжа}{7}{0}{3}
+\beamer@sectionintoc {4}{Выпуклая интерпретация ММЛ}{10}{0}{4}
+\beamer@sectionintoc {5}{Невыпуклая интерпретация ММЛ}{13}{0}{5}
+\beamer@sectionintoc {6}{Угловые решения}{17}{0}{6}
+\beamer@sectionintoc {7}{Значение Лагранжиана в оптимуме}{19}{0}{7}
+\beamer@sectionintoc {8}{Интерпретация $\lambda $}{21}{0}{8}
+\beamer@sectionintoc {9}{Кривые спроса}{23}{0}{9}
+\beamer@sectionintoc {10}{Нормальные и инфериорные товары}{25}{0}{10}
+\beamer@sectionintoc {11}{Субституты и комплементы}{30}{0}{11}
+\beamer@sectionintoc {12}{Косвенная полезность}{36}{0}{12}
+\beamer@sectionintoc {13}{Непрерывность спроса}{39}{0}{13}
+\beamer@sectionintoc {14}{Перерыв}{41}{0}{14}
+\beamer@sectionintoc {15}{Кривая Энгеля}{42}{0}{15}
+\beamer@sectionintoc {16}{Кобб-Дуглас}{44}{0}{16}
+\beamer@sectionintoc {17}{Леонтьев}{52}{0}{17}
+\beamer@sectionintoc {18}{Квазилинейная}{58}{0}{18}
+\beamer@sectionintoc {19}{Линейная}{66}{0}{19}
+\beamer@sectionintoc {20}{Конец}{73}{0}{20}
