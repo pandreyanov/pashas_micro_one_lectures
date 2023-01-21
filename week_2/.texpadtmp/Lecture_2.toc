@@ -16,9 +16,9 @@
 \beamer@sectionintoc {15}{Товары Веблена и Гиффена}{64}{0}{15}
 \beamer@sectionintoc {16}{Косвенная полезность}{68}{0}{16}
 \beamer@sectionintoc {17}{Непрерывность спроса}{71}{0}{17}
-\beamer@sectionintoc {18}{Кривая Энгеля}{73}{0}{18}
-\beamer@sectionintoc {19}{Кобб-Дуглас}{75}{0}{19}
-\beamer@sectionintoc {20}{Леонтьев}{83}{0}{20}
-\beamer@sectionintoc {21}{Квазилинейная}{89}{0}{21}
-\beamer@sectionintoc {22}{Линейная}{97}{0}{22}
-\beamer@sectionintoc {23}{Конец}{104}{0}{23}
+\beamer@sectionintoc {18}{Кобб-Дуглас}{74}{0}{18}
+\beamer@sectionintoc {19}{Леонтьев}{83}{0}{19}
+\beamer@sectionintoc {20}{Линейная}{89}{0}{20}
+\beamer@sectionintoc {21}{Квази-линейная полезность на следующей лекции}{96}{0}{21}
+\beamer@sectionintoc {22}{CES полезность на следующей лекции}{97}{0}{22}
+\beamer@sectionintoc {23}{Конец}{98}{0}{23}
