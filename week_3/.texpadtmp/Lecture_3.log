@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.15)  27 JAN 2023 10:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.15)  27 JAN 2023 22:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**Lecture_3_2.tex
-(./Lecture_3_2.tex
+**Lecture_3.tex
+(./Lecture_3.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-02-24> (/usr/local/texlive/2022/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2022/02/08 v3.66 A class for typesetting presentations
@@ -861,8 +861,8 @@ LaTeX Info: Redefining \_ on input line 43.
 File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count347
 \l__pdf_internal_box=\box80
-) (/Users/pasha/Documents/GitHub/pashas_micro_one_lectures/week_3/.texpadtmp/Lecture_3_2.aux)
-\openout1 = `Lecture_3_2.aux'.
+) (/Users/pasha/Documents/GitHub/pashas_micro_one_lectures/week_3/.texpadtmp/Lecture_3.aux)
+\openout1 = `Lecture_3.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
 LaTeX Font Info:    ... okay on input line 27.
@@ -955,9 +955,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 27.
 LaTeX Info: Redefining \pageref on input line 27.
 LaTeX Info: Redefining \nameref on input line 27.
- (/Users/pasha/Documents/GitHub/pashas_micro_one_lectures/week_3/.texpadtmp/Lecture_3_2.out) (/Users/pasha/Documents/GitHub/pashas_micro_one_lectures/week_3/.texpadtmp/Lecture_3_2.out)
+ (/Users/pasha/Documents/GitHub/pashas_micro_one_lectures/week_3/.texpadtmp/Lecture_3.out) (/Users/pasha/Documents/GitHub/pashas_micro_one_lectures/week_3/.texpadtmp/Lecture_3.out)
 \@outlinefile=\write5
-\openout5 = `Lecture_3_2.out'.
+\openout5 = `Lecture_3.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 27.
@@ -1026,7 +1026,7 @@ Dictionary: translator-numbers-dictionary, Language: English
 Dictionary: translator-theorem-dictionary, Language: English 
 )
 LaTeX Info: Redefining \th on input line 27.
- (/Users/pasha/Documents/GitHub/pashas_micro_one_lectures/week_3/.texpadtmp/Lecture_3_2.nav)
+ (/Users/pasha/Documents/GitHub/pashas_micro_one_lectures/week_3/.texpadtmp/Lecture_3.nav)
 Overfull \vbox (15.63992pt too high) detected at line 29
  []
 
@@ -1046,38 +1046,41 @@ LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inpu
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
 ) [2
 
-]
-
-LaTeX Warning: Command \CYRH invalid in math mode on input line 45.
-
-Missing character: There is no Õ in font cmss10!
-[3
+] [3
 
 ] [4
 
-]
-<envelope2.png, id=94, 652.93938pt x 536.0025pt>
-File: envelope2.png Graphic file (type png)
-<use envelope2.png>
-Package pdftex.def Info: envelope2.png  used on input line 64.
-(pdftex.def)             Requested size: 245.83282pt x 201.80196pt.
- [5
+] [5
 
- <./envelope2.png>] [6
+] [6
 
 ] [7
 
 ] [8
 
-] [9
+]
+<Marshall.jpeg, id=151, 271.0125pt x 384.43625pt>
+File: Marshall.jpeg Graphic file (type jpg)
+<use Marshall.jpeg>
+Package pdftex.def Info: Marshall.jpeg  used on input line 99.
+(pdftex.def)             Requested size: 153.64493pt x 217.95186pt.
 
-] [10
+Overfull \vbox (10.69862pt too high) detected at line 99
+ []
+
+[9
+
+ <./Marshall.jpeg>] [10
 
 ] [11
 
 ] [12
 
-] [13
+]
+LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 152.
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/base/ts1cmss.fd
+File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+) [13
 
 ] [14
 
@@ -1091,9 +1094,19 @@ Package pdftex.def Info: envelope2.png  used on input line 64.
 
 ] [19
 
-] [20
+]
+<elast.jpeg, id=217, 330.48468pt x 191.9672pt>
+File: elast.jpeg Graphic file (type jpg)
+<use elast.jpeg>
+Package pdftex.def Info: elast.jpeg  used on input line 205.
+(pdftex.def)             Requested size: 276.559pt x 160.65085pt.
 
-] [21
+Overfull \vbox (11.39603pt too high) detected at line 205
+ []
+
+[20
+
+ <./elast.jpeg>] [21
 
 ] [22
 
@@ -1111,7 +1124,11 @@ Package pdftex.def Info: envelope2.png  used on input line 64.
 
 ] [29
 
-] [30
+]
+Overfull \vbox (4.593pt too high) detected at line 303
+ []
+
+[30
 
 ] [31
 
@@ -1119,11 +1136,7 @@ Package pdftex.def Info: envelope2.png  used on input line 64.
 
 ] [33
 
-]
-LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 298.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/base/ts1cmss.fd
-File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-) [34
+] [34
 
 ] [35
 
@@ -1133,43 +1146,160 @@ File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 
 ] [38
 
+] [39
+
+] [40
+
+] [41
+
+] [42
+
+] [43
+
+] [44
+
+] [45
+
+] [46
+
+] [47
+
+] [48
+
+] [49
+
+] [50
+
+] [51
+
+] [52
+
+] [53
+
+] [54
+
+] [55
+
 ]
-<scheme.png, id=287, 632.86438pt x 284.06125pt>
+
+LaTeX Warning: Command \CYRH invalid in math mode on input line 539.
+
+Missing character: There is no Õ in font cmss10!
+[56
+
+] [57
+
+]
+<envelope2.png, id=427, 652.93938pt x 536.0025pt>
+File: envelope2.png Graphic file (type png)
+<use envelope2.png>
+Package pdftex.def Info: envelope2.png  used on input line 558.
+(pdftex.def)             Requested size: 245.83282pt x 201.80196pt.
+ [58
+
+ <./envelope2.png>] [59
+
+] [60
+
+] [61
+
+] [62
+
+] [63
+
+] [64
+
+] [65
+
+] [66
+
+] [67
+
+] [68
+
+] [69
+
+] [70
+
+] [71
+
+] [72
+
+] [73
+
+] [74
+
+] [75
+
+] [76
+
+] [77
+
+] [78
+
+] [79
+
+] [80
+
+] [81
+
+] [82
+
+] [83
+
+] [84
+
+] [85
+
+] [86
+
+] [87
+
+] [88
+
+] [89
+
+] [90
+
+] [91
+
+]
+<scheme.png, id=617, 632.86438pt x 284.06125pt>
 File: scheme.png Graphic file (type png)
 <use scheme.png>
-Package pdftex.def Info: scheme.png  used on input line 349.
+Package pdftex.def Info: scheme.png  used on input line 843.
 (pdftex.def)             Requested size: 276.559pt x 124.13344pt.
- [39
+ [92
 
- <./scheme.png>] [40
+ <./scheme.png>] [93
 
 ]
 \tf@nav=\write6
-\openout6 = `Lecture_3_2.nav'.
+\openout6 = `Lecture_3.nav'.
 
 \tf@toc=\write7
-\openout7 = `Lecture_3_2.toc'.
+\openout7 = `Lecture_3.toc'.
 
 \tf@snm=\write8
-\openout8 = `Lecture_3_2.snm'.
+\openout8 = `Lecture_3.snm'.
 
- (/Users/pasha/Documents/GitHub/pashas_micro_one_lectures/week_3/.texpadtmp/Lecture_3_2.aux)
-Package rerunfilecheck Info: File `Lecture_3_2.out' has not changed.
-(rerunfilecheck)             Checksum: 5E80D289B412C04899037FE1B4C014A9;1882.
+ (/Users/pasha/Documents/GitHub/pashas_micro_one_lectures/week_3/.texpadtmp/Lecture_3.aux)
+Package rerunfilecheck Info: File `Lecture_3.out' has not changed.
+(rerunfilecheck)             Checksum: F6E11D56E91450E922345D0DEE60DCCF;3643.
  ) 
 Here is how much of TeX's memory you used:
- 27102 strings out of 478268
- 543875 string characters out of 5846347
- 785794 words of memory out of 5000000
- 44657 multiletter control sequences out of 15000+600000
+ 27407 strings out of 478268
+ 546946 string characters out of 5846347
+ 785782 words of memory out of 5000000
+ 44843 multiletter control sequences out of 15000+600000
  484852 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,13n,122p,1810b,752s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsi1095.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb>
-Output written on /Users/pasha/Documents/GitHub/pashas_micro_one_lectures/week_3/.texpadtmp/Lecture_3_2.pdf (40 pages, 464087 bytes).
+ 128i,13n,122p,1808b,752s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsi1095.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfss0600.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb>
+Output written on /Users/pasha/Documents/GitHub/pashas_micro_one_lectures/week_3/.texpadtmp/Lecture_3.pdf (93 pages, 597450 bytes).
 PDF statistics:
- 405 PDF objects out of 1000 (max. 8388607)
- 312 compressed objects within 4 object streams
- 92 named destinations out of 1000 (max. 500000)
- 141 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 762 PDF objects out of 1000 (max. 8388607)
+ 609 compressed objects within 7 object streams
+ 208 named destinations out of 1000 (max. 500000)
+ 231 words of extra memory for PDF output out of 10000 (max. 10000000)
 

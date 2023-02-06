@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.15)  27 JAN 2023 10:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.15)  3 FEB 2023 14:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**Lecture_3_2.tex
-(./Lecture_3_2.tex
+**Lecture_4.tex
+(./Lecture_4.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-02-24> (/usr/local/texlive/2022/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2022/02/08 v3.66 A class for typesetting presentations
@@ -844,50 +844,108 @@ Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 
 Package beamerthememetropolis Warning: You need to compile with XeLaTeX or LuaLaTeX to use the Fira fonts on input line 95.
 
-)) (/usr/local/texlive/2022/texmf-dist/tex/latex/base/fontenc.sty
+)) (/usr/local/texlive/2022/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2020/08/19 v1.3 Adjusting TeX boxes (trim, clip, ...)
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
+ (/usr/local/texlive/2022/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/local/texlive/2022/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks49
+\XKV@tempa@toks=\toks50
+)
+\XKV@depth=\count347
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (/usr/local/texlive/2022/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back-ends (calc, etex, pgfmath)
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box80
+)
+\tc@llx=\dimen308
+\tc@lly=\dimen309
+\tc@urx=\dimen310
+\tc@ury=\dimen311
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen312
+\adjbox@Height=\dimen313
+\adjbox@Depth=\dimen314
+\adjbox@Totalheight=\dimen315
+\adjbox@pwidth=\dimen316
+\adjbox@pheight=\dimen317
+\adjbox@pdepth=\dimen318
+\adjbox@ptotalheight=\dimen319
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count348
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box81
+\sift@deathcycles=\count349
+\@vwid@loff=\dimen320
+\@vwid@roff=\dimen321
+)) (/usr/local/texlive/2022/texmf-dist/tex/latex/makecell/makecell.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/tools/array.sty
+Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
+\col@sep=\dimen322
+\ar@mcellbox=\box82
+\extrarowheight=\dimen323
+\NC@list=\toks51
+\extratabsurround=\skip76
+\backup@length=\skip77
+\ar@cellbox=\box83
+)
+\rotheadsize=\dimen324
+\c@nlinenum=\count350
+\TeXr@lab=\toks52
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 LaTeX Font Info:    Trying to load font information for T2A+cmss on input line 112.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/cyrillic/t2acmss.fd
 File: t2acmss.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )) (/usr/local/texlive/2022/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
-\inpenc@prehook=\toks49
-\inpenc@posthook=\toks50
+\inpenc@prehook=\toks53
+\inpenc@posthook=\toks54
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/hyphenat/hyphenat.sty
 Package: hyphenat 2009/09/02 v2.3c hyphenation utilities
 \langwohyphens=\language88
 LaTeX Info: Redefining \_ on input line 43.
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count347
-\l__pdf_internal_box=\box80
-) (/Users/pasha/Documents/GitHub/pashas_micro_one_lectures/week_3/.texpadtmp/Lecture_3_2.aux)
-\openout1 = `Lecture_3_2.aux'.
+\l__color_backend_stack_int=\count351
+\l__pdf_internal_box=\box84
+) (/Users/pasha/Documents/GitHub/pashas_micro_one_lectures/week_4/.texpadtmp/Lecture_4.aux)
+\openout1 = `Lecture_4.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 27.
-LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 27.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 30.
+LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 30.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/cyrillic/t2acmr.fd
 File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )
-LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    ... okay on input line 30.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -925,24 +983,24 @@ LaTeX Font Info:    ... okay on input line 27.
 
 (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count348
-\scratchdimen=\dimen308
-\scratchbox=\box81
-\nofMPsegments=\count349
-\nofMParguments=\count350
-\everyMPshowfont=\toks51
-\MPscratchCnt=\count351
-\MPscratchDim=\dimen309
-\MPnumerator=\count352
-\makeMPintoPDFobject=\count353
-\everyMPtoPDFconversion=\toks52
+\scratchcounter=\count352
+\scratchdimen=\dimen325
+\scratchbox=\box85
+\nofMPsegments=\count353
+\nofMParguments=\count354
+\everyMPshowfont=\toks55
+\MPscratchCnt=\count355
+\MPscratchDim=\dimen326
+\MPnumerator=\count356
+\makeMPintoPDFobject=\count357
+\everyMPtoPDFconversion=\toks56
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 27.
+Package hyperref Info: Link coloring OFF on input line 30.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/local/texlive/2022/texmf-dist/tex/latex/refcount/refcount.sty
@@ -950,68 +1008,68 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/local/texlive/2022/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count354
+\c@section@level=\count358
 )
-LaTeX Info: Redefining \ref on input line 27.
-LaTeX Info: Redefining \pageref on input line 27.
-LaTeX Info: Redefining \nameref on input line 27.
- (/Users/pasha/Documents/GitHub/pashas_micro_one_lectures/week_3/.texpadtmp/Lecture_3_2.out) (/Users/pasha/Documents/GitHub/pashas_micro_one_lectures/week_3/.texpadtmp/Lecture_3_2.out)
+LaTeX Info: Redefining \ref on input line 30.
+LaTeX Info: Redefining \pageref on input line 30.
+LaTeX Info: Redefining \nameref on input line 30.
+ (/Users/pasha/Documents/GitHub/pashas_micro_one_lectures/week_4/.texpadtmp/Lecture_4.out) (/Users/pasha/Documents/GitHub/pashas_micro_one_lectures/week_4/.texpadtmp/Lecture_4.out)
 \@outlinefile=\write5
-\openout5 = `Lecture_3_2.out'.
+\openout5 = `Lecture_4.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 27.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 30.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 27.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 30.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> T2A/cmr/m/n on input line 27.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 27.
+(Font)                  OT1/cmss/m/n --> T2A/cmr/m/n on input line 30.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> T2A/cmss/b/n on input line 27.
+(Font)                  OT1/cmr/bx/n --> T2A/cmss/b/n on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> T2A/cmss/b/n on input line 27.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 27.
+(Font)                  OT1/cmr/bx/n --> T2A/cmss/b/n on input line 30.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> T2A/cmss/m/n on input line 27.
+(Font)                  OT1/cmss/m/n --> T2A/cmss/m/n on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T2A/cmss/m/n on input line 27.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 27.
+(Font)                  OT1/cmss/bx/n --> T2A/cmss/m/n on input line 30.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> T2A/cmss/m/it on input line 27.
+(Font)                  OT1/cmr/m/it --> T2A/cmss/m/it on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> T2A/cmss/m/it on input line 27.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 27.
+(Font)                  OT1/cmr/bx/it --> T2A/cmss/m/it on input line 30.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> T2A/cmtt/m/n on input line 27.
+(Font)                  OT1/cmtt/m/n --> T2A/cmtt/m/n on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> T2A/cmtt/m/n on input line 27.
+(Font)                  OT1/cmtt/m/n --> T2A/cmtt/m/n on input line 30.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T2A/cmss/m/n --> T2A/cmss/b/n on input line 27.
+(Font)                  T2A/cmss/m/n --> T2A/cmss/b/n on input line 30.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T2A/cmss/m/it --> T2A/cmss/b/it on input line 27.
+(Font)                  T2A/cmss/m/it --> T2A/cmss/b/it on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> T2A/cmr/b/n on input line 27.
+(Font)                  OT1/cmss/b/n --> T2A/cmr/b/n on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T2A/cmss/b/n --> T2A/cmss/b/n on input line 27.
+(Font)                  T2A/cmss/b/n --> T2A/cmss/b/n on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T2A/cmss/m/n --> T2A/cmss/b/n on input line 27.
+(Font)                  T2A/cmss/m/n --> T2A/cmss/b/n on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T2A/cmss/m/it --> T2A/cmss/b/it on input line 27.
+(Font)                  T2A/cmss/m/it --> T2A/cmss/b/it on input line 30.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T2A/cmtt/m/n --> T2A/cmtt/b/n on input line 27.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 27.
+(Font)                  T2A/cmtt/m/n --> T2A/cmtt/b/n on input line 30.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 30.
 LaTeX Font Info:    Encoding `T2A' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `normal' on input line 27.
+(Font)              `pureletters' in the math version `normal' on input line 30.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  T2A/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 27.
+(Font)                  T2A/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 30.
 LaTeX Font Info:    Encoding `T2A' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `bold' on input line 27.
+(Font)              `pureletters' in the math version `bold' on input line 30.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T2A/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 27.
+(Font)                  T2A/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 30.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 27.
+(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 30.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/translator/translator-bibliography-dictionary-English.dict
@@ -1025,45 +1083,34 @@ Dictionary: translator-numbers-dictionary, Language: English
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/translator/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \th on input line 27.
- (/Users/pasha/Documents/GitHub/pashas_micro_one_lectures/week_3/.texpadtmp/Lecture_3_2.nav)
-Overfull \vbox (15.63992pt too high) detected at line 29
+LaTeX Info: Redefining \th on input line 30.
+ (/Users/pasha/Documents/GitHub/pashas_micro_one_lectures/week_4/.texpadtmp/Lecture_4.nav)
+Overfull \vbox (15.63992pt too high) detected at line 32
  []
 
 [1
 
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 31.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 34.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 31.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 34.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 31.
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 34.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
 ) [2
 
-]
-
-LaTeX Warning: Command \CYRH invalid in math mode on input line 45.
-
-Missing character: There is no Õ in font cmss10!
-[3
+] [3
 
 ] [4
 
-]
-<envelope2.png, id=94, 652.93938pt x 536.0025pt>
-File: envelope2.png Graphic file (type png)
-<use envelope2.png>
-Package pdftex.def Info: envelope2.png  used on input line 64.
-(pdftex.def)             Requested size: 245.83282pt x 201.80196pt.
- [5
+] [5
 
- <./envelope2.png>] [6
+] [6
 
 ] [7
 
@@ -1073,7 +1120,11 @@ Package pdftex.def Info: envelope2.png  used on input line 64.
 
 ] [10
 
-] [11
+]
+LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 116.
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/base/ts1cmss.fd
+File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+) [11
 
 ] [12
 
@@ -1087,13 +1138,25 @@ Package pdftex.def Info: envelope2.png  used on input line 64.
 
 ] [17
 
-] [18
+]
+<podohod_nalog.png, id=175, 678.535pt x 517.935pt>
+File: podohod_nalog.png Graphic file (type png)
+<use podohod_nalog.png>
+Package pdftex.def Info: podohod_nalog.png  used on input line 177.
+(pdftex.def)             Requested size: 245.83282pt x 187.6419pt.
+ [18
 
-] [19
+ <./podohod_nalog.png>] [19
 
-] [20
+]
+<tovarny_nalog.png, id=189, 693.59125pt x 565.61313pt>
+File: tovarny_nalog.png Graphic file (type png)
+<use tovarny_nalog.png>
+Package pdftex.def Info: tovarny_nalog.png  used on input line 192.
+(pdftex.def)             Requested size: 245.83282pt x 200.47041pt.
+ [20
 
-] [21
+ <./tovarny_nalog.png>] [21
 
 ] [22
 
@@ -1117,13 +1180,15 @@ Package pdftex.def Info: envelope2.png  used on input line 64.
 
 ] [32
 
-] [33
-
 ]
-LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 298.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/base/ts1cmss.fd
-File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-) [34
+<ramsay.jpeg, id=263, 1027.84pt x 1274.7625pt>
+File: ramsay.jpeg Graphic file (type jpg)
+<use ramsay.jpeg>
+Package pdftex.def Info: ramsay.jpeg  used on input line 311.
+(pdftex.def)             Requested size: 153.64493pt x 190.54478pt.
+ [33
+
+ <./ramsay.jpeg>] [34
 
 ] [35
 
@@ -1134,42 +1199,111 @@ File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 ] [38
 
 ]
-<scheme.png, id=287, 632.86438pt x 284.06125pt>
-File: scheme.png Graphic file (type png)
-<use scheme.png>
-Package pdftex.def Info: scheme.png  used on input line 349.
-(pdftex.def)             Requested size: 276.559pt x 124.13344pt.
- [39
 
- <./scheme.png>] [40
+LaTeX Warning: Command \cyrh invalid in math mode on input line 365.
+
+Missing character: There is no õ in font cmss10!
+
+LaTeX Warning: Command \cyrh invalid in math mode on input line 365.
+
+Missing character: There is no õ in font cmss10!
+[39
+
+] [40
+
+] [41
+
+] [42
+
+] [43
+
+] [44
+
+] [45
+
+] [46
+
+] [47
+
+] [48
+
+] [49
+
+] [50
+
+] [51
+
+] [52
+
+] [53
+
+] [54
+
+] [55
+
+] [56
+
+] [57
+
+] [58
+
+] [59
+
+] [60
+
+] [61
+
+] [62
+
+] [63
+
+] [64
+
+] [65
+
+]
+<eugen.jpeg, id=446, 192.72pt x 262.9825pt>
+File: eugen.jpeg Graphic file (type jpg)
+<use eugen.jpeg>
+Package pdftex.def Info: eugen.jpeg  used on input line 633.
+(pdftex.def)             Requested size: 153.64493pt x 209.65996pt.
+
+Overfull \vbox (2.40672pt too high) detected at line 633
+ []
+
+[66
+
+ <./eugen.jpeg>] [67
+
+] [68
 
 ]
 \tf@nav=\write6
-\openout6 = `Lecture_3_2.nav'.
+\openout6 = `Lecture_4.nav'.
 
 \tf@toc=\write7
-\openout7 = `Lecture_3_2.toc'.
+\openout7 = `Lecture_4.toc'.
 
 \tf@snm=\write8
-\openout8 = `Lecture_3_2.snm'.
+\openout8 = `Lecture_4.snm'.
 
- (/Users/pasha/Documents/GitHub/pashas_micro_one_lectures/week_3/.texpadtmp/Lecture_3_2.aux)
-Package rerunfilecheck Info: File `Lecture_3_2.out' has not changed.
-(rerunfilecheck)             Checksum: 5E80D289B412C04899037FE1B4C014A9;1882.
+ (/Users/pasha/Documents/GitHub/pashas_micro_one_lectures/week_4/.texpadtmp/Lecture_4.aux)
+Package rerunfilecheck Info: File `Lecture_4.out' has not changed.
+(rerunfilecheck)             Checksum: BEB27CC6A9A329ADF6584FE028898434;2228.
  ) 
 Here is how much of TeX's memory you used:
- 27102 strings out of 478268
- 543875 string characters out of 5846347
- 785794 words of memory out of 5000000
- 44657 multiletter control sequences out of 15000+600000
- 484852 words of font info for 62 fonts, out of 8000000 for 9000
+ 28618 strings out of 478268
+ 569338 string characters out of 5846347
+ 815723 words of memory out of 5000000
+ 46069 multiletter control sequences out of 15000+600000
+ 486809 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,13n,122p,1810b,752s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsi1095.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb>
-Output written on /Users/pasha/Documents/GitHub/pashas_micro_one_lectures/week_3/.texpadtmp/Lecture_3_2.pdf (40 pages, 464087 bytes).
+ 128i,17n,122p,1808b,752s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsi1095.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfss0600.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb>
+Output written on /Users/pasha/Documents/GitHub/pashas_micro_one_lectures/week_4/.texpadtmp/Lecture_4.pdf (68 pages, 692942 bytes).
 PDF statistics:
- 405 PDF objects out of 1000 (max. 8388607)
- 312 compressed objects within 4 object streams
- 92 named destinations out of 1000 (max. 500000)
- 141 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 591 PDF objects out of 1000 (max. 8388607)
+ 461 compressed objects within 5 object streams
+ 150 named destinations out of 1000 (max. 500000)
+ 167 words of extra memory for PDF output out of 10000 (max. 10000000)
 
