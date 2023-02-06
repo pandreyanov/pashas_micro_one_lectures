@@ -14,7 +14,8 @@
 
 - эффекты дохода и замещения
 - матрицы Слуцкого
-- парадокс Гиффена
+
+Ссылка на [слайды](https://github.com/pandreyanov/pashas_micro_one_lectures/blob/main/week_4/Lecture_4.pdf) 2023 года
 
 ## Литература
 
