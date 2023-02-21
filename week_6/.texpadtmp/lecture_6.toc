@@ -1,0 +1,20 @@
+\babel@toc {russian}{}\relax 
+\beamer@sectionintoc {1}{План}{2}{0}{1}
+\beamer@sectionintoc {2}{Общие издержки}{4}{0}{2}
+\beamer@sectionintoc {3}{Фиксированные, средние и маржинальные издержки}{8}{0}{3}
+\beamer@sectionintoc {4}{Максимизация прибыли}{12}{0}{4}
+\beamer@sectionintoc {5}{Вернемся к средним издержкам}{15}{0}{5}
+\beamer@sectionintoc {6}{Точка закрытия в долгосрочном периоде}{19}{0}{6}
+\beamer@sectionintoc {7}{Точка закрытия в краткосрочном периоде}{22}{0}{7}
+\beamer@sectionintoc {8}{Пример}{29}{0}{8}
+\beamer@sectionintoc {9}{Монополистическая конкуренция}{41}{0}{9}
+\beamer@sectionintoc {10}{Пример}{44}{0}{10}
+\beamer@sectionintoc {11}{Перерыв}{51}{0}{11}
+\beamer@sectionintoc {12}{Функция издержек}{52}{0}{12}
+\beamer@sectionintoc {13}{Много факторов, один товар}{56}{0}{13}
+\beamer@sectionintoc {14}{Много товаров, один фактор}{65}{0}{14}
+\beamer@sectionintoc {15}{Максимизация прибыли}{69}{0}{15}
+\beamer@sectionintoc {16}{Труд, капитал и Кобб-Дуглас}{73}{0}{16}
+\beamer@sectionintoc {17}{Разные спросы}{81}{0}{17}
+\beamer@sectionintoc {18}{Убывающая отдача от масштаба}{83}{0}{18}
+\beamer@sectionintoc {19}{Оптимальное распределение производства}{87}{0}{19}

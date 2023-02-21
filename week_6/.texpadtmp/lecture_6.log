@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.15)  17 FEB 2023 08:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.15)  17 FEB 2023 10:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**lecture_5_1.tex
-(./lecture_5_1.tex
+**lecture_6.tex
+(./lecture_6.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-02-24> (/usr/local/texlive/2022/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2022/02/08 v3.66 A class for typesetting presentations
@@ -861,8 +861,8 @@ LaTeX Info: Redefining \_ on input line 43.
 File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count347
 \l__pdf_internal_box=\box80
-) (/Users/pasha/Documents/GitHub/pashas_micro_one_lectures/week_5/.texpadtmp/lecture_5_1.aux)
-\openout1 = `lecture_5_1.aux'.
+) (/Users/pasha/Documents/GitHub/pashas_micro_one_lectures/week_6/.texpadtmp/lecture_6.aux)
+\openout1 = `lecture_6.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
 LaTeX Font Info:    ... okay on input line 27.
@@ -955,9 +955,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 27.
 LaTeX Info: Redefining \pageref on input line 27.
 LaTeX Info: Redefining \nameref on input line 27.
- (/Users/pasha/Documents/GitHub/pashas_micro_one_lectures/week_5/.texpadtmp/lecture_5_1.out) (/Users/pasha/Documents/GitHub/pashas_micro_one_lectures/week_5/.texpadtmp/lecture_5_1.out)
+ (/Users/pasha/Documents/GitHub/pashas_micro_one_lectures/week_6/.texpadtmp/lecture_6.out) (/Users/pasha/Documents/GitHub/pashas_micro_one_lectures/week_6/.texpadtmp/lecture_6.out)
 \@outlinefile=\write5
-\openout5 = `lecture_5_1.out'.
+\openout5 = `lecture_6.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 27.
@@ -1026,22 +1026,22 @@ Dictionary: translator-numbers-dictionary, Language: English
 Dictionary: translator-theorem-dictionary, Language: English 
 )
 LaTeX Info: Redefining \th on input line 27.
- (/Users/pasha/Documents/GitHub/pashas_micro_one_lectures/week_5/.texpadtmp/lecture_5_1.nav)
-Overfull \vbox (15.63992pt too high) detected at line 29
+ (/Users/pasha/Documents/GitHub/pashas_micro_one_lectures/week_6/.texpadtmp/lecture_6.nav)
+Overfull \vbox (15.63992pt too high) detected at line 28
  []
 
 [1
 
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 31.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 30.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 31.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 30.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 31.
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 30.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
 ) [2
@@ -1052,21 +1052,17 @@ File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mat
 
 ] [5
 
-] [6
+]
+LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 68.
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/base/ts1cmss.fd
+File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+) [6
 
 ] [7
 
 ] [8
 
-]
-LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 102.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/base/ts1cmss.fd
-File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-Overfull \vbox (17.59485pt too high) detected at line 102
- []
-
-[9
+] [9
 
 ] [10
 
@@ -1082,9 +1078,19 @@ Overfull \vbox (17.59485pt too high) detected at line 102
 
 ] [16
 
-] [17
+]
+<trident.png, id=192, 610.78188pt x 619.31375pt>
+File: trident.png Graphic file (type png)
+<use trident.png>
+Package pdftex.def Info: trident.png  used on input line 150.
+(pdftex.def)             Requested size: 215.10196pt x 218.10495pt.
 
-] [18
+Overfull \vbox (14.32672pt too high) detected at line 150
+ []
+
+[17
+
+ <./trident.png>] [18
 
 ] [19
 
@@ -1098,9 +1104,19 @@ Overfull \vbox (17.59485pt too high) detected at line 102
 
 ] [24
 
-] [25
+]
+<trident2.png, id=240, 451.18562pt x 437.635pt>
+File: trident2.png Graphic file (type png)
+<use trident2.png>
+Package pdftex.def Info: trident2.png  used on input line 222.
+(pdftex.def)             Requested size: 215.10196pt x 208.64673pt.
 
-] [26
+Overfull \vbox (4.8685pt too high) detected at line 222
+ []
+
+[25
+
+ <./trident2.png>] [26
 
 ] [27
 
@@ -1166,33 +1182,101 @@ Overfull \vbox (17.59485pt too high) detected at line 102
 
 ] [58
 
+] [59
+
+] [60
+
+] [61
+
+] [62
+
+] [63
+
+] [64
+
+] [65
+
+] [66
+
+] [67
+
+] [68
+
+] [69
+
+] [70
+
+] [71
+
+] [72
+
+] [73
+
+] [74
+
+] [75
+
+] [76
+
+] [77
+
+] [78
+
+] [79
+
+] [80
+
+] [81
+
+] [82
+
+] [83
+
+] [84
+
+] [85
+
+] [86
+
+] [87
+
+] [88
+
+] [89
+
+] [90
+
+] [91
+
+] [92
+
 ]
 \tf@nav=\write6
-\openout6 = `lecture_5_1.nav'.
+\openout6 = `lecture_6.nav'.
 
 \tf@toc=\write7
-\openout7 = `lecture_5_1.toc'.
+\openout7 = `lecture_6.toc'.
 
 \tf@snm=\write8
-\openout8 = `lecture_5_1.snm'.
+\openout8 = `lecture_6.snm'.
 
- (/Users/pasha/Documents/GitHub/pashas_micro_one_lectures/week_5/.texpadtmp/lecture_5_1.aux)
-Package rerunfilecheck Info: File `lecture_5_1.out' has not changed.
-(rerunfilecheck)             Checksum: DFED96F3D00611250D675C362C7AA51A;2588.
+ (/Users/pasha/Documents/GitHub/pashas_micro_one_lectures/week_6/.texpadtmp/lecture_6.aux)
+Package rerunfilecheck Info: File `lecture_6.out' has not changed.
+(rerunfilecheck)             Checksum: 28F20B2A700639063FF387F46056EAE2;4254.
  ) 
 Here is how much of TeX's memory you used:
- 27156 strings out of 478268
- 544056 string characters out of 5846347
- 784794 words of memory out of 5000000
- 44676 multiletter control sequences out of 15000+600000
- 485737 words of font info for 63 fonts, out of 8000000 for 9000
+ 27353 strings out of 478268
+ 546099 string characters out of 5846347
+ 784782 words of memory out of 5000000
+ 44796 multiletter control sequences out of 15000+600000
+ 484852 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,13n,122p,1810b,752s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsi1095.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfso1095.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb>
-Output written on /Users/pasha/Documents/GitHub/pashas_micro_one_lectures/week_5/.texpadtmp/lecture_5_1.pdf (58 pages, 262972 bytes).
+ 128i,13n,122p,1808b,752s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsi1095.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb>
+Output written on /Users/pasha/Documents/GitHub/pashas_micro_one_lectures/week_6/.texpadtmp/lecture_6.pdf (92 pages, 514953 bytes).
 PDF statistics:
- 502 PDF objects out of 1000 (max. 8388607)
- 397 compressed objects within 4 object streams
- 129 named destinations out of 1000 (max. 500000)
- 139 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 743 PDF objects out of 1000 (max. 8388607)
+ 596 compressed objects within 6 object streams
+ 204 named destinations out of 1000 (max. 500000)
+ 205 words of extra memory for PDF output out of 10000 (max. 10000000)
 
