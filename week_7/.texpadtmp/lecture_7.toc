@@ -1,0 +1,14 @@
+\babel@toc {russian}{}\relax 
+\beamer@sectionintoc {1}{Три задачи производителя}{3}{0}{1}
+\beamer@sectionintoc {2}{Минимизация издержек}{5}{0}{2}
+\beamer@sectionintoc {3}{Максимизация прибыли}{11}{0}{3}
+\beamer@sectionintoc {4}{Максимизация прибыли вош.}{17}{0}{4}
+\beamer@sectionintoc {5}{А что если фирма монополист?}{23}{0}{5}
+\beamer@sectionintoc {6}{Модели Леонтьева}{25}{0}{6}
+\beamer@sectionintoc {7}{Технологические множества}{34}{0}{7}
+\beamer@sectionintoc {8}{Аксиомы производителя}{40}{0}{8}
+\beamer@sectionintoc {9}{Максимизация полезности}{45}{0}{9}
+\beamer@sectionintoc {10}{Сложение технологических множеств}{48}{0}{10}
+\beamer@sectionintoc {11}{Сложение технологических границ}{53}{0}{11}
+\beamer@sectionintoc {12}{Сложение треугольников (на доске)}{61}{0}{12}
+\beamer@sectionintoc {13}{Конец}{62}{0}{13}
