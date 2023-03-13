@@ -1,0 +1,15 @@
+\babel@toc {russian}{}\relax 
+\beamer@sectionintoc {1}{Сложение спросов}{3}{0}{1}
+\beamer@sectionintoc {2}{Продвинутое сложение спросов}{7}{0}{2}
+\beamer@sectionintoc {3}{Сложение не КД}{12}{0}{3}
+\beamer@sectionintoc {4}{Сложение совсем разных спросов}{15}{0}{4}
+\beamer@sectionintoc {5}{Сложение эластичностей}{18}{0}{5}
+\beamer@sectionintoc {6}{Сложение предложений}{22}{0}{6}
+\beamer@sectionintoc {7}{Частичное равновесие}{35}{0}{7}
+\beamer@sectionintoc {8}{PS и CS}{39}{0}{8}
+\beamer@sectionintoc {9}{Перерыв}{43}{0}{9}
+\beamer@sectionintoc {10}{Налог в частичном равновесии}{46}{0}{10}
+\beamer@sectionintoc {11}{Решим пример у доски}{56}{0}{11}
+\beamer@sectionintoc {12}{Налоги и DWL}{57}{0}{12}
+\beamer@sectionintoc {13}{Субсидии}{61}{0}{13}
+\beamer@sectionintoc {14}{Пол, потолок и экстерналии (на доске)}{63}{0}{14}
