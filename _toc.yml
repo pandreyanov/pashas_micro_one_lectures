@@ -78,7 +78,7 @@ parts:
   chapters:
     - file: week_11/lecture_11_1
     - file: week_11/lecture_11_2
-    - file: week_11/seminar_12
+    - file: week_11/seminar_11
 - caption: Двенадцатая неделя
   chapters:
     - file: week_12/lecture_12_1

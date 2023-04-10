@@ -1,0 +1,12 @@
+\babel@toc {russian}{}\relax 
+\beamer@sectionintoc {1}{Экономика обмена}{3}{0}{1}
+\beamer@sectionintoc {2}{Допустимые состояния}{8}{0}{2}
+\beamer@sectionintoc {3}{Ящик Эджворта}{11}{0}{3}
+\beamer@sectionintoc {4}{Парето оптимальность}{15}{0}{4}
+\beamer@sectionintoc {5}{Примеры у доски}{23}{0}{5}
+\beamer@sectionintoc {6}{Равновесие Вальраса}{25}{0}{6}
+\beamer@sectionintoc {7}{Закон Вальраса}{29}{0}{7}
+\beamer@sectionintoc {8}{РВ как система уравнений}{32}{0}{8}
+\beamer@sectionintoc {9}{Связь ПО и РВ}{38}{0}{9}
+\beamer@sectionintoc {10}{РВ против ПО}{41}{0}{10}
+\beamer@sectionintoc {11}{РВ с трансфертами}{48}{0}{11}
