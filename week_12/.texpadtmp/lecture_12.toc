@@ -1,0 +1,15 @@
+\babel@toc {russian}{}\relax 
+\beamer@sectionintoc {1}{Повторение РВ}{3}{0}{1}
+\beamer@sectionintoc {2}{Экономика с производством}{8}{0}{2}
+\beamer@sectionintoc {3}{Ящик Эджворта}{13}{0}{3}
+\beamer@sectionintoc {4}{Парето оптимальность}{17}{0}{4}
+\beamer@sectionintoc {5}{Геометрическая интерпретация}{19}{0}{5}
+\beamer@sectionintoc {6}{Равновесие Вальраса}{24}{0}{6}
+\beamer@sectionintoc {7}{РВ как система уравнений}{28}{0}{7}
+\beamer@sectionintoc {8}{Первая теорема благосостояния}{32}{0}{8}
+\beamer@sectionintoc {9}{Перерыв}{39}{0}{9}
+\beamer@sectionintoc {10}{Избыточный спрос}{40}{0}{10}
+\beamer@sectionintoc {11}{Примеры}{44}{0}{11}
+\beamer@sectionintoc {12}{Существование решения}{50}{0}{12}
+\beamer@sectionintoc {13}{Единственность решения}{58}{0}{13}
+\beamer@sectionintoc {14}{Единственность решения}{60}{0}{14}
