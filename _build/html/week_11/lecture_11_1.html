@@ -911,8 +911,8 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="math notranslate nohighlight">
 \[ U(x) = \lambda U_a(x) + \mu U_b(w-x) \to \max_x, \quad \lambda, \mu \geqslant 0\]</div>
 <ul class="simple">
-<li><p>слабая ПО означает, что для любой комбинации весов <span class="math notranslate nohighlight">\((\lambda, \mu) \neq (0,0)\)</span> точка <span class="math notranslate nohighlight">\(x\)</span> (строго) оптимальна в смысле взвешенной полезности агентов. То есть если нам предлагают претендента <span class="math notranslate nohighlight">\(x'\)</span> такого, что всем агентам строго лучше, то одна из таких взвешенных полезностей среагирует.</p></li>
-<li><p>сильная ПО означает то же самое, но веса должны быть строго положительные.</p></li>
+<li><p>слабая ПО означает, что для любой комбинации весов <span class="math notranslate nohighlight">\((\lambda, \mu) \neq (0,0)\)</span> точка <span class="math notranslate nohighlight">\(x\)</span> (строго) оптимальна в смысле взвешенной полезности агентов. То есть если нам предлагают претендента <span class="math notranslate nohighlight">\(x'\)</span> такого, что всем агентам строго лучше, то взвешенная полезность увеличится.</p></li>
+<li><p>сильная ПО означает то же самое, но веса должны быть строго положительные. Тогда даже если только одна полезность увеличится, взвешенная полезность увеличится.</p></li>
 </ul>
 <p>На практике, один из двух весов можно положить равным единице:</p>
 <div class="math notranslate nohighlight">
