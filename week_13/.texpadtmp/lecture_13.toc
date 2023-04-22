@@ -1,0 +1,12 @@
+\babel@toc {russian}{}\relax 
+\beamer@sectionintoc {1}{РВ с функциями издержек}{3}{0}{1}
+\beamer@sectionintoc {2}{Пример 1}{5}{0}{2}
+\beamer@sectionintoc {3}{Пример 2}{10}{0}{3}
+\beamer@sectionintoc {4}{Пример 3}{15}{0}{4}
+\beamer@sectionintoc {5}{РВ с линейными функциями}{18}{0}{5}
+\beamer@sectionintoc {6}{Пример 1}{20}{0}{6}
+\beamer@sectionintoc {7}{Пример 2}{27}{0}{7}
+\beamer@sectionintoc {8}{Перерыв}{29}{0}{8}
+\beamer@sectionintoc {9}{Трейд}{30}{0}{9}
+\beamer@sectionintoc {10}{Пример 1}{32}{0}{10}
+\beamer@sectionintoc {11}{Пример 2}{44}{0}{11}
