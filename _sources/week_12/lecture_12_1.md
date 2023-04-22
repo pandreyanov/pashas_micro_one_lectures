@@ -121,7 +121,7 @@ $$\vec y \in \delta Y \quad \Leftrightarrow \quad F(\vec y) = 0.$$
 
 В таком случае, можно интерпретировать ее как полезность дополнительного агента...
 
-$$ U(x, y) = \lambda U_a(x) + \mu U_b(y + w-x) + F(y) \to \max_{x,y}, \quad \alpha, \beta \geqslant 0$$
+$$ U(x, y) = \lambda U_a(x) + \mu U_b(y + w-x) + F(y) \to \max_{x,y}, \quad \lambda, \mu \geqslant 0$$
 
 Максимизируем взвешенную полезность, получаем истинный Парето-фронт. Заметим, что отсюда моментально следует коллинеарность всех трех градиентов: $\nabla U_a, \nabla U_b, \nabla F$ вo внутреннем Парето-оптимуме.
 
