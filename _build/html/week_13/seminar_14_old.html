@@ -1,0 +1,820 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Семинар 14 &#8212; Учебник по Микро 1, для ИП, ФЭН ВШЭ</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">Учебник по Микро 1, для ИП, ФЭН ВШЭ</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../table.html">
+   Содержание учебника
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Программа курса
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_0/principles.html">
+   Принципы
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_0/grades.html">
+   Оценивание
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_0/hours.html">
+   Часы
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_0/module%203.html">
+   Структура третьего модуля
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_0/module%204.html">
+   Структура четвертого модуля
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Первая неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_1/intro_1.html">
+   Содержание
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_1/lecture_1_1.html">
+   Первая лекция, часть 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_1/lecture_1_2.html">
+   Первая лекция, часть 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_1/seminar_1.html">
+   Семинар 1 (2023)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_1/practice_1.html">
+   Задачи для тренировки
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_1/homework_1.html">
+   Первое домашнее задание
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Вторая неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_2/intro_2.html">
+   Содержание
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_2/lecture_2_1.html">
+   Вторая лекция, часть 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_2/lecture_2_2.html">
+   Вторая лекция, часть 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_2/seminar_2.html">
+   Семинар 2
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Третья неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_3/intro_3.html">
+   Содержание
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_3/lecture_3_1.html">
+   Третья лекция, часть 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_3/lecture_3_2.html">
+   Третья лекция, часть 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_3/seminar_3.html">
+   Семинар 3
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Четвертая неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_4/intro_4.html">
+   Содержание
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_4/lecture_4_1.html">
+   Четвертая лекция, часть 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_4/lecture_4_2.html">
+   Четвертая лекция, часть 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_4/seminar_4.html">
+   Семинар 4
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_4/practice_2.html">
+   Задачи для тренировки
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_4/homework_2.html">
+   Второе домашнее задание
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Пятая неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_5/intro_5.html">
+   Содержание
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_5/lecture_5_1.html">
+   Пятая лекция, часть 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_5/lecture_5_2.html">
+   Пятая лекция, часть 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_5/seminar_5.html">
+   Семинар 5
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_5/homework_3.html">
+   Третье домашнее задание
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Шестая неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_6/intro_6.html">
+   Содержание
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_6/lecture_6_1.html">
+   Шестая лекция, часть 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_6/lecture_6_2.html">
+   Шестая лекция, часть 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_6/seminar_6.html">
+   Семинар 6
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Седьмая неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_7/intro_7.html">
+   Содержание
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_7/practice_7.html">
+   Задачи для тренировки
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_7/lecture_7_1.html">
+   Седьмая лекция
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_7/seminar_7.html">
+   Семинар 7
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_7/homework_4.html">
+   Четвертое домашнее задание
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Восьмая неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_8/intro_8.html">
+   Содержание
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_8/seminar_8.html">
+   Семинар 8
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Девятая неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_9/intro_9.html">
+   Содержание
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_9/seminar_9.html">
+   Семинар 9
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Десятая неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_10/test_exam_problems.html">
+   Тестовая контрольная
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Одиннадцатая неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_11/lecture_11_1.html">
+   Одиннадцатая лекция, часть 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_11/lecture_11_2.html">
+   Одиннадцатая лекция, часть 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_11/seminar_11.html">
+   Семинар 11
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Двенадцатая неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_12/lecture_12_1.html">
+   Двенадцатая лекция, часть 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_12/lecture_12_2.html">
+   Двенадцатая лекция, часть 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_12/seminar_12.html">
+   Семинар 12
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_12/homework_12.html">
+   Пятое домашнее задание
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Тринадцатая неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="seminar_13.html">
+   Семинар 14
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Четырнадцатая неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_14/lecture_14_1.html">
+   Четырнадцатая лекция, часть 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_14/lecture_14_2.html">
+   Четырнадцатая лекция, часть 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_14/seminar_15.html">
+   Семинар 15
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Пятнадцатая неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_15/lecture_16_1.html">
+   Пятнадцатая лекция, часть 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_15/lecture_16_2.html">
+   Пятнадцатая лекция, часть 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_15/homework_6.html">
+   Шестое домашнее задание
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_15/seminar_16.html">
+   Семинар 16
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_15/seminar_17.html">
+   Семинар 17
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Шестнадцатая неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_16/seminar_18.html">
+   Семинар 18
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Семнадцатая неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_17/lecture_17_1.html">
+   Семнадцатая лекция, часть 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_17/lecture_17_2.html">
+   Семнадцатая лекция, часть 2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_17/homework_7.html">
+   Седьмое домашнее задание
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_17/seminar_19.html">
+   Семинар 19
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Восемнадцатая неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_18/homework_8.html">
+   Восьмое домашнее задание
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_18/seminar_20.html">
+   Семинар 20
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Девятнадцатая неделя
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_19/test.html">
+   Контрольная работа
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_19/answers.html">
+   Решения
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Мат. шпаргалка
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../cheetsheet/differentials.html">
+   Дифференциалы
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../cheetsheet/forms.html">
+   Квадратичные формы
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../cheetsheet/backprop.html">
+   Бэкпроп
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../cheetsheet/approximations.html">
+   Приближения
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/week_13/seminar_14_old.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   Задача 1
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   Задача 2
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id4">
+   Задача 3
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Семинар 14</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   Задача 1
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   Задача 2
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id4">
+   Задача 3
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="id1">
+<h1>Семинар 14<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p><em>23 апреля 2022. Провела Даша</em>🐼</p>
+<div class="section" id="id2">
+<h2>Задача 1<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>В стране Х производятся два товара, при изготовлении которых используются труд и капитал. Первый товар производится по технологии <span class="math notranslate nohighlight">\(y_1(K, L) = L^{1/3}K^{2/3}\)</span>, а второй - по технологии <span class="math notranslate nohighlight">\(y_2(K, L) = L^{2/3} K^{1/3} \)</span>.</p>
+<ol class="simple">
+<li><p>Эффективно ли распределение ресурсов, в котором для производства первого товара используется 6 единиц капитала и 3 единицы труда, а для производства второго товара используется по 4 единицы труда и капитала? Если да, то обоснуйте, если нет, то укажите способ перераспределения ресурсов, повышающий эффективность производства (то есть повышающий производство какого-либо товара без уменьшения производства другого).</p></li>
+<li><p>Изобразите в ящике Эджворта данное распределение, если известно, что страна использует полностью все имеющиеся у нее ресурсы.</p></li>
+<li><p>Запишите задачу на поиск границы производственных возможностей и найдите условия первого порядка.</p></li>
+</ol>
+</div>
+<div class="section" id="id3">
+<h2>Задача 2<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>Рассмотрите экономику с двумя потребителями (A и B) с функциями полезности <span class="math notranslate nohighlight">\(U^A(x_1^A, x_2^A) = x_1^A x_2^A\)</span> и <span class="math notranslate nohighlight">\(U^B(x_1^B, x_2^B) = \left( x_1^B\right)^\beta \left( x_2^B\right)^\beta\)</span>, <span class="math notranslate nohighlight">\(\beta &gt;0\)</span>. В~экономике есть одна фирма, которая действует в условиях заданных цен и производит <span class="math notranslate nohighlight">\(x_2\)</span> из <span class="math notranslate nohighlight">\(x_1\)</span>. Производственная функция <span class="math notranslate nohighlight">\(x_2 = \sqrt{x_1}\)</span>. Потребитель A имеет 12 единиц <span class="math notranslate nohighlight">\(x_1\)</span> и не имеет запаса второго блага. Потребитель B имеет 36 единиц первого блага и не имеет запаса второго блага. Потребителю А принадлежит 25% прибыли, а B - 75%.</p>
+<ol class="simple">
+<li><p>Найдите равновесие.</p></li>
+<li><p>Найдите парето-эффективные распределения.</p></li>
+<li><p>Реализуйте какое-нибудь внутреннее парето-эффективное распределение как равновесие с трансфертами.</p></li>
+</ol>
+</div>
+<div class="section" id="id4">
+<h2>Задача 3<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p>Рассмотрите экономику с одним потребителем A и двумя потребительскими благами: <span class="math notranslate nohighlight">\(x_1\)</span> и <span class="math notranslate nohighlight">\(x_2\)</span>. Технология позволяет произвести из блага <span class="math notranslate nohighlight">\(x_1\)</span> благо <span class="math notranslate nohighlight">\(x_2\)</span>, производственная функция <span class="math notranslate nohighlight">\(y_2 = 2\sqrt{x_1}\)</span>. Предпочтения потребителя представимы дифференцируемой функцией полезности <span class="math notranslate nohighlight">\(u^A(x^A_1 ,x^A_2) =
+(x^A_1 )^{2/3} (x^A_2)^{1/3}\)</span>, а <span class="math notranslate nohighlight">\(y_2 = 2\sqrt{x_1}\)</span>. Начальный запас первого товара равен 7, второго - 1.</p>
+<ol class="simple">
+<li><p>Найдите парето-оптимальное распределение. Приведите графическую иллюстрацию.</p></li>
+<li><p>Запишите задачу поиска парето-оптимальных распределений и выведите дифференциальную характеристику внутренних парето-оптимальных распределений.</p></li>
+<li><p>Проверьте выполнение закона Вальраса в данной экономике.</p></li>
+<li><p>Запишите определение равновесия по Вальрасу.</p></li>
+<li><p>Следуя определению, найдите равновесие по Вальрасу.</p></li>
+<li><p>Правительство ввело потоварный налог на продажу второго блага. Налоговые сборы в полном объеме перечисляются потребителю. Не вычисляя равновесие, покажите, что оно не будет оптимальным по Парето, а благосостояние потребителя ухудшится по сравнению с ситуацией без налога. Объясните, как такое может быть - ведь весь налог возвращается потребителю!</p></li>
+<li><p>В результате обсуждений, налоговая политика была изменена, и правительство ввело налог 13% на прибыль фирмы. Доходы от сбора налога перечисляются потребителю. Будет ли равновесное распределение после введения налога парето-оптимальным? Объясните, почему ответ на этот вопрос отличается (или не отличается) от ситуации с потоварным налогом.</p></li>
+</ol>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./week_13"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Паша Андреянов<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
