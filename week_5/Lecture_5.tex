@@ -191,7 +191,7 @@ $$\log x = \varepsilon \cdot \log p + \text{ошибка}$$
 \end{gather*}
 ... слева стоят проценты, значит и справа проценты
 \begin{gather*}
-	\frac{CV}{I} \approx \sum_i \frac{p_i h_i}{I} \frac{\delta p_i}{p_i}  + \frac{1}{2I}\sum_i \frac{\partial h_i}{\partial p_i} (\frac{\delta p_i}{p_i})^2p_i^2 + 2\frac{1}{2I}\sum_{i \neq j} \frac{\partial h_i}{\partial p_j} (\frac{\partial p_i}{p_i}\frac{\delta p_j}{p_j})p_ip_j
+	\frac{CV}{I} \approx \sum_i \frac{p_i h_i}{I} \frac{\delta p_i}{p_i}  + \frac{1}{2I}\sum_i \frac{\partial h_i}{\partial p_i} (\frac{\delta p_i}{p_i})^2p_i^2 + \frac{1}{2I}\sum_{i \neq j} \frac{\partial h_i}{\partial p_j} (\frac{\partial p_i}{p_i}\frac{\delta p_j}{p_j})p_ip_j
 \end{gather*}
 ... доведем до ума у доски?
 \end{frame}
@@ -199,11 +199,11 @@ $$\log x = \varepsilon \cdot \log p + \text{ошибка}$$
 \begin{frame}{Универсальная калибровка}
 Еще раз:
 \begin{gather*}
-	\frac{CV}{I} \approx \sum_i \frac{p_i h_i}{I} \frac{\delta p_i}{p_i}p_i^2  + \\ + \frac{1}{2I}\sum_i \frac{\partial h_i}{\partial p_i} (\frac{\delta p_i}{p_i})^2 +  2\frac{1}{2I}\sum_{i \neq j} \frac{\partial h_i}{\partial p_j} (\frac{\partial p_i}{p_i}\frac{\delta p_j}{p_j})p_ip_j
+	\frac{CV}{I} \approx \sum_i \frac{p_i h_i}{I} \frac{\delta p_i}{p_i}p_i^2  + \\ + \frac{1}{2I}\sum_i \frac{\partial h_i}{\partial p_i} (\frac{\delta p_i}{p_i})^2 +  \frac{1}{2I}\sum_{i \neq j} \frac{\partial h_i}{\partial p_j} (\frac{\partial p_i}{p_i}\frac{\delta p_j}{p_j})p_ip_j
 	\end{gather*}
 Правильный ответ:
 	\begin{gather*}
-	\frac{CV}{I} \approx \sum_i s_i (\frac{\delta p_i}{p_i}) + \frac{1}{2}\sum_i s_i \varepsilon^c_{i/i} (\frac{\delta p_i}{p_i})^2 + \sum_{i \neq j} s_i \varepsilon^c_{i/j}(\frac{\delta p_i}{p_i}\frac{\delta p_j}{p_j})
+	\frac{CV}{I} \approx \sum_i s_i (\frac{\delta p_i}{p_i}) + \frac{1}{2}\sum_i s_i \varepsilon^c_{i/i} (\frac{\delta p_i}{p_i})^2 + \frac{1}{2}\sum_{i \neq j} s_i \varepsilon^c_{i/j}(\frac{\delta p_i}{p_i}\frac{\delta p_j}{p_j})
 \end{gather*}
 Действительно, справа безразмерные величины!
 \end{frame}
