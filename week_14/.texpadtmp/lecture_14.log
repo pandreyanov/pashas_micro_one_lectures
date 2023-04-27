@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.15)  27 APR 2023 16:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.15)  27 APR 2023 20:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1044,107 +1044,117 @@ Overfull \vbox (15.63992pt too high) detected at line 30
 [1
 
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 37.
+LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 39.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/base/ts1cmss.fd
 File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 ) [2
 
 ]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 39.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 41.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 39.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 41.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 39.
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 41.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
 ) [3
 
-] [4
-
 ]
-<pic2.png, id=72, 776.9025pt x 306.14375pt>
-File: pic2.png Graphic file (type png)
-<use pic2.png>
-Package pdftex.def Info: pic2.png  used on input line 58.
-(pdftex.def)             Requested size: 307.28987pt x 121.09128pt.
- [5
+<pic1.png, id=64, 752.31062pt x 187.19937pt>
+File: pic1.png Graphic file (type png)
+<use pic1.png>
+Package pdftex.def Info: pic1.png  used on input line 49.
+(pdftex.def)             Requested size: 307.28987pt x 76.46373pt.
 
- <./pic2.png>] [6
-
-] [7
-
-] [8
-
-]
-<pic4.png, id=97, 844.15375pt x 593.21625pt>
-File: pic4.png Graphic file (type png)
-<use pic4.png>
-Package pdftex.def Info: pic4.png  used on input line 100.
-(pdftex.def)             Requested size: 307.28987pt x 215.94734pt.
-
-Overfull \vbox (12.16911pt too high) detected at line 100
+Overfull \vbox (14.22868pt too high) detected at line 49
  []
 
-[9
+[4
 
- <./pic4.png>] [10
+ <./pic1.png>] [5
+
+] [6
 
 ]
+<pic2.png, id=90, 776.9025pt x 306.14375pt>
+File: pic2.png Graphic file (type png)
+<use pic2.png>
+Package pdftex.def Info: pic2.png  used on input line 70.
+(pdftex.def)             Requested size: 307.28987pt x 121.09128pt.
+ [7
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 115.
+ <./pic2.png>] [8
 
+] [9
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 115.
+] [10
+
+]
+<pic4.png, id=114, 844.15375pt x 593.21625pt>
+File: pic4.png Graphic file (type png)
+<use pic4.png>
+Package pdftex.def Info: pic4.png  used on input line 112.
+(pdftex.def)             Requested size: 307.28987pt x 215.94734pt.
+
+Overfull \vbox (12.16911pt too high) detected at line 112
+ []
 
 [11
 
-] [12
+ <./pic4.png>] [12
 
-] [13
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 127.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 127.
+
+[13
 
 ] [14
 
 ] [15
 
-]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 168.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 168.
-
-[16
+] [16
 
 ] [17
 
-] [18
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 180.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 180.
+
+[18
+
+] [19
+
+] [20
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 190.
+(hyperref)                removing `math shift' on input line 202.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\in' on input line 190.
+(hyperref)                removing `\in' on input line 202.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 190.
+(hyperref)                removing `math shift' on input line 202.
 
-[19
-
-] [20
-
-] [21
+[21
 
 ] [22
 
@@ -1162,6 +1172,10 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 ] [29
 
+] [30
+
+] [31
+
 ]
 \tf@nav=\write6
 \openout6 = `lecture_14.nav'.
@@ -1174,21 +1188,21 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
  (/Users/pasha/Documents/GitHub/pashas_micro_one_lectures/week_14/.texpadtmp/lecture_14.aux)
 Package rerunfilecheck Info: File `lecture_14.out' has not changed.
-(rerunfilecheck)             Checksum: D2B7CA9A7EB8E1F0AA68619C952D4BE4;1148.
+(rerunfilecheck)             Checksum: 4D6A3EF097C03F1EE8EF99F48D4E3DC8;1351.
  ) 
 Here is how much of TeX's memory you used:
- 27124 strings out of 478268
- 544242 string characters out of 5846347
+ 27144 strings out of 478268
+ 544445 string characters out of 5846347
  787855 words of memory out of 5000000
- 44699 multiletter control sequences out of 15000+600000
+ 44713 multiletter control sequences out of 15000+600000
  488485 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,13n,122p,1809b,754s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfss1440.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb>
-Output written on /Users/pasha/Documents/GitHub/pashas_micro_one_lectures/week_14/.texpadtmp/lecture_14.pdf (29 pages, 468022 bytes).
+Output written on /Users/pasha/Documents/GitHub/pashas_micro_one_lectures/week_14/.texpadtmp/lecture_14.pdf (31 pages, 511646 bytes).
 PDF statistics:
- 305 PDF objects out of 1000 (max. 8388607)
- 228 compressed objects within 3 object streams
- 65 named destinations out of 1000 (max. 500000)
- 101 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 324 PDF objects out of 1000 (max. 8388607)
+ 243 compressed objects within 3 object streams
+ 70 named destinations out of 1000 (max. 500000)
+ 114 words of extra memory for PDF output out of 10000 (max. 10000000)
 

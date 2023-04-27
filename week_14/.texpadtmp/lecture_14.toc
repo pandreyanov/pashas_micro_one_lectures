@@ -1,7 +1,8 @@
 \babel@toc {russian}{}\relax 
-\beamer@sectionintoc {1}{Трейд, пример 2 (с прошлой лекции)}{3}{0}{1}
-\beamer@sectionintoc {2}{Случай $q = 1/2$}{11}{0}{2}
-\beamer@sectionintoc {3}{Случай $q = 2$}{16}{0}{3}
-\beamer@sectionintoc {4}{Случай $q \in (1/2,2)$}{19}{0}{4}
-\beamer@sectionintoc {5}{Как перебирать случаи}{22}{0}{5}
-\beamer@sectionintoc {6}{Трейд, новый пример 3}{24}{0}{6}
+\beamer@sectionintoc {1}{Парето всё (с консы)}{3}{0}{1}
+\beamer@sectionintoc {2}{Трейд, пример 2 (с прошлой лекции)}{5}{0}{2}
+\beamer@sectionintoc {3}{Случай $q = 1/2$}{13}{0}{3}
+\beamer@sectionintoc {4}{Случай $q = 2$}{18}{0}{4}
+\beamer@sectionintoc {5}{Случай $q \in (1/2,2)$}{21}{0}{5}
+\beamer@sectionintoc {6}{Как перебирать случаи}{24}{0}{6}
+\beamer@sectionintoc {7}{Трейд, новый пример 3}{26}{0}{7}
