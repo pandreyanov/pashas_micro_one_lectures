@@ -6,3 +6,10 @@
 \beamer@sectionintoc {5}{Случай $q \in (1/2,2)$}{21}{0}{5}
 \beamer@sectionintoc {6}{Как перебирать случаи}{24}{0}{6}
 \beamer@sectionintoc {7}{Трейд, новый пример 3}{26}{0}{7}
+\beamer@sectionintoc {8}{Вернемся к КПВ}{34}{0}{8}
+\beamer@sectionintoc {9}{Больше КПВ}{39}{0}{9}
+\beamer@sectionintoc {10}{Повтор РВ с производством}{41}{0}{10}
+\beamer@sectionintoc {11}{1+1}{43}{0}{11}
+\beamer@sectionintoc {12}{1+2}{48}{0}{12}
+\beamer@sectionintoc {13}{2+1}{55}{0}{13}
+\beamer@sectionintoc {14}{2+2}{59}{0}{14}
