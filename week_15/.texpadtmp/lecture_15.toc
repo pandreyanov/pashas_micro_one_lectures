@@ -1,0 +1,10 @@
+\babel@toc {russian}{}\relax 
+\beamer@sectionintoc {1}{Экстерналии}{3}{0}{1}
+\beamer@sectionintoc {2}{Парето Фронт}{11}{0}{2}
+\beamer@sectionintoc {3}{Равновесие Вальраса}{19}{0}{3}
+\beamer@sectionintoc {4}{Теорема благосостояния}{25}{0}{4}
+\beamer@sectionintoc {5}{Экстерналии в ЧР}{27}{0}{5}
+\beamer@sectionintoc {6}{Налоги Пигу}{34}{0}{6}
+\beamer@sectionintoc {7}{Общ. благо}{39}{0}{7}
+\beamer@sectionintoc {8}{Общ. благо в ЧР}{47}{0}{8}
+\beamer@sectionintoc {9}{Общ. благо в ОР}{54}{0}{9}

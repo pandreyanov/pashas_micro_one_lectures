@@ -1,0 +1,2 @@
+\babel@toc {russian}{}\relax 
+\beamer@sectionintoc {1}{Экстерналии}{3}{0}{1}
