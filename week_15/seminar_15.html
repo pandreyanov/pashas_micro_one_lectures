@@ -742,35 +742,42 @@ const thebe_selector_output = ".output, .cell_output"
 <h2>Задача 2<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <p>Представьте себе следующую экономику. Есть агент, который потребляет благо <span class="math notranslate nohighlight">\(x\)</span> и отдых <span class="math notranslate nohighlight">\(l\)</span>. В запасе у него есть <span class="math notranslate nohighlight">\(\overline{L}\)</span> часов, которые он может потратить на отдых (величина <span class="math notranslate nohighlight">\(l\)</span>) и работу (<span class="math notranslate nohighlight">\(\overline{L} - l\)</span>). Запасов блага <span class="math notranslate nohighlight">\(x\)</span> у него нет.</p>
 <p>Есть фирма <span class="math notranslate nohighlight">\(A\)</span>, занимающаяся производством блага <span class="math notranslate nohighlight">\(y\)</span>. Она может нанять этого агента, заплатив <span class="math notranslate nohighlight">\(p_L=1\)</span> денежных единиц за 1 час работы. Если агент работает <span class="math notranslate nohighlight">\(L\)</span> часов, он может произвести <span class="math notranslate nohighlight">\(2\sqrt{L}\)</span> единиц блага <span class="math notranslate nohighlight">\(y\)</span>.</p>
-<p>Благо <span class="math notranslate nohighlight">\(y\)</span> приобретается фирмой <span class="math notranslate nohighlight">\(B\)</span> по цене <span class="math notranslate nohighlight">\(p_y\)</span> для производства блага <span class="math notranslate nohighlight">\(z\)</span>. Так, если фирма <span class="math notranslate nohighlight">\(B\)</span> закупает <span class="math notranslate nohighlight">\(y\)</span> единиц блага игрек, она может произвести <span class="math notranslate nohighlight">\(\sqrt{y}\)</span> единиц блага <span class="math notranslate nohighlight">\(z\)</span>.</p>
-<p>Благо <span class="math notranslate nohighlight">\(z\)</span>, в конечном счете, продается агенту по цене <span class="math notranslate nohighlight">\(p_z\)</span> и получает полезность:</p>
+<p>Благо <span class="math notranslate nohighlight">\(y\)</span> приобретается фирмой <span class="math notranslate nohighlight">\(B\)</span> по цене <span class="math notranslate nohighlight">\(p_y\)</span> для производства блага <span class="math notranslate nohighlight">\(x\)</span>. Так, если фирма <span class="math notranslate nohighlight">\(B\)</span> закупает <span class="math notranslate nohighlight">\(y\)</span> единиц блага игрек, она может произвести <span class="math notranslate nohighlight">\(\sqrt{y}\)</span> единиц блага <span class="math notranslate nohighlight">\(x\)</span>.</p>
+<p>Благо <span class="math notranslate nohighlight">\(x\)</span>, в конечном счете, продается агенту по цене <span class="math notranslate nohighlight">\(p_x\)</span> и получает полезность:</p>
 <div class="math notranslate nohighlight">
 \[
-u(z, L) = zl^{\alpha}.
+u(x, L) = xl^{\alpha}.
 \]</div>
 <p>Определите:</p>
 <ol class="simple">
 <li><p>Сколько часов агент будет отдыхать, а сколько - работать;</p></li>
-<li><p>Сколько единиц благ <span class="math notranslate nohighlight">\(y\)</span> и <span class="math notranslate nohighlight">\(z\)</span> будет произведено;</p></li>
-<li><p>Чему будут равны цены <span class="math notranslate nohighlight">\(p_y, p_z\)</span>,</p></li>
+<li><p>Сколько единиц благ <span class="math notranslate nohighlight">\(y\)</span> и <span class="math notranslate nohighlight">\(x\)</span> будет произведено;</p></li>
+<li><p>Чему будут равны цены <span class="math notranslate nohighlight">\(p_y, p_x\)</span>,</p></li>
 </ol>
 <p>если все акторы принимают решение одновременно и максимизируют свою целевую функцию (прибыль/полезность).</p>
 </div>
 <div class="section" id="id4">
 <h2>Задача 3<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
-<p>В некоторой экономике есть два агента, <span class="math notranslate nohighlight">\(A\)</span> и <span class="math notranslate nohighlight">\(B\)</span>, полезности которых равны соответственно:</p>
-<div class="math notranslate nohighlight">
-\[
-u_1(x_1, g) = x_1 + a_1 \ln g, \quad u_2(x_2, g) = x_2 + a_2 \ln g, \quad a_1&gt;a_2&gt;0,
-\]</div>
-<p>где благо <span class="math notranslate nohighlight">\(g\)</span> можно интерпретировать как <em>общественное благо</em>.</p>
-<p>Агенты не имеют запасов. В экономике существует общественный планировщик, который закупает блага <span class="math notranslate nohighlight">\(x\)</span> и <span class="math notranslate nohighlight">\(g\)</span> по цене 1 за каждое. Всего планировщик имеет 1 денежную единицу. Планировщик максимизирует общественное благосостояние, которое определяется как сумма полезностей агентов.</p>
+<p>Рассматривается экономика с двумя благами (<span class="math notranslate nohighlight">\(x\)</span> и <span class="math notranslate nohighlight">\(y\)</span>) и двумя потребителями (<span class="math notranslate nohighlight">\(A\)</span> и <span class="math notranslate nohighlight">\(B\)</span>). Предпочтения потребителей описываются функциями полезности <span class="math notranslate nohighlight">\(u^A = x^Ay^A\)</span> и <span class="math notranslate nohighlight">\(u^B = x^By^B - 2x^A\)</span>. Первоначальные запасы потребителей составляют по одной единице каждого блага.</p>
 <ol class="simple">
-<li><p>Найдите решение задачи планировщика.</p></li>
-<li><p>Будет ли найденное распределение Парето оптимальным? Приведите интуицию.</p></li>
-<li><p>Покажите аналитически, что найденное распределение является Парето оптимальным. Есть ли другие Парето-оптимальные распределения?</p></li>
-<li><p>Предположим теперь, что это агенты дают планировщику деньги, решение о распределении которых принимает последний. Пусть запасы агентов равны <span class="math notranslate nohighlight">\(y_1+y_2=1\)</span>, где <span class="math notranslate nohighlight">\(y_1, y_2\)</span> - запасы первого и второго агентов соответственно. Агенты передают государству <span class="math notranslate nohighlight">\(t_i\leqslant y_i\)</span> денежных единиц (<span class="math notranslate nohighlight">\(i\in \{1, 2\}\)</span>; каждый из трансфертов определяется планировщиком), а остаток потребляют. Изменится ли теперь объем общественного блага? А общественное благосостояние?</p></li>
+<li><p>Охарактеризуйте внешнее воздействие, имеющее место в данной экономике. Придумайте экономическую ситуацию, которая моделируется в этой задаче.</p></li>
+<li><p>Найдите равновесие.</p></li>
+<li><p>Будет ли равновесное распределение парето-оптимальным? Если да, докажите это, иначе приведите парето-улучшение.</p></li>
 </ol>
+<!-- В некоторой экономике есть два агента, $A$ и $B$, полезности которых равны соответственно:
+
+$$
+u_1(x_1, g) = x_1 + a_1 \ln g, \quad u_2(x_2, g) = x_2 + a_2 \ln g, \quad a_1>a_2>0,
+$$
+
+где благо $g$ можно интерпретировать как *общественное благо*.
+
+Агенты не имеют запасов. В экономике существует общественный планировщик, который закупает блага $x$ и $g$ по цене 1 за каждое. Всего планировщик имеет 1 денежную единицу. Планировщик максимизирует общественное благосостояние, которое определяется как сумма полезностей агентов.
+
+1. Найдите решение задачи планировщика.
+2. Будет ли найденное распределение Парето оптимальным? Приведите интуицию.
+3. Покажите аналитически, что найденное распределение является Парето оптимальным. Есть ли другие Парето-оптимальные распределения?
+4. Предположим теперь, что это агенты дают планировщику деньги, решение о распределении которых принимает последний. Пусть запасы агентов равны $y_1+y_2=1$, где $y_1, y_2$ - запасы первого и второго агентов соответственно. Агенты передают государству $t_i\leqslant y_i$ денежных единиц ($i\in \{1, 2\}$; каждый из трансфертов определяется планировщиком), а остаток потребляют. Изменится ли теперь объем общественного блага? А общественное благосостояние? -->
 <!-- ## Задача 3
 
 Робинзон живет на необитаемом острове. Он потребляет лень ($l$) и кокосы ($c$), а его функция полезности имеет вид:
