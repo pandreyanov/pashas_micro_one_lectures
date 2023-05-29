@@ -106,7 +106,7 @@ parts:
   chapters:
     - file: week_17/lecture_17_1
     - file: week_17/lecture_17_2
-    - file: week_17/seminar_19
+    - file: week_17/seminar_17
 - caption: Восемнадцатая неделя
   chapters:
     - file: week_18/homework_8
