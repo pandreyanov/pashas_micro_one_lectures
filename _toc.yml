@@ -110,7 +110,7 @@ parts:
     - file: week_17/homework_78
 - caption: Восемнадцатая неделя
   chapters:
-    - file: week_18/seminar_20
+    - file: week_18/seminar_18
 - caption: Девятнадцатая неделя
   chapters:
     - file: week_19/test
