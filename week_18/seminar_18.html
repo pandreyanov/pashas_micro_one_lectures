@@ -734,7 +734,7 @@ const thebe_selector_output = ".output, .cell_output"
 <p>Пусть в экономике есть <span class="math notranslate nohighlight">\(n\)</span> агентов. Полезность агента <span class="math notranslate nohighlight">\(i\)</span> представима функцией:</p>
 <div class="math notranslate nohighlight">
 \[
-u_i(x_1, \ldots, x_n, g)=\varphi_i (x_i) + v_i(g).
+u_i(x_i, g)=\varphi_i (x_i) + v_i(g).
 \]</div>
 <p>Пусть количества частных благ измеряются в деньгах. Общественное благо <span class="math notranslate nohighlight">\(g\)</span> “производится” из денег в соответствии с производственной функцией <span class="math notranslate nohighlight">\(y(w)\)</span>, где <span class="math notranslate nohighlight">\(w\)</span> - количество денег, вложенных в производство этого блага, то есть <span class="math notranslate nohighlight">\(y(w)=g\)</span>. Доход агента <span class="math notranslate nohighlight">\(i\)</span> равен <span class="math notranslate nohighlight">\(I_i\)</span>. Цена блага <span class="math notranslate nohighlight">\(x\)</span> постоянна и равна 1. Производство общественного блага финансируется за счет сборов с агентов, определяемых государством. Так, агент <span class="math notranslate nohighlight">\(i\)</span> платит <span class="math notranslate nohighlight">\(w_i\)</span> денежных единиц.</p>
 <ol class="simple">
@@ -747,12 +747,12 @@ u_i(x_1, \ldots, x_n, g)=\varphi_i (x_i) + v_i(g).
 <p>В некоторой экономике есть два агента, <span class="math notranslate nohighlight">\(A\)</span> и <span class="math notranslate nohighlight">\(B\)</span>, полезности которых равны соответственно:</p>
 <div class="math notranslate nohighlight">
 \[
-u_1(x_1, g) = x_1 + a_1 \ln g, \quad u_2(x_2, g) = x_2 + a_2 \ln g, \quad a_1&gt;a_2&gt;0,
+u_1(x_1, g) = \ln x_1 + a_1 \ln g, \quad u_2(x_2, g) = \ln x_2 + a_2 \ln g, \quad a_1&gt;a_2&gt;0,
 \]</div>
 <p>где благо <span class="math notranslate nohighlight">\(g\)</span> можно интерпретировать как <em>общественное благо</em>, которое производится государством. Все блага измеряются в деньгах.</p>
 <ol class="simple">
-<li><p>Если денежные запасы каждого агента равны 1, а решение о том, сколько потребить частного блага и как профинансировать общественное благо принимаются агентами индивидуально, определите, сколько общественного блага будет произведено. Кто из агентов вносит больший вклад в производство общественного блага?</p></li>
-<li><p>Пусть агенты не имеют запасов. В экономике существует общественный планировщик, который закупает блага <span class="math notranslate nohighlight">\(x\)</span> и <span class="math notranslate nohighlight">\(g\)</span> по цене 1 за каждое. Всего планировщик имеет 2 денежные единицы. Планировщик максимизирует общественное благосостояние, которое определяется как сумма полезностей агентов. Решите задачу планировщика.</p></li>
+<li><p>Если денежные запасы каждого агента равны 1, а решение о том, сколько потребить частного блага и как профинансировать общественное благо принимаются агентами индивидуально, определите, сколько общественного блага будет произведено. Кто из агентов вносит больший вклад в производство общественного блага</p></li>
+<li><p>Пусть агенты не имеют запасов. В экономике существует общественный планировщик, который закупает блага <span class="math notranslate nohighlight">\(x\)</span> и <span class="math notranslate nohighlight">\(g\)</span> по цене 1 за каждое. Всего планировщик имеет 2 денежные единицы. Планировщик максимизирует общественное благосостояние, которое определяется как сумма взвешенных полезностей агентов. Решите задачу планировщика.</p></li>
 <li><p>Предположим, что с целью финансирования общественного блага государством вводятся <em>цены Линдаля</em>. Найдите равновесие.</p></li>
 <li><p>Сравните полученные результаты.</p></li>
 </ol>
