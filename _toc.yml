@@ -113,6 +113,7 @@ parts:
     - file: week_18/seminar_18
 - caption: Девятнадцатая неделя
   chapters:
+    - file: week_19/seminar_19
     - file: week_19/test
     - file: week_19/answers
 - caption: Мат. шпаргалка
