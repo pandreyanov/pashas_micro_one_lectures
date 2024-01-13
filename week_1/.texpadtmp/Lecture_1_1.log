@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.15)  18 JAN 2023 23:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.15)  11 JAN 2024 14:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1054,27 +1054,27 @@ File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 
 ] [4
 
-] [5
-
 ]
-LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line 88.
+LaTeX Font Info:    Trying to load font information for T2A+cmtt on input line 82.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/cyrillic/t2acmtt.fd
 File: t2acmtt.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
-) [6
+) [5
 
 ]
-<qrcode.jpg, id=160, 1029.8475pt x 1029.8475pt>
+<qrcode.jpg, id=103, 396.48125pt x 487.32062pt>
 File: qrcode.jpg Graphic file (type jpg)
 <use qrcode.jpg>
-Package pdftex.def Info: qrcode.jpg  used on input line 97.
-(pdftex.def)             Requested size: 215.10196pt x 215.0958pt.
+Package pdftex.def Info: qrcode.jpg  used on input line 91.
+(pdftex.def)             Requested size: 184.3758pt x 226.62405pt.
 
-Overfull \vbox (11.31757pt too high) detected at line 97
+Overfull \vbox (22.84583pt too high) detected at line 91
  []
 
-[7
+[6
 
- <./qrcode.jpg>] [8
+ <./qrcode.jpg>] [7
+
+] [8
 
 ] [9
 
@@ -1084,59 +1084,36 @@ Overfull \vbox (11.31757pt too high) detected at line 97
 
 ] [12
 
-]
-<pic2.png, id=196, 867.74188pt x 617.30624pt>
-File: pic2.png Graphic file (type png)
-<use pic2.png>
-Package pdftex.def Info: pic2.png  used on input line 151.
-(pdftex.def)             Requested size: 307.28987pt x 218.60364pt.
+] [13
 
-Overfull \vbox (14.82541pt too high) detected at line 151
- []
-
-[13
-
- <./pic2.png>] [14
+] [14
 
 ] [15
 
 ] [16
 
-]
-<pic4.png, id=221, 628.84938pt x 670.505pt>
-File: pic4.png Graphic file (type png)
-<use pic4.png>
-Package pdftex.def Info: pic4.png  used on input line 186.
-(pdftex.def)             Requested size: 215.10196pt x 229.34988pt.
+] [17
 
-Overfull \vbox (25.57166pt too high) detected at line 186
- []
-
-[17
-
- <./pic4.png>] [18
+] [18
 
 ] [19
 
 ] [20
 
+] [21
+
 ]
-<pic3.png, id=247, 583.17876pt x 655.44875pt>
-File: pic3.png Graphic file (type png)
-<use pic3.png>
-Package pdftex.def Info: pic3.png  used on input line 224.
-(pdftex.def)             Requested size: 215.10196pt x 241.75214pt.
+<pic2.png, id=196, 867.74188pt x 617.30624pt>
+File: pic2.png Graphic file (type png)
+<use pic2.png>
+Package pdftex.def Info: pic2.png  used on input line 219.
+(pdftex.def)             Requested size: 307.28987pt x 218.60364pt.
 
-Overfull \vbox (37.9739pt too high) detected at line 224
- []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[21
+ [22
 
- <./pic3.png>] [22
-
-] [23
-
-] [24
+ <./pic2.png>] [23] [24
 
 ] [25
 
@@ -1148,71 +1125,55 @@ Overfull \vbox (37.9739pt too high) detected at line 224
 
 ] [29
 
-] [30
+]
+<pic4.png, id=241, 628.84938pt x 670.505pt>
+File: pic4.png Graphic file (type png)
+<use pic4.png>
+Package pdftex.def Info: pic4.png  used on input line 302.
+(pdftex.def)             Requested size: 215.10196pt x 229.34988pt.
 
-] [31
+Overfull \vbox (25.57166pt too high) detected at line 302
+ []
+
+[30
+
+ <./pic4.png>] [31
 
 ] [32
 
-]
-Overfull \vbox (10.59125pt too high) detected at line 359
- []
+] [33
 
-[33
+] [34
 
-]
-<lebeg_sets.png, id=325, 634.37pt x 512.91624pt>
-File: lebeg_sets.png Graphic file (type png)
-<use lebeg_sets.png>
-Package pdftex.def Info: lebeg_sets.png  used on input line 368.
-(pdftex.def)             Requested size: 245.83282pt x 198.76865pt.
- [34
-
- <./lebeg_sets.png>] [35
+] [35
 
 ] [36
 
-]
-<concave.png, id=342, 374.39874pt x 532.99126pt>
-File: concave.png Graphic file (type png)
-<use concave.png>
-Package pdftex.def Info: concave.png  used on input line 406.
-(pdftex.def)             Requested size: 153.64493pt x 218.73114pt.
+] [37
 
-Overfull \vbox (11.4779pt too high) detected at line 406
+]
+<pic3.png, id=287, 583.17876pt x 655.44875pt>
+File: pic3.png Graphic file (type png)
+<use pic3.png>
+Package pdftex.def Info: pic3.png  used on input line 392.
+(pdftex.def)             Requested size: 215.10196pt x 241.75214pt.
+
+Overfull \vbox (37.9739pt too high) detected at line 392
  []
 
-[37
+[38
 
- <./concave.png>] [38
+ <./pic3.png>] [39
 
-]
-Overfull \vbox (9.09442pt too high) detected at line 426
- []
+] [40
 
-[39
-
-]
-<sylvester.jpeg, id=360, 239.89626pt x 288.07625pt>
-File: sylvester.jpeg Graphic file (type jpg)
-<use sylvester.jpeg>
-Package pdftex.def Info: sylvester.jpeg  used on input line 441.
-(pdftex.def)             Requested size: 153.64493pt x 184.50443pt.
- [40
-
- <./sylvester.jpeg>] [41
+] [41
 
 ] [42
 
-]
-<not_quasi.png, id=376, 753.81625pt x 597.23125pt>
-File: not_quasi.png Graphic file (type png)
-<use not_quasi.png>
-Package pdftex.def Info: not_quasi.png  used on input line 484.
-(pdftex.def)             Requested size: 245.83282pt x 194.76309pt.
- [43
+] [43
 
- <./not_quasi.png>] [44
+] [44
 
 ] [45
 
@@ -1226,168 +1187,54 @@ Package pdftex.def Info: not_quasi.png  used on input line 484.
 
 ] [50
 
-] [51
+]
 
-] [52
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 521.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 521.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 521.
+
+[51
 
 ]
-Overfull \vbox (7.55653pt too high) detected at line 623
+Overfull \vbox (10.59125pt too high) detected at line 537
  []
 
-[53
+[52
 
-] [54
+]
+<lebeg_sets.png, id=377, 634.37pt x 512.91624pt>
+File: lebeg_sets.png Graphic file (type png)
+<use lebeg_sets.png>
+Package pdftex.def Info: lebeg_sets.png  used on input line 547.
+(pdftex.def)             Requested size: 215.10196pt x 173.91962pt.
+ [53
+
+ <./lebeg_sets.png>] [54
 
 ] [55
 
-] [56
-
-] [57
-
-] [58
-
-] [59
-
-] [60
-
-] [61
-
 ]
-<debreu.jpg, id=484, 1204.5pt x 1498.59875pt>
-File: debreu.jpg Graphic file (type jpg)
-<use debreu.jpg>
-Package pdftex.def Info: debreu.jpg  used on input line 718.
-(pdftex.def)             Requested size: 153.64493pt x 191.14313pt.
- [62
+<concave.png, id=395, 374.39874pt x 532.99126pt>
+File: concave.png Graphic file (type png)
+<use concave.png>
+Package pdftex.def Info: concave.png  used on input line 586.
+(pdftex.def)             Requested size: 138.2795pt x 196.85396pt.
 
- <./debreu.jpg>] [63
-
-] [64
-
-] [65
-
-] [66
-
-] [67
-
-] [68
-
-] [69
-
-] [70
-
-]
-<arch.png, id=533, 882.79813pt x 472.26437pt>
-File: arch.png Graphic file (type png)
-<use arch.png>
-Package pdftex.def Info: arch.png  used on input line 816.
-(pdftex.def)             Requested size: 307.28987pt x 164.38702pt.
- [71
-
- <./arch.png>] [72
-
-] [73
-
-] [74
-
-] [75
-
-] [76
-
-] [77
-
-] [78
-
-] [79
-
-] [80
-
-] [81
-
-] [82
-
-] [83
-
-]
-<extrema.png, id=608, 717.17938pt x 605.76312pt>
-File: extrema.png Graphic file (type png)
-<use extrema.png>
-Package pdftex.def Info: extrema.png  used on input line 934.
-(pdftex.def)             Requested size: 245.83282pt x 207.63899pt.
-
-Overfull \vbox (3.86076pt too high) detected at line 934
+Overfull \vbox (7.36928pt too high) detected at line 586
  []
 
-[84
+[56
 
- <./extrema.png>] [85
+ <./concave.png>] [57
 
-]
-
-LaTeX Warning: Command \cyrh invalid in math mode on input line 959.
-
-Missing character: There is no õ in font cmss10!
-[86
-
-] [87
-
-] [88
-
-] [89
-
-] [90
-
-] [91
-
-] [92
-
-] [93
-
-] [94
-
-] [95
-
-] [96
-
-] [97
-
-] [98
-
-] [99
-
-] [100
-
-] [101
-
-] [102
-
-] [103
-
-]
-<tangency.png, id=720, 666.49pt x 532.99126pt>
-File: tangency.png Graphic file (type png)
-<use tangency.png>
-Package pdftex.def Info: tangency.png  used on input line 1138.
-(pdftex.def)             Requested size: 245.83282pt x 196.58559pt.
- [104
-
- <./tangency.png>]
-<tang2.png, id=727, 738.76pt x 597.73312pt>
-File: tang2.png Graphic file (type png)
-<use tang2.png>
-Package pdftex.def Info: tang2.png  used on input line 1146.
-(pdftex.def)             Requested size: 245.83282pt x 198.90338pt.
- [105
-
- <./tang2.png>]
-<tang3.png, id=734, 607.77063pt x 482.80376pt>
-File: tang3.png Graphic file (type png)
-<use tang3.png>
-Package pdftex.def Info: tang3.png  used on input line 1154.
-(pdftex.def)             Requested size: 245.83282pt x 195.28397pt.
- [106
-
- <./tang3.png>] [107
+] [58
 
 ]
 \tf@nav=\write6
@@ -1401,21 +1248,21 @@ Package pdftex.def Info: tang3.png  used on input line 1154.
 
  (/Users/pasha/Documents/GitHub/pashas_micro_one_lectures/week_1/.texpadtmp/Lecture_1_1.aux)
 Package rerunfilecheck Info: File `Lecture_1_1.out' has not changed.
-(rerunfilecheck)             Checksum: 323219ABF1E1F4A6277E5F307FEB3DD6;4699.
+(rerunfilecheck)             Checksum: C9A480EE4B4090D19BA03ED9312DEFF1;2046.
  ) 
 Here is how much of TeX's memory you used:
- 27613 strings out of 478268
- 550383 string characters out of 5846347
- 786796 words of memory out of 5000000
- 45001 multiletter control sequences out of 15000+600000
- 490952 words of font info for 80 fonts, out of 8000000 for 9000
+ 27297 strings out of 478268
+ 547079 string characters out of 5846347
+ 785794 words of memory out of 5000000
+ 44803 multiletter control sequences out of 15000+600000
+ 492027 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,13n,122p,1810b,752s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsi1095.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on /Users/pasha/Documents/GitHub/pashas_micro_one_lectures/week_1/.texpadtmp/Lecture_1_1.pdf (107 pages, 1941729 bytes).
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
+Output written on /Users/pasha/Documents/GitHub/pashas_micro_one_lectures/week_1/.texpadtmp/Lecture_1_1.pdf (58 pages, 899843 bytes).
 PDF statistics:
- 889 PDF objects out of 1000 (max. 8388607)
- 701 compressed objects within 8 object streams
- 240 named destinations out of 1000 (max. 500000)
- 313 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 526 PDF objects out of 1000 (max. 8388607)
+ 405 compressed objects within 5 object streams
+ 129 named destinations out of 1000 (max. 500000)
+ 169 words of extra memory for PDF output out of 10000 (max. 10000000)
 

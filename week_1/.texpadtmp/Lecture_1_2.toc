@@ -1,10 +1,14 @@
 \babel@toc {russian}{}\relax 
-\beamer@sectionintoc {1}{Начала оптимизации}{3}{0}{1}
-\beamer@sectionintoc {2}{Существование}{5}{0}{2}
-\beamer@sectionintoc {3}{Дифференциальный анализ}{7}{0}{3}
-\beamer@sectionintoc {4}{Выпуклость}{16}{0}{4}
-\beamer@sectionintoc {5}{Геометрический анализ}{21}{0}{5}
-\beamer@sectionintoc {6}{Локальная ненасыщаемость}{24}{0}{6}
-\beamer@sectionintoc {7}{Примеры полезностей}{26}{0}{7}
-\beamer@sectionintoc {8}{Метод пристального взгляда}{30}{0}{8}
-\beamer@sectionintoc {9}{Конец}{35}{0}{9}
+\beamer@sectionintoc {1}{Свойства полезности в $\mathbb {R}^n$}{2}{0}{1}
+\beamer@sectionintoc {2}{Критерий Сильвестра}{5}{0}{2}
+\beamer@sectionintoc {3}{А если он не работает?}{13}{0}{3}
+\beamer@sectionintoc {4}{Проблемы с вогнутостью}{16}{0}{4}
+\beamer@sectionintoc {5}{Квази вогнутость}{19}{0}{5}
+\beamer@sectionintoc {6}{Зачем эта приставка квази-?}{25}{0}{6}
+\beamer@sectionintoc {7}{Какие функции квази вогнуты?}{33}{0}{7}
+\beamer@sectionintoc {8}{Предпочтения}{35}{0}{8}
+\beamer@sectionintoc {9}{Свойства предпочтений}{41}{0}{9}
+\beamer@sectionintoc {10}{Прямая связь}{45}{0}{10}
+\beamer@sectionintoc {11}{Обратная связь}{47}{0}{11}
+\beamer@sectionintoc {12}{Выбор}{53}{0}{12}
+\beamer@sectionintoc {13}{Заключение}{62}{0}{13}
