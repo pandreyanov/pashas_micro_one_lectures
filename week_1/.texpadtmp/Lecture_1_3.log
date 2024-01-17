@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.15)  11 JAN 2024 22:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.15)  16 JAN 2024 23:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1052,26 +1052,30 @@ Overfull \vbox (15.63992pt too high) detected at line 31
 [1
 
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 46.
+LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 47.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/base/ts1cmss.fd
 File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 ) [2
 
 ]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 48.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 62.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 48.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 62.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 48.
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 62.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
 ) [3
 
-] [4
+]
+Overfull \vbox (8.47949pt too high) detected at line 76
+ []
+
+[4
 
 ] [5
 
@@ -1087,19 +1091,9 @@ File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mat
 
 ] [11
 
-]
-<extrema.png, id=125, 717.17938pt x 605.76312pt>
-File: extrema.png Graphic file (type png)
-<use extrema.png>
-Package pdftex.def Info: extrema.png  used on input line 135.
-(pdftex.def)             Requested size: 245.83282pt x 207.63899pt.
+] [12
 
-Overfull \vbox (3.86076pt too high) detected at line 135
- []
-
-[12
-
- <./extrema.png>] [13
+] [13
 
 ] [14
 
@@ -1109,9 +1103,19 @@ Overfull \vbox (3.86076pt too high) detected at line 135
 
 ] [17
 
-] [18
+]
+<extrema.png, id=159, 717.17938pt x 605.76312pt>
+File: extrema.png Graphic file (type png)
+<use extrema.png>
+Package pdftex.def Info: extrema.png  used on input line 224.
+(pdftex.def)             Requested size: 245.83282pt x 207.63899pt.
 
-] [19
+Overfull \vbox (3.86076pt too high) detected at line 224
+ []
+
+[18
+
+ <./extrema.png>] [19
 
 ] [20
 
@@ -1137,31 +1141,47 @@ Overfull \vbox (3.86076pt too high) detected at line 135
 
 ] [31
 
+] [32
+
+] [33
+
+] [34
+
+] [35
+
+] [36
+
+] [37
+
+] [38
+
+] [39
+
 ]
-<tangency.png, id=241, 666.49pt x 532.99126pt>
+<tangency.png, id=282, 666.49pt x 532.99126pt>
 File: tangency.png Graphic file (type png)
 <use tangency.png>
-Package pdftex.def Info: tangency.png  used on input line 339.
+Package pdftex.def Info: tangency.png  used on input line 442.
 (pdftex.def)             Requested size: 245.83282pt x 196.58559pt.
- [32
+ [40
 
  <./tangency.png>]
-<tang2.png, id=248, 738.76pt x 597.73312pt>
+<tang2.png, id=289, 738.76pt x 597.73312pt>
 File: tang2.png Graphic file (type png)
 <use tang2.png>
-Package pdftex.def Info: tang2.png  used on input line 347.
+Package pdftex.def Info: tang2.png  used on input line 450.
 (pdftex.def)             Requested size: 245.83282pt x 198.90338pt.
- [33
+ [41
 
  <./tang2.png>]
-<tang3.png, id=255, 607.77063pt x 482.80376pt>
+<tang3.png, id=297, 607.77063pt x 482.80376pt>
 File: tang3.png Graphic file (type png)
 <use tang3.png>
-Package pdftex.def Info: tang3.png  used on input line 355.
+Package pdftex.def Info: tang3.png  used on input line 458.
 (pdftex.def)             Requested size: 245.83282pt x 195.28397pt.
- [34
+ [42
 
- <./tang3.png>] [35
+ <./tang3.png>] [43
 
 ]
 \tf@nav=\write6
@@ -1175,21 +1195,21 @@ Package pdftex.def Info: tang3.png  used on input line 355.
 
  (/Users/pasha/Documents/GitHub/pashas_micro_one_lectures/week_1/.texpadtmp/Lecture_1_3.aux)
 Package rerunfilecheck Info: File `Lecture_1_3.out' has not changed.
-(rerunfilecheck)             Checksum: 130699AD9592B44111197EB2442F4C8F;1819.
+(rerunfilecheck)             Checksum: E4A990E880B7A57284FCB575C9CBB3E2;1659.
  ) 
 Here is how much of TeX's memory you used:
- 27160 strings out of 478268
- 545074 string characters out of 5846347
- 786553 words of memory out of 5000000
- 44721 multiletter control sequences out of 15000+600000
+ 27199 strings out of 478268
+ 545463 string characters out of 5846347
+ 787553 words of memory out of 5000000
+ 44744 multiletter control sequences out of 15000+600000
  484852 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,13n,122p,1810b,754s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsi1095.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb>
-Output written on /Users/pasha/Documents/GitHub/pashas_micro_one_lectures/week_1/.texpadtmp/Lecture_1_3.pdf (35 pages, 820250 bytes).
+Output written on /Users/pasha/Documents/GitHub/pashas_micro_one_lectures/week_1/.texpadtmp/Lecture_1_3.pdf (43 pages, 831752 bytes).
 PDF statistics:
- 368 PDF objects out of 1000 (max. 8388607)
- 277 compressed objects within 3 object streams
- 80 named destinations out of 1000 (max. 500000)
+ 415 PDF objects out of 1000 (max. 8388607)
+ 315 compressed objects within 4 object streams
+ 96 named destinations out of 1000 (max. 500000)
  135 words of extra memory for PDF output out of 10000 (max. 10000000)
 

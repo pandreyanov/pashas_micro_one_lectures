@@ -20,7 +20,7 @@ parts:
     - file: week_1/intro_1
     - file: week_1/lecture_1_1
     - file: week_1/lecture_1_2
-    #- file: week_1/seminar_1
+    - file: week_1/seminar_1
     #- file: week_1/practice_1
     #- file: week_1/homework_1
 - caption: Вторая неделя
