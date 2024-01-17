@@ -6,7 +6,7 @@
     >
     >\begin{figure}[hbt]
     >\centering
-    >\includegraphics[width=.8 \textwidth]{pinkcolorpreferences.png}
+    >\includegraphics[width=.8 \textwidth]{./pinkcolorpreferences.png}
     >\end{figure}
     > * Какой цвет вам больше нравится A или B? A или С?
     > * Запишите свои предпочтения относительно цветов A, B, C, D в таблице, дополнив свой ответ, сравнив попарно оставшиеся альтернативы.
