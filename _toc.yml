@@ -15,6 +15,7 @@ parts:
     - file: week_0/hours
     - file: week_0/module 3
     - file: week_0/module 4
+    - file: week_1/homework_0
 - caption: Первая неделя
   chapters:
     - file: week_1/intro_1
