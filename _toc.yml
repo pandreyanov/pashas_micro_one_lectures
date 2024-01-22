@@ -15,13 +15,13 @@ parts:
     - file: week_0/hours
     - file: week_0/module 3
     - file: week_0/module 4
-    - file: week_1/homework_0
 - caption: Первая неделя
   chapters:
     - file: week_1/intro_1
     - file: week_1/lecture_1_1
     - file: week_1/lecture_1_2
     - file: week_1/seminar_1
+    - file: week_1/homework_0
     #- file: week_1/practice_1
     #- file: week_1/homework_1
 - caption: Вторая неделя
