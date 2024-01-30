@@ -1,0 +1,13 @@
+\babel@toc {russian}{}\relax 
+\beamer@sectionintoc {1}{Максимизация полезности}{2}{0}{1}
+\beamer@sectionintoc {2}{Кривые спроса}{5}{0}{2}
+\beamer@sectionintoc {3}{Косвенная полезность}{11}{0}{3}
+\beamer@sectionintoc {4}{Непрерывность спроса}{14}{0}{4}
+\beamer@sectionintoc {5}{Какие бывают полезности}{18}{0}{5}
+\beamer@sectionintoc {6}{Классические}{20}{0}{6}
+\beamer@sectionintoc {7}{Кобб-Дуглас}{21}{0}{7}
+\beamer@sectionintoc {8}{Леонтьев}{31}{0}{8}
+\beamer@sectionintoc {9}{Линейная}{38}{0}{9}
+\beamer@sectionintoc {10}{Корни (CES)}{45}{0}{10}
+\beamer@sectionintoc {11}{Квази-линейные ($\lambda = 1$ с нормировкой) на доске.}{47}{0}{11}
+\beamer@sectionintoc {12}{Конец}{48}{0}{12}

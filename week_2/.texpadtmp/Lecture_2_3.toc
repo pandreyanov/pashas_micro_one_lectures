@@ -1,0 +1,13 @@
+\babel@toc {russian}{}\relax 
+\beamer@sectionintoc {1}{Квазилинейные полезности}{2}{0}{1}
+\beamer@sectionintoc {2}{Суммы полезностей}{10}{0}{2}
+\beamer@sectionintoc {3}{Произведение полезностей}{15}{0}{3}
+\beamer@sectionintoc {4}{Композиция полезностей}{17}{0}{4}
+\beamer@sectionintoc {5}{Свойства кривых доход-потребление}{22}{0}{5}
+\beamer@sectionintoc {6}{Нормальные товары}{23}{0}{6}
+\beamer@sectionintoc {7}{Инфериорные товары}{26}{0}{7}
+\beamer@sectionintoc {8}{Свойства кривых (чужая) цена-потребление}{33}{0}{8}
+\beamer@sectionintoc {9}{Субституты и комплементы}{34}{0}{9}
+\beamer@sectionintoc {10}{Свойства кривых (своя) цена-потребление}{42}{0}{10}
+\beamer@sectionintoc {11}{Товары Веблена и Гиффена}{43}{0}{11}
+\beamer@sectionintoc {12}{Конец}{47}{0}{12}
