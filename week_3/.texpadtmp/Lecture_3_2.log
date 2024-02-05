@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.15)  27 JAN 2023 10:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.15)  2 FEB 2024 11:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1055,15 +1055,9 @@ Missing character: There is no Õ in font cmss10!
 
 ] [4
 
-]
-<envelope2.png, id=94, 652.93938pt x 536.0025pt>
-File: envelope2.png Graphic file (type png)
-<use envelope2.png>
-Package pdftex.def Info: envelope2.png  used on input line 64.
-(pdftex.def)             Requested size: 245.83282pt x 201.80196pt.
- [5
+] [5
 
- <./envelope2.png>] [6
+] [6
 
 ] [7
 
@@ -1083,7 +1077,11 @@ Package pdftex.def Info: envelope2.png  used on input line 64.
 
 ] [15
 
-] [16
+]
+LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 151.
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/base/ts1cmss.fd
+File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+) [16
 
 ] [17
 
@@ -1093,55 +1091,15 @@ Package pdftex.def Info: envelope2.png  used on input line 64.
 
 ] [20
 
-] [21
-
-] [22
-
-] [23
-
-] [24
-
-] [25
-
-] [26
-
-] [27
-
-] [28
-
-] [29
-
-] [30
-
-] [31
-
-] [32
-
-] [33
-
 ]
-LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 298.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/base/ts1cmss.fd
-File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-) [34
-
-] [35
-
-] [36
-
-] [37
-
-] [38
-
-]
-<scheme.png, id=287, 632.86438pt x 284.06125pt>
+<scheme.png, id=171, 632.86438pt x 284.06125pt>
 File: scheme.png Graphic file (type png)
 <use scheme.png>
-Package pdftex.def Info: scheme.png  used on input line 349.
+Package pdftex.def Info: scheme.png  used on input line 201.
 (pdftex.def)             Requested size: 276.559pt x 124.13344pt.
- [39
+ [21
 
- <./scheme.png>] [40
+ <./scheme.png>] [22
 
 ]
 \tf@nav=\write6
@@ -1155,21 +1113,21 @@ Package pdftex.def Info: scheme.png  used on input line 349.
 
  (/Users/pasha/Documents/GitHub/pashas_micro_one_lectures/week_3/.texpadtmp/Lecture_3_2.aux)
 Package rerunfilecheck Info: File `Lecture_3_2.out' has not changed.
-(rerunfilecheck)             Checksum: 5E80D289B412C04899037FE1B4C014A9;1882.
+(rerunfilecheck)             Checksum: 76FC7E98F31FE19F9F543DDFE6C39E62;1186.
  ) 
 Here is how much of TeX's memory you used:
- 27102 strings out of 478268
- 543875 string characters out of 5846347
- 785794 words of memory out of 5000000
- 44657 multiletter control sequences out of 15000+600000
+ 26995 strings out of 478268
+ 542699 string characters out of 5846347
+ 785793 words of memory out of 5000000
+ 44591 multiletter control sequences out of 15000+600000
  484852 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,13n,122p,1810b,752s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsi1095.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb>
-Output written on /Users/pasha/Documents/GitHub/pashas_micro_one_lectures/week_3/.texpadtmp/Lecture_3_2.pdf (40 pages, 464087 bytes).
+Output written on /Users/pasha/Documents/GitHub/pashas_micro_one_lectures/week_3/.texpadtmp/Lecture_3_2.pdf (22 pages, 295293 bytes).
 PDF statistics:
- 405 PDF objects out of 1000 (max. 8388607)
- 312 compressed objects within 4 object streams
- 92 named destinations out of 1000 (max. 500000)
- 141 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 279 PDF objects out of 1000 (max. 8388607)
+ 207 compressed objects within 3 object streams
+ 52 named destinations out of 1000 (max. 500000)
+ 104 words of extra memory for PDF output out of 10000 (max. 10000000)
 

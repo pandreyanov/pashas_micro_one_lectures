@@ -4,19 +4,15 @@
 \beamer@sectionintoc {3}{Эластичности по доходу}{14}{0}{3}
 \beamer@sectionintoc {4}{Эластичности по цене}{17}{0}{4}
 \beamer@sectionintoc {5}{Приложения эластичности}{25}{0}{5}
-\beamer@sectionintoc {6}{Индекс Лернера}{28}{0}{6}
-\beamer@sectionintoc {7}{Формула обратной эластичности}{32}{0}{7}
-\beamer@sectionintoc {8}{Вернемся к CES}{36}{0}{8}
-\beamer@sectionintoc {9}{Квазилинейная}{39}{0}{9}
-\beamer@sectionintoc {10}{Сумма вогнутых}{49}{0}{10}
-\beamer@sectionintoc {11}{Теорема об огибающей}{55}{0}{11}
-\beamer@sectionintoc {12}{Практическая польза}{61}{0}{12}
-\beamer@sectionintoc {13}{Минимизация расходов}{67}{0}{13}
-\beamer@sectionintoc {14}{Закон Вальраса}{70}{0}{14}
-\beamer@sectionintoc {15}{Два спроса}{73}{0}{15}
-\beamer@sectionintoc {16}{Дуальность}{76}{0}{16}
-\beamer@sectionintoc {17}{Функция расходов}{79}{0}{17}
-\beamer@sectionintoc {18}{Лемма Шепарда}{81}{0}{18}
-\beamer@sectionintoc {19}{Тождество Роя}{86}{0}{19}
-\beamer@sectionintoc {20}{Как не запутаться?}{90}{0}{20}
-\beamer@sectionintoc {21}{Решаем примеры до упора}{93}{0}{21}
+\beamer@sectionintoc {6}{Формула обратной эластичности}{28}{0}{6}
+\beamer@sectionintoc {7}{Теорема об огибающей}{32}{0}{7}
+\beamer@sectionintoc {8}{Практическая польза}{38}{0}{8}
+\beamer@sectionintoc {9}{Минимизация расходов}{44}{0}{9}
+\beamer@sectionintoc {10}{Закон Вальраса}{47}{0}{10}
+\beamer@sectionintoc {11}{Два спроса}{50}{0}{11}
+\beamer@sectionintoc {12}{Дуальность}{53}{0}{12}
+\beamer@sectionintoc {13}{Функция расходов}{56}{0}{13}
+\beamer@sectionintoc {14}{Лемма Шепарда}{58}{0}{14}
+\beamer@sectionintoc {15}{Тождество Роя}{63}{0}{15}
+\beamer@sectionintoc {16}{Как не запутаться?}{67}{0}{16}
+\beamer@sectionintoc {17}{Решаем примеры до упора}{70}{0}{17}

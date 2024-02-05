@@ -1,12 +1,8 @@
 \babel@toc {russian}{}\relax 
 \beamer@sectionintoc {1}{Теорема об огибающей}{2}{0}{1}
-\beamer@sectionintoc {2}{Практическая польза}{8}{0}{2}
-\beamer@sectionintoc {3}{Минимизация расходов}{14}{0}{3}
-\beamer@sectionintoc {4}{Закон Вальраса}{17}{0}{4}
-\beamer@sectionintoc {5}{Два спроса}{20}{0}{5}
-\beamer@sectionintoc {6}{Дуальность}{23}{0}{6}
-\beamer@sectionintoc {7}{Функция расходов}{26}{0}{7}
-\beamer@sectionintoc {8}{Лемма Шепарда}{28}{0}{8}
-\beamer@sectionintoc {9}{Тождество Роя}{33}{0}{9}
-\beamer@sectionintoc {10}{Как не запутаться?}{37}{0}{10}
-\beamer@sectionintoc {11}{Решаем примеры до упора}{40}{0}{11}
+\beamer@sectionintoc {2}{Минимизация расходов}{5}{0}{2}
+\beamer@sectionintoc {3}{Закон Вальраса}{9}{0}{3}
+\beamer@sectionintoc {4}{Дуальность}{11}{0}{4}
+\beamer@sectionintoc {5}{Тождество Роя}{15}{0}{5}
+\beamer@sectionintoc {6}{Как не запутаться?}{19}{0}{6}
+\beamer@sectionintoc {7}{Примеры на доске}{22}{0}{7}
