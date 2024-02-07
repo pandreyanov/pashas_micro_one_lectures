@@ -1,12 +1,9 @@
 \babel@toc {russian}{}\relax 
-\beamer@sectionintoc {1}{План}{2}{0}{1}
-\beamer@sectionintoc {2}{Напомним себе}{4}{0}{2}
-\beamer@sectionintoc {3}{Больше задач}{6}{0}{3}
-\beamer@sectionintoc {4}{Больше задач}{9}{0}{4}
-\beamer@sectionintoc {5}{Налоги}{14}{0}{5}
-\beamer@sectionintoc {6}{Налоги в Коббе-Дугласе}{22}{0}{6}
-\beamer@sectionintoc {7}{Правило Рамсея}{32}{0}{7}
-\beamer@sectionintoc {8}{Компенсирующие и эквивалентные вариации}{38}{0}{8}
-\beamer@sectionintoc {9}{Приближения}{48}{0}{9}
-\beamer@sectionintoc {10}{Чистые субституты и комплементы}{52}{0}{10}
-\beamer@sectionintoc {11}{Перерыв}{57}{0}{11}
+\beamer@sectionintoc {1}{Напомним себе}{2}{0}{1}
+\beamer@sectionintoc {2}{Сценарий 1}{4}{0}{2}
+\beamer@sectionintoc {3}{Сценарий 2}{9}{0}{3}
+\beamer@sectionintoc {4}{Сценарий 3}{14}{0}{4}
+\beamer@sectionintoc {5}{Налоги}{19}{0}{5}
+\beamer@sectionintoc {6}{Налоги в Коббе-Дугласе}{27}{0}{6}
+\beamer@sectionintoc {7}{Правило Рамсея}{36}{0}{7}
+\beamer@sectionintoc {8}{Чистые субституты и комплементы}{42}{0}{8}

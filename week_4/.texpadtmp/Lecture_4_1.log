@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.15)  2 FEB 2023 23:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.15)  7 FEB 2024 09:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1120,11 +1120,7 @@ File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mat
 
 ] [10
 
-]
-LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 116.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/base/ts1cmss.fd
-File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-) [11
+] [11
 
 ] [12
 
@@ -1139,34 +1135,38 @@ File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 ] [17
 
 ]
-<podohod_nalog.png, id=167, 678.535pt x 517.935pt>
-File: podohod_nalog.png Graphic file (type png)
-<use podohod_nalog.png>
-Package pdftex.def Info: podohod_nalog.png  used on input line 177.
-(pdftex.def)             Requested size: 245.83282pt x 187.6419pt.
- [18
+LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 169.
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/base/ts1cmss.fd
+File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+) [18
 
- <./podohod_nalog.png>] [19
+] [19
 
-]
-<tovarny_nalog.png, id=181, 693.59125pt x 565.61313pt>
-File: tovarny_nalog.png Graphic file (type png)
-<use tovarny_nalog.png>
-Package pdftex.def Info: tovarny_nalog.png  used on input line 192.
-(pdftex.def)             Requested size: 245.83282pt x 200.47041pt.
- [20
+] [20
 
- <./tovarny_nalog.png>] [21
+] [21
 
 ] [22
 
-] [23
+]
+<podohod_nalog.png, id=181, 678.535pt x 517.935pt>
+File: podohod_nalog.png Graphic file (type png)
+<use podohod_nalog.png>
+Package pdftex.def Info: podohod_nalog.png  used on input line 274.
+(pdftex.def)             Requested size: 245.83282pt x 187.6419pt.
+ [23
 
-] [24
+ <./podohod_nalog.png>] [24
 
-] [25
+]
+<tovarny_nalog.png, id=194, 693.59125pt x 565.61313pt>
+File: tovarny_nalog.png Graphic file (type png)
+<use tovarny_nalog.png>
+Package pdftex.def Info: tovarny_nalog.png  used on input line 289.
+(pdftex.def)             Requested size: 245.83282pt x 200.47041pt.
+ [25
 
-] [26
+ <./tovarny_nalog.png>] [26
 
 ] [27
 
@@ -1180,78 +1180,49 @@ Package pdftex.def Info: tovarny_nalog.png  used on input line 192.
 
 ] [32
 
-]
-<ramsay.jpeg, id=255, 1027.84pt x 1274.7625pt>
-File: ramsay.jpeg Graphic file (type jpg)
-<use ramsay.jpeg>
-Package pdftex.def Info: ramsay.jpeg  used on input line 311.
-(pdftex.def)             Requested size: 153.64493pt x 190.54478pt.
- [33
+] [33
 
- <./ramsay.jpeg>] [34
+] [34
 
 ] [35
 
 ] [36
 
-] [37
+]
+<ramsay.jpeg, id=263, 1027.84pt x 1274.7625pt>
+File: ramsay.jpeg Graphic file (type jpg)
+<use ramsay.jpeg>
+Package pdftex.def Info: ramsay.jpeg  used on input line 406.
+(pdftex.def)             Requested size: 153.64493pt x 190.54478pt.
+ [37
 
-] [38
+ <./ramsay.jpeg>] [38
 
 ] [39
 
 ]
-Overfull \vbox (14.80478pt too high) detected at line 380
+Overfull \hbox (12.98938pt too wide) detected at line 439
+[] \OT1/cmss/m/n/10.95 = [] = \OT1/mathkerncmss/m/sl/10.95 h[] \OT1/cmss/m/n/10.95 = \OML/cmm/m/it/10.95 ^^U\OT1/cmss/m/n/10.95 [\OML/cmm/m/it/10.95 ^^\[][] \OT1/cmss/m/n/10.95 + \OT1/mathkerncmss/m/sl/10.95 h[]\OT1/cmss/m/n/10.95 ]\OML/cmm/m/it/10.95 ;  [] \OT1/cmss/m/n/10.95 = [] = \OT1/mathkerncmss/m/sl/10.95 h[] \OT1/cmss/m/n/10.95 = \OML/cmm/m/it/10.95 ^^U\OT1/cmss/m/n/10.95 [\OML/cmm/m/it/10.95 ^^\[][] \OT1/cmss/m/n/10.95 + \OT1/mathkerncmss/m/sl/10.95 h[]\OT1/cmss/m/n/10.95 ]
  []
 
 [40
 
-]
-Overfull \vbox (12.67615pt too high) detected at line 394
- []
-
-[41
+] [41
 
 ] [42
 
-] [43
+]
+
+LaTeX Warning: Command \cyrh invalid in math mode on input line 460.
+
+Missing character: There is no õ in font cmss10!
+[43
 
 ] [44
 
 ] [45
 
 ] [46
-
-] [47
-
-] [48
-
-] [49
-
-] [50
-
-] [51
-
-] [52
-
-]
-
-LaTeX Warning: Command \cyrh invalid in math mode on input line 496.
-
-Missing character: There is no õ in font cmss10!
-
-LaTeX Warning: Command \cyrh invalid in math mode on input line 496.
-
-Missing character: There is no õ in font cmss10!
-[53
-
-] [54
-
-] [55
-
-] [56
-
-] [57
 
 ]
 \tf@nav=\write6
@@ -1265,21 +1236,21 @@ Missing character: There is no õ in font cmss10!
 
  (/Users/pasha/Documents/GitHub/pashas_micro_one_lectures/week_4/.texpadtmp/Lecture_4_1.aux)
 Package rerunfilecheck Info: File `Lecture_4_1.out' has not changed.
-(rerunfilecheck)             Checksum: 12D9B08C4B664A46BDEFD9C1BCDE46E9;1842.
+(rerunfilecheck)             Checksum: 9496D6F538BDD7A0098F19F44F01EA46;1260.
  ) 
 Here is how much of TeX's memory you used:
- 28548 strings out of 478268
- 568634 string characters out of 5846347
- 815735 words of memory out of 5000000
- 46023 multiletter control sequences out of 15000+600000
- 486809 words of font info for 69 fonts, out of 8000000 for 9000
+ 28477 strings out of 478268
+ 567911 string characters out of 5846347
+ 815734 words of memory out of 5000000
+ 45980 multiletter control sequences out of 15000+600000
+ 484852 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,17n,122p,1810b,752s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsi1095.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfss0600.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb>
-Output written on /Users/pasha/Documents/GitHub/pashas_micro_one_lectures/week_4/.texpadtmp/Lecture_4_1.pdf (57 pages, 639099 bytes).
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsi1095.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfss0600.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb>
+Output written on /Users/pasha/Documents/GitHub/pashas_micro_one_lectures/week_4/.texpadtmp/Lecture_4_1.pdf (46 pages, 607923 bytes).
 PDF statistics:
- 512 PDF objects out of 1000 (max. 8388607)
- 397 compressed objects within 4 object streams
- 126 named destinations out of 1000 (max. 500000)
- 146 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 424 PDF objects out of 1000 (max. 8388607)
+ 324 compressed objects within 4 object streams
+ 101 named destinations out of 1000 (max. 500000)
+ 122 words of extra memory for PDF output out of 10000 (max. 10000000)
 
