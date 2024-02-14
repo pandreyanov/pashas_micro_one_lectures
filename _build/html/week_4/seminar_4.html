@@ -261,6 +261,11 @@ const thebe_selector_output = ".output, .cell_output"
    Пятая лекция, часть 2
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../week_5/seminar_5.html">
+   Семинар 5
+  </a>
+ </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
@@ -451,16 +456,6 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id5">
-   Задача 4* Ещё немного хиксианских спросов
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id6">
-   Задача 5* Про налоги
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id7">
    Что почитать дополнительно?
   </a>
  </li>
@@ -501,16 +496,6 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#id5">
-   Задача 4* Ещё немного хиксианских спросов
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id6">
-   Задача 5* Про налоги
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id7">
    Что почитать дополнительно?
   </a>
  </li>
@@ -531,7 +516,7 @@ const thebe_selector_output = ".output, .cell_output"
 <div><p>Функция полезности агента имеет вид:</p>
 <div class="math notranslate nohighlight">
 \[U(x, y, z)=\alpha(x+y) - \frac{1}{2}[\beta(x^2+y^2)-2\gamma xy]+z,\]</div>
-<p>где <span class="math notranslate nohighlight">\(z\)</span> можно интерпретировать как <em>деньги</em>, которые остаются у потребителя после покупки благ <span class="math notranslate nohighlight">\(x, y\)</span> по ценам <span class="math notranslate nohighlight">\(p, q &gt;0\)</span> соответственно. Доход агента равен <span class="math notranslate nohighlight">\(W\)</span>. Для простоты предполагайте, что <span class="math notranslate nohighlight">\(\beta, \gamma, (\beta^2-\gamma^2) &gt; 0\)</span> и <span class="math notranslate nohighlight">\(p, q &lt; \alpha\)</span>.</p>
+<p>где <span class="math notranslate nohighlight">\(z\)</span> можно интерпретировать как <em>деньги</em>, которые остаются у потребителя после покупки благ <span class="math notranslate nohighlight">\(x, y\)</span> по ценам <span class="math notranslate nohighlight">\(p, q &gt;0\)</span> соответственно. Доход агента равен <span class="math notranslate nohighlight">\(W\)</span>. Для простоты предполагайте, что <span class="math notranslate nohighlight">\(\beta, \gamma, (\beta^2-\gamma^2) &gt; 0\)</span> и <span class="math notranslate nohighlight">\(p, q &lt; \alpha\)</span>. Считайте, что доход агента достаточно высок.</p>
 <ol class="simple">
 <li><p>Запишите и решите оптимизационную задачу агента. Выпишите функции маршалианского спроса на блага <span class="math notranslate nohighlight">\(x, y\)</span> и деньги <span class="math notranslate nohighlight">\(z\)</span>.</p></li>
 <li><p>Запишите эластичность спроса на товар <span class="math notranslate nohighlight">\(x\)</span> по его цене <span class="math notranslate nohighlight">\(p\)</span>. Имеет ли смысл отдельно выписывать эластичность спроса на товар <span class="math notranslate nohighlight">\(y\)</span> по его цене <span class="math notranslate nohighlight">\(q\)</span>?</p></li>
@@ -549,13 +534,13 @@ const thebe_selector_output = ".output, .cell_output"
 \[V(p, q, W)=\frac{W(p+q)}{pq},\]</div>
 <p>где <span class="math notranslate nohighlight">\(p, q\)</span> - цены благ <span class="math notranslate nohighlight">\(x, y\)</span> соответственно, а <span class="math notranslate nohighlight">\(W\)</span> - доход Джорджа.</p>
 <ol class="simple">
-<li><p>Запишите функцию расходов Джорджа, <span class="math notranslate nohighlight">\(E(p, q, U)\)</span>.</p></li>
+<li><p>Запишите функцию расходов Джорджа, <span class="math notranslate nohighlight">\(E(p, q, \bar U)\)</span>.</p></li>
 <li><p>Используя <span class="math notranslate nohighlight">\(V(p, q, W)\)</span> из условия и тождество Роя, выпишите функции Маршалианского спроса на товары <span class="math notranslate nohighlight">\(x, y\)</span> - <span class="math notranslate nohighlight">\(m_x, m_y\)</span> соответственно.</p></li>
 <li><p>Используя найденные <span class="math notranslate nohighlight">\(m_x, m_y\)</span>, выпишите функции Хиксианского спроса ежа на товары <span class="math notranslate nohighlight">\(x, y\)</span> - <span class="math notranslate nohighlight">\(h_x, h_y\)</span> соответственно.</p></li>
-<li><p>Используя найденную <span class="math notranslate nohighlight">\(E(p, q, U)\)</span> из пункта 0 и лемму Шепарда, выпишите функции Хиксианского спроса на товары <span class="math notranslate nohighlight">\(x, y\)</span> - <span class="math notranslate nohighlight">\(h_x, h_y\)</span> соответственно.</p></li>
+<li><p>Используя найденную <span class="math notranslate nohighlight">\(E(p, q, \bar U)\)</span> из пункта 0 и лемму Шепарда, выпишите функции Хиксианского спроса на товары <span class="math notranslate nohighlight">\(x, y\)</span> - <span class="math notranslate nohighlight">\(h_x, h_y\)</span> соответственно.</p></li>
 <li><p>Используя найденные <span class="math notranslate nohighlight">\(h_x, h_y\)</span>, выпишите функции Маршалианского спроса на товары <span class="math notranslate nohighlight">\(x, y\)</span> - <span class="math notranslate nohighlight">\(m_x, m_y\)</span> соответственно.</p></li>
 </ol>
-<p>И, финально, выведите функцию полезности ежа, <span class="math notranslate nohighlight">\(u(x, y)\)</span>.</p>
+<p>И, финально, выведите функцию полезности ежа, <span class="math notranslate nohighlight">\(U(x, y)\)</span>.</p>
 </div></blockquote>
 <blockquote>
 <div><details>
@@ -577,218 +562,7 @@ const thebe_selector_output = ".output, .cell_output"
 </div></blockquote>
 </div>
 <div class="section" id="id5">
-<h2>Задача 4* Ещё немного хиксианских спросов<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
-<blockquote>
-<div><p>Полезность Мопса имеет вид <span class="math notranslate nohighlight">\(u(x, y)=\sqrt{x}+y\)</span>. Цены благ <span class="math notranslate nohighlight">\(x, y\)</span>, корм и собачье пиво соответственно, равны <span class="math notranslate nohighlight">\(p, q\)</span> соответственно. Доход Мопса равен <span class="math notranslate nohighlight">\(W\)</span>.</p>
-<ol class="simple">
-<li><p>Выведите функции маршалианского спроса Мопса на корм и пиво (<span class="math notranslate nohighlight">\(x, y\)</span>).</p></li>
-<li><p>Выпишите косвенную функцию полезности, <span class="math notranslate nohighlight">\(V(p, q, W)\)</span>, и функцию расходов, <span class="math notranslate nohighlight">\(E(p, q, U)\)</span>.</p></li>
-<li><p>Выпишите функции хиксианского спроса Мопса на корм и пиво, <span class="math notranslate nohighlight">\(h_x(p, q, U), h_y(p, q, U)\)</span>.</p></li>
-</ol>
-<details>
-   <summary>Решение</summary>
-<ol class="simple">
-<li><p>Запишем бюджетное ограничение:</p></li>
-</ol>
-<div class="math notranslate nohighlight">
-\[
-&gt; px+qy-W=0.
-&gt; \]</div>
-<p>Из бюджетного ограничения выразим <span class="math notranslate nohighlight">\(y\)</span>:</p>
-<div class="math notranslate nohighlight">
-\[
-&gt; y=\frac{1}{q}(W-px)=\frac{W}{q} - \frac{p}{q} x.
-&gt; \]</div>
-<p>Подставим этот <span class="math notranslate nohighlight">\(y\)</span> в целевую функцию (которая окажется параболой с ветвями вниз относительно <span class="math notranslate nohighlight">\(\sqrt{x}\)</span>) и промаксимизируем:</p>
-<div class="math notranslate nohighlight">
-\[
-&gt; \max_{x\in \left[0; \frac{W}{p}\right]} \sqrt{x} + \frac{W}{q} - \frac{p}{q} x.
-&gt; \]</div>
-<p>Максимум в вершине:</p>
-<div class="math notranslate nohighlight">
-\[
-&gt; \sqrt{x^*}=\frac{-b}{2a}=\frac{-1}{-2p/q}=\frac{q}{2p}\Rightarrow x^* = \frac{q^2}{4p^2}.
-&gt; \]</div>
-<p><span class="math notranslate nohighlight">\(y^*\)</span> найдем из бюджетного ограничения:</p>
-<div class="math notranslate nohighlight">
-\[
-&gt; y^*=\frac{W}{q} - \frac{p}{q} x^*=\frac{W}{q} - \frac{p}{q} \cdot \frac{q^2}{4p^2} = \frac{W}{q} - \frac{q}{4p}.
-&gt; \]</div>
-<p><span class="math notranslate nohighlight">\(x^*, y^*\)</span> - необходимые нам маршалианские спросы.</p>
-<ol class="simple">
-<li><p>Косвенная функция полезности имеет вид:</p></li>
-</ol>
-<div class="math notranslate nohighlight">
-\[
-&gt; V(q, p, W)=\sqrt{x^*} + y^*=\frac{q}{2p}+ \frac{W}{q} - \frac{q}{4p}=\frac{W}{q} + \frac{q}{4p}.
-&gt; \]</div>
-<p>Функция расходов:</p>
-<div class="math notranslate nohighlight">
-\[
-&gt; E(p, q, U)=q\left(U-\frac{q}{4p}\right).
-&gt; \]</div>
-<ol class="simple">
-<li><p>По <em>лемме Шепарда</em>, Хиксианские спросы определяются частными производными функции расходов:</p></li>
-</ol>
-<div class="math notranslate nohighlight">
-\[
-&gt; h_x(p, q, U) =e'_p = \frac{q^2}{4p^2}
-&gt; \]</div>
-<div class="math notranslate nohighlight">
-\[
-&gt; h_y(p, q, U) =e'_q = U-\frac{q}{2p}
-&gt; \]</div>
-</details>
-</div></blockquote>
-</div>
-<div class="section" id="id6">
-<h2>Задача 5* Про налоги<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
-<blockquote>
-<div><p>Гусь потребляет картофель и свёклу (везде в задаче предполагайте, что картофель и свёкла измеряются в килограммах). Цена картофеля равна 5 рублей, а свёклы - 10. Доход Гуся равен 50 рублям. Полезность, которую Гусь получает от потребления картофеля (<span class="math notranslate nohighlight">\(x\)</span>) и свёклы (y), равна</p>
-<div class="math notranslate nohighlight">
-\[u(x, y)=2\sqrt{x}+y.\]</div>
-<ol class="simple">
-<li><p>Выпишите бюджетное ограничение Гуся.</p></li>
-<li><p>Запишите оптимизационную задачу Гуся и решите её (необязательно с помощью метода множителей Лагранжа).</p></li>
-<li><p>Предположим, что гуседарство теперь облагает картофель потоварным налогом размером <span class="math notranslate nohighlight">\(t\)</span> денежных единиц. Определите, как изменяется в зависимости от ставки <span class="math notranslate nohighlight">\(t\)</span> спрос Гуся на картофель и свёклу.</p></li>
-<li><p>При какой ставке налога <span class="math notranslate nohighlight">\(t\)</span> налоговые сборы гуседарства максимальны?</p></li>
-<li><p>Предположим, потоварный налог отменили, но теперь взымается подоходный налог с Гуся в размере <span class="math notranslate nohighlight">\(100\cdot \alpha\)</span>%, где <span class="math notranslate nohighlight">\(\alpha \in (0, 1)\)</span>. Определите, как спрос Гуся на товары зависит от <span class="math notranslate nohighlight">\(\alpha\)</span> (можно не приводить вычисления). Как суммарные налоговые сборы зависят от <span class="math notranslate nohighlight">\(\alpha\)</span>?</p></li>
-<li><p>Гуседарству не понравился эффект от введенного в предыдущем пункте налога, оно отменило его и ввело паушальный налог на доход Гуся. Ответьте на вопросы предыдущего пункта.</p></li>
-</ol>
-<details>
-   <summary>Решение</summary>
-<ol class="simple">
-<li><p>Запишем его бюджетное ограничение:</p></li>
-</ol>
-<div class="math notranslate nohighlight">
-\[
-&gt; 5x + 10y - 50=0.
-&gt; \]</div>
-<ol class="simple">
-<li><p>Давайте решим задачу заменой переменной. Заметим, что функция полезности монотонно возрастает по обоим аргументам, значит, решение будет находиться в точке касания бюджетного ограничения и кривой безразличия (задача выпуклая). Выразим <span class="math notranslate nohighlight">\(y\)</span> из бюджетного ограничения:</p></li>
-</ol>
-<div class="math notranslate nohighlight">
-\[
-&gt; y=\frac{1}{10}(50-5x)=5-0,5x.
-&gt; \]</div>
-<p>Тогда оптимизационная задача примет вид:</p>
-<div class="math notranslate nohighlight">
-\[
-&gt; \max_{x \in [0; 10]} 2\sqrt{x} + 5 - 0,5x
-&gt; \]</div>
-<p>Ограничение <span class="math notranslate nohighlight">\(x \in [0; 10]\)</span> взято из того условия, что мы не можем оказаться за границами бюджетного множества, а также количество блага не может измеряться отрицательным числом.</p>
-<p>Мы видим, что целевая функция - это парабола с ветвями вниз относительно <span class="math notranslate nohighlight">\(\sqrt{x}\)</span>, значит, её вершина определяет решение оптимизационной задачи Гуся:</p>
-<div class="math notranslate nohighlight">
-\[
-&gt; \sqrt{x^*}=\frac{-b}{2a}=\frac{-2}{-0,5 * 2}=2\Rightarrow x^*=4.
-&gt; \]</div>
-<p>Чтобы найти <span class="math notranslate nohighlight">\(y^*\)</span>, нужно найденный <span class="math notranslate nohighlight">\(x^*\)</span> подставить в бюджетное ограничение (границу бюджетного множества):</p>
-<div class="math notranslate nohighlight">
-\[
-&gt; y^*=5-0,5x^*=5-0,5\cdot 4=3.
-&gt; \]</div>
-<ol class="simple">
-<li><p>Введение <strong>потоварного налога</strong> по ставке <span class="math notranslate nohighlight">\(t\)</span> на картофель означает, что стоимость картофеля теперь равна <span class="math notranslate nohighlight">\(5+t\)</span>. При неизменной величине дохода и <span class="math notranslate nohighlight">\(t&gt;0\)</span> (исключим возможность <em>субсидирования</em> - это, простыми словами, мера, прямо противоположная налогу) это значит, что доступное множество пар <span class="math notranslate nohighlight">\((x, y)\)</span> станет меньше. Иными словами, граница бюджетного ограничения повернётся вокруг точки пересечения с осью <span class="math notranslate nohighlight">\(y\)</span>.</p></li>
-</ol>
-<p>Запишем обновленное бюджетное ограничение:</p>
-<div class="math notranslate nohighlight">
-\[
-&gt;(5+t)x+10y-50=0.
-&gt;\]</div>
-<p>Аналогично предыдущему пункту, выразим <span class="math notranslate nohighlight">\(y\)</span> из бюджетного ограничения:</p>
-<div class="math notranslate nohighlight">
-\[
-&gt;y=\frac{1}{10}(50-(5+t)x)=5-(0,5+0,1t)x.
-&gt;\]</div>
-<p>Подставим этот <span class="math notranslate nohighlight">\(y\)</span> в целевую функцию (полезность) и промаксимизируем:</p>
-<div class="math notranslate nohighlight">
-\[
-&gt;\max_{x\in \left[0; \frac{50}{5+t}\right]} 2\sqrt{x} + 5 - (0,5+0,1t)x
-&gt;\]</div>
-<p>И снова это парабола с ветвями вниз относительно <span class="math notranslate nohighlight">\(\sqrt{x} \Rightarrow\)</span> максимум в вершине:</p>
-<div class="math notranslate nohighlight">
-\[
-&gt;\sqrt{x^*} = \frac{-b}{2a} = \frac{-2}{-2\cdot (0,5+0,1t)}=\frac{1}{0,5+0,1t} = \frac{10}{5+t} \Rightarrow x^*=\frac{100}{(5+t)^2}.
-&gt;\]</div>
-<details>
-   <summary>Проверим себя</summary>
-<hr class="docutils" />
-<p>Подставив <span class="math notranslate nohighlight">\(t=0\)</span>, мы должны получить значение из предыдущего пункта, и это действительно так:</p>
-<div class="math notranslate nohighlight">
-\[
-&gt;\frac{100}{(5+t)^2} = \frac{100}{(5+0)^2}=\frac{100}{25}=4.
-&gt;\]</div>
-<hr class="docutils" />
-</details>
-<p>Чтобы получить <span class="math notranslate nohighlight">\(y^*\)</span>, нам нужно, опять, подставить найденный <span class="math notranslate nohighlight">\(x^*\)</span> в бюджетное ограничение:</p>
-<div class="math notranslate nohighlight">
-\[ 
-&gt;y^* = 5 - (0,5+0,1t)x^*=5 - (0,5+0,1t) \cdot \left(\frac{1}{0,5+0,1t}\right)^2 
-&gt;\]</div>
-<div class="math notranslate nohighlight">
-\[ = 5-\frac{1}{0,5+0,1t} \]</div>
-<!-- % & = \frac{1.5+0,5t}{0,5+0,1t} \\
--->
-<div class="math notranslate nohighlight">
-\[ = \frac{15+5t}{5+t} . \]</div>
-<p>Давайте не будем брать производные, потому что можно и без них определить характер зависимости.</p>
-<ul class="simple">
-<li><p>Во-первых, рассмотрим <span class="math notranslate nohighlight">\(x^*(t)\)</span>. Заметим, что <span class="math notranslate nohighlight">\(t&gt;0\)</span> находится в знаменателе. Потому мы можем сделать вывод, что <span class="math notranslate nohighlight">\(x^*_t&lt;0\)</span> (<span class="math notranslate nohighlight">\(x^*\)</span> <em>убывает по <span class="math notranslate nohighlight">\(t\)</span></em>).</p></li>
-<li><p>Во-вторых, рассмотрим <span class="math notranslate nohighlight">\(y^*(t)\)</span>. Преобразуем выражение для этой зависимости, полученное ранее:</p></li>
-</ul>
-<div class="math notranslate nohighlight">
-\[
-&gt;y^*=\frac{15+5t}{5+t} = \frac{5(5+t)-10}{5+t}=\left[5-\left(\frac{10}{5+t}\right)\Big\downarrow \right] \Big\uparrow.
-&gt;\]</div>
-<p>Стрелочки указывают, что происходит с <span class="math notranslate nohighlight">\(y^*\)</span> при росте <span class="math notranslate nohighlight">\(t\)</span>. Так, <span class="math notranslate nohighlight">\(y^*_t&gt;0\)</span>.</p>
-<p>Получается, чем дороже Гусю обходится картофель, тем меньше картофеля и тем больше свёклы он покупает.</p>
-<ol class="simple">
-<li><p>Во-первых, давайте определим, как в нашем случае выглядят <em>налоговые сборы</em>. В данной задаче это то, сколько рублей государство собирает суммарно с каждого килограмма картофеля, или, формульно,</p></li>
-</ol>
-<div class="math notranslate nohighlight">
-\[
-&gt;T_x=x^*(t)\cdot t,
-&gt;\]</div>
-<p>поскольку ставка влияет на то, сколько картофеля будет приобретено. <span class="math notranslate nohighlight">\(T_x\)</span> достаточно распространенное обозначение для суммарных налоговых сборов (это не отсылка к тому, что налог взымается с блага <span class="math notranslate nohighlight">\(x\)</span>).</p>
-<p>Значит, оптимизационная задача государства имеет вид:</p>
-<div class="math notranslate nohighlight">
-\[
-&gt;\max_{t\geqslant 0} \frac{100}{(5+t)^2}\cdot t.
-&gt;\]</div>
-<p>Запишем условие первого порядка:</p>
-<div class="math notranslate nohighlight">
-\[ 
-&gt;\text{FOC: } \frac{100}{(5+t)^2}-2t\cdot \frac{100}{(5+t)^3}=0 \]</div>
-<div class="math notranslate nohighlight">
-\[
-&gt;100(5+t)-200t=500+100t-200t=500-100t=0 \Rightarrow t^*=5 \]</div>
-<div class="math notranslate nohighlight">
-\[
-&gt;\text{SOC: } -2\cdot \frac{100}{(5+t)^3}-2\cdot \frac{100}{(5+t)^3}+6t\cdot \frac{100}{(5+t)^4} \text{ vs } 0
-&gt;\]</div>
-<div class="math notranslate nohighlight">
-\[ 
-&gt;-400(5+t)+600t=-2000+200t&lt;0 \text{ когда } t&lt;10 
-&gt;\]</div>
-<p>Значит, при <span class="math notranslate nohighlight">\(t&lt;10\)</span> мы находимся на участке вогнутости функции, причем на этом участке находится найденный экстремум. Можно также проверить, что это глобальный максимум, но это можно понять, посмотрев на первую производную целевой функции - при <span class="math notranslate nohighlight">\(t&gt;5\)</span> функция монотонно убывает по <span class="math notranslate nohighlight">\(t\)</span>, и при <span class="math notranslate nohighlight">\(t&lt;5\)</span> она монотонно возрастает.</p>
-<p>Значит, при <span class="math notranslate nohighlight">\(t=5\)</span> налоговые сборы государства максимальны.</p>
-<ol class="simple">
-<li><p>Вычисления можно не приводить потому, что теперь доход не 50, а <span class="math notranslate nohighlight">\(50(1-\alpha)\)</span>, что сразу можно подставить в ответы первого пункта. Вдобавок, можно заметить, что потребление <span class="math notranslate nohighlight">\(x\)</span> <em>не зависит от дохода Гуся</em> - это вы могли заметить еще на 3 семинаре, когда выводили Маршалианские спросы для квазилинейной функции полезности. Значит, остается только посчитать <span class="math notranslate nohighlight">\(y^*\)</span>:</p></li>
-</ol>
-<div class="math notranslate nohighlight">
-\[
-&gt;y^*=\frac{1}{10}(50(1-\alpha)-5\cdot 4)=5(1-\alpha)-2.
-&gt;\]</div>
-<p>Видим, что потребление <span class="math notranslate nohighlight">\(y\)</span> сокращается с ростом <span class="math notranslate nohighlight">\(\alpha\)</span>, а потребление <span class="math notranslate nohighlight">\(x\)</span> остается неизменным.</p>
-<p>Что касается налоговых сборов, то в случае подоходного налога они равны <span class="math notranslate nohighlight">\(50\alpha\)</span>, возрастают по <span class="math notranslate nohighlight">\(\alpha\)</span> и не зависят от потребления благ (напоминает паушальный налог).</p>
-<ol class="simple">
-<li><p>Пусть величина паушального налога равна <span class="math notranslate nohighlight">\(T\)</span>. Тогда в распоряжении Гуся остается <span class="math notranslate nohighlight">\(50-T\)</span>. Заметим, что это очень похоже на ситуацию в предыдущем пункте: при подоходном налоге в распоряжении Гуся оставалось <span class="math notranslate nohighlight">\(50-50\alpha\)</span>. Можно сказать, что <span class="math notranslate nohighlight">\(\alpha = T/50\)</span>, тогда решение этого пункта полностью повторяет пункт 5. Отвечать на зависимость налоговых сборов от <span class="math notranslate nohighlight">\(\alpha\)</span> тут, очевидно, не нужно.</p></li>
-</ol>
-</details>
-</div></blockquote>
-</div>
-<div class="section" id="id7">
-<h2>Что почитать дополнительно?<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<h2>Что почитать дополнительно?<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
 <blockquote>
 <div><ul class="simple">
 <li><p>V,-</p></li>
