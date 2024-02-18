@@ -422,30 +422,30 @@ $$-\frac{\partial V}{\partial W}m_x = \frac{\partial V}{\partial p}, \quad -\fra
 несколько хитрых операций с дробями и получим
 $$ \frac{m_x}{m_y} = \frac{\tau_x \frac{\partial m_x}{\partial p} + m_x}{\tau_y \frac{\partial m_y}{\partial q}+m_y} \quad \Leftrightarrow \quad \frac{m_x \frac{\partial m_y}{\partial q}}{m_y \frac{\partial m_x}{\partial p}} = \frac{\tau_x}{\tau_y}$$
 Мы только что доказали (немножко игнорируя вопросы выпуклости) один из самых нетривиальных фактов в теории оптимального налогообложения, называемое Правилом Рамсея.
-
 \end{frame}
 
-\begin{frame}{Правило Рамсея}
-
-То же самое правило можно получить если минимизировать функцию расходов агента вместо максимизации его полезности:
-\begin{gather*}
-\mathcal{L} = E(p+ \tau_x,q+\tau_y) + \\ + \lambda (\tau_x h_x(p+ \tau_x) + \tau_y h_y(q+\tau_y))
-\end{gather*}
-Выпишем условия первого порядка (по $\tau_x, \tau_y$) вспоминая по ходу Лемму Шепарда (i.e., Теорему об Огибающей):
-$$\frac{d E}{d \tau_x} = \frac{\partial E}{\partial p} = h_x =  \lambda [\tau_x \frac{\partial h_x}{\partial p}+h_x], \quad \frac{d E}{d \tau_y} = \frac{\partial E}{\partial q} = h_y =  \lambda [\tau_y \frac{\partial h_y}{\partial q}+h_y]$$
-
-Несложными преобразованиями получается очень похожая дробь, но с хиксианскими спросами вместо маршалианских.
-
-\end{frame}
+%\begin{frame}{Правило Рамсея}
+%
+%То же самое правило можно получить если минимизировать функцию расходов агента вместо максимизации его полезности:
+%\begin{gather*}
+%\mathcal{L} = E(p+ \tau_x,q+\tau_y) + \\ + \lambda (\tau_x h_x(p+ \tau_x) + \tau_y h_y(q+\tau_y))
+%\end{gather*}
+%Выпишем условия первого порядка (по $\tau_x, \tau_y$) вспоминая по ходу Лемму Шепарда (i.e., Теорему об Огибающей):
+%$$\frac{d E}{d \tau_x} = \frac{\partial E}{\partial p} = h_x =  \lambda [\tau_x \frac{\partial h_x}{\partial p}+h_x], \quad \frac{d E}{d \tau_y} = \frac{\partial E}{\partial q} = h_y =  \lambda [\tau_y \frac{\partial h_y}{\partial q}+h_y]$$
+%
+%Несложными преобразованиями получается очень похожая дробь, но с хиксианскими спросами вместо маршалианских.
+%
+%\end{frame}
 
 \begin{frame}{Правило Рамсея}
 
 \begin{lemma}
-Оптимальные налоговые ставки (в процентах) обратно пропорциональны эластичностям (маршаллианского в основной задаче и хиксианского в двойственной) спроса:
+Оптимальные налоговые ставки (в процентах) обратно пропорциональны эластичностям (маршаллианского) спроса:
 $$ \frac{\tau_x/p}{\tau_y/q} = \frac{-1/\varepsilon_{x,p}}{-1/\varepsilon_{y,q}},$$
 \end{lemma}
 другими словами, менее эластичные товары должны облагаться более сильным налогом, чем более эластичные.
 
+Асамшн о том что спрос зависит только от своей цены легко установить в квазилинейных полезностях вида $\sum_{i=1}^n U_i(x_i) + x_0$.
 \end{frame}
 
 \section{Чистые субституты и комплементы}

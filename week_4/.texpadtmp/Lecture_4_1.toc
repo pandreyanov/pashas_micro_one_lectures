@@ -6,4 +6,4 @@
 \beamer@sectionintoc {5}{Налоги}{19}{0}{5}
 \beamer@sectionintoc {6}{Налоги в Коббе-Дугласе}{27}{0}{6}
 \beamer@sectionintoc {7}{Правило Рамсея}{36}{0}{7}
-\beamer@sectionintoc {8}{Чистые субституты и комплементы}{42}{0}{8}
+\beamer@sectionintoc {8}{Чистые субституты и комплементы}{41}{0}{8}

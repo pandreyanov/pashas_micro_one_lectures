@@ -99,23 +99,21 @@
 \headcommand {\beamer@framepages {39}{39}}
 \headcommand {\slideentry {7}{0}{5}{40/40}{}{0}}
 \headcommand {\beamer@framepages {40}{40}}
-\headcommand {\slideentry {7}{0}{6}{41/41}{}{0}}
+\headcommand {\beamer@sectionpages {36}{40}}
+\headcommand {\beamer@subsectionpages {36}{40}}
+\headcommand {\sectionentry {8}{Чистые субституты и комплементы}{41}{Чистые субституты и комплементы}{0}}
+\headcommand {\slideentry {8}{0}{1}{41/41}{}{0}}
 \headcommand {\beamer@framepages {41}{41}}
-\headcommand {\beamer@sectionpages {36}{41}}
-\headcommand {\beamer@subsectionpages {36}{41}}
-\headcommand {\sectionentry {8}{Чистые субституты и комплементы}{42}{Чистые субституты и комплементы}{0}}
-\headcommand {\slideentry {8}{0}{1}{42/42}{}{0}}
+\headcommand {\slideentry {8}{0}{2}{42/42}{}{0}}
 \headcommand {\beamer@framepages {42}{42}}
-\headcommand {\slideentry {8}{0}{2}{43/43}{}{0}}
+\headcommand {\slideentry {8}{0}{3}{43/43}{}{0}}
 \headcommand {\beamer@framepages {43}{43}}
-\headcommand {\slideentry {8}{0}{3}{44/44}{}{0}}
+\headcommand {\slideentry {8}{0}{4}{44/44}{}{0}}
 \headcommand {\beamer@framepages {44}{44}}
-\headcommand {\slideentry {8}{0}{4}{45/45}{}{0}}
+\headcommand {\slideentry {8}{0}{5}{45/45}{}{0}}
 \headcommand {\beamer@framepages {45}{45}}
-\headcommand {\slideentry {8}{0}{5}{46/46}{}{0}}
-\headcommand {\beamer@framepages {46}{46}}
-\headcommand {\beamer@partpages {1}{46}}
-\headcommand {\beamer@subsectionpages {42}{46}}
-\headcommand {\beamer@sectionpages {42}{46}}
-\headcommand {\beamer@documentpages {46}}
-\headcommand {\gdef \inserttotalframenumber {37}}
+\headcommand {\beamer@partpages {1}{45}}
+\headcommand {\beamer@subsectionpages {41}{45}}
+\headcommand {\beamer@sectionpages {41}{45}}
+\headcommand {\beamer@documentpages {45}}
+\headcommand {\gdef \inserttotalframenumber {36}}
