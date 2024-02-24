@@ -1,0 +1,7 @@
+\babel@toc {russian}{}\relax 
+\beamer@sectionintoc {1}{План}{2}{0}{1}
+\beamer@sectionintoc {2}{Эффекты дохода и замещения}{4}{0}{2}
+\beamer@sectionintoc {3}{Эффект замещения}{9}{0}{3}
+\beamer@sectionintoc {4}{Эффект дохода}{12}{0}{4}
+\beamer@sectionintoc {5}{Матрица Слуцкого}{21}{0}{5}
+\beamer@sectionintoc {6}{Это последняя лекция о теории потребителя}{34}{0}{6}

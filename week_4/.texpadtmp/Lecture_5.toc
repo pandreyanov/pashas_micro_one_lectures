@@ -1,0 +1,5 @@
+\babel@toc {russian}{}\relax 
+\beamer@sectionintoc {1}{Повторение}{2}{0}{1}
+\beamer@sectionintoc {2}{Пример 1}{5}{0}{2}
+\beamer@sectionintoc {3}{Пример 2}{13}{0}{3}
+\beamer@sectionintoc {4}{Пример 3}{18}{0}{4}
