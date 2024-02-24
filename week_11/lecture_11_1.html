@@ -1,0 +1,611 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Одиннадцатая лекция, часть 1 &#8212; Учебник по Микро 1, для ИП, ФЭН ВШЭ</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b76e3c8a" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'week_11/lecture_11_1';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../table.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Учебник по Микро 1, для ИП, ФЭН ВШЭ</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../table.html">
+                    Содержание учебника
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Программа курса</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../week_0/principles.html">Принципы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_0/grades.html">Оценивание</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_0/hours.html">Часы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_0/module%203.html">Структура третьего модуля</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_0/module%204.html">Структура четвертого модуля</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Первая неделя</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../week_1/intro_1.html">Содержание</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_1/lecture_1_1.html">Первая лекция, часть 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_1/lecture_1_2.html">Первая лекция, часть 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_1/seminar_1.html">Семинар 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_1/homework_0.html">Тренировочное (нулевое) домашнее задание</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Вторая неделя</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../week_2/intro_2.html">Содержание</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_2/lecture_2_1.html">Вторая лекция, часть 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_2/lecture_2_2.html">Вторая лекция, часть 2</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Мат. шпаргалка</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../cheetsheet/differentials.html">Дифференциалы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cheetsheet/forms.html">Квадратичные формы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cheetsheet/backprop.html">Бэкпроп</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cheetsheet/approximations.html">Приближения</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/week_11/lecture_11_1.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Одиннадцатая лекция, часть 1</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Что такое экономика обмена?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Ящик Эджворта</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Парето-Оптимальность</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Геометрическая интерпретация ПО</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Что-то странное</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Утилитарная интерпретация ПО</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Как не запутаться,</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Слабая, но не сильная, ПО</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Примеры</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1>Одиннадцатая лекция, часть 1<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<p>В этой части лекции мы поговорим об экономиках обмена.</p>
+<section id="id2">
+<h2>Что такое экономика обмена?<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<p>Экономика обмена – это</p>
+<ul class="simple">
+<li><p>несколько потребителей (индивидуумов) <span class="math notranslate nohighlight">\(I = \{ a,b,c, \ldots\}\)</span></p></li>
+<li><p>производителей пока что нет, но им зарезервирована буква <span class="math notranslate nohighlight">\(J\)</span></p></li>
+<li><p>несколько товаров <span class="math notranslate nohighlight">\(K = \{1, 2, 3, \ldots\}\)</span></p></li>
+<li><p>начальные запасы <span class="math notranslate nohighlight">\(\vec w_{a}, \vec w_{b}, \vec w_{c}, \ldots\)</span></p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[ \vec w_{a} = \{ w_{a1}, w_{a2}, w_{a3}, \ldots\}\]</div>
+<ul class="simple">
+<li><p>вектора потребления <span class="math notranslate nohighlight">\(\vec x_{a}, \vec x_{b}, \vec x_{c}, \ldots\)</span></p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[ \vec x_{a} = \{ x_{a1}, x_{a2}, x_{a3}, \ldots\}\]</div>
+<p>Экономика может находиться в одном из многих допустимых состояний</p>
+<p>Другими словами, надо сложить все запасы (отдельно по товарам) и разделить их между агентами. В контексте экономики обмена нас будут интересовать только допустимые равновесия.</p>
+</section>
+<section id="id3">
+<h2>Ящик Эджворта<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<p>Рассмотрим случай, когда <span class="math notranslate nohighlight">\(\dim I = 2, \dim K = 2\)</span>. В таком случае, допустимые состояния – это четыре координаты:</p>
+<div class="math notranslate nohighlight">
+\[ x_{a1}, x_{a2}, x_{b1}, x_{b2},\]</div>
+<p>причем они связаны соотношениями</p>
+<div class="math notranslate nohighlight">
+\[ x_{b1} = w_{a1} + w_{b1} - x_{a1}, \quad x_{b2} = w_{a2} + w_{b2} - x_{b1}\]</div>
+<p>то есть степеней свободы у допустимого состояния всего две: <span class="math notranslate nohighlight">\(x_{1a}, x_{1b}\)</span>.</p>
+<p>Пространство допустимых состояний описывается прямоугольником в <span class="math notranslate nohighlight">\(\mathbb{R}^2\)</span>, высота и ширина которого равны <span class="math notranslate nohighlight">\(w_1\)</span> и <span class="math notranslate nohighlight">\(w_2\)</span> соответственно. Этот прямоугольник называется “ящиком Эджворта”, в честь еще одного экономиста.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+У Кати есть 2 килограмма сахара и 3 килограмма соли, а у Миши есть 3 килограмма сахара и 1 килограмма соли. Опишите своими словами общие запасы.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Всего в экономике 5 килограмм сахара и 4 килограмма соли.</p>
+</div>
+</details><p>На той же картинке мы можем изобразить предпочтения каждого агента. Для этого надо выбрать того агента, чьи координаты будут расположены нормально, а координаты второго агента будут перевернуты. По умолчанию мы переворачиваем второго агента (<span class="math notranslate nohighlight">\(b\)</span>).</p>
+<a class="reference internal image-reference" href="../_images/edge.png"><img alt="Ящик эджворта" class="align-center" src="../_images/edge.png" style="width: 700px;" /></a>
+<p>Любая точка внутри (или на границе) ящика Эджворта задает допустимое состояние и наоборот.</p>
+</section>
+<section id="id4">
+<h2>Парето-Оптимальность<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
+<p>Далее, мы хотим выбрать те допустимые состояния экономики, которые, в каком-то смысле, являются оптимальными. Оптимальность будет пониматься в одном из двух смыслов:</p>
+<p>Разница между двумя понятиями практически отсутствует, и, на самом деле, можно формально доказать, что ее нет для строго вогнутых предпочтений. Контрпримером к этому факту будут Леонтьевские предпочтения, мы их разберем чуть позже.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Какое из двух понятий ПО является более сильным, то есть из того, что оно выполняется, вытекает, что выполняется второе?<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Из сильного вытекает слабое.</p>
+</div>
+</details></section>
+<section id="id5">
+<h2>Геометрическая интерпретация ПО<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
+<p>Рассмотрим точку <span class="math notranslate nohighlight">\(x\)</span> в ящике Эджворта и проведем через нее линии уровня полезностей каждого агента. Для того, чтобы опровергнуть слабую ПО, достаточно привести пример (точку <span class="math notranslate nohighlight">\(x'\)</span>) такую, что она находится в <span class="math notranslate nohighlight">\(L_{++}(x)\)</span> для первого агента и <span class="math notranslate nohighlight">\(L_{++}(x)\)</span> для второго агента. Напомним, что</p>
+<ul class="simple">
+<li><p>верхнее лебегово множество <span class="math notranslate nohighlight">\(L_{+}(x)\)</span> – это все точки <span class="math notranslate nohighlight">\(x'\)</span>, такие, что <span class="math notranslate nohighlight">\(x' \succcurlyeq x\)</span></p></li>
+<li><p>верхнее лебегово множество <span class="math notranslate nohighlight">\(L_{++}(x)\)</span> это все точки <span class="math notranslate nohighlight">\(x'\)</span>, такие, что <span class="math notranslate nohighlight">\(x' \succ x\)</span></p></li>
+</ul>
+<p>Рассмотрим несколько примеров</p>
+<a class="reference internal image-reference" href="../_images/edge2.png"><img alt="Ящик Эджворта" class="align-center" src="../_images/edge2.png" style="width: 700px;" /></a>
+<ul class="simple">
+<li><p>точка <span class="math notranslate nohighlight">\(\hat x\)</span> находится в углу ящика Эджворта, и потому все альтернативные точки <span class="math notranslate nohighlight">\(x'\)</span> делают второму агенту гарантированно хуже</p></li>
+<li><p>точка <span class="math notranslate nohighlight">\(\tilde x\)</span> находится на пересечении кривых безразличия, поэтому это ни слабое ни сильное ПО</p></li>
+<li><p>точка <span class="math notranslate nohighlight">\(x^{\ast}\)</span> находится в точке касания кривых безразличия, и потому это слабое (а также сильное) ПО</p></li>
+</ul>
+<p>Другими словами, если ничего странного не происходит, то ПО – это просто точки касания кривых безразличия. Однако что-то странное довольно легко устроить.</p>
+</section>
+<section id="id6">
+<h2>Что-то странное<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
+<p>Пусть в ящике Эджвотра первая полезность - полезность Кобба-Дугласа, а вторая - квазилинейная</p>
+<a class="reference internal image-reference" href="../_images/edge3.png"><img alt="Ящик Эджвотра" class="align-center" src="../_images/edge3.png" style="width: 700px;" /></a>
+<p>Легко видеть, что точки касания уходят за границы ящика. А точки снаружи ящика не могут быть парето-оптимальными, поскольку мы в самом начале потребовали, чтобы все рассматриваемые точки были допустимыми. То, что находится за гранью ящика Эджворта, трогать строго настрого запрещено.</p>
+<p>Но что же тогда будет ПО? Ответ: точки, “ближайшие” к точкам касания; но придется все равно проверить руками.</p>
+</section>
+<section id="id7">
+<h2>Утилитарная интерпретация ПО<a class="headerlink" href="#id7" title="Link to this heading">#</a></h2>
+<p>Рассмотрим взвешенную полезность агентов в допустимой точке <span class="math notranslate nohighlight">\(х\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[ U(x) = \lambda U_a(x) + \mu U_b(w-x) \to \max_x, \quad \lambda, \mu \geqslant 0\]</div>
+<ul class="simple">
+<li><p>слабая ПО означает, что для любой комбинации весов <span class="math notranslate nohighlight">\((\lambda, \mu) \neq (0,0)\)</span> точка <span class="math notranslate nohighlight">\(x\)</span> (строго) оптимальна в смысле взвешенной полезности агентов. То есть если нам предлагают претендента <span class="math notranslate nohighlight">\(x'\)</span> такого, что всем агентам строго лучше, то взвешенная полезность увеличится.</p></li>
+<li><p>сильная ПО означает то же самое, но веса должны быть строго положительные. Тогда даже если только одна полезность увеличится, взвешенная полезность увеличится.</p></li>
+</ul>
+<p>На практике, один из двух весов можно положить равным единице:</p>
+<div class="math notranslate nohighlight">
+\[ U(x) = \lambda U_a(x) + U_b(w-x) \to \max_x\]</div>
+<p>И тогда мы получим однопараметрическое семейство точек, называемое <strong>Парето-границей</strong> или <strong>Парето-фронтом</strong>.</p>
+</section>
+<section id="id8">
+<h2>Как не запутаться,<a class="headerlink" href="#id8" title="Link to this heading">#</a></h2>
+<p>В чем сила?</p>
+<p>Сила сильного ПО в том, что он выдерживает больше тестов, чем слабый ПО. Слабый ПО проверяется на строго положительных весах, а сильный проверяется также на весах, которые могут (частично, но не целиком) равняться нулю.</p>
+</section>
+<section id="id9">
+<h2>Слабая, но не сильная, ПО<a class="headerlink" href="#id9" title="Link to this heading">#</a></h2>
+<p>Наконец, хотелось бы увидеть пример, в котором есть точка, Парето-оптимальная в слабом, но не в сильном смысле. Пример не самый экзотический, достаточно поэксперимернировать с леонтьевмскими полезностями.</p>
+<a class="reference internal image-reference" href="../_images/edge4.png"><img alt="Ящик эджворта" class="align-center" src="../_images/edge4.png" style="width: 700px;" /></a>
+</section>
+<section id="id10">
+<h2>Примеры<a class="headerlink" href="#id10" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>найти парето-границу для</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[U_a(x,y) = U_b(x,y) = \alpha \log x + \log y\]</div>
+<ul class="simple">
+<li><p>найти парето-границу для</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[U_a(x,y) = \log x + y, \quad U_b(x,y) = \alpha \log x + \log y \]</div>
+<ul class="simple">
+<li><p>найти парето-границу для</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[U_a(x,y) = \min(x,y), \quad U_b(x,y) = \alpha \log x + \log y \]</div>
+<ul class="simple">
+<li><p>найти парето-границу для</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[U_a(x,y) = \sqrt{x}+ \sqrt{y}, \quad U_b(x,y) = \alpha x + y \]</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./week_11"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Что такое экономика обмена?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Ящик Эджворта</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Парето-Оптимальность</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Геометрическая интерпретация ПО</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Что-то странное</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Утилитарная интерпретация ПО</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Как не запутаться,</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Слабая, но не сильная, ПО</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Примеры</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Паша Андреянов
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,748 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Седьмая лекция &#8212; Учебник по Микро 1, для ИП, ФЭН ВШЭ</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b76e3c8a" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'week_7/lecture_7_1';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../table.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Учебник по Микро 1, для ИП, ФЭН ВШЭ</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../table.html">
+                    Содержание учебника
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Программа курса</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../week_0/principles.html">Принципы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_0/grades.html">Оценивание</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_0/hours.html">Часы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_0/module%203.html">Структура третьего модуля</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_0/module%204.html">Структура четвертого модуля</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Первая неделя</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../week_1/intro_1.html">Содержание</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_1/lecture_1_1.html">Первая лекция, часть 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_1/lecture_1_2.html">Первая лекция, часть 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_1/seminar_1.html">Семинар 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_1/homework_0.html">Тренировочное (нулевое) домашнее задание</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Вторая неделя</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../week_2/intro_2.html">Содержание</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_2/lecture_2_1.html">Вторая лекция, часть 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_2/lecture_2_2.html">Вторая лекция, часть 2</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Мат. шпаргалка</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../cheetsheet/differentials.html">Дифференциалы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cheetsheet/forms.html">Квадратичные формы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cheetsheet/backprop.html">Бэкпроп</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cheetsheet/approximations.html">Приближения</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/week_7/lecture_7_1.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Седьмая лекция</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Частичное равновесие</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Излишек потребителя</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cs">Первая интерпретация CS</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Вторая интерпретация CS</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Излишек производителя</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">На злобу дня</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Регулирование цен</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#price-ceiling">Потолок цены (price ceiling)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#price-floor">Пол цены (price floor)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dwl">DWL (дэ-вэ-эл)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Налог</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Субсидии</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Налоги и экспорт</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Налоги и импорт</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Равновесие в импорт-экспорт</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Экстерналии</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">Первый способ</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">Второй способ</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1>Седьмая лекция<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<p>В этой секции я буду использовать <span class="math notranslate nohighlight">\(Q\)</span> для обозначения объемов производства (не путать с ценами факторов <span class="math notranslate nohighlight">\(q\)</span>) и <span class="math notranslate nohighlight">\(P\)</span> для обозначения цены (не путать с ценой конечного товара <span class="math notranslate nohighlight">\(p\)</span>).</p>
+<section id="id2">
+<h2>Частичное равновесие<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<p>Мы ввели на прошлой неделе понятие частичного равновесия. Это, по сути, пересечение агрегированной кривой маршаллианского спроса с агрегированной кривой предложения. Есть несколько нюансов:</p>
+<ul class="simple">
+<li><p>кривая спроса она обратная, то есть <span class="math notranslate nohighlight">\(P(Q)\)</span>, а не <span class="math notranslate nohighlight">\(Q(P)\)</span>, как мы привыкли выводить;</p></li>
+<li><p>кривая предложения – это просто <span class="math notranslate nohighlight">\(P = MC(Q)\)</span>, если нет <span class="math notranslate nohighlight">\(FC\)</span>;</p></li>
+<li><p>если <span class="math notranslate nohighlight">\(FC\)</span> есть, то надо оторвать каждую индивидуальную кривую предложения на уровне точки закрытия.</p></li>
+</ul>
+<p>То есть агрегированная кривая предложения может быть кусочно-непрерывной, если фирм много и точки закрытия у них разные.</p>
+<p>Но мы так делать <strong>не будем</strong>! Чаще всего мы будем давать вам кривые спроса и предложения просто так.</p>
+</section>
+<section id="id3">
+<h2>Излишек потребителя<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<p>Есть разные интерпретации этой площади.</p>
+<a class="reference internal image-reference" href="../_images/CS.png"><img alt="Излишек потребителя" class="align-center" src="../_images/CS.png" style="width: 400px;" /></a>
+<section id="cs">
+<h3>Первая интерпретация CS<a class="headerlink" href="#cs" title="Link to this heading">#</a></h3>
+<p>Будем считать, что спрос образован большим количеством агентов, каждый из которых имеет единичный (или очень маленький 0.001) спрос. Тогда, приближая убывающую кривую спроса столбиками, мы можем сказать, что высота первого столбика – это самая высокая готовность платить среди всех агентов. Второй столбик – это следующая за ней, и так далее.</p>
+<p>Агенты как вы выстраиваются в очередь, и в начале очереди встают те, кому <em>больше всех надо</em>.</p>
+<p>Это все классно, но у нас все спросы гладкие. Как быть?</p>
+</section>
+<section id="id4">
+<h3>Вторая интерпретация CS<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+<p>Будем считать, что спрос образован, для простоты, одним агентом с гладкой кривой спроса. Тогда можно доказать, что CS – это грубое приближение к компенсирующей и эквивалентным вариациям.</p>
+<p>На самом деле, легко видеть, что CS прямо-таки зажат между CV и EV, если мы рассматриваем изменение цены, приводящее к нулевому потреблению интересующего нас товара, то есть к <span class="math notranslate nohighlight">\(Q=0\)</span>.</p>
+<a class="reference internal image-reference" href="../_images/CVEV.png"><img alt="Сиви иви" class="align-center" src="../_images/CVEV.png" style="width: 400px;" /></a>
+<p>Более того, если полезность квазилинейная, то еще и <span class="math notranslate nohighlight">\(CV = EV\)</span>. Почему?</p>
+<p>Зазор между (наклонами) хиксианского и маршаллианского спроса в формуле Слуцкого пропорционален <span class="math notranslate nohighlight">\(\partial m/ \partial I\)</span>, а в квазилинейных моделях, во внутренних точках, эффект дохода равен нулю.</p>
+<p>Экономист волен сам выбирать удобную ему меру излишка потребителя. Как правило, мы выбираем то, что <em>проще считается</em>. Если полезность не квазилинейная, CS – всё равно хорошая мера излишка потребителя благодаря второй интерпретации.</p>
+</section>
+</section>
+<section id="id5">
+<h2>Излишек производителя<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
+<p>Если фиксированных издержек нет, и фирма одна, то это просто <span class="math notranslate nohighlight">\(P=MC(Q)\)</span>. Если фирм несколько, то это суммированные горизонтально <span class="math notranslate nohighlight">\(Q_{\sum} = \sum_i MC_i^{-1}(P)\)</span>.</p>
+<a class="reference internal image-reference" href="../_images/PS.png"><img alt="Сокращение спроса" class="align-center" src="../_images/PS.png" style="width: 400px;" /></a>
+<p>Проблем в интерпретации излишка производителя меньше, так как это прямо-таки кривая <span class="math notranslate nohighlight">\(P = MC(Q)\)</span>. Единственный подвох – это фиксированные издержки, их надо дополнительно вычесть из <span class="math notranslate nohighlight">\(PS\)</span>.</p>
+<p>Альтернативно, можно сказать, что</p>
+<div class="math notranslate nohighlight">
+\[ TS = PS + CS + T\]</div>
+<p>где <span class="math notranslate nohighlight">\(T\)</span> – это разнообразные налоги и пошлины, собранные государством. Но точная формула зависит от контекста. К примеру, PS может вовсе исчезнуть, если производитель иностранный.</p>
+</section>
+<section id="id6">
+<h2>На злобу дня<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
+<p>Предположим, что есть страна-экспортер газа. Домашний рынок описывается кривыми <span class="math notranslate nohighlight">\(P = 10 - Q\)</span> и <span class="math notranslate nohighlight">\(P = Q\)</span>. Попробуйте сразу догадаться, какая из них спрос, а какая – предложение. Также есть крупный внешний потребитель газа, с кривой спроса <span class="math notranslate nohighlight">\(P = 10 - Q/2\)</span>.</p>
+<blockquote>
+<div><p>Вопрос. Если экспорт прекратится, что произойдет с ценой на газ дома, а также как изменятся излишки потребителя и производителя.</p>
+</div></blockquote>
+<p>Как мы будем ее решать?</p>
+<ul class="simple">
+<li><p>Шаг 1. Просуммировать спросы аккуратно.</p></li>
+<li><p>Шаг 2. Найти равновесие с экспортом и без.</p></li>
+<li><p>Шаг 3. Найти CS и PS, но <em>без</em> внешнего производителя.</p></li>
+</ul>
+<p>Поехали:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+Q^d_{home} = 10 - P, \quad Q^d_{foreign} = 20 - 2P \quad \Rightarrow \quad Q^d_{\sum} = 30 - 3P \\
+with \ trade: \quad 30 - 3P = P \quad \Rightarrow P^{\ast}_{trade} = 30/4 = 7.5 \\
+without \ trade: \quad 10 - P = P \quad \Rightarrow P^{\ast}_{war} = 10/2 = 5
+\end{split}\]</div>
+<p>Посмотрим на излишки потребителя:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} 
+CS_{trade} = (10-7.5)*(30-3*7.5)/2 = 9.375\\
+CS_{war} = (10-5)*(10-5)/2 = 5^2/2 = 12.5
+\end{split}\]</div>
+<p>Ясное дело, домашние потребители <em>выиграли</em> от падения цены.</p>
+<p>Посмотрим на излишки производителя:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} 
+PS_{trade} = (7.5-0)*(30-3*7.5)/2 = 28.128\\
+PS_{war} = (5-0)*(10-5)/2 = 5^2/2 = 12.5
+\end{split}\]</div>
+<p>Легко видеть, что производитель потерпел колоссальные убытки из-за потери доступа к иностранному рынку. А это зарплаты, налоги, инфраструктура…</p>
+</section>
+<section id="id7">
+<h2>Регулирование цен<a class="headerlink" href="#id7" title="Link to this heading">#</a></h2>
+<p>Мы рассмотрим три типа регулирования цен: пол, потолок, налог и субсидию. Для простоты у нас будет одна кривая спроса <span class="math notranslate nohighlight">\(P = 8 - Q\)</span> и одна кривая предложения <span class="math notranslate nohighlight">\(P = Q\)</span>. Равновесие ищется тривиально геометрически, это <span class="math notranslate nohighlight">\(P^{\ast} = Q^{\ast} = 4\)</span>.</p>
+<p>Поскольку наклоны одинаковые, у нас всегда будут получаться площади равнобедренных треугольников и иногда трапеций. Площадь такого треугольника со стороной <span class="math notranslate nohighlight">\(x\)</span> равна <span class="math notranslate nohighlight">\(x^2/2\)</span>.</p>
+<section id="price-ceiling">
+<h3>Потолок цены (price ceiling)<a class="headerlink" href="#price-ceiling" title="Link to this heading">#</a></h3>
+<p>Зачастую, когда государство пытается защитить какой-то слой потребителей (например, пенсионеров), но не очень хорошо понимает, кому давать на руки и сколько денег, оно вводит ограничение сверху на цену продукта (гречки), который занимает большую долю в корзине этих потребителей.</p>
+<blockquote>
+<div><p>Пусть потолок равен <span class="math notranslate nohighlight">\(P^{\ast} = 2\)</span>. Как изменится равновесие?</p>
+</div></blockquote>
+<p>Заметим, что при такой низкой цене потребители рады купить <span class="math notranslate nohighlight">\(Q = 6\)</span>, но производители готовы поставить только <span class="math notranslate nohighlight">\(Q = 2\)</span>. Соответственно, на рынке образуется дефицит и будет продано наименьшее из двух:</p>
+<div class="math notranslate nohighlight">
+\[ Q^{\ast} = \min(2,6) = 2.\]</div>
+<blockquote>
+<div><p>Как изменятся PS и CS?</p>
+</div></blockquote>
+<p>Излишек производителя уменьшится:</p>
+<div class="math notranslate nohighlight">
+\[ 4^2/2 = 8 \to 2^2/2 = 2\]</div>
+<p>Излишек потребителя изменится чуть сложнее:</p>
+<div class="math notranslate nohighlight">
+\[ 4^2/2 = 8 \to 2^2/2 + 2*4 = 10.\]</div>
+<p>Я разложил трапецию на прямоугольник и треугольник.</p>
+<a class="reference internal image-reference" href="../_images/ceiling.png"><img alt="Потолок" class="align-center" src="../_images/ceiling.png" style="width: 400px;" /></a>
+</section>
+<section id="price-floor">
+<h3>Пол цены (price floor)<a class="headerlink" href="#price-floor" title="Link to this heading">#</a></h3>
+<p>Пол цены, то есть ограничение снизу, встречается более редко.</p>
+<blockquote>
+<div><p>Пусть пол равен <span class="math notranslate nohighlight">\(P^{\ast} = 6\)</span>. Как изменится равновесие?</p>
+</div></blockquote>
+<p>Заметим, что при такой высокой цене потребители готовы купить только <span class="math notranslate nohighlight">\(Q = 2\)</span>, несмотря на то, что производители готовы поставить целых <span class="math notranslate nohighlight">\(Q = 6\)</span>. Соответственно, на рынке образуется избыток и будет продано наименьшее из двух:</p>
+<div class="math notranslate nohighlight">
+\[ Q^{\ast} = \min(6,2) = 2.\]</div>
+<blockquote>
+<div><p>Как изменятся PS и CS?</p>
+</div></blockquote>
+<p>Излишек потребителя уменьшится:</p>
+<div class="math notranslate nohighlight">
+\[ 4^2/2 = 8 \to 2^2/2 = 2\]</div>
+<p>Излишек потребителя станет трапецией:</p>
+<div class="math notranslate nohighlight">
+\[ 4^2/2 = 8 \to 2^2/2 + 2*4 = 10.\]</div>
+</section>
+<section id="dwl">
+<h3>DWL (дэ-вэ-эл)<a class="headerlink" href="#dwl" title="Link to this heading">#</a></h3>
+<p>Обратим внимание, что в обоих случаях объем меньше, чем мог бы быть. За счет этого сумма PS и CS упускает маленький треугольничек слева от точки равновесия. Эта площадь называется DWL, от английского deadweight loss - что-то потерянное безвозвратно.</p>
+<a class="reference internal image-reference" href="../_images/dwl.png"><img alt="дэвээл" class="align-center" src="../_images/dwl.png" style="width: 400px;" /></a>
+</section>
+</section>
+<section id="id8">
+<h2>Налог<a class="headerlink" href="#id8" title="Link to this heading">#</a></h2>
+<p>Налог на товар бывает двух видов.</p>
+<ul class="simple">
+<li><p>Налог на производителя повышает издержки, тем самым отодвигая кривую предложения вверх.</p></li>
+<li><p>Налог на потребителя понижает полезность, тем самым отодвигая кривую спроса вниз.</p></li>
+</ul>
+<p>Любопытным является тот факт, что с точки зрения анализа равновесия, оба сценария эквивалентны. Оба вида налогов можно представить себе как <em>пару цен</em>, одна ощущается потребителем, другая - производителем. Расстояние между этими ценами равно в точности налогу, а положение такое, что спрос в более высокой цене потребителя равен предложению в более низкой цене производителя.</p>
+<a class="reference internal image-reference" href="../_images/taxes.png"><img alt="налоги" class="align-center" src="../_images/taxes.png" style="width: 400px;" /></a>
+<p>Налоговые сборы <span class="math notranslate nohighlight">\(T\)</span> равны размеру налога, умноженному на равновесный <span class="math notranslate nohighlight">\(Q\)</span>.</p>
+</section>
+<section id="id9">
+<h2>Субсидии<a class="headerlink" href="#id9" title="Link to this heading">#</a></h2>
+<p>Аналогичным образом, субсидия раздваивает цену, но так, что потребитель в итоге видит более высокую цену, чем потребитель.</p>
+<p>Субсидии <span class="math notranslate nohighlight">\(T\)</span> равны размеру субсидии, умноженной на равновесный <span class="math notranslate nohighlight">\(Q\)</span>. Чтобы вычислить DWL, надо посчитать, сколько раз каждая область вошла в PS, CS и субсидию T.</p>
+<a class="reference internal image-reference" href="../_images/subsidy.png"><img alt="субсидии" class="align-center" src="../_images/subsidy.png" style="width: 400px;" /></a>
+<p>Получается, что в обоих случаях DWL - это площадь маленького треугольника слева (для налога) или справа (для субсидии) от точки равновесия.</p>
+</section>
+<section id="id10">
+<h2>Налоги и экспорт<a class="headerlink" href="#id10" title="Link to this heading">#</a></h2>
+<p>Заметим, что DWL равен нулю, когда налоги или субсидии отсутствуют. То есть наилучшей является ситуация, в которой государство никак не вмешивается в экономику.</p>
+<p>Однако это становится менее очевидно, когда потребитель иностранный. Тогда в модели частичного равновесия даже самый маленький налог всегда лучше, чем отсутствие налога. В то же время максимальный налог бесполезен, поскольку торговли не будет. Получается, что будет внутреннее решение.</p>
+<a class="reference internal image-reference" href="../_images/exports.png"><img alt="экспорт" class="align-center" src="../_images/exports.png" style="width: 400px;" /></a>
+<p>Для простоты у нас будет одна кривая (иностранного) спроса <span class="math notranslate nohighlight">\(P = 8 - Q\)</span> и одна кривая (домашнего) предложения <span class="math notranslate nohighlight">\(P = Q\)</span>. Дефолтное равновесие ищется тривиально геометрически, это <span class="math notranslate nohighlight">\(P^{\ast} = Q^{\ast} = 4\)</span>, a TS – это нижний (так как мы производим) треугольник с площадью <span class="math notranslate nohighlight">\(4^2/2 = 8\)</span>. Теперь введем налог размера <span class="math notranslate nohighlight">\(\tau\)</span>.</p>
+<blockquote>
+<div><p>Как изменится равновесие и <span class="math notranslate nohighlight">\(TS = PS + T\)</span>?</p>
+</div></blockquote>
+<p>Чтобы решить такую абстрактную задачу, надо ввести две цены:</p>
+<ul class="simple">
+<li><p>цена покупателя <span class="math notranslate nohighlight">\(P_D\)</span>,</p></li>
+<li><p>цена продавца <span class="math notranslate nohighlight">\(P_S\)</span>.</p></li>
+</ul>
+<p>Расстояние между этими ценами должно равняться в точности налогу</p>
+<div class="math notranslate nohighlight">
+\[P_D - P_S = \tau,\]</div>
+<p>причем цена покупателя обязательно выше (это же налог), а соответствующие спросы должны равняться друг другу</p>
+<div class="math notranslate nohighlight">
+\[8 - P_D = Q = P_S,\]</div>
+<p>получается, что</p>
+<div class="math notranslate nohighlight">
+\[8 - P_D = P_D - \tau \quad \Rightarrow \quad P_D = \frac{8+\tau}{2}, \ P_S = \frac{8-\tau}{2} = Q.\]</div>
+<p>Убедимся, что <span class="math notranslate nohighlight">\(Q(\tau) \leqslant 4\)</span>. Получается, что</p>
+<div class="math notranslate nohighlight">
+\[TS(\tau) = \tau*\frac{8-\tau}{2} + (\frac{8-\tau}{2})^2/2 = (\frac{8-\tau}{2})(\tau + 2 - \frac{\tau}{4})\]</div>
+<p>Для того, чтобы найти оптимальный налог, надо промаксимизировать параболу:</p>
+<div class="math notranslate nohighlight">
+\[ (8 - \tau)(\tau + 2/3) \to \max_{\tau},\]</div>
+<p>решение будет равноудалено от корней <span class="math notranslate nohighlight">\(8\)</span> и <span class="math notranslate nohighlight">\(-2/3\)</span>, то есть <span class="math notranslate nohighlight">\((8-2/3)/2 = 11/3\)</span>.</p>
+</section>
+<section id="id11">
+<h2>Налоги и импорт<a class="headerlink" href="#id11" title="Link to this heading">#</a></h2>
+<p>Похожая ситуация с импортом, то есть, когда производитель иностранный. Снова в модели частичного равновесия даже самый маленький налог всегда лучше, чем отсутствие налога. В то же время, максимальный налог бесполезен, поскольку торговли не будет. Получается, что будет внутреннее решение.</p>
+<a class="reference internal image-reference" href="../_images/imports.png"><img alt="импорт" class="align-center" src="../_images/imports.png" style="width: 400px;" /></a>
+</section>
+<section id="id12">
+<h2>Равновесие в импорт-экспорт<a class="headerlink" href="#id12" title="Link to this heading">#</a></h2>
+<p>А что если страна-импортер и страна-экспортер одновременно вводят налоги друг на друга? Решить такую задачу можно только в равновесии Нэша.</p>
+<p>Используем предыдущую постановку, и пусть</p>
+<div class="math notranslate nohighlight">
+\[ \tau = \tau_i + \tau_e,\]</div>
+<p>где <span class="math notranslate nohighlight">\(\tau_i\)</span> - налог на импорт, а <span class="math notranslate nohighlight">\(\tau_e\)</span> - налог на экспорт.</p>
+<a class="reference internal image-reference" href="../_images/nash.png"><img alt="импорт-экспорт" class="align-center" src="../_images/nash.png" style="width: 700px;" /></a>
+<p>Получается, что импортер максимизирует</p>
+<div class="math notranslate nohighlight">
+\[\tau_i*\frac{8-\tau}{2} + (\frac{8-\tau}{2})^2/2 \to \max_{\tau_i},\]</div>
+<p>а экспортер максимизирует</p>
+<div class="math notranslate nohighlight">
+\[\tau_e*\frac{8-\tau}{2} + (\frac{8-\tau}{2})^2/2 \to \max_{\tau_e}.\]</div>
+<p>Мы будем искать симметричное (так как задача симметрична) <strong>равновесие Нэша</strong> - тройку <span class="math notranslate nohighlight">\((\tau_i,\tau_e, \tau)\)</span> такую, что <span class="math notranslate nohighlight">\(\tau_i = \tau_e = \tau/2\)</span>, и такую, что <span class="math notranslate nohighlight">\(\tau_i\)</span> является наилучшим ответом импортера на <span class="math notranslate nohighlight">\(\tau_e\)</span> и наоборот.</p>
+<p>Наберемся храбрости и начнем дифференциировать (любую из двух задач)…</p>
+<div class="math notranslate nohighlight">
+\[\frac{8-\tau}{2} + \tau_i* \frac{\partial}{\partial \tau_i}(\frac{8-\tau}{2}) + \frac{8-\tau}{2}*\frac{\partial}{\partial \tau_i}(\frac{8-\tau}{2}) = 0\]</div>
+<p>Продолжаем дифференциировать…</p>
+<div class="math notranslate nohighlight">
+\[\frac{8-\tau}{2} + \tau_i*(-1/2) *\frac{\partial \tau}{\partial \tau_i} + \frac{8-\tau}{2}*(-1/2)*\frac{\partial \tau}{\partial \tau_i} = 0.\]</div>
+<p>Вспоминаем, что <span class="math notranslate nohighlight">\(\tau = \tau_i + \tau_e\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\frac{8-\tau}{2} + (\tau/2)*(-1/2) *2 + \frac{8-\tau}{2}*(-1/2)*2 = 0.\]</div>
+<p>Умножим все на два</p>
+<div class="math notranslate nohighlight">
+\[(8-\tau) - \tau + (8-\tau) = 0 \quad \Rightarrow \quad 16 = 3 \tau.\]</div>
+<p>Получается, что в равновесии Нэша: <span class="math notranslate nohighlight">\(\tau_i = \tau_e = 8/3\)</span>, а суммарный налог <span class="math notranslate nohighlight">\(\tau = 16/3.\)</span></p>
+</section>
+<section id="id13">
+<h2>Экстерналии<a class="headerlink" href="#id13" title="Link to this heading">#</a></h2>
+<p>Экстерналии можно моделировать по-разному.</p>
+<ul class="simple">
+<li><p>ввести новый объект <span class="math notranslate nohighlight">\(E\)</span> и добавить (если экстерналии положительные) его к общему излишку;</p></li>
+<li><p>мысленно сдвинуть кривую спроса на некоторое число <span class="math notranslate nohighlight">\(e\)</span>.</p></li>
+</ul>
+<section id="id14">
+<h3>Первый способ<a class="headerlink" href="#id14" title="Link to this heading">#</a></h3>
+<p>Если ввести новый объект <span class="math notranslate nohighlight">\(E(Q)\)</span>, тогда</p>
+<div class="math notranslate nohighlight">
+\[ TS = PS + CS + T + E\]</div>
+<p>К примеру, суммарные экстерналии могут выглядеть как <span class="math notranslate nohighlight">\(E(Q) = Q, Q^2, \sqrt{Q}\)</span>… и вам надо будет что-то помаксимизировать.</p>
+</section>
+<section id="id15">
+<h3>Второй способ<a class="headerlink" href="#id15" title="Link to this heading">#</a></h3>
+<p>Если мысленно сдвинуть кривую спроса на некоторое число <span class="math notranslate nohighlight">\(e\)</span></p>
+<div class="math notranslate nohighlight">
+\[P^{true}_D = P_D - e,\]</div>
+<p>то это означает, что за каждую единицу купленного товара выделяются (отрицательные) экстерналии. Соответственно, мы говорим, что потребители терпят эти экстерналии, а значит при подсчете <span class="math notranslate nohighlight">\(CS\)</span> надо брать не площадь под <span class="math notranslate nohighlight">\(P_D\)</span>, а площадь под <span class="math notranslate nohighlight">\(P_D^{true}\)</span>.</p>
+<p>По сути, это то же самое, что первый способ, просто <span class="math notranslate nohighlight">\(E(Q) = - e Q\)</span>, как площадь параллелограмма.</p>
+<a class="reference internal image-reference" href="../_images/ext.png"><img alt="экстерналии" class="align-center" src="../_images/ext.png" style="width: 400px;" /></a>
+<p>Можно сказать, что <span class="math notranslate nohighlight">\(P^{true}_D\)</span> - это <strong>истинная</strong>, или <strong>социальная</strong>, кривая спроса. Однако не стоит забывать, что потребители ведут себя эгоистично и не знают о существовании <span class="math notranslate nohighlight">\(P^{true}_D\)</span>, поэтому равновесие определяется при помощи <span class="math notranslate nohighlight">\(P_D\)</span> а не <span class="math notranslate nohighlight">\(P^{true}_D\)</span>.</p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./week_7"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Частичное равновесие</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Излишек потребителя</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cs">Первая интерпретация CS</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Вторая интерпретация CS</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Излишек производителя</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">На злобу дня</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Регулирование цен</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#price-ceiling">Потолок цены (price ceiling)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#price-floor">Пол цены (price floor)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dwl">DWL (дэ-вэ-эл)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Налог</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Субсидии</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Налоги и экспорт</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Налоги и импорт</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Равновесие в импорт-экспорт</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Экстерналии</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">Первый способ</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">Второй способ</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Паша Андреянов
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

@@ -34,7 +34,6 @@
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
-    <link rel="stylesheet" type="text/css" href="../_static/proof.css" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -381,19 +380,10 @@ document.write(`
 <li><p>область определения аргументов, по которым мы максимизируем</p></li>
 </ul>
 <p>Рассмотрим несколько примеров, в которых хорошо видно, что двумя ключевыми свойствами задачи являются: выпуклость/вогнутость самой функции, а также ограниченность и положение области определения.</p>
-<div class="proof example admonition" id="example-0">
-<p class="admonition-title"><span class="caption-number">Example 4 </span></p>
-<section class="example-content" id="proof-content">
-</section>
-</div><section id="id3">
+<section id="id3">
 <h3>Существование решений<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
 <p>Существование решения, как правило, мы можем легко показать при помощи следующей теоремы</p>
-<div class="proof theorem remark admonition" id="theorem-1">
-<p class="admonition-title"><span class="caption-number">Theorem 2 </span> (Вейерштрасса)</p>
-<section class="theorem-content" id="proof-content">
-<p>Непрерывная функция на компакте гарантированно достигает своего минимума и максимума.</p>
-</section>
-</div><p>Что такое непрерывная функция, вы уже знаете.</p>
+<p>Что такое непрерывная функция, вы уже знаете.</p>
 <p>A <strong>компакт</strong> в <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span> — это просто ограниченное и замкнутое множество. В контексте одномерной оптимизации, <span class="math notranslate nohighlight">\([a,b]\)</span> - это компакт, а <span class="math notranslate nohighlight">\((a,b]\)</span>, <span class="math notranslate nohighlight">\([a,b)\)</span>, <span class="math notranslate nohighlight">\((a,b)\)</span>, <span class="math notranslate nohighlight">\([a,\infty)\)</span>,<span class="math notranslate nohighlight">\((a,\infty)\)</span> - это все не компакты.</p>
 <p>Таким образом, у вас есть всего два сценария, как решение оптимизационной задачи с непрерывной функцией могло бы не существовать: либо оно вообще бесконечно, либо оно конечно, но достигается в точке которая попала на границу области.</p>
 </section>
@@ -428,23 +418,9 @@ document.write(`
 <section id="id7">
 <h2>Линии уровня<a class="headerlink" href="#id7" title="Link to this heading">#</a></h2>
 <p>Наконец, линии уровня – это очень удобный инструмент для отлова и классификации кандидатов на решение оптимизационной задачи.</p>
-<div class="proof definition admonition" id="definition-2">
-<p class="admonition-title"><span class="caption-number">Definition 13 </span></p>
-<section class="definition-content" id="proof-content">
-<p><strong>Линией уровня</strong> полезности <span class="math notranslate nohighlight">\(U\)</span>, проходящей через точку <span class="math notranslate nohighlight">\(x\)</span> называется множество всех точек <span class="math notranslate nohighlight">\(y \in X\)</span> таких, что <span class="math notranslate nohighlight">\(U(y) = U(x)\)</span>.</p>
-</section>
-</div><div class="proof definition admonition" id="definition-3">
-<p class="admonition-title"><span class="caption-number">Definition 14 </span></p>
-<section class="definition-content" id="proof-content">
-<p><strong>Кривой безразличия</strong> предпочтений <span class="math notranslate nohighlight">\(\succcurlyeq\)</span>, проходящей через точку <span class="math notranslate nohighlight">\(x\)</span> называется множество всех точек <span class="math notranslate nohighlight">\(y \in X\)</span> таких, что <span class="math notranslate nohighlight">\(x \sim y\)</span>.</p>
-</section>
-</div><p>Совершенно ясно, что в контексте представлений предпочтений полезностями и наоборот, кривая безразличия и линия уровня – это одно и то же.</p>
+<p>Совершенно ясно, что в контексте представлений предпочтений полезностями и наоборот, кривая безразличия и линия уровня – это одно и то же.</p>
 <p>Рассмотрим несколько примеров полезностей</p>
-<div class="proof example admonition" id="example-4">
-<p class="admonition-title"><span class="caption-number">Example 5 </span></p>
-<section class="example-content" id="proof-content">
-</section>
-</div><section id="id8">
+<section id="id8">
 <h3>Зачем нужны линии уровня?<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
 <p>Очень часто в задачах есть выпуклое ограничение типа неравенства, например, бюджетное ограничение. В таком случае все кандидаты будут формально не внутренние. Однако с точки зрения выпуклой оптимизации, такие точки можно интерпретировать как “внутренние”, если решать методом Лагранжа. О методе Лагранжа мы поговорим на следующей лекции.</p>
 <p>Внутреннее решение выпуклой (и гладкой) оптимизационной задачи можно охарактеризовать как точку касания линии уровня с выпуклым ограничением, см. иллюстрацию.</p>
