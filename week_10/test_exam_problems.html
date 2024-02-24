@@ -58,6 +58,8 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'week_10/test_exam_problems';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -389,11 +391,11 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="id1">
+  <section class="tex2jax_ignore mathjax_ignore" id="id1">
 <h1>Тестовая контрольная<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
 <section id="id2">
 <h2>Задача 1: Предпочтения (5 баллов).<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<p>Рассмотрим рациональные предпочтения $\succcurlyeq$.</p>
+<p>Рассмотрим рациональные предпочтения <span class="math notranslate nohighlight">\(\succcurlyeq\)</span>.</p>
 <section id="id3">
 <h3>Пункт (а), 1 балл<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
 <p><strong>Выпишите</strong> три аксиомы рациональности</p>
@@ -405,46 +407,47 @@ document.write(`
 </section>
 <section id="id4">
 <h3>Пункт (б), 1 балл<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
-<p><strong>Выпишите</strong> определение строгого предпочтения $\succ$, опираясь на $\succcurlyeq$.</p>
+<p><strong>Выпишите</strong> определение строгого предпочтения <span class="math notranslate nohighlight">\(\succ\)</span>, опираясь на <span class="math notranslate nohighlight">\(\succcurlyeq\)</span>.</p>
 </section>
 <section id="id5">
 <h3>Пункт (в), 1 балл<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
-<p>Определим ультра-строгое предпочтение $\vartriangleright$ как бинарное отношение, такое, что</p>
-<p>$$ x \vartriangleright y \quad \Leftrightarrow \quad \exists z \neq x,y : x \succ z \succ y,$$</p>
-<p>то есть существует третий элемент $z$ такой, что $x$ строго предпочитается $z$ а тот, в свою очередь, $y$.</p>
+<p>Определим ультра-строгое предпочтение <span class="math notranslate nohighlight">\(\vartriangleright\)</span> как бинарное отношение, такое, что</p>
+<div class="math notranslate nohighlight">
+\[ x \vartriangleright y \quad \Leftrightarrow \quad \exists z \neq x,y : x \succ z \succ y,\]</div>
+<p>то есть существует третий элемент <span class="math notranslate nohighlight">\(z\)</span> такой, что <span class="math notranslate nohighlight">\(x\)</span> строго предпочитается <span class="math notranslate nohighlight">\(z\)</span> а тот, в свою очередь, <span class="math notranslate nohighlight">\(y\)</span>.</p>
 <p><strong>Аргументируйте</strong>, является ли такое предпочтение рациональным?</p>
 </section>
 <section id="a">
 <h3>Пункт (г), 2 баллa<a class="headerlink" href="#a" title="Link to this heading">#</a></h3>
-<p>Заполните матрицу предпочтения $\vartriangleright$ на основе приведенной ниже матрицы рациональных предпочтений $\succcurlyeq$.</p>
-<p>$$
+<p>Заполните матрицу предпочтения <span class="math notranslate nohighlight">\(\vartriangleright\)</span> на основе приведенной ниже матрицы рациональных предпочтений <span class="math notranslate nohighlight">\(\succcurlyeq\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} 
 \begin{array}{c|ccc}
-\succcurlyeq &amp; x &amp; y &amp; z\
+ \succcurlyeq &amp; x &amp; y &amp; z\\
 \hline
-x &amp; * &amp; * &amp; * \
-y &amp; 0 &amp; * &amp; *\
-z &amp; 0 &amp; 0 &amp; *\
+x &amp; * &amp; * &amp; * \\
+y &amp; 0 &amp; * &amp; *\\
+z &amp; 0 &amp; 0 &amp; *\\
 \end{array}
-\quad \Rightarrow \quad
+\quad \Rightarrow \quad 
 \begin{array}{c|ccc}
-\vartriangleright &amp; x &amp; y &amp; z\
+ \vartriangleright &amp; x &amp; y &amp; z\\
 \hline
-x &amp; ? &amp; ? &amp; ? \
-y &amp; ? &amp; ? &amp; ?\
-z &amp; ? &amp; ? &amp; ?\
+x &amp; ? &amp; ? &amp; ? \\
+y &amp; ? &amp; ? &amp; ?\\
+z &amp; ? &amp; ? &amp; ?\\
 \end{array}
-$$</p>
-<p>Звездочка $\ast$ означает скрытое (от студента) значение.</p>
+\end{split}\]</div>
+<p>Звездочка <span class="math notranslate nohighlight">\(\ast\)</span> означает скрытое (от студента) значение.</p>
 </section>
 </section>
 <section id="id6">
 <h2>Задача 2: Два завода (10 баллов).<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
 <p>Есть два завода с технологиями</p>
-<p>$$</p>
-<p>x \geqslant G_{I}(\vec y) = y_1^2 + y_2 y_3,\
-x \geqslant G_{II}(\vec y) = y_1 y_2 + y_3^2,</p>
-<p>$$</p>
-<p>где $x$ это фактор производства, а $N$ - номер вашего варианта.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}x \geqslant G_{I}(\vec y) = y_1^2 + y_2 y_3,\\
+x \geqslant G_{II}(\vec y) = y_1 y_2 + y_3^2,\end{split}\]</div>
+<p>где <span class="math notranslate nohighlight">\(x\)</span> это фактор производства, а <span class="math notranslate nohighlight">\(N\)</span> - номер вашего варианта.</p>
 <section id="id7">
 <h3>Пункт (а), 1 балл<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
 <p><strong>Выпишите</strong> задачу оптимального распределения производства между двух заводов (с лагранжианом или без).</p>
@@ -460,14 +463,16 @@ x \geqslant G_{II}(\vec y) = y_1 y_2 + y_3^2,</p>
 <section id="id10">
 <h3>Пункт (г), 5 баллов<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
 <p><strong>Найдите</strong> функцию</p>
-<p>$$ X \geqslant G(Y_1, Y_2, Y_3),$$</p>
+<div class="math notranslate nohighlight">
+\[ X \geqslant G(Y_1, Y_2, Y_3),\]</div>
 <p>описывающую технологию фирмы, обладающей двумя заводами.</p>
 </section>
 </section>
 <section id="id11">
 <h2>Задача 3: Полезность (10 баллов).<a class="headerlink" href="#id11" title="Link to this heading">#</a></h2>
 <p>Рассмотрим полезность вида</p>
-<p>$$U(x, y) = \sqrt{x} + \sqrt{y} $$</p>
+<div class="math notranslate nohighlight">
+\[U(x, y) = \sqrt{x} + \sqrt{y} \]</div>
 <section id="id12">
 <h3>Пункт (а), 1 балл<a class="headerlink" href="#id12" title="Link to this heading">#</a></h3>
 <p><strong>Аргументируйте</strong>, является ли она вогнутой?</p>
@@ -478,12 +483,13 @@ x \geqslant G_{II}(\vec y) = y_1 y_2 + y_3^2,</p>
 </section>
 <section id="id14">
 <h3>Пункт (в), 1 балл<a class="headerlink" href="#id14" title="Link to this heading">#</a></h3>
-<p><strong>Найдите</strong> доли расходов $s_x, s_y$ на каждый товар:</p>
-<p>$$ p x^{\ast} = s_x(p,q) \cdot I, \quad q y^{\ast} = s_y(p,q) \cdot I$$</p>
+<p><strong>Найдите</strong> доли расходов <span class="math notranslate nohighlight">\(s_x, s_y\)</span> на каждый товар:</p>
+<div class="math notranslate nohighlight">
+\[ p x^{\ast} = s_x(p,q) \cdot I, \quad q y^{\ast} = s_y(p,q) \cdot I\]</div>
 </section>
 <section id="id15">
 <h3>Пункт (в), 2 баллa<a class="headerlink" href="#id15" title="Link to this heading">#</a></h3>
-<p><strong>Найдите</strong> функцию расходов $E(p,q,\bar U)$.</p>
+<p><strong>Найдите</strong> функцию расходов <span class="math notranslate nohighlight">\(E(p,q,\bar U)\)</span>.</p>
 </section>
 <section id="id16">
 <h3>Пункт (г), 2 балла<a class="headerlink" href="#id16" title="Link to this heading">#</a></h3>
@@ -491,27 +497,29 @@ x \geqslant G_{II}(\vec y) = y_1 y_2 + y_3^2,</p>
 </section>
 <section id="id17">
 <h3>Пункт (д), 3 балла<a class="headerlink" href="#id17" title="Link to this heading">#</a></h3>
-<p>Для маленького приращения цены первого товара $\delta p$, найдите приближенное значение компенсирующей вариации, если известны стартовые цены $p, q$ и уровни потребления $x^{\ast}$, $y^{\ast}$.</p>
+<p>Для маленького приращения цены первого товара <span class="math notranslate nohighlight">\(\delta p\)</span>, найдите приближенное значение компенсирующей вариации, если известны стартовые цены <span class="math notranslate nohighlight">\(p, q\)</span> и уровни потребления <span class="math notranslate nohighlight">\(x^{\ast}\)</span>, <span class="math notranslate nohighlight">\(y^{\ast}\)</span>.</p>
 </section>
 </section>
 <section id="vcd-10">
 <h2>Задача 4: VCD (10 баллов).<a class="headerlink" href="#vcd-10" title="Link to this heading">#</a></h2>
-<p>Страна-производитель товаров $v,c,d$ обладает следующими финкциями предложения:</p>
-<p>$$ P_v = Q_v, \quad P_c = N + Q_c, \quad P_d = 5 + Q_d$$</p>
+<p>Страна-производитель товаров <span class="math notranslate nohighlight">\(v,c,d\)</span> обладает следующими финкциями предложения:</p>
+<div class="math notranslate nohighlight">
+\[ P_v = Q_v, \quad P_c = N + Q_c, \quad P_d = 5 + Q_d\]</div>
 <p>Страна-импортер обладает функциями спроса</p>
-<p>$$ P_i = 100 - Q_i, \quad i \in {v,c,d}.$$</p>
+<div class="math notranslate nohighlight">
+\[ P_i = 100 - Q_i, \quad i \in \{v,c,d\}.\]</div>
 <p>Страна-импортер вводит санкции на страну экспортера.</p>
 <section id="id18">
 <h3>Пункт (а), 2 баллa<a class="headerlink" href="#id18" title="Link to this heading">#</a></h3>
-<p>Если введена квота размера 10 на $v$, посчитайте потери каждой страны.</p>
+<p>Если введена квота размера 10 на <span class="math notranslate nohighlight">\(v\)</span>, посчитайте потери каждой страны.</p>
 </section>
 <section id="id19">
 <h3>Пункт (б), 2 баллa<a class="headerlink" href="#id19" title="Link to this heading">#</a></h3>
-<p>Если введен потолок цены размера 10 на $c$, посчитайте потери каждой страны.</p>
+<p>Если введен потолок цены размера 10 на <span class="math notranslate nohighlight">\(c\)</span>, посчитайте потери каждой страны.</p>
 </section>
 <section id="id20">
 <h3>Пункт (в), 2 баллa<a class="headerlink" href="#id20" title="Link to this heading">#</a></h3>
-<p>Если введен налог размера 10 на $d$, посчитайте потери каждой страны.</p>
+<p>Если введен налог размера 10 на <span class="math notranslate nohighlight">\(d\)</span>, посчитайте потери каждой страны.</p>
 </section>
 <section id="id21">
 <h3>Пункт (г), 4 баллa<a class="headerlink" href="#id21" title="Link to this heading">#</a></h3>
@@ -521,11 +529,12 @@ x \geqslant G_{II}(\vec y) = y_1 y_2 + y_3^2,</p>
 <section id="id22">
 <h2>Задача 5: Кобб-Дуглас (10 баллов).<a class="headerlink" href="#id22" title="Link to this heading">#</a></h2>
 <p>На рынке оперирует большое число фирм с производственной функцией Кобба-Дугласа</p>
-<p>$$ Y = K^{\alpha} L^{\beta} T^{\gamma}, \quad 0 &lt; \alpha + \beta + \gamma &lt; 1,$$</p>
-<p>где $K,L$ это труд и капитал, а $T$ - современные технологии.</p>
+<div class="math notranslate nohighlight">
+\[ Y = K^{\alpha} L^{\beta} T^{\gamma}, \quad 0 &lt; \alpha + \beta + \gamma &lt; 1,\]</div>
+<p>где <span class="math notranslate nohighlight">\(K,L\)</span> это труд и капитал, а <span class="math notranslate nohighlight">\(T\)</span> - современные технологии.</p>
 <section id="id23">
 <h3>Пункт (а), 1 баллa<a class="headerlink" href="#id23" title="Link to this heading">#</a></h3>
-<p><strong>Выпишите</strong> задачу минимизации издержек, если цены на факторы равны $p,q,r$.</p>
+<p><strong>Выпишите</strong> задачу минимизации издержек, если цены на факторы равны <span class="math notranslate nohighlight">\(p,q,r\)</span>.</p>
 </section>
 <section id="id24">
 <h3>Пункт (б), 5 баллов<a class="headerlink" href="#id24" title="Link to this heading">#</a></h3>

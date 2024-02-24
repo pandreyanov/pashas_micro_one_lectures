@@ -58,6 +58,8 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'cheetsheet/differentials';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -343,10 +345,11 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="differentials">
+  <section class="tex2jax_ignore mathjax_ignore" id="differentials">
 <span id="id1"></span><h1>Дифференциалы<a class="headerlink" href="#differentials" title="Link to this heading">#</a></h1>
-<p>Когда я пишу рубленый $\frac{d}{dx}$ это <strong>полный дифференциал</strong>, он отыскивает все упоминания о $x$ в выражении и суммирует все связанные с ними частные производные и дифференциирует дальше вглубь. Когда я пишу курсивный $\frac{\partial}{\partial x}$ это <strong>частная производная</strong>, она дифференциирует функцию по аргументу (вернее даже по позиции аргумента) согласно определению функции, но не по значению переменной во время вызова функции.</p>
-<p>$$ f(x,y) = \sin x + \sin y \quad \Rightarrow \quad \frac{\partial}{\partial x} f(x, x^2) = \cos x, \quad \frac{d}{d x} f(x, x^2) = \cos x + 2x \cos x$$</p>
+<p>Когда я пишу рубленый <span class="math notranslate nohighlight">\(\frac{d}{dx}\)</span> это <strong>полный дифференциал</strong>, он отыскивает все упоминания о <span class="math notranslate nohighlight">\(x\)</span> в выражении и суммирует все связанные с ними частные производные и дифференциирует дальше вглубь. Когда я пишу курсивный <span class="math notranslate nohighlight">\(\frac{\partial}{\partial x}\)</span> это <strong>частная производная</strong>, она дифференциирует функцию по аргументу (вернее даже по позиции аргумента) согласно определению функции, но не по значению переменной во время вызова функции.</p>
+<div class="math notranslate nohighlight">
+\[ f(x,y) = \sin x + \sin y \quad \Rightarrow \quad \frac{\partial}{\partial x} f(x, x^2) = \cos x, \quad \frac{d}{d x} f(x, x^2) = \cos x + 2x \cos x\]</div>
 <p>Почувствуйте разницу.</p>
 <p>Не во всех учебниках делается различие, потому что из контекста обычно понятно, частная производная берется или полный дифференциал.</p>
 <!-- Елси бы это был курс по программированию, я бы сказал:
@@ -355,10 +358,12 @@ document.write(`
 def f(x, y):
 	return np.sin(x) + np.sin(y)
 ::: -->
-<p>Полный дифференциал функции $f(x, x^2)$ по $x$ это</p>
-<p>$$\lim_{\delta x \to 0} \frac{f(x + \delta x, (x + \delta x)^2) - f(x, x^2)}{\delta x}$$</p>
-<p>a частная производная $f(x, x^2)$ по $x$ это</p>
-<p>$$\lim_{\delta x \to 0} \frac{f(x + \delta x, x^2) - f(x, x^2)}{\delta x}.$$</p>
+<p>Полный дифференциал функции <span class="math notranslate nohighlight">\(f(x, x^2)\)</span> по <span class="math notranslate nohighlight">\(x\)</span> это</p>
+<div class="math notranslate nohighlight">
+\[\lim_{\delta x \to 0} \frac{f(x + \delta x, (x + \delta x)^2) - f(x, x^2)}{\delta x}\]</div>
+<p>a частная производная <span class="math notranslate nohighlight">\(f(x, x^2)\)</span> по <span class="math notranslate nohighlight">\(x\)</span> это</p>
+<div class="math notranslate nohighlight">
+\[\lim_{\delta x \to 0} \frac{f(x + \delta x, x^2) - f(x, x^2)}{\delta x}.\]</div>
 <p>Почувствуйте разницу.</p>
 </section>
 

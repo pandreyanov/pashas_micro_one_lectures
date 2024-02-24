@@ -58,6 +58,8 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'week_1/practice_1';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -366,28 +368,28 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="id1">
+  <section class="tex2jax_ignore mathjax_ignore" id="id1">
 <h1>Задачи для тренировки<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
 <section id="id2">
 <h2>Задача 1<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<p>Предположим, что из двух наборов $(x_1, y_1); (x_2; y_2)$ потребитель предпочел первый. Подумайте, может ли быть такое, что:</p>
+<p>Предположим, что из двух наборов <span class="math notranslate nohighlight">\((x_1, y_1); (x_2; y_2)\)</span> потребитель предпочел первый. Подумайте, может ли быть такое, что:</p>
 <ul class="simple">
-<li><p>Из наборов $(x_1, y_2); (x_2; y_1)$ потребитель выберет первый.</p></li>
-<li><p>Из наборов $(x_1, y_2); (x_2; y_1)$ потребитель выберет первый, если известно, что сам по себе $y_1$ предпочтительнее, чем $y_2$</p></li>
-<li><p>Из наборов $(x_1, y_2); (x_2; y_1)$ потребитель выберет первый, если известно, что сам по себе $y_1$ предпочтительнее, чем $y_2$, а объединение благ в набор не влияет на полезность каждого из благ</p></li>
-<li><p>Из наборов $(x_1, y_2); (x_2; y_1)$ потребитель выберет первый, если известно, что сам по себе $y_1$ предпочтительнее, чем $y_2$, $x_1$ предпочтительнее, чем $x_2$, а объединение благ в набор не влияет на полезность каждого из благ</p></li>
+<li><p>Из наборов <span class="math notranslate nohighlight">\((x_1, y_2); (x_2; y_1)\)</span> потребитель выберет первый.</p></li>
+<li><p>Из наборов <span class="math notranslate nohighlight">\((x_1, y_2); (x_2; y_1)\)</span> потребитель выберет первый, если известно, что сам по себе <span class="math notranslate nohighlight">\(y_1\)</span> предпочтительнее, чем <span class="math notranslate nohighlight">\(y_2\)</span></p></li>
+<li><p>Из наборов <span class="math notranslate nohighlight">\((x_1, y_2); (x_2; y_1)\)</span> потребитель выберет первый, если известно, что сам по себе <span class="math notranslate nohighlight">\(y_1\)</span> предпочтительнее, чем <span class="math notranslate nohighlight">\(y_2\)</span>, а объединение благ в набор не влияет на полезность каждого из благ</p></li>
+<li><p>Из наборов <span class="math notranslate nohighlight">\((x_1, y_2); (x_2; y_1)\)</span> потребитель выберет первый, если известно, что сам по себе <span class="math notranslate nohighlight">\(y_1\)</span> предпочтительнее, чем <span class="math notranslate nohighlight">\(y_2\)</span>, <span class="math notranslate nohighlight">\(x_1\)</span> предпочтительнее, чем <span class="math notranslate nohighlight">\(x_2\)</span>, а объединение благ в набор не влияет на полезность каждого из благ</p></li>
 </ul>
 </section>
 <section id="id3">
 <h2>Задача 2<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
 <p>Лука, выбирая из двух хачапури всегда выбирает более сырную и сытную(сырность и сытность независимы). Являются ли его предпочтения транзитивными? А полными? Модифицируйте предпочтения так, чтобы они стали рациональными.</p>
-<p>Полноту проверить просто. Если измерить сырность и сытность хачапури от 1 до 10, то наборы (4; 6) и (6; 4) будут несравнимы. Полнота не выполняется. А вот транзитивность выполняется. Если первая хачапури по критериям и $x$ и $y$ лучше, чем вторая, то $x_1 &gt; x_2$ и $y_1 &gt; y_2$. Аналогично для $x_2 &gt; x_3$ и $y_2 &gt; y_3$</p>
+<p>Полноту проверить просто. Если измерить сырность и сытность хачапури от 1 до 10, то наборы (4; 6) и (6; 4) будут несравнимы. Полнота не выполняется. А вот транзитивность выполняется. Если первая хачапури по критериям и <span class="math notranslate nohighlight">\(x\)</span> и <span class="math notranslate nohighlight">\(y\)</span> лучше, чем вторая, то <span class="math notranslate nohighlight">\(x_1 &gt; x_2\)</span> и <span class="math notranslate nohighlight">\(y_1 &gt; y_2\)</span>. Аналогично для <span class="math notranslate nohighlight">\(x_2 &gt; x_3\)</span> и <span class="math notranslate nohighlight">\(y_2 &gt; y_3\)</span></p>
 <p>Одна из возможностей модификации предпочтений звучит так: если наш герой не может выбрать между двумя вариантами он выбирает тот, в котором больше сырности.</p>
 </section>
 <section id="id4">
 <h2>Задача 3<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
 <p>Верен ли тот факт, что произвольная функция полезности может быть представлена предпочтениями? Как проверить можно проверить транзитивность предпочтений, полученных из функции полезности?</p>
-<p>Да, верен. Самый простой способ: $U(x) \geq U(y) \Rightarrow x \succcurlyeq y$; $U(y) \geq U(z) \Rightarrow y \succcurlyeq z$; из этого можно увидеть, что $U(x) \geq U(z)$, а также, что $x \succcurlyeq z$, что верно по определению.</p>
+<p>Да, верен. Самый простой способ: <span class="math notranslate nohighlight">\(U(x) \geq U(y) \Rightarrow x \succcurlyeq y\)</span>; <span class="math notranslate nohighlight">\(U(y) \geq U(z) \Rightarrow y \succcurlyeq z\)</span>; из этого можно увидеть, что <span class="math notranslate nohighlight">\(U(x) \geq U(z)\)</span>, а также, что <span class="math notranslate nohighlight">\(x \succcurlyeq z\)</span>, что верно по определению.</p>
 </section>
 <section id="id5">
 <h2>Задача 4<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
@@ -396,51 +398,55 @@ document.write(`
 </section>
 <section id="id6">
 <h2>Задача 5<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
-<p>Проверьте, являeтся ли  преобразование $z = f(z)$ монотонными для полезности $U = f({X})$, где $X$ - вектор альтернатив, а значение функции полезности неотрицательно:</p>
+<p>Проверьте, являeтся ли  преобразование <span class="math notranslate nohighlight">\(z = f(z)\)</span> монотонными для полезности <span class="math notranslate nohighlight">\(U = f({X})\)</span>, где <span class="math notranslate nohighlight">\(X\)</span> - вектор альтернатив, а значение функции полезности неотрицательно:</p>
 <ul class="simple">
-<li><p>$f(z) = |{z}|$</p></li>
-<li><p>$f(z) = z^2$</p></li>
-<li><p>$f(z) = z^4 + 2z^3 + z^2$</p></li>
-<li><p>$f(z) = -z^2$</p></li>
+<li><p><span class="math notranslate nohighlight">\(f(z) = |{z}|\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(f(z) = z^2\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(f(z) = z^4 + 2z^3 + z^2\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(f(z) = -z^2\)</span></p></li>
 </ul>
-<p>Для проведения монотонного преобразования небходимо, чтобы функция $f(z)$ непрерывно возрастала. Очевидно, что функции 1-3 возрастают монотонно на промежутке $[0; +\infty)$, а 4 - нет.</p>
+<p>Для проведения монотонного преобразования небходимо, чтобы функция <span class="math notranslate nohighlight">\(f(z)\)</span> непрерывно возрастала. Очевидно, что функции 1-3 возрастают монотонно на промежутке <span class="math notranslate nohighlight">\([0; +\infty)\)</span>, а 4 - нет.</p>
 </section>
 <section id="id7">
 <h2>Задача 6<a class="headerlink" href="#id7" title="Link to this heading">#</a></h2>
-<p>Рассмотрим классическую модель с полезностью $U(\ast) = f^3(\ast)$ и множеством альтернатив $X = {x, y, z, w}$, таким что</p>
-<p>$$f(x) = -1, f(y) = 1, f(z) = 0, f(w) = 2.$$</p>
-<p>Заполните матрицу предпочтения $\succcurlyeq$ ассоциированного с $U(\ast)$:</p>
-<p>$$
+<p>Рассмотрим классическую модель с полезностью <span class="math notranslate nohighlight">\(U(\ast) = f^3(\ast)\)</span> и множеством альтернатив <span class="math notranslate nohighlight">\(X = \{x, y, z, w\}\)</span>, таким что</p>
+<div class="math notranslate nohighlight">
+\[f(x) = -1, f(y) = 1, f(z) = 0, f(w) = 2.\]</div>
+<p>Заполните матрицу предпочтения <span class="math notranslate nohighlight">\(\succcurlyeq\)</span> ассоциированного с <span class="math notranslate nohighlight">\(U(\ast)\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} 
 \begin{array}{c|ccc}
-\succcurlyeq &amp; x &amp; y &amp; z &amp; w\
+ \succcurlyeq &amp; x &amp; y &amp; z &amp; w\\
 \hline
-x  &amp; 1  &amp; * &amp; * &amp; *\
-y  &amp; *  &amp; 1 &amp; * &amp; *\
-z  &amp; *  &amp; *  &amp; 1 &amp; *\
-w &amp; *  &amp; * &amp; * &amp; 1\
+x  &amp; 1  &amp; * &amp; * &amp; *\\
+y  &amp; *  &amp; 1 &amp; * &amp; *\\
+z  &amp; *  &amp; *  &amp; 1 &amp; *\\
+w &amp; *  &amp; * &amp; * &amp; 1\\
 \end{array}
-$$</p>
+\end{split}\]</div>
 </section>
 <section id="id8">
 <h2>Задача 7<a class="headerlink" href="#id8" title="Link to this heading">#</a></h2>
-<p>Рассмотрим неоклассическую модель с предпочтениями $\succcurlyeq$ на множестве альтернатив $X = {x, y, z, w}$, заданными матрицей:</p>
-<p>$$
+<p>Рассмотрим неоклассическую модель с предпочтениями <span class="math notranslate nohighlight">\(\succcurlyeq\)</span> на множестве альтернатив <span class="math notranslate nohighlight">\(X = \{x, y, z, w\}\)</span>, заданными матрицей:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} 
 \begin{array}{c|ccc}
-\succcurlyeq &amp; x &amp; y &amp; z &amp; w\
+ \succcurlyeq &amp; x &amp; y &amp; z &amp; w\\
 \hline
-x  &amp; 1  &amp; 1 &amp; 1 &amp; 0\
-y  &amp; 0  &amp; 1 &amp; 1 &amp; 0\
-z  &amp; 0  &amp; 0  &amp; 1 &amp; 0\
-w &amp; 1  &amp; 1 &amp; 1 &amp; 1\
+x  &amp; 1  &amp; 1 &amp; 1 &amp; 0\\
+y  &amp; 0  &amp; 1 &amp; 1 &amp; 0\\
+z  &amp; 0  &amp; 0  &amp; 1 &amp; 0\\
+w &amp; 1  &amp; 1 &amp; 1 &amp; 1\\
 \end{array} \quad \quad \quad \quad U(*) = ?
-$$</p>
+\end{split}\]</div>
 <p>Подберите полезность, которая представляет такие предпочтения.</p>
 </section>
 <section id="id9">
 <h2>Задача 8<a class="headerlink" href="#id9" title="Link to this heading">#</a></h2>
-<p>Рассмотрим экзотическую модель с предпочтениями $\succcurlyeq$ на $X$, которые заданы следующим образом. Для двух рациональных предпочтений $\succcurlyeq_1$ и $\succcurlyeq_2$ на том же множестве альтернатив определим</p>
-<p>$$ x \succcurlyeq y \quad \Leftrightarrow \quad x \succcurlyeq_1 y \quad \text{и} \quad x \succcurlyeq_2 y$$</p>
-<p>То есть в нашей экзотической модели, $x$ предпочитается $y$ тогда и только тогда, когда $\succcurlyeq_i$ единогласно предпочитают $x$. Докажите, что $\succcurlyeq$ рациональное предпочтение, или приведите контрпример.</p>
+<p>Рассмотрим экзотическую модель с предпочтениями <span class="math notranslate nohighlight">\(\succcurlyeq\)</span> на <span class="math notranslate nohighlight">\(X\)</span>, которые заданы следующим образом. Для двух рациональных предпочтений <span class="math notranslate nohighlight">\(\succcurlyeq_1\)</span> и <span class="math notranslate nohighlight">\(\succcurlyeq_2\)</span> на том же множестве альтернатив определим</p>
+<div class="math notranslate nohighlight">
+\[ x \succcurlyeq y \quad \Leftrightarrow \quad x \succcurlyeq_1 y \quad \text{и} \quad x \succcurlyeq_2 y\]</div>
+<p>То есть в нашей экзотической модели, <span class="math notranslate nohighlight">\(x\)</span> предпочитается <span class="math notranslate nohighlight">\(y\)</span> тогда и только тогда, когда <span class="math notranslate nohighlight">\(\succcurlyeq_i\)</span> единогласно предпочитают <span class="math notranslate nohighlight">\(x\)</span>. Докажите, что <span class="math notranslate nohighlight">\(\succcurlyeq\)</span> рациональное предпочтение, или приведите контрпример.</p>
 </section>
 <section id="id10">
 <h2>Задача 9<a class="headerlink" href="#id10" title="Link to this heading">#</a></h2>
@@ -455,18 +461,20 @@ $$</p>
 </section>
 <section id="id11">
 <h2>Задача 10<a class="headerlink" href="#id11" title="Link to this heading">#</a></h2>
-<p>Промаксимизируйте функцию $(x-a)^2$ на отрезке $[-1,1]$. Запишите ответ как функцию от $а$.</p>
-<p>$$
+<p>Промаксимизируйте функцию <span class="math notranslate nohighlight">\((x-a)^2\)</span> на отрезке <span class="math notranslate nohighlight">\([-1,1]\)</span>. Запишите ответ как функцию от <span class="math notranslate nohighlight">\(а\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[ 
 x^{\ast}(a) = (\ldots)\cdot \mathbb{I}(a&gt; \ldots) +  (\ldots) \cdot \mathbb{I}(a&lt; \ldots)
-$$</p>
+\]</div>
 </section>
 <section id="id12">
 <h2>Задача 11<a class="headerlink" href="#id12" title="Link to this heading">#</a></h2>
 <p>Рассмотрим следующую оптимизационную задачу:</p>
-<p>$$
+<div class="math notranslate nohighlight">
+\[ 
 x y \to \max_{(x,y) \in \mathbb{R}^2_{+}} \quad s.t. \quad x^2 + q y^2 \leqslant 1
-$$</p>
-<p>предполагая, что $q&gt;0$.</p>
+\]</div>
+<p>предполагая, что <span class="math notranslate nohighlight">\(q&gt;0\)</span>.</p>
 <ul class="simple">
 <li><p>Является ли эта задача выпуклой?</p></li>
 <li><p>Является ли она гладкой?</p></li>
@@ -475,35 +483,37 @@ $$</p>
 </section>
 <section id="id13">
 <h2>Задача 12<a class="headerlink" href="#id13" title="Link to this heading">#</a></h2>
-<p>Рассмотрим <strong>лексикографические предпочтения</strong> на $[0,1]^n$. Докажите, что предпосылки Теоремы Дебре не выполняются.</p>
-<p>Рассмотрим <strong>лексикографические предпочтения</strong> на $[0,1]^n \cap \mathbb{N}^n$. Докажите, что предпосылки Теоремы Дебре не выполняются. Тем не менее, объясните как построить полезность.</p>
+<p>Рассмотрим <strong>лексикографические предпочтения</strong> на <span class="math notranslate nohighlight">\([0,1]^n\)</span>. Докажите, что предпосылки Теоремы Дебре не выполняются.</p>
+<p>Рассмотрим <strong>лексикографические предпочтения</strong> на <span class="math notranslate nohighlight">\([0,1]^n \cap \mathbb{N}^n\)</span>. Докажите, что предпосылки Теоремы Дебре не выполняются. Тем не менее, объясните как построить полезность.</p>
 </section>
 <section id="id14">
 <h2>Задача 13<a class="headerlink" href="#id14" title="Link to this heading">#</a></h2>
-<p>Рассмотрим для товара в $\vec{x} \in \mathbb{R}^n_{+}$ полезность вида</p>
-<p>$$U(\vec{x}) = (\sum_{i=1^k} \alpha_i x^{\rho}_i)^{1/\rho},$$
-где $\sum \alpha_i = 1$. Рассмотрите отдельно случаи $\rho&gt;1$ и $\rho&lt;1$.</p>
+<p>Рассмотрим для товара в <span class="math notranslate nohighlight">\(\vec{x} \in \mathbb{R}^n_{+}\)</span> полезность вида</p>
+<div class="math notranslate nohighlight">
+\[U(\vec{x}) = (\sum_{i=1^k} \alpha_i x^{\rho}_i)^{1/\rho},\]</div>
+<p>где <span class="math notranslate nohighlight">\(\sum \alpha_i = 1\)</span>. Рассмотрите отдельно случаи <span class="math notranslate nohighlight">\(\rho&gt;1\)</span> и <span class="math notranslate nohighlight">\(\rho&lt;1\)</span>.</p>
 <p>Является ли эта функция квазивогнутой? Монотонным преобразованием вогнутой?</p>
 </section>
 <section id="id15">
 <h2>Задача 14 (гроб)<a class="headerlink" href="#id15" title="Link to this heading">#</a></h2>
 <p><em>Кто говорил, что линал не пригодится</em></p>
-<p>Полезность очень умного студента от потребления набора благ $(x_1 \ldots x_n)$ представляется в виде квадратичной формы, описывающейся матрицей $A$, т.е. $U = (x_1, x_2 \ldots x_n) * A * (x_1, x_2 \ldots x_n)^T$</p>
-<p>а) Пусть матрица $A =$
-$\begin{pmatrix}
--4 &amp; 6\
+<p>Полезность очень умного студента от потребления набора благ <span class="math notranslate nohighlight">\((x_1 \ldots x_n)\)</span> представляется в виде квадратичной формы, описывающейся матрицей <span class="math notranslate nohighlight">\(A\)</span>, т.е. <span class="math notranslate nohighlight">\(U = (x_1, x_2 \ldots x_n) * A * (x_1, x_2 \ldots x_n)^T\)</span></p>
+<p>а) Пусть матрица <span class="math notranslate nohighlight">\(A =\)</span>
+<span class="math notranslate nohighlight">\(\begin{pmatrix}
+-4 &amp; 6\\
 6 &amp; -10
-\end{pmatrix}$
-цены благ равные 1, а бюджет индивида 10. Найдите оптимальное потребление благ $x_1$ и $x_2$.</p>
-<p>б) Пусть матрица $A = $</p>
-<p>$$\begin{pmatrix}
--1 &amp; 1 &amp; -1 &amp; \ldots &amp; (-1)^m\
-1 &amp; -2 &amp; 1 &amp; \ldots &amp; (-1)^{m+1}\
--1 &amp; 1 &amp; -3 &amp; \ldots &amp; (-1)^m\
-\vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \
+\end{pmatrix}\)</span>
+цены благ равные 1, а бюджет индивида 10. Найдите оптимальное потребление благ <span class="math notranslate nohighlight">\(x_1\)</span> и <span class="math notranslate nohighlight">\(x_2\)</span>.</p>
+<p>б) Пусть матрица <span class="math notranslate nohighlight">\(A = \)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{pmatrix}
+-1 &amp; 1 &amp; -1 &amp; \ldots &amp; (-1)^m\\
+1 &amp; -2 &amp; 1 &amp; \ldots &amp; (-1)^{m+1}\\
+-1 &amp; 1 &amp; -3 &amp; \ldots &amp; (-1)^m\\
+\vdots &amp; \vdots &amp; \vdots &amp; \ddots &amp; \vdots \\
 (-1)^m &amp; (-1)^{m+1} &amp; (-1)^m &amp; \ldots &amp; -m
-\end{pmatrix}$$</p>
-<p>Бюджет студента не ограничен. Предположим, что ему предлагают следующую сделку: студент отказывается от всех своих знаний по линалу, а взамен на это значение его функции полезности меняется до некоторого значения $c$. Выведите, при каких $c(m)$ студент согласится на сделку.</p>
+\end{pmatrix}\end{split}\]</div>
+<p>Бюджет студента не ограничен. Предположим, что ему предлагают следующую сделку: студент отказывается от всех своих знаний по линалу, а взамен на это значение его функции полезности меняется до некоторого значения <span class="math notranslate nohighlight">\(c\)</span>. Выведите, при каких <span class="math notranslate nohighlight">\(c(m)\)</span> студент согласится на сделку.</p>
 </section>
 </section>
 
