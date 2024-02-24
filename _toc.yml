@@ -22,35 +22,33 @@ parts:
     - file: week_1/lecture_1_2
     - file: week_1/seminar_1
     - file: week_1/homework_0
-    #- file: week_1/practice_1
-    #- file: week_1/homework_1
-# - caption: Вторая неделя
-#   chapters:
-#     - file: week_2/intro_2
-#     - file: week_2/lecture_2_1
-#     - file: week_2/lecture_2_2
+- caption: Вторая неделя
+  chapters:
+    - file: week_2/intro_2
+    - file: week_2/lecture_2_1
+    - file: week_2/lecture_2_2
 #     #- file: week_2/seminar_2
-# - caption: Третья неделя
-#   chapters:
-#     - file: week_3/intro_3
-#     - file: week_3/lecture_3_1
-#     - file: week_3/lecture_3_2
-#     - file: week_3/seminar_3
-#     - file: week_3/homework_1
-# - caption: Четвертая неделя
-#   chapters:
-#     - file: week_4/intro_4
-#     - file: week_4/lecture_4_1
-#     - file: week_4/lecture_4_2
-#     - file: week_4/seminar_4
+- caption: Третья неделя
+  chapters:
+    - file: week_3/intro_3
+    - file: week_3/lecture_3_1
+    - file: week_3/lecture_3_2
+    - file: week_3/seminar_3
+    - file: week_3/homework_1
+- caption: Четвертая неделя
+  chapters:
+    - file: week_4/intro_4
+    - file: week_4/lecture_4_1
+    - file: week_4/lecture_4_2
+    - file: week_4/seminar_4
 #     #- file: week_4/practice_2
-# - caption: Пятая неделя
-#   chapters:
-#     - file: week_5/intro_5
-#     - file: week_5/lecture_5_1
-#     - file: week_5/lecture_5_2
-#     - file: week_5/seminar_5
-#     - file: week_5/homework_2
+- caption: Пятая неделя
+  chapters:
+    - file: week_5/intro_5
+    - file: week_5/lecture_5_1
+    - file: week_5/lecture_5_2
+    - file: week_5/seminar_5
+    - file: week_5/homework_2
 # - caption: Шестая неделя
 #   chapters:
 #     - file: week_6/intro_6
