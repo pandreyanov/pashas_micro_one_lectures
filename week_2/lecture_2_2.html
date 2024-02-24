@@ -1,0 +1,846 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Вторая лекция, часть 2 &#8212; Учебник по Микро 1, для ИП, ФЭН ВШЭ</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b76e3c8a" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'week_2/lecture_2_2';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../table.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Учебник по Микро 1, для ИП, ФЭН ВШЭ</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../table.html">
+                    Содержание учебника
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Программа курса</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../week_0/principles.html">Принципы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_0/grades.html">Оценивание</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_0/hours.html">Часы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_0/module%203.html">Структура третьего модуля</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_0/module%204.html">Структура четвертого модуля</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Первая неделя</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../week_1/intro_1.html">Содержание</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_1/lecture_1_1.html">Первая лекция, часть 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_1/lecture_1_2.html">Первая лекция, часть 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_1/seminar_1.html">Семинар 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_1/homework_0.html">Тренировочное (нулевое) домашнее задание</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Мат. шпаргалка</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../cheetsheet/differentials.html">Дифференциалы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cheetsheet/forms.html">Квадратичные формы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cheetsheet/backprop.html">Бэкпроп</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cheetsheet/approximations.html">Приближения</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/week_2/lecture_2_2.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Вторая лекция, часть 2</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Полезность Кобба-Дугласа</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Альтернативные формы</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Лагранжиан</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Условия Первого Порядка</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Спросы</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Косвенная полезность</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Геометрический анализ</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Полезность Леонтьева</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Геометрический анализ</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Спросы</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Косвенная полезность</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Квазилинейная полезность</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">Лагранжиан</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">Условия Первого Порядка</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">Спросы</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">Косвенная полезность</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">Линейная полезность</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">Геометрический анализ</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">Спросы</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">Косвенная полезность</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ces">CES полезность</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">Лагранжиан</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">Условия Первого Порядка</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="id1">
+<h1>Вторая лекция, часть 2<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<section id="id2">
+<h2>Полезность Кобба-Дугласа<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<p>В  теории  производства  в экономике функция Кобба-Дугласа связывает объем $Q$ производства с объемами труда $L$ и капитала $K$:</p>
+<p>$$Q(L, K) = L^{\alpha} K^{1-\alpha}.$$</p>
+<p>Коэффициент $\alpha = 0.73$ был откалиброван на производственном секторе США в 1920 году. Считалось, что (маржинальный) вклад труда и капитала в производство примерно 1:3, мы вернемся к этому утверждению чуть позже.</p>
+<p>Аналитические свойства этой функции оказались настолько удобными, что она проникла также в теорию роста (модель Солоу) и теорию потребителя (материал наших лекции) в виде соответствующей функции полезности:</p>
+<p>:::{prf:definition}
+<strong>Полезностью Кобба-Дугласа</strong> называется:</p>
+<p>$$U(x, y) = x^{\alpha} y^{1-\alpha}, \quad \alpha \in (0,1)$$</p>
+<p>:::</p>
+<p>где $x, y$ - это некоторые два товара.</p>
+<section id="id3">
+<h3>Альтернативные формы<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<p>Вспомним, что монотонные преобразования полезности не меняют поведение потребителя. Тогда можно применить логарифм и получить:</p>
+<p>$$ U(x, y) = \alpha \log x + (1-\alpha) \log y, \quad \alpha \in (0,1).$$</p>
+<p>Заметим, что эта функция вогнута! Достаточно посмотреть на Гессиан.</p>
+</section>
+<section id="id4">
+<h3>Лагранжиан<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+<p>Выпишем Лагранжиан:</p>
+<p>$$ \mathcal{L} = \alpha \log x + (1-\alpha) \log y - \lambda (px + qy -I).$$</p>
+<p>Заметим, что я выставляю знак минус так, чтобы у множителя Лагранжа была интерпретация теневой цены выхода за бюджетное ограничение. Это нам пригодится в следующей лекции, а сейчас просто постарайтесь запомнить.</p>
+</section>
+<section id="id5">
+<h3>Условия Первого Порядка<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
+<p>Бездумно выпишем три уравнения:</p>
+<ul class="simple">
+<li><p>$\mathcal{L}’_x = \alpha/ x - \lambda p = 0$</p></li>
+<li><p>$\mathcal{L}’_y = (1-\alpha)/y - \lambda q = 0$</p></li>
+<li><p>$\mathcal{L}’_{\lambda} = I - p x - qy = 0$</p></li>
+</ul>
+<p>Легко видеть, что они эквивалентны</p>
+<ul class="simple">
+<li><p>$\alpha - \lambda p x= 0$</p></li>
+<li><p>$(1-\alpha) - \lambda q y= 0$</p></li>
+<li><p>$px + qy - I = 0$</p></li>
+</ul>
+<p>Это уже система из трех (нелинейных) уравнений с тремя неизвестными. Скорее всего, она имеет единственное решение, но это еще не доказано.</p>
+<p>Обозначим доли бюджета потраченные на $x$ и $y$ как $s_x= px$ и $s_y = qy$ соответственно, и умножим последнее уравнение на $\lambda$. Тогда уравнения становятся еще проще:</p>
+<ul class="simple">
+<li><p>$\alpha = \lambda s_x$</p></li>
+<li><p>$(1-\alpha) = \lambda s_y$</p></li>
+<li><p>$\lambda s_x + \lambda s_y = \lambda I$</p></li>
+</ul>
+<p>Эту систему можно уже решить в уме. Получается, что теневая цена равна $\lambda = 1/I$, а доли бюджета потраченные на каждый товар постоянны:</p>
+<p>$$ s_x = \alpha, \quad s_y = 1 - \alpha,$$</p>
+<p>откуда спрос уже совсем легко вывести.</p>
+</section>
+<section id="id6">
+<h3>Спросы<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
+<p>Пусть полезность имеет следующий вид:</p>
+<p>$$U(x,y,z) = \alpha \log x + \beta \log y + \gamma \log z,$$</p>
+<p>а цены равны $p, q, r$ соответственно.</p>
+<p>:::{prf:property}
+Спрос на каждый товар в Коббе-Дугласе описывается следующими уравнениями:</p>
+<p>$$
+\begin{gather*}
+x^{\ast} = \frac{\alpha}{\alpha + \beta + \gamma} \frac{I}{p}, \
+y^{\ast} = \frac{\beta}{\alpha + \beta + \gamma} \frac{I}{q}, \
+z^{\ast} = \frac{\gamma}{\alpha + \beta + \gamma} \frac{I}{r}
+\end{gather*}
+$$</p>
+<p>:::</p>
+<p>Обладая явной формой спросов можно легко прийти к следующему выводу:</p>
+<p>:::{prf:property}
+Все товары в Коббе-Дугласе являются нормальными, а также попарно субститутами.
+:::</p>
+<p>Действительно, удивительным свойством Кобба-Дугласа является то, что спросы не зависят от цен других товаров. То есть они где-то между субститутами и комплементами. Еще более удивительным является то, что доли бюджета потраченные на каждый товар постоянны.</p>
+<p><em>Вопрос на понимание: если бы у вас были данные, скажем, от банка, где для каждого пользователя были бы указано сколько они потратили в квартал на рестораны, шопинг и  коммунальные услуги, как бы вы откалибровали модель Кобба-Дугласа?</em></p>
+</section>
+<section id="id7">
+<h3>Косвенная полезность<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
+<p>Нампомним, что косвенная полезность чувствительна к монотонным преобразованиям, поэтому тут важно какая именно спецификация была изначально дана в задаче. Для простоты давайте считать, что это спецификация в логарифмах.</p>
+<p>Сосчитаем логарифм спроса на первый товар:</p>
+<p>$$\log x^{\ast} = \log \alpha - \log (\alpha + \beta + \gamma) + \log I - \log p$$</p>
+<p>Аналогично считается логарифм спроса на другие товары. Теперь надо просто подставить их в полезность:</p>
+<p>:::{prf:property}
+Косвенная полезность в Коббе-Дугласе (с точностью до преобразования) имеет вид</p>
+<p>$$V(p,q,I) = (\alpha + \beta + \gamma) \log I - \alpha \log p - \beta \log q - \gamma \log r + C $$</p>
+<p>:::</p>
+<p>Константы $C$ можно, как правило, не выписывать, так как они исчезнут при первой же попытке продифференцировать.</p>
+</section>
+<section id="id8">
+<h3>Геометрический анализ<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
+<p>У функции Кобба-Дугласа очень характерные кривые безразличия - это такие гиперболы, расходящиеся от начала координат. Любопытно, что они загибаются по мере приближения к осям так, что невозможно получить касание с бюджетной линией в невнутренней точке. Достаточно посмотреть на градиент:</p>
+<p>$$U(x,y) = \alpha \log x + \beta \log y, \quad \nabla U = (\alpha/x, \beta/y)’.$$</p>
+<p>Иными словами, для любых строго положительных цен решение оптимизационной задачи с классическим бюджетным множеством - обязательно внутреннее, см. иллюстрацию.</p>
+<p>:::{image} ./cobbdouglas.png
+:alt: Кобб-Дуглас
+:width: 400px
+:align: center
+:::</p>
+<p><em>Вопрос 8: Нарисуйте кривую Энгеля и кривую безразличия</em></p>
+<p><em>Вопрос 9: Убедитесь, что решение всегда находится в пересечении кривой Энгеля и кривой безразличия.</em></p>
+<p><em>Вопрос 10: Убедитесь, что решение всегда находится в пересечении кривой Энгеля и бюджетной линии.</em></p>
+<p><em>Вопрос 11: Убедитесь, что решение всегда находится в точке касания кривой безразличия и бюджетной линии.</em></p>
+</section>
+</section>
+<section id="id9">
+<h2>Полезность Леонтьева<a class="headerlink" href="#id9" title="Link to this heading">#</a></h2>
+<p>Функция Леонтьева также активно использовалась в теории производства:</p>
+<p>$$Q(x, y) = \min(x/a, y/b)$$</p>
+<p>и также как и функция Кобба-Дугласа применялась в теории роста и закрепилась в теории потребителя. Ходят слухи, что эта модель калибровалась для экономики СССР. Для простоты, мы рассмотрим два товара:</p>
+<p>:::{prf:definition}</p>
+<p><strong>Полезность Леонтьева</strong> (для двух товаров):</p>
+<p>$$U(x, y) = \min(x/a, y/b)$$</p>
+<p>:::</p>
+<p>Интерпретация полезности (производственной функции) такая, что для извлечения одной единицы полезности (конечного товара) необходимо ровно a и b единиц потребительских (промежуточных) товаров. Иногда такая полезность называется <strong>совершенными комплементами</strong>.</p>
+<p>На самом деле для экономики СССР такая функция подходила гораздо больше, поскольку труд был фактически бесплатным. А львиная доля производства уходила на военные цели, которые очень даже хорошо описываются Леонтьевски:</p>
+<ul class="simple">
+<li><p>1000 кирпичей + 100 досок + 250 гвоздей = Барак</p></li>
+<li><p>3 тонны железа + 40 килограмм резины + 300 литров бензина = Танк</p></li>
+</ul>
+<p>К сожалению, СССР перестал существовать раньше, чем такое моделирование принесло конкретные результаты. Возможно, причиной стал тот факт, что нахождение равновесия в такой экономике - это катастрофически сложная (NP-сложная) переборная задача, и компьютеры того времени просто не могли с ней справиться.</p>
+<section id="id10">
+<h3>Геометрический анализ<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
+<p>К сожалению, выписывание Лагранжиана тут не очень удобно, поскольку полезность негладкая. Гораздо удобнее визуализировать оптимум как точку, в которой линия уровня (угол) касается бюджетной линии, см, иллюстрацию.</p>
+<p>:::{image} ./leontiev.png
+:alt: Леонтьев
+:width: 400px
+:align: center
+:::</p>
+<p>Немного пораздумав, мы приходим к выводу, что все такие точки касания лежат на кривой составленной из изломов кривых безразличия:</p>
+<p>$$x/a = y/b.$$</p>
+<p>Она же совпадает с кривой Энгеля при любых заданных ценах.</p>
+<p><em>Вопрос 12: Убедитесь, что решение всегда находится в пересечении кривой Энгеля и бюджетной линии.</em></p>
+</section>
+<section id="id11">
+<h3>Спросы<a class="headerlink" href="#id11" title="Link to this heading">#</a></h3>
+<p>Пусть полезность имеет следующий вид:</p>
+<p>$$U(x,y,z) = \min(x/a, y/b, z/c)$$</p>
+<p>а цены равны $p, q, r$ соответственно.</p>
+<p>:::{prf:property}
+Спрос на каждый товар в Леонтьеве описывается следующими уравнениями:</p>
+<p>$$
+\begin{gather*}
+x^{\ast} = \frac{ap}{ap + bq + cr} \frac{I}{p}, \
+y^{\ast} = \frac{bq}{ap + bq + cr} \frac{I}{q}, \
+z^{\ast} = \frac{cr}{ap + bq + cr} \frac{I}{r}
+\end{gather*}
+$$</p>
+<p>:::</p>
+<p>Убедитесь подстановкой, что это решение действительно лежит в пересечении кривой Энгеля и бюджетной линии. Обладая явной формой спросов, можно легко прийти к следующему выводу:</p>
+<p>:::{prf:property}
+Все товары в функции Леонтьева являются нормальными, а также попарно являются (строго) комплементами.
+:::</p>
+<p>Форма ответа очень похожа на Кобба-Дугласа, но есть одно существенное отличие.</p>
+<p>:::{dropdown} О каком отличии идет речь?</p>
+<p>В Коббе-Дугласе доли постоянны, а здесь доли зависят от цен.
+:::</p>
+<p><em>Вопрос 14: Убедитесь, что все товары в Леонтьевской полезности, действительно, являются строго комплементами.</em></p>
+</section>
+<section id="id12">
+<h3>Косвенная полезность<a class="headerlink" href="#id12" title="Link to this heading">#</a></h3>
+<p>Заметим, что в оптимуме полезности в обоих позициях аргумента одинаковые. То есть косвенная полезность равна одновременно левому и правому аргументу.</p>
+<p>:::{prf:property}
+Косвенная полезность в Леонтьеве (с точностью до преобразования) имеет вид</p>
+<p>$$V(p,q,I) = \frac{I}{ap + bq + cr}$$</p>
+<p>:::</p>
+</section>
+</section>
+<section id="id13">
+<h2>Квазилинейная полезность<a class="headerlink" href="#id13" title="Link to this heading">#</a></h2>
+<p>Пожалуй, третья самая важная полезность имеет следующий вид:</p>
+<p>:::{prf:definition}</p>
+<p><strong>Квазилинейной полезностью</strong> называется:</p>
+<p>$$U(x, y) = f(x) + k y,$$</p>
+<p>где $f$ - вогнутая функция.
+:::</p>
+<p>Интерпретация последней координаты - это деньги на счету. То есть вам не обязательно тратить весь бюджет как раньше и остаток средств на счету конвертируется в утили по курсу 1:$k$.</p>
+<section id="id14">
+<h3>Лагранжиан<a class="headerlink" href="#id14" title="Link to this heading">#</a></h3>
+<p>Выпишем Лагранжиан:</p>
+<p>$$\mathcal{L} = f(x) + k y - \lambda (px + y - I).$$</p>
+<p>Легко, правда?</p>
+</section>
+<section id="id15">
+<h3>Условия Первого Порядка<a class="headerlink" href="#id15" title="Link to this heading">#</a></h3>
+<p>Сейчас мы попробуем найти внутреннее решение.</p>
+<ul class="simple">
+<li><p>$\mathcal{L}’_x = f’_x - \lambda p = 0$</p></li>
+<li><p>$\mathcal{L}’_y = k - \lambda = 0$</p></li>
+<li><p>$\mathcal{L}’_{\lambda} = I - p x - y= 0$</p></li>
+</ul>
+<p>Легко видеть, что они эквивалентны</p>
+<ul class="simple">
+<li><p>$k = \lambda$</p></li>
+<li><p>$x = (f’)^{-1}(\lambda p)$</p></li>
+<li><p>$px + y = I$</p></li>
+</ul>
+<p>Однако эта система не всегда имеет решение в $\mathbb{R}^2_{+}$. Легко видеть, что спрос на товар $x$ никак не зависит от бюджета, а стало быть, при достаточно маленьком бюджете спрос на товар $y$ упрется в ноль.</p>
+<p>Мы оказались в ситуации, о которой я предупреждал. Условия первого порядка указали на точку, которая может оказаться вне допустимой области. Если это так, это значит, что решение не внутреннее, а краевое. В таком случае мы заменяем условие первого порядка  $x = (f’)^{-1}(\lambda p)$ на краевое условие $y=0$ или эквивалентно $x = I/p$.</p>
+</section>
+<section id="id16">
+<h3>Спросы<a class="headerlink" href="#id16" title="Link to this heading">#</a></h3>
+<p>В этой задаче есть два взаимоисключающих режима: внутреннее решение и краевое решение. Но вместо перебора случаев, можно записать ответ в компактной форме, если проявить немного смекалки.</p>
+<p>:::{prf:property}
+Спрос на каждый товар в квазилинейной полезности описывается следующими уравнениями:</p>
+<p>$$
+\begin{gather*}
+x^{\ast} = \min (I/p, (f’)^{-1}(k p)), \
+y^{\ast} = \max (0, I-px^{\ast}).
+\end{gather*}
+$$</p>
+<p>:::</p>
+<p>Убедимся, что следующее утверждение верно.</p>
+<p>:::{prf:property}
+Все товары в квазилинейной полезности являются нормальными, a деньги (переменная $y$) являются универсальным комплементом.
+:::</p>
+</section>
+<section id="id17">
+<h3>Косвенная полезность<a class="headerlink" href="#id17" title="Link to this heading">#</a></h3>
+<p>Поскольку в задаче два режима, скорее всего ответ будет иметь форму максимума или минимума из двух выражений. Если бы ограничения не было, решение было бы всегда внутреннее, а полезность равна</p>
+<p>$$f((f’)^{-1}(k p)) + I - p (f’)^{-1}(k p).$$</p>
+<p>Когда ограничение активно, оно мешает нам достигнуть этой полезности, и мы получаем вместо нее</p>
+<p>$$ f(I/p) + 0.$$</p>
+<p>:::{prf:property}
+Косвенная полезность в квазилинейной полезности (с точностью до преобразования) имеет вид</p>
+<p>$$V(p,q,I) = f((f’)^{-1}(k p)) + I - p (f’)^{-1}(k p)$$</p>
+<p>если $I - p (f’)^{-1}(k p) &gt; 0$, и</p>
+<p>$$V(p,q,I) = f(I/p)$$</p>
+<p>в противном случае.</p>
+<p>:::</p>
+</section>
+</section>
+<section id="id18">
+<h2>Линейная полезность<a class="headerlink" href="#id18" title="Link to this heading">#</a></h2>
+<p>Простая с виду, но очень неудобная на практике:</p>
+<p>:::{prf:definition}</p>
+<p><strong>Линейной полезностью</strong> называется:</p>
+<p>$$U(x, y) = x/a +y/b,$$</p>
+<p>:::</p>
+<p>интерпретируется как способность извлекать одну и туже полезность из разных источников.  Конкретно вы можете получить одну единицу полезности либо из $a$ единиц товара $x$, либо из $b$ единиц товара $y$.</p>
+<p>Это значит, что $x, y$ обладают высокой взаимозаменяемостью либо вообще представляют собой один и тот же товар в пачках/таре разного размера. Такая полезность еще часто называется <strong>совершенными субститутами</strong>.</p>
+<section id="id19">
+<h3>Геометрический анализ<a class="headerlink" href="#id19" title="Link to this heading">#</a></h3>
+<p>Решение в этой задаче не похоже на предыдущие, оно вообще всегда краевое. Почему так? Посмотрим внимательно на бюджетное ограничение:</p>
+<p>$$B(x,y) = px + qy - I \leqslant 0$$</p>
+<p>оно показывает, что вы можете менять товары $x, y$ по курсу $\frac{1}{p}$ к $\frac{1}{q}$. А в полезности вы можете менять товары по курсу $a$:$b$. За исключением редкого случая, когда эти курсы совпадают:</p>
+<p>$$ap = bq$$</p>
+<p>вам выгодно менять один товар на другой до упора. Осталось понять, каким будет краевое решение…</p>
+<p>Интуитивно понятно, что вы будете тратить все на $x$, когда его вес в полезности относительно большой, а его цена относительно маленькая. То есть когда $ap$ относительно маленький.</p>
+<p>Относительно чего? Конечно же, относительно $bq$.</p>
+</section>
+<section id="id20">
+<h3>Спросы<a class="headerlink" href="#id20" title="Link to this heading">#</a></h3>
+<p>:::{prf:property}
+Спрос на каждый товар описывается следующими уравнениями:</p>
+<ul class="simple">
+<li><p>если $ap &lt; bq$, то $x^{\ast} = I/p, y^{\ast} = 0$</p></li>
+<li><p>если $ap &gt; bq$, то $x^{\ast} = 0, y^{\ast} = I/q$
+:::</p></li>
+</ul>
+<p>Убедитесь, что следующее утверждение верно.</p>
+<p>:::{prf:property}
+Все товары в линейной полезности нормальные и являются попарно субститутами.
+:::</p>
+</section>
+<section id="id21">
+<h3>Косвенная полезность<a class="headerlink" href="#id21" title="Link to this heading">#</a></h3>
+<p>Мы знаем, что решение либо в одном углу, либо в другом. Соответственно, ответ - это наибольшая из двух полезностей этих кандидатов, то есть</p>
+<p>$$V(p,q,I) = I \cdot \max(\frac{1}{ap}, \frac{1}{bq}).$$</p>
+<p>Пользуясь тем, что максимум коммутирует с монотонно возрастающими преобразованиями</p>
+<p>$$ \varphi’(x) &gt;0 \quad \Rightarrow \quad \max(\varphi(x), \varphi(x)) = \varphi(\max(x, y)$$</p>
+<p>и с монотонно убывающими преобразованиями в некотором смысле тоже</p>
+<p>$$ \psi’(x) &lt; 0 \quad \Rightarrow \quad \max(\psi(x), \psi(x)) = \psi(\min(x, y)$$</p>
+<p>можно вывести следующее красивое свойство:</p>
+<p>:::{prf:property}
+Косвенная полезность в линейной полезности (с точностью до преобразования) имеет вид</p>
+<p>$$V(p,q,I) = I / \min(ap, bq),$$</p>
+<p>:::</p>
+<p>Оно еще пригодится нам в следующей лекции.</p>
+</section>
+</section>
+<section id="ces">
+<h2>CES полезность<a class="headerlink" href="#ces" title="Link to this heading">#</a></h2>
+<p>Еще одна функция полезности, тесно связанная с теориями производства и роста:</p>
+<p>:::{prf:definition}</p>
+<p><strong>CES полезностью</strong> называется:</p>
+<p>$$U(x, y) = (\alpha x^{\rho} + (1-\alpha)y^{\rho})^{1/\rho}, \quad \rho &lt; 1.$$</p>
+<p>:::</p>
+<p>Основное замечательное свойство этой полезности в том, что у нее постоянны эластичности спроса. Что такое <strong>эластичность</strong>, мы с вами разберем на следующей лекции.</p>
+<section id="id22">
+<h3>Лагранжиан<a class="headerlink" href="#id22" title="Link to this heading">#</a></h3>
+<p>Выпишем Лагранжиан:</p>
+<p>$$\mathcal{L} =\alpha x^{\rho} + (1-\alpha)y^{\rho} - \lambda(p x + q y - I).$$</p>
+<p>Заметьте, что я сходу применил монотонное преобразование к полезности. Это хороший, гладкий Лагранжиан. Но является ли он вогнутым или квазивогнутым? Подумайте сами.</p>
+</section>
+<section id="id23">
+<h3>Условия Первого Порядка<a class="headerlink" href="#id23" title="Link to this heading">#</a></h3>
+<p>Я сразу запишу условия в слегка преобразованной форме:</p>
+<ul class="simple">
+<li><p>$\alpha \rho x^{\rho} = \lambda p x$</p></li>
+<li><p>$(1-\alpha) \rho y^{\rho} = \lambda q y$</p></li>
+<li><p>$\lambda p x + \lambda q y = \lambda I$</p></li>
+</ul>
+<p>Используя несложную подстановку, получаем:</p>
+<p>$$\rho (\alpha x^{\rho} + (1-\alpha) y^{\rho})= \lambda I$$</p>
+<p>И еще раз подставляя…</p>
+<p>$$\rho \left(</p>
+<p>\alpha (\frac{\lambda p}{\alpha \rho})^{\frac{\rho}{\rho-1}} +
+(1-\alpha) (\frac{\lambda q}{(1-\alpha) \rho})^{\frac{\rho}{\rho-1}}</p>
+<p>\right)
+= \lambda I$$</p>
+<p>И преобразуя еще раз, и используя сокращение $\sigma = 1-\frac{\rho}{\rho-1}$:</p>
+<p>$$\rho^\sigma \left(</p>
+<p>\alpha^\sigma p^{1-\sigma} +
+(1-\alpha)^{\sigma} q^{1-\sigma}</p>
+<p>\right)
+= \lambda^\sigma I$$</p>
+<p>Отсюда выражается множитель Лагранжа и, наконец, спросы:</p>
+<p>:::{prf:property}
+Спрос на каждый товар описывается следующими уравнениями:</p>
+<p>$$</p>
+<p>x^{\ast} = \frac{\alpha^{\sigma} p^{1-\sigma}}{\alpha^{\sigma} p^{1-\sigma} + (1-\alpha)^{\sigma} q^{1-\sigma}}\frac{I}{p},\</p>
+<p>y^{\ast} = \frac{(1-\alpha)^{\sigma} q^{1-\sigma}}{\alpha^{\sigma} p^{1-\sigma} + (1-\alpha)^{\sigma} q^{1-\sigma}}\frac{I}{q}.
+$$</p>
+<p>:::</p>
+<p>Тут много чего магически сократилось, потому что $\sigma(1-\rho) = 1$.</p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./week_2"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Полезность Кобба-Дугласа</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Альтернативные формы</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Лагранжиан</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Условия Первого Порядка</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Спросы</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Косвенная полезность</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Геометрический анализ</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Полезность Леонтьева</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Геометрический анализ</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Спросы</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Косвенная полезность</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Квазилинейная полезность</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">Лагранжиан</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">Условия Первого Порядка</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">Спросы</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">Косвенная полезность</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">Линейная полезность</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">Геометрический анализ</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">Спросы</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">Косвенная полезность</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ces">CES полезность</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">Лагранжиан</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">Условия Первого Порядка</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Паша Андреянов
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

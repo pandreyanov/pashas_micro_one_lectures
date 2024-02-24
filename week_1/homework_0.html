@@ -58,8 +58,6 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'week_1/homework_0';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -361,7 +359,7 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="id1">
+  <section id="id1">
 <h1>Тренировочное (нулевое) домашнее задание<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
 <p><em>Работа сдается строго в формате markdown (.md).</em></p>
 <section id="id2">
@@ -369,19 +367,18 @@ document.write(`
 <p>Все баллы за эту работу — бонусные. Считайте, что следующие домашние задания будут оцениваться по 100-бальной шкале, то есть полный балл за это задание будет соответствовать 10% от оценки за типичное домашнее задание.</p>
 <section id="id3">
 <h3>Задача 1 (2 балла)<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
-<p>В Лабораторию Экспериментальной Экономики пришел человек с рациональными предпочтениями <span class="math notranslate nohighlight">\(\succcurlyeq\)</span> на множестве альтернатив <span class="math notranslate nohighlight">\(X = \{x, y, z, w\}\)</span>. Вам требуется полностью откалибровать его предпочтения.</p>
+<p>В Лабораторию Экспериментальной Экономики пришел человек с рациональными предпочтениями $\succcurlyeq$ на множестве альтернатив $X = {x, y, z, w}$. Вам требуется полностью откалибровать его предпочтения.</p>
 <p>Работавший до вас ассистент начал заполнять матрицу бинарных отношений, но оставил много пропусков. Вы должны заполнить её до конца.</p>
-<div class="math notranslate nohighlight">
-\[\begin{split} 
+<p>$$
 \begin{array}{c|ccc}
- \succcurlyeq &amp; x &amp; y &amp; z &amp; w\\
+\succcurlyeq &amp; x &amp; y &amp; z &amp; w\
 \hline
-x  &amp; *  &amp; * &amp; * &amp; *\\
-y  &amp; 0  &amp; * &amp; * &amp; * \\
-z  &amp; *  &amp; 0  &amp; * &amp; * \\
-w &amp; 0  &amp; 0 &amp; 0 &amp; * \\
+x  &amp; *  &amp; * &amp; * &amp; *\
+y  &amp; 0  &amp; * &amp; * &amp; * \
+z  &amp; *  &amp; 0  &amp; * &amp; * \
+w &amp; 0  &amp; 0 &amp; 0 &amp; * \
 \end{array}
-\end{split}\]</div>
+$$</p>
 <p>Вам разрешено задавать человеку только вопросы вида «верно ли, что вы слабо предпочитаете альтернативу А альтернативе Б?».</p>
 <blockquote>
 <div><p>Какое минимальное число вопросов нужно задать, чтобы полностью откалибровать (заполнить матрицу) предпочтения? Аргументируйте.</p>
@@ -391,20 +388,17 @@ w &amp; 0  &amp; 0 &amp; 0 &amp; * \\
 <h3>Задача 2 (2 балла)<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
 <p>Дозаполните определения выпуклого множества, полезности и предпочтения, постарайтесь не запутаться:</p>
 <ul class="simple">
-<li><p>множество <span class="math notranslate nohighlight">\(X\)</span> выпукло если для любых <span class="math notranslate nohighlight">\(x,y \in X\)</span>:</p></li>
+<li><p>множество $X$ выпукло если для любых $x,y \in X$:</p></li>
 </ul>
-<div class="math notranslate nohighlight">
-\[\forall \alpha \in (0,1): \quad \alpha x + \ldots\]</div>
+<p>$$\forall \alpha \in (0,1): \quad \alpha x + \ldots$$</p>
 <ul class="simple">
-<li><p>полезность <span class="math notranslate nohighlight">\(U\)</span> выпуклa если для любых <span class="math notranslate nohighlight">\(x,y \in X\)</span>:</p></li>
+<li><p>полезность $U$ выпуклa если для любых $x,y \in X$:</p></li>
 </ul>
-<div class="math notranslate nohighlight">
-\[\forall \alpha \in (0,1): \ldots\]</div>
+<p>$$\forall \alpha \in (0,1): \ldots$$</p>
 <ul class="simple">
-<li><p>предпочтения <span class="math notranslate nohighlight">\(\succcurlyeq\)</span> выпуклы если для любых <span class="math notranslate nohighlight">\(z \in X\)</span> и <span class="math notranslate nohighlight">\(x, y \in L_{+}(x)\)</span>:</p></li>
+<li><p>предпочтения $\succcurlyeq$ выпуклы если для любых $z \in X$ и $x, y \in L_{+}(x)$:</p></li>
 </ul>
-<div class="math notranslate nohighlight">
-\[ \forall \alpha \in (0,1): \quad \alpha x + \ldots\]</div>
+<p>$$ \forall \alpha \in (0,1): \quad \alpha x + \ldots$$</p>
 </section>
 <section id="id5">
 <h3>Задача 3 (5 балла)<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>

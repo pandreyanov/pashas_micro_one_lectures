@@ -1,0 +1,675 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Пятнадцатая лекция, часть 2 &#8212; Учебник по Микро 1, для ИП, ФЭН ВШЭ</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b76e3c8a" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'week_15/lecture_16_2';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../table.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Учебник по Микро 1, для ИП, ФЭН ВШЭ</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../table.html">
+                    Содержание учебника
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Программа курса</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../week_0/principles.html">Принципы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_0/grades.html">Оценивание</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_0/hours.html">Часы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_0/module%203.html">Структура третьего модуля</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_0/module%204.html">Структура четвертого модуля</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Первая неделя</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../week_1/intro_1.html">Содержание</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_1/lecture_1_1.html">Первая лекция, часть 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_1/lecture_1_2.html">Первая лекция, часть 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_1/seminar_1.html">Семинар 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_1/homework_0.html">Тренировочное (нулевое) домашнее задание</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Мат. шпаргалка</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../cheetsheet/differentials.html">Дифференциалы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cheetsheet/forms.html">Квадратичные формы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cheetsheet/backprop.html">Бэкпроп</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cheetsheet/approximations.html">Приближения</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/week_15/lecture_16_2.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Пятнадцатая лекция, часть 2</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Равновесие Нэша</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Трагедии общин</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Два рыбака</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#n">$n$ рыбаков</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Мельницы</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Добровольное финансирование</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Посчитаем неизвестные</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Посчитаем уравнения</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Как решать?</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Долевое финансирование</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="id1">
+<h1>Пятнадцатая лекция, часть 2<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<p>Цегодня мы изучим новый тип равновесия, называемое <strong>pавновесием Нэша</strong>, и применим его к задаче финансирования общественного блага.</p>
+<section id="id2">
+<h2>Равновесие Нэша<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<p>Два преступника ограбили банк, но у шерифа недостаточно доказательств, он может только предьявить им незаконное хранение оружия. Шериф предлагает каждому преступнику сделку - признаться и выйти на свободу, если второй будет молчать. Если оба признаются - срок будет средним, а если никто не признаются, то совсем маленьким.</p>
+<p>Полезности описаны в следующей матрице:</p>
+<p>$$
+\begin{array}{c|ccc}
+&amp; признаться &amp; молчать\
+\hline
+признаться  &amp; 1,1  &amp; 3,0\
+молчать  &amp; 0,3  &amp; 2,2
+\end{array}
+$$</p>
+<p>Найдем парето оптимальные точки, это: $(3,0), (2,2), (0,3)$; они максимизирут некоторые взвешенные полезности (угадайте какие).</p>
+<p>Однако, равновесием в этой игре принято считать признаться-признаться, поскольку каждому грабителю выгодно сдать своего напарника, независимо от того, что тот будет делать.</p>
+<p>:::{prf:definition}</p>
+<p>Равновесием Нэша в игре называют план действия каждого игрока, такие что они являются оптимальными против друг друга.</p>
+<p>:::</p>
+<p>Рассмотрим игру камень-ножницы-бумага</p>
+<p>$$
+\begin{array}{c|ccc}
+&amp; камень &amp; ножницы &amp; бумага\
+\hline
+камень  &amp; 0,0  &amp; 1,-1 &amp; -1,1\
+ножницы  &amp; -1,1  &amp; 0,0 &amp; 1,1\
+бумага  &amp; 1,-1  &amp; -1,1 &amp; 0,0
+\end{array}
+$$</p>
+<p>Равновесием нэша здесь принато считать смешанная стратегия</p>
+<p>$$[1/3] \cdot камень+[1/3] \cdot ножницы+[1/3] \cdot бумага$$</p>
+<p>для каждого игрока, поскольку каждый агент безразличен, что играть против такого противника.</p>
+<p>:::{prf:Theorem} <strong>Нэша</strong>
+:class: remark
+Если пространство стратегий выпукло, агентов конечно, а полезности непрерывны и вогнуты, то существует равновесие Нэша.
+:::</p>
+<p>В частности, пространство смешанных стратегий выпукло а ассоциированные ожидаемые полезности непрерывны и вогнуты.</p>
+</section>
+<section id="id3">
+<h2>Трагедии общин<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<p>При помощи равновесия Нэша удобно исследовать феномен чрезмерного расходования общественных благ.</p>
+<section id="id4">
+<h3>Два рыбака<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+<p>Предположим, что каждый рыбак выбирает время $x$ которое он потратит на вылов рыбы. Каждый рыбак полычит $x_i(100-x_1-x_2)$ килограммов рыбы и продаст их по $p$ рублей за килограмм.</p>
+<p>В равновесии нэша каждый игрок максимизирует свою полезность по своему (но не чужому) действию</p>
+<p>$$ U_1(x_1) = p x_1(100-x_1-x_2), \ U_2(x_2) = p x_2(100-x_1-x_2)$$</p>
+<p>Поскольку каждая задача выпуклая, то в равновесии $x^{\ast}_1, x^{\ast}_2$ должны быть выполнены условия первого порядка:</p>
+<p>$$ 0 = p (100-2 x_1-x_2), \ 0 = p (100-x_1-2x_2)$$</p>
+<p>Суммируя их мы получаем</p>
+<p>$$ 0 = p (200-3 x_1-3x_2) \quad \Rightarrow \quad x_1 + x_2 = 200/3$$</p>
+<p>Наконец,</p>
+<p>$$x^{\ast}_1 = 300/3 - x_1 - x_2 = 100/3$$</p>
+<p>и аналогично</p>
+<p>$$x^{\ast}_2 = 300/3 - x_1 - x_2 = 100/3$$</p>
+<p>а суммарный вылов равен</p>
+<p>$$X^{\ast} = x^{\ast}_1 + x^{\ast}_2 = 200/3.$$</p>
+<p>А какой обьем максимизоровал бы сумму полезностей?</p>
+<p>$$ p(x_1 + x_2)(100 - x_1 - x_2) \to \max_{x_1, x_2} $$</p>
+<p>$$ p X (100 - X) \to \max_{X} $$</p>
+<p>Получается, что суммарный оптимальный вылов равен $200/4$, что гораздо меньше чем $200/3$. Таким образом, мы показали, что равновесие нэша перерасходует общественное благо (пруд).</p>
+</section>
+<section id="n">
+<h3>$n$ рыбаков<a class="headerlink" href="#n" title="Link to this heading">#</a></h3>
+<p>Выпишем полезности:</p>
+<p>$$ U_i(x_i) = p x_i(100-X), \ i = 1, \ldots, n, \ X = \sum x_i$$</p>
+<p>Выпишем условия первого порядка:</p>
+<p>$$ x_i = 100 - X, \ i = 1, \ldots, n$$</p>
+<p>Сложим их вместе и посчитаем равновесие:</p>
+<p>$$ X = n (100 - X) \quad \Rightarrow \quad X^{\ast} = \frac{100 n}{n+1} \quad \Rightarrow \quad x^{\ast}_i = \frac{100}{n+1}.$$</p>
+<p>А оптимальное $X$ по прежнему равно $100/2$. Более того, легко видеть, что суммарная полезность агентов в равновесии Нэша стремится к нулю, когда $n \to \infty$.</p>
+<p>$$ \sum U^{\ast} = p 100^2 \frac{n}{(n+1)^2} \to 0$$</p>
+</section>
+<section id="id5">
+<h3>Мельницы<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
+<p>Рыночный спрос можно считать примером общественного блага, которое можно неаккуратно перерасходовать. Предположим, что $n$ мельниц поставляют муку в город, а спрос на муку описивается уравнением $$ P(Q) = 100- Q, \quad Q = \sum_j q_j.$$</p>
+<p>Также, издержки на производство муки равны $c_i q_i$. Таким образом, полезность каждого агента:</p>
+<p>$$ U_i(q_i) = (100 - Q)q_i - c_i q_i$$</p>
+<p>:::{dropdown} Найдем равновесие Нэша</p>
+<p>Выпишем условия первого порядка</p>
+<p>$$100 - Q - q_i - c_i = 0.$$</p>
+<p>$$q_i = 100 - Q - c_i$$</p>
+<p>Просуммируем</p>
+<p>$$ Q = n(100 - Q) - \sum c_j$$</p>
+<p>$$ Q = \frac{100n - \sum_j c_j}{n+1} = \frac{\sum_j(100 - c_j)}{n+1}$$</p>
+<p>$$ q_i = (100 - c_i) - \frac{\sum_j (100 - c_j)}{n+1}$$</p>
+<p>:::</p>
+<p>:::{dropdown} Найдем оптимальный выпуск</p>
+<p>Запишем суммарную полезнось как</p>
+<p>$$
+\sum_i (100- Q - c_i)q_i
+$$</p>
+<p>Выпишем условия первого порядка</p>
+<p>$$q_i = 100 - Q - c_i - \sum_j q_j = 100 - 2Q - c_i$$</p>
+<p>Просуммируем</p>
+<p>$$ (2n + 1)Q = 100n - \sum_j c_i$$</p>
+<p>Получаем</p>
+<p>$$ Q = \frac{\sum_j (100 - c_j)}{2n + 1}$$</p>
+<p>:::</p>
+</section>
+</section>
+<section id="id6">
+<h2>Добровольное финансирование<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
+<p>Для простоты, пусть одна специальная фирма $j^{\ast}$ занимается производством одного общественного блага из частных.</p>
+<p>:::{prf:definition}</p>
+<p>Равновесием Вальраса с добровольным финансированием это $(\vec p, \vec x, \vec y, z, \vec t)$, где $z$-общественное благо, такие что</p>
+<ul class="simple">
+<li><p>$(\vec x, \vec y, z)$ это допустимое состояние экономики</p></li>
+<li><p>каждый агент $i$ делает взнос $t_i$ на производство общ. блага, который является наилучшим ответом на взносы других агентов</p></li>
+<li><p>каждый производитель частного блага $y$ максимизирует прибыль, а доли фирм распределены между агентами</p></li>
+<li><p>специальная фирма тратит все взносы на производство общественного блага, согласно своей (эффективной) технологии, то есть, ее прибыль равна нулю.</p></li>
+</ul>
+<p>:::</p>
+<section id="id7">
+<h3>Посчитаем неизвестные<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
+<p>Неизвестных:</p>
+<ul class="simple">
+<li><p>$K-1$ цен частных благ</p></li>
+<li><p>$(I+J) \cdot K$ координат потребления и производства</p></li>
+<li><p>$I+J$ множителей Лагранжа</p></li>
+<li><p>$I$ добровольных взносов</p></li>
+<li><p>$1$ координата общественного блага</p></li>
+</ul>
+</section>
+<section id="id8">
+<h3>Посчитаем уравнения<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
+<p>Уравнений:</p>
+<ul class="simple">
+<li><p>$K$ товарных равенств</p></li>
+<li><p>$(I+J) \cdot K$ стандартных условой первого порядка</p></li>
+<li><p>$I-1$ законов вальраса</p></li>
+<li><p>$J$ условой оптимальности фирм</p></li>
+<li><p>$I$ дополнительных условий первого порядка</p></li>
+<li><p>прибыль специальной фирмы равна нулю</p></li>
+</ul>
+</section>
+<section id="id9">
+<h3>Как решать?<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
+<p>Я рекомендую подставлять технологию производства общественного блага прямиком в полезность агента, например…</p>
+<ul class="simple">
+<li><p>есть одно частное благо $x$ (его производство обозначим  $y$) и одно общественное благо $z$</p></li>
+<li><p>есть два агента с одинаковыми полезностями $\log x + z$</p></li>
+<li><p>у каждого агента единица частного блага</p></li>
+<li><p>фирма производит общественное благо по технологии
+$$ z = \log(-y), \quad -y p = t_1 + t_2$$</p></li>
+</ul>
+<p>:::{dropdown} Попробуем…</p>
+<p>Запишем полезность первого агента:
+$$ \log x_1 + \log(\frac{t_1 + t_2}{p}) \to \max_{x_1,t_1}, \quad p x_1 + t_1 \leqslant p$$</p>
+<p>или</p>
+<p>$$ \log(\frac{p-t_1}{p}) + \log(\frac{t_1 + t_2}{p}) \to \max_{t_1}$$</p>
+<p>Запишем полезность второго агента:
+$$ \log x_2 + \log(\frac{t_1 + t_2}{p}) \to \max_{x_2,t_2}, \quad p x_2 + t_2 \leqslant p$$</p>
+<p>или</p>
+<p>$$ \log(\frac{p-t_2}{p}) + \log(\frac{t_1 + t_2}{p}) \to \max_{t_2}$$</p>
+<p>Заметьте, что мы воспользовались двумя законами вальраса, поэтому нам уже не понадобится единственное товарное равенство: $x_1 + x_2 + y = 2$ .</p>
+<p>Далее оптимизируем по $t_1, t_2$, получаем</p>
+<p>$$ \frac{1}{p-t_1} = \frac{1}{t_1 + t_2} = \frac{1}{p-t_2}$$</p>
+<p>или</p>
+<p>$$ p-t_1 = t_1 + t_2 = p-t_2$$</p>
+<p>что попросту значит</p>
+<p>$$ T = t_1 + t_2 = 2 p /3, \quad t_1 = t_2 = p - T = p/3.$$</p>
+<p>:::</p>
+<p>Далее, по законам вальраса $x_1 = x_2 = 2/3$ и значит $y = -2/3$ ушло на производство общественного блага $z = \log(2/3)$.</p>
+<p>:::{dropdown} Как определить цену $p$?</p>
+<p>Она нормируется к единице.</p>
+<p>:::</p>
+</section>
+</section>
+<section id="id10">
+<h2>Долевое финансирование<a class="headerlink" href="#id10" title="Link to this heading">#</a></h2>
+<p>Снова, пусть одна специальная фирма $j^{\ast}$ занимается производством одного общественного блага из частных.</p>
+<p>:::{prf:definition}</p>
+<p>Равновесием Вальраса с долевым финансированием это $(\vec p, \vec x, \vec y, z, q, \vec s)$, где $z$-общественное благо и $q$ цена на него, такие что</p>
+<ul class="simple">
+<li><p>$(\vec x, \vec y, z)$ это допустимое состояние экономики</p></li>
+<li><p>каждый агент озвучивает (один и тот же) желаемый объем $z$ общ. блага</p></li>
+<li><p>каждый производитель частного блага $y$ максимизирует прибыль, а доли фирм распределены между агентами</p></li>
+<li><p>расходы на производство общественного блага распределяются между потребителя согласно долям: $$ \sum_i s_i = 1$$</p></li>
+</ul>
+<p>:::</p>
+<p>Цены должны быть выбраны так, что каждый агент выбирает один и тот же $z$, хотя мог выбрать любой.</p>
+<p>:::{dropdown} Эта модель полностью эквивалентна равновесию Линдаля, и вот почему.</p>
+<p>Заметим, что в равновесии Линдаля, цены на производство общественного блага индивидуальны, а при долевом финансировании, цена $q$ - всего одна. Однако, с учетом долей, эффективные цены на общественное благо равны $s_i q$. Получается, что сумма эффективных цен потребителей равна $q$, то есть цене общественного блага, которую видет производитель:
+$$ q \sum s_i = q$$
+а это как раз уравнение Самуэлисона.</p>
+<p>:::</p>
+<p>Чтобы получить из равновесия Линдаля (с ценами $q_i, q_{prod}$) равновесие с долевым финансированием, достаточно определить доли как $$s_i = q_i/q_{prod},$$
+и наоборот.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./week_15"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Равновесие Нэша</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Трагедии общин</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Два рыбака</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#n">$n$ рыбаков</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Мельницы</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Добровольное финансирование</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Посчитаем неизвестные</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Посчитаем уравнения</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Как решать?</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Долевое финансирование</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Паша Андреянов
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

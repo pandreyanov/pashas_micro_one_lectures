@@ -58,8 +58,6 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'cheetsheet/forms';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -358,24 +356,20 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="forms">
+  <section id="forms">
 <span id="id1"></span><h1>Квадратичные формы<a class="headerlink" href="#forms" title="Link to this heading">#</a></h1>
 <p>С точки зрения пользователя, <strong>квадратичная форма</strong> это просто квадратная матрица, которая является при этом также симметричной. В нашем курсе такие матрицы появятся при повторном дифференциировании гладких функций, то есть, при выписывания Гессиана.</p>
-<p>Пусть, к примеру у нас есть фунция <span class="math notranslate nohighlight">\(f(x, y) = x^2 y + x + y\)</span></p>
+<p>Пусть, к примеру у нас есть фунция $f(x, y) = x^2 y + x + y$</p>
 <p>Тогда градиент равен:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split} \nabla f = \begin{pmatrix} \frac{\partial f}{\partial x}\\ \frac{\partial f}{\partial y}\end{pmatrix} = \begin{pmatrix} 2 x y + 1\\ x^2 + 1\end{pmatrix}\end{split}\]</div>
+<p>$$ \nabla f = \begin{pmatrix} \frac{\partial f}{\partial x}\ \frac{\partial f}{\partial y}\end{pmatrix} = \begin{pmatrix} 2 x y + 1\ x^2 + 1\end{pmatrix}$$</p>
 <p>а Гессиан равен:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split} \nabla^2 f = \begin{pmatrix} \frac{\partial^2 f}{\partial^2 x} &amp; \frac{\partial^2 f}{\partial x \partial y} \\ \frac{\partial^2 f}{\partial y \partial x} &amp; \frac{\partial^2 f}{\partial^2 y}\end{pmatrix} = \begin{pmatrix} 2 y &amp; 2 x \\ 2 x &amp; 0\end{pmatrix}\end{split}\]</div>
-<p>Квадратичная форма применяется к векторам и выдает обычные числа. Например, если вектор равен <span class="math notranslate nohighlight">\(v=(a, b)\)</span>, тогда</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\nabla^2 f (v) = \begin{pmatrix} a &amp; b \end{pmatrix} \begin{pmatrix} 2 y &amp; 2 x \\ 2 x &amp; 0\end{pmatrix} \begin{pmatrix} a \\ b \end{pmatrix}\end{split}\]</div>
+<p>$$ \nabla^2 f = \begin{pmatrix} \frac{\partial^2 f}{\partial^2 x} &amp; \frac{\partial^2 f}{\partial x \partial y} \ \frac{\partial^2 f}{\partial y \partial x} &amp; \frac{\partial^2 f}{\partial^2 y}\end{pmatrix} = \begin{pmatrix} 2 y &amp; 2 x \ 2 x &amp; 0\end{pmatrix}$$</p>
+<p>Квадратичная форма применяется к векторам и выдает обычные числа. Например, если вектор равен $v=(a, b)$, тогда</p>
+<p>$$\nabla^2 f (v) = \begin{pmatrix} a &amp; b \end{pmatrix} \begin{pmatrix} 2 y &amp; 2 x \ 2 x &amp; 0\end{pmatrix} \begin{pmatrix} a \ b \end{pmatrix}$$</p>
 <p>Перемножая все три матрицы вручную, мы получаем:</p>
-<div class="math notranslate nohighlight">
-\[\nabla^2 f (v) = a^2 \cdot 2 y + a b \cdot x y + b^2 \cdot 0.\]</div>
-<p>Это функция от координат вектора <span class="math notranslate nohighlight">\(v = (a,b)\)</span>, а <span class="math notranslate nohighlight">\(x, y\)</span> это параметры. Довольно легко подогнать параметры так, чтобы значение функции было гарантированно полоэительным или гарантированно отрицательным на всех векторах <span class="math notranslate nohighlight">\(v\)</span>, отличных от нуля.</p>
-<p>Например, если <span class="math notranslate nohighlight">\(x = 0, y = 1\)</span> то форма положительно определена и мы пишем <span class="math notranslate nohighlight">\(\nabla^2 f &gt; 0\)</span>. Если же <span class="math notranslate nohighlight">\(x = 0, y = -1\)</span> то форма отрицательно определена и мы пишем <span class="math notranslate nohighlight">\(\nabla^2 f &lt; 0\)</span>.</p>
+<p>$$\nabla^2 f (v) = a^2 \cdot 2 y + a b \cdot x y + b^2 \cdot 0.$$</p>
+<p>Это функция от координат вектора $v = (a,b)$, а $x, y$ это параметры. Довольно легко подогнать параметры так, чтобы значение функции было гарантированно полоэительным или гарантированно отрицательным на всех векторах $v$, отличных от нуля.</p>
+<p>Например, если $x = 0, y = 1$ то форма положительно определена и мы пишем $\nabla^2 f &gt; 0$. Если же $x = 0, y = -1$ то форма отрицательно определена и мы пишем $\nabla^2 f &lt; 0$.</p>
 <section id="id2">
 <h2>Критерий Сильвестра<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
 <p>Для дважды дифференциируемых функций существуют удобные дифференциальные критерии вогнутости (отрицательной полу-определенности) и квази вогнутости (отрицательной полу-определенности на касательном к ограночению пространстве).</p>
@@ -384,31 +378,27 @@ document.write(`
 <section id="id3">
 <h3>Вогнутость<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
 <p>Рассмотрим гессиан функции от 3 переменных</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\nabla^2 f = \begin{pmatrix} 
-f''_{xx} &amp; f''_{xy} &amp; f''_{xz} \\
-f''_{yx} &amp; f''_{yy} &amp; f''_{yz} \\
-f''_{zx} &amp; f''_{zy} &amp; f''_{zz}
+<p>$$
+\nabla^2 f = \begin{pmatrix}
+f’’<em>{xx} &amp; f’’</em>{xy} &amp; f’’<em>{xz} \
+f’’</em>{yx} &amp; f’’<em>{yy} &amp; f’’</em>{yz} \
+f’’<em>{zx} &amp; f’’</em>{zy} &amp; f’’_{zz}
 \end{pmatrix}
-\end{split}\]</div>
+$$</p>
 <p>У этой матрицы, как и у любой другой, есть определители главных миноров:</p>
 <p>первого порядка
-$<span class="math notranslate nohighlight">\( \Delta_{1} = f''_{xx}, \Delta_{2} = f''_{yy} \quad \ldots\)</span>$</p>
+$$ \Delta_{1} = f’’<em>{xx}, \Delta</em>{2} = f’’_{yy} \quad \ldots$$</p>
 <p>второго порядка
-$<span class="math notranslate nohighlight">\( \Delta_{1,2} = f''_{xx}f''_{yy}-(f''_{xy})^2, \Delta_{2,3} = f''_{yy}f''_{zz}-(f''_{yz})^2, \quad \ldots\)</span>$</p>
+$$ \Delta_{1,2} = f’’<em>{xx}f’’</em>{yy}-(f’’<em>{xy})^2, \Delta</em>{2,3} = f’’<em>{yy}f’’</em>{zz}-(f’’_{yz})^2, \quad \ldots$$</p>
 <p>третьего порядка, в нашем случае это
-<span class="math notranslate nohighlight">\(\Delta_{1,2,3} = \det f\)</span></p>
+$\Delta_{1,2,3} = \det f$</p>
 <p>Среди главных миноров всего три угловых минора:</p>
-<div class="math notranslate nohighlight">
-\[ \Delta_{1,1} = f''_{xx}, \quad \Delta_{1,2} = f''_{xx}f''_{yy}-(f''_{xy})^2, \quad \Delta_{1,2,3} = \det f\]</div>
+<p>$$ \Delta_{1,1} = f’’<em>{xx}, \quad \Delta</em>{1,2} = f’’<em>{xx}f’’</em>{yy}-(f’’<em>{xy})^2, \quad \Delta</em>{1,2,3} = \det f$$</p>
 <p>являющиеся определителями расширяющихся матриц, начиная с левого верхнего угла.</p>
 <p>Необходимым и достаточным условием для (не обязательно строгой) вогнутости функции является то, что все главные миноры имеют чередующиеся знаки, где чередование идет по размерности минора, начиная с отрицательного:</p>
-<div class="math notranslate nohighlight">
-\[ \Delta_{i} \leqslant 0, \quad \Delta_{i,j} \geqslant 0, \quad  \Delta_{i,j,k} \leqslant 0,  \quad \ldots\]</div>
+<p>$$ \Delta_{i} \leqslant 0, \quad \Delta_{i,j} \geqslant 0, \quad  \Delta_{i,j,k} \leqslant 0,  \quad \ldots$$</p>
 <p>Необходимым и достаточным условием для строгой вогнутости функции является то, что все главные миноры имеют чередующиеся знаки</p>
-<div class="math notranslate nohighlight">
-\[ \Delta_{1} &lt; 0, \quad \Delta_{1,2} &gt; 0, \quad \Delta_{1,2,3} &lt; 0, \quad \ldots\]</div>
+<p>$$ \Delta_{1} &lt; 0, \quad \Delta_{1,2} &gt; 0, \quad \Delta_{1,2,3} &lt; 0, \quad \ldots$$</p>
 <!-- ### Квази вогнутость
 
 Для анализа квази вогнутости, нужно заменить гессиан на окаймленный гессиан, у которого сверху и слева приставлен градиент функции в точке, а в левом верхнем углу еще стоит ноль.
