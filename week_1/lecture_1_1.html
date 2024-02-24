@@ -1,484 +1,394 @@
 
 <!DOCTYPE html>
 
-<html>
+
+<html lang="en" data-content_root="../" >
+
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>Первая лекция, часть 1 &#8212; Учебник по Микро 1, для ИП, ФЭН ВШЭ</title>
-    
-  <link href="../_static/css/theme.css" rel="stylesheet">
-  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
 
-    
-  <link rel="stylesheet"
-    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+  
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
-    
-      
-
-    
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b76e3c8a" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/proof.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
-    
-  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
-    <script src="../_static/clipboard.min.js"></script>
-    <script src="../_static/copybutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'week_1/lecture_1_1';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Первая лекция, часть 2" href="lecture_1_2.html" />
     <link rel="prev" title="Содержание" href="intro_1.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
-    
-    <div class="container-fluid" id="banner"></div>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
-    
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
 
-    <div class="container-xl">
-      <div class="row">
-          
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="../index.html">
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
       
       
       
-      <h1 class="site-logo" id="site-title">Учебник по Микро 1, для ИП, ФЭН ВШЭ</h1>
-      
-    </a>
-</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item active">
-        <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../table.html">
-   Содержание учебника
-  </a>
- </li>
-</ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Программа курса
- </span>
-</p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../week_0/principles.html">
-   Принципы
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../week_0/grades.html">
-   Оценивание
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../week_0/hours.html">
-   Часы
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../week_0/module%203.html">
-   Структура третьего модуля
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../week_0/module%204.html">
-   Структура четвертого модуля
-  </a>
- </li>
-</ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Первая неделя
- </span>
-</p>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="intro_1.html">
-   Содержание
-  </a>
- </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Первая лекция, часть 1
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="lecture_1_2.html">
-   Первая лекция, часть 2
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="seminar_1.html">
-   Семинар 1
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="homework_0.html">
-   Тренировочное (нулевое) домашнее задание
-  </a>
- </li>
-</ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Вторая неделя
- </span>
-</p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../week_2/intro_2.html">
-   Содержание
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../week_2/lecture_2_1.html">
-   Вторая лекция, часть 1
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../week_2/lecture_2_2.html">
-   Вторая лекция, часть 2
-  </a>
- </li>
-</ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Мат. шпаргалка
- </span>
-</p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../cheetsheet/differentials.html">
-   Дифференциалы
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../cheetsheet/forms.html">
-   Квадратичные формы
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../cheetsheet/backprop.html">
-   Бэкпроп
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../cheetsheet/approximations.html">
-   Приближения
-  </a>
- </li>
-</ul>
-
-    </div>
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-</div>
-
-</div>
-
-
-          
-
-
-          
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
-    
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
-            
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
+      <div class="bd-sidebar-primary bd-sidebar">
         
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/week_1/lecture_1_1.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
-    </div>
-</div>
 
-            <!-- Source interaction buttons -->
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
 
-            <!-- Full screen (wrap in <a> to have style consistency -->
+  
 
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
+<a class="navbar-brand logo" href="../table.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Учебник по Микро 1, для ИП, ФЭН ВШЭ</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
 
-            <!-- Launch buttons -->
-
-        </div>
-
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
-            
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id2">
-   Зачем нужны модели
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id3">
-   Что можно делать с моделями
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id4">
-   Полезность (классика)
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id5">
-     Общая идея
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id6">
-     Примеры
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id7">
-   Свойства полезности
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id8">
-     Связь вогнутости и квазивогнутости
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id9">
-     Критика классической модели
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id10">
-   Предпочтения (нео-классика)
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id11">
-     Общая идея
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id12">
-   Рациональность
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id13">
-     Непрерывность и выпуклость
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id14">
-     Прямая связь между полезностями и предпочтениями
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id15">
-   Обратная связь, Теорема Дебре
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id16">
-     Ответ на критику классической модели
-    </a>
-   </li>
-  </ul>
- </li>
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../table.html">
+                    Содержание учебника
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Программа курса</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../week_0/principles.html">Принципы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_0/grades.html">Оценивание</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_0/hours.html">Часы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_0/module%203.html">Структура третьего модуля</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_0/module%204.html">Структура четвертого модуля</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Первая неделя</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="intro_1.html">Содержание</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Первая лекция, часть 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture_1_2.html">Первая лекция, часть 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="seminar_1.html">Семинар 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="homework_0.html">Тренировочное (нулевое) домашнее задание</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Вторая неделя</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../week_2/intro_2.html">Содержание</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_2/lecture_2_1.html">Вторая лекция, часть 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_2/lecture_2_2.html">Вторая лекция, часть 2</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Мат. шпаргалка</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../cheetsheet/differentials.html">Дифференциалы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cheetsheet/forms.html">Квадратичные формы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cheetsheet/backprop.html">Бэкпроп</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cheetsheet/approximations.html">Приближения</a></li>
 </ul>
 
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/week_1/lecture_1_1.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Первая лекция, часть 1</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Зачем нужны модели</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Что можно делать с моделями</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Полезность (классика)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Общая идея</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Примеры</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Свойства полезности</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Связь вогнутости и квазивогнутости</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Критика классической модели</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Предпочтения (нео-классика)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Общая идея</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Рациональность</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Непрерывность и выпуклость</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">Прямая связь между полезностями и предпочтениями</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">Обратная связь, Теорема Дебре</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">Ответ на критику классической модели</a></li>
+</ul>
+</li>
+</ul>
             </nav>
         </div>
     </div>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-            <!-- Table of contents that is only displayed when printing the page -->
-            <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Первая лекция, часть 1</h1>
-                <!-- Table of contents -->
-                <div id="print-main-content">
-                    <div id="jb-print-toc">
-                        
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id2">
-   Зачем нужны модели
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id3">
-   Что можно делать с моделями
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id4">
-   Полезность (классика)
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id5">
-     Общая идея
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id6">
-     Примеры
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id7">
-   Свойства полезности
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id8">
-     Связь вогнутости и квазивогнутости
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id9">
-     Критика классической модели
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id10">
-   Предпочтения (нео-классика)
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id11">
-     Общая идея
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id12">
-   Рациональность
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id13">
-     Непрерывность и выпуклость
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id14">
-     Прямая связь между полезностями и предпочтениями
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id15">
-   Обратная связь, Теорема Дебре
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id16">
-     Ответ на критику классической модели
-    </a>
-   </li>
-  </ul>
- </li>
-</ul>
 
-                        </nav>
-                    </div>
-                </div>
-            </div>
-            
-              <div>
+              
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="id1">
-<h1>Первая лекция, часть 1<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="id2">
-<h2>Зачем нужны модели<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1>Первая лекция, часть 1<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<section id="id2">
+<h2>Зачем нужны модели<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
 <p>В прошлом вы уже сталкивались с разнообразными моделями, например, <em>уравнение Ома</em> <span class="math notranslate nohighlight">\(I = U/R\)</span> описывает связь между током и напряжением, <em>уравнение Ньютона</em> <span class="math notranslate nohighlight">\(F = m a\)</span> описывает связь между силой и ускорением, а <em>кинетическая</em> энергия задается уравнением</p>
 <div class="math notranslate nohighlight">
 \[E_k = \sum_{i=1}^n \frac{m v_i^2}{2}.\]</div>
@@ -487,9 +397,9 @@ const thebe_selector_output = ".output, .cell_output"
 <p><em>По-видимому, какая-то невидимая рука заставляет их принимать участие в таком же распределении предметов, необходимых для жизни, какое существовало бы, если бы земля была распределена поровну между всеми населяющими её людьми. Таким образом, без всякого преднамеренного желания и вовсе того не подозревая, богатый служит общественным интересам и умножению человеческого рода..</em></p>
 <p>Первым таким вымышленным объектом в нашем курсе будет <strong>полезность</strong>. Мы скажем, что у каждого потребителя в голове зашита функция, которая над каждым товаром или действием ставит определенное вещественное число.</p>
 <p>Конечно же, никакой полезности на самом деле нет, как нет тока <span class="math notranslate nohighlight">\(I\)</span>, вектора силы <span class="math notranslate nohighlight">\(F\)</span> и многих других объектов. Однако нам <strong>удобно так строить рассуждения</strong>, как будто они есть.</p>
-</div>
-<div class="section" id="id3">
-<h2>Что можно делать с моделями<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="id3">
+<h2>Что можно делать с моделями<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
 <p>Модели очень полезны, потому что они структурируют наше мышление и позволяют избежать большого количества потенциальных логических ошибок. В зависимости от области применения модели могут быть: теоретические, эконометрические, бихевиористские. Все современное экономическое сообщество говорит между собой, так или иначе, на языке моделей. Вот лишь неполный список того, что с ними можно делать:</p>
 <ul class="simple">
 <li><p>модели можно <strong>критиковать</strong>. К примеру, у вашей модели есть предсказание, которое не подтверждается в данных. В таком случае вы можете пуститься на поиски новой модели, либо пуститься на поиски ошибки в коде.</p></li>
@@ -500,11 +410,11 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p>Наконец, хорошо обоснованные и качественно откалиброванные модели можно использовать для того, чтобы производить <strong>экономический анализ</strong> событий прошлого, а также строить <strong>экономические прогнозы</strong> относительно событий будущего.</p>
 <p>Мы будем время от времени заниматься калибровкой простых моделей.</p>
-</div>
-<div class="section" id="id4">
-<h2>Полезность (классика)<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id5">
-<h3>Общая идея<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="id4">
+<h2>Полезность (классика)<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
+<section id="id5">
+<h3>Общая идея<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
 <p><strong>Модель полезности</strong> обладает высоким уровнем абстракции. В ней есть абстрактные товары и какое-то количество безликих агентов.</p>
 <ul class="simple">
 <li><p><strong>агентов</strong> можно проиндексировать: <span class="math notranslate nohighlight">\(i \in 1,2,3\)</span>…</p></li>
@@ -527,72 +437,72 @@ const thebe_selector_output = ".output, .cell_output"
 <p>P.S. Иногда буквы алфавита <span class="math notranslate nohighlight">\(x, y, z\)</span> будут обозначать “разные точки в пространстве”, а иногда “разные товары в полезности”. Интерпретация букв меняется в зависимости от контекста.</p>
 <div class="proof definition admonition" id="definition-0">
 <p class="admonition-title"><span class="caption-number">Definition 1 </span></p>
-<div class="definition-content section" id="proof-content">
+<section class="definition-content" id="proof-content">
 <p>Формально <strong>классическая  (утилитарная) модель</strong> - это пара: множество альтернатив <span class="math notranslate nohighlight">\(X \subset \mathbb{R}^n_{+}\)</span> и полезность <span class="math notranslate nohighlight">\(U: X \to \mathbb{R}\)</span>. Никаких дополнительных аксиом не требуется.</p>
-</div>
+</section>
 </div><p>Калибровка модели, как правило, заключается в выборе конкретной функции полезности. Предсказание модели - это оптимальная комбинация товаров в зависимости от различных предложенных <span class="math notranslate nohighlight">\(X\)</span>.</p>
-</div>
-<div class="section" id="id6">
-<h3>Примеры<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="id6">
+<h3>Примеры<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
 <p>Одним из важных навыков в этом курсе будет умение читать текстовое описание задачи, выделять ключевые слова и формулировать абстрактную задачу оптимизации или поиска равновесия.</p>
 <div class="proof example admonition" id="example-1">
 <p class="admonition-title"><span class="caption-number">Example 1 </span> (Яблоки и груши)</p>
-<div class="example-content section" id="proof-content">
+<section class="example-content" id="proof-content">
 <p>У Пети есть 100 рублей. Он может купить яблоки по цене 20 рублей за штуку либо груши по цене 50 рублей за штуку. Петя получает полезность 2 за каждое яблоко и 3 за каждую грушу, но не получает никакой полезности за оставшиеся деньги. Попробуем записать это формально:</p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(X = \{(x, y) \in  \mathbb{N}^2_{+}: 20 x + 50 y \leqslant 100 \}\)</span></p></li>
 <li><p><span class="math notranslate nohighlight">\(U(x, y) = 2x + 3y\)</span></p></li>
 </ul>
-</div>
+</section>
 </div><div class="proof example admonition" id="example-2">
 <p class="admonition-title"><span class="caption-number">Example 2 </span> (Учеба и вечеринки)</p>
-<div class="example-content section" id="proof-content">
+<section class="example-content" id="proof-content">
 <p>У Кати есть 24 часа в сутки, из которых она должна как минимум 8 часов поспать, a оставшиеся часы входят в полезность вида Кобба-Дугласа с одинаковыми весами, то есть, учеба и вечеринки в полезности умножаются под корнем.</p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(X = \{(x, y, z) \in  \mathbb{N}^3_{+}: x + y + z \leqslant 24 \}\)</span></p></li>
 <li><p><span class="math notranslate nohighlight">\(U(x, y, z) = \mathbb{I}(x \geqslant 8)\cdot y^{1/2}z^{1/2}\)</span></p></li>
 </ul>
 <p>Мы поговорим о том, что такое функция Кобба-Дугласа подробнее на следующей лекции.</p>
-</div>
+</section>
 </div><div class="proof example admonition" id="example-3">
 <p class="admonition-title"><span class="caption-number">Example 3 </span> (Полезность от денег)</p>
-<div class="example-content section" id="proof-content">
+<section class="example-content" id="proof-content">
 <p>У Саши есть 10,000,000 рублей, которые он может вложить в биткойн по курсу 1,000,000:1 или этериум по курсу 1,000,000:2. Саша ожидает, что через год рубль подешевеет на 10%, биткойн подорожает на 50%, а этериум подорожает на 100%. Опишите задачу составления оптимального инвестиционного портфеля, где полезность меряется в рублях</p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(X = \{(x, y, z) \in  \mathbb{N}^3_{+}: x + 10^6 (y + 2 z) \leqslant 10^7 \}\)</span></p></li>
 <li><p><span class="math notranslate nohighlight">\(U(x, y, z) = .9 x + 1.5 y + 2 z\)</span></p></li>
 </ul>
-</div>
-</div></div>
-</div>
-<div class="section" id="id7">
-<h2>Свойства полезности<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+</section>
+</div></section>
+</section>
+<section id="id7">
+<h2>Свойства полезности<a class="headerlink" href="#id7" title="Link to this heading">#</a></h2>
 <p>У полезностей в <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span> часто бывает несколько (если не все) из нижеперечисленных свойств. Пусть <span class="math notranslate nohighlight">\(a, b\)</span> - это какие-то комбинации товаров из множества альтернатив <span class="math notranslate nohighlight">\(X \subset \mathbb{R}^n\)</span>.</p>
 <p>Мы начнем с двух эквивалентных определений непрерывности.</p>
 <div class="proof definition admonition" id="definition-4">
 <p class="admonition-title"><span class="caption-number">Definition 2 </span></p>
-<div class="definition-content section" id="proof-content">
+<section class="definition-content" id="proof-content">
 <p>Полезность <span class="math notranslate nohighlight">\(U\)</span> <strong>непрерывна</strong> в <span class="math notranslate nohighlight">\(X\)</span>, если для любого <span class="math notranslate nohighlight">\(x \in X\)</span> множества <span class="math notranslate nohighlight">\(L_{+}(x)\)</span> и <span class="math notranslate nohighlight">\(L_{-}(x)\)</span> замкнуты, где</p>
 <div class="math notranslate nohighlight">
 \[ L_{+}(x) = \{y \in X: U(y) \geqslant U(x)\}, \quad L_{-}(x) = \{y \in X: U(y) \leqslant U(x)\}\]</div>
-</div>
+</section>
 </div><p>Описанные выше множества <span class="math notranslate nohighlight">\(L_{+}(x)\)</span> (или <span class="math notranslate nohighlight">\(L_{-}(x)\)</span>) - это подмножества допустимых альтернатив, которые не хуже (или не лучше), чем сам <span class="math notranslate nohighlight">\(x\)</span>. В литературе они называются верхними (нижними) Лебеговыми множествами, см. иллюстрацию.</p>
 <a class="reference internal image-reference" href="../_images/lebeg_sets.png"><img alt="Верхние и нижние Лебеговы множества" class="align-center" src="../_images/lebeg_sets.png" style="width: 400px;" /></a>
 <div class="proof definition admonition" id="definition-5">
 <p class="admonition-title"><span class="caption-number">Definition 3 </span></p>
-<div class="definition-content section" id="proof-content">
+<section class="definition-content" id="proof-content">
 <p>Полезность <span class="math notranslate nohighlight">\(U\)</span> <strong>непрерывна</strong> в <span class="math notranslate nohighlight">\(X\)</span>, если для любого <span class="math notranslate nohighlight">\(\varepsilon &gt; 0\)</span> существует <span class="math notranslate nohighlight">\(\delta &gt;0\)</span> такой, что для любых <span class="math notranslate nohighlight">\(x, y \in X\)</span> верно, что:</p>
 <div class="math notranslate nohighlight">
 \[||x - y|| &lt; \delta \quad \Rightarrow \quad ||U(x) - U(y)|| &lt; \varepsilon\]</div>
-</div>
+</section>
 </div><p>Большую роль в истории физики и математики играют выпуклые и вогнутые функции. Например, в физике твердых тел все объекты минимизирует свою энергию. Заметим, что кинетическая энергия выпуклая, то есть, энергия с минусом - вогнутая функция. Следовательно, все в физике максимизирует какую-то вогнутую функцию. Естественным образом это понятие появилось и в экономике.</p>
 <div class="proof definition admonition" id="definition-6">
 <p class="admonition-title"><span class="caption-number">Definition 4 </span></p>
-<div class="definition-content section" id="proof-content">
+<section class="definition-content" id="proof-content">
 <p>Полезность <span class="math notranslate nohighlight">\(U\)</span> <strong>вогнута</strong>, если для любых <span class="math notranslate nohighlight">\(x, y \in X\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[ \forall \alpha \in (0,1): U(\alpha x + (1-\alpha) y)) \geqslant \alpha U(x) + (1-\alpha) U(y)\]</div>
-</div>
+</section>
 </div><p>Свойство вогнутости очень сильно опирается на геометрическую форму полезности, см. иллюстрацию.</p>
 <a class="reference internal image-reference" href="../_images/concave.png"><img alt="Вогнутая функция" class="align-center" src="../_images/concave.png" style="width: 400px;" /></a>
 <p>Грубо говоря, если вы возьмете две точки на поверхности, соответствующей вогнутой полезности, то соединяющая их хорда пройдет “под” поверхностью. Другими словами, полезность в усредненной точке меньше, чем усредненная полезность.</p>
@@ -600,18 +510,18 @@ const thebe_selector_output = ".output, .cell_output"
 <p>У квазивогнутости, как у непрерывности, есть две версии, которые почти (но не совсем) эквивалентны друг другу.</p>
 <div class="proof definition admonition" id="definition-7">
 <p class="admonition-title"><span class="caption-number">Definition 5 </span></p>
-<div class="definition-content section" id="proof-content">
+<section class="definition-content" id="proof-content">
 <p>Полезность <span class="math notranslate nohighlight">\(U\)</span> <strong>квазивогнутa</strong> в <span class="math notranslate nohighlight">\(X\)</span>, если для любого <span class="math notranslate nohighlight">\(x \in X\)</span> множество <span class="math notranslate nohighlight">\(L_{+}(x)\)</span> выпукло, то есть, оно содержит все свои хорды.</p>
-</div>
+</section>
 </div><p>Чтобы обвинить функцию в неквазивогнутости, достаточно предъявить один <span class="math notranslate nohighlight">\(L_{+}(x)\)</span> и продемонстрировать, что какая-то хорда вылезает за его границы, см. иллюстрацию.</p>
 <a class="reference internal image-reference" href="../_images/not_quasi.png"><img alt="Нарушение квазивогнутости" class="align-center" src="../_images/not_quasi.png" style="width: 400px;" /></a>
 <div class="proof definition admonition" id="definition-8">
 <p class="admonition-title"><span class="caption-number">Definition 6 </span></p>
-<div class="definition-content section" id="proof-content">
+<section class="definition-content" id="proof-content">
 <p>Полезность <span class="math notranslate nohighlight">\(U\)</span> <strong>квазивогнута</strong> в <span class="math notranslate nohighlight">\(X\)</span>, если для любых <span class="math notranslate nohighlight">\(x, y \in X\)</span> их линейная комбинация не хуже, чем худшая из двух:</p>
 <div class="math notranslate nohighlight">
 \[ \forall \alpha \in (0,1): U(\alpha x + (1-\alpha) y)) \geqslant \min(U(x), U(y))\]</div>
-</div>
+</section>
 </div><p>P.S. Иногда я буду делать приставку “строго”, это значит, что либо множество строго выпукло, либо неравенство строгое. Смотрите на контекст.</p>
 <!-- ### Вогнутость против квазивогнутости
 
@@ -632,21 +542,21 @@ const thebe_selector_output = ".output, .cell_output"
 **Квазивогнутость означает**  , что с точки зрения риска полезность от средневзвешенного портфеля выше, чем средняя взвешенная полезность этих двух портфелей, если эти два портфеля имели одинаковый риск.
 
 То есть квазивогнутость - более слабое условие. -->
-<div class="section" id="id8">
-<h3>Связь вогнутости и квазивогнутости<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<section id="id8">
+<h3>Связь вогнутости и квазивогнутости<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
 <p>Оба термина - вогнутость и квазивогнутость - означают либо <strong>любовь агентов к разнообразию</strong>, либо <strong>комплементарность товаров</strong>, либо <strong>боязнь риска</strong>, но вогнутость однозначно сильнее, чем квазивогнутость. Докажем этот простой факт:</p>
 <div class="proof property admonition" id="property-9">
 <p class="admonition-title"><span class="caption-number">Property 1 </span></p>
-<div class="property-content section" id="proof-content">
+<section class="property-content" id="proof-content">
 <p>Из вогнутости следует квазивогнутость</p>
-</div>
-</div><details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Достаточно выписать цепочку неравенств:<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
+</section>
+</div><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Достаточно выписать цепочку неравенств:<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
 <div class="math notranslate nohighlight">
 \[\begin{split} 
 \begin{align*} 
@@ -657,30 +567,30 @@ const thebe_selector_output = ".output, .cell_output"
 \end{split}\]</div>
 </div>
 </details><p>Однако неверно, что из квазивогнутости обязательно следует вогнутость. Можно привести огромное количество контрпримеров.</p>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Например, функция, напоминающая крышу пагоды: <div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Например, функция, напоминающая крышу пагоды:<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
 <div class="math notranslate nohighlight">
 \[ U(x) =(|x|-1)^2, \quad x \in [-1,1]\]</div>
-<p class="card-text">является квазивогнутой, но не вогнутой.</p>
+<p class="sd-card-text">является квазивогнутой, но не вогнутой.</p>
 </div>
 </details><p>Следует отметить, что в большинстве определений, множество альтернатив <span class="math notranslate nohighlight">\(X\)</span> предполагается выпуклым, чтобы имело смысл говорить о взвешенных средних. Это не существенная деталь, а просто математический формализм. На всякий случай напомним себе определение выпуклого множества.</p>
 <div class="proof definition admonition" id="definition-10">
 <p class="admonition-title"><span class="caption-number">Definition 7 </span></p>
-<div class="definition-content section" id="proof-content">
+<section class="definition-content" id="proof-content">
 <p>Mножество <span class="math notranslate nohighlight">\(X\)</span> <strong>выпукло</strong>, если для любых <span class="math notranslate nohighlight">\(x, y \in X\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[ \forall \alpha \in (0,1): \alpha x + (1-\alpha) y \in X\]</div>
-</div>
+</section>
 </div><p>То есть выпуклое множество содержит все свои хорды, а вот вогнутых множеств вообще не бывает.</p>
 <p>P.S. Если множество <span class="math notranslate nohighlight">\(X\)</span> выпукло, а функция <span class="math notranslate nohighlight">\(U\)</span> вогнута или квазивогнута, то такая задача называется выпуклой. Выпуклые задачи имеют упрощенный алгоритм решения, я к этому вернусь ближе к концу лекции.</p>
-</div>
-<div class="section" id="id9">
-<h3>Критика классической модели<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="id9">
+<h3>Критика классической модели<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
 <p>Тут начинается самое интересное. Дело в том, что для любого строго монотонного преобразования <span class="math notranslate nohighlight">\(\varphi\)</span> две полезности: <span class="math notranslate nohighlight">\(U(x)\)</span> и <span class="math notranslate nohighlight">\(\varphi(U(x))\)</span> - производят идентичное поведение у потребителей.</p>
 <p>Довольно легко генерировать примеры идентичных функций, используя такие монотонные преобразования, как <span class="math notranslate nohighlight">\(\varphi(z) = z + c, cz , \log z\)</span>. Все ниже перечисленные полезности эквивалентны в этом смысле:</p>
 <div class="math notranslate nohighlight">
@@ -697,9 +607,9 @@ const thebe_selector_output = ".output, .cell_output"
 <p>Однако не все так плохо. Квазивогнутость сохраняется при таких трансформациях.</p>
 <div class="proof property admonition" id="property-11">
 <p class="admonition-title"><span class="caption-number">Property 2 </span></p>
-<div class="property-content section" id="proof-content">
+<section class="property-content" id="proof-content">
 <p>Если <span class="math notranslate nohighlight">\(U(x)\)</span> квазивогнута, то <span class="math notranslate nohighlight">\(\varphi(U(x))\)</span> тоже квазивогнута для любого строго монотонного преобразования <span class="math notranslate nohighlight">\(\varphi\)</span>.</p>
-</div>
+</section>
 </div><p>Доказательство этого факта легко выписывается, используя любое из двух определений, если знать следующие свойства:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split} \begin{align*}
@@ -711,17 +621,17 @@ U(x) \geqslant U(y) \quad \Leftrightarrow \quad \varphi(U(x)) \geqslant \varphi(
 <p>Более того, если начать с выпуклой функции и начать ее монотонно деформировать, то мы можем гарантировать квазивогнутость (но не вогнутость).</p>
 <div class="proof property admonition" id="property-12">
 <p class="admonition-title"><span class="caption-number">Property 3 </span></p>
-<div class="property-content section" id="proof-content">
+<section class="property-content" id="proof-content">
 <p>Если <span class="math notranslate nohighlight">\(U(x)\)</span> вогнута, то <span class="math notranslate nohighlight">\(\varphi(U(x))\)</span> квазивогнута для любого строго монотонного преобразования <span class="math notranslate nohighlight">\(\varphi\)</span>.</p>
-</div>
+</section>
 </div><p>Доказательство этого факта тривиально следует из того, что вогнутая функция уже квазивогнута, и предыдущего утверждения. Все это дает надежду на то, что должен быть способ построить модель, инвариантную к монотонным преобразованиям.</p>
 <p>P.S. Конечно, можно сказать, что вместо конкретной полезности у агента мы рассматриваем класс эквивалентности по отношению к трансформациям <span class="math notranslate nohighlight">\(\varphi\)</span>. Однако это очень абстрактно.</p>
-</div>
-</div>
-<div class="section" id="id10">
-<h2>Предпочтения (нео-классика)<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id11">
-<h3>Общая идея<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+</section>
+</section>
+<section id="id10">
+<h2>Предпочтения (нео-классика)<a class="headerlink" href="#id10" title="Link to this heading">#</a></h2>
+<section id="id11">
+<h3>Общая идея<a class="headerlink" href="#id11" title="Link to this heading">#</a></h3>
 <p>Снова в вакууме у нас есть альтернативы и агенты. Однако вместо полезности у каждого агента в голове зашито <strong>бинарное отношение</strong> <span class="math notranslate nohighlight">\(\succcurlyeq\)</span>, называемое (слабым) <strong>предпочтением</strong>. Это довольно сложная штука.</p>
 <p>Если полезность <span class="math notranslate nohighlight">\(U\)</span> действовала из <span class="math notranslate nohighlight">\(X\)</span> в <span class="math notranslate nohighlight">\(\mathbb{R}\)</span>, то предпочтение <span class="math notranslate nohighlight">\(\succcurlyeq\)</span> действует из <span class="math notranslate nohighlight">\(X^2\)</span> в <span class="math notranslate nohighlight">\(\{0,1\}\)</span>. То есть, для каждой упорядоченной пары альтернатив <span class="math notranslate nohighlight">\(x, y \in X\)</span> агент знает, (слабо )предпочитает ли он <span class="math notranslate nohighlight">\(x\)</span> по отношению к <span class="math notranslate nohighlight">\(y\)</span> или нет. Вернее, <span class="math notranslate nohighlight">\(x  \succcurlyeq y\)</span> интерпретируется как “x не хуже, чем y”.</p>
 <p>Формально <span class="math notranslate nohighlight">\(\succcurlyeq\)</span> задается таблицей, например, для трех альтернатив:</p>
@@ -742,14 +652,14 @@ z &amp; 0 &amp; 1 &amp; 0\\
 <span class="math notranslate nohighlight">\(x \succ y\)</span> означает что <span class="math notranslate nohighlight">\(x \succcurlyeq y\)</span> но не <span class="math notranslate nohighlight">\(x \sim y\)</span>
 <span class="math notranslate nohighlight">\(x \prec y\)</span> означает что <span class="math notranslate nohighlight">\(x \preccurlyeq y\)</span> но не <span class="math notranslate nohighlight">\(x \sim y\)</span></p>
 <p>Получаются пять интуитивных отношений сильного, слабого предпочтений и безразличия. Однако какие попало матрицы писать не стоит.</p>
-</div>
-</div>
-<div class="section" id="id12">
-<h2>Рациональность<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="id12">
+<h2>Рациональность<a class="headerlink" href="#id12" title="Link to this heading">#</a></h2>
 <p>Ясно, что бинарные отношения, как они есть, - это слишком абстрактно. Попробуем добавить немного структуры.</p>
 <div class="proof definition admonition" id="definition-13">
 <p class="admonition-title"><span class="caption-number">Definition 8 </span></p>
-<div class="definition-content section" id="proof-content">
+<section class="definition-content" id="proof-content">
 <p>Предпочтения <strong>рациональны</strong> если выполнены следующие три свойства:</p>
 <ul class="simple">
 <li><p>для любыx альтернатив <span class="math notranslate nohighlight">\(x, y \in X\)</span>, хотя бы <span class="math notranslate nohighlight">\(x \succcurlyeq y\)</span> либо <span class="math notranslate nohighlight">\(y \succcurlyeq x\)</span>.</p></li>
@@ -758,7 +668,7 @@ z &amp; 0 &amp; 1 &amp; 0\\
 </ul>
 <div class="math notranslate nohighlight">
 \[x \succcurlyeq y, y \succcurlyeq z \quad \Rightarrow \quad x \succcurlyeq z\]</div>
-</div>
+</section>
 </div><p>Последнее свойство - самое важное, и оно называется <strong>транзитивностью</strong>. Рациональность накладывают структуру на то, как может заполняться матрица. Попробуйте дозаполнить следующую матрицу так, чтобы предпочтения были рациональными:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split} 
@@ -773,44 +683,44 @@ z &amp; 0 &amp; 1 &amp; *\\
 <p>Ясно, что на диагонали всегда обязаны стоять единички. Также, если где-то вне диагонали стоит ноль, то на симметричной относительно диагонали позиции обязательно стоит единица.</p>
 <div class="proof definition admonition" id="definition-14">
 <p class="admonition-title"><span class="caption-number">Definition 9 </span></p>
-<div class="definition-content section" id="proof-content">
+<section class="definition-content" id="proof-content">
 <p>Формально <strong>неоклассическая модель</strong> (для одного агента) - это пара: множество альтернатив <span class="math notranslate nohighlight">\(X \subset \mathbb{R}^n_{+}\)</span> и предпочтения <span class="math notranslate nohighlight">\(\succcurlyeq: X^2 \to \{0,1\}\)</span>. Предпочтения должны быть рациональные.</p>
-</div>
-</div><div class="section" id="id13">
-<h3>Непрерывность и выпуклость<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
+</section>
+</div><section id="id13">
+<h3>Непрерывность и выпуклость<a class="headerlink" href="#id13" title="Link to this heading">#</a></h3>
 <p>Переписав Лебеговы множества на языке предпочтений, мы получаем определение непрерывности предпочтений.</p>
 <div class="proof definition admonition" id="definition-15">
 <p class="admonition-title"><span class="caption-number">Definition 10 </span></p>
-<div class="definition-content section" id="proof-content">
+<section class="definition-content" id="proof-content">
 <p>Предпочтения <span class="math notranslate nohighlight">\(\succcurlyeq\)</span> <strong>непрерывны</strong> в <span class="math notranslate nohighlight">\(X\)</span>, если для любого <span class="math notranslate nohighlight">\(x \in X\)</span> множества <span class="math notranslate nohighlight">\(L_{+}(x)\)</span> и <span class="math notranslate nohighlight">\(L_{-}(x)\)</span> замкнуты, где</p>
 <div class="math notranslate nohighlight">
 \[
 L_{+}(x) = \{y \in X: y \succcurlyeq x\}, \quad L_{-}(x) = \{y \in X: y \preccurlyeq x\}
 \]</div>
-</div>
+</section>
 </div><p>И совершенно аналогично мы переносим квазивогнутость в мир предпочтений, однако, вопреки логике, термин квазиВОГНутости полезности превращается в ВЫПУклость предпочтений.</p>
 <div class="proof definition admonition" id="definition-16">
 <p class="admonition-title"><span class="caption-number">Definition 11 </span></p>
-<div class="definition-content section" id="proof-content">
+<section class="definition-content" id="proof-content">
 <p>Предпочтения <span class="math notranslate nohighlight">\(\succcurlyeq\)</span> <strong>выпуклы</strong> в <span class="math notranslate nohighlight">\(X\)</span>, если для любого <span class="math notranslate nohighlight">\(x \in X\)</span> множество <span class="math notranslate nohighlight">\(L_{+}(x)\)</span> выпукло, то есть оно содержит все свои хорды.</p>
-</div>
+</section>
 </div><p>Парадокс в том, что вогнутые полезности - квазивогнутые, которые, в свою очередь, ассоциированы с выпуклыми предпочтениями. А выпуклые полезности с выпуклыми предпочтениями вообще никак не связаны и даже прямо противоположны им. Это просто ужасный выбор слов, и он вызывает огромную путаницу. Постарайтесь запомнить, что</p>
 <ul class="simple">
 <li><p>хорошие множества выпуклы</p></li>
 <li><p>хорошие полезности (квази) вогнуты</p></li>
 <li><p>хорошие предпочтения выпуклы, потому что их <span class="math notranslate nohighlight">\(L_{+}\)</span> выпуклы</p></li>
 </ul>
-</div>
-<div class="section" id="id14">
-<h3>Прямая связь между полезностями и предпочтениями<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="id14">
+<h3>Прямая связь между полезностями и предпочтениями<a class="headerlink" href="#id14" title="Link to this heading">#</a></h3>
 <p>Предположим, что у вас уже есть откалиброванная полезность. Можно ли что-то сказать по поводу предпочтений? Если подумать, то окажется, что предпочтения полностью заданы следующим образом:</p>
 <div class="proof definition admonition" id="definition-17">
 <p class="admonition-title"><span class="caption-number">Definition 12 </span></p>
-<div class="definition-content section" id="proof-content">
+<section class="definition-content" id="proof-content">
 <p>Будем говорить, что <span class="math notranslate nohighlight">\(U\)</span> <strong>представляет</strong> <span class="math notranslate nohighlight">\(\succcurlyeq\)</span>, если</p>
 <div class="math notranslate nohighlight">
 \[ U(x) \geqslant U(y) \quad \Leftrightarrow \quad  x \succcurlyeq y.\]</div>
-</div>
+</section>
 </div><p>Это определение должно быть понятно на интуитивном уровне. Также должно быть понятно, что эти предпочтения будут рациональны, поскольку это просто свойства вещественных чисел:</p>
 <ul class="simple">
 <li><p>для любыx <span class="math notranslate nohighlight">\(U(x), U(y) \in \mathbb{R}\)</span>, либо <span class="math notranslate nohighlight">\(U(x) \geqslant U(y)\)</span> либо <span class="math notranslate nohighlight">\(U(y) \leqslant U(x)\)</span>.</p></li>
@@ -819,42 +729,42 @@ L_{+}(x) = \{y \in X: y \succcurlyeq x\}, \quad L_{-}(x) = \{y \in X: y \preccur
 </ul>
 <div class="math notranslate nohighlight">
 \[ U(x) \geqslant U(y), U(y) \geqslant U(z) \quad \Rightarrow \quad U(x) \geqslant U(z)\]</div>
-</div>
-</div>
-<div class="section" id="id15">
-<h2>Обратная связь, Теорема Дебре<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="id15">
+<h2>Обратная связь, Теорема Дебре<a class="headerlink" href="#id15" title="Link to this heading">#</a></h2>
 <p>Предположим, что у вас уже есть откалиброванные рациональные предпочтения. Можно ли восстановить по ним хотя бы одну непротиворечивую полезность?</p>
 <p>Оказывается, что в простых случаях, действительно, можно.</p>
 <div class="proof property admonition" id="property-18">
 <p class="admonition-title"><span class="caption-number">Property 4 </span></p>
-<div class="property-content section" id="proof-content">
+<section class="property-content" id="proof-content">
 <p>Если <span class="math notranslate nohighlight">\(X\)</span> конечно, то для любых рациональных предпочтений <span class="math notranslate nohighlight">\(\succcurlyeq\)</span> существует полезность <span class="math notranslate nohighlight">\(U\)</span>, представляющая <span class="math notranslate nohighlight">\(\succcurlyeq\)</span>.</p>
-</div>
+</section>
 </div><p>Когда <span class="math notranslate nohighlight">\(X\)</span> конечное, то можно решить эту задачу алгоритмически. На <span class="math notranslate nohighlight">\(i\)</span> ом шаге алгоритма вы ищите минимальный (с точки зрения <span class="math notranslate nohighlight">\(\succcurlyeq\)</span>) элемент, выставляете ему полезность <span class="math notranslate nohighlight">\(i\)</span> и удаляете. На следующем шаге находите минимальный из оставшихся, выставляете ему полезность <span class="math notranslate nohighlight">\(i+1\)</span>, снова удаляете, и т.д. Если минимальных элементов несколько, даете им одинаковую полезность.</p>
 <div class="proof property admonition" id="property-19">
 <p class="admonition-title"><span class="caption-number">Property 5 </span></p>
-<div class="property-content section" id="proof-content">
+<section class="property-content" id="proof-content">
 <p>Если <span class="math notranslate nohighlight">\(X\)</span> счетно, то для любых рациональных предпочтений <span class="math notranslate nohighlight">\(\succcurlyeq\)</span>, таких что для каждого элемента <span class="math notranslate nohighlight">\(x \in X\)</span> есть конечное число элементов не хуже него, существует полезность <span class="math notranslate nohighlight">\(U\)</span>, представляющая <span class="math notranslate nohighlight">\(\succcurlyeq\)</span>.</p>
-</div>
+</section>
 </div><p>Доказательство аналогично предыдущему утверждению, только здесь можно сразу назначить полезность <span class="math notranslate nohighlight">\(U(x)\)</span> равную числу элементов не хуже <span class="math notranslate nohighlight">\(x\)</span>, и все.</p>
 <p>В случае когда пространство альтернатив достаточно мощное, нам придется потребовать непрерывность предпочтений. Это очень сложная Теорема, я не буду ее доказывать. Но на семинаре я попрошу, чтобы вам разобрали контрпример предпочтений, которые не являются непрерывными, чтобы вы поняли существенность этого ограничения.</p>
 <div class="proof theorem remark admonition" id="theorem-20">
 <p class="admonition-title"><span class="caption-number">Theorem 1 </span> (Дебре)</p>
-<div class="theorem-content section" id="proof-content">
+<section class="theorem-content" id="proof-content">
 <p>Если <span class="math notranslate nohighlight">\(X\subset \mathbb{R}^n\)</span> связно и сепарабельно, то для любых рациональных и непрерывных предпочтений <span class="math notranslate nohighlight">\(\succcurlyeq\)</span> существует непрерывная полезность <span class="math notranslate nohighlight">\(U\)</span>, представляющая <span class="math notranslate nohighlight">\(\succcurlyeq\)</span>.</p>
-</div>
+</section>
 </div><p>Связность и сепарабельность - это скучные технические свойства <span class="math notranslate nohighlight">\(X\)</span>, которые все равно выполняются во всех моделях. Грубо говоря, <span class="math notranslate nohighlight">\(X\)</span> не может быть “фракталом” или пористой как “губка”.</p>
 <p>Однако не стоит забывать, что, если предпосылки теоремы не выполнены, это еще не значит, что полезности нет. Она может случайно сложиться, но это скорее исключение из правила.</p>
-<div class="section" id="id16">
-<h3>Ответ на критику классической модели<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
+<section id="id16">
+<h3>Ответ на критику классической модели<a class="headerlink" href="#id16" title="Link to this heading">#</a></h3>
 <p>Напомним, что критика утилитарного подхода заключается в неединственности полезности. Это очень болезненное свойство, сулящее постоянные проблемы, если с ним ничего не делать.</p>
 <p>Мы продемонстрировали, что из любой полезности можно вывести рациональные предпочтения, а из любых непрерывных и рациональных предпочтений - непрерывную полезность.</p>
 <p>Получается, что полезности и предпочтения - это, по большому счету, одно и то же. Вернее, предпочтения эти и есть тот самый класс эквивалентности полезностей, который надо себе воображать.</p>
 <p>Выбор представителя внутри класса эквивалентности - дело вкуса. Как только вы видите ту или иную полезность, можно спокойно применять к ним монотонные преобразования, отключив при этом мозг. В частности, у вас может быть больше развита техника работы с полезностью <span class="math notranslate nohighlight">\(2 \log x + 3 \log y\)</span>, чем с полезностью <span class="math notranslate nohighlight">\(x^2 y^3.\)</span></p>
 <p>Более того, удачно наложив монотонное преобразование, можно случайно сделать функцию вогнутой, хотя она была изначально всего лишь квазивогнута.</p>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -868,7 +778,7 @@ L_{+}(x) = \{y \in X: y \succcurlyeq x\}, \quad L_{-}(x) = \{y \in X: y \preccur
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            name: "python3",
             path: "./week_1"
         },
         predefinedOutput: true
@@ -876,44 +786,127 @@ L_{+}(x) = \{y \in X: y \succcurlyeq x\}, \quad L_{-}(x) = \{y \in X: y \preccur
     </script>
     <script>kernelName = 'python3'</script>
 
-              </div>
+                </article>
               
-            
-                <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="intro_1.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Содержание</p>
-        </div>
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="intro_1.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Содержание</p>
+      </div>
     </a>
-    <a class='right-next' id="next-link" href="lecture_1_2.html" title="next page">
-    <div class="prev-next-info">
+    <a class="right-next"
+       href="lecture_1_2.html"
+       title="next page">
+      <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
         <p class="prev-next-title">Первая лекция, часть 2</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
+                </footer>
+              
+            </div>
             
-        </div>
-    </div>
-    <footer class="footer">
-  <p>
-    
-      By Паша Андреянов<br/>
-    
-        &copy; Copyright 2021.<br/>
-  </p>
-</footer>
-</main>
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
 
-      </div>
-    </div>
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Зачем нужны модели</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Что можно делать с моделями</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Полезность (классика)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Общая идея</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Примеры</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Свойства полезности</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Связь вогнутости и квазивогнутости</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Критика классической модели</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Предпочтения (нео-классика)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Общая идея</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Рациональность</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Непрерывность и выпуклость</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">Прямая связь между полезностями и предпочтениями</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">Обратная связь, Теорема Дебре</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">Ответ на критику классической модели</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
   
-  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <div class="footer-item">
+    
+<p class="component-author">
+By Паша Андреянов
+</p>
 
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
   </body>
 </html>
