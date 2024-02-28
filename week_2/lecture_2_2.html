@@ -375,10 +375,6 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Полезность Кобба-Дугласа</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Альтернативные формы</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Лагранжиан</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Условия Первого Порядка</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Спросы</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Косвенная полезность</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Геометрический анализ</a></li>
 </ul>
@@ -427,23 +423,19 @@ document.write(`
 \[Q(L, K) = L^{\alpha} K^{1-\alpha}.\]</div>
 <p>Коэффициент <span class="math notranslate nohighlight">\(\alpha = 0.73\)</span> был откалиброван на производственном секторе США в 1920 году. Считалось, что (маржинальный) вклад труда и капитала в производство примерно 1:3, мы вернемся к этому утверждению чуть позже.</p>
 <p>Аналитические свойства этой функции оказались настолько удобными, что она проникла также в теорию роста (модель Солоу) и теорию потребителя (материал наших лекции) в виде соответствующей функции полезности:</p>
+<div class="docutils">
 <p>где <span class="math notranslate nohighlight">\(x, y\)</span> - это некоторые два товара.</p>
-<section id="id3">
-<h3>Альтернативные формы<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<h3 class="rubric" id="id3">Альтернативные формы</h3>
 <p>Вспомним, что монотонные преобразования полезности не меняют поведение потребителя. Тогда можно применить логарифм и получить:</p>
 <div class="math notranslate nohighlight">
 \[ U(x, y) = \alpha \log x + (1-\alpha) \log y, \quad \alpha \in (0,1).\]</div>
 <p>Заметим, что эта функция вогнута! Достаточно посмотреть на Гессиан.</p>
-</section>
-<section id="id4">
-<h3>Лагранжиан<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+<h3 class="rubric" id="id4">Лагранжиан</h3>
 <p>Выпишем Лагранжиан:</p>
 <div class="math notranslate nohighlight">
 \[ \mathcal{L} = \alpha \log x + (1-\alpha) \log y - \lambda (px + qy -I).\]</div>
 <p>Заметим, что я выставляю знак минус так, чтобы у множителя Лагранжа была интерпретация теневой цены выхода за бюджетное ограничение. Это нам пригодится в следующей лекции, а сейчас просто постарайтесь запомнить.</p>
-</section>
-<section id="id5">
-<h3>Условия Первого Порядка<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
+<h3 class="rubric" id="id5">Условия Первого Порядка</h3>
 <p>Бездумно выпишем три уравнения:</p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(\mathcal{L}'_x = \alpha/ x - \lambda p = 0\)</span></p></li>
@@ -467,17 +459,15 @@ document.write(`
 <div class="math notranslate nohighlight">
 \[ s_x = \alpha, \quad s_y = 1 - \alpha,\]</div>
 <p>откуда спрос уже совсем легко вывести.</p>
-</section>
-<section id="id6">
-<h3>Спросы<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
+<h3 class="rubric" id="id6">Спросы</h3>
 <p>Пусть полезность имеет следующий вид:</p>
 <div class="math notranslate nohighlight">
 \[U(x,y,z) = \alpha \log x + \beta \log y + \gamma \log z,\]</div>
 <p>а цены равны <span class="math notranslate nohighlight">\(p, q, r\)</span> соответственно.</p>
+</div>
 <p>Обладая явной формой спросов можно легко прийти к следующему выводу:</p>
 <p>Действительно, удивительным свойством Кобба-Дугласа является то, что спросы не зависят от цен других товаров. То есть они где-то между субститутами и комплементами. Еще более удивительным является то, что доли бюджета потраченные на каждый товар постоянны.</p>
 <p><em>Вопрос на понимание: если бы у вас были данные, скажем, от банка, где для каждого пользователя были бы указано сколько они потратили в квартал на рестораны, шопинг и  коммунальные услуги, как бы вы откалибровали модель Кобба-Дугласа?</em></p>
-</section>
 <section id="id7">
 <h3>Косвенная полезность<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
 <p>Нампомним, что косвенная полезность чувствительна к монотонным преобразованиям, поэтому тут важно какая именно спецификация была изначально дана в задаче. Для простоты давайте считать, что это спецификация в логарифмах.</p>
@@ -729,10 +719,6 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Полезность Кобба-Дугласа</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Альтернативные формы</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Лагранжиан</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Условия Первого Порядка</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Спросы</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Косвенная полезность</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Геометрический анализ</a></li>
 </ul>
