@@ -59,6 +59,8 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://unpkg.com/mermaid@10.2.0/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'week_1/lecture_1_2';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -415,7 +417,15 @@ document.write(`
 </ul>
 <p>Если вдобавок к этому область определения не только компакт, но и выпуклое множество, то, во-первых, решение всегда единственное, а во-вторых, условия второго порядка можно не проверять, поскольку они (или что-то очень похожее на них) выполнены глобально.</p>
 <p>Очень важно уметь, глядя на задачу, определять выпуклая она или нет, чтобы не тратить время на анализ второго порядка. Общий алгоритм решения выпуклых и непрерывных задач на компакте очень простой:</p>
-<p>То есть мы набрасываемся на такую задачу, как будто решение у нее внутреннее. Затем проверяем, что мы не ошиблись. Если кандидат оказался внутри, то это и есть правильный ответ. Если же нет, то мы заново ищем вдоль границы, исходя из геометрических соображений.</p>
+<div class="mermaid">
+            graph TD
+F((все выпукло?)) -- no --&gt; G[думаем нестандартно...];
+F -- yes --&gt; D;
+D[решаем УПП] --&gt; A((она внутри?));
+A -- yes --&gt; B[это ответ!];
+A -- no --&gt; C[ищем на границе...];
+
+        </div><p>То есть мы набрасываемся на такую задачу, как будто решение у нее внутреннее. Затем проверяем, что мы не ошиблись. Если кандидат оказался внутри, то это и есть правильный ответ. Если же нет, то мы заново ищем вдоль границы, исходя из геометрических соображений.</p>
 </section>
 <section id="id7">
 <h2>Линии уровня<a class="headerlink" href="#id7" title="Link to this heading">#</a></h2>
