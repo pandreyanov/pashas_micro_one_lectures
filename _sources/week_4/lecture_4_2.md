@@ -186,7 +186,9 @@ $$
 
 Компенсирующую (но не эквивалентную) вариацию можно приблизить как:
 
-$$CV \approx \delta p \cdot \vec h + \frac{\delta p \cdot S \cdot \delta p^T}{2}$$
+```{math}
+CV \approx \delta p \cdot \vec h + \frac{\delta p \cdot S \cdot \delta p^T}{2}
+```
 
 при малых приращениях цен $\delta p = p' - p$, где $\vec h$ - действующий спрос.
 :::
