@@ -374,9 +374,17 @@ document.write(`
 <li><p>область определения аргументов, по которым мы максимизируем</p></li>
 </ul>
 <p>Рассмотрим несколько примеров, в которых хорошо видно, что двумя ключевыми свойствами задачи являются: выпуклость/вогнутость самой функции, а также ограниченность и положение области определения.</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+</div>
 <section id="id3">
 <h3>Существование решений<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
 <p>Существование решения, как правило, мы можем легко показать при помощи следующей теоремы</p>
+<div class="remark admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Вейерштрасса
+Непрерывная функция на компакте гарантированно достигает своего минимума и максимума.</p>
+</div>
 <p>Что такое непрерывная функция, вы уже знаете.</p>
 <p>A <strong>компакт</strong> в <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span> — это просто ограниченное и замкнутое множество. В контексте одномерной оптимизации, <span class="math notranslate nohighlight">\([a,b]\)</span> - это компакт, а <span class="math notranslate nohighlight">\((a,b]\)</span>, <span class="math notranslate nohighlight">\([a,b)\)</span>, <span class="math notranslate nohighlight">\((a,b)\)</span>, <span class="math notranslate nohighlight">\([a,\infty)\)</span>,<span class="math notranslate nohighlight">\((a,\infty)\)</span> - это все не компакты.</p>
 <p>Таким образом, у вас есть всего два сценария, как решение оптимизационной задачи с непрерывной функцией могло бы не существовать: либо оно вообще бесконечно, либо оно конечно, но достигается в точке которая попала на границу области.</p>
@@ -412,8 +420,19 @@ document.write(`
 <section id="id7">
 <h2>Линии уровня<a class="headerlink" href="#id7" title="Link to this heading">#</a></h2>
 <p>Наконец, линии уровня – это очень удобный инструмент для отлова и классификации кандидатов на решение оптимизационной задачи.</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p><strong>Линией уровня</strong> полезности <span class="math notranslate nohighlight">\(U\)</span>, проходящей через точку <span class="math notranslate nohighlight">\(x\)</span> называется множество всех точек <span class="math notranslate nohighlight">\(y \in X\)</span> таких, что <span class="math notranslate nohighlight">\(U(y) = U(x)\)</span>.</p>
+</div>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p><strong>Кривой безразличия</strong> предпочтений <span class="math notranslate nohighlight">\(\succcurlyeq\)</span>, проходящей через точку <span class="math notranslate nohighlight">\(x\)</span> называется множество всех точек <span class="math notranslate nohighlight">\(y \in X\)</span> таких, что <span class="math notranslate nohighlight">\(x \sim y\)</span>.</p>
+</div>
 <p>Совершенно ясно, что в контексте представлений предпочтений полезностями и наоборот, кривая безразличия и линия уровня – это одно и то же.</p>
 <p>Рассмотрим несколько примеров полезностей</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+</div>
 <section id="id8">
 <h3>Зачем нужны линии уровня?<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
 <p>Очень часто в задачах есть выпуклое ограничение типа неравенства, например, бюджетное ограничение. В таком случае все кандидаты будут формально не внутренние. Однако с точки зрения выпуклой оптимизации, такие точки можно интерпретировать как “внутренние”, если решать методом Лагранжа. О методе Лагранжа мы поговорим на следующей лекции.</p>
