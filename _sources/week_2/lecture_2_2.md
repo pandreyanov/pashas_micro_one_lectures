@@ -13,9 +13,9 @@ $$Q(L, K) = L^{\alpha} K^{1-\alpha}.$$
 :::{prf:definition} 
 **Полезностью Кобба-Дугласа** называется:
 
-:::{math}
+<!-- :::{math}
 U(x, y) = x^{\alpha} y^{1-\alpha}, \quad \alpha \in (0,1)
-:::
+::: -->
 
 :::
 
