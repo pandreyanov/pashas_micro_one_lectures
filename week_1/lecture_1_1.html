@@ -532,6 +532,10 @@ document.write(`
 <section id="id8">
 <h3>Связь вогнутости и квазивогнутости<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
 <p>Оба термина - вогнутость и квазивогнутость - означают либо <strong>любовь агентов к разнообразию</strong>, либо <strong>комплементарность товаров</strong>, либо <strong>боязнь риска</strong>, но вогнутость однозначно сильнее, чем квазивогнутость. Докажем этот простой факт:</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Из вогнутости следует квазивогнутость</p>
+</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Достаточно выписать цепочку неравенств:<div class="sd-summary-down docutils">
@@ -586,6 +590,10 @@ document.write(`
 <p>То есть нет никакой возможности откалибровать полезность в пространстве функций. Это очень грустный вывод, от него веет какой-то безвыходностью.</p>
 <p>Хуже того, всеми любимое свойство вогнутости с легкостью нарушается при монотонной трансформации. Поэтому оно совершенно не подходит для экономического анализа.</p>
 <p>Однако не все так плохо. Квазивогнутость сохраняется при таких трансформациях.</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Если <span class="math notranslate nohighlight">\(U(x)\)</span> квазивогнута, то <span class="math notranslate nohighlight">\(\varphi(U(x))\)</span> тоже квазивогнута для любого строго монотонного преобразования <span class="math notranslate nohighlight">\(\varphi\)</span>.</p>
+</div>
 <p>Доказательство этого факта легко выписывается, используя любое из двух определений, если знать следующие свойства:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split} \begin{align*}
@@ -595,6 +603,10 @@ U(x) \geqslant U(y) \quad \Leftrightarrow \quad \varphi(U(x)) \geqslant \varphi(
 \end{align*}\end{split}\]</div>
 <p>верное для любых функций <span class="math notranslate nohighlight">\(U\)</span> и строго монотонных преобразований <span class="math notranslate nohighlight">\(\varphi\)</span>.</p>
 <p>Более того, если начать с выпуклой функции и начать ее монотонно деформировать, то мы можем гарантировать квазивогнутость (но не вогнутость).</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Если <span class="math notranslate nohighlight">\(U(x)\)</span> вогнута, то <span class="math notranslate nohighlight">\(\varphi(U(x))\)</span> квазивогнута для любого строго монотонного преобразования <span class="math notranslate nohighlight">\(\varphi\)</span>.</p>
+</div>
 <p>Доказательство этого факта тривиально следует из того, что вогнутая функция уже квазивогнута, и предыдущего утверждения. Все это дает надежду на то, что должен быть способ построить модель, инвариантную к монотонным преобразованиям.</p>
 <p>P.S. Конечно, можно сказать, что вместо конкретной полезности у агента мы рассматриваем класс эквивалентности по отношению к трансформациям <span class="math notranslate nohighlight">\(\varphi\)</span>. Однако это очень абстрактно.</p>
 </section>
@@ -701,9 +713,22 @@ L_{+}(x) = \{y \in X: y \succcurlyeq x\}, \quad L_{-}(x) = \{y \in X: y \preccur
 <h2>Обратная связь, Теорема Дебре<a class="headerlink" href="#id15" title="Link to this heading">#</a></h2>
 <p>Предположим, что у вас уже есть откалиброванные рациональные предпочтения. Можно ли восстановить по ним хотя бы одну непротиворечивую полезность?</p>
 <p>Оказывается, что в простых случаях, действительно, можно.</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Если <span class="math notranslate nohighlight">\(X\)</span> конечно, то для любых рациональных предпочтений <span class="math notranslate nohighlight">\(\succcurlyeq\)</span> существует полезность <span class="math notranslate nohighlight">\(U\)</span>, представляющая <span class="math notranslate nohighlight">\(\succcurlyeq\)</span>.</p>
+</div>
 <p>Когда <span class="math notranslate nohighlight">\(X\)</span> конечное, то можно решить эту задачу алгоритмически. На <span class="math notranslate nohighlight">\(i\)</span> ом шаге алгоритма вы ищите минимальный (с точки зрения <span class="math notranslate nohighlight">\(\succcurlyeq\)</span>) элемент, выставляете ему полезность <span class="math notranslate nohighlight">\(i\)</span> и удаляете. На следующем шаге находите минимальный из оставшихся, выставляете ему полезность <span class="math notranslate nohighlight">\(i+1\)</span>, снова удаляете, и т.д. Если минимальных элементов несколько, даете им одинаковую полезность.</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Если <span class="math notranslate nohighlight">\(X\)</span> счетно, то для любых рациональных предпочтений <span class="math notranslate nohighlight">\(\succcurlyeq\)</span>, таких что для каждого элемента <span class="math notranslate nohighlight">\(x \in X\)</span> есть конечное число элементов не хуже него, существует полезность <span class="math notranslate nohighlight">\(U\)</span>, представляющая <span class="math notranslate nohighlight">\(\succcurlyeq\)</span>.</p>
+</div>
 <p>Доказательство аналогично предыдущему утверждению, только здесь можно сразу назначить полезность <span class="math notranslate nohighlight">\(U(x)\)</span> равную числу элементов не хуже <span class="math notranslate nohighlight">\(x\)</span>, и все.</p>
 <p>В случае когда пространство альтернатив достаточно мощное, нам придется потребовать непрерывность предпочтений. Это очень сложная Теорема, я не буду ее доказывать. Но на семинаре я попрошу, чтобы вам разобрали контрпример предпочтений, которые не являются непрерывными, чтобы вы поняли существенность этого ограничения.</p>
+<div class="remark admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Дебре
+Если <span class="math notranslate nohighlight">\(X\subset \mathbb{R}^n\)</span> связно и сепарабельно, то для любых рациональных и непрерывных предпочтений <span class="math notranslate nohighlight">\(\succcurlyeq\)</span> существует непрерывная полезность <span class="math notranslate nohighlight">\(U\)</span>, представляющая <span class="math notranslate nohighlight">\(\succcurlyeq\)</span>.</p>
+</div>
 <p>Связность и сепарабельность - это скучные технические свойства <span class="math notranslate nohighlight">\(X\)</span>, которые все равно выполняются во всех моделях. Грубо говоря, <span class="math notranslate nohighlight">\(X\)</span> не может быть “фракталом” или пористой как “губка”.</p>
 <p>Однако не стоит забывать, что, если предпосылки теоремы не выполнены, это еще не значит, что полезности нет. Она может случайно сложиться, но это скорее исключение из правила.</p>
 <section id="id16">
