@@ -357,7 +357,7 @@ $$V(p,q,I) = \log I - \alpha \log p - \beta \log q + C$$
 
 Вывести функцию расходов по дуальности, а затем спуститься по Лемме Шепарда. 
 
-:::{prf:proof}
+:::{attention}
 Используем дуальность, чтобы перейти от $(p,q,I)$ к $(p,q,\bar U)$:
 
 $$\bar U = V(p,q,Е(p,q,\bar U)) = \log Е(p,q,\bar U) - \alpha \log p - \beta \log q - C

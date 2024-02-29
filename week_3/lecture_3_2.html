@@ -691,6 +691,22 @@ document.write(`
 <svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Вывести функцию расходов по дуальности, а затем спуститься по Лемме Шепарда.</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p class="sd-card-text">Используем дуальность, чтобы перейти от <span class="math notranslate nohighlight">\((p,q,I)\)</span> к <span class="math notranslate nohighlight">\((p,q,\bar U)\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\bar U = V(p,q,Е(p,q,\bar U)) = \log Е(p,q,\bar U) - \alpha \log p - \beta \log q - C
+\]</div>
+<p class="sd-card-text">Применяя экспоненту к правой и левой части, получаем:</p>
+<div class="math notranslate nohighlight">
+\[
+Е(p,q,\bar U) = e^{\bar U + C} p^{\alpha} q^{\beta}
+\]</div>
+<p class="sd-card-text">И прямо так и дифференцируем ее по ценам.</p>
+<div class="math notranslate nohighlight">
+\[ h_x = \frac{\alpha}{p} E, \quad h_y = \frac{\beta}{q} E, \quad Е = e^{\bar U + C} p^{\alpha} q^{\beta}\]</div>
+<p class="sd-card-text">Обратите внимание, что понижение степени, к которому вы привыкли в курсах матанализа, равносильно делению. Это удобно.</p>
+</div>
 </div>
 </details></section>
 <section id="id18">

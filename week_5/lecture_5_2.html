@@ -405,6 +405,13 @@ $<span class="math notranslate nohighlight">\( x = G(\vec y), \quad F(\vec x) = 
 <p>Одна технология – это одна точка. Множество всех допустимых технологий – это область в <span class="math notranslate nohighlight">\(\mathbb{R}^n\)</span>, то есть <strong>технологическое множество</strong>. Эффективное производство (то, что раньше описывалось <span class="math notranslate nohighlight">\(F\)</span> или <span class="math notranslate nohighlight">\(G\)</span>) теперь описывается границей этого множества, то есть <strong>технологической границей</strong>, см. иллюстрацию ниже.</p>
 <a class="reference internal image-reference" href="../_images/prod_set.png"><img alt="Производственное множество" class="align-center" src="../_images/prod_set.png" style="width: 400px;" /></a>
 <p>Формально технологическая граница состоит из точек <span class="math notranslate nohighlight">\(y \in Y\)</span>, таких, что не существует <span class="math notranslate nohighlight">\(y' \in Y\)</span>, так что <span class="math notranslate nohighlight">\(y_i' \geqslant y_i\)</span> по всем координатам <span class="math notranslate nohighlight">\(i\)</span> и <span class="math notranslate nohighlight">\(y_j' &gt; y_j\)</span> по хотя бы одной координате <span class="math notranslate nohighlight">\(j\)</span>.</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Технологическая граница ищется как все точки <span class="math notranslate nohighlight">\(z \in Y\)</span>, такие, что</p>
+<div class="math notranslate nohighlight">
+\[ z \in \text{argmax } \vec q \cdot \vec y, \quad \vec y \in Y,\]</div>
+<p>для хотя бы одного вектора цен <span class="math notranslate nohighlight">\(\vec q \geqslant 0, \vec q \neq 0\)</span>.</p>
+</div>
 </section>
 <section id="id3">
 <h2>Аксиомы производителя<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
@@ -478,6 +485,10 @@ $<span class="math notranslate nohighlight">\( x = G(\vec y), \quad F(\vec x) = 
 \[ A+B = \{a + b \ | \ a \in A, \ b \in b\}.\]</div>
 </div>
 <p>Действительно, компания может “сложить” в векторном смысле любые два вектора из множеств <span class="math notranslate nohighlight">\(A, B\)</span>. Первый вектор <span class="math notranslate nohighlight">\(a \in A\)</span> означает, что партия товаров была произведена на первом заводе и была отправлена на склад. Второй вектор <span class="math notranslate nohighlight">\(b \in B\)</span> означает, что партия товаров была произведена на втором заводе и тоже отправлена на склад. На складе партии будут объединены и суммарный объем будет соответствовать вектору <span class="math notranslate nohighlight">\(a + b\)</span>.</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Арифметическая сумма двух выпуклых множеств выпукла.</p>
+</div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 Доказательство.<div class="sd-summary-down docutils">
