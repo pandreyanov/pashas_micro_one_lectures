@@ -109,7 +109,7 @@ $$\frac{\partial V(p)}{\partial p} = \frac{\partial f(x, p)}{\partial p}|_{x = x
 
 Для демонстрации Теоремы об Огибающей, рассмотрим несколько абстрактных примеров.
 
-:::{prf:example}
+:::{attention}
 
 $$ 
 \begin{gather*}
@@ -120,7 +120,7 @@ $$
 
 :::
 
-:::{prf:example}
+:::{attention}
 
 
 $$ 

@@ -488,6 +488,28 @@ document.write(`
 <section id="id6">
 <h3>Примеры<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
 <p>Для демонстрации Теоремы об Огибающей, рассмотрим несколько абстрактных примеров.</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} 
+\begin{gather*}
+a = V(a) = \max_x a-(x-a)^2 \Rightarrow \\
+\frac{\partial V(a)}{\partial a} = 1 + 2(x-a)|_{x = a} = 1
+\end{gather*}
+\end{split}\]</div>
+</div>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} 
+\begin{gather*}
+a = V(a,b,c) = \max_{x,y} a-a(x-b)^2 - (y-c)^2 \Rightarrow \\
+\frac{\partial V(a, b, c)}{\partial a} = 1 - (x-b)^2|_{x = b,y = c} = 1 \\
+\frac{\partial V(a, b, c)}{\partial b} = 2a(x-b)|_{x = b,y = c} = 0\\
+\frac{\partial V(a, b, c)}{\partial c} = 2(y-c)|_{x = b,y = c} = 0 
+\end{gather*}
+\end{split}\]</div>
+</div>
 </section>
 <section id="id7">
 <h3>Практическая польза<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
