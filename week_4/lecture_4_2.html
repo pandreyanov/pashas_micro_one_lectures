@@ -1,0 +1,738 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Четвертая лекция, часть 2 &#8212; Учебник по Микро 1, для ИП, ФЭН ВШЭ</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b76e3c8a" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'week_4/lecture_4_2';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Семинар 4" href="seminar_4.html" />
+    <link rel="prev" title="Четвертая лекция, часть 1" href="lecture_4_1.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../table.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Учебник по Микро 1, для ИП, ФЭН ВШЭ</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../table.html">
+                    Содержание учебника
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Программа курса</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../week_0/principles.html">Принципы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_0/grades.html">Оценивание</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_0/hours.html">Часы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_0/module%203.html">Структура третьего модуля</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_0/module%204.html">Структура четвертого модуля</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Первая неделя</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../week_1/intro_1.html">Содержание</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_1/lecture_1_1.html">Первая лекция, часть 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_1/lecture_1_2.html">Первая лекция, часть 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_1/seminar_1.html">Семинар 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_1/homework_0.html">Тренировочное (нулевое) домашнее задание</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Вторая неделя</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../week_2/intro_2.html">Содержание</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_2/lecture_2_1.html">Вторая лекция, часть 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_2/lecture_2_2.html">Вторая лекция, часть 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_2/seminar_2.html">Семинар 2</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Третья неделя</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../week_3/intro_3.html">Содержание</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_3/lecture_3_1.html">Третья лекция, часть 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_3/lecture_3_2.html">Третья лекция, часть 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_3/seminar_3.html">Семинар 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_3/homework_1.html">Первое домашнее задание</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Четвертая неделя</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="intro_4.html">Содержание</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture_4_1.html">Четвертая лекция, часть 1</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Четвертая лекция, часть 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="seminar_4.html">Семинар 4</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Пятая неделя</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../week_5/intro_5.html">Содержание</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_5/lecture_5_1.html">Пятая лекция, часть 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_5/lecture_5_2.html">Пятая лекция, часть 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_5/seminar_5.html">Семинар 5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_5/seminar_6.html">Семинар 6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_5/seminar_7.html">Семинар 7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_5/homework_2.html">Второе домашнее задание</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Мат. шпаргалка</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../cheetsheet/differentials.html">Дифференциалы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cheetsheet/forms.html">Квадратичные формы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cheetsheet/backprop.html">Бэкпроп</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cheetsheet/approximations.html">Приближения</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/week_4/lecture_4_2.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Четвертая лекция, часть 2</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Эффекты дохода и замещения</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Эффект замещения</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Эффект дохода</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Матрица Слуцкого</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Кобб-Дуглас</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Зачем нужны Матрицы Слуцкого?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#se">SE в первом приближении</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cv">CV во втором приближении</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Парадокс Гиффена</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Бесконечно малый анализ</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Глобальный анализ</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1>Четвертая лекция, часть 2<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<section id="id2">
+<h2>Эффекты дохода и замещения<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<p>Предположим, что цена на какой-то товар выросла <span class="math notranslate nohighlight">\(p \to p'\)</span>. Тогда спрос на этот товар, скорее всего, упадет.</p>
+<p>Само по себе это еще не проблема, потому что потребители могли просто переключиться на ближайший субститут. Но могло случиться и так, что достаточно близкого субститута нет, и потребители просто купили меньше, потому что… просто товар стал дороже. Первая ситуация считается в каком-то смысле нормальной. Вторая - нет, потому что наши потребители как будто обеднели.</p>
+<p>Попробуем формализовать эту идею. Изменение спроса можно разложить на два эффекта: эффект дохода и эффект замещения. Что это за эффекты?</p>
+<ul class="simple">
+<li><p>эффект замещения (SE) – это “катание” бюджетной линии вдоль кривой безразличия</p></li>
+<li><p>эффект дохода (IE) – это “параллельное смещение” бюджетной линии</p></li>
+</ul>
+<p>Почему всегда можно разложить? См. иллюстрацию:</p>
+<a class="reference internal image-reference" href="../_images/SEIETE.png"><img alt="Эффекты дохода и замещения" class="align-center" src="../_images/SEIETE.png" style="width: 400px;" /></a>
+<p>Есть также общий эффект (TE), он равен сумме эффекта замещения и эффекта дохода и представляет собой просто стандартное изменение маршаллианских спросов:</p>
+<div class="math notranslate nohighlight">
+\[ \text{TE} = \text{SE} + \text{IE} = m(p') - m(p).\]</div>
+<p>Поскольку маршаллианский спрос, как правило, наблюдаем, то можно считать, что общий эффект всегда известен. Неизвестно его разложение на эффект дохода и замещения.</p>
+<section id="id3">
+<h3>Эффект замещения<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<p>Геометрически это выглядит как “катание”, см. иллюстрацию.</p>
+<a class="reference internal image-reference" href="../_images/SE.png"><img alt="Эффекты замещения" class="align-center" src="../_images/SE.png" style="width: 400px;" /></a>
+<p>Эффект замещения есть, по сути, приращение хиксианского спроса при полезности зафиксированной на изначальном уровне.</p>
+<div class="math notranslate nohighlight">
+\[ SE = h(p', \bar U_0) - h(p, \bar U_0) \]</div>
+<p>Эффект замещения всегда отрицательный (неположительный, если быть точным), если он по своей цене, потому что мы доказали, что <span class="math notranslate nohighlight">\(\nabla^2 E \leqslant 0\)</span>.</p>
+</section>
+<section id="id4">
+<h3>Эффект дохода<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+<p>Геометрически это выглядит как “параллельное смещение”, см. иллюстрацию.</p>
+<a class="reference internal image-reference" href="../_images/IE.png"><img alt="Эффекты замещения" class="align-center" src="../_images/IE.png" style="width: 400px;" /></a>
+<p>Эффект дохода есть разница между общим эффектом и эффектом замещения, именно так его надо считать. Однако сам по себе он не представляет большого интереса. Вообще не очень понятно, зачем вычислять кусок спроса, за который отвечает эффект дохода.</p>
+<p>Гораздо интереснее понять, какому изменению бюджета соответствует эффект дохода? Тогда при любом изменении цен мы можем сказать насколько мы “ограбили” того или иного потребителя в рублях.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Как сосчитать это изменение бюджета?<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Это же компенсирующая вариация <span class="math notranslate nohighlight">\(CV\)</span>!</p>
+</div>
+</details></section>
+</section>
+<section id="id5">
+<h2>Матрица Слуцкого<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
+<p>Сфокусируемся на уравнении, связывающем Хиксианский и Маршаллианский спросы:</p>
+<div class="math notranslate nohighlight">
+\[\vec h (\vec p, \bar U) = \vec m(\vec p,  E(\vec p, \bar U)).\]</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Помните ли вы условия для Дуальности?<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Строго выпуклая задача + локальная ненасыщаемость.</p>
+</div>
+</details><p>Вас, скорее всего, не учили матричному дифференцированию, но в данном случае оно работает примерно также, как и обычное:</p>
+<div class="math notranslate nohighlight">
+\[ \nabla \vec h(\vec p,  \bar U) = \nabla \vec m(\vec p,  I) + \frac{\partial m}{\partial I} \cdot \nabla E(\vec p, \bar U) = \nabla \vec m(\vec p,  I) + \frac{\partial m}{\partial I} \cdot \vec h \]</div>
+<p>Проблема в том, что и <span class="math notranslate nohighlight">\(\frac{\partial m}{\partial I}\)</span> и <span class="math notranslate nohighlight">\(\vec h\)</span> – это вектора длины <span class="math notranslate nohighlight">\(n\)</span>, и, поэтому, мы должны подумать, в каком порядке мы их хотим перемножить. Есть два варианта: либо мы умножаем строку <span class="math notranslate nohighlight">\(\frac{\partial m}{\partial I}\)</span> на столбец <span class="math notranslate nohighlight">\(\vec h\)</span>, либо мы умножаем столбец <span class="math notranslate nohighlight">\(\frac{\partial m}{\partial I}\)</span> на строку <span class="math notranslate nohighlight">\(\vec h\)</span>. Один из этих вариантов даст число, а другой – матрицу. Тот вариант, который сохранит размерность объекта, и будет правильным матричным дифференцированием.</p>
+<p>Однако это еще не все. В зависимости от того, что идет по строкам: координаты цен или координаты товаров – формула будет выглядеть по-разному. Например, если по горизонтали идут товары, то правильная форма:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} 
+(\nabla h_x, \nabla h_y) = (\nabla m_x, \nabla m_y) + 
+\begin{pmatrix} 
+h_x \\
+h_y
+\end{pmatrix} 
+\cdot (\frac{\partial m_x}{\partial I}, \frac{\partial m_y}{\partial I})
+\end{split}\]</div>
+<p>Чтобы не запутаться, достаточно запомнить, что вектор <span class="math notranslate nohighlight">\(h\)</span> в правой части уравнения – это, на самом деле <span class="math notranslate nohighlight">\(\nabla E\)</span>, то есть, он относится к ценам, которые идут по вертикали.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Матрица <span class="math notranslate nohighlight">\(S = \nabla h\)</span> называется <strong>матрицей Слуцкого</strong>, или матрицей замещения.</p>
+</div>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Если полезность дважды дифференцируема, то матрица Слуцкого симметрична, так как <span class="math notranslate nohighlight">\(S = \nabla^2 E\)</span>.</p>
+</div>
+<section id="id6">
+<h3>Кобб-Дуглас<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
+<p>Есть много способов вывести матрицу Слуцкого для Кобба-Дугласа, но, пожалуй, самый естественный - это сосчитать руками Гессиан функции расходов. Напомним, что</p>
+<div class="math notranslate nohighlight">
+\[ \log E = U + C + \alpha \log p + \beta \log q.\]</div>
+<p>Тогда</p>
+<div class="math notranslate nohighlight">
+\[ \frac{\partial}{\partial p} E = \frac{\alpha}{p} E, \quad \frac{\partial}{\partial q} E = \frac{\beta}{q} E \]</div>
+<p>Дифференцируя второй раз, получаем повторную производную:</p>
+<div class="math notranslate nohighlight">
+\[ \frac{\partial^2}{\partial^2 p} E = \frac{-\alpha}{p^2} E + \frac{\alpha^2}{p^2} E, \quad \frac{\partial^2}{\partial^2 q} E = \frac{-\beta}{q^2} E + \frac{\beta^2}{q^2} E\]</div>
+<p>И, конечно, смешанную производную:</p>
+<div class="math notranslate nohighlight">
+\[ \frac{\partial^2}{\partial p \partial q} E = \frac{\alpha \beta}{p q} E.\]</div>
+<p>Наконец, можно вывести матрицу Слуцкого:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} S = 
+E \cdot 
+\begin{pmatrix} 
+\frac{-\alpha + \alpha^2}{p^2} &amp; \frac{\alpha \beta}{p q} \\
+\frac{\alpha \beta}{p q} &amp; \frac{-\beta +\beta^2}{q^2}
+\end{pmatrix} = 
+E \cdot \alpha \beta \cdot
+\begin{pmatrix} 
+\frac{-1}{p^2} &amp; \frac{1}{p q} \\
+\frac{1}{p q} &amp; \frac{-1}{q^2}
+\end{pmatrix}
+\end{split}\]</div>
+</section>
+<section id="id7">
+<h3>Зачем нужны Матрицы Слуцкого?<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
+<p>Во-первых, матрица Слуцкого – это в некотором смысле четвертая модель поведения потребителя. То есть вместо калибровки полезности или предпочтений, мы можем калибровать матрицу замещения.</p>
+<p>Коэффициенты матрицы Слуцкого можно переписать в терминах эластичности, дохода и долей, каждый из которых достаточно легко оценивается в данных.</p>
+<p>К примеру, если <span class="math notranslate nohighlight">\(s_x\)</span> и <span class="math notranslate nohighlight">\(s_y\)</span> – это доли товаров <span class="math notranslate nohighlight">\(x, y\)</span> в бюджете, то верхний диагональный элемент матрицы Слуцкого можно оценить как:</p>
+<div class="math notranslate nohighlight">
+\[ \frac{\partial h_x}{\partial p} = \frac{m_x}{p} (\varepsilon_{x,p} + \varepsilon_{x,I} \cdot s_x)\]</div>
+<p>А диагоналъный элемент матрицы Слуцкого можно оценить как:</p>
+<div class="math notranslate nohighlight">
+\[ \frac{\partial h_x}{\partial q} = \frac{m_x}{q} (\varepsilon_{x,q} + \varepsilon_{x,I} \cdot s_y)\]</div>
+<p>А во вторых - быстро считать эффект замещения.</p>
+</section>
+<section id="se">
+<h3>SE в первом приближении<a class="headerlink" href="#se" title="Link to this heading">#</a></h3>
+<p>Матрица Слуцкого указывает нам на приращение Хиксианского спроса.</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>SE в первом приближении</p>
+<div class="math notranslate nohighlight">
+\[ SE = h(p') - h(p) = \int_p^{p'} \frac{\partial}{\partial p} h(x) dx \approx (p'-p) \nabla h\]</div>
+</div>
+<p>То есть если эластичности оценены хорошо, то можно сказать, что приращение Хиксианского спроса – это приблизительно произведение матрицы Слуцкого на приращение цен. А приращение Хиксианского спроса – это и есть <span class="math notranslate nohighlight">\(SE\)</span>.</p>
+</section>
+<section id="cv">
+<h3>CV во втором приближении<a class="headerlink" href="#cv" title="Link to this heading">#</a></h3>
+<p>Компенсированная вариация - это приращение функций расходов <span class="math notranslate nohighlight">\(E\)</span>, то есть это площадь под <span class="math notranslate nohighlight">\(\nabla E\)</span>. А это в свою очередь примерно площадь трапеции (на боку) с основанием <span class="math notranslate nohighlight">\((p'-p)\)</span> и сторонами <span class="math notranslate nohighlight">\(h(p)\)</span> и <span class="math notranslate nohighlight">\(h(p')\)</span>, см. иллюстрацию:</p>
+<a class="reference internal image-reference" href="../_images/slutsky.png"><img alt="Слуцкий" class="align-center" src="../_images/slutsky.png" style="width: 400px;" /></a>
+<p>Сосчитаем приближенную площадь:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split} 
+\begin{gather*}
+E(p', \bar U) - E(p, \bar U) = \int_p^{p'} h(x, \bar U) dx \approx\\
+\approx \frac{(p'-p)(h(p')+h(p))}{2} = (p'-p)(\frac{h(p') - h(p)}{2} + h(p))
+\end{gather*}
+\end{split}\]</div>
+<p>Мы только что доказали достаточно полезное на практике свойство:</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>компенсирующая вариация во втором приближении</p>
+<p>Компенсирующую (но не эквивалентную) вариацию можно приблизить как:</p>
+<div class="math notranslate nohighlight">
+\[CV \approx \delta p \cdot \vec h + \frac{\delta p \cdot S \cdot \delta p^T}{2}\]</div>
+<p>при малых приращениях цен <span class="math notranslate nohighlight">\(\delta p = p' - p\)</span>, где <span class="math notranslate nohighlight">\(\vec h\)</span> - действующий спрос.</p>
+</div>
+<p>Сравните ответ с разложением <span class="math notranslate nohighlight">\(CV\)</span> для Кобба-Дугласа, которую мы вывели раньше.</p>
+</section>
+</section>
+<section id="id8">
+<h2>Парадокс Гиффена<a class="headerlink" href="#id8" title="Link to this heading">#</a></h2>
+<p>В конце 19 века случился (очередной) кризис экономической мысли. Все как один считали, что кривые спроса обязательно убывающие по своей цене. Это было логично, но формального доказательства никто не мог дать. Затем именитые экономисты (такие как Маршалл) обратили внимание на так называемый “Парадокс Гиффена”.</p>
+<p>Парадокс Гиффена заключается в том, что для некоторых товаров, которые пользовались популярностью у бедных: картофель и дешевый хлеб –  наблюдалась прямая зависимость между ценой и спросом. Похожая зависимость иногда прослеживается для спроса на рис в современном Китае.</p>
+<p>Разрешение парадокса осуществляется за счет анализа Хиксианского спроса и матриц Слуцкого.</p>
+<section id="id9">
+<h3>Бесконечно малый анализ<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
+<p>Обратим внимание еще раз на эластичность Хиксианского спроса по собственной цене, которую я назову <span class="math notranslate nohighlight">\(\varepsilon^c_{x,p}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\varepsilon^c_{x,p} = \varepsilon_{x,p} + \varepsilon_{x,I} \cdot s_{x},\]</div>
+<p>и перепишем ее так, чтобы маршаллианский спрос был слева:</p>
+<div class="math notranslate nohighlight">
+\[\varepsilon_{x,p} = \varepsilon^c_{x,p} - \varepsilon_{x,I} \cdot s_{x}.\]</div>
+<p>Легко видеть, что если <span class="math notranslate nohighlight">\(\varepsilon_{x,I} &gt; 0\)</span>, то, поскольку <span class="math notranslate nohighlight">\(\varepsilon^c_{x,p}\)</span> всегда неположительный, и <span class="math notranslate nohighlight">\(\varepsilon_{x,p}\)</span> будет неположительный. А нам нужна положительная зависимость между <span class="math notranslate nohighlight">\(x,p\)</span>. Соответственно, можно сделать следующий вывод:</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Нормальный товар не может объяснить парадокс Гиффена.</p>
+</div>
+<p>Предположим, наоборот, что товар <span class="math notranslate nohighlight">\(x\)</span> инфериорный, то есть это товар низкого качества, тогда <span class="math notranslate nohighlight">\(\varepsilon_{x,I} &lt; 0\)</span>. Предположим также, что доля товара <span class="math notranslate nohighlight">\(x\)</span> в бюджете потребителя достаточно высока, то есть, <span class="math notranslate nohighlight">\(s_{x}\)</span> большой. Наконец, предположим, что для товара <span class="math notranslate nohighlight">\(x\)</span> нет близкого (чистого) субститута, то есть, <span class="math notranslate nohighlight">\(\varepsilon^c_{x,p}\)</span> близок к нулю.</p>
+<p>Тогда может так случиться, что <span class="math notranslate nohighlight">\(\varepsilon_{x,p}\)</span> станет положительным.</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\varepsilon^c_{x,p}\)</span> называется эффектом замещения</p></li>
+<li><p><span class="math notranslate nohighlight">\(\varepsilon_{x,I} \cdot s_{x}\)</span> называется эффектом дохода</p></li>
+</ul>
+<p>Получается, что</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Для того, чтобы объяснить парадокс Гиффена, нужно иметь слабый эффект замещения и сильный отрицательный эффект дохода.</p>
+</div>
+</section>
+<section id="id10">
+<h3>Глобальный анализ<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
+<p>Анализ бесконечно малых показал, что должно случиться для того, чтобы маршаллианский спрос стал возрастать по собственной цене.</p>
+<p>Рассмотрим теперь большое изменение в цене. Сильный отрицательный эффект дохода означает, что при сокращении дохода потребление товара (который мы рассматриваем) резко увеличивается. Слабый эффект замещения (он всегда отрицательный) означает, что при качении вдоль кривой безразличия спрос меняется не сильно.</p>
+<p>Вместе эти два эффекта способны объяснить парадокс Гиффена, см. иллюстрацию.</p>
+<a class="reference internal image-reference" href="../_images/IESE_CV.png"><img alt="Эффекты дохода и замещения" class="align-center" src="../_images/IESE_CV.png" style="width: 400px;" /></a>
+<p>На этой иллюстрации эффект дохода (IE, переход от 2 к 3) большой и положительный. Эффект замещения (SE, переход от 1 к 2) маленький и отрицательный. Поэтому общий эффект (TE, переход от 1 к 3) отрицательный.</p>
+<p>Мы объяснили парадокс Гиффена и на этом заканчиваем с теорией потребителя.</p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./week_4"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="lecture_4_1.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Четвертая лекция, часть 1</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="seminar_4.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Семинар 4</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Эффекты дохода и замещения</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Эффект замещения</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Эффект дохода</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Матрица Слуцкого</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Кобб-Дуглас</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Зачем нужны Матрицы Слуцкого?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#se">SE в первом приближении</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cv">CV во втором приближении</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Парадокс Гиффена</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Бесконечно малый анализ</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Глобальный анализ</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Паша Андреянов
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

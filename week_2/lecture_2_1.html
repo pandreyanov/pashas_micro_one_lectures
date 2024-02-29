@@ -195,6 +195,31 @@
 <li class="toctree-l1"><a class="reference internal" href="lecture_2_2.html">Вторая лекция, часть 2</a></li>
 <li class="toctree-l1"><a class="reference internal" href="seminar_2.html">Семинар 2</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Третья неделя</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../week_3/intro_3.html">Содержание</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_3/lecture_3_1.html">Третья лекция, часть 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_3/lecture_3_2.html">Третья лекция, часть 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_3/seminar_3.html">Семинар 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_3/homework_1.html">Первое домашнее задание</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Четвертая неделя</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../week_4/intro_4.html">Содержание</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_4/lecture_4_1.html">Четвертая лекция, часть 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_4/lecture_4_2.html">Четвертая лекция, часть 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_4/seminar_4.html">Семинар 4</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Пятая неделя</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../week_5/intro_5.html">Содержание</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_5/lecture_5_1.html">Пятая лекция, часть 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_5/lecture_5_2.html">Пятая лекция, часть 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_5/seminar_5.html">Семинар 5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_5/seminar_6.html">Семинар 6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_5/seminar_7.html">Семинар 7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_5/homework_2.html">Второе домашнее задание</a></li>
+</ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Мат. шпаргалка</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../cheetsheet/differentials.html">Дифференциалы</a></li>
@@ -435,6 +460,14 @@ document.write(`
 <section id="id5">
 <h3>Выпуклая интерпретация<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
 <p>Выпуклая интерпретация метода Лагранжа, также называемая <strong>Сильным Принципом Лагранжа</strong> или <strong>Сильная Дуальность</strong> или <strong>Теорема о Минимаксе</strong>, была сформулирована Вон Нейманом - американским математиком Венгерского происхождения - в 1928 году и существенно повлияла на развитие экономической мысли.</p>
+<div class="remark admonition danger">
+<p class="admonition-title">Danger</p>
+<p>Минимакс
+Значение задачи оптимизации с ограничением (левая часть) связано со значением некоторой дуальной задачи (правая часть):</p>
+<div class="math notranslate nohighlight">
+\[ \min_{\lambda \geqslant 0} \max_{x,y \geqslant 0} \mathcal{L}(x,y | \lambda) =  \max_{x,y \geqslant 0} \min_{\lambda \geqslant 0} \mathcal{L}(x,y | \lambda), \]</div>
+<p>если только задача выпукла, то есть ограничения выпуклы, а функция вогнута или квазивогнута. Более того, их экстремумы совпадают.</p>
+</div>
 <p>Поиск экстремума (конкретно седла) правой задачи как раз характеризуется решением системы уравнений</p>
 <div class="math notranslate nohighlight">
 \[\nabla_{(x,y)} \mathcal{L} = 0, \quad \nabla_{\lambda} \mathcal{L} = 0.\]</div>
@@ -445,6 +478,13 @@ document.write(`
 <section id="id6">
 <h3>Невыпуклая интерпретация<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
 <p>Совершенно независимо была разработана более общая (но и более муторная) технология решения невыпуклых задач оптимизации, начиная с 1939 года, и носящая имя сразу трех математиков: Каруш, Кун и Такера. Вам она, скорее всего, известна как <strong>Условия Первого Порядка</strong> и <strong>Условия Второго Порядка</strong>.</p>
+<div class="remark admonition danger">
+<p class="admonition-title">Danger</p>
+<p><strong>ККТ</strong>
+В гладкой задаче оптимизации экстремальные точки характеризуются тем, что градиенты ограничений и самой функции линейно зависимы, то есть:</p>
+<div class="math notranslate nohighlight">
+\[\nabla_{(x,y)} U -  \lambda \cdot \nabla_{(x,y)}B = 0\]</div>
+</div>
 <p>Это мистическим образом совпадает с условием на экстремум Лагранжиана. Отсюда Условия Первого Порядка и Метод Множителей Лагранжа.</p>
 <p>A Условия Второго Порядка принимают вид отрицательной определенности квадратичной формы:</p>
 <div class="math notranslate nohighlight">

@@ -1,0 +1,725 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Третья лекция, часть 1 &#8212; Учебник по Микро 1, для ИП, ФЭН ВШЭ</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b76e3c8a" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'week_3/lecture_3_1';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Третья лекция, часть 2" href="lecture_3_2.html" />
+    <link rel="prev" title="Содержание" href="intro_3.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../table.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Учебник по Микро 1, для ИП, ФЭН ВШЭ</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../table.html">
+                    Содержание учебника
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Программа курса</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../week_0/principles.html">Принципы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_0/grades.html">Оценивание</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_0/hours.html">Часы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_0/module%203.html">Структура третьего модуля</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_0/module%204.html">Структура четвертого модуля</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Первая неделя</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../week_1/intro_1.html">Содержание</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_1/lecture_1_1.html">Первая лекция, часть 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_1/lecture_1_2.html">Первая лекция, часть 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_1/seminar_1.html">Семинар 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_1/homework_0.html">Тренировочное (нулевое) домашнее задание</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Вторая неделя</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../week_2/intro_2.html">Содержание</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_2/lecture_2_1.html">Вторая лекция, часть 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_2/lecture_2_2.html">Вторая лекция, часть 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_2/seminar_2.html">Семинар 2</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Третья неделя</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="intro_3.html">Содержание</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Третья лекция, часть 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture_3_2.html">Третья лекция, часть 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="seminar_3.html">Семинар 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="homework_1.html">Первое домашнее задание</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Четвертая неделя</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../week_4/intro_4.html">Содержание</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_4/lecture_4_1.html">Четвертая лекция, часть 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_4/lecture_4_2.html">Четвертая лекция, часть 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_4/seminar_4.html">Семинар 4</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Пятая неделя</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../week_5/intro_5.html">Содержание</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_5/lecture_5_1.html">Пятая лекция, часть 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_5/lecture_5_2.html">Пятая лекция, часть 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_5/seminar_5.html">Семинар 5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_5/seminar_6.html">Семинар 6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_5/seminar_7.html">Семинар 7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_5/homework_2.html">Второе домашнее задание</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Мат. шпаргалка</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../cheetsheet/differentials.html">Дифференциалы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cheetsheet/forms.html">Квадратичные формы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cheetsheet/backprop.html">Бэкпроп</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cheetsheet/approximations.html">Приближения</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/week_3/lecture_3_1.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Третья лекция, часть 1</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Зачем нужна эластичность</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Эластичность по доходу</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Эластичность по цене</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Собственная эластичность</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Перекрестная эластичность</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Рыночная власть и эластичность</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Индекс Лернера</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Формула обратной эластичности</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Естественные монополии</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1>Третья лекция, часть 1<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<section id="id2">
+<h2>Зачем нужна эластичность<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<p>Если вы зайдете на Википедию, то увидите, что эластичность - это <em>мера чувствительности спроса или предложения к изменению одного из параметров: цены или дохода</em>. Но ведь у нас уже есть такие меры, это производные:</p>
+<div class="math notranslate nohighlight">
+\[\frac{\partial x^{\ast}}{\partial p}, \quad \frac{\partial x^{\ast}}{\partial q}, \quad \frac{\partial x^{\ast}}{\partial I}.\]</div>
+<p>Где <span class="math notranslate nohighlight">\(x\)</span> - это спрос на интересующий нас товар, <span class="math notranslate nohighlight">\(p\)</span> - цена этого товара, <span class="math notranslate nohighlight">\(q\)</span> - цена другого товара, а <span class="math notranslate nohighlight">\(I\)</span> - бюджет. Что с ними не так?</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Подсказка: обратите внимание на единицы измерения.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">У определения эластичности есть два параметра.</p>
+<p class="sd-card-text">Первый параметр - это единица измерения товара. Товары меряются в штуках, пачках, тоннах, литрах, килограммах, фунтах, унциях и так далее.</p>
+<p class="sd-card-text">Второй параметр - это единица измерения цены. Цены меряются в долларах, рублях, фунтах, кронах, … Более того, доллары бывают разные: американские, австралийские, новозеландские.</p>
+<p class="sd-card-text">Хуже того, даже американский доллар отличается от года к году, поэтому, формально говоря, это может быть доллар-2019, доллар-2020 или доллар-2021. Получается, что открывая статью по экономике, в которой изучается эффект чего-либо на что-либо, экономист должен конвертировать коэффициенты на год, страну и, возможно, провинцию. А также на объем тары/упаковки, литраж или штуки соответствующего товара. Это сделало бы любые исследования бесполезными.</p>
+<p class="sd-card-text">Поэтому экономисты придумали математический трюк для того, чтобы избавиться от единиц измерения раз и навсегда. Этот трюк заключается в измерении всего в процентах.</p>
+</div>
+</details><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Эластичность</strong> <span class="math notranslate nohighlight">\(\varepsilon_{x,p}\)</span> любой функции <span class="math notranslate nohighlight">\(x(p)\)</span> по параметру <span class="math notranslate nohighlight">\(p\)</span> – это</p>
+<div class="math notranslate nohighlight">
+\[ \varepsilon = \frac{\partial \log x}{\partial \log p} = \frac{\partial x}{\partial p} \frac{p}{x}\]</div>
+</div>
+<p>Таким образом, мы получаем три эластичности:</p>
+<div class="math notranslate nohighlight">
+\[\varepsilon_{x,p} = \frac{\partial \log x^{\ast}}{\partial \log p}, \quad \varepsilon_{x,q} = \frac{\partial \log x^{\ast}}{\partial \log q}, \quad \varepsilon_{x,I} = \frac{\partial \log x^{\ast}}{\partial \log I}.\]</div>
+<p>Легко видеть, что у эластичности нет единиц измерения, так как они успешно сокращаются в правой части формулы.</p>
+<p>Но какое это отношение имеет к процентам?</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Подсказка: воспользуемся разложением Тейлора в единице.<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Связь между процентами и логарифмами следующая. Рассмотрим отношение процентного изменения <span class="math notranslate nohighlight">\(x\)</span> к процентному изменению <span class="math notranslate nohighlight">\(p\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\frac{100 \cdot \delta x / x}{100 \cdot \delta p / p},\]</div>
+<p class="sd-card-text">где <span class="math notranslate nohighlight">\(\delta x, \delta x\)</span> - это маленькие приращения. Тогда в первом приближении:</p>
+<div class="math notranslate nohighlight">
+\[\frac{\delta x / x}{\delta p / p} \approx \frac{\log(1 + \delta x / x)}{\log(1 + \delta p / p)}\]</div>
+<p class="sd-card-text">Далее надо прибавить и вычесть логарифмы <span class="math notranslate nohighlight">\(x\)</span> и <span class="math notranslate nohighlight">\(p\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\frac{\log(x + \delta x) - \log x}{\log(p + \delta p) - \log p} =: \frac{\Delta \log x}{\Delta \log p}\]</div>
+<p class="sd-card-text">и то, что мы получаем – это приращение логарифма <span class="math notranslate nohighlight">\(x\)</span> относительно логарифма <span class="math notranslate nohighlight">\(p\)</span>. В пределе, мы получаем как раз определение эластичности.</p>
+</div>
+</details><p>Очень важно, что приращения маленькие, без этого не только определения эластичности не похожи друг на друга, но и смысла в них особого нет. Эластичность - локальное свойство функции.</p>
+</section>
+<section id="id3">
+<h2>Эластичность по доходу<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<p>Для всех товаров <span class="math notranslate nohighlight">\(x,y,z\)</span> в вашей модели вы можете определить эластичность по доходу:</p>
+<div class="math notranslate nohighlight">
+\[\varepsilon_{x,I}, \quad \varepsilon_{y,I}, \quad \varepsilon_{z,I}\]</div>
+<p>У нормальных товаров эластичности дохода положительные, но если товар не нормальный, то эластичность будет отрицательной. Действительно:</p>
+<div class="math notranslate nohighlight">
+\[\varepsilon_{x,I} = \frac{\partial x}{\partial I} \frac{I}{x}.\]</div>
+<p>Любопытным является то, что эластичности по доходу у всех товаров связаны простым линейным соотношением, правда, разным в каждой новой точке.</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Всегда выполнено следующее тождество:</p>
+<div class="math notranslate nohighlight">
+\[\varepsilon_{x,I} \cdot s_x + \varepsilon_{y,I} \cdot s_y + \varepsilon_{z,I} \cdot s_z = 1\]</div>
+<p>где <span class="math notranslate nohighlight">\(s_x, s_y, s_z\)</span> – доли расходов на соответствующие товары.</p>
+</div>
+<p>Доказательство этого факта вытекает прямиком из бюджетного ограничения. Поскольку доли всегда неотрицательные, то это еще один раз показывает, что все товары не могут быть одновременно инфериорными.</p>
+</section>
+<section id="id4">
+<h2>Эластичность по цене<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
+<p>У каждого товара есть собственная эластичность по цене и перекрестная эластичность с каждым из других товаров.</p>
+<section id="id5">
+<h3>Собственная эластичность<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
+<p>Первым на сцену выступает, конечно же, собственная эластичность по цене:</p>
+<div class="math notranslate nohighlight">
+\[\varepsilon_{x,p}, \quad \varepsilon_{y,q}, \quad \varepsilon_{z,r}.\]</div>
+<p>Интуиция подсказывает нам, что, в принципе, собственная эластичность должна быть скорее отрицательная. Двукратное увеличение цены на товар должно, скорее всего, понизить спрос (не путать с кривой спроса) на этот товар. Это действительно так, кроме тех случаев, когда товар инфериорный (об этом мы поговорим подробнее в лекции 4).</p>
+<p>Посмотрим на собственную эластичность Кобба-Дугласа. Это очень удобная полезность для подсчета эластичности, так как мы уже привыкли везде тащить за собой логарифм.</p>
+<div class="math notranslate nohighlight">
+\[\log x = \log I - \log p + \log(\alpha) - \log(\alpha + \beta + \gamma), \quad \Rightarrow \quad \varepsilon_{x,p} = -1.\]</div>
+<p>Эластичность оказалась равна -1, то есть, она не зависит ни от цен, ни от бюджета. Это большое везение, вообще говоря эластичность не обязана быть постоянной.</p>
+</section>
+<section id="id6">
+<h3>Перекрестная эластичность<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
+<p>Чуть более интересным представляется анализ перекрестной эластичности, которых <span class="math notranslate nohighlight">\(n(n-1)\)</span> штук для <span class="math notranslate nohighlight">\(n\)</span> товаров. Это очень большое число, поэтому мы редко будем работать с <span class="math notranslate nohighlight">\(n&gt;3\)</span>. Пусть будет три товара: <span class="math notranslate nohighlight">\(x,y,z\)</span>, тогда есть шесть эластичностей:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{gather*}
+\varepsilon_{x,q}, \varepsilon_{x,r}, \quad \varepsilon_{y,p}, \varepsilon_{y,r}, \quad \varepsilon_{z,p}, \varepsilon_{z,q}.
+\end{gather*}\]</div>
+<p>Эти эластичности хранят информацию о, грубо говоря, тенденциях к замещению между нашими товарами. Поскольку цены и спросы неотрицательны, мы можем однозначно связать знак эластичности с природой замещения между любыми двумя товарами.</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Если <span class="math notranslate nohighlight">\(\varepsilon_{x,q} \geqslant 0\)</span> то <span class="math notranslate nohighlight">\(x\)</span> - это субститут по отношению к <span class="math notranslate nohighlight">\(y\)</span>. Если <span class="math notranslate nohighlight">\(\varepsilon_{x,q} &lt; 0\)</span> то <span class="math notranslate nohighlight">\(x\)</span> - это комплемент по отношению к <span class="math notranslate nohighlight">\(y\)</span>.</p>
+</div>
+<p>Рассмотрим полезность <strong>совершенных субститутов</strong>…</p>
+<div class="math notranslate nohighlight">
+\[\log x = \mathbb{I}(ap &lt; bq) \cdot (\log I - \log p) + \mathbb{I}(ap &gt; bq) \cdot \infty\]</div>
+<p>и убедимся, что перекрестная эластичность неотрицательная, если она вообще определена. Действительно, пока потребление <span class="math notranslate nohighlight">\(x\)</span> положительно, то оно не чувствительно к изменениям других цен.</p>
+<p>Рассмотрим полезность <strong>совершенных комплементов</strong>…</p>
+<div class="math notranslate nohighlight">
+\[\log x = \log I - \log p + \log(ap) - \log (ap + bq + cr)\]</div>
+<p>…и убедимся, что перекрестная эластичность однозначно меньше нуля:</p>
+<div class="math notranslate nohighlight">
+\[
+\varepsilon_{x,p} = - \frac{\partial \log (ap + bq + cr)}{ \partial \log q}  
+= \frac{-b}{ap + bq + cr}\frac{ap + bq + cr}{bq} = -1/q
+\]</div>
+</section>
+</section>
+<section id="id7">
+<h2>Рыночная власть и эластичность<a class="headerlink" href="#id7" title="Link to this heading">#</a></h2>
+<p>Одним из основных приложений эластичности является анализ поведения монополиста, производящего товар, эластичность потребления которого подразумевается известной.</p>
+<p>В то время как классическая микроэкономическая теория описывает поведение фирм-ценополучателей, на практике, каждая фирма обладает, пусть даже очень маленькой, но рыночной властью. То есть все фирмы способны манипулировать ценой за счет снижения объемов производства, просто у монополии это получается лучше всех.</p>
+<p>В идеальном (с точки зрения экономики и общества) конкурентном рынке все фирмы – ценополучатели, то есть никто не пользуется рыночной властью. Однако считается, что все фирмы по умолчанию пользуются своей рыночной властью, и чем больше фирма - тем больше вреда она способна нанести экономике.</p>
+<p>Эластичность позволяет сделать любую из двух вещей:</p>
+<ul class="simple">
+<li><p>если вы находитесь в позиции контролирующего органа, эластичность спроса позволит вам понять, пользуется ли монополист своей рыночной властью</p></li>
+<li><p>если вы находитесь в позиции истинного монополиста, эластичность спроса позволит вам установить цену, максимизирующую прибыль</p></li>
+</ul>
+<p>Сейчас мы вкратце обсудим каждую из них.</p>
+<section id="id8">
+<h3>Индекс Лернера<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
+<p>Пусть на рынке установлена цена <span class="math notranslate nohighlight">\(P^{\ast}\)</span>, а маржинальные издержки (не путать с фиксированными) фирмы равны <span class="math notranslate nohighlight">\(MC\)</span> при текущем объеме.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Назовем <strong>фиксированными издержками</strong> <span class="math notranslate nohighlight">\(FC\)</span> такие издержки, которые не зависят от объема производства: получить лицензию, арендовать помещение… Назовем <strong>маржинальными издержками</strong> <span class="math notranslate nohighlight">\(MC\)</span> - дополнительные (или маржинальные) издержки на производство дополнительной единицы товара: сырье, электричество, труд… То есть</p>
+<div class="math notranslate nohighlight">
+\[ TC(q) = FC + q \cdot MC(q),\]</div>
+<p>где <span class="math notranslate nohighlight">\(TC\)</span> – это общие издержки на производство <span class="math notranslate nohighlight">\(q\)</span> единиц товара.</p>
+</div>
+<p>Как измерить рыночную власть монополиста?</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Индекс Лернера</strong> <span class="math notranslate nohighlight">\(L\)</span> вычисляется по формуле</p>
+<div class="math notranslate nohighlight">
+\[L = \frac{P^{\ast}-MC}{P^{\ast}}\]</div>
+</div>
+<p>Индекс Лернера <span class="math notranslate nohighlight">\(L\)</span> показывает отношение маржи фирмы к действующей цене.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Маржа</strong> (по-английски markup) - это</p>
+<div class="math notranslate nohighlight">
+\[P^{\ast}-MC\]</div>
+</div>
+<p>Сама по себе маржа не является злом, однако злом считается <span class="math notranslate nohighlight">\(L\)</span>. Чем больше <span class="math notranslate nohighlight">\(L\)</span>, тем более вероятно, что фирма злоупотребляет своим монопольным положением (если таковое есть).</p>
+<p>В Американских исследованиях “подозрительной” будет фирма, у которой индекс Лернера слишком высокий (граница зависят от индустрии). Такие фирмы, как правило, находятся под пристальным взглядом Федеральной Торговой Комиссии - контролирующего органа США.</p>
+<p>Но почему? Ответ кроется в эластичностях.</p>
+</section>
+<section id="id9">
+<h3>Формула обратной эластичности<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
+<p>Пусть спрос на товар <span class="math notranslate nohighlight">\(x\)</span> описывается <strong>обратной функцией спроса</strong> <span class="math notranslate nohighlight">\(P(x)\)</span> с постоянной эластичностью <span class="math notranslate nohighlight">\(\delta\)</span>, а <strong>переменные издержки</strong> монополиста постоянны и равны <span class="math notranslate nohighlight">\(MC\)</span>.</p>
+<p>Тогда задача монополиста – это:</p>
+<div class="math notranslate nohighlight">
+\[ (P(x) - MC)x \to \max_x\]</div>
+<p>Используя условия первого порядка,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{gather*}
+P(x) - C + P'(x)x = 0\\
+(P(x) - C)/P(x) = - P'(x)x/P(x) = - \delta
+\end{gather*}
+\end{split}\]</div>
+<p>То есть маржа/цена (то, что слева) равна минус эластичности обратной функции спроса.</p>
+<p>А как это связано с (прямой) функцией спроса? Оказывается, что у обратных функций эластичность тоже обратная. То есть</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Если у функции спроса эластичность по цене равна <span class="math notranslate nohighlight">\(\varepsilon\)</span>, то маржа (как доля от цены) монополиста (с постоянными издержками <span class="math notranslate nohighlight">\(MC\)</span>) в оптимуме должна равняться в точности обратной эластичности с минусом:</p>
+<div class="math notranslate nohighlight">
+\[\frac{P-MC}{P} = - \frac{1}{\varepsilon}\]</div>
+</div>
+<p>К сожалению, аккуратная оценка индекса Лернера практически невозможна, так как практически невозможно оценить истинные издержки фирмы, поэтому сейчас для этого использутся более сложные метрики, например HHI или SSNIP.</p>
+</section>
+<section id="id10">
+<h3>Естественные монополии<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
+<p>Мировой практикой борьбы с монополизацией рынка является запреты на MnA сделки для крупных игроков на рынке. Например, Федеральная Антимонопольная Служба никогда не одобрит сделку, в которой Билайн и Мегафон стали бы одним хозяйствующим субъектом, так как в этом случае они получат более 50% доли рынка.</p>
+<p>Однако не всегда поддержание конкуренции за счет множества хозяйствующих субъектов является реальной опцией. Иногда возникает ситуация, в которой отдачи от масштаба настолько велики, что монополия представляется единственно разумной структурой рынка. Примеры таких рынков: военные технологии, очистка воды, утилизация радиоактивных отходов…</p>
+<p>В таких ситуациях, как правило, появляется “госмонополия” - фирма с колоссальной рыночной властью и политическим лобби. Основная задача ФАС - следить, чтобы она не пользовалась этой властью. Одним из инструментов такого контроля может быть (хотя и не обязательно) анализ эластичности потребления и его связь с Индексом Лернера.</p>
+<p>Вопрос на понимание.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Kакой в идеале должен быть Индекс Лернера, с точки зрения ФАС?<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Нулевой, близкий к нулю или вообще отрицательный (у госмонополий).</p>
+</div>
+</details></section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./week_3"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="intro_3.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Содержание</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="lecture_3_2.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Третья лекция, часть 2</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Зачем нужна эластичность</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Эластичность по доходу</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Эластичность по цене</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Собственная эластичность</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Перекрестная эластичность</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Рыночная власть и эластичность</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Индекс Лернера</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Формула обратной эластичности</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Естественные монополии</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Паша Андреянов
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
