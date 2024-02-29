@@ -57,11 +57,13 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'week_1/intro_1';</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'week_2/intro_2';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Первая лекция, часть 1" href="lecture_1_1.html" />
-    <link rel="prev" title="Структура четвертого модуля" href="../week_0/module%204.html" />
+    <link rel="next" title="Вторая лекция, часть 1" href="lecture_2_1.html" />
+    <link rel="prev" title="Тренировочное (нулевое) домашнее задание" href="../week_1/homework_0.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -179,19 +181,19 @@
 <li class="toctree-l1"><a class="reference internal" href="../week_0/module%204.html">Структура четвертого модуля</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Первая неделя</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Содержание</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture_1_1.html">Первая лекция, часть 1</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lecture_1_2.html">Первая лекция, часть 2</a></li>
-<li class="toctree-l1"><a class="reference internal" href="seminar_1.html">Семинар 1</a></li>
-<li class="toctree-l1"><a class="reference internal" href="homework_0.html">Тренировочное (нулевое) домашнее задание</a></li>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../week_1/intro_1.html">Содержание</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_1/lecture_1_1.html">Первая лекция, часть 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_1/lecture_1_2.html">Первая лекция, часть 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_1/seminar_1.html">Семинар 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week_1/homework_0.html">Тренировочное (нулевое) домашнее задание</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Вторая неделя</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../week_2/intro_2.html">Содержание</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../week_2/lecture_2_1.html">Вторая лекция, часть 1</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../week_2/lecture_2_2.html">Вторая лекция, часть 2</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../week_2/seminar_2.html">Семинар 2</a></li>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Содержание</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture_2_1.html">Вторая лекция, часть 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture_2_2.html">Вторая лекция, часть 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="seminar_2.html">Семинар 2</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Мат. шпаргалка</span></p>
 <ul class="nav bd-sidenav">
@@ -253,7 +255,7 @@
       
       
       
-      <li><a href="../_sources/week_1/intro_1.md" target="_blank"
+      <li><a href="../_sources/week_2/intro_2.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -361,25 +363,23 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
 <h1>Содержание<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<p>На этой неделе мы поговорим о моделях поведения потребителя.</p>
-<p><strong>Первая часть лекции</strong> посвящена моделям в целом и зачем они нужны. Мы поговорим о двух классических моделях поведения, которые можно охарактеризовать грубо как:</p>
+<p>На этой неделе мы поговорим подробно о полезностях и как их максимизировать.</p>
+<p><strong>Первая часть лекции</strong> посвящена линейным бюджетным ограничением и немного с абстрактными функциями полезности и свойствами спроса. Будут даны понятия нормального товара, товаров субститутов и комплементов. Также мы дадим определение косвенной полезности.</p>
+<p><strong>Вторая часть лекции</strong> посвящена конкретным примерам полезности:</p>
 <ul class="simple">
-<li><p><strong>полезность</strong> (классическая модель)</p></li>
-<li><p><strong>предпочтение</strong> (неоклассическая модель)</p></li>
+<li><p>Кобб-Дуглас</p></li>
+<li><p>Леонтьев</p></li>
+<li><p>линейные</p></li>
+<li><p>квазилинейные</p></li>
+<li><p>CES</p></li>
 </ul>
-<p>Будет также третья модель, модель <strong>выбора</strong>, вы увидите ее на семинаре и в домашке. Это продвинутый материал, его надо частично самостоятельно изучить по учебнику БЖЦ.</p>
-<p>У каждой модели будет свой набор аксиом. Мы обсудим, как эти модели связаны друг с другом, а также потренируемся в их формализме на примерах. Важную часть в этой лекции будет занимать <strong>Теорема Дебре</strong>, связывающая полезность и предпочтения. В центре этой теоремы лежит понятие <strong>непрерывности</strong>, которое вам придется освоить. Формулировку этой теоремы придется выучить.</p>
-<p><strong>Вторая часть лекции</strong> посвящена началам оптимизации, которой вам придется активно пользоваться в этом курсе. Особое внимание будет уделено понятию <strong>выпуклости</strong>. Ожидается, что вы научитесь отличать выпуклые задач от не выпуклых, что сильно облегчит вам жизнь в будущем.</p>
-<p>Ссылка на <a class="reference external" href="https://github.com/pandreyanov/pashas_micro_one_lectures/blob/main/week_1/Lecture_1.pdf">слайды</a> 2023 года</p>
+<p>На этих примерах мы отточим техники решения гладких и не совсем гладких оптимизационных задач.</p>
+<p>Ссылка на <a class="reference external" href="https://github.com/pandreyanov/pashas_micro_one_lectures/blob/main/week_2/Lecture_2.pdf">слайды</a> 2023 года</p>
 <section id="id2">
 <h2>Литература<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p><strong>Вариан, 1.1-1.5</strong> доступно о моделировании, спросе, оптимизации и равновесии</p></li>
-<li><p><strong>Вариан, 3.1-3.4</strong> доступно о предпочтениях</p></li>
-<li><p><strong>Вариан, 4.1-4.3</strong> доступно о полезностях</p></li>
-<li><p><strong>JR, 1.2</strong> очень формально о полезностях и предпочтениях</p></li>
-<li><p><strong>БЖЦ 1.5-1.6</strong> связь предпочтений и полезностей</p></li>
-<li><p><strong>БЖЦ 1А</strong> модель выбора</p></li>
+<li><p><strong>Вариан, 6.<span class="math notranslate nohighlight">\(\ast\)</span></strong> - нормальные товары, субституты, комплементы, кривые спроса и Энгеля.</p></li>
+<li><p><strong>JR, 1.3</strong> - решение задачи потребителя.</p></li>
 </ul>
 </section>
 </section>
@@ -397,7 +397,7 @@ document.write(`
         },
         kernelOptions: {
             name: "python3",
-            path: "./week_1"
+            path: "./week_2"
         },
         predefinedOutput: true
     }
@@ -415,20 +415,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../week_0/module%204.html"
+       href="../week_1/homework_0.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Структура четвертого модуля</p>
+        <p class="prev-next-title">Тренировочное (нулевое) домашнее задание</p>
       </div>
     </a>
     <a class="right-next"
-       href="lecture_1_1.html"
+       href="lecture_2_1.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Первая лекция, часть 1</p>
+        <p class="prev-next-title">Вторая лекция, часть 1</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
