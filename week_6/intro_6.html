@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Квадратичные формы &#8212; Учебник по Микро 1, для ИП, ФЭН ВШЭ</title>
+    <title>Содержание &#8212; Учебник по Микро 1, для ИП, ФЭН ВШЭ</title>
   
   
   
@@ -57,13 +57,11 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'cheetsheet/forms';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'week_6/intro_6';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Бэкпроп" href="backprop.html" />
-    <link rel="prev" title="Дифференциалы" href="differentials.html" />
+    <link rel="next" title="Шестая лекция, часть 1" href="lecture_6_1.html" />
+    <link rel="prev" title="Второе домашнее задание" href="../week_5/homework_2.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -221,18 +219,18 @@
 <li class="toctree-l1"><a class="reference internal" href="../week_5/homework_2.html">Второе домашнее задание</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Шестая неделя</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../week_6/intro_6.html">Содержание</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../week_6/lecture_6_1.html">Шестая лекция, часть 1</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../week_6/lecture_6_2.html">Шестая лекция, часть 2</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../week_6/homework_3.html">Третье домашнее задание</a></li>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Содержание</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture_6_1.html">Шестая лекция, часть 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture_6_2.html">Шестая лекция, часть 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="homework_3.html">Третье домашнее задание</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Мат. шпаргалка</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="differentials.html">Дифференциалы</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Квадратичные формы</a></li>
-<li class="toctree-l1"><a class="reference internal" href="backprop.html">Бэкпроп</a></li>
-<li class="toctree-l1"><a class="reference internal" href="approximations.html">Приближения</a></li>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../cheetsheet/differentials.html">Дифференциалы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cheetsheet/forms.html">Квадратичные формы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cheetsheet/backprop.html">Бэкпроп</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cheetsheet/approximations.html">Приближения</a></li>
 </ul>
 
     </div>
@@ -287,7 +285,7 @@
       
       
       
-      <li><a href="../_sources/cheetsheet/forms.md" target="_blank"
+      <li><a href="../_sources/week_6/intro_6.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -371,7 +369,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Квадратичные формы</h1>
+    <h1>Содержание</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -381,10 +379,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Критерий Сильвестра</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Вогнутость</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Литература</a></li>
 </ul>
             </nav>
         </div>
@@ -396,84 +391,18 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="forms">
-<span id="id1"></span><h1>Квадратичные формы<a class="headerlink" href="#forms" title="Link to this heading">#</a></h1>
-<p>С точки зрения пользователя, <strong>квадратичная форма</strong> это просто квадратная матрица, которая является при этом также симметричной. В нашем курсе такие матрицы появятся при повторном дифференциировании гладких функций, то есть, при выписывания Гессиана.</p>
-<p>Пусть, к примеру у нас есть фунция <span class="math notranslate nohighlight">\(f(x, y) = x^2 y + x + y\)</span></p>
-<p>Тогда градиент равен:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split} \nabla f = \begin{pmatrix} \frac{\partial f}{\partial x}\\ \frac{\partial f}{\partial y}\end{pmatrix} = \begin{pmatrix} 2 x y + 1\\ x^2 + 1\end{pmatrix}\end{split}\]</div>
-<p>а Гессиан равен:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split} \nabla^2 f = \begin{pmatrix} \frac{\partial^2 f}{\partial^2 x} &amp; \frac{\partial^2 f}{\partial x \partial y} \\ \frac{\partial^2 f}{\partial y \partial x} &amp; \frac{\partial^2 f}{\partial^2 y}\end{pmatrix} = \begin{pmatrix} 2 y &amp; 2 x \\ 2 x &amp; 0\end{pmatrix}\end{split}\]</div>
-<p>Квадратичная форма применяется к векторам и выдает обычные числа. Например, если вектор равен <span class="math notranslate nohighlight">\(v=(a, b)\)</span>, тогда</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\nabla^2 f (v) = \begin{pmatrix} a &amp; b \end{pmatrix} \begin{pmatrix} 2 y &amp; 2 x \\ 2 x &amp; 0\end{pmatrix} \begin{pmatrix} a \\ b \end{pmatrix}\end{split}\]</div>
-<p>Перемножая все три матрицы вручную, мы получаем:</p>
-<div class="math notranslate nohighlight">
-\[\nabla^2 f (v) = a^2 \cdot 2 y + a b \cdot x y + b^2 \cdot 0.\]</div>
-<p>Это функция от координат вектора <span class="math notranslate nohighlight">\(v = (a,b)\)</span>, а <span class="math notranslate nohighlight">\(x, y\)</span> это параметры. Довольно легко подогнать параметры так, чтобы значение функции было гарантированно полоэительным или гарантированно отрицательным на всех векторах <span class="math notranslate nohighlight">\(v\)</span>, отличных от нуля.</p>
-<p>Например, если <span class="math notranslate nohighlight">\(x = 0, y = 1\)</span> то форма положительно определена и мы пишем <span class="math notranslate nohighlight">\(\nabla^2 f &gt; 0\)</span>. Если же <span class="math notranslate nohighlight">\(x = 0, y = -1\)</span> то форма отрицательно определена и мы пишем <span class="math notranslate nohighlight">\(\nabla^2 f &lt; 0\)</span>.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1>Содержание<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<p>Мы продолжаем разбор теории производителя.</p>
+<p><strong>Первая часть лекции</strong> посвящена средним и фиксированным издержкам, а также связанными с последними идеями о точках закрытия рынка и монополистической конкуренции.</p>
+<p><strong>Вторая часть лекции</strong> посвящена агрегированию и сдвигам кривых спроса и предложения, а также понятию частичного равновесия.</p>
 <section id="id2">
-<h2>Критерий Сильвестра<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<p>Для дважды дифференциируемых функций существуют удобные дифференциальные критерии вогнутости (отрицательной полу-определенности) и квази вогнутости (отрицательной полу-определенности на касательном к ограночению пространстве).</p>
-<p>Критерий состоит из двух тестов: слабого и сильного. Если функция не проходит слабый тест, то она точно не (квази) вогнута. Если функция проходит сильный тест, то она точно (квази) вогнута.</p>
-<p>Если функция проходит слабый но не сильный тест, то она попадает в узкий класс, про который критерий Сильвестра ничего сказать не может. В таком случае, проверку придется осуществлять по определению. Например, можно изобразить случайно взятое верхнее Лебегово множество и убедиться в том, что оно выпукло.</p>
-<section id="id3">
-<h3>Вогнутость<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
-<p>Рассмотрим гессиан функции от 3 переменных</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\nabla^2 f = \begin{pmatrix} 
-f''_{xx} &amp; f''_{xy} &amp; f''_{xz} \\
-f''_{yx} &amp; f''_{yy} &amp; f''_{yz} \\
-f''_{zx} &amp; f''_{zy} &amp; f''_{zz}
-\end{pmatrix}
-\end{split}\]</div>
-<p>У этой матрицы, как и у любой другой, есть определители главных миноров:</p>
-<p>первого порядка
-$<span class="math notranslate nohighlight">\( \Delta_{1} = f''_{xx}, \Delta_{2} = f''_{yy} \quad \ldots\)</span>$</p>
-<p>второго порядка
-$<span class="math notranslate nohighlight">\( \Delta_{1,2} = f''_{xx}f''_{yy}-(f''_{xy})^2, \Delta_{2,3} = f''_{yy}f''_{zz}-(f''_{yz})^2, \quad \ldots\)</span>$</p>
-<p>третьего порядка, в нашем случае это
-<span class="math notranslate nohighlight">\(\Delta_{1,2,3} = \det f\)</span></p>
-<p>Среди главных миноров всего три угловых минора:</p>
-<div class="math notranslate nohighlight">
-\[ \Delta_{1,1} = f''_{xx}, \quad \Delta_{1,2} = f''_{xx}f''_{yy}-(f''_{xy})^2, \quad \Delta_{1,2,3} = \det f\]</div>
-<p>являющиеся определителями расширяющихся матриц, начиная с левого верхнего угла.</p>
-<p>Необходимым и достаточным условием для (не обязательно строгой) вогнутости функции является то, что все главные миноры имеют чередующиеся знаки, где чередование идет по размерности минора, начиная с отрицательного:</p>
-<div class="math notranslate nohighlight">
-\[ \Delta_{i} \leqslant 0, \quad \Delta_{i,j} \geqslant 0, \quad  \Delta_{i,j,k} \leqslant 0,  \quad \ldots\]</div>
-<p>Необходимым и достаточным условием для строгой вогнутости функции является то, что все главные миноры имеют чередующиеся знаки</p>
-<div class="math notranslate nohighlight">
-\[ \Delta_{1} &lt; 0, \quad \Delta_{1,2} &gt; 0, \quad \Delta_{1,2,3} &lt; 0, \quad \ldots\]</div>
-<!-- ### Квази вогнутость
-
-Для анализа квази вогнутости, нужно заменить гессиан на окаймленный гессиан, у которого сверху и слева приставлен градиент функции в точке, а в левом верхнем углу еще стоит ноль.
-
-$$
-\begin{pmatrix} 
-0 & f'_{x} & f'_{y} & f'_{z} \\
-f'_{x} & f''_{xx} & f''_{xy} & f''_{xz} \\
-f'_{y} & f''_{yx} & f''_{yy} & f''_{yz} \\
-f'_{z} & f''_{zx} & f''_{zy} & f''_{zz}
-\end{pmatrix}
-$$
-
-Миноров тут будет на один больше чем в не окаймленном случае, но считать надо от второго, иначе достаточные условия никогда не будут выполнены:
-
-$$ \Delta_2 = 0 \cdot f''_{xx} -(f'_{x})^2, \quad \ldots$$
-
-Необходимым условием для квази вогнутости функции является то, что главные миноры имеют чередующиеся знаки, начиная со второго, который должен быть (нестрого) отрицательным:
-
-$$ \Delta_2 \leqslant 0, \quad \Delta_3 \geqslant 0, \quad \Delta_4 \leqslant 0,  \quad \ldots$$
-
-Обратите внимание, что первое условие всегда автоматически выполнено.
-
-Достаточным условием для квази вогнутости функции является то, что главные миноры имеют чередующиеся знаки, начиная с первого, который должен быть (строго) отрицательным:
-
-$$ \Delta_2 < 0, \quad \Delta_3 > 0, \quad \Delta_4 < 0, \quad \ldots$$ -->
-</section>
+<h2>Литература<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Вариан, 19.3-19.4, 20.1-20.6</strong> - долгосрочные и краткосрочные средние издержки</p></li>
+<li><p><strong>Вариан,21.2-21.5</strong> - предложение фирмы и условие закрытия</p></li>
+<li><p><strong>Вариан,24.7</strong> - монополистическая конкуренция</p></li>
+</ul>
 </section>
 </section>
 
@@ -490,7 +419,7 @@ $$ \Delta_2 < 0, \quad \Delta_3 > 0, \quad \Delta_4 < 0, \quad \ldots$$ -->
         },
         kernelOptions: {
             name: "python3",
-            path: "./cheetsheet"
+            path: "./week_6"
         },
         predefinedOutput: true
     }
@@ -508,20 +437,20 @@ $$ \Delta_2 < 0, \quad \Delta_3 > 0, \quad \Delta_4 < 0, \quad \ldots$$ -->
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="differentials.html"
+       href="../week_5/homework_2.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Дифференциалы</p>
+        <p class="prev-next-title">Второе домашнее задание</p>
       </div>
     </a>
     <a class="right-next"
-       href="backprop.html"
+       href="lecture_6_1.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Бэкпроп</p>
+        <p class="prev-next-title">Шестая лекция, часть 1</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -541,10 +470,7 @@ $$ \Delta_2 < 0, \quad \Delta_3 > 0, \quad \Delta_4 < 0, \quad \ldots$$ -->
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Критерий Сильвестра</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Вогнутость</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Литература</a></li>
 </ul>
   </nav></div>
 

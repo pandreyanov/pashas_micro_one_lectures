@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Квадратичные формы &#8212; Учебник по Микро 1, для ИП, ФЭН ВШЭ</title>
+    <title>Третье домашнее задание &#8212; Учебник по Микро 1, для ИП, ФЭН ВШЭ</title>
   
   
   
@@ -59,11 +59,11 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'cheetsheet/forms';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'week_6/homework_3';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Бэкпроп" href="backprop.html" />
-    <link rel="prev" title="Дифференциалы" href="differentials.html" />
+    <link rel="next" title="Дифференциалы" href="../cheetsheet/differentials.html" />
+    <link rel="prev" title="Шестая лекция, часть 2" href="lecture_6_2.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -221,18 +221,18 @@
 <li class="toctree-l1"><a class="reference internal" href="../week_5/homework_2.html">Второе домашнее задание</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Шестая неделя</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../week_6/intro_6.html">Содержание</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../week_6/lecture_6_1.html">Шестая лекция, часть 1</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../week_6/lecture_6_2.html">Шестая лекция, часть 2</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../week_6/homework_3.html">Третье домашнее задание</a></li>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="intro_6.html">Содержание</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture_6_1.html">Шестая лекция, часть 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lecture_6_2.html">Шестая лекция, часть 2</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Третье домашнее задание</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Мат. шпаргалка</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="differentials.html">Дифференциалы</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Квадратичные формы</a></li>
-<li class="toctree-l1"><a class="reference internal" href="backprop.html">Бэкпроп</a></li>
-<li class="toctree-l1"><a class="reference internal" href="approximations.html">Приближения</a></li>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../cheetsheet/differentials.html">Дифференциалы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cheetsheet/forms.html">Квадратичные формы</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cheetsheet/backprop.html">Бэкпроп</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../cheetsheet/approximations.html">Приближения</a></li>
 </ul>
 
     </div>
@@ -287,7 +287,7 @@
       
       
       
-      <li><a href="../_sources/cheetsheet/forms.md" target="_blank"
+      <li><a href="../_sources/week_6/homework_3.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -371,7 +371,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Квадратичные формы</h1>
+    <h1>Третье домашнее задание</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -381,8 +381,13 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Критерий Сильвестра</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Вогнутость</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Третье домашнее задание</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Первая задача (10 баллов)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Вторая задача (20 баллов)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Третья задача (20 баллов)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Четвертая задача (20 баллов)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Пятая задача (15 баллов)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Шестая задача (15 баллов)</a></li>
 </ul>
 </li>
 </ul>
@@ -396,83 +401,101 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="forms">
-<span id="id1"></span><h1>Квадратичные формы<a class="headerlink" href="#forms" title="Link to this heading">#</a></h1>
-<p>С точки зрения пользователя, <strong>квадратичная форма</strong> это просто квадратная матрица, которая является при этом также симметричной. В нашем курсе такие матрицы появятся при повторном дифференциировании гладких функций, то есть, при выписывания Гессиана.</p>
-<p>Пусть, к примеру у нас есть фунция <span class="math notranslate nohighlight">\(f(x, y) = x^2 y + x + y\)</span></p>
-<p>Тогда градиент равен:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split} \nabla f = \begin{pmatrix} \frac{\partial f}{\partial x}\\ \frac{\partial f}{\partial y}\end{pmatrix} = \begin{pmatrix} 2 x y + 1\\ x^2 + 1\end{pmatrix}\end{split}\]</div>
-<p>а Гессиан равен:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split} \nabla^2 f = \begin{pmatrix} \frac{\partial^2 f}{\partial^2 x} &amp; \frac{\partial^2 f}{\partial x \partial y} \\ \frac{\partial^2 f}{\partial y \partial x} &amp; \frac{\partial^2 f}{\partial^2 y}\end{pmatrix} = \begin{pmatrix} 2 y &amp; 2 x \\ 2 x &amp; 0\end{pmatrix}\end{split}\]</div>
-<p>Квадратичная форма применяется к векторам и выдает обычные числа. Например, если вектор равен <span class="math notranslate nohighlight">\(v=(a, b)\)</span>, тогда</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\nabla^2 f (v) = \begin{pmatrix} a &amp; b \end{pmatrix} \begin{pmatrix} 2 y &amp; 2 x \\ 2 x &amp; 0\end{pmatrix} \begin{pmatrix} a \\ b \end{pmatrix}\end{split}\]</div>
-<p>Перемножая все три матрицы вручную, мы получаем:</p>
-<div class="math notranslate nohighlight">
-\[\nabla^2 f (v) = a^2 \cdot 2 y + a b \cdot x y + b^2 \cdot 0.\]</div>
-<p>Это функция от координат вектора <span class="math notranslate nohighlight">\(v = (a,b)\)</span>, а <span class="math notranslate nohighlight">\(x, y\)</span> это параметры. Довольно легко подогнать параметры так, чтобы значение функции было гарантированно полоэительным или гарантированно отрицательным на всех векторах <span class="math notranslate nohighlight">\(v\)</span>, отличных от нуля.</p>
-<p>Например, если <span class="math notranslate nohighlight">\(x = 0, y = 1\)</span> то форма положительно определена и мы пишем <span class="math notranslate nohighlight">\(\nabla^2 f &gt; 0\)</span>. Если же <span class="math notranslate nohighlight">\(x = 0, y = -1\)</span> то форма отрицательно определена и мы пишем <span class="math notranslate nohighlight">\(\nabla^2 f &lt; 0\)</span>.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1>Третье домашнее задание<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
 <section id="id2">
-<h2>Критерий Сильвестра<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<p>Для дважды дифференциируемых функций существуют удобные дифференциальные критерии вогнутости (отрицательной полу-определенности) и квази вогнутости (отрицательной полу-определенности на касательном к ограночению пространстве).</p>
-<p>Критерий состоит из двух тестов: слабого и сильного. Если функция не проходит слабый тест, то она точно не (квази) вогнута. Если функция проходит сильный тест, то она точно (квази) вогнута.</p>
-<p>Если функция проходит слабый но не сильный тест, то она попадает в узкий класс, про который критерий Сильвестра ничего сказать не может. В таком случае, проверку придется осуществлять по определению. Например, можно изобразить случайно взятое верхнее Лебегово множество и убедиться в том, что оно выпукло.</p>
+<h2>Третье домашнее задание<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<p><em>Домашняя работа сдается строго в формате markdown (.md).</em></p>
 <section id="id3">
-<h3>Вогнутость<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
-<p>Рассмотрим гессиан функции от 3 переменных</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\nabla^2 f = \begin{pmatrix} 
-f''_{xx} &amp; f''_{xy} &amp; f''_{xz} \\
-f''_{yx} &amp; f''_{yy} &amp; f''_{yz} \\
-f''_{zx} &amp; f''_{zy} &amp; f''_{zz}
-\end{pmatrix}
-\end{split}\]</div>
-<p>У этой матрицы, как и у любой другой, есть определители главных миноров:</p>
-<p>первого порядка
-$<span class="math notranslate nohighlight">\( \Delta_{1} = f''_{xx}, \Delta_{2} = f''_{yy} \quad \ldots\)</span>$</p>
-<p>второго порядка
-$<span class="math notranslate nohighlight">\( \Delta_{1,2} = f''_{xx}f''_{yy}-(f''_{xy})^2, \Delta_{2,3} = f''_{yy}f''_{zz}-(f''_{yz})^2, \quad \ldots\)</span>$</p>
-<p>третьего порядка, в нашем случае это
-<span class="math notranslate nohighlight">\(\Delta_{1,2,3} = \det f\)</span></p>
-<p>Среди главных миноров всего три угловых минора:</p>
-<div class="math notranslate nohighlight">
-\[ \Delta_{1,1} = f''_{xx}, \quad \Delta_{1,2} = f''_{xx}f''_{yy}-(f''_{xy})^2, \quad \Delta_{1,2,3} = \det f\]</div>
-<p>являющиеся определителями расширяющихся матриц, начиная с левого верхнего угла.</p>
-<p>Необходимым и достаточным условием для (не обязательно строгой) вогнутости функции является то, что все главные миноры имеют чередующиеся знаки, где чередование идет по размерности минора, начиная с отрицательного:</p>
-<div class="math notranslate nohighlight">
-\[ \Delta_{i} \leqslant 0, \quad \Delta_{i,j} \geqslant 0, \quad  \Delta_{i,j,k} \leqslant 0,  \quad \ldots\]</div>
-<p>Необходимым и достаточным условием для строгой вогнутости функции является то, что все главные миноры имеют чередующиеся знаки</p>
-<div class="math notranslate nohighlight">
-\[ \Delta_{1} &lt; 0, \quad \Delta_{1,2} &gt; 0, \quad \Delta_{1,2,3} &lt; 0, \quad \ldots\]</div>
-<!-- ### Квази вогнутость
-
-Для анализа квази вогнутости, нужно заменить гессиан на окаймленный гессиан, у которого сверху и слева приставлен градиент функции в точке, а в левом верхнем углу еще стоит ноль.
-
-$$
-\begin{pmatrix} 
-0 & f'_{x} & f'_{y} & f'_{z} \\
-f'_{x} & f''_{xx} & f''_{xy} & f''_{xz} \\
-f'_{y} & f''_{yx} & f''_{yy} & f''_{yz} \\
-f'_{z} & f''_{zx} & f''_{zy} & f''_{zz}
-\end{pmatrix}
-$$
-
-Миноров тут будет на один больше чем в не окаймленном случае, но считать надо от второго, иначе достаточные условия никогда не будут выполнены:
-
-$$ \Delta_2 = 0 \cdot f''_{xx} -(f'_{x})^2, \quad \ldots$$
-
-Необходимым условием для квази вогнутости функции является то, что главные миноры имеют чередующиеся знаки, начиная со второго, который должен быть (нестрого) отрицательным:
-
-$$ \Delta_2 \leqslant 0, \quad \Delta_3 \geqslant 0, \quad \Delta_4 \leqslant 0,  \quad \ldots$$
-
-Обратите внимание, что первое условие всегда автоматически выполнено.
-
-Достаточным условием для квази вогнутости функции является то, что главные миноры имеют чередующиеся знаки, начиная с первого, который должен быть (строго) отрицательным:
-
-$$ \Delta_2 < 0, \quad \Delta_3 > 0, \quad \Delta_4 < 0, \quad \ldots$$ -->
+<h3>Первая задача (10 баллов)<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<p>Завод <strong>Последний Гвоздь</strong>, производит гвозди (<span class="math notranslate nohighlight">\(y\)</span>) из железа (<span class="math notranslate nohighlight">\(x\)</span>) по технологии, которую можно описать как <span class="math notranslate nohighlight">\(y = \sqrt{x}\)</span>. Известно, что цена гвоздя в два раза выше цены железа.</p>
+<ol class="arabic simple">
+<li><p>Запишите задачу фирмы.</p></li>
+<li><p>Выпишите условия первого порядка.</p></li>
+<li><p>Посчитайте предложение гвоздей при таких ценах.</p></li>
+</ol>
+<p><strong>Вместо</strong> того, чтобы продавать гвозди на конкурентном рынке, их можно использовать в домашнем хозяйстве, извлекая при этом полезность размера $<span class="math notranslate nohighlight">\( U(y,w) = 100 \ln (y) + w, \)</span>$
+которая измеряется в тех же единицах, что и прибыль, w — агрегированное благо (деньги), цена нормирована к 1. Заметим, что гвозди можно докупать.</p>
+<ol class="arabic simple" start="4">
+<li><p>Если цена гвоздей равна <span class="math notranslate nohighlight">\(q = 2\)</span>, то сколько гвоздей будет тогда произведено и сколько куплено? Бюджет неограничен.</p></li>
+</ol>
+</section>
+<section id="id4">
+<h3>Вторая задача (20 баллов)<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+<p>Индивидуальный предприниматель <strong>Босой А.И.</strong> шьет обувь (<span class="math notranslate nohighlight">\(y\)</span>, цена <span class="math notranslate nohighlight">\(q\)</span>) из резины (<span class="math notranslate nohighlight">\(x_1\)</span> цена <span class="math notranslate nohighlight">\(p_1\)</span>) и кожи (<span class="math notranslate nohighlight">\(x_2\)</span> цена <span class="math notranslate nohighlight">\(p_2\)</span>) по технологии
+<span class="math notranslate nohighlight">\(y_1 = \ln(x_1) + \ln(x_2)\)</span>.</p>
+<ol class="arabic simple">
+<li><p>Найдите <span class="math notranslate nohighlight">\(TC_1(y_1)\)</span>.</p></li>
+<li><p>Найдите максимальную прибыль <span class="math notranslate nohighlight">\(\Pi_1\)</span>.</p></li>
+<li><p>Посчитайте эластичности его спроса на резину, кожу, а также ценовую эластичность предложения обуви.</p></li>
+</ol>
+<p>Индивидуальный предприниматель <strong>Хромой И.А.</strong> шьет обувь по технологии
+<span class="math notranslate nohighlight">\(y_2 = \sqrt{x_1} + \sqrt{x_2}\)</span>.</p>
+<ol class="arabic simple" start="4">
+<li><p>Найдите <span class="math notranslate nohighlight">\(TC_2(y_2)\)</span>.</p></li>
+<li><p>Найдите максимальную прибыль <span class="math notranslate nohighlight">\(\Pi_2\)</span>.</p></li>
+<li><p>Посчитайте эластичности его спроса на резину, кожу а также эластичность предложения обуви.</p></li>
+</ol>
+<p>Предприниматели создали кооператив <strong>ooo Хромой и Босой</strong> и управляют им эффективно.</p>
+<ol class="arabic simple" start="7">
+<li><p>Известно, что в точке оптимума кооператива, издержки предпринимателей равны. Сколько тогда производит второй предприниматель?</p></li>
+</ol>
+</section>
+<section id="id5">
+<h3>Третья задача (20 баллов)<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
+<p>Ферма эльфов производит лайки (<span class="math notranslate nohighlight">\(y_1\)</span>), мемы (<span class="math notranslate nohighlight">\(y_2\)</span>) и посты (<span class="math notranslate nohighlight">\(y_3\)</span>) которые продаются по ценам <span class="math notranslate nohighlight">\(q_1, q_2, q_3\)</span> соответственно. Эльфы (<span class="math notranslate nohighlight">\(x\)</span>) нанимаются на конкурентном рынке по цене <span class="math notranslate nohighlight">\(p_{э}\)</span>. Технология эльфов описывается как <span class="math notranslate nohighlight">\(y_1^2 + y_2^2 + 2 y_3^2 = x\)</span>.</p>
+<ol class="arabic simple">
+<li><p>Найдите <span class="math notranslate nohighlight">\(TC_{э}(y_1,y_2,y_3)\)</span>.</p></li>
+<li><p>Найдите эластичности спроса и предложения.</p></li>
+</ol>
+<p>Ферма троллей производит лайки (<span class="math notranslate nohighlight">\(y_1\)</span>) мемы (<span class="math notranslate nohighlight">\(y_2\)</span>) и посты (<span class="math notranslate nohighlight">\(y_3\)</span>).  Тролли (<span class="math notranslate nohighlight">\(z\)</span>) нанимаются на конкурентном рынке по цене <span class="math notranslate nohighlight">\(p_{т}\)</span>. Технология троллей описывается как <span class="math notranslate nohighlight">\( 2 y_1^2 + y_2^2 + y_3^2 = z\)</span>.</p>
+<ol class="arabic simple" start="3">
+<li><p>Найдите <span class="math notranslate nohighlight">\(TC_{т}(y_1,y_2,y_3)\)</span>.</p></li>
+<li><p>Найдите эластичности спроса и предложения.</p></li>
+</ol>
+<p>Предположим, что тролли и эльфы работают дружно (и эффективно) на одной ферме.</p>
+<ol class="arabic simple" start="5">
+<li><p>Найдите <span class="math notranslate nohighlight">\(TC_{т+ф}(y_1,y_2,y_3)\)</span>.</p></li>
+<li><p>Для такой фермы, найдите эластичности спросов на эльфов, троллей, а также предложения лайков, мемов и постов.</p></li>
+</ol>
+</section>
+<section id="id6">
+<h3>Четвертая задача (20 баллов)<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
+<p>Рассмотрим фирму с технологией
+$<span class="math notranslate nohighlight">\( y = \sqrt{x_1} + \ln(x_2)\)</span><span class="math notranslate nohighlight">\(
+Цену товара \)</span>y<span class="math notranslate nohighlight">\( нормируем к 1, а цены \)</span>x_1, x_2<span class="math notranslate nohighlight">\( пусть равны \)</span>q_1, q_2$.</p>
+<ol class="arabic simple">
+<li><p>Посчитайте эластичности спросов на <span class="math notranslate nohighlight">\(x_1, x_2\)</span></p></li>
+</ol>
+<p>Предположим, что необходимо собрать (маленький) налог размера <span class="math notranslate nohighlight">\(Т\)</span></p>
+<ol class="arabic simple" start="2">
+<li><p>Какой налог надо ввести на первый товар <span class="math notranslate nohighlight">\(q_1 \to q_1 + \tau_1\)</span>, чтобы налоговые сборы равнялись <span class="math notranslate nohighlight">\(Т\)</span>?</p></li>
+<li><p>Какой налог надо ввести на второй товар <span class="math notranslate nohighlight">\(q_2 \to q_2 + \tau_2\)</span>, чтобы налоговые сборы равнялись <span class="math notranslate nohighlight">\(Т\)</span>?</p></li>
+<li><p>Предложите альтернативный (дифференцированный) налог, чтобы налоговые сборы равнялись <span class="math notranslate nohighlight">\(Т\)</span>.</p></li>
+<li><p>Какая из трех прибылей самая большая после введения налога, если цены до введения налогов были равны (1,1)?</p></li>
+</ol>
+</section>
+<section id="id7">
+<h3>Пятая задача (15 баллов)<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
+<p>Первая фирма обладает технологией
+$<span class="math notranslate nohighlight">\( F_1(y) = y_1 + y_2 \leqslant 1, y_1 \geqslant 0, y_2 \geqslant 0\)</span>$</p>
+<p>Вторая фирма обладает технологией
+$<span class="math notranslate nohighlight">\( F_2(y) = 2y_1 + y_2 \leqslant 1, y_1 \geqslant 0, y_2 \geqslant 0\)</span>$</p>
+<ol class="arabic simple">
+<li><p>Изобразите технологическое множество первой фирмы <span class="math notranslate nohighlight">\(Y_1\)</span>.</p></li>
+<li><p>Изобразите технологическое множество второй фирмы <span class="math notranslate nohighlight">\(Y_2\)</span>.</p></li>
+<li><p>Какая фирма более эффективная?</p></li>
+<li><p>Постройте сумму <span class="math notranslate nohighlight">\(Y_1+Y_2\)</span> по вершинам.</p></li>
+</ol>
+</section>
+<section id="id8">
+<h3>Шестая задача (15 баллов)<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
+<p>Рассмотрите потребителя с функцией полезности <span class="math notranslate nohighlight">\(U(x,y) = 2\sqrt{x} + y\)</span>. Первоначальные цены товаров были равны 1, а доход 10.</p>
+<ol class="arabic simple">
+<li><p>Найдите его первоначальный оптимальный набор.</p></li>
+<li><p>Предположим, благо <span class="math notranslate nohighlight">\(y\)</span> дорожает вдвое. Как изменится величина спроса потребителя на оба блага?</p></li>
+<li><p>Разложите изменение в величине спроса на первое и второе благо на эффекты замещения и дохода. Проиллюстрируйте ваш ответ графически, отметив направление и абсолютную величину эффектов дохода и замещения для спроса на первое благо.</p></li>
+</ol>
 </section>
 </section>
 </section>
@@ -490,7 +513,7 @@ $$ \Delta_2 < 0, \quad \Delta_3 > 0, \quad \Delta_4 < 0, \quad \ldots$$ -->
         },
         kernelOptions: {
             name: "python3",
-            path: "./cheetsheet"
+            path: "./week_6"
         },
         predefinedOutput: true
     }
@@ -508,20 +531,20 @@ $$ \Delta_2 < 0, \quad \Delta_3 > 0, \quad \Delta_4 < 0, \quad \ldots$$ -->
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="differentials.html"
+       href="lecture_6_2.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Дифференциалы</p>
+        <p class="prev-next-title">Шестая лекция, часть 2</p>
       </div>
     </a>
     <a class="right-next"
-       href="backprop.html"
+       href="../cheetsheet/differentials.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Бэкпроп</p>
+        <p class="prev-next-title">Дифференциалы</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -541,8 +564,13 @@ $$ \Delta_2 < 0, \quad \Delta_3 > 0, \quad \Delta_4 < 0, \quad \ldots$$ -->
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Критерий Сильвестра</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Вогнутость</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Третье домашнее задание</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Первая задача (10 баллов)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Вторая задача (20 баллов)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Третья задача (20 баллов)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Четвертая задача (20 баллов)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Пятая задача (15 баллов)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Шестая задача (15 баллов)</a></li>
 </ul>
 </li>
 </ul>
